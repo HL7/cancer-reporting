@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="244"/>
-        <lastUpdated value="2021-03-17T19:41:49.861+00:00"/>
-        <source value="#eomjPWeUTErDTKzv"/>
+        <versionId value="245"/>
+        <lastUpdated value="2021-03-17T20:03:23.625+00:00"/>
+        <source value="#AqnDVKF1sJSYD817"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -39,11 +39,6 @@
         <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda"/>
         <packageId value="hl7.fhir.us.ccda"/>
         <version value="1.1.0"/>
-    </dependsOn>
-    <dependsOn id="uv">
-        <uri value="http://www.hl7.org/fhir/uv/cancer-pathology-common-libraries/ImplementationGuide/hl7.fhir.uv.cancer-pathology-common-libraries"/>
-        <packageId value="hl7.fhir.uv.cancer-pathology-common-libraries"/>
-        <version value="dev"/>
     </dependsOn>
     <dependsOn id="mcode">
         <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode#1.0.0"/>

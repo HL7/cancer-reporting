@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="histologic-type-observation-us"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-17T19:35:01.502+00:00"/>
+        <source value="#O5WLh204ZPyCI3em"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/histologic-type-observation-us"/>
+    <name value="HistologicTypeObservation"/>
+    <title value="Histologic Type Observation"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <mustSupport value="false"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/histologic-type-site-vs"/>
+            </binding>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/overarching-histologic-type-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

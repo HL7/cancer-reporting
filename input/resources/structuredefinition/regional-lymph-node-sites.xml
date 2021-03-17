@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="regional-lymph-node-sites"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-16T22:45:42.218+00:00"/>
+        <source value="#Eq5AmFX7t95ckrDd"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/regional-lymph-node-sites"/>
+    <name value="RegionalLymphNodeSites"/>
+    <title value="Regional Lymph Node Site Extension"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/regional-lymph-node-sites"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://snomed.info/sct"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

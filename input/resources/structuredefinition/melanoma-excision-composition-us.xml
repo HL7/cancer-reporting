@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="melanoma-excision-composition-us"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-12T00:02:22.704+00:00"/>
+        <source value="#P3TVOCu1QCIV4Eec"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-excision-composition-us"/>
+    <name value="MelanomaExcisionComposition"/>
+    <title value="Melanoma Excision Composition"/>
+    <status value="active"/>
+    <description value="Melanoma Excision Composition profile"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:histologic_type">
+            <path value="Composition.section"/>
+            <sliceName value="histologic_type"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Composition.section:regional_lymph_node">
+            <path value="Composition.section"/>
+            <sliceName value="regional_lymph_node"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Composition.section:regional_lymph_node.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://www.hl7.org/fhir/uv/cancer-reporting-common-library/CodeSystem/temp-codes"/>
+                    <code value="XXX_reglymphnode"/>
+                    <display value="Regional Lymph Node Section Code"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:regional_lymph_node.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-regional-lymphnode-involvement-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:lymphovascular_invasion">
+            <path value="Composition.section"/>
+            <sliceName value="lymphovascular_invasion"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Composition.section:lymphovascular_invasion.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://www.hl7.org/fhir/uv/cancer-reporting-common-library/CodeSystem/temp-codes"/>
+                    <code value="XXX_lymhinvasion"/>
+                    <display value="Lymphovascular Invasion Section Code"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:lymphovascular_invasion.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-lymphovascular-invasion-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:breslow_thickness">
+            <path value="Composition.section"/>
+            <sliceName value="breslow_thickness"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Composition.section:breslow_thickness.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://www.hl7.org/fhir/uv/cancer-reporting-common-library/CodeSystem/temp-codes"/>
+                    <code value="XXX_breslow_thickness"/>
+                    <display value="Breslow Thickness Section Code"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:breslow_thickness.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-breslow-thickness-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:history_of_procedures">
+            <path value="Composition.section"/>
+            <sliceName value="history_of_procedures"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Composition.section:history_of_procedures.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="47519-4"/>
+                    <display value="History of Procedures Document"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:history_of_procedures.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-resection-procedure-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

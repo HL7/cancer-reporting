@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="breast-composition-example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-14T21:45:30.808+00:00"/>
+        <source value="#YhlW53qavP1MKLie"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-composition-us"/>
+    </meta>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="11502-2"/>
+            <display value="Laboratory Report"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <date value="2021-03-14"/>
+    <author>
+        <reference value="Practitioner/us-core-practitioner-peter-pathologist"/>
+    </author>
+    <title value="Protocol for the Examination of Resection Specimens From Patients  With Invasive Carcinoma of the Breast"/>
+    <section>
+        <title value="Primary Cancer Condition Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_primarycancercondition"/>
+                <display value="Primary Cancer Condition Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Condition/primary-cancer-condition-breast"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Cancer Specimen Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_specimen"/>
+                <display value="Specimen Section Codes"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Specimen/breast-specimen-example-1"/>
+        </entry>
+    </section>
+    <section>
+        <title value="History of Procedures Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="47519-4"/>
+                <display value="History of Procedures Document"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Procedure/Procedure-breast-cancer-related-surgical-procedure"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Histologic Type"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_histotype"/>
+                <display value="Histologic Type Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-histologic-type-observation"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Overall Patholigic Grade"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_histopathograde"/>
+                <display value="Histopathologic Grade Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-overall-nottingham-patholigic-grade"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Regional Lymph Node Involvement"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_reglymphnode"/>
+                <display value="Regional Lymph Node Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-regional-lymphnode-involvement-observation"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Treatment Effect Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_treatmenteffect"/>
+                <display value="Treatment Effect Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Procedure/Procedure-breast-treatment-effect-in-breast-procedure"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Treatment Effect Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_treatmenteffectinlymph"/>
+                <display value="Treatment Effect in Lymph Node Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Procedure/Procedure-breast-treatment-effect-in-lymph-procedure"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Lymphovascular Invasion Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_lymhinvasion"/>
+                <display value="Lymphovascular Invasion Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-lymphovascular-invasion-eve"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Pathologic Stage Classification Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_tnm"/>
+                <display value="TNM Classification Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/tnm-pathologic-primary-tumor-category-eve"/>
+        </entry>
+        <entry>
+            <reference value="Observation/tnm-pathologic-regional-lymph-nodes-eve"/>
+        </entry>
+        <entry>
+            <reference value="Observation/tnm-pathologic-distant-metastases-category-eve"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Estrogen Receptor Status Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_er"/>
+                <display value="Estrogen Receptor Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-estrogen-receptor-observation"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Progesterone Receptor  Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_pr"/>
+                <display value="Progesterone Receptor Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-progesterone-receptor-observation"/>
+        </entry>
+    </section>
+    <section>
+        <title value="HER2 Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_her2"/>
+                <display value="HER-2 Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-her2-ihc-observation"/>
+        </entry>
+    </section>
+</Composition>

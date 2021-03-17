@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="breast-pT-vs"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-13T21:40:30.004+00:00"/>
+        <source value="#zxCIcrGfjdVOIZt6"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-pT-vs"/>
+    <name value="BreastpTValueSet"/>
+    <title value="BreastpTValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="373173008"/>
+                <display value="pTX: Primary tumor cannot be assessed (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373174002"/>
+                <display value="pT0: No evidence of primary tumor (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373176000"/>
+                <display value="pTis: Ductal carcinoma in situ (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373178004"/>
+                <display value="pTis: Paget disease without invasive carcinoma (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373172003"/>
+                <display value=" pT1: Tumor 2 cm or less in greatest dimension (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373179007"/>
+                <display value="pT1mic: Microinvasion 0.1 cm or less in greatest dimension (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373180005"/>
+                <display value="pT1a: Tumor more than 0.1 cm but not more than 0.5 cm in greatest dimension (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373204007"/>
+                <display value="pT1b: Tumor more than 0.5 cm but not more than 1 cm in greatest dimension (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373183007"/>
+                <display value="pT1c: Tumor more than 1 cm but not more than 2 cm in greatest dimension (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373182002"/>
+                <display value="pT2: Tumor more than 2 cm but not more than 5 cm in greatest dimension (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="37318400"/>
+                <display value="pT3: Tumor more than 5 cm in greatest dimension (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373185000"/>
+                <display value="pT4: Tumor of any size with direct extension to chest wall or skin (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373186004"/>
+                <display value="pT4a: Tumor of any size with extension to chest wall, not including pectoralis muscle (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373187008"/>
+                <display value="pT4b: Tumor of any size with edema (including peau d'orange) or ulceration of the skin of the breast or satellite skin nodules confined to the same breast (breast) (finding)"/>
+            </concept>
+            <concept>
+                <code value="373189006"/>
+                <display value="pT4c: Tumor of any size with direct extension to chest wall (not including pectoralis muscle) and edema (including peau d'orange) or ulceration of the skin of the breast or satellite skin nodules confined to the same breast (finding)"/>
+            </concept>
+            <concept>
+                <code value="373190002"/>
+                <display value="pT4d: Inflammatory carcinoma (breast) (finding)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="breast-lymphovascular-invasion-vs"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-14T18:50:25.081+00:00"/>
+        <source value="#sddwTHXMniu7w2h3"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-lymphovascular-invasion-vs"/>
+    <name value="BreastLymphovascularInvasionValueSet"/>
+    <title value="BreastLymphovascularInvasionValueSet"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="395552006"/>
+                <display value="Venous (large vessel)/lymphatic (small vessel) invasion by tumor absent"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

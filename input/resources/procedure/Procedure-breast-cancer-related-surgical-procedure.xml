@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Procedure-breast-cancer-related-surgical-procedure"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-14T18:43:14.572+00:00"/>
+        <source value="#9cvzYfYUfRJ1RH2m"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-procedure-us"/>
+    </meta>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="387713003"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="172043006"/>
+            <display value="Total mastectomy (including nipple-sparing and skin-sparing mastectomy)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <performedDateTime value="2021-03-01"/>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="76365002"/>
+            <display value="Structure of upper outer quadrant of breast (body structure)"/>
+        </coding>
+    </bodySite>
+</Procedure>

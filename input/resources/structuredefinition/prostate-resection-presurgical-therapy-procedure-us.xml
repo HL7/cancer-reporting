@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="prostate-resection-presurgical-therapy-procedure-us"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-05T19:06:47.890+00:00"/>
+        <source value="#Z6QDbXi25IDTMHvU"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-presurgical-therapy-procedure-us"/>
+    <name value="ProstatePresurgicalTherapy"/>
+    <title value="Prostate Presurgical Therapy"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Procedure"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Procedure">
+            <path value="Procedure"/>
+        </element>
+    </differential>
+</StructureDefinition>

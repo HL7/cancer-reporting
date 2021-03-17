@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-histologic-type-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-17T19:31:34.879+00:00"/>
+        <source value="#vIvhGxJotrBlArnI"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-histologic-type-vs"/>
+    <name value="LungHistologicTypeValueSet"/>
+    <title value="LungHistologicTypeValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="733883005"/>
+                <display value="Non-mucinous adenocarcinoma in situ"/>
+            </concept>
+            <concept>
+                <code value="733882000"/>
+                <display value="Mucinous adenocarcinoma in situ"/>
+            </concept>
+            <concept>
+                <code value="733885003"/>
+                <display value="Non-mucinous minimally invasive adenocarcinoma"/>
+            </concept>
+            <concept>
+                <code value="733884004"/>
+                <display value="Mucinous minimally invasive adenocarcinoma"/>
+            </concept>
+            <concept>
+                <code value="35917007"/>
+                <display value="Adenocarcinoma"/>
+            </concept>
+            <concept>
+                <code value="72495009"/>
+                <display value="Mucinous adenocarcinoma "/>
+            </concept>
+            <concept>
+                <code value="707468009"/>
+                <display value="Primary mixed mucinous and non-mucinous bronchiolo-alveolar carcinoma"/>
+            </concept>
+            <concept>
+                <code value="128893004"/>
+                <display value="Fetal adenocarcinoma"/>
+            </concept>
+            <concept>
+                <code value="59529006"/>
+                <display value="Squamous cell carcinoma in situ"/>
+            </concept>
+            <concept>
+                <code value="18048008"/>
+                <display value="Squamous cell carcinoma, keratinizing"/>
+            </concept>
+            <concept>
+                <code value="45490001"/>
+                <display value="Squamous cell carcinoma, large cell, nonkeratinizing "/>
+            </concept>
+            <concept>
+                <code value="128634009"/>
+                <display value="Basaloid squamous cell carcinoma"/>
+            </concept>
+            <concept>
+                <code value="74364000"/>
+                <display value="Small cell carcinoma"/>
+            </concept>
+            <concept>
+                <code value="21326004"/>
+                <display value="Combined small cell carcinoma"/>
+            </concept>
+            <concept>
+                <code value="128628002"/>
+                <display value="Large cell neuroendocrine carcinoma"/>
+            </concept>
+            <concept>
+                <code value="448546006"/>
+                <display value="Combined large cell neuroendocrine carcinoma "/>
+            </concept>
+            <concept>
+                <code value="81622000"/>
+                <display value="Carcinoid tumor"/>
+            </concept>
+            <concept>
+                <code value="128658008"/>
+                <display value="Atypical carcinoid tumor "/>
+            </concept>
+            <concept>
+                <code value="22687000"/>
+                <display value="Large cell carcinoma"/>
+            </concept>
+            <concept>
+                <code value="59367005"/>
+                <display value="Adenosquamous carcinoma"/>
+            </concept>
+            <concept>
+                <code value="16741004"/>
+                <display value="Pleomorphic carcinoma"/>
+            </concept>
+            <concept>
+                <code value="65692009"/>
+                <display value="Spindle cell carcinoma"/>
+            </concept>
+            <concept>
+                <code value="42596004"/>
+                <display value="Giant cell carcinoma"/>
+            </concept>
+            <concept>
+                <code value="63264007"/>
+                <display value="Carcinosarcoma"/>
+            </concept>
+            <concept>
+                <code value="43149009"/>
+                <display value="Pulmonary blastoma"/>
+            </concept>
+            <concept>
+                <code value="7300000"/>
+                <display value="Lymphoepithelial carcinoma"/>
+            </concept>
+            <concept>
+                <code value="733922002"/>
+                <display value="NUT carcinoma"/>
+            </concept>
+            <concept>
+                <code value="4079000"/>
+                <display value="Mucoepidermoid carcinoma"/>
+            </concept>
+            <concept>
+                <code value="11671000"/>
+                <display value="Adenoid cystic carcinoma"/>
+            </concept>
+            <concept>
+                <code value="9618003"/>
+                <display value="Epithelial-myoepithelial carcinoma "/>
+            </concept>
+            <concept>
+                <code value="68453008"/>
+                <display value="Carcinoma, no subtype"/>
+            </concept>
+            <concept>
+                <code value="128632008"/>
+                <display value="Non-small cell carcinoma"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

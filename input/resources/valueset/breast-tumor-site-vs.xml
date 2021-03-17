@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="breast-tumor-site-vs"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-13T21:40:53.634+00:00"/>
+        <source value="#IHo3JL7u5tjAYx4E"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-tumor-site-vs"/>
+    <name value="Breast-Tumor-Site-ValueSet"/>
+    <title value="Breast-Tumor-Site-ValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="76365002"/>
+                <display value="Upper outer quadrant "/>
+            </concept>
+            <concept>
+                <code value="33564002"/>
+                <display value="Lower outer quadrant "/>
+            </concept>
+            <concept>
+                <code value="77831004"/>
+                <display value="Upper inner quadrant "/>
+            </concept>
+            <concept>
+                <code value="19100000"/>
+                <display value="Lower inner quadrant "/>
+            </concept>
+            <concept>
+                <code value="49058007"/>
+                <display value="Central portion of breast"/>
+            </concept>
+            <concept>
+                <code value="24142002"/>
+                <display value="Nipple"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <concept>
+                <code value="UNK"/>
+                <display value="Unknown"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

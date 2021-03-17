@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-resection-histologic-type-observation-us"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-05T19:06:46.605+00:00"/>
+        <source value="#la7DUzpFwwH7ngyc"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-resection-histologic-type-observation-us"/>
+    <name value="LungResectionHistologicTypeObservation"/>
+    <title value="Lung Resection Histologic Type Observation"/>
+    <status value="active"/>
+    <description value="For consistency in reporting, the histologic classification published by the World Health Organization (WHO) for tumors of the lung, including carcinoids, is recommended."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,18 @@
+{
+	"list": [
+		{
+			"version": "current",
+			"path": "http://build.fhir.org/ig/HL7/cancer-reporting",
+			"desc": "Continuous Integration Build (latest in version control)",
+			"fhirversion": "4.0.1",
+			"date": "",
+			"sequence": "CI build",
+			"status": "ci-build",
+			"current": true
+		}
+	],
+	"package-id": "hl7.fhir.us.cancer-reporting",
+	"title": "Sharing eCC Data from Pathology Labs to EHR",
+	"canonical": "http://hl7.org/fhir/us/cancer-reporting",
+	"category": "Documents"
+}

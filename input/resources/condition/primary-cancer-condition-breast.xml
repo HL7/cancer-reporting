@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="primary-cancer-condition-breast"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-14T20:45:09.309+00:00"/>
+        <source value="#c0ntyr82HLgb7K1G"/>
+        <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="703578005"/>
+                <display value="Invasive micropapillary carcinoma of breast (morphologic abnormality)"/>
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+        </coding>
+    </verificationStatus>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="363346000"/>
+            <display value="Malignant neoplastic disease (disorder)"/>
+        </coding>
+    </code>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="73056007"/>
+            <display value="Right breast structure (body structure)"/>
+        </coding>
+    </bodySite>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <onsetDateTime value="2019-04-01"/>
+    <asserter>
+        <reference value="Practitioner/us-core-practitioner-kyle-anydoc"/>
+    </asserter>
+    <stage>
+        <summary>
+            <coding>
+                <system value="http://cancerstaging.org"/>
+                <code value="3C"/>
+                <display value="IIIC"/>
+            </coding>
+        </summary>
+        <assessment>
+            <reference value="Observation/tnm-clinical-stage-group-3c"/>
+        </assessment>
+    </stage>
+</Condition>

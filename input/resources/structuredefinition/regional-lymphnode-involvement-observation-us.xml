@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="regional-lymphnode-involvement-observation-us"/>
+    <meta>
+        <versionId value="14"/>
+        <lastUpdated value="2021-03-16T21:24:09.775+00:00"/>
+        <source value="#SRrGd6GIJLlTbN9d"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/regional-lymphnode-involvement-observation-us"/>
+    <name value="RegionalLymphNodeInvolvement"/>
+    <title value="Regional Lymph Node Involvement"/>
+    <status value="active"/>
+    <description value="This profile that serves as the foundation for all site-specific Regional Lymph Node profiles to be specified. "/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="21900-6"/>
+                    <display value="Regional lymph nodes.pathology [Class] Cancer"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <max value="0"/>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component">
+            <path value="Observation.component"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component.code">
+            <path value="Observation.component.code"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component.dataAbsentReason">
+            <path value="Observation.component.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_examined">
+            <path value="Observation.component"/>
+            <sliceName value="total_examined"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_examined.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="21894-1"/>
+                    <display value="Regional lymph nodes examined [#] Specimen"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_examined.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <type>
+                <code value="integer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_examined.dataAbsentReason">
+            <path value="Observation.component.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_involved_examined">
+            <path value="Observation.component"/>
+            <sliceName value="total_involved_examined"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_involved_examined.code">
+            <path value="Observation.component.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="21893-3"/>
+                    <display value="Regional lymph nodes positive [#] Specimen"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_involved_examined.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <type>
+                <code value="integer"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component:total_involved_examined.dataAbsentReason">
+            <path value="Observation.component.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

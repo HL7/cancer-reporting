@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="breast-tissue-specimen-us"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-12T18:13:52.128+00:00"/>
+        <source value="#wEcu2r6C9n99pYju"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
+    <name value="BreastTissueSpecimen"/>
+    <title value="Breast Tissue Specimen"/>
+    <status value="active"/>
+    <description value="This is the breast tissue specimen that is being pathologically tested. Collection.bodySite contains the tumor site, otherwise referred to as the body location from where this specimen was obtained."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genetic-specimen"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Specimen">
+            <path value="Specimen"/>
+        </element>
+        <element id="Specimen.collection">
+            <path value="Specimen.collection"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.bodySite">
+            <path value="Specimen.collection.bodySite"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.bodySite.extension">
+            <path value="Specimen.collection.bodySite.extension"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Specimen.collection.bodySite.extension:breast_specimen_laterality">
+            <path value="Specimen.collection.bodySite.extension"/>
+            <sliceName value="breast_specimen_laterality"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-specimen-laterality-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.bodySite.coding">
+            <path value="Specimen.collection.bodySite.coding"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-tumor-site-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

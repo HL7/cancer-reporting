@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Procedure-breast-treatment-effect-in-lymph-procedure"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-14T21:12:03.436+00:00"/>
+        <source value="#rx4YUMhQToBg0vuA"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-treatment-effect-in-lymph-node-procedure-us"/>
+    </meta>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="276239002"/>
+            <display value="Therapy (regime/therapy)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <performedDateTime value="2021-01-01"/>
+    <outcome>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="TODO"/>
+        </coding>
+    </outcome>
+</Procedure>

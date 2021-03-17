@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="examined-nodal-station"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-16T20:16:33.911+00:00"/>
+        <source value="#ZoVplYnMHJMV8yAJ"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/examined-nodal-station"/>
+    <name value="ExaminedNodalStation"/>
+    <title value="Examined Nodal Station"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/examined-nodal-station"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <label value="Only include a single nodal station concept per exception; each nodal station warrants its own extension instance"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

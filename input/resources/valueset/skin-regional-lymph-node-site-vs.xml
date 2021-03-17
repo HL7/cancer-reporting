@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="skin-regional-lymph-node-site-vs"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-16T22:18:44.414+00:00"/>
+        <source value="#YPN9KLjykdG4zome"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/skin-regional-lymph-node-site-vs"/>
+    <name value="SkinRegionalLymphNodeLocation"/>
+    <title value="Skin Regional Lymph Node Location"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="12196003"/>
+                <display value="Structure of subscapular axillary lymph node (body structure)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

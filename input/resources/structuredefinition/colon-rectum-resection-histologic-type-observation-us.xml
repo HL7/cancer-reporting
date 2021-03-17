@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="colon-rectum-resection-histologic-type-observation-us"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-05T19:06:47.026+00:00"/>
+        <source value="#yUvAyG793GvYIHd1"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-resection-histologic-type-observation-us"/>
+    <name value="ColonRectumResectionHistologicTypeObservation"/>
+    <title value="Colon/Rectum Resection Histologic Type Observation"/>
+    <status value="active"/>
+    <description value="For consistency in reporting, the histologic classification proposed by the World Health Organization (WHO) is recommended for Colon/Rectum Resection reporting"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+        </element>
+    </differential>
+</StructureDefinition>

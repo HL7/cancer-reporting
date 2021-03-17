@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="laterality-lr-vs"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-15T14:03:09.408+00:00"/>
+        <source value="#ToEmbXjW2upBmYYo"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lr-vs"/>
+    <name value="LateralityLeftRightValueSet"/>
+    <title value="Laterality Left Right ValueSet"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <concept>
+                <code value="7771000"/>
+                <display value="Left"/>
+            </concept>
+            <concept>
+                <code value="24028007"/>
+                <display value="Right"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

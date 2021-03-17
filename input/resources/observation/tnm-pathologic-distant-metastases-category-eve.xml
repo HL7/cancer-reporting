@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="tnm-pathologic-distant-metastases-category-eve"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-14T19:29:24.461+00:00"/>
+        <source value="#3aQSMUk4wy8j4zC0"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pN-observation-us"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="21901-4"/>
+            <display value="Distant metastases.pathology [Class] Cancer"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <effectiveDateTime value="2021-03-01"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="pM1"/>
+        </coding>
+    </valueCodeableConcept>
+    <method>
+        <coding>
+            <system value="http://ncithesaurus-stage.nci.nih.gov"/>
+            <code value="C146985"/>
+            <display value="AJCC Cancer Staging Manual 8th Edition"/>
+        </coding>
+    </method>
+</Observation>

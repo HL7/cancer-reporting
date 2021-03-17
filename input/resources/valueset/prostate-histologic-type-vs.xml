@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="prostate-histologic-type-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-17T19:31:41.385+00:00"/>
+        <source value="#SJgYBCC495aeSxtg"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/prostate-histologic-type-vs"/>
+    <name value="ProstateHistologicTypeValueSet"/>
+    <title value="ProstateHistologicTypeValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="45410002"/>
+                <display value="Acinar adenocarcinoma"/>
+            </concept>
+            <concept>
+                <code value="82711006"/>
+                <display value="Infiltrating duct carcinoma"/>
+            </concept>
+            <concept>
+                <code value="719105002"/>
+                <display value="Small cell neuroendocrine carcinoma"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

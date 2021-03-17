@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Procedure-breast-treatment-effect-in-breast-procedure"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-14T18:56:52.712+00:00"/>
+        <source value="#fnCIQG6SoQ32LRu4"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-presurgical-therapy-us"/>
+    </meta>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="387713003"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="276239002"/>
+            <display value="Therapy (regime/therapy)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <performedDateTime value="2021-01-01"/>
+    <outcome>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="TODO"/>
+        </coding>
+    </outcome>
+</Procedure>

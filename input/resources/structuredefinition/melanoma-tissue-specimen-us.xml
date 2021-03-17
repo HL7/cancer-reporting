@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="melanoma-tissue-specimen-us"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-15T14:38:03.491+00:00"/>
+        <source value="#qxbUeZhu5OAyzvEo"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-tissue-specimen-us"/>
+    <name value="MelanomaTissueSpecimen"/>
+    <title value="Melanoma Tissue Specimen"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genetic-specimen"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Specimen">
+            <path value="Specimen"/>
+        </element>
+        <element id="Specimen.collection.bodySite.extension">
+            <path value="Specimen.collection.bodySite.extension"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-laterality"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

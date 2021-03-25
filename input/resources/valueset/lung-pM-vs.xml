@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-pM-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-23T15:46:18.758+00:00"/>
+        <source value="#ZjJT1BlGsA9O92lU"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-pM-vs"/>
+    <name value="LungpMValueSet"/>
+    <title value="LungpMValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="443841006"/>
+                <display value="pM1a category"/>
+            </concept>
+            <concept>
+                <code value="443840007"/>
+                <display value="pM1b category"/>
+            </concept>
+            <concept>
+                <code value="443839005"/>
+                <display value="pM1c category"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

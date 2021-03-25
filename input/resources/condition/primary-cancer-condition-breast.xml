@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="primary-cancer-condition-breast"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-14T20:45:09.309+00:00"/>
-        <source value="#c0ntyr82HLgb7K1G"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-24T17:37:59.851+00:00"/>
+        <source value="#bl5N8L29CTvPCmyQ"/>
         <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior">
@@ -55,19 +55,4 @@
         <reference value="Patient/cancer-patient-eve-anyperson"/>
     </subject>
     <onsetDateTime value="2019-04-01"/>
-    <asserter>
-        <reference value="Practitioner/us-core-practitioner-kyle-anydoc"/>
-    </asserter>
-    <stage>
-        <summary>
-            <coding>
-                <system value="http://cancerstaging.org"/>
-                <code value="3C"/>
-                <display value="IIIC"/>
-            </coding>
-        </summary>
-        <assessment>
-            <reference value="Observation/tnm-clinical-stage-group-3c"/>
-        </assessment>
-    </stage>
 </Condition>

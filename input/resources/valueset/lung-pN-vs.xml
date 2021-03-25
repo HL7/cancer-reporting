@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-pN-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-23T01:39:00.755+00:00"/>
+        <source value="#qbB8w2IibP9skLj2"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-pN-vs"/>
+    <name value="LungpNValueSet"/>
+    <title value="LungpNValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="54452005"/>
+                <display value="pNX category"/>
+            </concept>
+            <concept>
+                <code value="21917009"/>
+                <display value="pN0 category "/>
+            </concept>
+            <concept>
+                <code value="384749008"/>
+                <display value="pN1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes, including intrapulmonary nodes involved by direct extension of the primary tumor (lung)"/>
+            </concept>
+            <concept>
+                <code value="384750008"/>
+                <display value="pN2: Metastasis to ipsilateral mediastinal and/or subcarinal lymph nodes(s) (lung)"/>
+            </concept>
+            <concept>
+                <code value="384751007"/>
+                <display value="pN3: Metastasis to contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph nodes(s) (lung)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="grouping-primary-tumor-vs"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-24T20:13:44.419+00:00"/>
+        <source value="#YHx3FfeW9WujCGqL"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/grouping-primary-tumor-vs"/>
+    <name value="PrimaryTumorValueSet"/>
+    <title value="Primary Tumor (pT) ValueSet"/>
+    <status value="draft"/>
+    <description value="All allowable Primary Tumor (pT) Snomed concepts"/>
+    <compose>
+        <include>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-pT-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/melanoma-pT-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-rectum-pT-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-pT-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/prostate-pT-vs"/>
+        </include>
+    </compose>
+</ValueSet>

@@ -10,6 +10,11 @@ The scope of the first version of this IG will focus on the data elements in the
 
 For EHR that do not support Bundle endpoints, EHRs should use US Core DocumentReference and base64 encode the content of the document in DocumentReference.content.attachment.data
 
+------------------------------------------------------------------------------------------------
+mCode profiles that satisfy eCC reporting requiremetns and can/should be used include:
+Cancer Patient
+
+
 
 
 

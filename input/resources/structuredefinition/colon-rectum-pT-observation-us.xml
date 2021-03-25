@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="colon-rectum-pT-observation-us"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-23T00:44:49.263+00:00"/>
+        <source value="#IN2Meb2nu7ERYrk0"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-pT-observation-us"/>
+    <name value="ColonRectumPrimaryTumorObservation"/>
+    <title value="Colon/Rectum Primary Tumor (pT) Observation"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-rectum-pT-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

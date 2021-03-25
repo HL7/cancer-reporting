@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-resection-composition-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-12T00:09:26.070+00:00"/>
-        <source value="#oMinBN2A89uPCSnS"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-24T20:44:56.415+00:00"/>
+        <source value="#onWk2mgFHxDZoh1t"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-composition-us"/>
     <name value="ProstateResectionComposition"/>
     <title value="Prostate Resection Composition"/>
     <status value="active"/>
-    <description value="Radical Prostaectomy Composition profile"/>
+    <description value="Protocol for the Examination of Radical Prostatectomy Specimens From Patients With Carcinoma of the Prostate Gland (CAP Version 4.1.0.1) for reportable data to central cancer registries"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -48,14 +48,16 @@
         <element id="Composition.section:histologic_type">
             <path value="Composition.section"/>
             <sliceName value="histologic_type"/>
-            <min value="0"/>
-            <max value="*"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:treatment_effect">
             <path value="Composition.section"/>
             <sliceName value="treatment_effect"/>
-            <max value="*"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:treatment_effect.code">
             <path value="Composition.section.code"/>
@@ -83,7 +85,9 @@
         <element id="Composition.section:regional_lymph_node">
             <path value="Composition.section"/>
             <sliceName value="regional_lymph_node"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:regional_lymph_node.code">
             <path value="Composition.section.code"/>
@@ -110,7 +114,9 @@
         <element id="Composition.section:lymphovascular_invasion">
             <path value="Composition.section"/>
             <sliceName value="lymphovascular_invasion"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:lymphovascular_invasion.code">
             <path value="Composition.section.code"/>
@@ -137,7 +143,9 @@
         <element id="Composition.section:history_of_procedures">
             <path value="Composition.section"/>
             <sliceName value="history_of_procedures"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:history_of_procedures.code">
             <path value="Composition.section.code"/>
@@ -158,6 +166,66 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-procedure-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification">
+            <path value="Composition.section"/>
+            <sliceName value="pathologic_stage_classification"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="xxx_tnm_section"/>
+                    <display value="TODO- AJCC Pathologic Stage Classification"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="3"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pT">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pT"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-pT-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pN">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pN"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-pN-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pM">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pM"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-pM-observation-us"/>
             </type>
             <mustSupport value="true"/>
         </element>

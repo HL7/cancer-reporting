@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="prostate-pT-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-23T00:59:16.548+00:00"/>
+        <source value="#BSbHMHBBQiHkD9tx"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/prostate-pT-vs"/>
+    <name value="ProstatepTValueSet"/>
+    <title value="ProstatepTValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="384983005"/>
+                <display value="pT2: Organ confined (prostate) (finding)"/>
+            </concept>
+            <concept>
+                <code value="384987006"/>
+                <display value="pT3: Extraprostatic extension (prostate) (finding)"/>
+            </concept>
+            <concept>
+                <code value="443606005"/>
+                <display value="pT3a category"/>
+            </concept>
+            <concept>
+                <code value="384989009"/>
+                <display value="pT3b: Seminal vesicle invasion (prostate) (finding)"/>
+            </concept>
+            <concept>
+                <code value="6123003"/>
+                <display value="pT4 category"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-specimen-example-1"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-14T19:09:59.200+00:00"/>
-        <source value="#LnKqs2dQV7OW4gSg"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-24T17:56:59.333+00:00"/>
+        <source value="#UklTsu0TSfls1Eps"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
     </meta>
     <status value="available"/>
     <type>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
-            <code value="TISS"/>
+            <code value="TUMOR"/>
         </coding>
     </type>
     <subject>

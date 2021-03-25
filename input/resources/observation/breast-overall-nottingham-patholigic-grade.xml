@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-overall-nottingham-patholigic-grade"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-14T19:29:24.469+00:00"/>
-        <source value="#Wp6hzDytTmpvGLIW"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-24T18:58:43.290+00:00"/>
+        <source value="#BSQTPvyTzg1A6k5C"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-pathologic-grade-observation-us"/>
     </meta>
     <status value="final"/>
@@ -31,8 +31,8 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="384668003"/>
-            <display value="Nottingham Combined Grade cannot be determined"/>
+            <code value="369791003"/>
+            <display value="Nottingham Combined Grade II: 6-7 points"/>
         </coding>
     </valueCodeableConcept>
 </Observation>

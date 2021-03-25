@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-nottingham-vs"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-05T04:33:55.806+00:00"/>
-        <source value="#0jYBc5ihvBuJJpTS"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-24T18:58:11.868+00:00"/>
+        <source value="#iVXf2ZOYWAUBvopF"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-nottingham-vs"/>
     <name value="BreastNottinghamValueSet"/>
@@ -20,6 +20,18 @@
             <concept>
                 <code value="384668003"/>
                 <display value="Nottingham Combined Grade cannot be determined"/>
+            </concept>
+            <concept>
+                <code value="369790002"/>
+                <display value="Nottingham Combined Grade I: 3-5 points"/>
+            </concept>
+            <concept>
+                <code value="369791003"/>
+                <display value="Nottingham Combined Grade II: 6-7 points"/>
+            </concept>
+            <concept>
+                <code value="369792005"/>
+                <display value="Nottingham Combined Grade III: 8-9 points"/>
             </concept>
         </include>
     </compose>

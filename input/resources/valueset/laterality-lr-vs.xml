@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="laterality-lr-vs"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-15T14:03:09.408+00:00"/>
-        <source value="#ToEmbXjW2upBmYYo"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-24T20:17:25.914+00:00"/>
+        <source value="#XrpAuo2G7eCdCNET"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lr-vs"/>
     <name value="LateralityLeftRightValueSet"/>
     <title value="Laterality Left Right ValueSet"/>
     <status value="draft"/>
+    <description value="Laterality concepts 'left' and 'right'. 'Not Specified' should use standard FHIR concept 'UNK'"/>
     <compose>
         <include>
             <concept>
@@ -20,6 +21,13 @@
             <concept>
                 <code value="24028007"/>
                 <display value="Right"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <concept>
+                <code value="UNK"/>
+                <display value="Unknown"/>
             </concept>
         </include>
     </compose>

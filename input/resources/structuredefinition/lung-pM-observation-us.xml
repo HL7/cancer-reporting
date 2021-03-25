@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-pM-observation-us"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-23T16:10:56.326+00:00"/>
+        <source value="#msx0gIb1vDi6Z6QP"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-pM-observation-us"/>
+    <name value="LungDistantMetastasesObservation"/>
+    <title value="Lung Distant Metastases (pM) Observation"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="21901-4"/>
+                    <display value="Distant metastases.pathology [Class] Cancer"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-pM-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

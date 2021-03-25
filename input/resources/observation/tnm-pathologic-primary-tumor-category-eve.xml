@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="tnm-pathologic-primary-tumor-category-eve"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-14T19:29:24.530+00:00"/>
-        <source value="#D2RFkQnl2OQBgePj"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-24T17:46:13.222+00:00"/>
+        <source value="#j1gTfHVkf1Eluon5"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pT-observation-us"/>
     </meta>
     <status value="final"/>
@@ -35,11 +35,4 @@
             <display value="Tumor &gt;10 mm but ≤20 mm in greatest dimension"/>
         </coding>
     </valueCodeableConcept>
-    <method>
-        <coding>
-            <system value="http://ncithesaurus-stage.nci.nih.gov"/>
-            <code value="C146985"/>
-            <display value="AJCC Cancer Staging Manual 8th Edition"/>
-        </coding>
-    </method>
 </Observation>

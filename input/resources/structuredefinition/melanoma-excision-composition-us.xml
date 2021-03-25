@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="melanoma-excision-composition-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-12T00:02:22.704+00:00"/>
-        <source value="#P3TVOCu1QCIV4Eec"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-24T20:43:48.076+00:00"/>
+        <source value="#K7eSpPGueJVTbLQr"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-excision-composition-us"/>
     <name value="MelanomaExcisionComposition"/>
     <title value="Melanoma Excision Composition"/>
     <status value="active"/>
-    <description value="Melanoma Excision Composition profile"/>
+    <description value="Examination of Excision Specimens From Patients With Melanoma of the Skin (CAP Version 4.2.0.0)"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -48,14 +48,16 @@
         <element id="Composition.section:histologic_type">
             <path value="Composition.section"/>
             <sliceName value="histologic_type"/>
-            <min value="0"/>
-            <max value="*"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:regional_lymph_node">
             <path value="Composition.section"/>
             <sliceName value="regional_lymph_node"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:regional_lymph_node.code">
             <path value="Composition.section.code"/>
@@ -82,7 +84,9 @@
         <element id="Composition.section:lymphovascular_invasion">
             <path value="Composition.section"/>
             <sliceName value="lymphovascular_invasion"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:lymphovascular_invasion.code">
             <path value="Composition.section.code"/>
@@ -109,7 +113,9 @@
         <element id="Composition.section:breslow_thickness">
             <path value="Composition.section"/>
             <sliceName value="breslow_thickness"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:breslow_thickness.code">
             <path value="Composition.section.code"/>
@@ -136,7 +142,9 @@
         <element id="Composition.section:history_of_procedures">
             <path value="Composition.section"/>
             <sliceName value="history_of_procedures"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:history_of_procedures.code">
             <path value="Composition.section.code"/>
@@ -157,6 +165,67 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-resection-procedure-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification">
+            <path value="Composition.section"/>
+            <sliceName value="pathologic_stage_classification"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="xxx_tnm_section"/>
+                    <display value="TODO- AJCC Pathologic Stage Classification"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="3"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pT">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pT"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-pT-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pN">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pN"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-pN-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pM">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pM"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-pM-observation-us"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="colon-rectum-lymphovascular-invasion-vs"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-24T19:38:13.040+00:00"/>
+        <source value="#qDElKLFvQf7Mtty4"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-rectum-lymphovascular-invasion-vs"/>
+    <name value="ColonRectumLymphovascularInvasionVS"/>
+    <title value="Colon/Rectum Lymphovascular Invasion ValueSet"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lymphovascular-invasion-vs"/>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="372265000"/>
+                <display value="Small vessel invasion by tumor present"/>
+            </concept>
+            <concept>
+                <code value="369732007"/>
+                <display value="Venous (large vessel) invasion by tumor present"/>
+            </concept>
+            <concept>
+                <code value="369733002"/>
+                <display value="Venous (large vessel) intramural invasion by tumor present"/>
+            </concept>
+            <concept>
+                <code value="369734008"/>
+                <display value="Venous (large vessel) extramural invasion by tumor present"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

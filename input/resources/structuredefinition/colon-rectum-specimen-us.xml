@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="colon-rectum-specimen-us"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-22T15:10:33.020+00:00"/>
+        <source value="#sIeQxu233HOHbxx6"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-specimen-us"/>
+    <name value="ColonRectumSpecimen"/>
+    <title value="Colon/Rectum Tumor Specimen"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Specimen">
+            <path value="Specimen"/>
+        </element>
+        <element id="Specimen.collection.bodySite">
+            <path value="Specimen.collection.bodySite"/>
+            <min value="1"/>
+            <max value="1"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-tumor-site-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

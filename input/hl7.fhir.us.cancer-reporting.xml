@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="245"/>
-        <lastUpdated value="2021-03-17T20:03:23.625+00:00"/>
-        <source value="#AqnDVKF1sJSYD817"/>
+        <versionId value="374"/>
+        <lastUpdated value="2021-03-25T16:47:02.630+00:00"/>
+        <source value="#gIaVZJep9p42el6w"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -19,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/orders"/>
         </telecom>
     </contact>
-    <description value="The College of American Pathology (CAP) created electronic Cancer Checklist (eCC) Protocols (https://documents.cap.org/protocols/Cancer-Protocols-2020_10Word-and-PDF.zip) for pathologist to use in a laboratory information system (LIS) to capture elements for collecting and reporting cancer patient data.  The CAP eCC protocols support improving information exchange between the pathologist and clinician and the pathologist and cancer registries. The electronic protocols are codified using a proprietary code system called cKeys, which is used by the cancer registries.  However, this code system is not standard among electronic health record (EHR) systems.&#xA;&#xA;Discrete data elements are captured in electronic format in most LISs, however, EHRs receive data from a pathology lab in an unstructured format. The unstructured format limits the ability to make meaningful decisions on the data and to report data to the jurisdiction-based central cancer registries. There is a need to create an electronic data exchange standard for pathologists to share cancer data with clinicians in hospital system.   &#xA;&#xA;This project will use FHIR to support electronic health data exchange of cancer pathology information between a hospital or facility-based laboratory information system (LIS) and hospital or facility-based electronic health record (EHR) system.  The goal is to create a data exchange standard and develop a FHIR implementation guide (IG) for sending pathology data captured by pathologists using the College of American Pathology (CAP) electronic Cancer Checklist (eCC) Protocols into an EHR in a discrete, coded format. Creating a standard should lead to more accurate and complete reporting of information from EHRs to jurisdiction-based central cancer registries.  &#xA;&#xA;The scope of the first version of this IG will focus on the data elements in the eCC Protocols required for reporting the 6 most common types of cancers: breast, lung, colon and rectum, skin, prostate, and central nervous system.  This IG will use the FHIR Document paradigm to exchange information modeled as profiled resources. &#xA;&#xA;For EHR that do not support Bundle endpoints, EHRs should use US Core DocumentReference and base64 encode the content of the document in DocumentReference.content.attachment.data&#xA;&#xA;"/>
+    <description value="The College of American Pathology (CAP) created electronic Cancer Checklist (eCC) Protocols (https://documents.cap.org/protocols/Cancer-Protocols-2020_10Word-and-PDF.zip) for pathologist to use in a laboratory information system (LIS) to capture elements for collecting and reporting cancer patient data.  The CAP eCC protocols support improving information exchange between the pathologist and clinician and the pathologist and cancer registries. The electronic protocols are codified using a proprietary code system called cKeys, which is used by the cancer registries.  However, this code system is not standard among electronic health record (EHR) systems.&#xA;&#xA;Discrete data elements are captured in electronic format in most LISs, however, EHRs receive data from a pathology lab in an unstructured format. The unstructured format limits the ability to make meaningful decisions on the data and to report data to the jurisdiction-based central cancer registries. There is a need to create an electronic data exchange standard for pathologists to share cancer data with clinicians in hospital system.   &#xA;&#xA;This project will use FHIR to support electronic health data exchange of cancer pathology information between a hospital or facility-based laboratory information system (LIS) and hospital or facility-based electronic health record (EHR) system.  The goal is to create a data exchange standard and develop a FHIR implementation guide (IG) for sending pathology data captured by pathologists using the College of American Pathology (CAP) electronic Cancer Checklist (eCC) Protocols into an EHR in a discrete, coded format. Creating a standard should lead to more accurate and complete reporting of information from EHRs to jurisdiction-based central cancer registries.  &#xA;&#xA;The scope of the first version of this IG will focus on the data elements in the eCC Protocols required for reporting the 6 most common types of cancers: breast, lung, colon and rectum, skin, prostate, and central nervous system.  This IG will use the FHIR Document paradigm to exchange information modeled as profiled resources. &#xA;&#xA;For EHR that do not support Bundle endpoints, EHRs should use US Core DocumentReference and base64 encode the content of the document in DocumentReference.content.attachment.data&#xA;&#xA;------------------------------------------------------------------------------------------------&#xA;mCode profiles that satisfy eCC reporting requiremetns and can/should be used include:&#xA;Cancer Patient&#xA;&#xA;&#xA;"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -43,11 +43,15 @@
     <dependsOn id="mcode">
         <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode#1.0.0"/>
         <packageId value="hl7.fhir.us.mcode"/>
-        <version value="1.0.0"/>
+        <version value="dev"/>
     </dependsOn>
     <definition>
+        <grouping id="groupingprofiles">
+            <name value="Grouping Profiles &amp; Terminologies"/>
+            <description value="This group contains all common/shared profiles that are shared across multiple eCC forms"/>
+        </grouping>
         <grouping id="breastprofiles">
-            <name value="BreastProfiles"/>
+            <name value="Breast Profiles"/>
             <description value="This is a grouping of all Brest Related artifacts. &#xA;&#xA;TODO- Figure out top-menu/paging"/>
         </grouping>
         <grouping id="breastterminology">
@@ -118,21 +122,13 @@
             <name value="Brain Terminology"/>
             <description value="This group contains all FHIR artifacts related to the Brain (CNS) eCC"/>
         </grouping>
-        <grouping id="general">
-            <name value="General"/>
-            <description value="This groups all profiles, examples, and terminologies shared across multiple cancer sites in this guide"/>
-        </grouping>
-        <grouping id="abstractprofiles">
-            <name value="Abstract Profiles"/>
-            <description value="This group contains all common/shared profiles that are shared across multiple eCC forms"/>
-        </grouping>
         <resource>
             <reference>
                 <reference value="StructureDefinition/breast-resection-composition-us"/>
                 <display value="Breast Resection Composition"/>
             </reference>
             <name value="Breast Resection Composition"/>
-            <description value="Breast Resection Composition profile"/>
+            <description value="Breast Invasive Resection (CAP Version 4.4.0.0) Composition profile comprised of elements required for central registry reporting"/>
             <exampleBoolean value="false"/>
             <groupingId value="breastprofiles"/>
         </resource>
@@ -143,6 +139,26 @@
             </reference>
             <name value="Breast Resection Procedure"/>
             <description value="Resection Procedure which produced the specimen being examined."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="breastprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/breast-histologic-type-observation-us"/>
+                <display value="BreastHistologicType"/>
+            </reference>
+            <name value="Breast Histologic Type Observation"/>
+            <description value="Histologic Type in the Breast"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="breastprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/breast-resection-pathologic-grade-observation-us"/>
+                <display value="Breast Resection Pathologic Grade Observation"/>
+            </reference>
+            <name value="Breast Resection Histologic Grade (Overall) by Nottingham Observation"/>
+            <description value="The Nottingham combined histologic grade evaluates the amount of tubule formation, the extent of nuclear pleomorphism, and the mitotic count (or mitotic rate)."/>
             <exampleBoolean value="false"/>
             <groupingId value="breastprofiles"/>
         </resource>
@@ -168,30 +184,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/breast-resection-histologic-type-observation-us"/>
-                <display value="Breast Resection Histologic Type Observation"/>
-            </reference>
-            <name value="Breast Resection Histologic Type Observation"/>
-            <description value="Breast Resection Histologic Type"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/breast-resection-pathologic-grade-observation-us"/>
-                <display value="Breast Resection Pathologic Grade Observation"/>
-            </reference>
-            <name value="Breast Resection Pathologic Grade Observation"/>
-            <description value="The Nottingham combined histologic grade evaluates the amount of tubule formation, the extent of nuclear pleomorphism, and the mitotic count (or mitotic rate)."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/breast-resection-presurgical-therapy-us"/>
                 <display value="Breast Presurgical Therapy"/>
             </reference>
-            <name value="Breast Presurgical Therapy"/>
+            <name value="Treatment Effect in the Breast"/>
             <description value="The presurgical or neoadjuvant treatment and its observed effect/outcome. Treatment effect in breast is found in Procedure.outcome"/>
             <exampleBoolean value="false"/>
             <groupingId value="breastprofiles"/>
@@ -203,6 +199,43 @@
             </reference>
             <name value="Breast Treatment Effect in Lymph Node Procedure"/>
             <description value="Treatment Effect in the Lymph Nodes (required if nodes are submitted and it is known that the patient had presurgical therapy). Treatment Effect is found in Procedure.outcome"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="breastprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/breast-lymphovascular-invasion-observation-us"/>
+                <display value="Breast Lymphovascular Invasion Observation"/>
+            </reference>
+            <name value="Breast Lymphovascular Invasion Observation"/>
+            <description value="Lymphovascular Invasion in the Breast"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="breastprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/breast-pT-observation-us"/>
+                <display value="BreastPrimaryTumorObservation"/>
+            </reference>
+            <name value="Breast Primary Tumor (pT) Observation "/>
+            <exampleBoolean value="false"/>
+            <groupingId value="breastprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/breast-pM-observation-us"/>
+                <display value="BreastDistantMetastasisObservation"/>
+            </reference>
+            <name value="Breast Distant Metastasis (pM) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="breastprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/breast-pN-observation-us"/>
+                <display value="BreastRegionalLymphNode"/>
+            </reference>
+            <name value="Breast Regional Lymph Node (pN) Observation"/>
             <exampleBoolean value="false"/>
             <groupingId value="breastprofiles"/>
         </resource>
@@ -238,21 +271,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/breast-lymphovascular-invasion-observation-us"/>
-                <display value="Breast Lymphovascular Invasion Observation"/>
-            </reference>
-            <name value="Breast Lymphovascular Invasion Observation"/>
-            <description value="Lymphovascular Invasion in the Breast"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/lung-resection-composition-us"/>
                 <display value="Lung Resection Composition"/>
             </reference>
             <name value="Lung Resection Composition"/>
-            <description value="Lung Resection Composition profile"/>
+            <description value="Examination of Resection Specimens From Patients With Primary Non-Small Cell Carcinoma, Small Cell Carcinoma, or Carcinoid Tumor of the Lung (CAP Version 4.1.0.1) Composition profile comprised of elements required for central registry reporting"/>
             <exampleBoolean value="false"/>
             <groupingId value="lungprofiles"/>
         </resource>
@@ -267,21 +290,47 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/lung-resection-histologic-type-observation-us"/>
-                <display value="Lung Resection Histologic Type Observation"/>
+                <reference value="StructureDefinition/lung-resection-histologic-type-us"/>
+                <display value="LungHistologicType"/>
             </reference>
-            <name value="Lung Resection Histologic Type Observation"/>
-            <description value="For consistency in reporting, the histologic classification published by the World Health Organization (WHO) for tumors of the lung, including carcinoids, is recommended."/>
+            <name value="Lung Histologic Type Extension"/>
+            <description value="This extension specifies the allowable concepts for Histologic Type on the Lung Resection eCC protocol. It is intended to extend mCode's Primary Cancer Condition and is built upon mCode's Histology-Morphology-Behavior extension. "/>
             <exampleBoolean value="false"/>
             <groupingId value="lungprofiles"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/lung-resection-presurgical-therapy-us"/>
-                <display value="Lung Presurgical Therapy"/>
+                <reference value="StructureDefinition/lung-specimen-us"/>
+                <display value="Lung Tumor Specimen"/>
             </reference>
-            <name value="Lung Presurgical Therapy"/>
-            <description value="Observed pre-surgical treatment in the Lung, and its observed effect/outcome (i.e. relative to the residual viable tumor)"/>
+            <name value="Lung Tumor Specimen"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/lung-pT-observation-us"/>
+                <display value="LungPrimaryTumorObservation"/>
+            </reference>
+            <name value="Lung Primary Tumor (pT) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/lung-pN-observation-us"/>
+                <display value="LungRegionalLymphNodesObservation"/>
+            </reference>
+            <name value="Lung Regional Lymph Nodes (pN) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/lung-pM-observation-us"/>
+                <display value="LungDistantMetastasesObservation"/>
+            </reference>
+            <name value="Lung Distant Metastases (pM) Observation"/>
             <exampleBoolean value="false"/>
             <groupingId value="lungprofiles"/>
         </resource>
@@ -292,6 +341,16 @@
             </reference>
             <name value="Lung Resection Regional Lymph Node Involvement Observation"/>
             <description value="Whether or not regional lymph nodes were assessed and if so, what type of metastasis was observed?"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/lung-resection-presurgical-therapy-us"/>
+                <display value="Lung Presurgical Therapy"/>
+            </reference>
+            <name value="Treatment Effect in the Lung"/>
+            <description value="Observed pre-surgical treatment in the Lung, and its observed effect/outcome (i.e. relative to the residual viable tumor)"/>
             <exampleBoolean value="false"/>
             <groupingId value="lungprofiles"/>
         </resource>
@@ -311,7 +370,7 @@
                 <display value="Melanoma Excision Composition"/>
             </reference>
             <name value="Melanoma Excision Composition"/>
-            <description value="Melanoma Excision Composition profile"/>
+            <description value="Examination of Excision Specimens From Patients With Melanoma of the Skin (CAP Version 4.2.0.0)"/>
             <exampleBoolean value="false"/>
             <groupingId value="melanomaprofiles"/>
         </resource>
@@ -321,15 +380,6 @@
                 <display value="Melanoma Resection Procedure"/>
             </reference>
             <name value="Melanoma Resection Procedure"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="melanomaprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/melanoma-excision-histologic-type-observation-us"/>
-                <display value="Melanoma Excision Histologic Type Observation"/>
-            </reference>
-            <name value="Melanoma Excision Histologic Type Observation"/>
             <exampleBoolean value="false"/>
             <groupingId value="melanomaprofiles"/>
         </resource>
@@ -372,21 +422,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/central-nervous-system-histologic-type-observation-us"/>
-                <display value="Central Nervous System Histologic Type Observation"/>
-            </reference>
-            <name value="Central Nervous System Histologic Type Observation"/>
-            <description value="Classicification of Histologic Type for CNS tumors. This observation profile contains specific tumor types for: Diffuse astrocytic and oligodendroglial tumors, Other astrocytic tumors, Ependymal tumors, Other gliomas, Choroid plexus tumors, Neuronal and mixed neuronal–glial tumors, Tumors of the pineal region, Embryonal tumors, Meningiomas, Mesenchymal, non-meningothelial tumors, Melanocytic tumors, Germ cell tumors, Tumors of the sellar region, and Pituitary tumors."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/central-nervous-system-composition-us"/>
                 <display value="Central Nervous System Composition"/>
             </reference>
             <name value="Central Nervous System Composition"/>
-            <description value="Lung Composition profile"/>
+            <description value="Central Nervous System Specimen Examination (CAP Version 4.0.0.0) Composition profile comprised of elements required for central registry reporting"/>
             <exampleBoolean value="false"/>
             <groupingId value="brainprofiles"/>
         </resource>
@@ -395,7 +435,7 @@
                 <reference value="StructureDefinition/cns-presurgical-treatment-effect-procedure-us"/>
                 <display value="Central Nervous System Presurgical Treatment"/>
             </reference>
-            <name value="Central Nervous System Presurgical Treatment"/>
+            <name value="Treatment Effect in the Central Nervous System"/>
             <description value="Knowledge of preoperative treatment, including radiation therapy, chemotherapy, corticosteroid therapy, embolization, and other therapy, is helpful for specimen interpretation.&#xA;&#xA;"/>
             <exampleBoolean value="false"/>
             <groupingId value="brainprofiles"/>
@@ -416,16 +456,7 @@
                 <display value="Prostate Resection Composition"/>
             </reference>
             <name value="Prostate Resection Composition"/>
-            <description value="Radical Prostaectomy Composition profile"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="prostateprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/prostate-resection-histologic-type-observation-us"/>
-                <display value="Prostate Resection Histologic Type Observation"/>
-            </reference>
-            <name value="Prostate Resection Histologic Type Observation"/>
+            <description value="Protocol for the Examination of Radical Prostatectomy Specimens From Patients With Carcinoma of the Prostate Gland (CAP Version 4.1.0.1) for reportable data to central cancer registries"/>
             <exampleBoolean value="false"/>
             <groupingId value="prostateprofiles"/>
         </resource>
@@ -452,7 +483,7 @@
                 <reference value="StructureDefinition/prostate-resection-presurgical-therapy-procedure-us"/>
                 <display value="Prostate Presurgical Therapy"/>
             </reference>
-            <name value="Prostate Presurgical Therapy"/>
+            <name value="Treatment Effect in the Prostate"/>
             <exampleBoolean value="false"/>
             <groupingId value="prostateprofiles"/>
         </resource>
@@ -471,17 +502,7 @@
                 <display value="Colon/Rectum Resection Composition"/>
             </reference>
             <name value="Colon/Rectum Resection Composition"/>
-            <description value="Colon/Rectum Resection Composition profile"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="colonrectumprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/colon-rectum-resection-histologic-type-observation-us"/>
-                <display value="Colon/Rectum Resection Histologic Type Observation"/>
-            </reference>
-            <name value="Colon/Rectum Resection Histologic Type Observation"/>
-            <description value="For consistency in reporting, the histologic classification proposed by the World Health Organization (WHO) is recommended for Colon/Rectum Resection reporting"/>
+            <description value="Colon and Rectum Primary Carcinoma Resection (CAP Version 4.1.0.0) Composition profile comprised of elements required for central registry reporting"/>
             <exampleBoolean value="false"/>
             <groupingId value="colonrectumprofiles"/>
         </resource>
@@ -520,7 +541,7 @@
                 <reference value="StructureDefinition/colon-rectum-resection-presurgical-therapy-procedure-us"/>
                 <display value="Colon/Rectum Presurgical Therapy"/>
             </reference>
-            <name value="Colon/Rectum Presurgical Therapy"/>
+            <name value="Treatment Effect in the Colon/Rectum"/>
             <description value="Whther pre-surgical Treatment Effect of Colon/Rectum is observed or not, and if observed, the score of the response to the treatment)."/>
             <exampleBoolean value="false"/>
             <groupingId value="colonrectumprofiles"/>
@@ -534,15 +555,6 @@
             <description value="Which procedure was performed to produce the specimen in question. Includes specimens designated total, partial, or segmental resection (Colectomy) as well as Rectal Resections, including low anterior resection or abdominoperineal resections."/>
             <exampleBoolean value="false"/>
             <groupingId value="colonrectumprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/breast-specimen-site-us"/>
-                <display value="BreastSpecimenTumorSite"/>
-            </reference>
-            <name value="Breast Specimen Tumor Site"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
         </resource>
         <resource>
             <reference>
@@ -618,51 +630,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/breast-lymphovascular-invasion-vs"/>
-                <display value="BreastLymphovascularInvasionValueSet"/>
-            </reference>
-            <name value="Breast Lymphovascular Invasion ValueSet"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastterminology"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/breast-specimen-laterality-us"/>
-                <display value="BreastSpecimenLaterality"/>
-            </reference>
-            <name value="Breast Specimen Laterality Extension"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/breast-pT-observation-us"/>
-                <display value="BreastPrimaryTumorObservation"/>
-            </reference>
-            <name value="Breast Primary Tumor (pT) Observation "/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/breast-pN-observation-us"/>
-                <display value="BreastRegionalLymphNode"/>
-            </reference>
-            <name value="Breast Regional Lymph Node (pN) Observation"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/breast-pM-observation-us"/>
-                <display value="BreastDistantMetastasisObservation"/>
-            </reference>
-            <name value="Breast Distant Metastasis (pM) Observation"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="breastprofiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Composition/breast-composition-example"/>
                 <display value="Protocol for the Examination of Resection Specimens From Patients  With Invasive Carcinoma of the Breast"/>
             </reference>
@@ -681,22 +648,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Specimen/breast-specimen-example-2"/></reference>
-            <name value="Specimen example 1"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genetic-specimen"/>
-            <groupingId value="breastexamples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Specimen/breast-specimen-example-1"/></reference>
-            <name value="Specimen example 2"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genetic-specimen"/>
-            <groupingId value="breastexamples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Procedure/Procedure-breast-cancer-related-surgical-procedure"/></reference>
             <name value="Breast Resection Procedure example"/>
             <exampleBoolean value="false"/>
@@ -709,15 +660,6 @@
             <name value="Cancer Patient example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
-            <groupingId value="general"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/breast-histologic-type-observation"/></reference>
-            <name value="Histologic Type Observation"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-histologic-type-observation-us"/>
-            <groupingId value="breastexamples"/>
         </resource>
         <resource>
             <reference>
@@ -734,6 +676,15 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pT-observation-us"/>
             <groupingId value="breastexamples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/breast-specimen-laterality-us"/>
+                <display value="BreastSpecimenLaterality"/>
+            </reference>
+            <name value="Breast Specimen Laterality Extension"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="breastprofiles"/>
         </resource>
         <resource>
             <reference>
@@ -810,24 +761,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/laterality-lr-vs"/>
-                <display value="Laterality Left Right ValueSet"/>
-            </reference>
-            <name value="Laterality Left Right ValueSet"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abstractprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/laterality-lrm-vs"/>
-                <display value="Laterality Left Right Midline ValueSet"/>
-            </reference>
-            <name value="Laterality Left Right Midline ValueSet"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abstractprofiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/laterality"/>
                 <display value="Melanoma Specimen Laterality"/>
             </reference>
@@ -837,30 +770,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/regional-lymphnode-involvement-observation-us"/>
-                <display value="RegionalLymphNodeInvolvement"/>
-            </reference>
-            <name value="Regional Lymph Node Involvement"/>
-            <description value="This profile that serves as the foundation for all site-specific Regional Lymph Node profiles to be specified. "/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abstractprofiles"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/breast-regional-lymphnode-involvement-panel"/></reference>
             <name value="Breast Regional Lymph Node Involvement Panel"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-regional-lymphnode-involvement-observation-us"/>
             <groupingId value="breastexamples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/examined-nodal-station"/>
-                <display value="ExaminedExtraNodalStation"/>
-            </reference>
-            <name value="Examined Nodal Station"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="general"/>
         </resource>
         <resource>
             <reference>
@@ -885,7 +799,7 @@
             </reference>
             <name value="Skin Regional Lymph Node Location"/>
             <exampleBoolean value="false"/>
-            <groupingId value="general"/>
+            <groupingId value="melanomaprofiles"/>
         </resource>
         <resource>
             <reference>
@@ -894,7 +808,7 @@
             </reference>
             <name value="Regional Lymph Node Location"/>
             <exampleBoolean value="false"/>
-            <groupingId value="general"/>
+            <groupingId value="melanomaterminology"/>
         </resource>
         <resource>
             <reference>
@@ -906,15 +820,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/regional-lymph-node-sites"/>
-                <display value="RegionalLymphNodeSites"/>
-            </reference>
-            <name value="Regional Lymph Node Sites"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="general"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/prostate-regional-lymphnode-involvement-panel"/></reference>
             <name value="Prostate Regional Lymph Node Involvement Panel"/>
             <exampleBoolean value="false"/>
@@ -923,28 +828,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/histologic-type-observation-us"/>
-                <display value="HistologicTypeObservation"/>
-            </reference>
-            <name value="HistologicTypeObservation"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="abstractprofiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/histologic-type-site-vs"/>
-                <display value="Histologic Type ValueSet"/>
-            </reference>
-            <name value="Histologic Type ValueSet"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="general"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/colon-histologic-type-vs"/>
                 <display value="ColonHistologicTypeValueSet"/>
             </reference>
-            <name value="ColonHistologicTypeValueSet"/>
+            <name value="Colon/Rectum Histologic Type ValueSet"/>
             <exampleBoolean value="false"/>
             <groupingId value="colonrectumterminology"/>
         </resource>
@@ -953,7 +840,7 @@
                 <reference value="ValueSet/lung-histologic-type-vs"/>
                 <display value="LungHistologicTypeValueSet"/>
             </reference>
-            <name value="LungHistologicTypeValueSet"/>
+            <name value="Lung Histologic Type ValueSet"/>
             <exampleBoolean value="false"/>
             <groupingId value="lungterminology"/>
         </resource>
@@ -962,7 +849,7 @@
                 <reference value="ValueSet/prostate-histologic-type-vs"/>
                 <display value="ProstateHistologicTypeValueSet"/>
             </reference>
-            <name value="ProstateHistologicTypeValueSet"/>
+            <name value="Prostate Histologic Type ValueSet"/>
             <exampleBoolean value="false"/>
             <groupingId value="prostateterminology"/>
         </resource>
@@ -971,18 +858,483 @@
                 <reference value="ValueSet/melanoma-histologic-type-vs"/>
                 <display value="MelanomaHistologicTypeValueSet"/>
             </reference>
-            <name value="MelanomaHistologicTypeValueSet"/>
+            <name value="Melanoma Histologic TypeValueSet"/>
             <exampleBoolean value="false"/>
             <groupingId value="melanomaterminology"/>
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/overarching-histologic-type-vs"/>
-                <display value="Overarching Histologic Type ValueSet"/>
+                <reference value="ValueSet/colon-procedure-vs"/>
+                <display value="ColonProcedureValueSet"/>
             </reference>
-            <name value="Overarching Histologic Type ValueSet"/>
+            <name value="Colon/Rectum Procedure ValueSet"/>
             <exampleBoolean value="false"/>
-            <groupingId value="abstractprofiles"/>
+            <groupingId value="colonrectumterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/colon-rectum-specimen-us"/>
+                <display value="ColonRectumSpecimen"/>
+            </reference>
+            <name value="Colon/Rectum Specimen"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/colon-tumor-site-vs"/>
+                <display value="ColonTumorSiteValueSet"/>
+            </reference>
+            <name value="Colon/Rectum Tumor Site ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/lung-tumor-site-vs"/>
+                <display value="LungTumorSiteValueSet"/>
+            </reference>
+            <name value="Lung Tumor Site ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/cns-tumor-specimen-us"/>
+                <display value="CNSTumorSpecimen"/>
+            </reference>
+            <name value="Central Nervous SystemTumor Specimen"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="brainexamples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/cns-tumor-site-vs"/>
+                <display value="CNSTumorSiteValueSet"/>
+            </reference>
+            <name value="Central Nervous System Tumor Site ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="brainterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/melanoma-pT-observation-us"/>
+                <display value="MelanomaPrimaryTumorObservation"/>
+            </reference>
+            <name value="Melanoma Primary Tumor (pT) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/melanoma-pT-vs"/>
+                <display value="MelanomapTValueSet"/>
+            </reference>
+            <name value="Melanoma Primary Tumor (pT) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/lung-pT-vs"/>
+                <display value="LungpTValueSet"/>
+            </reference>
+            <name value="Lung Primary Tumor (pT) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/colon-rectum-pT-observation-us"/>
+                <display value="ColonRectumPrimaryTumorObservation"/>
+            </reference>
+            <name value="Colon/Rectum Primary Tumor (pT) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/colon-rectum-pT-vs"/>
+                <display value="ColonRectumTValueSet"/>
+            </reference>
+            <name value="Colon/Rectum Primary Tumor (pT) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/prostate-pT-vs"/>
+                <display value="ProstatepTValueSet"/>
+            </reference>
+            <name value="Prostate Primary Tumor (pT) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/prostate-pT-observation-us"/>
+                <display value="ProstatePrimaryTumorValueSet"/>
+            </reference>
+            <name value="Prostate Primary Tumor (pT) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/melanoma-pN-vs"/>
+                <display value="MelanomapNValueSet"/>
+            </reference>
+            <name value="Melanoma Regional Lymph Nodes (pN) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/melanoma-pN-observation-us"/>
+                <display value="MelanomaRegionalLymphNodesObservation"/>
+            </reference>
+            <name value="Melanoma Regional Lymph Nodes (pN) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/colon-rectum-pN-observation-us"/>
+                <display value="ColonRectumRegionalLymphNodesObservation"/>
+            </reference>
+            <name value="Colon/Rectum Regional Lymph Nodes (pN) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/colon-rectum-pN-vs"/>
+                <display value="ColonRectumpNValueSet"/>
+            </reference>
+            <name value="Colon/Rectum Regional Lymph Nodes (pN) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/lung-pN-vs"/>
+                <display value="LungpNValueSet"/>
+            </reference>
+            <name value="Lung Regional Lymph Nodes (pN) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/prostate-pN-vs"/>
+                <display value="ProstatepNValueSet"/>
+            </reference>
+            <name value="Prostate Regional Lymph Nodes (pN) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/prostate-pN-observation-us"/>
+                <display value="ProstateRegionalLymphNodespNObservation"/>
+            </reference>
+            <name value="Prostate Regional Lymph Nodes (pN) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateexamples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/colon-rectum-resection-histologic-type-us"/>
+                <display value="ColonRectumResectionHistologicType"/>
+            </reference>
+            <name value="Colon/Rectum Histologic Type Extension"/>
+            <description value="this extension specifies the allowable terminology for the Colon/Rectum Resection eCC protocol."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/melanoma-excision-histologic-type-us"/>
+                <display value="MelanomaHistologicType"/>
+            </reference>
+            <name value="Melanoma Histologic Type Extension"/>
+            <description value="This extension specifies the allowable concepts for Histologic Type on the Melanoma Excision eCC protocol. It is build upon mCode's 'Histology-Morphology-Behavior' extension and is inteded to extend Primary Cancer Condition"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaexamples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/prostate-resection-histologic-type-us"/>
+                <display value="ProstateHistologicType"/>
+            </reference>
+            <name value="Prostate Histologic Type Extension"/>
+            <description value="This extensions specifies the allwoable concepts on the Prostate eCC form. It is built upon mCode's 'Histology-Morphology-BEhavior' extension and specifically extends Primary Cancer Condition."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/melanoma-pM-vs"/>
+                <display value="MelanomapMValueSet"/>
+            </reference>
+            <name value="Melanoma Distant Metastases (pM) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/melanoma-pM-observation-us"/>
+                <display value="MelanomaDistantMetastasisObservation"/>
+            </reference>
+            <name value="Melanoma Distant Metastases (pM) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/colon-rectum-pM-observation-us"/>
+                <display value="ColonRectumDistantMetastasesObservation"/>
+            </reference>
+            <name value="Colon/Rectum Distant Metastases (pM) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/colon-rectum-pM-vs"/>
+                <display value="ColonRectumpMValueSet"/>
+            </reference>
+            <name value="Colon/Rectum Distant Metastases (pM) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/lung-pM-vs"/>
+                <display value="LungpMValueSet"/>
+            </reference>
+            <name value="Lung Distant Metastases (pM) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/grouping-primary-tumor-us"/>
+                <display value="PrimaryTumorObservation"/>
+            </reference>
+            <name value="Grouping Primary Tumor (pT) Observation"/>
+            <description value="Observation specifying the allowable Primary Tumor (pT) AJCC concepts as equivilent Snomed CT terms."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/prostate-pM-observation-us"/>
+                <display value="ProstateDistantMetastasesObservation"/>
+            </reference>
+            <name value="Prostate Distant Metastases (pM) Observation"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/regional-lymph-nodes-observation-us"/>
+                <display value="RegionalLymphNodesObservation"/>
+            </reference>
+            <name value="Grouping Regional Lymph Nodes (pN) Observation"/>
+            <description value="Observation specifying the allowable Regional Lymph Nodes (pN) AJCC concepts as equivilent Snomed CT terms."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/distant-metastases-observation-us"/>
+                <display value="DistantMetastasesObservation"/>
+            </reference>
+            <name value="Grouping Distant Metastases (pM) Observation"/>
+            <description value="Observation specifying the allowable Distant Metastases (pM) AJCC concepts as equivilent Snomed CT terms."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/regional-lymphnode-involvement-observation-us"/>
+                <display value="RegionalLymphNodeInvolvement"/>
+            </reference>
+            <name value="Grouping Regional Lymph Node Involvement"/>
+            <description value="This profile groups all Regional Lymph Node Involvement information"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/lymphovascular-invasion-observation-us"/>
+                <display value="LymphovascularInvasion"/>
+            </reference>
+            <name value="Lymphovascular Invasion"/>
+            <description value="This grouping profile specifies common structure and terminology related to Lymphovascular Invasion across the following eCC protocols: Breast Resection, Lung Resection, Colon/Rectum Resection, Melanoma Excision, and examination of Prostate and Brain specimens. "/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/regional-lymph-node-sites"/>
+                <display value="RegionalLymphNodeSites"/>
+            </reference>
+            <name value="Grouping Regional Lymph Node Sites"/>
+            <description value="Specify free text (string) or CodeableConcepts for involved Regional Lymph Node Sites and Laterality"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/examined-nodal-station"/>
+                <display value="ExaminedExtraNodalStation"/>
+            </reference>
+            <name value="Examined Nodal Station Extension"/>
+            <description value="Extension for the free-text exntry describing examined nodal station(s) in a pathologic specimen"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/grouping-histologic-type-vs"/>
+                <display value="Grouping Histologic Type ValueSet"/>
+            </reference>
+            <name value="Grouping Histologic Type ValueSet"/>
+            <description value="All allowable Histologic Type Snomed Concepts"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/grouping-primary-tumor-vs"/>
+                <display value="Primary Tumor (pT) ValueSet"/>
+            </reference>
+            <name value="Grouping Primary Tumor (pT) ValueSet"/>
+            <description value="All allowable Primary Tumor (pT) Snomed concepts"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/grouping-pn-vs"/>
+                <display value="GroupingRegional Lymph Nodes (pN) ValueSet"/>
+            </reference>
+            <name value="Grouping Regional Lymph Nodes (pN) ValueSet"/>
+            <description value="All allowable Regional Lymph Nodes (pN) Snomed concepts"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/prostate-pM-vs"/>
+                <display value="ProstatepMValueSet"/>
+            </reference>
+            <name value="Prostate Distant Metastases (pM) ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/grouping-pM-vs"/>
+                <display value="Grouping Distant Metastases (pM) ValueSet"/>
+            </reference>
+            <name value="Grouping Distant Metastases (pM) ValueSet"/>
+            <description value="All allowable Distant Metastases (pM) Snomed concepts"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/lymphovascular-invasion-vs"/>
+                <display value="LymphovascularInvasionValueSet"/>
+            </reference>
+            <name value="Grouping Lymphovascular Invasion ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/laterality-lr-vs"/>
+                <display value="Laterality Left Right ValueSet"/>
+            </reference>
+            <name value="Laterality Left Right ValueSet"/>
+            <description value="Laterality concepts 'left' and 'right'. 'Not Specified' should use standard FHIR concept 'UNK'"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/laterality-lrm-vs"/>
+                <display value="Laterality Left Right Midline ValueSet"/>
+            </reference>
+            <name value="Laterality Left Right Midline ValueSet"/>
+            <description value="Grouping Valueset comprised of 'left' and 'right' and adding 'midline' for Melanoma eCC; 'Not Specified' should use standard FHIR concept 'UNK'"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/melanoma-specimen-laterality-us"/>
+                <display value="MelanomaSpecimenLaterality"/>
+            </reference>
+            <name value="Melanoma Specimen Laterality"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="melanomaprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/lung-specimen-laterality-us"/>
+                <display value="LungSpecimenLaterality"/>
+            </reference>
+            <name value="Lung Specimen Laterality"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="lungprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/prostate-specimen-us"/>
+                <display value="ProstateSpecimen"/>
+            </reference>
+            <name value="Prostate Specimen"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="prostateprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/breast-specimen-example-1"/></reference>
+            <name value="Breast Specimen"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
+            <groupingId value="breastexamples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/colon-rectum-lymphovascular-invasion-vs"/>
+                <display value="Colon/Rectum Lymphovascular Invasion ValueSet"/>
+            </reference>
+            <name value="Colon/Rectum Lymphovascular Invasion ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumterminology"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/lung-lymphovascular-invasion-vs"/>
+                <display value="Lung Lymphovascular Invasion ValueSet"/>
+            </reference>
+            <name value="Lung Lymphovascular Invasion ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="colonrectumprofiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/histologic-grade-vs"/>
+                <display value="Histologic Grade ValueSet"/>
+            </reference>
+            <name value="Histologic Grade ValueSet"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="groupingprofiles"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

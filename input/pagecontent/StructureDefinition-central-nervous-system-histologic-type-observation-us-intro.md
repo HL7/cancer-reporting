@@ -1,1 +1,0 @@
-Classification should be made according to the WHO classification of tumors of the nervous system and the WHO classification of tumors of the endocrine organs whenever possible. 

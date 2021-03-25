@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="colon-rectum-pT-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-23T00:43:54.853+00:00"/>
+        <source value="#knwSM44xgVZvsZLI"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-rectum-pT-vs"/>
+    <name value="ColonRectumTValueSet"/>
+    <title value="ColonRectumTValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="39880006"/>
+                <display value="pT0 category"/>
+            </concept>
+            <concept>
+                <code value="373201004"/>
+                <display value="pTis: Carcinoma in situ, invasion of lamina propria"/>
+            </concept>
+            <concept>
+                <code value="373200003"/>
+                <display value="pT1: Tumor invades submucosa (colon/rectum)"/>
+            </concept>
+            <concept>
+                <code value="395706002"/>
+                <display value="pT2: Tumor invades muscularis propria"/>
+            </concept>
+            <concept>
+                <code value="395707006"/>
+                <display value="pT3: Tumor invades through the muscularis propria into the subserosa or into non-peritonealized pericolic or perirectal tissues"/>
+            </concept>
+            <concept>
+                <code value="6123003"/>
+                <display value="pT4 category"/>
+            </concept>
+            <concept>
+                <code value="11781000132104"/>
+                <display value="pT4a: Tumor penetrates to surface of visceral peritoneum (colon/rectum)"/>
+            </concept>
+            <concept>
+                <code value="723187003"/>
+                <display value="pT4b: Tumor directly invades or is adherent to other organs or structures (colon/rectum)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-pM-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-14T18:27:18.793+00:00"/>
-        <source value="#TSSr5mo1qP5XZWrM"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-23T16:04:45.275+00:00"/>
+        <source value="#4VcwiOweyXYvoztL"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pM-observation-us"/>
     <name value="BreastDistantMetastasisObservation"/>
@@ -38,6 +38,9 @@
             <path value="Observation.value[x]"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>

@@ -3,13 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-procedure-vs"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-05T04:34:03.352+00:00"/>
-        <source value="#JFK4HEFciP8XTNu1"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-24T18:22:57.052+00:00"/>
+        <source value="#Ac4Bk3ufxpBIsGEQ"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-procedure-vs"/>
     <name value="BreastProcedureValueSet"/>
     <title value="BreastProcedureValueSet"/>
+    <status value="draft"/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
@@ -20,6 +21,13 @@
             <concept>
                 <code value="172043006"/>
                 <display value="Simple mastectomy"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <concept>
+                <code value="UNK"/>
+                <display value="Unknown"/>
             </concept>
         </include>
     </compose>

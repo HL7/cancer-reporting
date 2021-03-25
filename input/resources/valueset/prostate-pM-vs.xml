@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="prostate-pM-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-23T15:50:59.226+00:00"/>
+        <source value="#fSrGTS9b239BMzqn"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/prostate-pM-vs"/>
+    <name value="ProstatepMValueSet"/>
+    <title value="ProstatepMValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="14926007"/>
+                <display value="pM1 category (finding)"/>
+            </concept>
+            <concept>
+                <code value="397213002"/>
+                <display value="pM1a: Distant metastasis to non-regional lymph node(s) (prostate) (finding)"/>
+            </concept>
+            <concept>
+                <code value="397214008"/>
+                <display value="pM1b: Distant metastasis to bone(s) (prostate) (finding)"/>
+            </concept>
+            <concept>
+                <code value="397215009"/>
+                <display value="pM1c: Distant metastasis site other than bone or non-regional lymph node(s) (prostate) (finding)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="laterality-lrm-vs"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-15T14:11:39.970+00:00"/>
-        <source value="#MP8pWMndEQeEN7JW"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-24T20:19:44.357+00:00"/>
+        <source value="#k3zSS4qNwc7bhB32"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lrm-vs"/>
     <name value="Laterality Left Right Midline ValueSet"/>
     <title value="Laterality Left Right Midline ValueSet"/>
     <status value="draft"/>
+    <description value="Grouping Valueset comprised of 'left' and 'right' and adding 'midline' for Melanoma eCC; 'Not Specified' should use standard FHIR concept 'UNK'"/>
     <compose>
         <include>
             <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lr-vs"/>

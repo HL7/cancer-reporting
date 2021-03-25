@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="histologic-grade-vs"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-25T14:51:10.942+00:00"/>
+        <source value="#KtEAwj6cFAMvnWbD"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/histologic-grade-vs"/>
+    <name value="HistologicGradeValueSet"/>
+    <title value="Histologic Grade ValueSet"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="54102005"/>
+                <display value="G1: well differentiated"/>
+            </concept>
+            <concept>
+                <code value="1663004"/>
+                <display value="G2: moderately differentiated"/>
+            </concept>
+            <concept>
+                <code value="61026006"/>
+                <display value="G3: poorly differentiated"/>
+            </concept>
+            <concept>
+                <code value="258245003"/>
+                <display value="G4: undifferentiated"/>
+            </concept>
+            <concept>
+                <code value="12619005"/>
+                <display value="GX: Grade cannot be assessed"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

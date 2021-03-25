@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-resection-pathologic-grade-observation-us"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-11T23:45:14.272+00:00"/>
-        <source value="#XZueQpC6s3HhIqvb"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-25T16:36:19.032+00:00"/>
+        <source value="#taxsVVVjGTQWnE48"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-pathologic-grade-observation-us"/>
     <name value="BreastResectionPathologicGradeObservation"/>
@@ -47,6 +47,15 @@
                 <strength value="required"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-nottingham-vs"/>
             </binding>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="melanoma-pN-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-23T01:27:09.305+00:00"/>
+        <source value="#DDutAAZ6TFCLomnM"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/melanoma-pN-vs"/>
+    <name value="MelanomapNValueSet"/>
+    <title value="MelanomapNValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="384983005"/>
+                <display value="pNX category"/>
+            </concept>
+            <concept>
+                <code value="21917009"/>
+                <display value="pN0 category"/>
+            </concept>
+            <concept>
+                <code value="45552005"/>
+                <display value="pN1 category (finding)"/>
+            </concept>
+            <concept>
+                <code value="443716008"/>
+                <display value="pN1a category"/>
+            </concept>
+            <concept>
+                <code value="443599002"/>
+                <display value="pN1b category"/>
+            </concept>
+            <concept>
+                <code value="443743003"/>
+                <display value="pN1c category"/>
+            </concept>
+            <concept>
+                <code value="15076001"/>
+                <display value="pN2 category"/>
+            </concept>
+            <concept>
+                <code value="443867001"/>
+                <display value="pN2a category"/>
+            </concept>
+            <concept>
+                <code value="443452006"/>
+                <display value="pN2b category"/>
+            </concept>
+            <concept>
+                <code value="443893008"/>
+                <display value="pN2c category"/>
+            </concept>
+            <concept>
+                <code value="49182004"/>
+                <display value="pN3 category"/>
+            </concept>
+            <concept>
+                <code value="443962008"/>
+                <display value="pN3b category"/>
+            </concept>
+            <concept>
+                <code value="443823003"/>
+                <display value="pN3c category"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

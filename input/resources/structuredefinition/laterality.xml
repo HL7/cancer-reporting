@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="laterality"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-16T22:39:31.121+00:00"/>
-        <source value="#QCgwOdSxgxOzAxlc"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-23T16:53:04.675+00:00"/>
+        <source value="#d4uIMe8dpwnXJJi8"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/laterality"/>
     <name value="SpecimenLaterality"/>
@@ -30,6 +30,9 @@
             <path value="Extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>

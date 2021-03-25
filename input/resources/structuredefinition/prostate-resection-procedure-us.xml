@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-resection-procedure-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-05T19:06:46.677+00:00"/>
-        <source value="#9TepMRRKRXYbfqq6"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-23T19:39:15.645+00:00"/>
+        <source value="#jMLU6QNY2eWhMr0A"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-procedure-us"/>
     <name value="ProstateProcedure"/>
@@ -15,7 +15,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Procedure"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Procedure">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-tissue-specimen-us"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-12T18:13:52.128+00:00"/>
-        <source value="#wEcu2r6C9n99pYju"/>
+        <versionId value="12"/>
+        <lastUpdated value="2021-03-24T18:37:33.412+00:00"/>
+        <source value="#4M7qr24QVOTIgWqP"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
     <name value="BreastTissueSpecimen"/>
@@ -16,7 +16,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Specimen"/>
-    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genetic-specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Specimen">
@@ -24,19 +24,27 @@
         </element>
         <element id="Specimen.collection">
             <path value="Specimen.collection"/>
-            <mustSupport value="true"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Specimen.collection.bodySite">
             <path value="Specimen.collection.bodySite"/>
+            <comment value="Note- Specimen.collection.bodySite may or may not be the same as the Tumor Site. Tumor Site (as it realtes to CAP eCC reporting to cancer registries SHALL be found in the Condition.bodySite, and may also be found in Specimen.collection.bodySite"/>
             <min value="1"/>
             <max value="1"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-tumor-site-vs"/>
+            </binding>
         </element>
         <element id="Specimen.collection.bodySite.extension">
             <path value="Specimen.collection.bodySite.extension"/>
             <slicing>
                 <rules value="open"/>
             </slicing>
+            <min value="1"/>
         </element>
         <element id="Specimen.collection.bodySite.extension:breast_specimen_laterality">
             <path value="Specimen.collection.bodySite.extension"/>
@@ -48,16 +56,6 @@
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-specimen-laterality-us"/>
             </type>
             <mustSupport value="true"/>
-        </element>
-        <element id="Specimen.collection.bodySite.coding">
-            <path value="Specimen.collection.bodySite.coding"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-tumor-site-vs"/>
-            </binding>
         </element>
     </differential>
 </StructureDefinition>

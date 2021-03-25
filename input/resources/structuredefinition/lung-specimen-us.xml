@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-specimen-us"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-23T16:56:25.584+00:00"/>
+        <source value="#O5lc3Btqhq4mOtR8"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-us"/>
+    <name value="LungTumorSpecimen"/>
+    <title value="Lung Tumor Specimen"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-specimen"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Specimen">
+            <path value="Specimen"/>
+        </element>
+        <element id="Specimen.collection.bodySite.extension">
+            <path value="Specimen.collection.bodySite.extension"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Specimen.collection.bodySite.extension:lung_laterality">
+            <path value="Specimen.collection.bodySite.extension"/>
+            <sliceName value="lung_laterality"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-laterality-us"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

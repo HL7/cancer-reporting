@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="colon-rectum-lymphovascular-invasion-observation-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-05T19:06:47.489+00:00"/>
-        <source value="#I1NoRe7mnWjqvAoX"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-24T19:38:53.689+00:00"/>
+        <source value="#7OskxjymUukFnsHz"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-lymphovascular-invasion-observation-us"/>
     <name value="ColonRectumLymphovascularInvasionObservation"/>
@@ -16,11 +16,24 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lymphovascular-invasion-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-rectum-lymphovascular-invasion-vs"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="colon-procedure-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-22T14:57:18.479+00:00"/>
+        <source value="#aZVRuDHdKEYt5HwX"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-procedure-vs"/>
+    <name value="ColonProcedureValueSet"/>
+    <title value="ColonProcedureValueSet"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="359571009"/>
+                <display value="Right colectomy"/>
+            </concept>
+            <concept>
+                <code value="26925005"/>
+                <display value="Transverse colectomy"/>
+            </concept>
+            <concept>
+                <code value="82619000"/>
+                <display value="Left colectomy"/>
+            </concept>
+            <concept>
+                <code value="84604002"/>
+                <display value="Sigmoid colectomy"/>
+            </concept>
+            <concept>
+                <code value="314592008"/>
+                <display value="Low anterior resection of rectum"/>
+            </concept>
+            <concept>
+                <code value="456004"/>
+                <display value="Total abdominal colectomy with ileostomy"/>
+            </concept>
+            <concept>
+                <code value="265414003"/>
+                <display value="Abdominoperineal resection of rectum"/>
+            </concept>
+            <concept>
+                <code value="443665007"/>
+                <display value="Transanal disk excision of rectum"/>
+            </concept>
+            <concept>
+                <code value="10381000132106"/>
+                <display value="Endoscopic mucosal resection of gastrointestinal tract"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

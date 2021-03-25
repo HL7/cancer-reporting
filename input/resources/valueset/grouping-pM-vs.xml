@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="grouping-pM-vs"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-24T20:15:12.068+00:00"/>
+        <source value="#cY1uO2LRTxSLcdj7"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/grouping-pM-vs"/>
+    <name value="GroupingDistantMetastasesValueSet"/>
+    <title value="Grouping Distant Metastases (pM) ValueSet"/>
+    <status value="draft"/>
+    <description value="All allowable Distant Metastases (pM) Snomed concepts"/>
+    <compose>
+        <include>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-pM-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/melanoma-pM-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-rectum-pM-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-pM-vs"/>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/prostate-pM-vs"/>
+        </include>
+    </compose>
+</ValueSet>

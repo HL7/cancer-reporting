@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="lung-resection-composition-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-12T00:01:27.175+00:00"/>
-        <source value="#iR6CG120wpp9VxOW"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-24T20:40:17.232+00:00"/>
+        <source value="#zBch0OGxb5hl6wak"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-resection-composition-us"/>
     <name value="LungResectionComposition"/>
     <title value="Lung Resection Composition"/>
     <status value="active"/>
-    <description value="Lung Resection Composition profile"/>
+    <description value="Examination of Resection Specimens From Patients With Primary Non-Small Cell Carcinoma, Small Cell Carcinoma, or Carcinoid Tumor of the Lung (CAP Version 4.1.0.1) Composition profile comprised of elements required for central registry reporting"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -49,15 +49,15 @@
             <path value="Composition.section"/>
             <sliceName value="histologic_type"/>
             <min value="1"/>
-            <max value="*"/>
-            <mustSupport value="false"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:primary_cancer_condition">
             <path value="Composition.section"/>
             <sliceName value="primary_cancer_condition"/>
             <min value="1"/>
             <max value="1"/>
-            <mustSupport value="false"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:primary_cancer_condition.code">
             <path value="Composition.section.code"/>
@@ -75,7 +75,9 @@
         <element id="Composition.section:treatment_effect">
             <path value="Composition.section"/>
             <sliceName value="treatment_effect"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:treatment_effect.code">
             <path value="Composition.section.code"/>
@@ -102,7 +104,9 @@
         <element id="Composition.section:regional_lymph_node">
             <path value="Composition.section"/>
             <sliceName value="regional_lymph_node"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:regional_lymph_node.code">
             <path value="Composition.section.code"/>
@@ -129,7 +133,9 @@
         <element id="Composition.section:lymphovascular_invasion">
             <path value="Composition.section"/>
             <sliceName value="lymphovascular_invasion"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:lymphovascular_invasion.code">
             <path value="Composition.section.code"/>
@@ -156,7 +162,9 @@
         <element id="Composition.section:history_of_procedures">
             <path value="Composition.section"/>
             <sliceName value="history_of_procedures"/>
-            <mustSupport value="false"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:history_of_procedures.code">
             <path value="Composition.section.code"/>
@@ -177,6 +185,68 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-resection-procedure-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification">
+            <path value="Composition.section"/>
+            <sliceName value="pathologic_stage_classification"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="xxx_tnm_section"/>
+                    <display value="TODO- AJCC Pathologic Stage Classification"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="3"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pT">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pT"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-pT-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pN">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pN"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-pN-observation-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:pathologic_stage_classification.entry:pM">
+            <path value="Composition.section.entry"/>
+            <sliceName value="pM"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-pM-observation-us"/>
             </type>
             <mustSupport value="true"/>
         </element>

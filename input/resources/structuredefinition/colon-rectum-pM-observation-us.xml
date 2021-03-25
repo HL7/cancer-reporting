@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="colon-rectum-pM-observation-us"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-23T16:09:59.714+00:00"/>
+        <source value="#4E5bJBc9UA6veln6"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-pM-observation-us"/>
+    <name value="ColonRectumDistantMetastasesObservation"/>
+    <title value="Colon/Rectum Distant Metastases (pM) Observation"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="21901-4"/>
+                    <display value="Distant metastases.pathology [Class] Cancer"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-rectum-rectum-pM-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

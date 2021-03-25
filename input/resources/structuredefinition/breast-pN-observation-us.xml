@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-pN-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-14T18:24:30.152+00:00"/>
-        <source value="#AiY7teTryrx2gDrS"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-23T16:05:47.869+00:00"/>
+        <source value="#GFllpxpx00zfHXPq"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pN-observation-us"/>
     <name value="BreastRegionalLymphNodeObservation"/>
@@ -38,6 +38,9 @@
             <path value="Observation.value[x]"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>

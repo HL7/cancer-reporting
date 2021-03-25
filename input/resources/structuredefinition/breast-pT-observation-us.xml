@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-pT-observation-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-14T18:19:50.480+00:00"/>
-        <source value="#cDP4C24WuMRTJEVA"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-23T16:05:22.532+00:00"/>
+        <source value="#qnY19qzSXUHcZdcv"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pT-observation-us"/>
     <name value="BreastPrimaryTumorObservation"/>
@@ -36,6 +36,9 @@
             <path value="Observation.value[x]"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-lymphovascular-invasion-observation-us"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-11T23:51:06.936+00:00"/>
-        <source value="#e427hbsqUTjUMVD4"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-24T19:33:42.892+00:00"/>
+        <source value="#ROQSICbnJd9nrW2B"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-lymphovascular-invasion-observation-us"/>
     <name value="BreastLymphovascularInvasionObservation"/>
@@ -16,35 +16,11 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lymphovascular-invasion-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
             <path value="Observation"/>
-        </element>
-        <element id="Observation.code">
-            <path value="Observation.code"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="59544-7"/>
-                    <display value="Lymph-vascular invasion Cancer specimen"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.value[x]">
-            <path value="Observation.value[x]"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-lymphovascular-invasion-vs"/>
-            </binding>
         </element>
     </differential>
 </StructureDefinition>

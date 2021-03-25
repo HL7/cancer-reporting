@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="lung-lymphovascular-invasion-observation-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-05T19:06:47.490+00:00"/>
-        <source value="#1JglHRvP3QH2JTB4"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-24T19:43:08.641+00:00"/>
+        <source value="#CzC2m1R0cN8VsFzu"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-lymphovascular-invasion-observation-us"/>
     <name value="LungLymphovascularInvasionObservation"/>
@@ -16,11 +16,21 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lymphovascular-invasion-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-lymphovascular-invasion-vs"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

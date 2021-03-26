@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-resection-composition-example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T00:39:45.945+00:00"/>
+        <source value="#IiFELAazfvGuem78"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-resection-composition-us"/>
+    </meta>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="11502-2"/>
+            <display value="Laboratory Report"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <date value="2021-03-14"/>
+    <author>
+        <reference value="Practitioner/us-core-practitioner-peter-pathologist"/>
+    </author>
+    <title value="Protocol for the Examination of Resection Specimens From Patients With Primary Non-Small Cell Carcinoma, Small Cell Carcinoma, or Carcinoid Tumor of the Lung"/>
+    <section>
+        <title value="History of Procedures Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="47519-4"/>
+                <display value="History of Procedures Document"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Procedure/Procedure-lung-cancer-related-surgical-procedure"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Cancer Specimen Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_specimen"/>
+                <display value="Specimen Section Codes"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Specimen/lung-specimen-example"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Histologic Type"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_histotype"/>
+                <display value="Histologic Type Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/lung-histologic-type-observation"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Overall Patholigic Grade"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_histopathograde"/>
+                <display value="Histopathologic Grade Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/lung-histologic-grade"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Lymphovascular Invasion Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_lymhinvasion"/>
+                <display value="Lymphovascular Invasion Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/lung-lymphovascular-invasion-example"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Regional Lymph Node Involvement"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_reglymphnode"/>
+                <display value="Regional Lymph Node Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/lung-regional-lymphnode-involvement-panel"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Treatment Effect Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_treatmenteffect"/>
+                <display value="Treatment Effect Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Procedure/Lung-treatment-effect-in-lung"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Pathologic Stage Classification Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_tnm"/>
+                <display value="TNM Classification Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/lung-pathologic-primary-tumor"/>
+        </entry>
+        <entry>
+            <reference value="Observation/lung-pathologic-regional-lymph-nodes"/>
+        </entry>
+        <entry>
+            <reference value="Observation/lung-pathologic-distant-metastases-category"/>
+        </entry>
+    </section>
+</Composition>

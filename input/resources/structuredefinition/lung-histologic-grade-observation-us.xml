@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-histologic-grade-observation-us"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-26T18:31:06.007+00:00"/>
+        <source value="#nWTDwHwjjdMo2IjD"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-histologic-grade-observation-us"/>
+    <name value="LungHistologicGradeObservation"/>
+    <title value="Lung Histologic Grade Observation"/>
+    <status value="active"/>
+    <description value="Histologic Grade in the Lung"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="XXX_histologic_grade_in_lung"/>
+                    <display value="Histologic Grade In the Lung"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/histologic-grade-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

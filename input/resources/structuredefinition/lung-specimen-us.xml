@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="lung-specimen-us"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-23T16:56:25.584+00:00"/>
-        <source value="#O5lc3Btqhq4mOtR8"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-03-26T18:16:14.692+00:00"/>
+        <source value="#QPBDDeqcJ9vM4tkm"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-us"/>
     <name value="LungTumorSpecimen"/>
     <title value="Lung Tumor Specimen"/>
     <status value="active"/>
+    <description value="This is the lung tissue specimen that is being pathologically tested. Collection.bodySite contains the tumor site, otherwise referred to as the body location from where this specimen was obtained."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -21,22 +22,24 @@
         <element id="Specimen">
             <path value="Specimen"/>
         </element>
+        <element id="Specimen.collection.bodySite">
+            <path value="Specimen.collection.bodySite"/>
+            <min value="1"/>
+            <max value="1"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lung-tumor-site-vs"/>
+            </binding>
+        </element>
         <element id="Specimen.collection.bodySite.extension">
             <path value="Specimen.collection.bodySite.extension"/>
-            <slicing>
-                <rules value="open"/>
-            </slicing>
-            <min value="1"/>
-        </element>
-        <element id="Specimen.collection.bodySite.extension:lung_laterality">
-            <path value="Specimen.collection.bodySite.extension"/>
-            <sliceName value="lung_laterality"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-laterality-us"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/laterality-lr"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

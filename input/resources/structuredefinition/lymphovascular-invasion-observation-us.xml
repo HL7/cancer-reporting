@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="lymphovascular-invasion-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-24T19:32:48.724+00:00"/>
-        <source value="#XbU0AKgzbpxBbUcr"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-25T23:46:47.322+00:00"/>
+        <source value="#hMZEzHPBXCzqkU0X"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lymphovascular-invasion-observation-us"/>
     <name value="LymphovascularInvasion"/>
@@ -41,6 +41,11 @@
                 <strength value="required"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lymphovascular-invasion-vs"/>
             </binding>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

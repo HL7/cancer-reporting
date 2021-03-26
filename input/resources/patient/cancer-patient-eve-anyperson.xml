@@ -3,95 +3,41 @@
     xmlns="http://hl7.org/fhir">
     <id value="cancer-patient-eve-anyperson"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-14T18:43:24.955+00:00"/>
-        <source value="#37QCOnQU30uEXKha"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-25T21:51:54.769+00:00"/>
+        <source value="#RdKwefkOLeVX7hKD"/>
         <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
     </meta>
     <text>
-        <status value="extensions"/>
+        <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b>Generated Narrative</b>
-            </p>
-            <blockquote>
-                <p>
-                    <b>US Core Race Extension</b>
-                </p>
-                <h3>Urls</h3>
-                <table class="grid">
+            <div class="hapiHeaderText">Eve A. 
+                <b>ANYPERSON </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
                     <tr>
-                        <td>-</td>
+                        <td>Identifier</td>
+                        <td>m456</td>
                     </tr>
                     <tr>
-                        <td>*</td>
-                    </tr>
-                </table>
-                <p>
-                    <b>value</b>: 
-                    <span title="{urn:oid:2.16.840.1.113883.6.238 1002-5}">American Indian or Alaska Native</span>
-                </p>
-                <h3>Urls</h3>
-                <table class="grid">
-                    <tr>
-                        <td>-</td>
+                        <td>Address</td>
+                        <td>
+                            <span>456 Smith Lane </span>
+                            <br/>
+                            <span>Anytown </span>
+                            <span>MA </span>
+                            <span>US </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td>*</td>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>20 May 1955</span>
+                        </td>
                     </tr>
-                </table>
-                <p>
-                    <b>value</b>: Lakota and Crow
-                </p>
-            </blockquote>
-            <p>
-                <b>US Core Birth Sex Extension</b>: F
-            </p>
-            <p>
-                <b>identifier</b>: Medical Record Number: m456 (USUAL)
-            </p>
-            <p>
-                <b>name</b>: Eve A. Anyperson 
-            </p>
-            <p>
-                <b>gender</b>: female
-            </p>
-            <p>
-                <b>birthDate</b>: 1955-05-20
-            </p>
-            <p>
-                <b>address</b>: 456 Smith Lane Anytown MA 12345 US 
-            </p>
-            <h3>Contacts</h3>
-            <table class="grid">
-                <tr>
-                    <td>-</td>
-                    <td>
-                        <b>Telecom</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>*</td>
-                    <td>ph: 999-999-9999(HOME), 
-                        <a href="mailto:eve.anyperson@example.com">eve.anyperson@example.com</a>
-                    </td>
-                </tr>
-            </table>
-            <h3>Communications</h3>
-            <table class="grid">
-                <tr>
-                    <td>-</td>
-                    <td>
-                        <b>Language</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>*</td>
-                    <td>
-                        <span title="Codes: {urn:ietf:bcp:47 en-US}">English</span>
-                    </td>
-                </tr>
+                </tbody>
             </table>
         </div>
     </text>

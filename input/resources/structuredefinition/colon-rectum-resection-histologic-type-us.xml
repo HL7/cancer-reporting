@@ -3,35 +3,47 @@
     xmlns="http://hl7.org/fhir">
     <id value="colon-rectum-resection-histologic-type-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-23T14:54:09.986+00:00"/>
-        <source value="#8n2UqE5EUXoLqe9k"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-03-26T19:13:18.546+00:00"/>
+        <source value="#1Q8s5FPqRF8mTOeX"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-resection-histologic-type-us"/>
-    <name value="ColonRectumResectionHistologicType"/>
-    <title value="Colon/Rectum Resection Histologic Type"/>
+    <name value="ColonRectumHistologicTypeObservation"/>
+    <title value="Colon/Rectum Histologic Type Observation"/>
     <status value="active"/>
-    <description value="this extension specifies the allowable terminology for the Colon/Rectum Resection eCC protocol."/>
+    <description value="Histologic Type of the Colon/Rectum"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
-    <type value="Extension"/>
-    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Extension">
-            <path value="Extension"/>
+        <element id="Observation">
+            <path value="Observation"/>
         </element>
-        <element id="Extension.url">
-            <path value="Extension.url"/>
-            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-resection-histologic-type-us"/>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
         </element>
-        <element id="Extension.value[x]">
-            <path value="Extension.value[x]"/>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/colon-histologic-type-vs"/>
             </binding>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-specimen-us"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

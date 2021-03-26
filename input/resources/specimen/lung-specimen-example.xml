@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-specimen-example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T00:25:35.763+00:00"/>
+        <source value="#drg32m1ScG4du75d"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-us"/>
+    </meta>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+            <code value="TUMOR"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <collection>
+        <bodySite>
+            <extension url="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-laterality-us">
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="24028007"/>
+                        <display value="Right (qualifier value)"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="90572001"/>
+                <display value="Lower lobe of lung"/>
+            </coding>
+        </bodySite>
+    </collection>
+    <processing>
+        <timeDateTime value="2021-03-12"/>
+    </processing>
+</Specimen>

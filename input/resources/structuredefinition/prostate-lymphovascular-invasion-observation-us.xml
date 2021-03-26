@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-lymphovascular-invasion-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-24T19:35:34.176+00:00"/>
-        <source value="#XjGuDF4GqX1b5SBn"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-26T16:42:41.691+00:00"/>
+        <source value="#TVUgPISd6r1ZrDdk"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-lymphovascular-invasion-observation-us"/>
     <name value="ProstateLymphovascularInvasionObservation"/>
     <title value="Prostate Lymphovascular Invasion Observation"/>
     <status value="active"/>
+    <description value="Lymphovascular Invasion in the the Prostate"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -20,6 +21,18 @@
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lymphovascular-invasion-vs"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-pN-observation-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-23T01:54:00.644+00:00"/>
-        <source value="#zV5hMSge44qkbFve"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-26T16:39:14.897+00:00"/>
+        <source value="#kfjHcV9s81GheVZN"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-pN-observation-us"/>
     <name value="ProstateRegionalLymphNodespNObservation"/>
     <title value="Prostate Regional Lymph Nodes (pN) Observation"/>
     <status value="active"/>
+    <description value="Regional Lymph Nodes (pN) finding in the Prostate according to AJCC protocols."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/regional-lymph-nodes-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

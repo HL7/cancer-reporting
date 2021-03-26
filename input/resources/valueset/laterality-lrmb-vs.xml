@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="laterality-lrmb-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T18:20:47.235+00:00"/>
+        <source value="#EHKqUMKpqF6WnjWu"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lrmb-vs"/>
+    <name value="LateralityLeftRightMidlineBilateral"/>
+    <title value="Laterality Left/Right/Midline/Bilateral"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lrm-vs"/>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="51440002"/>
+                <display value="Right and left"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

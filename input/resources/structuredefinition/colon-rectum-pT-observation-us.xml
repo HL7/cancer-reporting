@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="colon-rectum-pT-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-23T00:44:49.263+00:00"/>
-        <source value="#IN2Meb2nu7ERYrk0"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-26T19:13:50.695+00:00"/>
+        <source value="#997FnLTWnZmYfAAp"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-pT-observation-us"/>
     <name value="ColonRectumPrimaryTumorObservation"/>
     <title value="Colon/Rectum Primary Tumor (pT) Observation"/>
     <status value="active"/>
+    <description value="Primary Tumor (pT) finding of the Colon/Rectum specimen"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/grouping-primary-tumor-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

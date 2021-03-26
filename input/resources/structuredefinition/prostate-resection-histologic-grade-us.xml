@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="prostate-resection-histologic-grade-us"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-26T18:32:48.242+00:00"/>
+        <source value="#zNVhSHWuejqDw4CH"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-histologic-grade-us"/>
+    <name value="ProstateHistologicGrade"/>
+    <title value="Prostate Histologic Grade"/>
+    <status value="active"/>
+    <description value="Histologic Grade in Prostate specimen"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/prostate-histologic-grade-vs"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

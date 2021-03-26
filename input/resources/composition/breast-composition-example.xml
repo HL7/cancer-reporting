@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-composition-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-14T21:45:30.808+00:00"/>
-        <source value="#YhlW53qavP1MKLie"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-25T22:59:50.578+00:00"/>
+        <source value="#x6zwJUCrAJUeBkS3"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-composition-us"/>
     </meta>
     <status value="final"/>
@@ -25,16 +25,16 @@
     </author>
     <title value="Protocol for the Examination of Resection Specimens From Patients  With Invasive Carcinoma of the Breast"/>
     <section>
-        <title value="Primary Cancer Condition Section"/>
+        <title value="History of Procedures Section"/>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="XXX_primarycancercondition"/>
-                <display value="Primary Cancer Condition Section Code"/>
+                <code value="47519-4"/>
+                <display value="History of Procedures Document"/>
             </coding>
         </code>
         <entry>
-            <reference value="Condition/primary-cancer-condition-breast"/>
+            <reference value="Procedure/Procedure-breast-cancer-related-surgical-procedure"/>
         </entry>
     </section>
     <section>
@@ -48,19 +48,6 @@
         </code>
         <entry>
             <reference value="Specimen/breast-specimen-example-1"/>
-        </entry>
-    </section>
-    <section>
-        <title value="History of Procedures Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="47519-4"/>
-                <display value="History of Procedures Document"/>
-            </coding>
-        </code>
-        <entry>
-            <reference value="Procedure/Procedure-breast-cancer-related-surgical-procedure"/>
         </entry>
     </section>
     <section>
@@ -174,19 +161,6 @@
         </entry>
     </section>
     <section>
-        <title value="Progesterone Receptor  Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="XXX_pr"/>
-                <display value="Progesterone Receptor Section Code"/>
-            </coding>
-        </code>
-        <entry>
-            <reference value="Observation/breast-progesterone-receptor-observation"/>
-        </entry>
-    </section>
-    <section>
         <title value="HER2 Section"/>
         <code>
             <coding>
@@ -197,6 +171,19 @@
         </code>
         <entry>
             <reference value="Observation/breast-her2-ihc-observation"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Progesterone Receptor  Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="XXX_pr"/>
+                <display value="Progesterone Receptor Section Code"/>
+            </coding>
+        </code>
+        <entry>
+            <reference value="Observation/breast-progesterone-receptor-observation"/>
         </entry>
     </section>
 </Composition>

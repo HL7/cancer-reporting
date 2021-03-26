@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-pathologic-primary-tumor"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T00:25:35.732+00:00"/>
+        <source value="#H2r5q7ohomICynAs"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-pT-observation-us"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="21899-0"/>
+            <display value="Primary tumor.pathology Cancer"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <effectiveDateTime value="2021-03-01"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="384753005"/>
+            <display value="pT1: Tumor 3 cm or less in greatest dimension, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus) (lung)"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="WHO-histologic-grade-vs"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T18:43:42.020+00:00"/>
+        <source value="#hou9UPiIw0fqdhco"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/WHO-histologic-grade-vs"/>
+    <name value="WorldHealthOrganizationHistologicGradeValueSet"/>
+    <title value="World Health Organization Histologic Grade ValueSet"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="396922003"/>
+                <display value="World Health Organization grade I central nervous system tumor (finding)"/>
+            </concept>
+            <concept>
+                <code value="396923008"/>
+                <display value="World Health Organization grade II central nervous system tumor (finding)"/>
+            </concept>
+            <concept>
+                <code value="396924002"/>
+                <display value="World Health Organization grade III central nervous system tumor (finding)"/>
+            </concept>
+            <concept>
+                <code value="396925001"/>
+                <display value="World Health Organization grade IV central nervous system tumor (finding)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

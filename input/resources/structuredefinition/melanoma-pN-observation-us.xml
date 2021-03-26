@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="melanoma-pN-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-23T01:29:47.488+00:00"/>
-        <source value="#TzHRHkELua84uYn5"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-26T16:39:32.911+00:00"/>
+        <source value="#OxK09Tia5tG4zJxM"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-pN-observation-us"/>
     <name value="MelanomaRegionalLymphNodesObservation"/>
     <title value="Melanoma Regional Lymph Nodes (pN) Observation"/>
     <status value="active"/>
+    <description value="Regional Lymph Nodes (pN) finding in Skin Melanoma according to AJCC protocols."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/regional-lymph-nodes-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

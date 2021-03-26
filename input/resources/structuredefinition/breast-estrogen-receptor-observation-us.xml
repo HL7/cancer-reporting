@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-estrogen-receptor-observation-us"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-11T04:36:43.673+00:00"/>
-        <source value="#ifI9OUCYAZkNNqUR"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-25T22:25:19.308+00:00"/>
+        <source value="#FiS0PI4A23IjN7YL"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-estrogen-receptor-observation-us"/>
     <name value="BreastEstrogenReceptorObservation"/>
@@ -34,6 +34,14 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
+            </type>
             <mustSupport value="true"/>
         </element>
     </differential>

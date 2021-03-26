@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-histologic-grade"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T00:25:35.732+00:00"/>
+        <source value="#Rk5RZFaLRknCiweu"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-histologic-grade-observation-us"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="XXX_histologic_grade_in_lung"/>
+            <display value="Histologic Grade In the Lung"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <effectiveDateTime value="2021-03-14"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="54102005"/>
+            <display value="G1: well differentiated"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

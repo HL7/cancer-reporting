@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-pT-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-23T16:05:22.532+00:00"/>
-        <source value="#qnY19qzSXUHcZdcv"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-03-26T15:46:29.429+00:00"/>
+        <source value="#2evnwEj8XTvF52xY"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pT-observation-us"/>
     <name value="BreastPrimaryTumorObservation"/>
     <title value="Breast Primary Tumor (pT) Observation"/>
     <status value="active"/>
+    <description value="Primary Tumor (pT) finding according to AJCC protocols. Based on resection of the primary tumor from a single specimen. "/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/grouping-primary-tumor-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
@@ -44,6 +45,14 @@
                 <strength value="required"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-pT-vs"/>
             </binding>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="prostate-pathologic-regional-lymph-nodes"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T01:34:50.376+00:00"/>
+        <source value="#qPXFVCqzEe40hjX7"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-pN-observation-us"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="21900-6"/>
+            <display value="Regional lymph nodes.pathology [Class] Cancer"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <effectiveDateTime value="2021-03-01"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="45552005"/>
+            <display value="pN1 category (finding)"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

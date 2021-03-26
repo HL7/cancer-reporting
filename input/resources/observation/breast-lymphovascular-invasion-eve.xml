@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-lymphovascular-invasion-eve"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-14T19:29:24.469+00:00"/>
-        <source value="#jR54lT0mDdF0zDn6"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-25T23:47:11.495+00:00"/>
+        <source value="#dtI2m94shEMCaIrS"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-lymphovascular-invasion-observation-us"/>
     </meta>
     <status value="final"/>
@@ -35,4 +35,7 @@
             <display value="Venous (large vessel)/lymphatic (small vessel) invasion by tumor absent"/>
         </coding>
     </valueCodeableConcept>
+    <specimen>
+        <reference value="Specimen/breast-specimen-example-1"/>
+    </specimen>
 </Observation>

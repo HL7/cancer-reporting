@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="melanoma-specimen-laterality-us"/>
+    <id value="laterality-lr"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2021-03-23T16:42:48.615+00:00"/>
-        <source value="#IAzHtqBlzl1dBMiH"/>
+        <lastUpdated value="2021-03-26T18:11:54.101+00:00"/>
+        <source value="#BoeXVL6fdCnnYbW2"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-specimen-laterality-us"/>
-    <name value="MelanomaSpecimenLaterality"/>
-    <title value="Melanoma Specimen Laterality Extension"/>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/laterality-lr"/>
+    <name value="LateralityLeftRightExtension"/>
+    <title value="Laterality Left Right Extension"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
@@ -23,7 +23,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-specimen-laterality-us"/>
+            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/laterality-lr"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
@@ -34,7 +34,7 @@
             </type>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lrm-vs"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lr-vs"/>
             </binding>
         </element>
     </differential>

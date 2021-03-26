@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Procedure-prostate-radical-prostatectomy"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T01:34:50.376+00:00"/>
+        <source value="#g5XnFsQ25iYdWodK"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-procedure-us"/>
+    </meta>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="387713003"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26294005"/>
+            <display value="Radical prostatectomy (procedure)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <performedDateTime value="2021-03-01"/>
+</Procedure>

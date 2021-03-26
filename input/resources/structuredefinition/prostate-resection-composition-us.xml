@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-resection-composition-us"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-24T20:44:56.415+00:00"/>
-        <source value="#onWk2mgFHxDZoh1t"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-03-26T01:26:40.819+00:00"/>
+        <source value="#6o2FGiBBrVbrbuGl"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-composition-us"/>
     <name value="ProstateResectionComposition"/>
@@ -45,11 +45,153 @@
                 <rules value="open"/>
             </slicing>
         </element>
+        <element id="Composition.section:history_of_procedures">
+            <path value="Composition.section"/>
+            <sliceName value="history_of_procedures"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:history_of_procedures.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="47519-4"/>
+                    <display value="History of Procedures Document"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:history_of_procedures.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-procedure-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:specimen">
+            <path value="Composition.section"/>
+            <sliceName value="specimen"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:specimen.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="XXX_specimen"/>
+                    <display value="Specimen Section Codes"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:specimen.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-specimen-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Composition.section:histologic_type">
             <path value="Composition.section"/>
             <sliceName value="histologic_type"/>
             <min value="1"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:histologic_type.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://www.hl7.org/fhir/uv/cancer-reporting-common-library/CodeSystem/temp-codes"/>
+                    <code value="XXX_histotype"/>
+                    <display value="Histologic Type Section Code"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:histologic_type.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-histologic-type-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:histologic_grade">
+            <path value="Composition.section"/>
+            <sliceName value="histologic_grade"/>
+            <label value="Prostate Histologic Grade Observation"/>
+            <short value="Prostate Histologic Grade Observation"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:histologic_grade.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://www.hl7.org/fhir/uv/cancer-reporting-common-library/CodeSystem/temp-codes"/>
+                    <code value="XXX_histopathograde"/>
+                    <display value="Histopathologic Grade Section Code"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:histologic_grade.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-histologic-grade-us"/>
+            </type>
+        </element>
+        <element id="Composition.section:lymphovascular_invasion">
+            <path value="Composition.section"/>
+            <sliceName value="lymphovascular_invasion"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:lymphovascular_invasion.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://www.hl7.org/fhir/uv/cancer-reporting-common-library/CodeSystem/temp-codes"/>
+                    <code value="XXX_lymhinvasion"/>
+                    <display value="Lymphovascular Invasion Section Code"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:lymphovascular_invasion.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-lymphovascular-invasion-observation-us"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.section:treatment_effect">
@@ -108,64 +250,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-regional-lymphnode-involvement-observation-us"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:lymphovascular_invasion">
-            <path value="Composition.section"/>
-            <sliceName value="lymphovascular_invasion"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:lymphovascular_invasion.code">
-            <path value="Composition.section.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://www.hl7.org/fhir/uv/cancer-reporting-common-library/CodeSystem/temp-codes"/>
-                    <code value="XXX_lymhinvasion"/>
-                    <display value="Lymphovascular Invasion Section Code"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:lymphovascular_invasion.entry">
-            <path value="Composition.section.entry"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-lymphovascular-invasion-observation-us"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:history_of_procedures">
-            <path value="Composition.section"/>
-            <sliceName value="history_of_procedures"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:history_of_procedures.code">
-            <path value="Composition.section.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="47519-4"/>
-                    <display value="History of Procedures Document"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:history_of_procedures.entry">
-            <path value="Composition.section.entry"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-procedure-us"/>
             </type>
             <mustSupport value="true"/>
         </element>

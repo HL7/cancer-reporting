@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="lung-specimen-laterality-us"/>
+    <id value="laterality-lrmb"/>
     <meta>
         <versionId value="2"/>
-        <lastUpdated value="2021-03-23T16:54:53.946+00:00"/>
-        <source value="#fskMLLNaFzQVjE56"/>
+        <lastUpdated value="2021-03-26T18:22:19.629+00:00"/>
+        <source value="#CQmhW1o5vokORrxB"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-laterality-us"/>
-    <name value="LungSpecimenLaterality"/>
-    <title value="Lung Specimen Laterality"/>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/laterality-lrmb"/>
+    <name value="LateralityLeftRightMidlineBilateral"/>
+    <title value="Laterality Left/Right/Midline/Bilateral"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
@@ -23,17 +23,19 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-specimen-laterality-us"/>
+            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/laterality-lrmb"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
             <min value="1"/>
+            <max value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lr-vs"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/laterality-lrmb-vs"/>
             </binding>
         </element>
     </differential>

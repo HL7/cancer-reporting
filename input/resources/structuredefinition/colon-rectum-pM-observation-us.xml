@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="colon-rectum-pM-observation-us"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-23T16:09:59.714+00:00"/>
-        <source value="#4E5bJBc9UA6veln6"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-03-26T16:37:40.633+00:00"/>
+        <source value="#u1YFnzhnAamO1I8W"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/colon-rectum-pM-observation-us"/>
     <name value="ColonRectumDistantMetastasesObservation"/>
     <title value="Colon/Rectum Distant Metastases (pM) Observation"/>
     <status value="active"/>
+    <description value="Distant Metastases (pM) in the Colon/Rectum finding according to AJCC protocols."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/distant-metastases-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="histologic-grade-vs"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-25T14:51:10.942+00:00"/>
-        <source value="#KtEAwj6cFAMvnWbD"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-26T16:06:52.047+00:00"/>
+        <source value="#j179EGZWYQHTCyKV"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/histologic-grade-vs"/>
     <name value="HistologicGradeValueSet"/>
     <title value="Histologic Grade ValueSet"/>
     <status value="draft"/>
+    <description value="Histologic Grade- differentiation level according to 'GX' scale"/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>

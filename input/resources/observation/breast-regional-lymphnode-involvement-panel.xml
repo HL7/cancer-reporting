@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-regional-lymphnode-involvement-panel"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-16T20:05:46.576+00:00"/>
-        <source value="#iMgHdzC9uyqRDCIM"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-25T22:06:53.414+00:00"/>
+        <source value="#Uy3W2h7ki0SRn67N"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-regional-lymphnode-involvement-observation-us"/>
     </meta>
     <status value="final"/>
@@ -27,5 +27,5 @@
     <subject>
         <reference value="Patient/cancer-patient-eve-anyperson"/>
     </subject>
-    <effectiveDateTime value="2021-03-01"/>
+    <effectiveDateTime value="2021-03-04"/>
 </Observation>

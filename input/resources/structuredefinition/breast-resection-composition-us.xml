@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-resection-composition-us"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2021-03-25T17:06:44.584+00:00"/>
-        <source value="#UD6VtK62GAJUpqq0"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-03-25T22:42:53.085+00:00"/>
+        <source value="#hHXkyKwu86Vg0S0Y"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-composition-us"/>
     <name value="BreastResectionComposition"/>
@@ -30,7 +30,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
             </type>
             <mustSupport value="false"/>
         </element>
@@ -43,36 +43,6 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-        </element>
-        <element id="Composition.section:specimen">
-            <path value="Composition.section"/>
-            <sliceName value="specimen"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:specimen.code">
-            <path value="Composition.section.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="XXX_specimen"/>
-                    <display value="Specimen Section Codes"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.section:specimen.entry">
-            <path value="Composition.section.entry"/>
-            <min value="1"/>
-            <max value="*"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
-            </type>
-            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:history_of_procedures">
             <path value="Composition.section"/>
@@ -101,6 +71,36 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-resection-procedure-us"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:specimen">
+            <path value="Composition.section"/>
+            <sliceName value="specimen"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:specimen.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="XXX_specimen"/>
+                    <display value="Specimen Section Codes"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:specimen.entry">
+            <path value="Composition.section.entry"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
             </type>
             <mustSupport value="true"/>
         </element>

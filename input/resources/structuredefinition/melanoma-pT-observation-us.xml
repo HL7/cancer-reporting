@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="melanoma-pT-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-23T00:27:51.842+00:00"/>
-        <source value="#lIROjIRIEQ38qod7"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-26T19:04:19.490+00:00"/>
+        <source value="#oVQLaB6sIlPnkIAw"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-pT-observation-us"/>
     <name value="MelanomaPrimaryTumorObservation"/>
     <title value="Melanoma Primary Tumor (pT) Observation"/>
     <status value="active"/>
+    <description value="Primary Tumor findings (pT) finding in Skin Melanoma according to AJCC protocols."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/grouping-primary-tumor-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

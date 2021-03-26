@@ -3,37 +3,44 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-resection-histologic-type-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-23T15:19:07.595+00:00"/>
-        <source value="#FcT6i3fS0eJbQPPf"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-26T18:33:07.783+00:00"/>
+        <source value="#OjiuUsqio6mPDhwF"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-histologic-type-us"/>
-    <name value="ProstateHistologicType"/>
-    <title value="Prostate Histologic Type"/>
+    <name value="ProstateHistologicTypeObservation"/>
+    <title value="Prostate Histologic Type Observation"/>
     <status value="active"/>
-    <description value="This extensions specifies the allwoable concepts on the Prostate eCC form. It is built upon mCode's 'Histology-Morphology-BEhavior' extension and specifically extends Primary Cancer Condition."/>
+    <description value="Histologic Type in Prostate specimen"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
-    <type value="Extension"/>
-    <baseDefinition value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Extension">
-            <path value="Extension"/>
+        <element id="Observation">
+            <path value="Observation"/>
         </element>
-        <element id="Extension.url">
-            <path value="Extension.url"/>
-            <fixedUri value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-resection-histologic-type-us"/>
-        </element>
-        <element id="Extension.value[x]">
-            <path value="Extension.value[x]"/>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
             <binding>
                 <strength value="required"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/prostate-histologic-type-vs"/>
             </binding>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-specimen-us"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

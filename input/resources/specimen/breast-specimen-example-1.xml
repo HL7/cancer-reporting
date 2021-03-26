@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-specimen-example-1"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-24T17:56:59.333+00:00"/>
-        <source value="#UklTsu0TSfls1Eps"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-25T21:52:02.502+00:00"/>
+        <source value="#L0LyDagtbfcAOxBJ"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
     </meta>
     <status value="available"/>
@@ -16,7 +16,7 @@
         </coding>
     </type>
     <subject>
-        <reference value="Patient/cancer-patient"/>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
     </subject>
     <collection>
         <bodySite>

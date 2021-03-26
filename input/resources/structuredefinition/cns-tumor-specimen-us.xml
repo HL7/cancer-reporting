@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="cns-tumor-specimen-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-22T15:33:27.098+00:00"/>
-        <source value="#pr3x4zudvqOMLAPN"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-26T18:39:32.098+00:00"/>
+        <source value="#5JpZzFLUetdtSdcp"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/cns-tumor-specimen-us"/>
     <name value="CNSTumorSpecimen"/>
     <title value="CNS Tumor Specimen"/>
     <status value="active"/>
+    <description value="Central Nervous System specimen being analyzed"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -29,6 +30,16 @@
                 <strength value="required"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/cns-tumor-site-vs"/>
             </binding>
+        </element>
+        <element id="Specimen.collection.bodySite.extension">
+            <path value="Specimen.collection.bodySite.extension"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/laterality-lrmb"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-specimen-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-23T16:59:36.322+00:00"/>
-        <source value="#TVNlqSt4XUL92H7t"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-26T18:39:12.998+00:00"/>
+        <source value="#mSZxmXFV0o0eCLsl"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-specimen-us"/>
     <name value="ProstateSpecimen"/>
     <title value="Prostate Specimen"/>
     <status value="active"/>
+    <description value="Prostate specimen being analyzed"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

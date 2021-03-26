@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="tnm-pathologic-distant-metastases-category-eve"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-14T19:29:24.461+00:00"/>
-        <source value="#3aQSMUk4wy8j4zC0"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-25T22:21:37.590+00:00"/>
+        <source value="#Fya0b88bKgi3izLl"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pN-observation-us"/>
     </meta>
     <status value="final"/>
@@ -31,14 +31,8 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="pM1"/>
+            <code value="TODO"/>
+            <display value="pM1: Histologically proven metastases larger than 0.2 mm (breast) (finding)"/>
         </coding>
     </valueCodeableConcept>
-    <method>
-        <coding>
-            <system value="http://ncithesaurus-stage.nci.nih.gov"/>
-            <code value="C146985"/>
-            <display value="AJCC Cancer Staging Manual 8th Edition"/>
-        </coding>
-    </method>
 </Observation>

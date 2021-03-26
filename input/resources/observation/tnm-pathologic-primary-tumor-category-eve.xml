@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="tnm-pathologic-primary-tumor-category-eve"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-24T17:46:13.222+00:00"/>
-        <source value="#j1gTfHVkf1Eluon5"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-25T22:16:24.420+00:00"/>
+        <source value="#BOo9oaz753pavKFF"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pT-observation-us"/>
     </meta>
     <status value="final"/>
@@ -31,8 +31,8 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="pT1c"/>
-            <display value="Tumor &gt;10 mm but ≤20 mm in greatest dimension"/>
+            <code value="373183007"/>
+            <display value="pT1c: Tumor more than 1 cm but not more than 2 cm in greatest dimension (breast) (finding)"/>
         </coding>
     </valueCodeableConcept>
 </Observation>

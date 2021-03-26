@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="tnm-pathologic-regional-lymph-nodes-eve"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-14T19:29:24.501+00:00"/>
-        <source value="#DLivycxuiVp5Wu4i"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-25T22:18:46.770+00:00"/>
+        <source value="#3rp5DdnNkCtTnWOy"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pN-observation-us"/>
     </meta>
     <status value="final"/>
@@ -31,15 +31,8 @@
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="pN0"/>
-            <display value="No regional lymph node metastasis identified or ITCs only"/>
+            <code value="406089009"/>
+            <display value="pN0(i+): No regional lymph node metastasis histologically, positive morphologic findings for isolated tumor cells, no cluster greater than 0.2 mm (breast) (finding)"/>
         </coding>
     </valueCodeableConcept>
-    <method>
-        <coding>
-            <system value="http://ncithesaurus-stage.nci.nih.gov"/>
-            <code value="C146985"/>
-            <display value="AJCC Cancer Staging Manual 8th Edition"/>
-        </coding>
-    </method>
 </Observation>

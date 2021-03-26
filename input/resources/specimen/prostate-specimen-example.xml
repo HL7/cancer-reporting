@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen
+    xmlns="http://hl7.org/fhir">
+    <id value="prostate-specimen-example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T01:34:50.427+00:00"/>
+        <source value="#5AAOAR6BzzI50ZV2"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-specimen-us"/>
+    </meta>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+            <code value="TUMOR"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+</Specimen>

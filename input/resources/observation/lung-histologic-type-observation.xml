@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="lung-histologic-type-observation"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-26T00:25:35.717+00:00"/>
+        <source value="#lqLsapuh3myqvFgn"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-histologic-type-observation-us"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="XXX_TODO"/>
+            <display value="Histologic_type_in_lung"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/cancer-patient-eve-anyperson"/>
+    </subject>
+    <effectiveDateTime value="2021-03-15"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="733882000"/>
+            <display value="Mucinous adenocarcinoma in situ"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

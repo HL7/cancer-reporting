@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="lymphovascular-invasion-vs"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-24T19:32:04.260+00:00"/>
-        <source value="#obtEEmwe4oZFLM5p"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-26T16:02:54.795+00:00"/>
+        <source value="#LaddqBvYC18MW73y"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/lymphovascular-invasion-vs"/>
     <name value="LymphovascularInvasionValueSet"/>
     <title value="LymphovascularInvasionValueSet"/>
     <status value="draft"/>
+    <description value="All allowable Lymphovascular Invasion Snomed CT concepts"/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>

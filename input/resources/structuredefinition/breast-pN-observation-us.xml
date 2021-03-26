@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-pN-observation-us"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-23T16:05:47.869+00:00"/>
-        <source value="#GFllpxpx00zfHXPq"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-03-26T15:37:29.654+00:00"/>
+        <source value="#VLeRb9eUCA9125Eg"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-pN-observation-us"/>
     <name value="BreastRegionalLymphNodeObservation"/>
     <title value="Breast Regional Lymph Node (pN) Observation"/>
     <status value="active"/>
+    <description value="Regional Lymph Nodes (pN) finding according to AJCC protocols."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/regional-lymph-nodes-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
@@ -46,6 +47,14 @@
                 <strength value="required"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-pN-vs"/>
             </binding>
+        </element>
+        <element id="Observation.specimen">
+            <path value="Observation.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-tissue-specimen-us"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

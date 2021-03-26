@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="melanoma-breslow-thickness-observation-us"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-05T19:06:47.787+00:00"/>
-        <source value="#sKZfVjlrBniPSjqY"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-26T19:05:46.370+00:00"/>
+        <source value="#nE1T8q7t2dkhw2gR"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/melanoma-breslow-thickness-observation-us"/>
     <name value="MelanomaBreslowThicknessObservation"/>
     <title value="Melanoma Breslow Thickness Observation"/>
     <status value="active"/>
+    <description value="Thickness of the Primary Tumor for invasive Melanoma tumors"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

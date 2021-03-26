@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="breast-histologic-type-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-25T16:42:55.591+00:00"/>
-        <source value="#1OErkobPqKFyj0S0"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-03-25T22:00:18.616+00:00"/>
+        <source value="#p33cH06eTpS8R0Cm"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/breast-histologic-type-observation-us"/>
     <name value="BreastHistologicType"/>
@@ -43,6 +43,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
+                <description value="Breast Histologic Types"/>
                 <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/breast-histologic-type-vs"/>
             </binding>
         </element>

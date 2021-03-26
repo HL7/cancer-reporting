@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="lung-resection-procedure-us"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-23T19:38:29.475+00:00"/>
-        <source value="#gCFMG8ZmdGIHZnp1"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-26T16:12:38.377+00:00"/>
+        <source value="#Qg0ljlK47iCnfQuV"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/lung-resection-procedure-us"/>
     <name value="LungResectionProcedure"/>
     <title value="Lung Resection Procedure"/>
     <status value="active"/>
+    <description value="Resection Procedure which produced the specimen being examined."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

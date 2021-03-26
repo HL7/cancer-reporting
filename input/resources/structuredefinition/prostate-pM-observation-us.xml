@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="prostate-pM-observation-us"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-23T16:08:32.771+00:00"/>
-        <source value="#E2W2E3uDZ6ABGPMf"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-26T16:37:49.353+00:00"/>
+        <source value="#PIVrNIIFNKjmSex5"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/prostate-pM-observation-us"/>
     <name value="ProstateDistantMetastasesObservation"/>
     <title value="Prostate Distant Metastases (pM) Observation"/>
     <status value="active"/>
+    <description value="Distant Metastases (pM) in the Prostate finding according to AJCC protocols."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/distant-metastases-observation-us"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

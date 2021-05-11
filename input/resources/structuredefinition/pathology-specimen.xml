@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="pathology-specimen"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-05-11T21:48:57.246+00:00"/>
+        <source value="#6FjXKT7FeQ12bYgP"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-specimen"/>
+    <name value="PathologySpecimen"/>
+    <title value="Pathology Specimen"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Specimen">
+            <path value="Specimen"/>
+        </element>
+        <element id="Specimen.identifier">
+            <path value="Specimen.identifier"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.accessionIdentifier">
+            <path value="Specimen.accessionIdentifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type">
+            <path value="Specimen.type"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.receivedTime">
+            <path value="Specimen.receivedTime"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection">
+            <path value="Specimen.collection"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.collected[x]">
+            <path value="Specimen.collection.collected[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.bodySite">
+            <path value="Specimen.collection.bodySite"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.container">
+            <path value="Specimen.container"/>
+            <label value="the sum of all specimen container elements equals the number of specimen containers (SPM-26)"/>
+            <short value="the sum of all specimen container elements equals the number of specimen containers (SPM-26)"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.note">
+            <path value="Specimen.note"/>
+            <label value="specimen reject reason, if applicable"/>
+            <short value="specimen reject reason, if applicable"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

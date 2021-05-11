@@ -1,7 +1,0 @@
-References
-1. Gonzalez MA, Pinder SE. Invasive carcinoma: other histologic prognostic factors – size, vascular invasion and prognostic index. In: O’Malley FP, Pinder SE, eds. Breast Pathology. Philadelphia, PA: Elsevier; 2006: 235-240.
-2. Colleoni M, Rotmensz N, Maisonneuve P, et al. Prognostic role of the extent of peritumoral vascular invasion in operable breast cancer. Ann Oncol. 2007;18:1632-1640.
-3. Mohammed RA, Martin SG, Mahmmod AM, et al. Objective assessment of lymphatic and blood vessel invasion in lymph node-negative breast carcinoma: findings from a large case series with long-term follow-up. J Pathol. 2011;223:358-365.
-4. Recht A, Comen EA, Fine RE, et al. Postmastectomy Radiotherapy: An American Society of Clinical Oncology, American Society for Radiation Oncology, and Society of Surgical Oncology Focused Guideline Update. Journal of Clinical Oncology. 2016 34:36, 4437. DOI: 10.1200/JCO.2016.69.1188.
-5. Rosen PP. Tumor emboli in intramammary lymphatics in breast carcinoma: pathologic criteria for diagnosis and clinical significance. Pathol Annu. 1983;18 Pt 2:215-232.
-6. Goldhirsch A, Wood WC, Coates AS, et al. Strategies for subtypes-dealing with the diversity of breast cancer: highlights of the St. Gallen International Expert Consensus on the primary therapy of early breast cancer 2011. Ann Oncol. 2011;22:1736-1747.

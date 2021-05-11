@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="naaccr-message-header"/>
+    <meta>
+        <versionId value="8"/>
+        <lastUpdated value="2021-05-11T20:05:22.910+00:00"/>
+        <source value="#8KGALEZ5b4q9Qbcj"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/naaccr-message-header"/>
+    <name value="NAACCRMessageHeader"/>
+    <title value="NAACCR MessageHeader"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MessageHeader"/>
+    <baseDefinition value="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-messageheader"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MessageHeader">
+            <path value="MessageHeader"/>
+        </element>
+        <element id="MessageHeader.meta">
+            <path value="MessageHeader.meta"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.meta.security">
+            <path value="MessageHeader.meta.security"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.event[x]">
+            <path value="MessageHeader.event[x]"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <patternCoding>
+                <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-messageheader-message-types"/>
+                <code value="cancer-report-message"/>
+            </patternCoding>
+        </element>
+        <element id="MessageHeader.focus">
+            <path value="MessageHeader.focus"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/common-order-segment"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

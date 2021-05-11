@@ -1,1 +1,0 @@
-Note: If there are multiple invasive carcinomas, size, grade, histologic type, and the results of studies for estrogen receptor (ER), progesterone receptor (PgR), and HER2 should pertain to the largest invasive carcinoma. If smaller invasive carcinomas differ in any of these features, this information may be included in the “Comments” section.

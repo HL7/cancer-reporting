@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="pathology-service-request"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-05-10T21:09:51.162+00:00"/>
+        <source value="#INQA8LgVRRWH011T"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-service-request"/>
+    <name value="SynopticReportServiceRequest"/>
+    <title value="SynopticReportServiceRequest"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ServiceRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ServiceRequest">
+            <path value="ServiceRequest"/>
+        </element>
+        <element id="ServiceRequest.identifier">
+            <path value="ServiceRequest.identifier"/>
+            <label value="Universal service identifier"/>
+            <short value="Universal service identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.requester">
+            <path value="ServiceRequest.requester"/>
+            <label value="ordering facility or ordering provider"/>
+            <short value="ordering facility or ordering provider"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

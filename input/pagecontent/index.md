@@ -37,6 +37,3 @@ Cancer Patient
 </table>
 
 
-
-
-[Next Page - About this Guide placeholder](about_this_guide_placeholder.html)

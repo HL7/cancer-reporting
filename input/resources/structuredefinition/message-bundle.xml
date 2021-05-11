@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="message-bundle"/>
+    <meta>
+        <versionId value="20"/>
+        <lastUpdated value="2021-05-11T19:46:16.208+00:00"/>
+        <source value="#wZkkBY3B01uxUXAZ"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/message-bundle"/>
+    <name value="NAACCRonFHIR"/>
+    <title value="NAACCR on FHIR"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="message"/>
+        </element>
+        <element id="Bundle.timestamp">
+            <path value="Bundle.timestamp"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:naaccr_message_header">
+            <path value="Bundle.entry"/>
+            <sliceName value="naaccr_message_header"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:naaccr_message_header.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/naaccr-message-header"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:us_core_patient">
+            <path value="Bundle.entry"/>
+            <sliceName value="us_core_patient"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:us_core_patient.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:us_core_encounter">
+            <path value="Bundle.entry"/>
+            <sliceName value="us_core_encounter"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:us_core_encounter.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:naaccr_diagnosticreport">
+            <path value="Bundle.entry"/>
+            <sliceName value="naaccr_diagnosticreport"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Bundle.entry:naaccr_diagnosticreport.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/common-order-segment"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:naaccr_specimen">
+            <path value="Bundle.entry"/>
+            <sliceName value="naaccr_specimen"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:naaccr_specimen.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-specimen"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:observation">
+            <path value="Bundle.entry"/>
+            <sliceName value="observation"/>
+            <min value="1"/>
+        </element>
+        <element id="Bundle.entry:observation.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

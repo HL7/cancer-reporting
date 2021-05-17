@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="naaccr-message-header"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-05-11T20:05:22.910+00:00"/>
-        <source value="#8KGALEZ5b4q9Qbcj"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-05-17T19:40:40.263+00:00"/>
+        <source value="#biwRAGm1LUemI3lE"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/naaccr-message-header"/>
     <name value="NAACCRMessageHeader"/>
@@ -46,7 +46,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/common-order-segment"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-diagnostic-report"/>
             </type>
             <mustSupport value="true"/>
         </element>

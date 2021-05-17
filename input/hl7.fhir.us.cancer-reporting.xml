@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="442"/>
-        <lastUpdated value="2021-05-11T21:50:43.655+00:00"/>
-        <source value="#gspVy6GqhHmAsQPY"/>
+        <versionId value="448"/>
+        <lastUpdated value="2021-05-17T19:46:20.902+00:00"/>
+        <source value="#Zdfzpm9MirDdAocL"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -57,6 +57,7 @@
                 <display value="NAACCR on FHIR"/>
             </reference>
             <name value="NAACCR on FHIR Bundle"/>
+            <description value="Message Bundle profile supporting NAACCR"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -65,14 +66,16 @@
                 <display value="NAACCRMessageHeader"/>
             </reference>
             <name value="NAACCR MessageHeader"/>
+            <description value="MessageHeader profile supporting NAACCR"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/common-order-segment"/>
-                <display value="CommonOrderSegment"/>
+                <reference value="StructureDefinition/pathology-diagnostic-report"/>
+                <display value="Pathology Diagnostic Report"/>
             </reference>
             <name value="Common Order Segment"/>
+            <description value="DianogsticReport profile, based on US Core DiagnosticReport Notes, supporting NAACCR"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -81,6 +84,7 @@
                 <display value="PathologyServiceRequest"/>
             </reference>
             <name value="Pathology ServiceRequest"/>
+            <description value="ServiceRequest profile supporting NAACCR"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -89,6 +93,7 @@
                 <display value="PathologySpecimen"/>
             </reference>
             <name value="Pathology Specimen"/>
+            <description value="Specimen profile supporting NAACCR"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -97,12 +102,43 @@
                 <display value="NextOfKin"/>
             </reference>
             <name value="Next Of Kin"/>
+            <description value="Next of Kin profile supporting NAACCR"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/cancer-connectathon-27-working-message-bundle"/></reference>
+                <reference value="StructureDefinition/pathology-related-practitioner-role"/>
+                <display value="PathologyRelatedPractitionerRoles"/>
+            </reference>
+            <name value="Pathology-Related PractitionerRoles"/>
+            <description value="PractitionerRole profile supporting NAACCR provider types (PV1 and OBR)"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/pathology-provider-types"/>
+                <display value="Pathology Provider Types"/>
+            </reference>
+            <name value="Pathology Provider Types"/>
+            <description value="Pathology-related Provider types"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/pathology-provider-types"/>
+                <display value="PathologyProviderTypes"/>
+            </reference>
+            <name value="Pathology Provider Types"/>
+            <description value="Additional concepts needed (not already defined in http://terminology.hl7.org/CodeSystem/v3-ParticipationType)"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/cancer-connectathon-27-working-message-bundle"/>
+                <display value="Bundle example"/>
+            </reference>
             <name value="Pathology Message Bundle Example"/>
+            <description value="Message Bundle example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/message-bundle"/>
         </resource>

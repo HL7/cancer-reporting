@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="pathology-provider-types"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-05-17T18:03:23.777+00:00"/>
+        <source value="#DCpw6Dzupho51jKG"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/pathology-provider-types"/>
+    <name value="PathologyProviderTypes"/>
+    <title value="Pathology Provider Types"/>
+    <status value="draft"/>
+    <content value="complete"/>
+    <concept>
+        <code value="collector"/>
+        <display value="Physician Primary Surgeon"/>
+        <definition value="The Primary Surgeon who obtained the specimen"/>
+    </concept>
+    <concept>
+        <code value="orderer"/>
+        <display value="Physician Ordering Pathology testing"/>
+        <definition value="The Physician who orders the pathology testing"/>
+    </concept>
+    <concept>
+        <code value="principal-result-interpretter"/>
+        <display value="Pathologist principally interpretting results on pathology testing"/>
+        <definition value="Pathologist principally interpretting results on pathology testing"/>
+    </concept>
+    <concept>
+        <code value="responsible-observer"/>
+        <display value="Pathologist responsible for observing pathology testing"/>
+        <definition value="Pathologist responsible for observing pathology testing"/>
+    </concept>
+</CodeSystem>

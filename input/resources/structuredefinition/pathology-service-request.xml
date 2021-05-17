@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-service-request"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-05-10T21:09:51.162+00:00"/>
-        <source value="#INQA8LgVRRWH011T"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-05-17T18:57:35.449+00:00"/>
+        <source value="#Q9zV5pcaAZArxKZe"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-service-request"/>
     <name value="SynopticReportServiceRequest"/>
@@ -27,14 +27,26 @@
             <short value="Universal service identifier"/>
             <mustSupport value="true"/>
         </element>
+        <element id="ServiceRequest.replaces">
+            <path value="ServiceRequest.replaces"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="ServiceRequest.requester">
             <path value="ServiceRequest.requester"/>
-            <label value="ordering facility or ordering provider"/>
-            <short value="ordering facility or ordering provider"/>
+            <label value="Ordering provider (OBR-16)"/>
+            <short value="Ordering provider (OBR-16)"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-related-practitioner-role"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.supportingInfo">
+            <path value="ServiceRequest.supportingInfo"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.specimen">
+            <path value="ServiceRequest.specimen"/>
             <mustSupport value="true"/>
         </element>
     </differential>

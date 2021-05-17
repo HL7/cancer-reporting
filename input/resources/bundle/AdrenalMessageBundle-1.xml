@@ -25,7 +25,7 @@
           </div>
         </text>
         <extension
-          url="http://hl7.org/fhir/us/pathology-diagnostic-reportmedmorph/StructureDefinition/ext-messageProcessingCategory">
+          url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
           <valueCode value="notification" />
         </extension>
         <eventCoding>

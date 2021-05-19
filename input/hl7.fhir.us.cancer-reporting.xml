@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="449"/>
-        <lastUpdated value="2021-05-18T19:32:02.782+00:00"/>
-        <source value="#OHLUBQKpBiOoLo4f"/>
+        <versionId value="450"/>
+        <lastUpdated value="2021-05-19T14:52:22.580+00:00"/>
+        <source value="#J2njq0E14fFapH7k"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -76,15 +76,6 @@
             </reference>
             <name value="eCC Report (DiagnosticReport)"/>
             <description value="DianogsticReport profile, based on US Core DiagnosticReport Notes, supporting NAACCR"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/pathology-service-request"/>
-                <display value="PathologyServiceRequest"/>
-            </reference>
-            <name value="Pathology ServiceRequest"/>
-            <description value="ServiceRequest profile supporting NAACCR"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-specimen"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-05-19T14:24:40.092+00:00"/>
-        <source value="#Rb2Jx8DwNtmoZgWX"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-05-19T15:23:45.086+00:00"/>
+        <source value="#tOmm8fTZ7MSZpEF8"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-specimen"/>
     <name value="PathologySpecimen"/>
@@ -70,6 +70,10 @@
             <path value="Specimen.collection.bodySite"/>
             <min value="1"/>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+            </binding>
         </element>
         <element id="Specimen.container">
             <path value="Specimen.container"/>

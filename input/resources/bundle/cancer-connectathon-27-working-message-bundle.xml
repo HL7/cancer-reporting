@@ -26,16 +26,19 @@
         </text>
         <extension
           url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
-          <valueCode value="notification" />
+          <valueCode value="consequence" />
         </extension>
+        <!-- Constrain to 2 cancer codes only -->
         <eventCoding>
           <system
             value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-messageheader-message-types" />
           <code value="cancer-report-message" />
         </eventCoding>
+        <!-- need to add destination -->
         <destination>
           <endpoint value="http://example.com/fhir/cerner-test" />
         </destination>
+        <!-- need to add sender -->
         <sender>
           <reference value="Organization/Redwood-Womens-Center-PC" />
         </sender>
@@ -50,6 +53,7 @@
             <code value="new-labresult" />
           </coding>
         </reason>
+        <!-- MSH-10, OBR-3? -->
         <focus>
           <type value="DiagnosticReport" />
           <identifier>
@@ -317,31 +321,6 @@
       </DiagnosticReport>
     </resource>
   </entry>
-  <!-- Service Request -->
-  <entry>
-    <fullUrl value="http://example.org/fhir/ServiceRequest/example-synoptic-service-request" />
-    <resource>
-      <ServiceRequest>
-        <id value="example-synoptic-service-request" />
-        <meta>
-          <profile
-            value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-service-request"
-           />
-        </meta>
-        <status value="completed" />
-        <intent value="order" />
-        <subject>
-          <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791" />
-        </subject>
-        <requester>
-          <reference value="PractitionerRole/oncologist-example" />
-        </requester>
-        <specimen>
-          <reference value="Specimen/adrenal-example" />
-        </specimen>
-      </ServiceRequest>
-    </resource>
-  </entry>
   <!-- Specimen -->
   <entry>
     <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Specimen/adrenal-example" />
@@ -465,10 +444,6 @@
             <display value="Pathologist principally interpretting results on pathology testing" />
           </coding>
         </code>
-        <telecom>
-          <system value="phone"/>
-          <value value="720-242-0000"/>
-        </telecom>
       </PractitionerRole>
     </resource>
   </entry>

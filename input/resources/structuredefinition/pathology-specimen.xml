@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-specimen"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-05-11T21:48:57.246+00:00"/>
-        <source value="#6FjXKT7FeQ12bYgP"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-05-19T14:24:40.092+00:00"/>
+        <source value="#Rb2Jx8DwNtmoZgWX"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-specimen"/>
     <name value="PathologySpecimen"/>
@@ -30,6 +30,12 @@
             <path value="Specimen.accessionIdentifier"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Specimen.status">
+            <path value="Specimen.status"/>
+            <short value="Use 'unsatisfactory' if specimen was rejected. Provide reason why specimen was rejected in .note"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Specimen.type">
             <path value="Specimen.type"/>
             <min value="1"/>
@@ -40,16 +46,29 @@
             <path value="Specimen.receivedTime"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Specimen.parent">
+            <path value="Specimen.parent"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Specimen.collection">
             <path value="Specimen.collection"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.collection.collected[x]">
             <path value="Specimen.collection.collected[x]"/>
+            <min value="0"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.method">
+            <path value="Specimen.collection.method"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.collection.bodySite">
             <path value="Specimen.collection.bodySite"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.container">

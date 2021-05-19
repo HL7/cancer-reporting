@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-service-request"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-05-17T18:57:35.449+00:00"/>
-        <source value="#Q9zV5pcaAZArxKZe"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-05-18T19:41:37.807+00:00"/>
+        <source value="#OkaJTsn40cUcgizu"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-service-request"/>
     <name value="SynopticReportServiceRequest"/>
     <title value="SynopticReportServiceRequest"/>
     <status value="active"/>
+    <description value="This profile models the request for pathology testing based on a placer order # and specimen sent. This requst for pathology testing services may apply in either clinical/pathology or pathology/pathology request scenarios. "/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -31,10 +32,32 @@
             <path value="ServiceRequest.replaces"/>
             <mustSupport value="true"/>
         </element>
+        <element id="ServiceRequest.requisition">
+            <path value="ServiceRequest.requisition"/>
+            <label value="Placer Order # (OBR-2)"/>
+            <short value="Placer Order # (OBR-2)"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.code">
+            <path value="ServiceRequest.code"/>
+            <label value="Type of Synoptic Report being requested of the pathology lab (OBR-4)"/>
+            <short value="Type of Synoptic Report being requested of the pathology lab (OBR-4)"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.encounter">
+            <path value="ServiceRequest.encounter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="ServiceRequest.requester">
             <path value="ServiceRequest.requester"/>
             <label value="Ordering provider (OBR-16)"/>
             <short value="Ordering provider (OBR-16)"/>
+            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-related-practitioner-role"/>
@@ -47,6 +70,10 @@
         </element>
         <element id="ServiceRequest.specimen">
             <path value="ServiceRequest.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-specimen"/>
+            </type>
             <mustSupport value="true"/>
         </element>
     </differential>

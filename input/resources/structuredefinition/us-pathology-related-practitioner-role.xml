@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="pathology-related-practitioner-role"/>
+    <id value="us-pathology-related-practitioner-role"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-05-17T18:31:58.268+00:00"/>
-        <source value="#BTktAefRc38q4toO"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-18T14:37:05.591+00:00"/>
+        <source value="#kTXLncoSnaqc4KBM"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-related-practitioner-role"/>
-    <name value="PathologyRelatedPractitionerRoles"/>
-    <title value="Pathology Related Practitioner Roles"/>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+    <name value="USPathologyRelatedPractitionerRoles"/>
+    <title value="US Pathology Related Practitioner Roles"/>
     <status value="active"/>
     <description value="This profile is built upon US Core PractitionerRole and defines pathology-related role codes for the following pathology-related practitioner roles included in NAACCR:&#xA;Attending Doctor: PV1-7&#xA;Referring Doctor: PV1-8&#xA;Consulting Doctor: PV1-9&#xA;Admitting Doctor: PV1-17&#xA;Collecting Doctor: OBR-10&#xA;Ordering Doctor: OBR-16&#xA;Principal Results Interpretter: OBR-32&#xA;Pathology Responsible Observer: OBX-16"/>
     <fhirVersion value="4.0.1"/>

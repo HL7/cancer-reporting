@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen
+    xmlns="http://hl7.org/fhir">
+    <id value="adrenal-example"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-22T15:35:01.116+00:00"/>
+        <source value="#Uo6OvkCtUhuLWRsv"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+    </meta>
+    <identifier>
+        <system value="http://some-lis.org/fhir/specimen-identifier-provisioner"/>
+        <value value="123456789"/>
+    </identifier>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+            <code value="BX"/>
+        </coding>
+    </type>
+</Specimen>

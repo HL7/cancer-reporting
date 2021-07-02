@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="JoelAlexPatient"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-06-22T14:53:48.802+00:00"/>
+        <source value="#HlWIZwN9OatT3Y5e"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Jose 
+        
+                <b>RODRIGUEZ </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>JoelAlexPatient</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <system value="urn:system"/>
+        <value value="JoelAlexPatient"/>
+    </identifier>
+    <name>
+        <family value="Rodriguez"/>
+        <given value="Jose"/>
+    </name>
+    <gender value="male"/>
+</Patient>

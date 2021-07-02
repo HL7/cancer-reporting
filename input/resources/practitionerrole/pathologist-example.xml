@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="pathologist-example"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-22T15:34:52.729+00:00"/>
+        <source value="#5Sa60ZwnUvz88VRk"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/pathologist-example"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/principal-pathology-lab"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/pathology-provider-types"/>
+            <code value="principal-result-interpretter"/>
+            <display value="Pathologist principally interpretting results on pathology testing"/>
+        </coding>
+    </code>
+</PractitionerRole>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageHeader
+    xmlns="http://hl7.org/fhir">
+    <id value="pathology-message-header"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-22T15:34:16.299+00:00"/>
+        <source value="#CGJiqFh6H4FrDgYG"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p> SDC example Message Bundle for fake patient Jose including Patient, Encounter</p>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
+        <valueCode value="consequence"/>
+    </extension>
+    <eventCoding>
+        <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-messageheader-message-types"/>
+        <code value="cancer-report-message"/>
+    </eventCoding>
+    <destination>
+        <endpoint value="http://example.com/fhir/cerner-test"/>
+    </destination>
+    <sender>
+        <reference value="Organization/Redwood-Womens-Center-PC"/>
+    </sender>
+    <source>
+        <name value="IHE SDC on FHIR Parser"/>
+        <endpoint value="http://example.com/fhir/mtuitive-test"/>
+    </source>
+    <reason>
+        <coding>
+            <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents"/>
+            <code value="new-labresult"/>
+        </coding>
+    </reason>
+    <focus>
+        <type value="DiagnosticReport"/>
+        <identifier>
+            <system value="https://CAP.org"/>
+            <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"/>
+        </identifier>
+    </focus>
+</MessageHeader>

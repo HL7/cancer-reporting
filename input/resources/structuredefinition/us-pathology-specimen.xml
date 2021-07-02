@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="pathology-specimen"/>
+    <id value="us-pathology-specimen"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-05-19T15:23:45.086+00:00"/>
-        <source value="#tOmm8fTZ7MSZpEF8"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-18T14:42:06.650+00:00"/>
+        <source value="#e2CnCdjY1HevJJ6H"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-specimen"/>
-    <name value="PathologySpecimen"/>
-    <title value="Pathology Specimen"/>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+    <name value="USPathologySpecimen"/>
+    <title value="US Pathology Specimen"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
@@ -32,14 +32,11 @@
         </element>
         <element id="Specimen.status">
             <path value="Specimen.status"/>
-            <short value="Use 'unsatisfactory' if specimen was rejected. Provide reason why specimen was rejected in .note"/>
-            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.type">
             <path value="Specimen.type"/>
             <min value="1"/>
-            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.receivedTime">
@@ -54,37 +51,13 @@
             <path value="Specimen.collection"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Specimen.collection.collected[x]">
-            <path value="Specimen.collection.collected[x]"/>
-            <min value="0"/>
-            <type>
-                <code value="dateTime"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Specimen.collection.method">
-            <path value="Specimen.collection.method"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Specimen.collection.bodySite">
-            <path value="Specimen.collection.bodySite"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
-            </binding>
-        </element>
         <element id="Specimen.container">
             <path value="Specimen.container"/>
-            <label value="the sum of all specimen container elements equals the number of specimen containers (SPM-26)"/>
-            <short value="the sum of all specimen container elements equals the number of specimen containers (SPM-26)"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.note">
             <path value="Specimen.note"/>
-            <label value="specimen reject reason, if applicable"/>
-            <short value="specimen reject reason, if applicable"/>
             <mustSupport value="true"/>
         </element>
     </differential>

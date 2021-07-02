@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="message-bundle"/>
+    <id value="us-pathology-bundle"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2021-05-17T19:37:19.909+00:00"/>
-        <source value="#82DgfjnlHtjTV9Ms"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-29T18:50:18.012+00:00"/>
+        <source value="#I9obBoOlBqzBE0jt"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/message-bundle"/>
-    <name value="NAACCRonFHIR"/>
-    <title value="NAACCR on FHIR"/>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
+    <name value="USPathologyBundle"/>
+    <title value="US Pathology Bundle"/>
     <status value="active"/>
     <description value="This mesage bundle profile defines the structure of a NAACCR v5 FHIR message that is sent from a pathology environment into an EHR environment. Note- US Core profiles are expected for Organization, Practitioner, and Procedure, when such information is known to the source LIS."/>
     <fhirVersion value="4.0.1"/>
@@ -43,18 +43,19 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:naaccr_message_header">
+        <element id="Bundle.entry:message_header">
             <path value="Bundle.entry"/>
-            <sliceName value="naaccr_message_header"/>
+            <sliceName value="message_header"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:naaccr_message_header.resource">
+        <element id="Bundle.entry:message_header.resource">
             <path value="Bundle.entry.resource"/>
+            <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/naaccr-message-header"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -90,14 +91,14 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:naaccr_diagnosticreport">
+        <element id="Bundle.entry:diagnosticreport">
             <path value="Bundle.entry"/>
-            <sliceName value="naaccr_diagnosticreport"/>
+            <sliceName value="diagnosticreport"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:naaccr_diagnosticreport.resource">
+        <element id="Bundle.entry:diagnosticreport.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
@@ -105,13 +106,13 @@
                 <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-diagnostic-report"/>
             </type>
         </element>
-        <element id="Bundle.entry:naaccr_specimen">
+        <element id="Bundle.entry:specimen">
             <path value="Bundle.entry"/>
-            <sliceName value="naaccr_specimen"/>
+            <sliceName value="specimen"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:naaccr_specimen.resource">
+        <element id="Bundle.entry:specimen.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>

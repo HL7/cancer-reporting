@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="51265.100004300"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-06-22T14:53:19.024+00:00"/>
+        <source value="#TdgRMr99dRXuoaFd"/>
+    </meta>
+    <identifier>
+        <system value="https://CAP.org"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
+    </identifier>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="https://CAP.org"/>
+            <code value="51265.100004300"/>
+            <display value="Tumor Extension"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791"/>
+    </subject>
+    <component>
+        <code>
+            <coding>
+                <system value="https://CAP.org"/>
+                <code value="39537.100004300"/>
+                <display value="Tumor invades into or through the adrenal capsule"/>
+            </coding>
+        </code>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="https://CAP.org"/>
+                <code value="56271.100004300"/>
+                <display value="Tumor invades into other adjacent organ(s)"/>
+            </coding>
+        </code>
+    </component>
+</Observation>

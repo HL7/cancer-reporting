@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="40496.100004300"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-06-22T14:53:19.020+00:00"/>
+        <source value="#Dsg4VYqz6D2z0dxw"/>
+    </meta>
+    <identifier>
+        <system value="https://CAP.org"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
+    </identifier>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="https://CAP.org"/>
+            <code value="40496.100004300"/>
+            <display value="Tumor Weight (Note B)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791"/>
+    </subject>
+    <valueCodeableConcept>
+        <coding>
+            <system value="https://CAP.org"/>
+            <code value="44761.100004300"/>
+            <display value="Specify weight (g)"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

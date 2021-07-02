@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="us-pathology-diagnostic-report"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2021-06-18T14:44:22.749+00:00"/>
+        <source value="#JDOxHLS6nLsF0xty"/>
+    </meta>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+    <name value="USPathologyDiagnosticReport"/>
+    <title value="US Pathology Diagnostic Report"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DiagnosticReport"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DiagnosticReport">
+            <path value="DiagnosticReport"/>
+        </element>
+        <element id="DiagnosticReport.subject">
+            <path value="DiagnosticReport.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.performer">
+            <path value="DiagnosticReport.performer"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.resultsInterpreter">
+            <path value="DiagnosticReport.resultsInterpreter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/uv/cancer-pathology-common-libraries/StructureDefinition/pathology-practitioner-role"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.specimen">
+            <path value="DiagnosticReport.specimen"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://www.hl7.org/fhir/uv/cancer-pathology-common-libraries/StructureDefinition/pathology-specimen"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="20880.100004300"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-06-22T14:53:19.024+00:00"/>
+        <source value="#4uMxc2hD3piOC0pT"/>
+    </meta>
+    <identifier>
+        <system value="https://CAP.org"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
+    </identifier>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="https://CAP.org"/>
+            <code value="20880.100004300"/>
+            <display value="?TNM Descriptors"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791"/>
+    </subject>
+    <component>
+        <code>
+            <coding>
+                <system value="https://CAP.org"/>
+                <code value="20890.100004300"/>
+                <display value="m (multiple primary tumors)"/>
+            </coding>
+        </code>
+    </component>
+</Observation>

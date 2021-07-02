@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="next-of-kin"/>
+    <id value="us-pathology-next-of-kin"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-05-10T18:39:17.972+00:00"/>
-        <source value="#4ZyRgxlwu1KB1Mpc"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-18T14:36:41.652+00:00"/>
+        <source value="#Of0OTOUJkQEZzNnZ"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/next-of-kin"/>
-    <name value="NextOfKin"/>
-    <title value="Next of Kin to Related Person profile"/>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
+    <name value="USPathologyNextOfKin"/>
+    <title value="US Pathology Next of Kin to RelatedPerson"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
@@ -27,7 +27,15 @@
         </element>
         <element id="RelatedPerson.relationship">
             <path value="RelatedPerson.relationship"/>
-            <max value="1"/>
+            <min value="1"/>
+            <max value="*"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+                    <code value="N"/>
+                    <display value="Next-of-Kin"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="RelatedPerson.name">

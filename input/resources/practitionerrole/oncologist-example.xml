@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="oncologist-example"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-22T15:34:27.113+00:00"/>
+        <source value="#vEwqI61gc5bzBBEz"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/oncologist-example"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/Redwood-Womens-Center-PC"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/pathology-provider-types"/>
+            <code value="orderer"/>
+            <display value="Physician Ordering Pathology testing"/>
+        </coding>
+    </code>
+    <telecom>
+        <system value="phone"/>
+        <value value="720-242-5555"/>
+    </telecom>
+</PractitionerRole>

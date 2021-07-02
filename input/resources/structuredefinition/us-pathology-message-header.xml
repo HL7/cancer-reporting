@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="naaccr-message-header"/>
+    <id value="us-pathology-message-header"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-05-17T19:40:40.263+00:00"/>
-        <source value="#biwRAGm1LUemI3lE"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-06-18T14:36:03.930+00:00"/>
+        <source value="#AcrCKdjjGLZnItDN"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/naaccr-message-header"/>
-    <name value="NAACCRMessageHeader"/>
-    <title value="NAACCR MessageHeader"/>
+    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+    <name value="USPathologyMessageHeader"/>
+    <title value="US Pathology MessageHeader"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

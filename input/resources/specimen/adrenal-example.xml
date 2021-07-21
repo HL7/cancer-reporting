@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="adrenal-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-22T15:35:01.116+00:00"/>
-        <source value="#Uo6OvkCtUhuLWRsv"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-21T17:09:47.849+00:00"/>
+        <source value="#35REt0VwYUhFkwiX"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
     </meta>
     <identifier>
@@ -18,4 +18,10 @@
             <code value="BX"/>
         </coding>
     </type>
+    <container>
+        <identifier>
+            <system value="http://some-lis.org/fhir/specimen-containerID-provisioner"/>
+            <value value="987654321"/>
+        </identifier>
+    </container>
 </Specimen>

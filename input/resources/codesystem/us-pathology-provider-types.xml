@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-provider-types"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-07-17T21:11:31.796+00:00"/>
-        <source value="#4Udc4w5GI5Rdbj1B"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-07-21T17:11:42.507+00:00"/>
+        <source value="#Oj3XfGaTJkkRFAY8"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
     <name value="USPathologyProviderTypes"/>

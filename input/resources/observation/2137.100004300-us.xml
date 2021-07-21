@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="2137.100004300"/>
+    <id value="2137.100004300-us"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2021-06-22T14:53:19.153+00:00"/>
-        <source value="#2F3iuo76DXzchZ51"/>
+        <lastUpdated value="2021-07-21T17:28:29.664+00:00"/>
+        <source value="#BIamhABhWYvNUAVB"/>
     </meta>
     <identifier>
         <system value="https://CAP.org"/>
@@ -20,7 +20,7 @@
         </coding>
     </code>
     <subject>
-        <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791"/>
+        <reference value="Patient/JoelAlexPatient"/>
     </subject>
     <valueCodeableConcept>
         <coding>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="oncologist-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-22T15:34:27.113+00:00"/>
-        <source value="#vEwqI61gc5bzBBEz"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-21T17:12:24.453+00:00"/>
+        <source value="#qKpLWtNTSbFS4rsu"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
     </meta>
     <practitioner>
@@ -16,7 +16,7 @@
     </organization>
     <code>
         <coding>
-            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/pathology-provider-types"/>
+            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
             <code value="orderer"/>
             <display value="Physician Ordering Pathology testing"/>
         </coding>

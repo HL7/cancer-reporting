@@ -49,11 +49,11 @@ This project acknowledges that there is an ongoing discussion about how LOINC vs
 | Co-Editor | Ruby Nash | Lantana Consulting Group | ruby.nash@lantanagroup.com|
 | Co-Editor | Diana Wright | Lantana Consulting Group | diana.wright@lantanagroup.com|
 | Co-Editor | Max Nakamura | Lantana Consulting Group | max.nakamura@lantanagroup.com|
-| Subject Matter Expert | Wendy Blumenthal | Centers for Disease Control and Prevention | wfb6@cdc.gov|
-| Subject Matter Expert | David Jones | Centers for Disease Control and Prevention | pvl1@cdc.gov|
-| Subject Matter Expert | Sandra (Sandy) Jones | Centers for Disease Control and Prevention | sft1@cdc.gov|
-| Subject Matter Expert | Temitope Alimi | Centers for Disease Control and Prevention | nyj4@cdc.gov|
-| Subject Matter Expert | Wendy Scharber | Centers for Disease Control and Prevention | wendy@registrywidgets.com|
+| Subject Matter Expert | Wendy Blumenthal | Centers for Disease Control and Prevention (CDC) | wfb6@cdc.gov|
+| Subject Matter Expert | David Jones | Centers for Disease Control and Prevention (CDC) | pvl1@cdc.gov|
+| Subject Matter Expert | Sandy Jones | Centers for Disease Control and Prevention (CDC) | sft1@cdc.gov|
+| Subject Matter Expert | Temitope Alimi | Katmai Government Services contract to CDC | nyj4@cdc.gov|
+| Subject Matter Expert | Wendy Scharber | Katmai Government Services/Registry Widgets contract to CDC | wendy@registrywidgets.com|
 | Subject Matter Expert | Richard (Rich) Moldwin | College of American Pathologists | rmoldwi@cap.org|
 | Subject Matter Expert | Alex Goel | College of American Pathologists | agoel@cap.org|
 | Subject Matter Expert | Walter (Scott) Campbell | University of Nebraska Medical Center | wcampbel@unmc.edu |

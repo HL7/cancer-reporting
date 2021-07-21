@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="553"/>
-        <lastUpdated value="2021-07-21T13:51:31.961+00:00"/>
-        <source value="#7ypMLAI9AXFOLL5H"/>
+        <versionId value="559"/>
+        <lastUpdated value="2021-07-21T17:49:24.590+00:00"/>
+        <source value="#fbkPOIHDc4xUTwbZ"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -123,7 +123,7 @@
         <resource>
             <reference>
                 <reference value="CodeSystem/us-pathology-provider-types"/>
-                <display value="Pathology Provider Types"/>
+                <display value="US Pathology Provider Types"/>
             </reference>
             <name value="US Pathology Provider Types CodeSystem"/>
             <description value="Additional concepts needed (not already defined in http://terminology.hl7.org/CodeSystem/v3-ParticipationType)"/>
@@ -267,7 +267,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/2118.100004300"/></reference>
+                <reference value="Observation/2118.100004300-us"/></reference>
             <name value="Adrenal Gland (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -275,7 +275,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/42554.100004300"/></reference>
+                <reference value="Observation/42554.100004300-us"/></reference>
             <name value="Procedure: Adrenalectomy, total (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -283,7 +283,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/52756.100004300"/></reference>
+                <reference value="Observation/52756.100004300-us"/></reference>
             <name value="Specimen Laterality: Bilateral (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -291,7 +291,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/59852.100004300"/></reference>
+                <reference value="Observation/59852.100004300-us"/></reference>
             <name value="Histologic Type: Adrenal cortical carcinoma (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -299,7 +299,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/40496.100004300"/></reference>
+                <reference value="Observation/40496.100004300-us"/></reference>
             <name value="Tumor Weight: Specify Weight (g) (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -307,15 +307,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/2129.100004300"/></reference>
-            <name value="Tumor Size: Greatest dimension in Centimeters (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/49275.100004300"/></reference>
+                <reference value="Observation/49275.100004300-us"/></reference>
             <name value="Histologic Grade: High grade (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -323,7 +315,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/1867.100004300"/></reference>
+                <reference value="Observation/1867.100004300-us"/></reference>
             <name value="Regional Lymph Nodes: None Submitted (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -331,15 +323,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/53526.100004300"/></reference>
-            <name value="Tumor Extension-2: Tumor invasion-2 (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/51265.100004300"/></reference>
+                <reference value="Observation/51265.100004300-us"/></reference>
             <name value="Tumor Extension: Tumor invasion (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -347,7 +331,15 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/20880.100004300"/></reference>
+                <reference value="Observation/53526.100004300-us"/></reference>
+            <name value="Tumor Extension-2: Tumor invasion-2 (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/20880.100004300-us"/></reference>
             <name value="TNM Descriptors: m (multiple primary tumors) (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -355,7 +347,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/2137.100004300"/></reference>
+                <reference value="Observation/2137.100004300-us"/></reference>
             <name value="Primary Tumor (pT): pTX: primary tumor cannot be assessed (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -363,7 +355,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/2143.100004300"/></reference>
+                <reference value="Observation/2143.100004300-us"/></reference>
             <name value="Regional Lymph Nodes (pN): pN0: No regional lymph node metastasis (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
@@ -371,7 +363,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/2149.100004300"/></reference>
+                <reference value="Observation/2149.100004300-us"/></reference>
             <name value="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>

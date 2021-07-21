@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="1867.100004300"/>
+    <id value="53526.100004300-us"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2021-06-22T14:53:19.107+00:00"/>
-        <source value="#WlCGbD8Jk9gPVUNB"/>
+        <lastUpdated value="2021-07-21T17:28:29.963+00:00"/>
+        <source value="#uRWAgSPtu4PHJ4FA"/>
     </meta>
     <identifier>
         <system value="https://CAP.org"/>
-        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
             <system value="https://CAP.org"/>
-            <code value="1867.100004300"/>
-            <display value="Regional Lymph Nodes"/>
+            <code value="53526.100004300"/>
         </coding>
     </code>
     <subject>
-        <reference value="urn:uuid:2c08e319-f0af-48b3-98df-267cbd376791"/>
+        <reference value="Patient/JoelAlexPatient"/>
     </subject>
     <component>
         <code>
             <coding>
                 <system value="https://CAP.org"/>
-                <code value="1868.100004300"/>
-                <display value="No lymph nodes submitted or found"/>
+                <code value="58229.100004300"/>
+                <display value="Diaphragm"/>
             </coding>
         </code>
     </component>

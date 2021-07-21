@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-next-of-kin"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-18T14:36:41.652+00:00"/>
-        <source value="#Of0OTOUJkQEZzNnZ"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-18T23:53:18.375+00:00"/>
+        <source value="#ADGhI8mumnuOFlxt"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
     <name value="USPathologyNextOfKin"/>
-    <title value="US Pathology Next of Kin to RelatedPerson"/>
+    <title value="US Pathology Next of Kin"/>
     <status value="active"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

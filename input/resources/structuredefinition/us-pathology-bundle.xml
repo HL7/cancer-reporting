@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-bundle"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-29T18:50:18.012+00:00"/>
-        <source value="#I9obBoOlBqzBE0jt"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-17T21:05:54.979+00:00"/>
+        <source value="#Z2fmsiaC8v8zuQWa"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
     <name value="USPathologyBundle"/>
     <title value="US Pathology Bundle"/>
     <status value="active"/>
-    <description value="This mesage bundle profile defines the structure of a NAACCR v5 FHIR message that is sent from a pathology environment into an EHR environment. Note- US Core profiles are expected for Organization, Practitioner, and Procedure, when such information is known to the source LIS."/>
+    <description value="This message bundle profile defines the structure of a NAACCR v5 FHIR message that is sent from a pathology environment into an EHR environment. Note- US Core profiles are expected for Organization, Practitioner, and Procedure, when such information is known to the source LIS."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

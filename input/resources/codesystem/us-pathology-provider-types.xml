@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-provider-types"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-18T14:46:54.963+00:00"/>
-        <source value="#TiRhQFxBC0C1H5sO"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-17T21:11:31.796+00:00"/>
+        <source value="#4Udc4w5GI5Rdbj1B"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
     <name value="USPathologyProviderTypes"/>
@@ -23,9 +23,9 @@
         <definition value="The Physician who orders the pathology testing"/>
     </concept>
     <concept>
-        <code value="principal-result-interpretter"/>
-        <display value="Pathologist principally interpretting results on pathology testing"/>
-        <definition value="Pathologist principally interpretting results on pathology testing"/>
+        <code value="principal-result-interpreter"/>
+        <display value="Pathologist principally interpreting results on pathology testing"/>
+        <definition value="Pathologist principally interpreting results on pathology testing"/>
     </concept>
     <concept>
         <code value="responsible-observer"/>

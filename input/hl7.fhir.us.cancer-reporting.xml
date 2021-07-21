@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="502"/>
-        <lastUpdated value="2021-07-02T14:59:00.162+00:00"/>
-        <source value="#0fQL8xrMpvDZ0k4C"/>
+        <versionId value="553"/>
+        <lastUpdated value="2021-07-21T13:51:31.961+00:00"/>
+        <source value="#7ypMLAI9AXFOLL5H"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -19,7 +19,7 @@
             <value value="http://www.hl7.org/Special/committees/orders"/>
         </telecom>
     </contact>
-    <description value="**TODO**&#xA;&#xA;This project scope and explanation. Diagrams/visuals and CapabilityStatements. &#xA;&#xA;Mention potential future use cases: microbiology, SHIELD&#xA;&#xA;Need to review LOINC codes (beyond Synoptik Report) and update scope/requirements as necessary."/>
+    <description value="This implementation guide provides HL7 FHIR resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -56,7 +56,7 @@
                 <display value="US Pathology Bundle"/>
             </reference>
             <name value="US Pathology Bundle"/>
-            <description value="Message Bundle profile representing HL7v2 segment information as defined in NAACCR volume 5, version 5"/>
+            <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -66,7 +66,7 @@
                 <display value="MessageHeader"/>
             </reference>
             <name value="US Pathology MessageHeader"/>
-            <description value="MessageHeader profile representing MSH segment (v2.5.1) information as defined in NAACCR  volume 5, version 5"/>
+            <description value="MessageHeader profile representing MSH segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -76,7 +76,7 @@
                 <display value="Pathology Diagnostic Report"/>
             </reference>
             <name value="US Pathology Diagnostic Report"/>
-            <description value="DiagnosticReport profile representing OBR/OBX (v2.5.1) segment information as defined in NAACCR volume 5, version 5"/>
+            <description value="DiagnosticReport profile representing OBR/OBX (V2.5.1) segment information as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -86,7 +86,7 @@
                 <display value="Pathology Specimen"/>
             </reference>
             <name value="US Pathology Specimen"/>
-            <description value="Specimen profile representing SPM segment (v2.5.1) information as defined in NAACCR  volume 5, version 5"/>
+            <description value="Specimen profile representing SPM segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -95,8 +95,8 @@
                 <reference value="StructureDefinition/us-pathology-next-of-kin"/>
                 <display value="Next of Kin to Related Person profile"/>
             </reference>
-            <name value="US Pathology Next of Kin to RelatedPerson"/>
-            <description value="RelatedPerson profile representing NK1 segment (v2.5.1) information as defined in NAACCR volume 5, version 5"/>
+            <name value="US Pathology Next of Kin"/>
+            <description value="RelatedPerson profile representing NK1 segment (V2.5.1) information as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -106,7 +106,7 @@
                 <display value="Pathology Related Practitioner Roles"/>
             </reference>
             <name value="US Pathology Related Practitioner Roles"/>
-            <description value="PractitionerRole profile representing PV1 and OBR segment information (v2.5.1) as defined in NAACCR volume 5, version 5"/>
+            <description value="PractitionerRole profile representing PV1 and OBR segment information (V2.5.1) as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -147,7 +147,7 @@
                 <display value="MessageHeader (example)"/>
             </reference>
             <name value="MessageHeader (example)"/>
-            <description value="Example of a HessageHeader from a pathology environment into an EHR"/>
+            <description value="Example of a MessageHeader from a pathology environment into an EHR"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
             <groupingId value="new-group3"/>
@@ -216,7 +216,7 @@
                 <display value="Next-of-Kin RelatedPerson (example)"/>
             </reference>
             <name value="Next-of-Kin RelatedPerson (example)"/>
-            <description value="This example shows Next of Kin (NoK) information in a RelatedPerson resource."/>
+            <description value="This example shows Next of Kin information in a RelatedPerson resource."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
             <groupingId value="new-group3"/>
@@ -372,7 +372,7 @@
         <resource>
             <reference>
                 <reference value="Observation/2149.100004300"/></reference>
-            <name value="Distant Metastais (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
+            <name value="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -381,6 +381,21 @@
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
             <generation value="markdown"/>
+            <page>
+                <nameUrl value="background.html"/>
+                <title value="Background"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="specification.html"/>
+                <title value="Specification"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="downloads.html"/>
+                <title value="Downloads"/>
+                <generation value="markdown"/>
+            </page>
         </page>
         <parameter>
             <code value="copyrightyear"/>

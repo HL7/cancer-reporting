@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-provider-types"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-18T14:46:00.198+00:00"/>
-        <source value="#ojMKBLj8sZNQ9zUD"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-17T21:10:15.000+00:00"/>
+        <source value="#V0TMi74S4HqxgokF"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-provider-types"/>
     <name value="USPathologyProviderTypes"/>
     <title value="US Pathology Provider Types"/>
     <status value="draft"/>
-    <description value="ValueSet for Practitioner roles within NAACCR reporting. This ValueSet is compised of HL7 v3 ParticipationType codes (found in PV1) and concepts from Pathology Provider Types CodeSystem (found in OBR). "/>
+    <description value="ValueSet for Practitioner roles within NAACCR reporting. This ValueSet is composed of HL7 ParticipationType codes (found in PV1) and concepts from Pathology Provider Types CodeSystem (found in OBR). "/>
     <compose>
         <include>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>

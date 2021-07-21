@@ -8,16 +8,16 @@
 			"date": "",
 			"sequence": "CI build",
 			"status": "ci-build",
-			"current": false
+			"current": true
 		},
 		{
 			"version": "0.1.0",
-			"current": true,
 			"desc": "Ballot for STU Release 1",
 			"path": "http://hl7.org/fhir/us/cancer-reporting/2021SEP",
 			"fhirversion": "4.0.1",
 			"status": "ballot",
-			"sequence": "STU1"
+			"sequence": "STU1",
+			"date": "2021-07-21"
 		}
 	],
 	"package-id": "hl7.fhir.us.cancer-reporting",

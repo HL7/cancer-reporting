@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-bundle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-07-17T21:05:54.979+00:00"/>
-        <source value="#Z2fmsiaC8v8zuQWa"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-07-23T17:46:52.582+00:00"/>
+        <source value="#UeO3fsZtqS7qHIQn"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
     <name value="USPathologyBundle"/>
@@ -103,7 +103,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-diagnostic-report"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
             </type>
         </element>
         <element id="Bundle.entry:specimen">
@@ -117,7 +117,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-specimen"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
             </type>
         </element>
         <element id="Bundle.entry:observation">
@@ -144,7 +144,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/next-of-kin"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -157,7 +157,7 @@
             <path value="Bundle.entry.resource"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/pathology-related-practitioner-role"/>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
             </type>
             <mustSupport value="true"/>
         </element>

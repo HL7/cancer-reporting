@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="cancer-us-pathology-message-bundle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-06-22T15:33:59.454+00:00"/>
-        <source value="#IkUzlYJshVgR94Hr"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-07-23T17:47:07.203+00:00"/>
+        <source value="#gTjDLIkgE3DOLqrR"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
     </meta>
     <type value="message"/>
@@ -64,6 +64,7 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Jose 
+                            
                             
                             <b>RODRIGUEZ </b>
                         </div>
@@ -177,7 +178,6 @@
                     <reference value="PractitionerRole/pathologist-example"/>
                 </resultsInterpreter>
                 <result>
-                    <reference value="Observation/2020"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
@@ -299,7 +299,7 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/pathology-provider-types"/>
+                        <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
                         <code value="orderer"/>
                         <display value="Physician Ordering Pathology testing"/>
                     </coding>
@@ -357,9 +357,9 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/pathology-provider-types"/>
-                        <code value="principal-result-interpretter"/>
-                        <display value="Pathologist principally interpretting results on pathology testing"/>
+                        <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+                        <code value="principal-result-interpreter"/>
+                        <display value="Pathologist principally interpreting results on pathology testing"/>
                     </coding>
                 </code>
             </PractitionerRole>

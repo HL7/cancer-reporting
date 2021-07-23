@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-related-practitioner-role"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-18T14:37:05.591+00:00"/>
-        <source value="#kTXLncoSnaqc4KBM"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-07-23T18:31:43.908+00:00"/>
+        <source value="#Fuobl3RkPb9lQVXC"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
     <name value="USPathologyRelatedPractitionerRoles"/>
@@ -29,7 +29,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/pathology-provider-types"/>
+                <valueSet value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-provider-types"/>
             </binding>
         </element>
     </differential>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-diagnostic-report"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-07-23T17:38:59.483+00:00"/>
-        <source value="#1OXcix2uSVRzJm28"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-07-23T18:33:04.151+00:00"/>
+        <source value="#HdmMNEWsHetXmeGl"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
     <name value="USPathologyDiagnosticReport"/>
@@ -38,7 +38,7 @@
             <path value="DiagnosticReport.specimen"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://www.hl7.org/fhir/uv/cancer-pathology-common-libraries/StructureDefinition/pathology-specimen"/>
+                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
             </type>
             <mustSupport value="true"/>
         </element>

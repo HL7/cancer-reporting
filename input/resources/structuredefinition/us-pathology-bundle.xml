@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-bundle"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-07-23T17:58:59.016+00:00"/>
-        <source value="#FwWPpzDlSbks9JVv"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-07-23T18:30:02.960+00:00"/>
+        <source value="#MZkabRpS96COp3gC"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
     <name value="USPathologyBundle"/>
@@ -119,16 +119,6 @@
                 <code value="Resource"/>
                 <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
             </type>
-        </element>
-        <element id="Bundle.entry:observation">
-            <path value="Bundle.entry"/>
-            <sliceName value="observation"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry:observation.resource">
-            <path value="Bundle.entry.resource"/>
-            <min value="1"/>
         </element>
         <element id="Bundle.entry:next_of_kin">
             <path value="Bundle.entry"/>

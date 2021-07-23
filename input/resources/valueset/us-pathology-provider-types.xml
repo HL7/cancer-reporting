@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-provider-types"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-07-17T21:10:15.000+00:00"/>
-        <source value="#V0TMi74S4HqxgokF"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-07-23T18:35:11.563+00:00"/>
+        <source value="#Bnpns6gWhx81ybxT"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-provider-types"/>
     <name value="USPathologyProviderTypes"/>
@@ -34,7 +34,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/pathology-provider-types"/>
+            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
             <concept>
                 <code value="collector"/>
                 <display value="Physician Primary Surgeon"/>

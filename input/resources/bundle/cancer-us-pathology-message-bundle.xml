@@ -134,6 +134,9 @@
         <resource>
             <DiagnosticReport>
                 <id value="pathology-diagnostic-report"/>
+              <meta>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+              </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -275,6 +278,9 @@
         <resource>
             <Specimen>
                 <id value="adrenal-example"/>
+              <meta>
+                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+              </meta>
                 <identifier>
                     <system value="http://some-lis.org/fhir/specimen-identifier-provisioner"/>
                     <value value="123456789"/>

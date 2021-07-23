@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="559"/>
-        <lastUpdated value="2021-07-21T17:49:24.590+00:00"/>
-        <source value="#fbkPOIHDc4xUTwbZ"/>
+        <versionId value="561"/>
+        <lastUpdated value="2021-07-23T18:19:43.891+00:00"/>
+        <source value="#rnLUNVQ5hV7aGnhZ"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -156,7 +156,7 @@
             <reference>
                 <reference value="Encounter/pathology-encounter"/></reference>
             <name value="Encounter (example)"/>
-            <description value="Example of a clinical Encounter for which pathological analyses were performed and associated Observations were generated. "/>
+            <description value="Example of a clinical Encounter for which pathological analyses were performed and associated Observations were generated."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             <groupingId value="new-group3"/>
@@ -194,7 +194,7 @@
                 <display value="Principal Pathology Lab Name"/>
             </reference>
             <name value="Principal Pathology Lab"/>
-            <description value="Example of a US Core Organization representing the principal pathology testing Lab organization. "/>
+            <description value="Example of a US Core Organization representing the principal pathology testing Lab organization."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             <groupingId value="new-group3"/>
@@ -205,7 +205,7 @@
                 <display value="Redwood Women's Center, P.C."/>
             </reference>
             <name value="Redwood Women's Center, P.C."/>
-            <description value="Example of US Core Organization representing the clinical system which ordered the pathology testing and will receive the completed tests/observations. "/>
+            <description value="Example of US Core Organization representing the clinical system which ordered the pathology testing and will receive the completed tests/observations."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             <groupingId value="new-group3"/>

@@ -291,6 +291,12 @@
                         <code value="BX"/>
                     </coding>
                 </type>
+              <container>
+                <identifier>
+                  <system value="http://some-lis.org/fhir/specimen-containerID-provisioner"/>
+                  <value value="987654321"/>
+                </identifier>
+              </container>
             </Specimen>
         </resource>
     </entry>

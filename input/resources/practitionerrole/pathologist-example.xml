@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PractitionerRole xmlns="http://hl7.org/fhir">
-  <id value="pathologist-example" />
-  <meta>
-    <versionId value="5" />
-    <lastUpdated value="2021-07-23T17:19:17.656+00:00" />
-    <source value="#CVjjidwJxXd96P8P" />
-    <profile
-      value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role" />
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole" />
-  </meta>
-  <practitioner>
-    <reference value="Practitioner/pathologist-example" />
-  </practitioner>
-  <organization>
-    <reference value="Organization/principal-pathology-lab" />
-  </organization>
-  <code>
-    <coding>
-      <system
-        value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types" />
-      <code value="principal-result-interpreter" />
-      <display value="Pathologist principally interpreting results on pathology testing" />
-    </coding>
-  </code>
-  <telecom>
-    <system value="phone" />
-    <value value="720-242-9999" />
-  </telecom>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="pathologist-example"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2021-07-27T17:00:12.680+00:00"/>
+        <source value="#rpyEmg67SHVunxEP"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/pathologist-example"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/principal-pathology-lab"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+            <code value="principal-result-interpreter"/>
+            <display value="Pathologist principally interpreting results on pathology testing"/>
+        </coding>
+    </code>
+    <telecom>
+        <system value="phone"/>
+        <value value="720-242-9999"/>
+    </telecom>
 </PractitionerRole>

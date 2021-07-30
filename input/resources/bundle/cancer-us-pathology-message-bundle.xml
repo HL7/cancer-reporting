@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="cancer-us-pathology-message-bundle"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-07-23T18:35:35.291+00:00"/>
-        <source value="#ynd2To0q6NRlR6ff"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-07-23T19:41:50.652+00:00"/>
+        <source value="#hLT697W02bgDzwD0"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
     </meta>
     <type value="message"/>
@@ -64,6 +64,7 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Jose 
+                            
                             
                             
                             
@@ -134,9 +135,6 @@
         <resource>
             <DiagnosticReport>
                 <id value="pathology-diagnostic-report"/>
-              <meta>
-                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
-              </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -278,9 +276,6 @@
         <resource>
             <Specimen>
                 <id value="adrenal-example"/>
-              <meta>
-                <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
-              </meta>
                 <identifier>
                     <system value="http://some-lis.org/fhir/specimen-identifier-provisioner"/>
                     <value value="123456789"/>
@@ -291,12 +286,12 @@
                         <code value="BX"/>
                     </coding>
                 </type>
-              <container>
-                <identifier>
-                  <system value="http://some-lis.org/fhir/specimen-containerID-provisioner"/>
-                  <value value="987654321"/>
-                </identifier>
-              </container>
+                <container>
+                    <identifier>
+                        <system value="http://some-lis.org/fhir/specimen-containerID-provisioner"/>
+                        <value value="987654321"/>
+                    </identifier>
+                </container>
             </Specimen>
         </resource>
     </entry>

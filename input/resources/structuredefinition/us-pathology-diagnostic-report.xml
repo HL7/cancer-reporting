@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-diagnostic-report"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2021-07-23T20:12:30.908+00:00"/>
-        <source value="#TMbtpNlSdnV0Mnkj"/>
+        <versionId value="14"/>
+        <lastUpdated value="2021-07-30T14:35:16.596+00:00"/>
+        <source value="#nQjPqfBgYMCFJjcv"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
     <name value="USPathologyDiagnosticReport"/>
@@ -28,21 +28,12 @@
         </element>
         <element id="DiagnosticReport.performer">
             <path value="DiagnosticReport.performer"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="resolve()"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.performer:pathology_performer">
-            <path value="DiagnosticReport.performer"/>
-            <sliceName value="pathology_performer"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
                 <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
             </type>
             <mustSupport value="true"/>
         </element>

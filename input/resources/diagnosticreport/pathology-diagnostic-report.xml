@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-diagnostic-report"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-22T15:34:09.123+00:00"/>
-        <source value="#QGI9jOkptQkhbHnd"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-08-02T16:18:38.409+00:00"/>
+        <source value="#olJUkoMw0CogJdLY"/>
         <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
     </meta>
     <text>
@@ -46,6 +46,9 @@
         <reference value="Patient/JoelAlexPatient"/>
         <display value="Jose Rodriguez"/>
     </subject>
+    <encounter>
+        <reference value="Encounter/pathology-encounter"/>
+    </encounter>
     <effectiveDateTime value="2021-01-01T21:39:30.000Z"/>
     <performer>
         <reference value="PractitionerRole/pathologist-example"/>
@@ -54,84 +57,98 @@
         <reference value="PractitionerRole/pathologist-example"/>
     </resultsInterpreter>
     <result>
+        <reference value="Observation/2118.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/42554.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/52756.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/59852.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/49275.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/2129.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/40496.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/51265.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/53526.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/1867.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/20880.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/2137.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/2143.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
         </identifier>
     </result>
     <result>
+        <reference value="Observation/2149.100004300-us"/>
         <identifier>
             <system value="https://CAP.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>

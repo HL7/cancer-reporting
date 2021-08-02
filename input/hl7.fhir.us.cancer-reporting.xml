@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="563"/>
-        <lastUpdated value="2021-07-23T19:29:33.594+00:00"/>
-        <source value="#CBuepbpISyoWEgEY"/>
+        <versionId value="567"/>
+        <lastUpdated value="2021-08-02T16:45:13.776+00:00"/>
+        <source value="#hbJCjQWh3TTeCzBz"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -301,6 +301,14 @@
             <reference>
                 <reference value="Observation/40496.100004300-us"/></reference>
             <name value="Tumor Weight: Specify Weight (g) (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2129.100004300-us"/></reference>
+            <name value="Tumor Size: Greatest dimension in Centimenters (cm) (example)"/>
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>

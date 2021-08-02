@@ -45,11 +45,7 @@
                     </coding>
                 </reason>
                 <focus>
-                    <type value="DiagnosticReport"/>
-                    <identifier>
-                        <system value="https://CAP.org"/>
-                        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"/>
-                    </identifier>
+                  <reference value="DiagnosticReport/pathology-diagnostic-report"/>
                 </focus>
             </MessageHeader>
         </resource>
@@ -173,6 +169,9 @@
                     <reference value="Patient/JoelAlexPatient"/>
                     <display value="Jose Rodriguez"/>
                 </subject>
+              <encounter>
+                <reference value="Encounter/pathology-encounter"/>
+              </encounter>
                 <effectiveDateTime value="2021-01-01T21:39:30.000Z"/>
                 <performer>
                     <reference value="PractitionerRole/pathologist-example"/>
@@ -181,60 +180,70 @@
                     <reference value="PractitionerRole/pathologist-example"/>
                 </resultsInterpreter>
                 <result>
+                  <reference value="Observation/2118.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/42554.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/52756.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/59852.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/49275.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/2129.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/40496.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/51265.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/53526.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/1867.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
@@ -242,23 +251,27 @@
                 </result>
                 <result>
                     <identifier>
+                      <reference value="Observation/20880.100004300-us"/>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <identifier>
+                      <reference value="Observation/2137.100004300-us"/>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/2143.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
                     </identifier>
                 </result>
                 <result>
+                  <reference value="Observation/2149.100004300-us"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>
@@ -321,7 +334,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Practitioner/oncologist-example"/>
+      <fullUrl value="http://example.org/fhir/us/cancer-reporting/Practitioner/oncologist-example"/>
         <resource>
             <Practitioner>
                 <id value="oncologist-example"/>
@@ -337,7 +350,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Organization/Redwood-Womens-Center-PC"/>
+      <fullUrl value="http://example.org/fhir/us/cancer-reporting/Organization/Redwood-Womens-Center-PC"/>
         <resource>
             <Organization>
                 <id value="Redwood-Womens-Center-PC"/>
@@ -375,7 +388,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Practitioner/pathologist-example"/>
+      <fullUrl value="http://example.org/fhir/us/cancer-reporting/Practitioner/pathologist-example"/>
         <resource>
             <Practitioner>
                 <id value="pathologist-example"/>
@@ -391,7 +404,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/Organization/principal-pathology-lab"/>
+      <fullUrl value="http://example.org/fhir/us/cancer-reporting/Organization/principal-pathology-lab"/>
         <resource>
             <Organization>
                 <id value="principal-pathology-lab"/>
@@ -434,10 +447,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2118.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2118.100004300-us"/>
         <resource>
             <Observation>
-                <id value="2118.100004300"/>
+                <id value="2118.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
@@ -463,10 +476,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/42554.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/42554.100004300-us"/>
         <resource>
             <Observation>
-                <id value="42554.100004300"/>
+                <id value="42554.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
@@ -493,10 +506,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/52756.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/52756.100004300-us"/>
         <resource>
             <Observation>
-                <id value="52756.100004300"/>
+                <id value="52756.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
@@ -523,10 +536,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/59852.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/59852.100004300-us"/>
         <resource>
             <Observation>
-                <id value="59852.100004300"/>
+                <id value="59852.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
@@ -553,10 +566,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/49275.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/49275.100004300-us"/>
         <resource>
             <Observation>
-                <id value="49275.100004300"/>
+                <id value="49275.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
@@ -583,10 +596,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2129.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2129.100004300-us"/>
         <resource>
             <Observation>
-                <id value="2129.100004300"/>
+                <id value="2129.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
@@ -613,10 +626,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/40496.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/40496.100004300-us"/>
         <resource>
             <Observation>
-                <id value="40496.100004300"/>
+                <id value="40496.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
@@ -643,10 +656,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/51265.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/51265.100004300-us"/>
         <resource>
             <Observation>
-                <id value="51265.100004300"/>
+                <id value="51265.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
@@ -684,10 +697,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/53526.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/53526.100004300-us"/>
         <resource>
             <Observation>
-                <id value="53526.100004300"/>
+                <id value="53526.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
@@ -715,10 +728,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/1867.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/1867.100004300-us"/>
         <resource>
             <Observation>
-                <id value="1867.100004300"/>
+                <id value="1867.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
@@ -747,10 +760,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/20880.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/20880.100004300-us"/>
         <resource>
             <Observation>
-                <id value="20880.100004300"/>
+                <id value="20880.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
@@ -779,10 +792,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2137.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2137.100004300-us"/>
         <resource>
             <Observation>
-                <id value="2137.100004300"/>
+                <id value="2137.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
@@ -809,10 +822,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2143.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2143.100004300-us"/>
         <resource>
             <Observation>
-                <id value="2143.100004300"/>
+                <id value="2143.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
@@ -839,10 +852,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2149.100004300"/>
+        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2149.100004300-us"/>
         <resource>
             <Observation>
-                <id value="2149.100004300"/>
+                <id value="2149.100004300-us"/>
                 <identifier>
                     <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>

@@ -89,6 +89,12 @@
           <given value="Jose" />
         </name>
         <gender value="male" />
+        <link>
+          <other>
+            <reference value="RelatedPerson/pathology-next-of-kin"/>
+          </other>
+          <type value="seealso"/>
+        </link>
       </Patient>
     </resource>
   </entry>

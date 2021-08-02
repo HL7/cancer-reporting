@@ -426,6 +426,10 @@
             <display value="Pathologist principally interpreting results on pathology testing" />
           </coding>
         </code>
+        <telecom>
+          <system value="phone"/>
+          <value value="720-242-9999"/>
+        </telecom>
       </PractitionerRole>
     </resource>
   </entry>

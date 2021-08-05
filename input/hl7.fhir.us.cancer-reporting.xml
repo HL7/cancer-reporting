@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="575"/>
-        <lastUpdated value="2021-08-05T21:12:38.627+00:00"/>
-        <source value="#52icpbyrI00CoeMi"/>
+        <versionId value="576"/>
+        <lastUpdated value="2021-08-05T21:53:45.661+00:00"/>
+        <source value="#Ux7iniu7GunvGpK5"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -376,12 +376,6 @@
             <description value="SDC on FHIR Observation (general)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Parameters/exp-params-cancer"/></reference>
-            <name value="US version of Snomed Parameter"/>
-            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

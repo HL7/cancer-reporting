@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Patient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://hl7.org/fhir ../../../../../../../fhir-all-xsd/patient.xsd"
- xmlns="http://hl7.org/fhir">
+<Patient
+    xmlns="http://hl7.org/fhir">
     <id value="JoelAlexPatient"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-06-22T14:53:48.802+00:00"/>
-        <source value="#HlWIZwN9OatT3Y5e"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-08-02T23:55:25.437+00:00"/>
+        <source value="#O5UyptPYwWvMGYJe"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
@@ -15,6 +14,7 @@
             xmlns="http://www.w3.org/1999/xhtml">
             <div class="hapiHeaderText">Jose 
         
+                
                 <b>RODRIGUEZ </b>
             </div>
             <table class="hapiPropertyTable">
@@ -36,10 +36,10 @@
         <given value="Jose"/>
     </name>
     <gender value="male"/>
-  <link>
-    <other>
-      <reference value="RelatedPerson/pathology-next-of-kin"/>
-    </other>
-    <type value="seealso"/>
-  </link>
+    <link>
+        <other>
+            <reference value="RelatedPerson/pathology-next-of-kin"/>
+        </other>
+        <type value="seealso"/>
+    </link>
 </Patient>

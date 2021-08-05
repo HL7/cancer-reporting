@@ -13,7 +13,7 @@
 		{
 			"version": "0.1.0",
 			"desc": "Ballot for STU Release 1",
-			"path": "http://hl7.org/fhir/us/cancer-reporting/2021SEP",
+			"path": "http://www.hl7.org/fhir/us/cancer-reporting/2021SEP",
 			"fhirversion": "4.0.1",
 			"status": "ballot",
 			"sequence": "STU1",
@@ -22,6 +22,6 @@
 	],
 	"package-id": "hl7.fhir.us.cancer-reporting",
 	"title": "Sharing eCC Data from Pathology Labs to EHR",
-	"canonical": "http://hl7.org/fhir/us/cancer-reporting",
+	"canonical": "http://www.hl7.org/fhir/us/cancer-reporting",
 	"category": "Documents"
 }

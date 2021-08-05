@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="567"/>
-        <lastUpdated value="2021-08-02T16:45:13.776+00:00"/>
-        <source value="#hbJCjQWh3TTeCzBz"/>
+        <versionId value="575"/>
+        <lastUpdated value="2021-08-05T21:12:38.627+00:00"/>
+        <source value="#52icpbyrI00CoeMi"/>
     </meta>
     <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -377,6 +377,12 @@
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/exp-params-cancer"/></reference>
+            <name value="US version of Snomed Parameter"/>
+            <exampleBoolean value="true"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -397,6 +403,10 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/exp-params-cancer.xml"/>
+        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>

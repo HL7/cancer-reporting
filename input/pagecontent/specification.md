@@ -9,10 +9,10 @@
 ### Resources and Profiles
 #### Resource Profiles
 This specification defines the following profiles:
-* US Pathology Bundle 	
-* US Pathology MessageHeader 	
-* US Pathology Diagnostic Report 	
-* US Pathology Specimen 	
+* US Pathology Bundle  
+* US Pathology MessageHeader  
+* US Pathology Diagnostic Report  
+* US Pathology Specimen  
 * US Pathology Next of Kin
 * US Pathology Related Practitioner Roles
 

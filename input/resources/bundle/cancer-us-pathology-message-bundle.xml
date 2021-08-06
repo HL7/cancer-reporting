@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="cancer-us-pathology-message-bundle"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2021-08-02T23:55:46.114+00:00"/>
-        <source value="#IZ0yMV8ZhBjNxHR8"/>
-        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
+        <versionId value="24"/>
+        <lastUpdated value="2021-08-06T14:01:37.126+00:00"/>
+        <source value="#ZUtzI9gMaQppmoj3"/>
+        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
     </meta>
     <type value="message"/>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/MessageHeader/pathology-message-header"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/MessageHeader/pathology-message-header"/>
         <resource>
             <MessageHeader>
                 <id value="pathology-message-header"/>
@@ -51,7 +51,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"/>
         <resource>
             <Patient>
                 <id value="JoelAlexPatient"/>
@@ -97,7 +97,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Encounter/pathology-encounter"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/pathology-encounter"/>
         <resource>
             <Encounter>
                 <id value="pathology-encounter"/>
@@ -134,7 +134,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/DiagnosticReport/pathology-diagnostic-report"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/pathology-diagnostic-report"/>
         <resource>
             <DiagnosticReport>
                 <id value="pathology-diagnostic-report"/>
@@ -295,7 +295,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Specimen/adrenal-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Specimen/adrenal-example"/>
         <resource>
             <Specimen>
                 <id value="adrenal-example"/>
@@ -319,7 +319,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/PractitionerRole/oncologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/oncologist-example"/>
         <resource>
             <PractitionerRole>
                 <id value="oncologist-example"/>
@@ -331,7 +331,7 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+                        <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
                         <code value="orderer"/>
                         <display value="Physician Ordering Pathology testing"/>
                     </coding>
@@ -344,7 +344,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Practitioner/oncologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Practitioner/oncologist-example"/>
         <resource>
             <Practitioner>
                 <id value="oncologist-example"/>
@@ -360,7 +360,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Organization/Redwood-Womens-Center-PC"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Organization/Redwood-Womens-Center-PC"/>
         <resource>
             <Organization>
                 <id value="Redwood-Womens-Center-PC"/>
@@ -377,7 +377,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/PractitionerRole/pathologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/pathologist-example"/>
         <resource>
             <PractitionerRole>
                 <id value="pathologist-example"/>
@@ -389,7 +389,7 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+                        <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
                         <code value="principal-result-interpreter"/>
                         <display value="Pathologist principally interpreting results on pathology testing"/>
                     </coding>
@@ -402,7 +402,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Practitioner/pathologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Practitioner/pathologist-example"/>
         <resource>
             <Practitioner>
                 <id value="pathologist-example"/>
@@ -418,7 +418,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Organization/principal-pathology-lab"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Organization/principal-pathology-lab"/>
         <resource>
             <Organization>
                 <id value="principal-pathology-lab"/>
@@ -435,7 +435,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin"/>
         <resource>
             <RelatedPerson>
                 <id value="pathology-next-of-kin"/>
@@ -461,7 +461,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2118.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/2118.100004300-us"/>
         <resource>
             <Observation>
                 <id value="2118.100004300-us"/>
@@ -490,7 +490,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/42554.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/42554.100004300-us"/>
         <resource>
             <Observation>
                 <id value="42554.100004300-us"/>
@@ -520,7 +520,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/52756.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/52756.100004300-us"/>
         <resource>
             <Observation>
                 <id value="52756.100004300-us"/>
@@ -550,7 +550,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/59852.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/59852.100004300-us"/>
         <resource>
             <Observation>
                 <id value="59852.100004300-us"/>
@@ -580,7 +580,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/49275.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/49275.100004300-us"/>
         <resource>
             <Observation>
                 <id value="49275.100004300-us"/>
@@ -610,7 +610,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2129.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/2129.100004300-us"/>
         <resource>
             <Observation>
                 <id value="2129.100004300-us"/>
@@ -640,7 +640,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/40496.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/40496.100004300-us"/>
         <resource>
             <Observation>
                 <id value="40496.100004300-us"/>
@@ -670,7 +670,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/51265.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/51265.100004300-us"/>
         <resource>
             <Observation>
                 <id value="51265.100004300-us"/>
@@ -711,7 +711,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/53526.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/53526.100004300-us"/>
         <resource>
             <Observation>
                 <id value="53526.100004300-us"/>
@@ -742,7 +742,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/1867.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/1867.100004300-us"/>
         <resource>
             <Observation>
                 <id value="1867.100004300-us"/>
@@ -774,7 +774,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/20880.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/20880.100004300-us"/>
         <resource>
             <Observation>
                 <id value="20880.100004300-us"/>
@@ -806,7 +806,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2137.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/2137.100004300-us"/>
         <resource>
             <Observation>
                 <id value="2137.100004300-us"/>
@@ -836,7 +836,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2143.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/2143.100004300-us"/>
         <resource>
             <Observation>
                 <id value="2143.100004300-us"/>
@@ -866,7 +866,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://www.hl7.org/fhir/us/cancer-reporting/Observation/2149.100004300-us"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Observation/2149.100004300-us"/>
         <resource>
             <Observation>
                 <id value="2149.100004300-us"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-message-header"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-07-23T18:34:10.195+00:00"/>
-        <source value="#I5LDgiqHMJJDjohF"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-08-06T14:01:37.568+00:00"/>
+        <source value="#ZUtzI9gMaQppmoj3"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+    <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
     <name value="USPathologyMessageHeader"/>
     <title value="US Pathology MessageHeader"/>
     <status value="active"/>
@@ -46,7 +46,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+                <targetProfile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
             </type>
             <mustSupport value="true"/>
         </element>

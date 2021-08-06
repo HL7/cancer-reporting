@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-diagnostic-report"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2021-07-30T14:35:16.596+00:00"/>
-        <source value="#nQjPqfBgYMCFJjcv"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-08-06T14:01:37.178+00:00"/>
+        <source value="#ZUtzI9gMaQppmoj3"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+    <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
     <name value="USPathologyDiagnosticReport"/>
     <title value="US Pathology Diagnostic Report"/>
     <status value="active"/>
@@ -32,7 +32,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+                <targetProfile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
             </type>
             <mustSupport value="true"/>
@@ -45,7 +45,7 @@
             <path value="DiagnosticReport.specimen"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+                <targetProfile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
             </type>
             <mustSupport value="true"/>
         </element>

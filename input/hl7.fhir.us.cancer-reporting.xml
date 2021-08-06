@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="576"/>
-        <lastUpdated value="2021-08-05T21:53:45.661+00:00"/>
-        <source value="#Ux7iniu7GunvGpK5"/>
+        <versionId value="580"/>
+        <lastUpdated value="2021-08-06T14:03:44.592+00:00"/>
+        <source value="#jiAcjsDvdyXYSqA4"/>
     </meta>
-    <url value="http://www.hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
+    <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
     <name value="USCancerPathologyData"/>
     <title value="Cancer Pathology Data Sharing"/>
@@ -138,7 +138,7 @@
             <name value="Pathology Bundle (example)"/>
             <description value="Example of a message bundle from a pathology environment into an EHR"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
@@ -149,7 +149,7 @@
             <name value="MessageHeader (example)"/>
             <description value="Example of a MessageHeader from a pathology environment into an EHR"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
@@ -176,7 +176,7 @@
             <name value="Pathology Adrenal DiagnosticReport (example)"/>
             <description value="Example of a DiagnosticReport containing information regarding pathological testing and resulting observations"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
@@ -185,7 +185,7 @@
             <name value="Adrenal Specimen (example)"/>
             <description value="Example of an Adrenal specimen"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
@@ -218,7 +218,7 @@
             <name value="Next-of-Kin RelatedPerson (example)"/>
             <description value="This example shows Next of Kin information in a RelatedPerson resource."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
@@ -240,7 +240,7 @@
             <name value="Pathologist PractitionerRole (example)"/>
             <description value="US Core PractitionerRole example for a Pathologist"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
@@ -262,7 +262,7 @@
             <name value="Oncologist PractitionerRole (example)"/>
             <description value="US Core PractitionerRole example for an Oncologist"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>

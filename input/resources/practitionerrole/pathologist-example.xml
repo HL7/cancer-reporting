@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathologist-example"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-07-27T17:00:12.680+00:00"/>
-        <source value="#rpyEmg67SHVunxEP"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-08-06T14:01:37.146+00:00"/>
+        <source value="#ZUtzI9gMaQppmoj3"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
     </meta>
     <practitioner>
         <reference value="Practitioner/pathologist-example"/>
@@ -17,7 +17,7 @@
     </organization>
     <code>
         <coding>
-            <system value="http://www.hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+            <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
             <code value="principal-result-interpreter"/>
             <display value="Pathologist principally interpreting results on pathology testing"/>
         </coding>

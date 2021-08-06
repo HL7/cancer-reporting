@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-next-of-kin"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-06-22T15:34:35.637+00:00"/>
-        <source value="#m2z2c4UEXQJPZOnS"/>
-        <profile value="http://www.hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-08-06T14:01:37.708+00:00"/>
+        <source value="#ZUtzI9gMaQppmoj3"/>
+        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
     </meta>
     <patient>
         <reference value="Patient/JoelAlexPatient"/>

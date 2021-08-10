@@ -15,7 +15,7 @@
       "status": "ballot",
       "sequence": "STU1",
       "fhirversion": "4.0.1",
-      "path": "http://hl7.org/fhir/us/cancer-reporting/2021SEP",
+      "path": "http://hl7.org/fhir/us/cancer-reporting/2021Sep",
       "date": "2021-08-06",
       "current": false
     }

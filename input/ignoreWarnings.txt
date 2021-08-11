@@ -1,2 +1,4 @@
 == Suppressed Messages ==
 # Bundle instance fullUrls not resolving is a known issue
+# Expected slicing issue
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle

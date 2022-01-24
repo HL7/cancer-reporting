@@ -3,18 +3,18 @@
 * **Message Destination:** An application that receives the pathology report message. This can be thought of as the client in a client/server interaction.
 
 ### FHIR Paradigms Supported by This IG
-* RESTful API
-* FHIR Messaging
+* [RESTful API](https://restfulapi.net/)
+* [FHIR Messaging](http://hl7.org/fhir/messaging.html)
 
 ### Resources and Profiles
 #### Resource Profiles
 This specification defines the following profiles:
-* US Pathology Bundle  
-* US Pathology MessageHeader  
-* US Pathology Diagnostic Report  
-* US Pathology Specimen  
-* US Pathology Next of Kin
-* US Pathology Related Practitioner Roles
+* [US Pathology Bundle] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-bundle.html)   
+* [US Pathology MessageHeader] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)  
+* [US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)  
+* [US Pathology Specimen] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html) 
+* [US Pathology Next of Kin] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html)
+* [US Pathology Related Practitioner Roles] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)
 
 #### Extensions
 This implementation guide defines no new extensions.
@@ -34,7 +34,7 @@ Systems claiming to conform to a profile SHALL support the elements in a profile
 * In situations where information on a particular data element is not present, the Sender SHALL NOT include the data element in the resource instance if the cardinality is 0..n.
 * If the information does not exist and the cardinality of the element is >= 1..*, the Sender SHALL use the dataAbsentReason extension where it is defined. Note: populating the element with the value set absent reason or using the dataAbsent Reason SHOULD be handled by the Sending System and not require provider action.
 
-**All Receiving Systems: **Receiving Systems are defined as Provider Systems and applications receiving transactions from the Sending System.
+**All Receiving Systems:** Receiving Systems are defined as Provider Systems and applications receiving transactions from the Sending System.
 * The Receiving System SHALL be capable of processing resource instances containing required and allowed data elements without generating an error or causing the application to fail.
 * Receiving Systems SHOULD be capable of processing (display, store, etc.) the data elements based on the utility of the specific element to the receiver.
 * When receiving a US Pathology Bundle from the Sender, the Receiving System SHALL interpret missing data elements within resource instances as data not present in the Senders systems.

@@ -26,6 +26,15 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
+        <element id="DiagnosticReport.effective[x]">
+            <path value="DiagnosticReport.effective[x]"/>
+            <constraint>
+                <key value="0o95dEq9"/>
+                <severity value="error"/>
+                <human value="effectiveDateTime SHALL include the month and day"/>
+                <expression value="DiagnosticReport.effectiveDateTime.length&gt;9"/>
+            </constraint>
+        </element>
         <element id="DiagnosticReport.performer">
             <path value="DiagnosticReport.performer"/>
             <type>

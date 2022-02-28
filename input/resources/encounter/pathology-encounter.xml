@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-encounter"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-06-22T14:53:00.210+00:00"/>
-        <source value="#VtC1lWviqpHKWeZL"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-02-07T20:31:01.103+00:00"/>
+        <source value="#On2WyMBGx1iSkGlO"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <identifier>
@@ -21,7 +21,7 @@
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="308335008"/>
+            <code value="726007"/>
         </coding>
     </type>
     <subject>

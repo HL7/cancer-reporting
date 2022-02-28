@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-message-header"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-08-06T14:01:37.568+00:00"/>
-        <source value="#ZUtzI9gMaQppmoj3"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-02-01T15:37:47.614+00:00"/>
+        <source value="#9LIMuNFrmHx0ZHqe"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
     <name value="USPathologyMessageHeader"/>
     <title value="US Pathology MessageHeader"/>
     <status value="active"/>
+    <description value="This MessageHeader profile is expected to be used by systems when sending to Public Health registries. It is not expected and not appropriate to be used in any other cases, such as when information exchange between a pathology laboratory and a clinical EHR system. This IG supports both message bundle and transaction bundle to support both use cases."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

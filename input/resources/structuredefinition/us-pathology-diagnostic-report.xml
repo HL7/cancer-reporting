@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-diagnostic-report"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2021-08-06T14:01:37.178+00:00"/>
-        <source value="#ZUtzI9gMaQppmoj3"/>
+        <versionId value="22"/>
+        <lastUpdated value="2022-02-17T14:43:54.397+00:00"/>
+        <source value="#ohFEvrAepKCBxhqI"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
     <name value="USPathologyDiagnosticReport"/>
     <title value="US Pathology Diagnostic Report"/>
     <status value="active"/>
+    <description value="It is expected that labs will populate dateTimes with the most specific time information known when sending to EHRs (YYYY-MM-DD)."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -21,9 +22,15 @@
         <element id="DiagnosticReport">
             <path value="DiagnosticReport"/>
         </element>
+        <element id="DiagnosticReport.basedOn">
+            <path value="DiagnosticReport.basedOn"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
+            </type>
+        </element>
         <element id="DiagnosticReport.subject">
             <path value="DiagnosticReport.subject"/>
-            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.effective[x]">
@@ -32,7 +39,7 @@
                 <key value="0o95dEq9"/>
                 <severity value="error"/>
                 <human value="effectiveDateTime SHALL include the month and day"/>
-                <expression value="DiagnosticReport.effectiveDateTime.length&gt;9"/>
+                <expression value="DiagnosticReport.effectiveDateTime.length()&gt;9"/>
             </constraint>
         </element>
         <element id="DiagnosticReport.performer">

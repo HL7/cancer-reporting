@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-specimen"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-08-06T14:01:37.090+00:00"/>
-        <source value="#ZUtzI9gMaQppmoj3"/>
+        <versionId value="14"/>
+        <lastUpdated value="2022-02-01T19:30:13.281+00:00"/>
+        <source value="#pQLyi7wvFqL3zYDf"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
     <name value="USPathologySpecimen"/>
@@ -28,6 +28,7 @@
         </element>
         <element id="Specimen.accessionIdentifier">
             <path value="Specimen.accessionIdentifier"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.status">
@@ -51,10 +52,42 @@
             <path value="Specimen.collection"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Specimen.collection.collector">
+            <path value="Specimen.collection.collector"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.collected[x]">
+            <path value="Specimen.collection.collected[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.method">
+            <path value="Specimen.collection.method"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.bodySite">
+            <path value="Specimen.collection.bodySite"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Specimen.container">
             <path value="Specimen.container"/>
             <min value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.container.identifier">
+            <path value="Specimen.container.identifier"/>
+            <min value="1"/>
+            <mustSupport value="false"/>
         </element>
         <element id="Specimen.note">
             <path value="Specimen.note"/>

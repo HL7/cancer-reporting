@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="us-pathology-service-request"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-02-02T12:05:45.948+00:00"/>
+        <source value="#I6dfSNQof6KsPM0e"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
+    <name value="USPathologyServiceRequest"/>
+    <title value="US Pathology Service Request"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ServiceRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ServiceRequest">
+            <path value="ServiceRequest"/>
+        </element>
+    </differential>
+</StructureDefinition>

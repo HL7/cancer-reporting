@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-provider-types"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-08-06T14:01:37.220+00:00"/>
-        <source value="#ZUtzI9gMaQppmoj3"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-02-01T19:46:58.449+00:00"/>
+        <source value="#ns8ihQZ7ppQYMyUT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-provider-types"/>
     <name value="USPathologyProviderTypes"/>
@@ -34,22 +34,22 @@
             </concept>
         </include>
         <include>
-            <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+            <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
             <concept>
-                <code value="collector"/>
-                <display value="Physician Primary Surgeon"/>
+                <code value="CLP"/>
+                <display value="Collecting Provider"/>
             </concept>
             <concept>
-                <code value="orderer"/>
-                <display value="Physician Ordering Pathology testing"/>
+                <code value="OP"/>
+                <display value="Ordering Provider"/>
             </concept>
             <concept>
-                <code value="principal-result-interpreter"/>
-                <display value="Pathologist principally interpreting results on pathology testing"/>
+                <code value="PI"/>
+                <display value="Primary Interpreter"/>
             </concept>
             <concept>
-                <code value="responsible-observer"/>
-                <display value="Pathologist responsible for observing pathology testing"/>
+                <code value="RO"/>
+                <display value="Responsible Observer"/>
             </concept>
         </include>
     </compose>

@@ -362,7 +362,7 @@
                 <reference value="Parameters/expansion-parameters-cancer-reporting"/></reference>
             <name value="expansion-parameters-cancer-reporting"/>
             <description value="References US SNOMED"/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>

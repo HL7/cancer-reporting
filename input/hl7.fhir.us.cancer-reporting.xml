@@ -359,9 +359,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Parameters/path-expansion-params"/></reference>
-            <name value="expansion-params-cancer"/>
-            <description value="US Snomed parameter"/>
+                <reference value="Parameters/expansion-parameters-cancer-reporting"/></reference>
+            <name value="expansion-parameters-cancer-reporting"/>
+            <description value="References US SNOMED"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>

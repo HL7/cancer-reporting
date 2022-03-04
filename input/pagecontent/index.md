@@ -1,7 +1,5 @@
 This implementation guide (IG) provides HL7 FHIR resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or support sending pathology messages to cancer registries. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
 
-This IG was developed in parallel to Cancer Pathology Common Library FHIR IG.
-
 ### Scope
 This guide defines 6 FHIR profiles:
 * [US Pathology Bundle](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-bundle.html)(derived from FHIR R4 Bundle)

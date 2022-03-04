@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="625"/>
-        <lastUpdated value="2022-03-02T12:54:03.226+00:00"/>
-        <source value="#wECFIrRnzWBxh23j"/>
+        <versionId value="626"/>
+        <lastUpdated value="2022-03-04T14:08:48.458+00:00"/>
+        <source value="#hZUl7XWUOyVypOAR"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -395,8 +395,8 @@
             </page>
         </page>
         <parameter>
-            <code value="path-expansion-params"/>
-            <value value="resources/parameters/expansion-params-cancer.xml"/>
+            <code value="expansion-parameters-cancer-reporting"/>
+            <value value="resources/parameters/expansion-parameters-cancer-reporting.xml"/>
         </parameter>
         <parameter>
             <code value="copyrightyear"/>

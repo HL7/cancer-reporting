@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-diagnostic-report"/>
     <meta>
-        <versionId value="22"/>
-        <lastUpdated value="2022-02-17T14:43:54.397+00:00"/>
-        <source value="#ohFEvrAepKCBxhqI"/>
+        <versionId value="23"/>
+        <lastUpdated value="2022-03-04T12:17:54.182+00:00"/>
+        <source value="#Ig1vAsNfreAbiJpg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
     <name value="USPathologyDiagnosticReport"/>
@@ -31,6 +31,7 @@
         </element>
         <element id="DiagnosticReport.subject">
             <path value="DiagnosticReport.subject"/>
+            <max value="*"/>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.effective[x]">

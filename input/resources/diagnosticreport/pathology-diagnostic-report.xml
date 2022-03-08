@@ -44,7 +44,7 @@
     </code>
     <subject>
         <reference value="Patient/JoelAlexPatient"/>
-        <display value="Jose Rodriguez"/>
+        <display value="Alex Joel"/>
     </subject>
     <encounter>
         <reference value="Encounter/pathology-encounter"/>

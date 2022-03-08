@@ -18,7 +18,7 @@
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
-                        <p> SDC example Message Bundle for fake patient Jose including Patient, Encounter</p>
+                        <p> SDC example Message Bundle for fake patient Alex including Patient, Encounter</p>
                     </div>
                 </text>
                 <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
@@ -59,7 +59,7 @@
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Jose 
+                        <div class="hapiHeaderText">Alex 
                             
                             
                             
@@ -67,7 +67,7 @@
                             
                             
                             
-                            <b>RODRIGUEZ </b>
+                            <b>Joel </b>
                         </div>
                         <table class="hapiPropertyTable">
                             <tbody>
@@ -84,8 +84,8 @@
                     <value value="JoelAlexPatient"/>
                 </identifier>
                 <name>
-                    <family value="Rodriguez"/>
-                    <given value="Jose"/>
+                    <family value="Joel"/>
+                    <given value="Alex"/>
                 </name>
                 <gender value="male"/>
                 <link>
@@ -175,7 +175,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/JoelAlexPatient"/>
-                    <display value="Jose Rodriguez"/>
+                    <display value="Alex Joel"/>
                 </subject>
                 <encounter>
                     <reference value="Encounter/pathology-encounter"/>

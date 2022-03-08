@@ -12,7 +12,7 @@
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <p> SDC example Message Bundle for fake patient Jose including Patient, Encounter</p>
+            <p> SDC example Message Bundle for fake patient Alex including Patient, Encounter</p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">

@@ -141,6 +141,15 @@
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             <groupingId value="new-group3"/>
         </resource>
+          <resource>
+            <reference>
+                <reference value="Encounter/path-specimen-collection"/></reference>
+            <name value="Encounter (example)"/>
+            <description value="Example of a pathology specimen collection encounter based on the *US Core Encounter Profile*."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+            <groupingId value="new-group3"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="Patient/JoelAlexPatient"/></reference>
@@ -240,6 +249,17 @@
                 <display value="Oncologist PractitionerRole (example)"/>
             </reference>
             <name value="Oncologist PractitionerRole (example)"/>
+            <description value="US Core PractitionerRole example for an Oncologist"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+            <groupingId value="new-group3"/>
+        </resource>
+              <resource>
+            <reference>
+                <reference value="Procedure/path-specimen"/>
+                <display value="Cancer Pathology Specimen Procedure Example"/>
+            </reference>
+            <name value="Adrenal Gland Resection Procedure (example)"/>
             <description value="US Core PractitionerRole example for an Oncologist"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
@@ -364,7 +384,7 @@
             </reference>
             <name value="expansion-parameters-cancer-reporting"/>
             <description value="References US SNOMED"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
@@ -372,6 +392,14 @@
                 <display value="USPathologyServiceRequest"/>
             </reference>
             <name value="US Pathology Service Request"/>
+            <exampleBoolean value="false"/>
+        </resource>
+         <resource>
+            <reference>
+                <reference value="ServiceRequest/cancer-path-example"/>
+                <display value="CAP Checklist for Adrenal Gland Resection"/>
+            </reference>
+            <name value="Example of a ServiceRequest for adrenal gland resection based on the US Pathology Service Request"/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

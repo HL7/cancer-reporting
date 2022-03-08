@@ -5,7 +5,7 @@
         <valueString value="Encounter Pathology Specimen Collection"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
-      <valueMarkdown value="This is a pathology specimen collection encounter example based on the *US Core Encounter Profile*."/>
+      <valueMarkdown value="Example of a pathology specimen collection encounter based on the *US Core Encounter Profile*."/>
     </extension>
     <lastUpdated value="2017-05-26T11:56:57.250-04:00"/>
     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>

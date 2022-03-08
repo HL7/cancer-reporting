@@ -67,7 +67,7 @@
             </reference>
             <name value="US Pathology MessageHeader"/>
             <description value="MessageHeader profile representing MSH segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <groupingId value="new-group1"/>
         </resource>
         <resource>

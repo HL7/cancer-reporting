@@ -34,11 +34,6 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 <td>[US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
 </tr>
 <tr>
-<td>Next Of Kin segment (NK1)</td>
-<td>2.6.2</td>
-<td>[US Pathology Next of Kin](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html)</td>
-</tr>
-<tr>
 <td>Patient Visit segment (PV1)</td>
 <td>2.6.2 </td>
 <td>[US Core Encounter Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html), [US Core Patient Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
@@ -85,8 +80,6 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 ### Relation to IHE SDC on FHIR
 
 The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), (under development) uses a form driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists has implemented IHE SDC for collection of electronic Cancer Checklists (eCCs). The goal of IHE SDC eCC on FHIR is to extract data from these cancer checklists and create FHIR Observations for interoperability between systems.
-
-This Cancer Electronic Pathology Reporting FHIR IG and the future IHE SDC eCC on FHIR should complement each other.
 
 ### Ongoing Project Efforts
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions may also include guidance on CAP eCC Protocol CKey Identifier to SNOMED translation.  

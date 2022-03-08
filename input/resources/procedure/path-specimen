@@ -1,0 +1,43 @@
+<Procedure xmlns="http://hl7.org/fhir">
+    <id value="path-specimen"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Cancer Pathology Specimen Procedure Example"/>
+        </extension>
+        <extension
+            url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown
+                value="This is a pathology procedure example based on the *US Core Procedure Profile*."/>
+        </extension>
+        <profile
+            value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 24165007}, {http://www.cms.gov/Medicare/Coding/ICD10 HZ30ZZZ}">Alcohol rehabilitation</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy Shaw. Generated Summary: Medical Record Number: 1032702 (USUAL); active; Amy V. Shaw , Amy V. Baxter ; Phone: 555-555-5555, amy.shaw@example.com; gender: female; birthDate: 1987-02-20</a></p><p><b>performed</b>: 2002-05-23</p></div>
+    </text>
+    <basedOn>
+        <reference value="ServiceRequest/cancer-path-example"/>
+        <display value="Service Request - Cancer Pathology Specimen Analysis"/>
+    </basedOn>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="39228008"/>
+            <display value="Surgical pathology procedure (procedure)"/>
+        </coding>
+        <coding>
+            <system value="http://www.cms.gov/Medicare/Coding/ICD10"/>
+            <code value=" 0GT44ZZ"/>
+            <display
+                value="Resection of Bilateral Adrenal Glands, Percutaneous Endoscopic Approach"/>
+        </coding>
+        <text value="Surgical procedure for bilateral adrenal gland resection for specimen collection"/>
+    </code>
+    <subject>
+        <reference value="Patient/JoelAlexPatient"/>
+        <display value="Alex Joel"/>
+    </subject>
+    <performedDateTime value="2021-11-01T17:00:14-05:00"/>
+</Procedure>

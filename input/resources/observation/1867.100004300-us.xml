@@ -8,13 +8,13 @@
         <source value="#mZCO7IYz7hTkAc3s"/>
     </meta>
     <identifier>
-        <system value="https://CAP.org"/>
+        <system value="https://example.org"/>
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
-            <system value="https://CAP.org"/>
+            <system value="https://example.org"/>
             <code value="1867.100004300"/>
             <display value="Regional Lymph Nodes"/>
         </coding>
@@ -25,7 +25,7 @@
     <component>
         <code>
             <coding>
-                <system value="https://CAP.org"/>
+                <system value="https://example.org"/>
                 <code value="1868.100004300"/>
                 <display value="No lymph nodes submitted or found"/>
             </coding>

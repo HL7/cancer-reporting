@@ -1,0 +1,17 @@
+<Parameters
+    xmlns="http://hl7.org/fhir">
+    <id value="path-expansion-params/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-12-03T01:16:26.017+00:00"/>
+        <source value="#3Ecl06HbnUBainEq"/>
+    </meta>
+    <parameter>
+        <name value="profile-url"/>
+        <valueString value="dc8fd4bc-091a-424a-8a3b-6198ef146891"/>
+    </parameter>
+    <parameter>
+        <name value="system-version"/>
+        <valueString value="https://www.hl7.org/fhir/valueset-guide-parameter-code.html/>
+    </parameter>
+</Parameters>

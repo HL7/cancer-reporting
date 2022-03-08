@@ -207,7 +207,7 @@
             <name value="Next-of-Kin RelatedPerson (example)"/>
             <description value="This example shows Next of Kin information in a RelatedPerson resource."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-next-of-kin"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>

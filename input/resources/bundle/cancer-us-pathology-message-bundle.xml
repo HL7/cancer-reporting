@@ -429,7 +429,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin"/>
+        <fullUrl value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
         <resource>
             <RelatedPerson>
                 <id value="pathology-next-of-kin"/>

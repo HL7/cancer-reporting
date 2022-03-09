@@ -19,7 +19,6 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <th>V2 Message Elements</th>
 <th>NAACCRR Section</th>
 <th>FHIR Artifact </th>
-</tr>
 </thead>
 <tbody>
 <tr>

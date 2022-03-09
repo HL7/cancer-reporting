@@ -16,7 +16,6 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 <th>FHIR Artifact </th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Message Header segment (MSH) </td>
@@ -75,6 +74,7 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 2.5.3</td>
 <td></td>
 </tr> 
+</tbody>
 
 
 ### Relation to IHE SDC on FHIR

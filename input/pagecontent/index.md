@@ -2,16 +2,15 @@ This implementation guide (IG) provides HL7 FHIR resources to define standards f
 
 ### Scope
 This guide defines 6 FHIR profiles:
-* [US Pathology Bundle](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-bundle.html)(derived from FHIR R4 Bundle)
-* [US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
-* [US Pathology Specimen](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
-* [US Pathology Next of Kin](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html) (derived from FHIR R4 RelatedPerson)
-* [US Pathology Related Practitioner Roles](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
+* [US Pathology Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-bundle.html)(derived from FHIR R4 Bundle)
+* [US Pathology MessageHeader](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
+* [US Pathology Diagnostic Report](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
+* [US Pathology Specimen](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
+* [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from FHIR R4 RelatedPerson)
+* [US Pathology Related Practitioner Roles](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
 
 This guide defines 1 value set and 1 code system:
-* [US Pathology Provider Types ValueSet](http://hl7.org/fhir/us/cancer-reporting/2021Sep/ValueSet-us-pathology-provider-types.html)
-* [US Pathology Provider Types CodeSystem](http://hl7.org/fhir/us/cancer-reporting/2021Sep/CodeSystem-us-pathology-provider-types.html)
+* [US Pathology Provider Types ValueSet](http://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
 
 ### Dependencies
 This guide leverages the [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020](https://www.naaccr.org/wp-content/uploads/2020/07/NAACCR-Vol-V_Revised_20200720.pdf) (Revised 2020).

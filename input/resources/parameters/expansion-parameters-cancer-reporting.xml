@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Parameters
     xmlns="http://hl7.org/fhir">
-    <id value="path-expansion-params/>
+    <id value="expansion-parameters-cancer-reporting"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2020-12-03T01:16:26.017+00:00"/>
-        <source value="#3Ecl06HbnUBainEq"/>
+        <lastUpdated value="2022-03-07T16:57:40.955+00:00"/>
+        <source value="#vSie8uSRnKLdrrd5"/>
     </meta>
     <parameter>
         <name value="profile-url"/>
@@ -12,6 +13,6 @@
     </parameter>
     <parameter>
         <name value="system-version"/>
-        <valueString value="https://www.hl7.org/fhir/valueset-guide-parameter-code.html/>
+        <valueString value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
     </parameter>
 </Parameters>

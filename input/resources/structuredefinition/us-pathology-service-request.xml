@@ -11,15 +11,83 @@
     <name value="USPathologyServiceRequest"/>
     <title value="US Pathology Service Request"/>
     <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 Orders and Observations Work Group"/>
+    <description value="This ServiceRequest profile represents the request for analysis of a pathological sample."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="ServiceRequest"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
     <derivation value="constraint"/>
-    <differential>
+   <differential>
         <element id="ServiceRequest">
             <path value="ServiceRequest"/>
+            <short value="Cancer Pathology ServiceRequest"/>
+            <definition value="Ordered tests for the patient during the encounter."/>
+            <base>
+                <path value="ServiceRequest"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="ServiceRequest.identifier">
+            <path value="ServiceRequest.identifier"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+          <element id="ServiceRequest.basedOn">
+            <path value="ServiceRequest.basedOn"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="ServiceRequest.code">
+            <path value="ServiceRequest.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+            <binding>
+                <strength value="extensible"/>
+                <description value="LOINC Diagnostic Report Codes"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/report-codes"/>
+            </binding>
+             <binding>
+                <strength value="extensible"/>
+                <description value="US Core Procedure Codes"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
+            </binding>
+        </element>
+        <element id="ServiceRequest.subject">
+            <path value="ServiceRequest.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+            </type>
+        </element>
+            <element id="ServiceRequest.encounter">
+            <path value="ServiceRequest.encounter"/>
+             <mustSupport value="true"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.occurrence[x]">
+            <path value="ServiceRequest.occurrence[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.authoredOn">
+            <path value="ServiceRequest.authoredOn"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="ServiceRequest.requester">
+            <path value="ServiceRequest.requester"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
         </element>
     </differential>
 </StructureDefinition>

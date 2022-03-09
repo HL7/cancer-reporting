@@ -6,7 +6,7 @@ This guide defines 6 FHIR profiles:
 * [US Pathology MessageHeader](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
 * [US Pathology Diagnostic Report](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
 * [US Pathology Specimen](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
-* [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from FHIR R4 RelatedPerson)
+* [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
 * [US Pathology Related Practitioner Roles](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
 
 This guide defines 1 value set and 1 code system:

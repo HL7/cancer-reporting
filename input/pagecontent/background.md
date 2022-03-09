@@ -25,14 +25,10 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <tr>
 <td>Message Header segment (MSH) </td>
 <td>2.6.1</td> 
-<td>[US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html) </td>
-</tr>
-<tr>
-<td>Software Segment [SFT] </td> 
+<td>[US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)</td>
+<td>Software Segment [SFT]</td> 
 <td>2.15.12</td>
 <td></td>
-</tr>
-<tr>
 <td>Patient Identification segment (PID)<td>
 <td>2.6.2 </td>
 <td>[US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
@@ -76,7 +72,8 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <td>2.7.3</td> 
 <td>US Pathology Diagnostic Report</td>
 <td>Continuation Pointer (DSC)</td> 
-2.5.3</td>
+
+<td>2.5.3</td>
 <td></td>
 </tr> 
 </tbody>

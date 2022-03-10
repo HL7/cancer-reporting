@@ -4,12 +4,8 @@ There is a need for an electronic data exchange standard that maintains the disc
 
 This cancer pathology reporting FHIR IG has been developed by Cancer ePathology Reporting Project in collaboration with the IHE SDC/eCC on FHIR Project, both under the Orders & Observations Working Group, and with other stakeholders. It provides an alternative to the HL7 Version 2.5.1 Message approach used by the NAACCR Standards for Cancer Registries Volume V for cancer pathology synoptic reports. The following table illustrates the mapping of the well-established NAACCR segments to FHIR resources.
 
-**Relation to IHE SDC on FHIR**
 
-The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), (under development) uses a form driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists has implemented IHE SDC for collection of electronic Cancer Checklists (eCCs). The goal of IHE SDC eCC on FHIR is to extract data from these cancer checklists and create FHIR Observations for interoperability between systems.
-
-
-**FHIR Profiles to Capture NAACCR Volume V**
+###FHIR Profiles to Capture NAACCR Volume V###
 
 <div class="tg-wrap">
 <table class="table table-bordered table-hover table-condensed">
@@ -88,7 +84,7 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 
 
 
-** Ongoing Project Efforts**
+###Ongoing Project Efforts###
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions may also include guidance on CAP eCC Protocol CKey Identifier to SNOMED translation.  
 
 
@@ -102,7 +98,7 @@ This project acknowledges that there is an ongoing discussion about how LOINC vs
 <tr>
 <th> Role </th> 
 <th> Name </th> 
-<th> Affiliation </th> 
+<th> Affiliation</th> 
 <th>Contact </th>
 </tr>
 </thead>

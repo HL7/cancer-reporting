@@ -16,10 +16,12 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 
 <thead>
 <tr>
-<th>V2 Message Elements</th>
-<th>NAACCRR Section</th>
-<th>FHIR Artifact </th>
+<th><b>V2 Message Elements<b></th>
+<th><b>NAACCRR Section<b></th>
+<th><b>FHIR Artifact<b></th>
+</tr>
 </thead>
+
 <tbody>
 <tr>
 <td>Message Header segment (MSH) </td>
@@ -83,7 +85,8 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <td></td>
 </tr> 
 </tbody>
-
+</table>
+</div>
 
 ** Ongoing Project Efforts**
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions may also include guidance on CAP eCC Protocol CKey Identifier to SNOMED translation.  
@@ -196,6 +199,8 @@ This project acknowledges that there is an ongoing discussion about how LOINC vs
 <td>University of Nebraska Medical Center</td> 
 <td>wcampbel@unmc.edu</td>
 </tr>
-<tr>
+</tr>
+</table>
+</div>
 
-**Current Work Group** includes those who participated in the Cancer FHIR IG project: Hans Buitendijk, David Burgess, Lorraine Constable, Robert Hausam, Ralf Herzog, Patrick Loyd, Ulrike (Riki) Merrick, John David Nolen, James Alexander (Alex) Mays, Andrea Pitkus, Craig Newman, James Tcheng, Laura Heermann, and Calvin Beebe.
+##Current Work Group includes those who participated in the Cancer FHIR IG project: Hans Buitendijk, David Burgess, Lorraine Constable, Robert Hausam, Ralf Herzog, Patrick Loyd, Ulrike (Riki) Merrick, John David Nolen, James Alexander (Alex) Mays, Andrea Pitkus, Craig Newman, James Tcheng, Laura Heermann, and Calvin Beebe.

@@ -37,7 +37,7 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 <tr>
 <td>Patient Visit segment (PV1)</td>
 <td>2.6.2 </td>
-<td><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role">US Pathology-Related PractitionerRole</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">[US Core Patient Profile</a></td>
+<td><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role">US Pathology-Related PractitionerRole</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
 </tr>
 <tr>
 <td>Common Order segment (ORC)</td> 
@@ -47,7 +47,7 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 <tr>
 <td>Observations Report ID segment (OBR)</td>
 <td>2.7.2</td>
-<td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a> ),<a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role">US Pathology-Related PractitionerRole</a></td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role">US Pathology-Related PractitionerRole</a></td>
 </tr>
 <tr>
 <td>Notes and Comments segment (NTE)</td>
@@ -67,7 +67,7 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 <tr>
 <td>Specimen (SPM)</td>
 <td>2.7.5</td> 
-<td><a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen">US Pathology Specimen</a>></td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen">US Pathology Specimen</a></td>
 <td></td>
 </tr>
 <tr>
@@ -81,10 +81,12 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 <td></td>
 </tr> 
 </tbody>
+</tr>
+</table>
+</div>
 
 
-
-###Ongoing Project Efforts###
+### Ongoing Project Efforts
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions may also include guidance on CAP eCC Protocol CKey Identifier to SNOMED translation.  
 
 

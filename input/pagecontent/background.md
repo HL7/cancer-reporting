@@ -16,15 +16,15 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 
 <thead>
 <tr>
-<th><b>V2 Message Elements<b></th>
-<th><b>NAACCRR Section<b></th>
-<th><b>FHIR Artifact<b></th>
+<th><b>V2 Message Elements</b></th>
+<th><b>NAACCRR Section</b></th>
+<th><b>FHIR Artifact</b></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>Message Header segment (MSH) </td>
+<td>Message Header segment (MSH)</td>
 <td>2.6.1</td> 
 <td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html">US Pathology MessageHeader</a></td>
 </tr>
@@ -71,7 +71,7 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <tr>
 <td>Specimen (SPM)</td>
 <td>2.7.5</td> 
-<td><a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen">US Pathology Specimen</td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen">US Pathology Specimen</a>></td>
 <td></td>
 </tr>
 <tr>
@@ -85,8 +85,8 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <td></td>
 </tr> 
 </tbody>
-</table>
-</div>
+
+
 
 ** Ongoing Project Efforts**
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions may also include guidance on CAP eCC Protocol CKey Identifier to SNOMED translation.  

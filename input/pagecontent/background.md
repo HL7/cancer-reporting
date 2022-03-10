@@ -11,8 +11,8 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 
 **FHIR Profiles to Capture NAACCR Volume V**
 
-<div class="tg-wrap"/>
-<table class="table table-bordered table-hover table-condensed"/>
+<div class="tg-wrap">
+<table class="table table-bordered table-hover table-condensed">
 
 <thead>
 <tr>

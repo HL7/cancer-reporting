@@ -24,7 +24,7 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <tr>
 <td>Message Header segment (MSH) </td>
 <td>2.6.1</td> 
-<td>[US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)</td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html">US Pathology MessageHeader</a></td>
 </tr>
 <tr>
 <td>Software Segment [SFT]</td> 
@@ -32,43 +32,44 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 <td></td>
 </tr>
 <tr>
-<td>Patient Identification segment (PID)<td>
+<td>Patient Identification segment (PID)</td>
 <td>2.6.2 </td>
-<td>[US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
+<td><a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
 </tr>
 <tr>
 <td>Patient Visit segment (PV1)</td>
 <td>2.6.2 </td>
-<td>[US Core Encounter Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html), [US Core Patient Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
+<td><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role">US Pathology-Related PractitionerRole</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">[US Core Patient Profile</a></td>
 </tr>
 <tr>
 <td>Common Order segment (ORC)</td> 
 <td>2.7.1</td>
-<td>[US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role">US Pathology-Related PractitionerRole</a></td>
 </tr>
 <tr>
 <td>Observations Report ID segment (OBR)</td>
 <td>2.7.2</td>
-<td>[US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a> ),<a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role">US Pathology-Related PractitionerRole</a></td>
 </tr>
 <tr>
 <td>Notes and Comments segment (NTE)</td>
 <td>2.6.4 </td>
-<td>[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
 </tr>
 <tr>
 <td>Observation/Result segment (OBX)</td>
 <td>2.7.3</td>
-<td>[US Pathology Diagnostic Report (results)](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report (results)</a></td>
 </tr>
 <tr>
 <td>Notes and Comments segment (NTE)</td> 
 <td>2.7.4</td>
-<td>[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
 </tr>
 <tr>
 <td>Specimen (SPM)</td>
-<td>2.7.5</td> US Pathology Specimen</td>
+<td>2.7.5</td> 
+<td><a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen">US Pathology Specimen</td>
 <td></td>
 </tr>
 <tr>

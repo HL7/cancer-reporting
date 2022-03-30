@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="681"/>
-        <lastUpdated value="2022-03-30T13:52:32.499+00:00"/>
-        <source value="#3eZtKNf1CojgMh5e"/>
+        <versionId value="688"/>
+        <lastUpdated value="2022-03-30T15:01:01.081+00:00"/>
+        <source value="#4LahJJmT1aGlaDvV"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -45,7 +45,7 @@
             <name value="Registry Reporting Profiles"/>
         </grouping>
         <grouping id="new-group6">
-            <name value="EHR Exchange Profiles"/>
+            <name value="EHR Exchange Profile"/>
         </grouping>
         <grouping id="new-group1">
             <name value="Shared Profiles"/>
@@ -446,7 +446,7 @@
                 <display value="US Pathology ExchangeBundle"/>
             </reference>
             <name value="US Pathology Exchange Content Bundle"/>
-            <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
+            <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;In order to properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group6"/>
         </resource>

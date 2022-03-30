@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="adrenal-example"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-02-08T19:53:44.998+00:00"/>
-        <source value="#dHwALYYipzpDV5dh"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-03-22T18:04:46.662+00:00"/>
+        <source value="#GxId9B8i179YlU3R"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
     </meta>
     <identifier>
@@ -19,7 +19,7 @@
         </coding>
     </type>
     <request>
-        <reference value="path-ServiceRequest"/>
+        <reference value="ServiceRequest/cancer-path-example"/>
     </request>
     <collection>
         <collectedDateTime value="2022-01-02"/>

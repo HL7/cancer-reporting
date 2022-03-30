@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-encounter"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-02-07T20:31:01.103+00:00"/>
-        <source value="#On2WyMBGx1iSkGlO"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-03-22T18:05:49.597+00:00"/>
+        <source value="#0oHJ01DkXzFXDnyB"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <identifier>

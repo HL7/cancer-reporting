@@ -1,10 +1,10 @@
 This implementation guide (IG) provides HL7 FHIR resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or support sending pathology messages to cancer registries. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
 
-###Relationship to IHE SDC on FHIR###
+### Relationship to IHE SDC on FHIR
 
 The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), (under development) uses a form driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists has implemented IHE SDC for collection of electronic Cancer Checklists (eCCs). The goal of IHE SDC eCC on FHIR is to extract data from these cancer checklists and create FHIR Observations for interoperability between systems.
 
-###Relationship to Making EHR Data More Available for Research and Public Health (MedMorph)###
+###Relationship to Making EHR Data More Available for Research and Public Health (MedMorph)
 
 The [MedMorph project](http://build.fhir.org/ig/HL7/fhir-medmorph/) is seeking to advance public health and patient-centered outcomes by establishing HL7 standards in FHIR and Clinical Quality Language (CQL). The [Central Cancer Registry Reporting Content IG] (http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan/) leverages the MedMorph Reference Architecture (RA) IG to facilitate reporting cancer data to regional, state, and territorial public health central cancer registries. 
 
@@ -41,3 +41,5 @@ This library of FHIR resources was developed and produced through the efforts of
 This material contains content from [SNOMED CT®](http://www.ihtsdo.org/snomed-ct/). SNOMED CT is a registered trademark of the International Health Terminology Standard Development Organization (IHTSDO).
 
 This material contains content from [LOINC®](http://loinc.org). LOINC codes are copyright ©1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. All rights reserved. See [https://loinc.org/kb/license/](https://loinc.org/kb/license/).
+
+This material contains content from the CAP. The [Electronic Cancer Checklists](https://www.cap.org/laboratory-improvement/proficiency-testing/cap-ecc) are copyrighted by the CAP. All rights reserved.

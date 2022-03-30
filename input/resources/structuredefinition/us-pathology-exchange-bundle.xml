@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="us-pathology-bundle"/>
+    <id value="us-pathology-exchange-bundle"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-08-06T14:01:37.164+00:00"/>
-        <source value="#ZUtzI9gMaQppmoj3"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-24T20:24:32.189+00:00"/>
+        <source value="#ATTLwjR0iLCFw8zs"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
-    <name value="USPathologyBundle"/>
-    <title value="US Pathology Bundle"/>
+    <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
+    <name value="USPathologyExchangeBundle"/>
+    <title value="US Pathology ExchangeBundle"/>
     <status value="active"/>
-    <description value="This message bundle profile defines the structure of a NAACCR v5 FHIR message that is sent from a pathology environment into an EHR environment. Note- US Core profiles are expected for Organization, Practitioner, and Procedure, when such information is known to the source LIS."/>
+    <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -24,7 +24,13 @@
         </element>
         <element id="Bundle.type">
             <path value="Bundle.type"/>
-            <fixedCode value="message"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/bundle-type"/>
+                    <code value="transaction"/>
+                    <display value="Transaction"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Bundle.timestamp">
@@ -41,22 +47,6 @@
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry:message_header">
-            <path value="Bundle.entry"/>
-            <sliceName value="message_header"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.entry:message_header.resource">
-            <path value="Bundle.entry.resource"/>
-            <min value="1"/>
-            <type>
-                <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry:us_core_patient">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-service-request"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-02-02T12:05:45.948+00:00"/>
-        <source value="#I6dfSNQof6KsPM0e"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-22T18:04:40.205+00:00"/>
+        <source value="#gLtzeTVBFPZKdcHJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
     <name value="USPathologyServiceRequest"/>
@@ -20,7 +20,7 @@
     <type value="ServiceRequest"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
     <derivation value="constraint"/>
-   <differential>
+    <differential>
         <element id="ServiceRequest">
             <path value="ServiceRequest"/>
             <short value="Cancer Pathology ServiceRequest"/>
@@ -38,7 +38,7 @@
             <mustSupport value="true"/>
             <isModifier value="false"/>
         </element>
-          <element id="ServiceRequest.basedOn">
+        <element id="ServiceRequest.basedOn">
             <path value="ServiceRequest.basedOn"/>
             <mustSupport value="true"/>
             <isModifier value="false"/>
@@ -51,11 +51,6 @@
             <isModifier value="false"/>
             <binding>
                 <strength value="extensible"/>
-                <description value="LOINC Diagnostic Report Codes"/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/report-codes"/>
-            </binding>
-             <binding>
-                <strength value="extensible"/>
                 <description value="US Core Procedure Codes"/>
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
             </binding>
@@ -67,13 +62,13 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
             </type>
         </element>
-            <element id="ServiceRequest.encounter">
+        <element id="ServiceRequest.encounter">
             <path value="ServiceRequest.encounter"/>
-             <mustSupport value="true"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.occurrence[x]">
             <path value="ServiceRequest.occurrence[x]"/>

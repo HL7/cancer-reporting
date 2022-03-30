@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole
     xmlns="http://hl7.org/fhir">
-    <id value="oncologist-example"/>
+    <id value="practionerrole-uspath-oncologist-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-08-06T14:01:37.030+00:00"/>
-        <source value="#ZUtzI9gMaQppmoj3"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
+        <source value="#OELswItjzwawcPiC"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
     </meta>
     <practitioner>
@@ -16,9 +16,9 @@
     </organization>
     <code>
         <coding>
-            <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
-            <code value="orderer"/>
-            <display value="Physician Ordering Pathology testing"/>
+            <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
+            <code value="OP"/>
+            <display value="Ordering Provider: Physician Ordering Pathology testing"/>
         </coding>
     </code>
     <telecom>

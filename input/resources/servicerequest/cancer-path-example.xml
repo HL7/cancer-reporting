@@ -1,13 +1,20 @@
-<ServiceRequest xmlns="http://hl7.org/fhir">
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest
+    xmlns="http://hl7.org/fhir">
     <id value="cancer-path-example"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-23T20:50:13.457+00:00"/>
+        <source value="#5MfQxB0Soa3BaN7g"/>
+    </meta>
     <status value="active"/>
     <intent value="order"/>
     <code>
         <coding>
-            <system value="https://example.org"/>
-            <code value="406018008"/>
+            <system value="http://loinc.org/"/>
+            <code value="60567-5"/>
         </coding>
-        <text value="CAP Checklist for Adrenal Gland Resection"/>
+        <text value="Comprehensive pathology report panel"/>
     </code>
     <subject>
         <reference value="Patient/JoelAlexPatient"/>
@@ -17,6 +24,9 @@
     </encounter>
     <occurrenceDateTime value="2021-11-01T17:00:14-05:00"/>
     <requester>
-        <reference value="Practitioner/oncologist-example"/>
+        <reference value="Practitioner/surgeon-example"/>
     </requester>
+    <specimen>
+        <reference value="Specimen/adrenal-example"/>
+    </specimen>
 </ServiceRequest>

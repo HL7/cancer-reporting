@@ -13,7 +13,7 @@ This specification defines the following profiles:
 * [US Pathology MessageHeader] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)  
 * [US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)  
 * [US Pathology Specimen] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html) 
-* [US Pathology Service Request] (http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html)
+* [US Pathology Next of Kin] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html)
 * [US Pathology Related Practitioner Roles] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)
 
 #### Extensions

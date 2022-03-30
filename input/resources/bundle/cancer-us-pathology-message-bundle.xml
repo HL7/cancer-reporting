@@ -18,7 +18,7 @@
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
-                        <p> SDC example Message Bundle for fake patient Alex including Patient, Encounter</p>
+                        <p> SDC example Message Bundle for fake patient Jose including Patient, Encounter</p>
                     </div>
                 </text>
                 <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
@@ -59,8 +59,15 @@
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Alex   
-                            <b>Joel </b>
+                        <div class="hapiHeaderText">Jose 
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <b>RODRIGUEZ </b>
                         </div>
                         <table class="hapiPropertyTable">
                             <tbody>
@@ -77,8 +84,8 @@
                     <value value="JoelAlexPatient"/>
                 </identifier>
                 <name>
-                    <family value="Joel"/>
-                    <given value="Alex"/>
+                    <family value="Rodriguez"/>
+                    <given value="Jose"/>
                 </name>
                 <gender value="male"/>
                 <link>
@@ -148,7 +155,7 @@
                     </div>
                 </text>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"/>
                 </identifier>
                 <status value="final"/>
@@ -168,7 +175,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/JoelAlexPatient"/>
-                    <display value="Alex Joel"/>
+                    <display value="Jose Rodriguez"/>
                 </subject>
                 <encounter>
                     <reference value="Encounter/pathology-encounter"/>
@@ -186,98 +193,98 @@
                 <result>
                     <reference value="Observation/2118.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/42554.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/52756.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/59852.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/49275.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2129.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/40496.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/51265.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/53526.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/1867.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/20880.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2137.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2143.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2149.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>
                     </identifier>
                 </result>
@@ -429,7 +436,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin"/>
         <resource>
             <RelatedPerson>
                 <id value="pathology-next-of-kin"/>
@@ -460,13 +467,13 @@
             <Observation>
                 <id value="2118.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2118.100004300"/>
                     </coding>
                 </code>
@@ -475,7 +482,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2119.100004300"/>
                         <display value="Adrenal gland"/>
                     </coding>
@@ -489,13 +496,13 @@
             <Observation>
                 <id value="42554.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="42554.100004300"/>
                         <display value="Procedure"/>
                     </coding>
@@ -505,7 +512,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2122.100004300"/>
                         <display value="Adrenalectomy, total"/>
                     </coding>
@@ -519,13 +526,13 @@
             <Observation>
                 <id value="52756.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="52756.100004300"/>
                         <display value="Specimen Laterality"/>
                     </coding>
@@ -535,7 +542,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="56812.100004300"/>
                         <display value="Bilateral"/>
                     </coding>
@@ -549,13 +556,13 @@
             <Observation>
                 <id value="59852.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="59852.100004300"/>
                         <display value="Histologic Type (Notes C through E)"/>
                     </coding>
@@ -565,7 +572,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2117.100004300"/>
                         <display value="Adrenal cortical carcinoma"/>
                     </coding>
@@ -579,13 +586,13 @@
             <Observation>
                 <id value="49275.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="49275.100004300"/>
                         <display value="Histologic Grade (Notes C through E)"/>
                     </coding>
@@ -595,7 +602,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="48634.100004300"/>
                         <display value="High grade (&gt; 20 mitoses / 50 high-power fields)"/>
                     </coding>
@@ -609,13 +616,13 @@
             <Observation>
                 <id value="2129.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2129.100004300"/>
                         <display value="Tumor Size (Note A)"/>
                     </coding>
@@ -625,7 +632,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2131.100004300"/>
                         <display value="Greatest dimension in Centimeters (cm)"/>
                     </coding>
@@ -639,13 +646,13 @@
             <Observation>
                 <id value="40496.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="40496.100004300"/>
                         <display value="Tumor Weight (Note B)"/>
                     </coding>
@@ -655,7 +662,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="44761.100004300"/>
                         <display value="Specify weight (g)"/>
                     </coding>
@@ -669,13 +676,13 @@
             <Observation>
                 <id value="51265.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="51265.100004300"/>
                         <display value="Tumor Extension"/>
                     </coding>
@@ -686,7 +693,7 @@
                 <component>
                     <code>
                         <coding>
-                            <system value="https://example.org"/>
+                            <system value="https://CAP.org"/>
                             <code value="39537.100004300"/>
                             <display value="Tumor invades into or through the adrenal capsule"/>
                         </coding>
@@ -695,7 +702,7 @@
                 <component>
                     <code>
                         <coding>
-                            <system value="https://example.org"/>
+                            <system value="https://CAP.org"/>
                             <code value="56271.100004300"/>
                             <display value="Tumor invades into other adjacent organ(s)"/>
                         </coding>
@@ -710,13 +717,13 @@
             <Observation>
                 <id value="53526.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="53526.100004300"/>
                     </coding>
                 </code>
@@ -726,7 +733,7 @@
                 <component>
                     <code>
                         <coding>
-                            <system value="https://example.org"/>
+                            <system value="https://CAP.org"/>
                             <code value="58229.100004300"/>
                             <display value="Diaphragm"/>
                         </coding>
@@ -741,13 +748,13 @@
             <Observation>
                 <id value="1867.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="1867.100004300"/>
                         <display value="Regional Lymph Nodes"/>
                     </coding>
@@ -758,7 +765,7 @@
                 <component>
                     <code>
                         <coding>
-                            <system value="https://example.org"/>
+                            <system value="https://CAP.org"/>
                             <code value="1868.100004300"/>
                             <display value="No lymph nodes submitted or found"/>
                         </coding>
@@ -773,13 +780,13 @@
             <Observation>
                 <id value="20880.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="20880.100004300"/>
                         <display value="?TNM Descriptors"/>
                     </coding>
@@ -790,7 +797,7 @@
                 <component>
                     <code>
                         <coding>
-                            <system value="https://example.org"/>
+                            <system value="https://CAP.org"/>
                             <code value="20890.100004300"/>
                             <display value="m (multiple primary tumors)"/>
                         </coding>
@@ -805,13 +812,13 @@
             <Observation>
                 <id value="2137.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2137.100004300"/>
                         <display value="Primary Tumor (pT)"/>
                     </coding>
@@ -821,7 +828,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2142.100004300"/>
                         <display value="pTX: Primary tumor cannot be assessed"/>
                     </coding>
@@ -835,13 +842,13 @@
             <Observation>
                 <id value="2143.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2143.100004300"/>
                         <display value="Regional Lymph Nodes (pN) (Note H)"/>
                     </coding>
@@ -851,7 +858,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2145.100004300"/>
                         <display value="pN0: No regional lymph node metastasis"/>
                     </coding>
@@ -865,13 +872,13 @@
             <Observation>
                 <id value="2149.100004300-us"/>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>
                 </identifier>
                 <status value="final"/>
                 <code>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="2149.100004300"/>
                         <display value="?Distant Metastasis (pM) (Note I)"/>
                     </coding>
@@ -881,7 +888,7 @@
                 </subject>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <code value="20895.100004300"/>
                         <display value="?Not applicable - pM cannot be determined from the submitted specimen(s)"/>
                     </coding>

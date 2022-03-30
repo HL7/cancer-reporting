@@ -4,83 +4,113 @@ There is a need for an electronic data exchange standard that maintains the disc
 
 This cancer pathology reporting FHIR IG has been developed by Cancer ePathology Reporting Project in collaboration with the IHE SDC/eCC on FHIR Project, both under the Orders & Observations Working Group, and with other stakeholders. It provides an alternative to the HL7 Version 2.5.1 Message approach used by the NAACCR Standards for Cancer Registries Volume V for cancer pathology synoptic reports. The following table illustrates the mapping of the well-established NAACCR segments to FHIR resources.
 
-**FHIR Profiles to Capture NAACCR Volume V**
+###FHIR Profiles to Capture NAACCR Volume V
 
-<div class="tg-wrap">
-<table class="table table-bordered table-hover table-condensed">
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
 <thead>
-<tr>
-<th>V2 Message Elements</th>
-<th>NAACCRR Section</th>
-<th>FHIR Artifact </th>
-</tr>
+  <tr>
+    <th class="tg-0lax">V2 Message Elements</th>
+    <th class="tg-0lax">NAACCRR Section</th>
+    <th class="tg-0lax">FHIR Artifact </th>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax"></th>
+  </tr>
 </thead>
-
 <tbody>
-<tr>
-<td>Message Header segment (MSH) </td>
-<td>2.6.1</td> 
-<td>[US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html) </td>
-</tr>
-<tr>
-<td>Software Segment [SFT] </td> 
-<td>2.15.12</td>
-<td></td>
-</tr>
-<tr>
-<td>Patient Identification segment (PID)<td>
-<td>2.6.2 </td>
-<td>[US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
-</tr>
-<tr>
-<td>Next Of Kin segment (NK1)</td>
-<td>2.6.2</td>
-<td>[US Pathology Next of Kin](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html)</td>
-</tr>
-<tr>
-<td>Patient Visit segment (PV1)</td>
-<td>2.6.2 </td>
-<td>[US Core Encounter Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html), [US Core Patient Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
-</tr>
-<tr>
-<td>Common Order segment (ORC)</td> 
-<td>2.7.1</td>
-<td>[US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
-</tr>
-<tr>
-<td>Observations Report ID segment (OBR)</td>
-<td>2.7.2</td>
-<td>[US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
-</tr>
-<tr>
-<td>Notes and Comments segment (NTE)</td>
-<td>2.6.4 </td>
-<td>[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
-</tr>
-<tr>
-<td>Observation/Result segment (OBX)</td>
-<td>2.7.3</td>
-<td>[US Pathology Diagnostic Report (results)](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
-</tr>
-<tr>
-<td>Notes and Comments segment (NTE)</td> 
-<td>2.7.4</td>
-<td>[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
-</tr>
-<tr>
-<td>Specimen (SPM)</td>
-<td>2.7.5 | US Pathology Specimen</td>
-</tr>
-<tr>
-<td>Observation Related to Specimen (OBX)</td>
-<td>2.7.3</td> 
-<td>US Pathology Diagnostic Report</td>
-<td>Continuation Pointer (DSC)</td> 
-2.5.3</td>
-<td></td>
-</tr> 
-
+  <tr>
+    <td class="tg-0lax">Message Header segment (MSH) </td>
+    <td class="tg-0lax">2.6.1</td>
+    <td class="tg-0lax">[US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html) </td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Software Segment [SFT] </td>
+    <td class="tg-0lax">2.15.12</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Patient Identification segment (PID)</td>
+    <td class="tg-0lax">2.6.2</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">[US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Next Of Kin segment (NK1)</td>
+    <td class="tg-0lax">2.6.2</td>
+    <td class="tg-0lax">[US Pathology Next of Kin](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html)</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Patient Visit segment (PV1)</td>
+    <td class="tg-0lax">2.6.2 </td>
+    <td class="tg-0lax">[US Core Encounter Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html), [US Core Patient Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Common Order segment (ORC)</td>
+    <td class="tg-0lax">2.7.1</td>
+    <td class="tg-0lax">[US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Observations Report ID segment (OBR)</td>
+    <td class="tg-0lax">2.7.2</td>
+    <td class="tg-0lax">[US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Notes and Comments segment (NTE)</td>
+    <td class="tg-0lax">2.6.4 </td>
+    <td class="tg-0lax">[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Observation/Result segment (OBX)</td>
+    <td class="tg-0lax">2.7.3</td>
+    <td class="tg-0lax">[US Pathology Diagnostic Report (results)](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Notes and Comments segment (NTE)</td>
+    <td class="tg-0lax">2.7.4</td>
+    <td class="tg-0lax">[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Specimen (SPM)</td>
+    <td class="tg-0lax">2.7.5</td>
+    <td class="tg-0lax">US Pathology Specimen</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Observation Related to Specimen (OBX)</td>
+    <td class="tg-0lax">2.7.3</td>
+    <td class="tg-0lax">US Pathology Diagnostic Report</td>
+    <td class="tg-0lax">Continuation Pointer (DSC)</td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
 
 ### Relation to IHE SDC on FHIR
 

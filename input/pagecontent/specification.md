@@ -7,7 +7,6 @@
 * [FHIR Messaging](http://hl7.org/fhir/messaging.html)
 
 ### Resources and Profiles
-#### Resource Profiles
 This specification defines the following profiles:
 * [US Pathology Bundle] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-bundle.html)   
 * [US Pathology MessageHeader] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)  
@@ -29,12 +28,14 @@ Details on profiles and extensions present in this specification are available o
 ### Must Support and Missing Data
 Systems claiming to conform to a profile SHALL support the elements in a profile as defined below. This guide adopts the following definitions of MustSupport for all direct transactions between the Sending and Receiving Systems.
 
-**All Sending Systems:** Sending Systems are defined as Provider Systems and applications.
+**All Sending Systems:** 
+<b>Sending Systems</b> are defined as systems that generate and push data within a pathology lab workflow. These systems may be used by clinicians (ie Oncologists) when ordering the pathological analysis for a patient, which will necessarily entail the collection (procedure) of said specimen, and sending of this specimen to a lab. These systems may also be use by Pathologists in cases of completed analysis and reports that need to be sent back to an clinician and/or to a cancer registry.  
 * As part of the sending of a US Pathology Bundle, the Sender SHALL be capable of including all elements defined in the profiles that have a MustSupport flag and SHALL populate all elements with a MustSupport flag if the information exists.
 * In situations where information on a particular data element is not present, the Sender SHALL NOT include the data element in the resource instance if the cardinality is 0..n.
 * If the information does not exist and the cardinality of the element is >= 1..*, the Sender SHALL use the [dataAbsentReason](http://hl7.org/fhir/ValueSet/data-absent-reason) extension where it is defined. Note: populating the element with the value set absent reason or using the dataAbsent Reason SHOULD be handled by the Sending System and not require provider action.
 
-**All Receiving Systems:** Receiving Systems are defined as Provider Systems and applications receiving transactions from the Sending System.
+**All Receiving Systems:** 
+**Receiving Systems** are defined as systems that receive and are expected to process data within a pathology lab workflow. These systems may be used by Pathologists (ie LIS, associated interface engines) when receiving a specimen and a request for analysis. These systems may also be used by Clinicians who ordered the lab analysis/report. Also,these systems may represent central registries who aggregate and analyze pathology lab information.
 * The Receiving System SHALL be capable of processing resource instances containing required and allowed data elements without generating an error or causing the application to fail.
 * Receiving Systems SHOULD be capable of processing (display, store, etc.) the data elements based on the utility of the specific element to the receiver.
 * When receiving a US Pathology Bundle from the Sender, the Receiving System SHALL interpret missing data elements within resource instances as data not present in the Senders systems.
@@ -44,5 +45,4 @@ Systems claiming to conform to a profile SHALL support the elements in a profile
 Where this IG does not additionally constrain a US Core profile, the actors shall follow the US Core definition of [Must Support and Missing Data](http://hl7.org/fhir/us/core/general-guidance.html).
 
 ### Privacy and Security
-Systems implementing this guide are expected to follow the general [FHIR Security](https://www.hl7.org/fhir/security.html) guidelines, as well as all additionally applicable public and private laws and policies. 
-
+Systems implementing this guide are expected to follow the general [FHIR Security](https://www.hl7.org/fhir/security.html) guidelines, as well as all additionally applicable public and private laws and policies.

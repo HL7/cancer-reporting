@@ -7,79 +7,82 @@ This cancer pathology reporting FHIR IG has been developed by Cancer ePathology 
 
 ### FHIR Profiles to Capture NAACCR Volume V
 
-<table>
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
     <thead>
         <tr>
-            <th><b>V2 Message Elements</b></th>
-            <th><b>NAACCRR Section</b></th>
-            <th><b>FHIR Artifact</b></th>
+            <th class="tg-0lax">V2 MessageElements</th>
+            <th class="tg-0lax">NAACCRRSection</th>
+            <th class="tg-0lax">FHIRArtifact</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Message Header segment (MSH) </td>
-            <td>2.6.1</td>
-            <td>[US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)</td>
+            <td class="tg-0lax">Message Header segment MSH</td>
+            <td class="tg-0lax">2.6.1</td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html">USPathology MessageHeader</a></td>
         </tr>
         <tr>
-            <td>Software Segment [SFT] </td>
-            <td>2.15.12</td>
-            <td></td>
+            <td class="tg-0lax">Software Segment SFT</td>
+            <td class="tg-0lax">2.15.12</td>
+            <td class="tg-0lax"></td>
         </tr>
         <tr>
-            <td>Patient Identification segment (PID)</td>
-            <td>2.6.2</td>
-            <td>[US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
+            <td class="tg-0lax">Patient Identification segment PID</td>
+            <td class="tg-0lax">2.6.2</td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">USCore Patient Profile</a></td>
         </tr>
         <tr>
-            <td>Next Of Kin segment (NK1)</td>
-            <td>2.6.2</td>
-            <td>[US Pathology Next of Kin](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html)</td>
+            <td class="tg-0lax">Patient Visit segment PV1</td>
+            <td class="tg-0lax">2.6.2</td>
+            <td class="tg-0lax"><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html">USCore Encounter Profile</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">USPathology-Related Practitioner</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">USCore Patient Profile</a></td>
         </tr>
         <tr>
-            <td>Patient Visit segment (PV1)</td>
-            <td>2.6.2 </td>
-            <td>[US Core Encounter Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html), [US Core Patient Profile](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html)</td>
+            <td class="tg-0lax">Common Order segment ORC</td>
+            <td class="tg-0lax">2.7.1</td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">USPathology-Related PractitionerRole</a></td>
         </tr>
         <tr>
-            <td>Common Order segment (ORC)</td>
-            <td>2.7.1</td>
-            <td>[US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
+            <td class="tg-0lax">Observations Report ID segment OBR</td>
+            <td class="tg-0lax">2.7.2</td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">USPathology Diagnostic Report</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">USPathology-Related PractitionerRole</a></td>
         </tr>
         <tr>
-            <td>Observations Report ID segment (OBR)</td>
-            <td>2.7.2</td>
-            <td>[US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html), [US Pathology-Related PractitionerRole](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)</td>
+            <td class="tg-0lax">Notes and Comments segment NTE</td>
+            <td class="tg-0lax">2.6.4</td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">USPathology Diagnostic Report</a></td>
         </tr>
         <tr>
-            <td>Notes and Comments segment (NTE)</td>
-            <td>2.6.4 </td>
-            <td>[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+            <td class="tg-0lax">Observation/Result segment OBX</td>
+            <td class="tg-0lax">2.7.3</td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">USPathology Diagnostic Report results</a></td>
         </tr>
         <tr>
-            <td>Observation/Result segment (OBX)</td>
-            <td>2.7.3</td>
-            <td>[US Pathology Diagnostic Report (results)](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+            <td class="tg-0lax">Notes and Comments segment NTE</td>
+            <td class="tg-0lax">2.7.4</td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">USPathology Diagnostic Report</a></td>
         </tr>
         <tr>
-            <td>Notes and Comments segment (NTE)</td>
-            <td>2.7.4</td>
-            <td>[US Pathology Diagnostic Report] (http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)</td>
+            <td class="tg-0lax">Specimen SPM</td>
+            <td class="tg-0lax">2.7.5</td>
+            <td class="tg-0lax">US Pathology Specimen</td>
         </tr>
         <tr>
-            <td>Specimen (SPM)</td>
-            <td>2.7.5</td>
-            <td>US Pathology Specimen</td>
+            <td class="tg-0lax">Observation Related to Specimen OBX</td>
+            <td class="tg-0lax">2.7.3</td>
+            <td class="tg-0lax">US Pathology Diagnostic Report</td>
         </tr>
         <tr>
-            <td>Observation Related to Specimen (OBX)</td>
-            <td>2.7.3</td>
-            <td>US Pathology Diagnostic Report</td>
-        </tr>
-        <tr>
-            <td>Continuation Pointer (DSC)</td>
-            <td></td>
-            <td></td>
+            <td class="tg-0lax">Continuation Pointer DSC</td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
         </tr>
     </tbody>
 </table>
@@ -98,20 +101,21 @@ This project acknowledges that there is an ongoing discussion about how LOINC vs
 
 | Role | Name | Affiliation | Contact |
 | -------- | -------- | -------- | -------- |
-| Primary Editor | David deRoode | Lantana Consulting Group | david.deroode@lantanagroup.com|
-| Primary Editor | Rick Geimer | Lantana Consulting Group | rick.geimer@lantanagroup.com|
-| Co-Editor | Zabrina Gonzaga | Lantana Consulting Group | zabrina.gonzaga@lantanagroup.com|
-| Co-Editor | Wendy Wise | Lantana Consulting Group | wendy.wise@lantanagroup.com|
-| Co-Editor | Ruby Nash | Lantana Consulting Group | ruby.nash@lantanagroup.com|
-| Co-Editor | Diana Wright | Lantana Consulting Group | diana.wright@lantanagroup.com|
-| Co-Editor | Max Nakamura | Lantana Consulting Group | max.nakamura@lantanagroup.com|
-| Subject Matter Expert | Wendy Blumenthal | Centers for Disease Control and Prevention (CDC) | wfb6@cdc.gov|
-| Subject Matter Expert | David Jones | Centers for Disease Control and Prevention (CDC) | pvl1@cdc.gov|
-| Subject Matter Expert | Sandy Jones | Centers for Disease Control and Prevention (CDC) | sft1@cdc.gov|
-| Subject Matter Expert | Temitope Alimi | Katmai Government Services contract to CDC | nyj4@cdc.gov|
-| Subject Matter Expert | Wendy Scharber | Katmai Government Services/Registry Widgets contract to CDC | wendy@registrywidgets.com|
-| Subject Matter Expert | Richard (Rich) Moldwin | College of American Pathologists | rmoldwi@cap.org|
-| Subject Matter Expert | Alex Goel | College of American Pathologists | agoel@cap.org|
-| Subject Matter Expert | Walter (Scott) Campbell | University of Nebraska Medical Center | wcampbel@unmc.edu |
+| Primary Editor | **David deRoode** | Lantana Consulting Group | david.deroode@lantanagroup.com|
+| Primary Editor | **Rick Geimer** | Lantana Consulting Group | rick.geimer@lantanagroup.com|
+| Co-Editor | **Zabrina Gonzaga** | Lantana Consulting Group | zabrina.gonzaga@lantanagroup.com|
+| Co-Editor | **Wendy Wise** | Lantana Consulting Group | wendy.wise@lantanagroup.com|
+| Co-Editor | **Ruby Nash** | Lantana Consulting Group | ruby.nash@lantanagroup.com|
+| Co-Editor | **Diana Wright** | Lantana Consulting Group | diana.wright@lantanagroup.com|
+| Co-Editor | **Max Nakamura** | Lantana Consulting Group | max.nakamura@lantanagroup.com|
+| Subject Matter Expert | **Wendy Blumenthal** | Centers for Disease Control and Prevention (CDC) | wfb6@cdc.gov|
+| Subject Matter Expert |**David Jones** | Centers for Disease Control and Prevention (CDC) | pvl1@cdc.gov|
+| Subject Matter Expert | **Sandy Jones** | Centers for Disease Control and Prevention (CDC) | sft1@cdc.gov|
+| Subject Matter Expert | **Caitlin Kennedy** | Centers for Disease Control and Prevention (CDC) | mhy5@cdc.gov|
+| Subject Matter Expert | **Temitope Alimi** | Katmai Government Services contract to CDC | nyj4@cdc.gov|
+| Subject Matter Expert | **Wendy Scharber** | Katmai Government Services/Registry Widgets contract to CDC | wendy@registrywidgets.com|
+| Subject Matter Expert | **Richard (Rich) Moldwin** | College of American Pathologists | rmoldwi@cap.org|
+| Subject Matter Expert | **Alex Goel** | College of American Pathologists | agoel@cap.org|
+| Subject Matter Expert | **Walter (Scott) Campbell** | University of Nebraska Medical Center | wcampbel@unmc.edu |
 
 **Current Work Group** includes those who participated in the Cancer FHIR IG project: Hans Buitendijk, David Burgess, Lorraine Constable, Robert Hausam, Ralf Herzog, Patrick Loyd, Ulrike (Riki) Merrick, John David Nolen, James Alexander (Alex) Mays, Andrea Pitkus, Craig Newman, James Tcheng, Laura Heermann, and Calvin Beebe.

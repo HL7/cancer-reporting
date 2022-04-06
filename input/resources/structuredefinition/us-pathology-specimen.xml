@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-specimen"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-02-01T19:30:13.281+00:00"/>
-        <source value="#pQLyi7wvFqL3zYDf"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-04-05T19:29:42.621+00:00"/>
+        <source value="#L7pfVmmVgbN698dz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
     <name value="USPathologySpecimen"/>
@@ -20,6 +20,11 @@
     <differential>
         <element id="Specimen">
             <path value="Specimen"/>
+            <constraint>
+                <key value="raD7fTG6"/>
+                <severity value="warning"/>
+                <human value="collectedDateTime"/>
+            </constraint>
         </element>
         <element id="Specimen.identifier">
             <path value="Specimen.identifier"/>
@@ -46,11 +51,24 @@
         </element>
         <element id="Specimen.parent">
             <path value="Specimen.parent"/>
+            <constraint>
+                <key value="ch3j9pan"/>
+                <severity value="warning"/>
+                <human value="US Pathology Specimen Resource"/>
+                <source value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+            </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.collection">
             <path value="Specimen.collection"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.extension">
+            <path value="Specimen.collection.extension"/>
+            <constraint>
+                <key value="eQlyknSF"/>
+                <severity value="warning"/>
+            </constraint>
         </element>
         <element id="Specimen.collection.collector">
             <path value="Specimen.collection.collector"/>
@@ -83,6 +101,10 @@
             <path value="Specimen.container"/>
             <min value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.container.id">
+            <path value="Specimen.container.id"/>
+            <min value="1"/>
         </element>
         <element id="Specimen.container.identifier">
             <path value="Specimen.container.identifier"/>

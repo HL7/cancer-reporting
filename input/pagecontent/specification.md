@@ -6,14 +6,16 @@
 * [RESTful API](https://restfulapi.net/)
 * [FHIR Messaging](http://hl7.org/fhir/messaging.html)
 
-### Resources and Profiles
-This specification defines the following profiles:
-* [US Pathology Bundle](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-bundle.html)   
-* [US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html)  
-* [US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html)  
-* [US Pathology Specimen](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html) 
-* [US Pathology Next of Kin](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-next-of-kin.html)
-* [US Pathology Related Practitioner Roles](http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html)
+This guide defines 6 FHIR profiles:
+* [US Pathology Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-bundle.html)(derived from FHIR R4 Bundle)
+* [US Pathology MessageHeader](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
+* [US Pathology Diagnostic Report](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
+* [US Pathology Specimen](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
+* [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
+* [US Pathology Related Practitioner Roles](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
+
+This guide defines 1 value set and 1 code system:
+* [US Pathology Provider Types ValueSet](http://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
 
 #### Extensions
 This implementation guide defines no new extensions.

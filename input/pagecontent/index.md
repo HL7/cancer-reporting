@@ -16,7 +16,11 @@ This guide defines 1 value set and 1 code system:
 This guide leverages the [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020](https://www.naaccr.org/wp-content/uploads/2020/07/NAACCR-Vol-V_Revised_20200720.pdf) (Revised 2020).
 
 This guide also leverages profiles from the latest versions of:
-* [US Core IG](http://hl7.org/fhir/us/core/index.html) 
+* [US Core IG](http://hl7.org/fhir/us/core/index.html)
+* [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) 
+* [US Core Practitioner](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner.html)
+* [US Core Procedure](http://hl7.org/fhir/us/core/StructureDefinition-us-core-procedure.html)
+* [US Core Organization](http://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html)
 * [Making EHR Data More Available for Research and Public Health (MedMorph)](http://hl7.org/fhir/us/medmorph/2021Jan/index.html), which was balloted in January 2021. Changes to the MedMorph specification are managed by the sponsoring Public Health Work Group and are incorporated as part of the standard balloting and publication process. This IG may require updates as MedMorph is finalized. 
 
 ### Audience

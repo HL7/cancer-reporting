@@ -13,7 +13,7 @@ This Cancer Electronic Pathology Reporting FHIR IG and the future IHE SDC eCC on
 
 ### Relationship to Making EHR Data More Available for Research and Public Health (MedMorph)
 
-The [MedMorph project](http://build.fhir.org/ig/HL7/fhir-medmorph/) is seeking to advance public health and patient-centered outcomes by establishing HL7 standards in FHIR and Clinical Quality Language (CQL). The [Central Cancer Registry Reporting Content IG] (http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan/) leverages the MedMorph Reference Architecture (RA) IG to facilitate reporting cancer data to regional, state, and territorial public health central cancer registries. We aim to align with the 
+The [MedMorph project](http://build.fhir.org/ig/HL7/fhir-medmorph/) is seeking to advance public health and patient-centered outcomes by establishing HL7 standards in FHIR and Clinical Quality Language (CQL). The [Central Cancer Registry Reporting Content IG] (http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan/) leverages the MedMorph Reference Architecture (RA) IG to facilitate reporting cancer data to regional, state, and territorial public health central cancer registries. 
 
 
 ### FHIR Profiles to Capture NAACCR Volume V

@@ -11,9 +11,9 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://
 
 This Cancer Electronic Pathology Reporting FHIR IG and the future IHE SDC eCC on FHIR should complement each other.
 
-### Relationship to Making EHR Data More Available for Research and Public Health (MedMorph)
+### Relationship to MedMorph
 
-The [MedMorph project](http://build.fhir.org/ig/HL7/fhir-medmorph/) is seeking to advance public health and patient-centered outcomes by establishing HL7 standards in FHIR and Clinical Quality Language (CQL). The [Central Cancer Registry Reporting Content IG] (http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan/) leverages the MedMorph Reference Architecture (RA) IG to facilitate reporting cancer data to regional, state, and territorial public health central cancer registries. 
+The [Making EHR Data More Available for Research and Public Health (MedMorph)](http://build.fhir.org/ig/HL7/fhir-medmorph/) is seeking to advance public health and patient-centered outcomes by establishing HL7 standards in FHIR and Clinical Quality Language (CQL). The [Central Cancer Registry Reporting Content IG] (http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan/) leverages the MedMorph Reference Architecture (RA) IG to facilitate reporting cancer data to regional, state, and territorial public health central cancer registries. 
 
 
 ### FHIR Profiles to Capture NAACCR Volume V
@@ -83,7 +83,7 @@ The [MedMorph project](http://build.fhir.org/ig/HL7/fhir-medmorph/) is seeking t
         <tr>
             <td class="tg-0lax">Specimen (SPM)</td>
             <td class="tg-0lax">2.7.5</td>
-            <td class="tg-0lax"><a href=http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html">US Pathology Specimen</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html">US Pathology Specimen</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observation Related to Specimen (OBX)</td>

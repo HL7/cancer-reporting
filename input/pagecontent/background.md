@@ -29,9 +29,9 @@ The [Making EHR Data More Available for Research and Public Health (MedMorph)](h
 <table class="tg">
     <thead>
         <tr>
-            <th class="tg-0lax">V2 MessageElements</th>
-            <th class="tg-0lax">NAACCRRSection</th>
-            <th class="tg-0lax">FHIRArtifact</th>
+            <th class="tg-0lax"><b>V2 Message Elements</b></th>
+            <th class="tg-0lax"><b>NAACCRR Section</b></th>
+            <th class="tg-0lax"><b>FHIR Artifact</b></th>
         </tr>
     </thead>
     <tbody>
@@ -91,7 +91,7 @@ The [Making EHR Data More Available for Research and Public Health (MedMorph)](h
             <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
         </tr>
         <tr>
-            <td class="tg-0lax">Continuation Pointer DSC</td>
+            <td class="tg-0lax">Continuation Pointer (DSC)</td>
             <td class="tg-0lax"></td>
             <td class="tg-0lax"></td>
         </tr>

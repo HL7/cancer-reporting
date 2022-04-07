@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="704"/>
-        <lastUpdated value="2022-04-07T12:57:26.738+00:00"/>
-        <source value="#28ZvXpfWBR92qQhH"/>
+        <versionId value="710"/>
+        <lastUpdated value="2022-04-07T20:49:47.772+00:00"/>
+        <source value="#fIIg0JjQQLKOMtTk"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -104,7 +104,7 @@
                 <reference value="StructureDefinition/us-pathology-reporting-bundle"/>
                 <display value="USPathologyReportingBundle"/>
             </reference>
-            <name value="Pathology Cancer Registry Reporting Bundle"/>
+            <name value="US Pathology Cancer Registry Reporting Bundle"/>
             <description value="This is an example of a US Pathology Reporting Bundle, which will wrap the US Pathology Message Header and US Pathology Registry Bundle for the purposes of reporting."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group5"/>
@@ -124,7 +124,7 @@
                 <reference value="StructureDefinition/us-pathology-content-bundle"/>
                 <display value="US Pathology Content Bundle"/>
             </reference>
-            <name value="Pathology Cancer Registry Content Bundle"/>
+            <name value="US Pathology Cancer Registry Content Bundle"/>
             <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group5"/>

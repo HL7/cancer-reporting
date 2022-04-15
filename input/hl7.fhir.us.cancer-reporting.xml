@@ -266,7 +266,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/cancer-us-pathology-message-bundle"/>
+                <reference value="Bundle/us-pathology-message-bundle-example"/>
                 <display value="Pathology message bundle"/>
             </reference>
             <name value="Pathology Bundle (example)"/>

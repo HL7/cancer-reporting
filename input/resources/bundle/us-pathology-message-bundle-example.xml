@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle
     xmlns="http://hl7.org/fhir">
-    <id value="cancer-us-pathology-message-bundle"/>
+    <id value="us-pathology-message-bundle-example"/>
     <meta>
         <versionId value="26"/>
         <lastUpdated value="2021-08-06T14:45:31.580+00:00"/>
@@ -18,7 +18,7 @@
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
-                        <p> SDC example Message Bundle for fake patient Jose including Patient, Encounter</p>
+                        <p>Example US Pathology Message Bundle</p>
                     </div>
                 </text>
                 <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
@@ -59,15 +59,8 @@
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Jose 
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <b>RODRIGUEZ </b>
+                        <div class="hapiHeaderText">Alex
+                            <b>Joel</b>
                         </div>
                         <table class="hapiPropertyTable">
                             <tbody>

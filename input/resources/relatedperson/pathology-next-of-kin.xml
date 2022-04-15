@@ -3,9 +3,6 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-next-of-kin"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-03-08T19:36:47.547+00:00"/>
-        <source value="#ga7xLZVgwlBSDzC1"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
     </meta>
     <patient>

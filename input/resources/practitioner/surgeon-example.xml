@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Practitioner
-    xmlns="http://hl7.org/fhir">
+    xmlns="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/surgeon-example">
     <id value="surgeon-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-23T20:50:13.567+00:00"/>
-        <source value="#psgMwd46nkSQ0ZKL"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
     </meta>
     <identifier>

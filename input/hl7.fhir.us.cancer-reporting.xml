@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="hl7.fhir.us.cancer-reporting"/>
+    <meta>
+        <versionId value="735"/>
+        <lastUpdated value="2022-04-17T13:10:21.932+00:00"/>
+        <source value="#ZEA7GSEDsbwKv1Od"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
+    <version value="0.1.0"/>
+    <name value="USCancerPathologyData"/>
+    <title value="Cancer Pathology Data Sharing"/>
+    <status value="draft"/>
+    <contact>
+        <name value="HL7 International - Orders and Observations"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders"/>
+        </telecom>
+    </contact>
+    <description value="This implementation guide provides HL7 FHIR resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or to a central cancer registry. When sending to a central registry, the FHIR Messaging paradigm shall be required; however when sending between LIS and EHR systems, implementors may choose to use alterantive transport and processing modalities, such as FHIR transaciton bundles. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <packageId value="hl7.fhir.us.cancer-reporting"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn id="hl7fhiruscore">
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="4.0.0"/>
+    </dependsOn>
+    <dependsOn id="medmorph">
+        <uri value="http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph#0.1.0"/>
+        <packageId value="hl7.fhir.us.medmorph"/>
+        <version value="0.1.0"/>
+    </dependsOn>
+    <definition>
+        <grouping id="new-group5">
+            <name value="Registry Reporting Profiles"/>
+        </grouping>
+        <grouping id="new-group6">
+            <name value="EHR Exchange Profile"/>
+        </grouping>
+        <grouping id="new-group1">
+            <name value="Shared Profiles"/>
+        </grouping>
+        <grouping id="new-group2">
+            <name value="Terminology"/>
+        </grouping>
+        <grouping id="new-group3">
+            <name value="Examples"/>
+        </grouping>
+        <grouping id="new-group4">
+            <name value="Other"/>
+        </grouping>
+        <resource>
+            <reference>
+                <reference value="Bundle/us-pathology-message-bundle-example"/>
+                <display value="US Pathology Message Bundle (example)"/>
+            </reference>
+            <name value="US Pathology Message Bundle (example)"/>
+            <description value="Example US Pathology Message Bundle&#xA;&#xA;Entry 1: Full URL = http://hl7.org/fhir/us/cancer-reporting/MessageHeader/pathology-message-header&#xA;Resource/MessageHeader/pathology-message-header&#xA;&#xA;Entry 2: Full URL = http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient&#xA;Resource: Patient/JoelAlexPatient&#xA;&#xA;Entry 3: Full URL = http://hl7.org/fhir/us/cancer-reporting/Encounter/uspath-specimen-collection-example&#xA;Resource: Encounter/uspath-specimen-collection-example&#xA;&#xA;Entry 4: Full URL = http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/pathology-diagnostic-report&#xA;Resource: DiagnosticReport/pathology-diagnostic-report&#xA;&#xA;Entry 5: Full URL = http://hl7.org/fhir/us/cancer-reporting/Specimen/adrenal-example&#xA;Resource: Specimen/adrenal-example&#xA;&#xA;Entry 6: Full URL = http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/oncologist-example&#xA;Resource: PractitionerRole/oncologist-example&#xA;&#xA;Entry 7: Full URL = http://hl7.org/fhir/us/cancer-reporting/Practitioner/oncologist-example&#xA;Resource: Practitioner/oncologist-example&#xA;&#xA;Entry 8: Full URL = http://hl7.org/fhir/us/cancer-reporting/Organization/Redwood-Womens-Center-PC&#xA;Resource: Organization/Redwood-Womens-Center-PC&#xA;&#xA;Entry 9: Full URL = http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/pathologist-example&#xA;Resource: PractitionerRole/pathologist-example&#xA;&#xA;Entry 10: Full URL = http://hl7.org/fhir/us/cancer-reporting/Organization/principal-pathology-lab&#xA;Resource: Organization/principal-pathology-lab&#xA;&#xA;Entry 11: Full URL = http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin&#xA;Resource: RelatedPerson/pathology-next-of-kin&#xA;&#xA;Entry 12: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/2118.100004300-us&#xA;Resource: Observation/2118.100004300-us&#xA;&#xA;Entry 13: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/42554.100004300-us&#xA;Resource: Observation/42554.100004300-us&#xA;&#xA;Entry 14: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/52756.100004300-us&#xA;Resource: Organization/52756.100004300-us&#xA;&#xA;Entry 15: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/59852.100004300-us&#xA;Resource: Organization/59852.100004300-us&#xA;&#xA;Entry 16: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/49275.100004300-us&#xA;Resource: Observation/49275.100004300-us&#xA;&#xA;Entry 17: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/2129.100004300-us&#xA;Resource: Observation/2129.100004300-us&#xA;&#xA;Entry 18: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/40496.100004300-us&#xA;Resource: Observation/40496.100004300-us&#xA;&#xA;Entry 19: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/53526.100004300-us&#xA;Resource: Observation/53526.100004300-us&#xA;&#xA;Entry 20: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/1867.100004300-us&#xA;Resource: Observation/1867.100004300-us&#xA;&#xA;Entry 21: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/20880.100004300-us&#xA;Resource: Observation/20880.100004300-us&#xA;&#xA;Entry 22: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/2143.100004300-us&#xA;Resource: Observation/2143.100004300-us&#xA;&#xA;Entry 23: Full URL = http://hl7.org/fhir/us/cancer-reporting/Observation/2149.100004300-us&#xA;Resource: Observation/2149.100004300-us"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-bundle"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/pathology-diagnostic-report"/></reference>
+            <name value="US Pathology Adrenal DiagnosticReport (example)"/>
+            <description value="Example of a DiagnosticReport containing information regarding pathological testing and resulting observations"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/uspath-specimen-collection-example"/>
+                <display value="Encounter (example)"/>
+            </reference>
+            <name value="Encounter (example)"/>
+            <description value="Example of a clinical Encounter during which a pathological specimen was collected."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-specimen"/>
+                <display value="Pathology Specimen"/>
+            </reference>
+            <name value="US Pathology Specimen"/>
+            <description value="Specimen profile representing SPM segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+            <groupingId value="new-group1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-service-request"/>
+                <display value="USPathologyServiceRequest"/>
+            </reference>
+            <name value="US Pathology Service Request"/>
+            <description value="Example of a US Pathology Service Request"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
+            <groupingId value="new-group1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-related-practitioner-role"/>
+                <display value="Pathology Related Practitioner Roles"/>
+            </reference>
+            <name value="US Pathology Related Practitioner Roles"/>
+            <description value="PractitionerRole profile representing PV1 and OBR segment information (V2.5.1) as defined in NAACCR volume 5, version 5"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+            <groupingId value="new-group1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-message-header"/>
+                <display value="MessageHeader"/>
+            </reference>
+            <name value="US Pathology MessageHeader"/>
+            <description value="MessageHeader profile representing MSH segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+            <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-exchange-bundle"/>
+                <display value="US Pathology ExchangeBundle"/>
+            </reference>
+            <name value="US Pathology Exchange Content Bundle"/>
+            <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;In order to properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-exchange-bundle"/>
+            <groupingId value="new-group6"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-diagnostic-report"/>
+                <display value="Pathology Diagnostic Report"/>
+            </reference>
+            <name value="US Pathology Diagnostic Report"/>
+            <description value="DiagnosticReport profile representing OBR/OBX (V2.5.1) segment information as defined in NAACCR volume 5, version 5"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+            <groupingId value="new-group1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-reporting-bundle"/>
+                <display value="USPathologyReportingBundle"/>
+            </reference>
+            <name value="US Pathology Cancer Registry Reporting Bundle"/>
+            <description value="This is an example of a US Pathology Reporting Bundle, which will wrap the US Pathology Message Header and US Pathology Registry Bundle for the purposes of reporting."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
+            <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/us-pathology-content-bundle"/>
+                <display value="US Pathology Content Bundle"/>
+            </reference>
+            <name value="US Pathology Cancer Registry Content Bundle"/>
+            <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
+            <groupingId value="new-group5"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/us-pathology-provider-types"/>
+                <display value="Pathology Provider Types"/>
+            </reference>
+            <name value="US Pathology Provider Types"/>
+            <description value="Pathology-related Provider types"/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group2"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/1867.100004300-us"/></reference>
+            <name value="Regional Lymph Nodes: None Submitted (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/40496.100004300-us"/>
+                <display value="Tumor Weight"/>
+            </reference>
+            <name value="Tumor Weight: Specify Weight (g) (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2129.100004300-us"/>
+                <display value="Tumor Size"/>
+            </reference>
+            <name value="Tumor Size: Greatest dimension in Centimeters (cm) (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/51265.100004300-us"/>
+                <display value="Tumor invasion (example)"/>
+            </reference>
+            <name value="Tumor invasion (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/20880.100004300-us"/>
+                <display value="TNM Descriptors"/>
+            </reference>
+            <name value="TNM Descriptors"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/52756.100004300-us"/></reference>
+            <name value="Specimen Laterality: Bilateral (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2143.100004300-us"/></reference>
+            <name value="Regional Lymph Nodes (pN): pN0: No regional lymph node metastasis (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2137.100004300-us"/>
+                <display value="Primary Tumor"/>
+            </reference>
+            <name value="Primary Tumor"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/49275.100004300-us"/>
+                <display value="Histologic Grade"/>
+            </reference>
+            <name value="Histologic Grade: High grade (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/59852.100004300-us"/>
+                <display value="Adrenal Cortical Carcinoma (example)"/>
+            </reference>
+            <name value="Adrenal Cortical Carcinoma (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/42554.100004300-us"/>
+                <display value="Adrenalectomy"/>
+            </reference>
+            <name value="Adrenalectomy"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/Redwood-Womens-Center-PC"/>
+                <display value="Redwood Women's Center, P.C."/>
+            </reference>
+            <name value="Redwood Women's Center, P.C."/>
+            <description value="Example of US Core Organization representing the clinical system which ordered the pathology testing and will receive the completed tests/observations."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2149.100004300-us"/>
+                <display value="Distant Metastasis"/>
+            </reference>
+            <name value="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/53526.100004300-us"/>
+                <display value="Diaphragm"/>
+            </reference>
+            <name value="Diaphragm"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2118.100004300-us"/></reference>
+            <name value="Adrenal Gland (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/principal-pathology-lab"/>
+                <display value="Principal Pathology Lab Name"/>
+            </reference>
+            <name value="Principal Pathology Lab"/>
+            <description value="Example of a US Core Organization representing the principal pathology testing Lab organization."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/JoelAlexPatient"/></reference>
+            <name value="Patient (example)"/>
+            <description value="US Core Patient example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practionerrole-uspath-surgeon-example"/>
+                <display value="Surgeon PractitionerRole (example)"/>
+            </reference>
+            <name value="Surgeon PractitionerRole (example)"/>
+            <description value="US Core PractitionerRole example for a Surgeon"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/surgeon-example"/>
+                <display value="Surgeon Practitioner (example)"/>
+            </reference>
+            <name value="Surgeon Practitioner (example)"/>
+            <description value="US Core Practitioner surgeon example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Procedure/path-specimen"/>
+                <display value="Pathology specimen collection procedure (example)"/>
+            </reference>
+            <name value="Pathology specimen collection procedure (example)"/>
+            <description value="This is an example of a surgical procedure to perform a resection of the left adrenal gland to collect a pathology specimen."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practionerrole-uspath-pathologist-example"/>
+                <display value="Pathologist PractitionerRole (example)"/>
+            </reference>
+            <name value="Pathologist PractitionerRole (example)"/>
+            <description value="US Core PractitionerRole example for a Pathologist"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/pathologist-example"/>
+                <display value="Pathologist Practitioner (example)"/>
+            </reference>
+            <name value="Pathologist Practitioner (example)"/>
+            <description value="US Core Practitioner Pathologist example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/practionerrole-uspath-oncologist-example"/>
+                <display value="Oncologist PractitionerRole (example)"/>
+            </reference>
+            <name value="Oncologist PractitionerRole (example)"/>
+            <description value="US Core PractitionerRole example for an Oncologist"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/oncologist-example"/>
+                <display value="Oncologist Practitioner (example)"/>
+            </reference>
+            <name value="Oncologist Practitioner (example)"/>
+            <description value="US Core Practitioner Oncologist example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageHeader/pathology-message-header"/>
+                <display value="MessageHeader (example)"/>
+            </reference>
+            <name value="MessageHeader (example)"/>
+            <description value="Example of a MessageHeader from a pathology environment into an EHR"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/cancer-path-example"/>
+                <display value="Service Request - Cancer Pathology (example)"/>
+            </reference>
+            <name value="Service Request - Cancer Pathology (example)"/>
+            <description value="This is an example of a pathology specimen collection ServiceRequest that references a related Encounter."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/adrenal-example"/></reference>
+            <name value="Adrenal Specimen (example)"/>
+            <description value="Example of an Adrenal specimen"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/us-pathology-exchange-bundle-example"/></reference>
+            <name value="US Pathology Exchange Content Bundle (example)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/us-pathology-content-bundle-example"/></reference>
+            <name value="US Pathology Registry Content Bundle (example)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/us-pathology-reporting-bundle-example"/></reference>
+            <name value="US Pathology Reporting Bundle (example)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-uspath-specimen-collection-example"/></reference>
+            <name value="US Pathology Encounter Specimen Collection (example)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <page>
+            <nameUrl value="index.html"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
+            <page>
+                <nameUrl value="background.html"/>
+                <title value="Background"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="specification.html"/>
+                <title value="Specification"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="downloads.html"/>
+                <title value="Downloads"/>
+                <generation value="markdown"/>
+            </page>
+        </page>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
+        </parameter>
+    </definition>
+</ImplementationGuide>

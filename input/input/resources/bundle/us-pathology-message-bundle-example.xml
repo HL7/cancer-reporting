@@ -1,12 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
-    <id value="us-pathology-content-bundle-example"/>
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="us-pathology-message-bundle-example"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-14T21:59:49.861+00:00"/>
+        <source value="#aviOGFtvjJAeCncl"/>
+        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
     </meta>
     <type value="message"/>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/bundle/us-pathology-content-bundle"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/MessageHeader/pathology-message-header"/>
+        <resource>
+            <MessageHeader>
+                <id value="pathology-message-header"/>
+                <text>
+                    <status value="generated"/>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <p> SDC example Message Bundle for fake patient Jose including Patient, Encounter</p>
+                    </div>
+                </text>
+                <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
+                    <valueCode value="consequence"/>
+                </extension>
+                <eventCoding>
+                    <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-messageheader-message-types"/>
+                    <code value="cancer-report-message"/>
+                </eventCoding>
+                <destination>
+                    <endpoint value="http://example.com/fhir/cerner-test"/>
+                </destination>
+                <sender>
+                    <reference value="Organization/Redwood-Womens-Center-PC"/>
+                </sender>
+                <source>
+                    <name value="IHE SDC on FHIR Parser"/>
+                    <endpoint value="http://example.com/fhir/mtuitive-test"/>
+                </source>
+                <reason>
+                    <coding>
+                        <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents"/>
+                        <code value="new-labresult"/>
+                    </coding>
+                </reason>
+                <focus>
+                    <reference value="DiagnosticReport/pathology-diagnostic-report"/>
+                </focus>
+            </MessageHeader>
+        </resource>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"/>
@@ -15,10 +57,18 @@
                 <id value="JoelAlexPatient"/>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">
-                            Alex
-                            <b>Joel </b>
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
+                        <div class="hapiHeaderText">Jose 
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <b>RODRIGUEZ </b>
                         </div>
                         <table class="hapiPropertyTable">
                             <tbody>
@@ -35,8 +85,8 @@
                     <value value="JoelAlexPatient"/>
                 </identifier>
                 <name>
-                    <family value="Joel"/>
-                    <given value="Alex"/>
+                    <family value="Rodriguez"/>
+                    <given value="Jose"/>
                 </name>
                 <gender value="male"/>
                 <link>
@@ -51,59 +101,49 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/pathology-encounter"/>
         <resource>
-            <Encounter
-            xmlns="http://hl7.org/fhir">
-            <id value="encounter-uspath-specimen-collection-example"/>
-            <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
-            </meta>
-            <identifier>
-                <system value="http://example.com/fhir/encounters"/>
-                <value value="123"/>
-            </identifier>
-            <status value="finished"/>
-            <class>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-                <code value="IMP"/>
-                <display value="inpatient encounter"/>
-            </class>
-            <type>
-                <coding>
-                    <system value="http://snomed.info/sct"/>
-                    <code value="726007"/>
-                    <display value="Pathology consultation, comprehensive, records and specimen with report"/>
-                </coding>
-            </type>
-            <subject>
-                <reference value="Patient/JoelAlexPatient"/>
-            </subject>
-            <participant>
-                <individual>
-                    <reference value="Practitioner/oncologist-example"/>
-                </individual>
-            </participant>
-            <participant>
-                <individual>
-                    <reference value="Practitioner/pathologist-example"/>
-                </individual>
-            </participant>
-        </Encounter>
+            <Encounter>
+                <id value="pathology-encounter"/>
+                <identifier>
+                    <system value="http://example.com/fhir/encounters"/>
+                    <value value="123"/>
+                </identifier>
+                <status value="finished"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="IMP"/>
+                    <display value="inpatient encounter"/>
+                </class>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="308335008"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/JoelAlexPatient"/>
+                </subject>
+                <participant>
+                    <individual>
+                        <reference value="Practitioner/oncologist-example"/>
+                    </individual>
+                </participant>
+                <participant>
+                    <individual>
+                        <reference value="Practitioner/pathologist-example"/>
+                    </individual>
+                </participant>
+            </Encounter>
         </resource>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/pathology-diagnostic-report"/>
         <resource>
-            <DiagnosticReport xmlns="http://hl7.org/fhir">
+            <DiagnosticReport>
                 <id value="pathology-diagnostic-report"/>
-                <meta>
-                    <versionId value="12"/>
-                    <lastUpdated value="2022-03-22T18:05:57.689+00:00"/>
-                    <source value="#h7VB0h82nymbEpuS"/>
-                    <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
-                </meta>
                 <text>
                     <status value="generated"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">
+                    <div
+                        xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText"> Pathology Synoptic report </div>
                         <table class="hapiPropertyTable">
                             <tbody>
@@ -116,7 +156,7 @@
                     </div>
                 </text>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"/>
                 </identifier>
                 <status value="final"/>
@@ -136,7 +176,7 @@
                 </code>
                 <subject>
                     <reference value="Patient/JoelAlexPatient"/>
-                    <display value="Alex Joel"/>
+                    <display value="Jose Rodriguez"/>
                 </subject>
                 <encounter>
                     <reference value="Encounter/pathology-encounter"/>
@@ -154,96 +194,100 @@
                 <result>
                     <reference value="Observation/2118.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/42554.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/52756.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/59852.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/49275.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2129.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/40496.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/51265.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/53526.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/1867.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/20880.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2137.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2143.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2149.100004300-us"/>
+                    <identifier>
+                        <system value="https://CAP.org"/>
+                        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>
+                    </identifier>
                 </result>
                 <presentedForm>
                     <contentType value="application/xml"/>
@@ -255,14 +299,8 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Specimen/adrenal-example"/>
         <resource>
-            <Specimen xmlns="http://hl7.org/fhir">
+            <Specimen>
                 <id value="adrenal-example"/>
-                <meta>
-                    <versionId value="6"/>
-                    <lastUpdated value="2022-03-22T18:04:46.662+00:00"/>
-                    <source value="#GxId9B8i179YlU3R"/>
-                    <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
-                </meta>
                 <identifier>
                     <system value="http://some-lis.org/fhir/specimen-identifier-provisioner"/>
                     <value value="123456789"/>
@@ -271,21 +309,8 @@
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
                         <code value="BX"/>
-                        <display value="Biopsy"/>
                     </coding>
                 </type>
-                <subject>
-                    <reference value="Patient/JoelAlexPatient"/>
-                </subject>
-                <request>
-                    <reference value="ServiceRequest/cancer-path-example"/>
-                </request>
-                <collection>
-                    <collectedDateTime value="2022-01-02"/>
-                    <collector>
-                        <reference value="PractitionerRole/PractitionerRole-uspath-surgeon-example"/>
-                    </collector>
-                </collection>
                 <container>
                     <identifier>
                         <system value="http://some-lis.org/fhir/specimen-containerID-provisioner"/>
@@ -296,16 +321,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/us-path-oncologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/oncologist-example"/>
         <resource>
-            <PractitionerRole xmlns="http://hl7.org/fhir">
-                <id value="Practitionerrole-uspath-oncologist-example"/>
-                <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
-                    <source value="#OELswItjzwawcPiC"/>
-                    <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
-                </meta>
+            <PractitionerRole>
+                <id value="oncologist-example"/>
                 <practitioner>
                     <reference value="Practitioner/oncologist-example"/>
                 </practitioner>
@@ -314,72 +333,9 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
-                        <code value="OP"/>
-                        <display value="Ordering Provider: Physician Ordering Pathology testing"/>
-                    </coding>
-                </code>
-                <telecom>
-                    <system value="phone"/>
-                    <value value="720-242-5555"/>
-                </telecom>
-            </PractitionerRole>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-pathologist-example"/>
-        <resource>
-            <PractitionerRole xmlns="http://hl7.org/fhir">
-                <id value="Practitionerrole-uspath-pathologist-example"/>
-                <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
-                    <source value="#Me2ZUOIPsuc3UWL6"/>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-                    <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
-                </meta>
-                <practitioner>
-                    <reference value="Practitioner/pathologist-example"/>
-                </practitioner>
-                <organization>
-                    <reference value="Organization/principal-pathology-lab"/>
-                </organization>
-                <code>
-                    <coding>
-                        <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
-                        <code value="PI"/>
-                        <display value="Primary interpreter: Pathologist principally interpreting results on pathology testing"/>
-                    </coding>
-                </code>
-                <telecom>
-                    <system value="phone"/>
-                    <value value="720-242-9999"/>
-                </telecom>
-            </PractitionerRole>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-surgeon-example"/>
-        <resource>
-            <PractitionerRole xmlns="http://hl7.org/fhir">
-                <id value="Practitionerrole-uspath-surgeon-example"/>
-                <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
-                    <source value="#rjyv9zyrG28Mbwyv"/>
-                    <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
-                </meta>
-                <practitioner>
-                    <reference value="Practitioner/surgeon-example"/>
-                </practitioner>
-                <organization>
-                    <reference value="Organization/Redwood-Womens-Center-PC"/>
-                </organization>
-                <code>
-                    <coding>
                         <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
-                        <code value="CLP"/>
-                        <display value="Collecting Provider: Surgeon performing the procedure to collect pathology sample."/>
+                        <code value="orderer"/>
+                        <display value="Physician Ordering Pathology testing"/>
                     </coding>
                 </code>
                 <telecom>
@@ -387,6 +343,22 @@
                     <value value="720-242-5555"/>
                 </telecom>
             </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Practitioner/oncologist-example"/>
+        <resource>
+            <Practitioner>
+                <id value="oncologist-example"/>
+                <identifier>
+                    <system value="http://hl7.org/fhir/sid/us-npi"/>
+                    <value value="123456789"/>
+                </identifier>
+                <name>
+                    <family value="Owl"/>
+                    <given value="Wise"/>
+                </name>
+            </Practitioner>
         </resource>
     </entry>
     <entry>
@@ -399,23 +371,6 @@
                 <address>
                     <line value="3307 Renner Drive"/>
                     <city value="Fortuna"/>
-                    <state value="CA"/>
-                    <postalCode value="95540"/>
-                    <country value="USA"/>
-                </address>
-            </Organization>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Organization/principal-pathology-lab"/>
-        <resource>
-            <Organization>
-                <id value="principal-pathology-lab"/>
-                <active value="true"/>
-                <name value="Some Pathology Lab Name"/>
-                <address>
-                    <line value="Any"/>
-                    <city value="City"/>
                     <state value="CA"/>
                     <postalCode value="95540"/>
                     <country value="USA"/>
@@ -465,37 +420,21 @@
         </resource>
     </entry>
     <entry>
-        <Practitioner xmlns="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/oncologist-example">
-            <id value="oncologist-example"/>
-            <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-            </meta>
-            <identifier>
-                <system value="http://hl7.org/fhir/sid/us-npi"/>
-                <value value="123456789"/>
-            </identifier>
-            <name>
-                <family value="Owl"/>
-                <given value="Wise"/>
-            </name>
-        </Practitioner>
-    </entry>
-    <entry>
-        <Practitioner
-        xmlns="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/surgeon-example">
-        <id value="surgeon-example"/>
-        <meta>
-            <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-        </meta>
-        <identifier>
-            <system value="http://hl7.org/fhir/sid/us-npi"/>
-            <value value="789101112"/>
-        </identifier>
-        <name>
-            <family value="Alot"/>
-            <given value="Cuts"/>
-        </name>
-    </Practitioner>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Organization/principal-pathology-lab"/>
+        <resource>
+            <Organization>
+                <id value="principal-pathology-lab"/>
+                <active value="true"/>
+                <name value="Some Pathology Lab Name"/>
+                <address>
+                    <line value="Any"/>
+                    <city value="City"/>
+                    <state value="CA"/>
+                    <postalCode value="95540"/>
+                    <country value="USA"/>
+                </address>
+            </Organization>
+        </resource>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin"/>
@@ -610,41 +549,6 @@
                     </coding>
                 </valueCodeableConcept>
             </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/ServiceRequest/us-pathology-service-request"/>
-        <resource>
-            <ServiceRequest xmlns="http://hl7.org/fhir">
-                <id value="cancer-path-example"/>
-                <meta>
-                    <versionId value="3"/>
-                    <lastUpdated value="2022-03-23T20:50:13.457+00:00"/>
-                    <source value="#5MfQxB0Soa3BaN7g"/>
-                </meta>
-                <status value="active"/>
-                <intent value="order"/>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org/"/>
-                        <code value="60567-5"/>
-                    </coding>
-                    <text value="Comprehensive pathology report panel"/>
-                </code>
-                <subject>
-                    <reference value="Patient/JoelAlexPatient"/>
-                </subject>
-                <encounter>
-                    <reference value="Encounter/path-specimen-collection"/>
-                </encounter>
-                <occurrenceDateTime value="2021-11-01T17:00:14-05:00"/>
-                <requester>
-                    <reference value="Practitioner/surgeon-example"/>
-                </requester>
-                <specimen>
-                    <reference value="Specimen/adrenal-example"/>
-                </specimen>
-            </ServiceRequest>
         </resource>
     </entry>
     <entry>

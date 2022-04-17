@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter
+    xmlns="http://hl7.org/fhir">
+    <id value="pathology-encounter"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-03-22T18:05:49.597+00:00"/>
+        <source value="#0oHJ01DkXzFXDnyB"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+    </meta>
+    <identifier>
+        <system value="http://example.com/fhir/encounters"/>
+        <value value="123"/>
+    </identifier>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="IMP"/>
+        <display value="inpatient encounter"/>
+    </class>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="726007"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/JoelAlexPatient"/>
+    </subject>
+    <participant>
+        <individual>
+            <reference value="Practitioner/oncologist-example"/>
+        </individual>
+    </participant>
+    <participant>
+        <individual>
+            <reference value="Practitioner/pathologist-example"/>
+        </individual>
+    </participant>
+</Encounter>

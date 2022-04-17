@@ -49,11 +49,11 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/pathology-encounter"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/uspath-specimen-collection-example"/>
         <resource>
             <Encounter
             xmlns="http://hl7.org/fhir">
-            <id value="encounter-uspath-specimen-collection-example"/>
+            <id value="uspath-specimen-collection-example"/>
             <meta>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             </meta>

@@ -170,7 +170,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/us-pathology-content-bundle"/>
-                <display value="US Pathology Content Bundle"/>
+                <display value="US Pathology Registry Content Bundle"/>
             </reference>
             <name value="US Pathology Cancer Registry Content Bundle"/>
             <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="731"/>
-        <lastUpdated value="2022-04-17T12:51:22.409+00:00"/>
-        <source value="#EuzaWMAcIWUKdmWF"/>
+        <versionId value="735"/>
+        <lastUpdated value="2022-04-17T13:10:21.932+00:00"/>
+        <source value="#ZEA7GSEDsbwKv1Od"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -481,6 +481,14 @@
             <name value="US Pathology Reporting Bundle (example)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/encounter-uspath-specimen-collection-example"/></reference>
+            <name value="US Pathology Encounter Specimen Collection (example)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             <groupingId value="new-group3"/>
         </resource>
         <page>

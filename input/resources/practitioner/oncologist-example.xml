@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Practitioner
-    xmlns="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/oncologist-example">
+    xmlns="http://hl7.org/fhir">
     <id value="oncologist-example"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>

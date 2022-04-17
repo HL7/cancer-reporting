@@ -8,9 +8,6 @@
         <source value="#rjyv9zyrG28Mbwyv"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
     </meta>
-    <practitioner>
-        <reference value="Practitioner/surgeon-example"/>
-    </practitioner>
     <organization>
         <reference value="Organization/Redwood-Womens-Center-PC"/>
     </organization>

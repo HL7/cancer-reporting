@@ -472,14 +472,6 @@
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
             <groupingId value="new-group3"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/encounter-uspath-specimen-collection-example"/></reference>
-            <name value="US Pathology Encounter Specimen Collection (example)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
-            <groupingId value="new-group3"/>
-        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>

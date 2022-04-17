@@ -60,98 +60,98 @@
         <reference value="Specimen/adrenal-example"/>
     </specimen>
     <result>
-        <reference value="Observation/2118.100004300-us"/>
+        <reference value="Observation/2118-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/42554.100004300-us"/>
+        <reference value="Observation/42554-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/52756.100004300-us"/>
+        <reference value="Observation/52756-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/59852.100004300-us"/>
+        <reference value="Observation/59852-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/49275.100004300-us"/>
+        <reference value="Observation/49275-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/2129.100004300-us"/>
+        <reference value="Observation/2129-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/40496.100004300-us"/>
+        <reference value="Observation/40496-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/51265.100004300-us"/>
+        <reference value="Observation/51265-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/53526.100004300-us"/>
+        <reference value="Observation/53526-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/1867.100004300-us"/>
+        <reference value="Observation/1867-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/20880.100004300-us"/>
+        <reference value="Observation/20880-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/2137.100004300-us"/>
+        <reference value="Observation/2137-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/2143.100004300-us"/>
+        <reference value="Observation/2143-100004300-us"/>
         <identifier>
             <system value="https://example.org"/>
             <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
         </identifier>
     </result>
     <result>
-        <reference value="Observation/2149.100004300-us"/>
+        <reference value="Observation/2149-100004300-us"/>
     </result>
     <presentedForm>
         <contentType value="application/xml"/>

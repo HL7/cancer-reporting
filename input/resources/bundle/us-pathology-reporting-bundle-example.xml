@@ -529,8 +529,8 @@
         </entry>
         <entry>
             <Practitioner
-            xmlns="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/surgeon-example">
-            <id value="surgeon-example"/>
+            xmlns="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practionerrole-uspath-surgeon-example">
+            <id value="practionerrole-uspath-surgeon-example"/>
             <meta>
                 <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </meta>

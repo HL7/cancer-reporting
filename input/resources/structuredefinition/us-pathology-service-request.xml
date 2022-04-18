@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-service-request"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-03-30T14:48:46.848+00:00"/>
-        <source value="#SALAH6hZ1dDHAorr"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-04-12T10:51:21.795+00:00"/>
+        <source value="#vsQpjO9JkIdcHpl4"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
     <name value="USPathologyServiceRequest"/>
@@ -59,14 +59,14 @@
             <path value="ServiceRequest.subject"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
         </element>
         <element id="ServiceRequest.encounter">
             <path value="ServiceRequest.encounter"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             </type>
             <mustSupport value="true"/>
         </element>

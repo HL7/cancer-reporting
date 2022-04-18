@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-reporting-bundle"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2022-04-07T20:48:56.358+00:00"/>
-        <source value="#LpKOAxLapA870RMn"/>
+        <versionId value="14"/>
+        <lastUpdated value="2022-04-17T13:22:47.792+00:00"/>
+        <source value="#KhlG8bQgNwm9Ccge"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
     <name value="USPathologyCancerRegistryReportingBundle"/>
@@ -65,18 +65,18 @@
                 <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
             </type>
         </element>
-        <element id="Bundle.entry:pathology_content_bundle">
+        <element id="Bundle.entry:us_pathology_content_bundle">
             <path value="Bundle.entry"/>
-            <sliceName value="pathology_content_bundle"/>
+            <sliceName value="us_pathology_content_bundle"/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Bundle.entry:pathology_content_bundle.resource">
+        <element id="Bundle.entry:us_pathology_content_bundle.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-bundle"/>
+                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
             </type>
         </element>
     </differential>

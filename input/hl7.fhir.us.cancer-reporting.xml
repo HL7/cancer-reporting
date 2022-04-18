@@ -31,14 +31,14 @@
     <packageId value="hl7.fhir.us.cancer-reporting"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.1.0"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="4.1.0"/>
     </dependsOn>
     <dependsOn id="medmorph">
-        <uri value="http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph#0.1.0"/>
+        <uri value="http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph#0.2.0"/>
         <packageId value="hl7.fhir.us.medmorph"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
     </dependsOn>
     <definition>
         <grouping id="new-group5">
@@ -76,7 +76,7 @@
             <name value="US Pathology Specimen"/>
             <description value="Specimen profile representing SPM segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>-->
             <groupingId value="new-group1"/>
         </resource>
         <resource>
@@ -87,7 +87,7 @@
             <name value="US Pathology Service Request"/>
             <description value="Example of a US Pathology Service Request"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>-->
             <groupingId value="new-group1"/>
         </resource>
         <resource>
@@ -98,7 +98,7 @@
             <name value="US Pathology Related Practitioner Roles"/>
             <description value="PractitionerRole profile representing PV1 and OBR segment information (V2.5.1) as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>-->
             <groupingId value="new-group1"/>
         </resource>
         <resource>
@@ -109,7 +109,7 @@
             <name value="US Pathology MessageHeader"/>
             <description value="MessageHeader profile representing MSH segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>-->
             <groupingId value="new-group5"/>
         </resource>
         <resource>
@@ -120,7 +120,7 @@
             <name value="US Pathology Exchange Content Bundle"/>
             <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;In order to properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-exchange-bundle"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-exchange-bundle"/>-->
             <groupingId value="new-group6"/>
         </resource>
         <resource>
@@ -131,7 +131,7 @@
             <name value="US Pathology Diagnostic Report"/>
             <description value="DiagnosticReport profile representing OBR/OBX (V2.5.1) segment information as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>-->
             <groupingId value="new-group1"/>
         </resource>
         <resource>
@@ -142,7 +142,7 @@
             <name value="US Pathology Cancer Registry Reporting Bundle"/>
             <description value="This is an example of a US Pathology Reporting Bundle, which will wrap the US Pathology Message Header and US Pathology Registry Bundle for the purposes of reporting."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>-->
             <groupingId value="new-group5"/>
         </resource>
         <resource>
@@ -153,7 +153,7 @@
             <name value="US Pathology Cancer Registry Content Bundle"/>
             <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
+<!--            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>-->
             <groupingId value="new-group5"/>
         </resource>
         <resource>

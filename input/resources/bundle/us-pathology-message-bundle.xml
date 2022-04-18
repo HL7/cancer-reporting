@@ -59,16 +59,8 @@
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
-                        <div class="hapiHeaderText">Jose 
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <b>RODRIGUEZ </b>
+                        <div class="hapiHeaderText"><b>Alex</b>  
+                                                     <b>Joel</b>
                         </div>
                         <table class="hapiPropertyTable">
                             <tbody>
@@ -85,8 +77,8 @@
                     <value value="JoelAlexPatient"/>
                 </identifier>
                 <name>
-                    <family value="Rodriguez"/>
-                    <given value="Jose"/>
+                    <family value="Joel"/>
+                    <given value="Alex"/>
                 </name>
                 <gender value="male"/>
                 <link>

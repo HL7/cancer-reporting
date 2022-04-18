@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle
-    xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir">
     <id value="us-pathology-content-bundle-example"/>
     <meta>
         <versionId value="2"/>
@@ -401,6 +400,5 @@
                 </telecom>
             </RelatedPerson>
         </resource>
-    </entry>
     </entry>
 </Bundle>

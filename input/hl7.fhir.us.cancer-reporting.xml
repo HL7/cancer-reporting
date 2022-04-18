@@ -121,7 +121,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/us-pathology-content-bundle"/>
+                <reference value="StructureDefinition/cancer-us-pathology-message-bundle"/>
                 <display value="US Pathology Content Bundle"/>
             </reference>
             <name value="US Pathology Cancer Registry Content Bundle"/>
@@ -272,7 +272,7 @@
             <name value="Pathology Bundle (example)"/>
             <description value="Example of a message bundle from a pathology environment into an EHR"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-bundle"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>

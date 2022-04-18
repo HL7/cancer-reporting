@@ -76,7 +76,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
+                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-bundle"/>
             </type>
         </element>
     </differential>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="us-pathology-content-bundle"/>
+    <id value="cancer-us-pathology-message-bundle"/>
     <meta>
         <versionId value="9"/>
         <lastUpdated value="2022-04-07T20:48:34.668+00:00"/>
         <source value="#Ohfhtnoq8MDFjXel"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
+    <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/cancer-us-pathology-message-bundle"/>
     <name value="USPathologyCancerRegistryContentBundle"/>
     <title value="US Pathology Cancer Registry Content Bundle"/>
     <status value="active"/>

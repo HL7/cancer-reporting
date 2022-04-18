@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="749"/>
-        <lastUpdated value="2022-04-18T19:18:33.229+00:00"/>
-        <source value="#Y13XIDzdBW1Joyw0"/>
+        <versionId value="750"/>
+        <lastUpdated value="2022-04-18T20:17:56.344+00:00"/>
+        <source value="#9b6ahAFI5By8Y495"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -33,7 +33,7 @@
     <dependsOn id="hl7fhiruscore">
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="4.0.0"/>
+        <version value="4.1.0"/>
     </dependsOn>
     <dependsOn id="medmorph">
         <uri value="http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph#0.1.0"/>

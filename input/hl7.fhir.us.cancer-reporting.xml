@@ -313,14 +313,14 @@
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
             <groupingId value="new-group3"/>
         </resource>
-        <!--<resource>
+        <resource>
             <reference>
                 <reference value="Bundle/us-pathology-content-bundle-example"/></reference>
             <name value="US Pathology Registry Content Bundle (example)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
             <groupingId value="new-group3"/>
-        </resource>-->
+        </resource>
         <!--<resource>
             <reference>
                 <reference value="Bundle/us-pathology-reporting-bundle-example"/></reference>

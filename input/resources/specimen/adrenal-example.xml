@@ -16,20 +16,13 @@
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
             <code value="BX"/>
-            <display value="Biopsy"/>
         </coding>
     </type>
-    <subject>
-        <reference value="Patient/JoelAlexPatient"/>
-    </subject>
     <request>
         <reference value="ServiceRequest/cancer-path-example"/>
     </request>
     <collection>
         <collectedDateTime value="2022-01-02"/>
-        <collector>
-            <reference value="PractionerRole/practionerrole-uspath-surgeon-example"/>
-        </collector>
     </collection>
     <container>
         <identifier>

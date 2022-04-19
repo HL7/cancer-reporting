@@ -316,6 +316,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Bundle/us-pathology-reporting-bundle-example"/></reference>
+            <name value="US Pathology Reporting Bundle (example)"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Bundle/us-pathology-content-bundle-example"/></reference>
             <name value="US Pathology Registry Content Bundle (example)"/>
             <description value="Example of a content (collection) Bundle containing reportable information to the central cancer registry"/>
@@ -323,14 +331,6 @@
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
             <groupingId value="new-group3"/>
         </resource>
-        <!--<resource>
-            <reference>
-                <reference value="Bundle/us-pathology-reporting-bundle-example"/></reference>
-            <name value="US Pathology Reporting Bundle (example)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
-            <groupingId value="new-group3"/>
-        </resource>-->
         <resource>
             <reference>
                 <reference value="Encounter/uspath-specimen-collection-example"/></reference>
@@ -340,13 +340,6 @@
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             <groupingId value="new-group3"/>
         </resource>
-        <!--<resource>
-            <reference>
-                <reference value="Bundle/us-pathology-message-bundle"/></reference>
-            <name value="US Pathology Message Bundle (example)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
-        </resource>-->
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>

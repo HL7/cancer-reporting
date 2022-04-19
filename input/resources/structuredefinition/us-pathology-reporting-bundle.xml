@@ -22,24 +22,6 @@
         <element id="Bundle">
             <path value="Bundle"/>
         </element>
-        <element id="Bundle.type">
-            <path value="Bundle.type"/>
-            <fixedCode value="message"/>
-        </element>
-        <element id="Bundle.type.id.extension.url">
-            <path value="Bundle.type.id.extension.url"/>
-            <binding>
-                <strength value="required"/>
-                <description value="Collection bundle constraint"/>
-            </binding>
-        </element>
-        <element id="Bundle.type.id.extension.value[x]">
-            <path value="Bundle.type.id.extension.value[x]"/>
-            <code>
-                <system value="http://hl7.org/fhir/bundle-type"/>
-                <code value="collection"/></code>
-            <mustSupport value="true"/>
-        </element>
         <element id="Bundle.entry">
             <path value="Bundle.entry"/>
             <slicing>
@@ -76,7 +58,7 @@
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle"/>
+                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
             </type>
         </element>
     </differential>

@@ -7,10 +7,7 @@
         <source value="#CpxYYZWDuI0nEi5R"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
     </meta>
-    <type value="message"/>
-    <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/bundle/us-pathology-content-bundle"/>
-    </entry>
+    <type value="collection"/>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"/>
         <resource>

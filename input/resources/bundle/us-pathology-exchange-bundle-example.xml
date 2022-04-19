@@ -8,7 +8,7 @@
         <source value="#n3bSaKgnL6qyVHUF"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
     </meta>
-    <type value="collection"/>
+    <type value="transaction"/>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/bundle/us-pathology-exchange-bundle"/>
     </entry>
@@ -53,6 +53,10 @@
                 </link>
             </Patient>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/JoelAlexPatient"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/pathology-encounter"/>
@@ -90,6 +94,10 @@
                 </participant>
             </Encounter>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Encounter/pathology-encounter"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/pathology-diagnostic-report"/>
@@ -159,6 +167,10 @@
                 </presentedForm>
             </DiagnosticReport>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="DiagnosticReport/pathology-diagnostic-report"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Specimen/adrenal-example"/>
@@ -202,6 +214,10 @@
                 </container>
             </Specimen>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Specimen/adrenal-example"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/ServiceRequest/us-pathology-service-request"/>
@@ -237,6 +253,10 @@
                 </specimen>
             </ServiceRequest>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="ServiceRequest/us-pathology-service-request"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/us-path-oncologist-example"/>
@@ -268,6 +288,10 @@
                 </telecom>
             </PractitionerRole>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="PractitionerRole/us-path-oncologist-example"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-pathologist-example"/>
@@ -299,6 +323,10 @@
                 </telecom>
             </PractitionerRole>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="PractitionerRole/uspath-pathologist-example"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-surgeon-example"/>
@@ -330,5 +358,9 @@
                 </telecom>
             </PractitionerRole>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="PractitionerRole/uspath-surgeon-example"/>
+        </request>
     </entry>
 </Bundle>

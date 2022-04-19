@@ -168,6 +168,138 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/1867.100004300-us"/></reference>
+            <name value="Regional Lymph Nodes: None Submitted (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/40496.100004300-us"/>
+                <display value="Tumor Weight"/>
+            </reference>
+            <name value="Tumor Weight: Specify Weight (g) (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2129.100004300-us"/>
+                <display value="Tumor Size"/>
+            </reference>
+            <name value="Tumor Size: Greatest dimension in Centimeters (cm) (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/51265.100004300-us"/>
+                <display value="Tumor invasion (example)"/>
+            </reference>
+            <name value="Tumor invasion (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/20880.100004300-us"/>
+                <display value="TNM Descriptors"/>
+            </reference>
+            <name value="TNM Descriptors"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/52756.100004300-us"/></reference>
+            <name value="Specimen Laterality: Bilateral (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2143.100004300-us"/></reference>
+            <name value="Regional Lymph Nodes (pN): pN0: No regional lymph node metastasis (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2137.100004300-us"/>
+                <display value="Primary Tumor"/>
+            </reference>
+            <name value="Primary Tumor"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/49275.100004300-us"/>
+                <display value="Histologic Grade"/>
+            </reference>
+            <name value="Histologic Grade: High grade (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/59852.100004300-us"/>
+                <display value="Adrenal Cortical Carcinoma (example)"/>
+            </reference>
+            <name value="Adrenal Cortical Carcinoma (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2149.100004300-us"/>
+                <display value="Distant Metastasis"/>
+            </reference>
+            <name value="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/53526.100004300-us"/>
+                <display value="Diaphragm"/>
+            </reference>
+            <name value="Diaphragm"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/2118.100004300-us"/></reference>
+            <name value="Adrenal Gland (example)"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/42554.100004300-us"/>
+                <display value="Adrenalectomy"/>
+            </reference>
+            <name value="Adrenalectomy"/>
+            <description value="SDC on FHIR Observation (general)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="new-group3"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Bundle/us-pathology-exchange-bundle-example"/></reference>
             <name value="US Pathology Exchange Content Bundle (example)"/>
             <description value="Example of an inter-EHR exchange transaction Bundle"/>
@@ -289,7 +421,6 @@
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="new-group3"/>
         </resource>
-      
         <resource>
             <reference>
                 <reference value="PractitionerRole/practionerrole-uspath-pathologist-example"/>

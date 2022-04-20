@@ -352,7 +352,7 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/us-path-oncologist-example"/>
+                    <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-us-path-oncologist-example"/>
                     <resource>
                         <PractitionerRole>
                             <id value="practitionerrole-uspath-oncologist-example"/>

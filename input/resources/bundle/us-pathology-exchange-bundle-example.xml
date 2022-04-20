@@ -10,9 +10,6 @@
     </meta>
     <type value="transaction"/>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/bundle/us-pathology-exchange-bundle"/>
-    </entry>
-    <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"/>
         <resource>
             <Patient>

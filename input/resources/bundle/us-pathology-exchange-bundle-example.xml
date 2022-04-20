@@ -297,7 +297,7 @@
                 </request>
                 <collection>
                     <collector>
-                        <reference value="PractitionerRole/practionerrole-uspath-surgeon-example"/>
+                        <reference value="PractitionerRole/practitionerrole-uspath-surgeon-example"/>
                     </collector>
                     <collectedDateTime value="2022-01-02"/>
                 </collection>
@@ -315,7 +315,7 @@
         </request>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/ServiceRequest/us-pathology-service-request"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/ServiceRequest/cancer-path-example"/>
         <resource>
             <ServiceRequest>
                 <id value="cancer-path-example"/>
@@ -337,7 +337,7 @@
                     <reference value="Patient/JoelAlexPatient"/>
                 </subject>
                 <encounter>
-                    <reference value="Encounter/path-specimen-collection"/>
+                    <reference value="Encounter/uspath-specimen-collection-example"/>
                 </encounter>
                 <occurrenceDateTime value="2021-11-01T17:00:14-05:00"/>
                 <requester>
@@ -350,14 +350,14 @@
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="ServiceRequest/us-pathology-service-request"/>
+            <url value="ServiceRequest/cancer-path-example"/>
         </request>
     </entry>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/us-path-oncologist-example"/>
         <resource>
             <PractitionerRole>
-                <id value="practitionerrole-uspath-oncologist-example"/>
+                <id value="practitionerrole-uspath-pathologist-example"/>
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
@@ -389,7 +389,7 @@
         </request>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-pathologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-pathologist-example"/>
         <resource>
             <PractitionerRole>
                 <id value="practitionerrole-uspath-pathologist-example"/>
@@ -420,14 +420,14 @@
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="PractitionerRole/uspath-pathologist-example"/>
+            <url value="PractitionerRole/practitionerrole-uspath-pathologist-example"/>
         </request>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-surgeon-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitioner-uspath-surgeon-example"/>
         <resource>
             <PractitionerRole>
-                <id value="practitionerrole-uspath-surgeon-example"/>
+                <id value="practitioner-uspath-surgeon-example"/>
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
@@ -442,7 +442,7 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+                        <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
                         <code value="CLP"/>
                         <display value="Collecting Provider: Surgeon performing the procedure to collect pathology sample."/>
                     </coding>
@@ -455,7 +455,7 @@
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="PractitionerRole/uspath-surgeon-example"/>
+            <url value="PractitionerRole/practitioner-uspath-surgeon-example"/>
         </request>
     </entry>
 </Bundle>

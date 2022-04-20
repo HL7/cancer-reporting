@@ -10,7 +10,7 @@
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
     <name value="USPathologyCancerRegistryContentBundle"/>
     <title value="US Pathology Cancer Registry Content Bundle"/>
-    <status value="active"/>
+    <status value="draft"/>
     <description value="This profile defines the structure of a bundle for exchange of pathology information environment to an EHR environment. It not intended for central cancer registry reporting. Refer to US Pathology Registry Bundle for that reporting type. &#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

@@ -2,4 +2,4 @@
 # Expected slicing issue
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-bundle
 #Expected unknown CAP CodeSystem location
-Code System URI 'https://example.org' is unknown so the code cannot be validated
+Code System URI 'https://CAP.org' is unknown so the code cannot be validated

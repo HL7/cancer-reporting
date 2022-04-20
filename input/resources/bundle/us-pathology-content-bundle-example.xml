@@ -51,10 +51,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/pathology-encounter"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/uspath-specimen-collection-example"/>
         <resource>
             <Encounter>
-                <id value="encounter-uspath-specimen-collection-example"/>
+                <id value="uspath-specimen-collection-example"/>
                 <meta>
                     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
                 </meta>
@@ -288,7 +288,7 @@
                 </request>
                 <collection>
                     <collector>
-                        <reference value="PractitionerRole/PractitionerRole-uspath-surgeon-example"/>
+                        <reference value="PractitionerRole/practitioner-uspath-surgeon-example"/>
                     </collector>
                     <collectedDateTime value="2022-01-02"/>
                 </collection>
@@ -305,7 +305,7 @@
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/us-path-oncologist-example"/>
         <resource>
             <PractitionerRole>
-                <id value="Practitionerrole-uspath-oncologist-example"/>
+                <id value="practitionerrole-uspath-pathologist-example"/>
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
@@ -333,15 +333,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-pathologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-pathologist-example"/>
         <resource>
             <PractitionerRole>
-                <id value="Practitionerrole-uspath-pathologist-example"/>
+                <id value="practitionerrole-uspath-pathologist-example"/>
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
                     <source value="#Me2ZUOIPsuc3UWL6"/>
-                    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
                     <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
                 </meta>
                 <practitioner>
@@ -365,10 +364,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-surgeon-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitioner-uspath-surgeon-example"/>
         <resource>
             <PractitionerRole>
-                <id value="Practitionerrole-uspath-surgeon-example"/>
+                <id value="practitioner-uspath-surgeon-example"/>
                 <meta>
                     <versionId value="1"/>
                     <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
@@ -383,7 +382,7 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+                        <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
                         <code value="CLP"/>
                         <display value="Collecting Provider: Surgeon performing the procedure to collect pathology sample."/>
                     </coding>
@@ -430,10 +429,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/pathologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-pathologist-example"/>
         <resource>
             <PractitionerRole>
-                <id value="pathologist-example"/>
+                <id value="practitionerrole-uspath-pathologist-example"/>
                 <practitioner>
                     <reference value="Practitioner/pathologist-example"/>
                 </practitioner>
@@ -442,7 +441,7 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
+                        <system value="https://terminology.hl7.org/CodeSystem-v2-0443"/>
                         <code value="principal-result-interpreter"/>
                         <display value="Pathologist principally interpreting results on pathology testing"/>
                     </coding>

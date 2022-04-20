@@ -3,12 +3,6 @@
     xmlns="http://hl7.org/fhir">
     <id value="path-specimen"/>
     <meta>
-        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
-            <valueString value="Cancer Pathology Specimen Procedure Example"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
-            <valueMarkdown value="Example of a pathology procedure based on the *US Core Procedure Profile*."/>
-        </extension>
         <versionId value="1"/>
         <lastUpdated value="2022-03-22T18:05:03.854+00:00"/>
         <source value="#1zYsbM00YdMAMgqO"/>
@@ -30,7 +24,7 @@
             </p>
             <p>
                 <b>subject</b>: 
-                <a href="Patient-example.html">Amy Shaw. Generated Summary: Medical Record Number: 1032702 (USUAL); active; Amy V. Shaw , Amy V. Baxter ; Phone: 555-555-5555, amy.shaw@example.com; gender: female; birthDate: 1987-02-20</a>
+                <a href="Patient-example.html">Alex Joel. Generated Summary: Medical Record Number: 1032702 (USUAL); active; Alex Joel, Amy V. Baxter ; Phone: 555-555-5555, amy.shaw@example.com; gender: female; birthDate: 1987-02-20</a>
             </p>
             <p>
                 <b>performed</b>: 2002-05-23
@@ -39,7 +33,7 @@
     </text>
     <basedOn>
         <reference value="ServiceRequest/cancer-path-example"/>
-        <display value="Service Request - Cancer Pathology Specimen Analysis"/>
+        <display value="Service Request - Cancer Pathology Specimen Collection"/>
     </basedOn>
     <status value="completed"/>
     <code>

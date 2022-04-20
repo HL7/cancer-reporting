@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole
     xmlns="http://hl7.org/fhir">
-    <id value="practionerrole-uspath-pathologist-example"/>
+    <id value="practitionerrole-uspath-oncologist-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
-        <source value="#Me2ZUOIPsuc3UWL6"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        <source value="#OELswItjzwawcPiC"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
     </meta>
     <practitioner>
-        <reference value="Practitioner/pathologist-example"/>
+        <reference value="Practitioner/oncologist-example"/>
     </practitioner>
     <organization>
-        <reference value="Organization/principal-pathology-lab"/>
+        <reference value="Organization/Redwood-Womens-Center-PC"/>
     </organization>
     <code>
         <coding>
             <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
-            <code value="PI"/>
-            <display value="Primary interpreter: Pathologist principally interpreting results on pathology testing"/>
+            <code value="OP"/>
+            <display value="Ordering Provider: Physician Ordering Pathology testing"/>
         </coding>
     </code>
     <telecom>
         <system value="phone"/>
-        <value value="720-242-9999"/>
+        <value value="720-242-5555"/>
     </telecom>
 </PractitionerRole>

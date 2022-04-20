@@ -354,7 +354,7 @@
         </request>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-us-path-oncologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-oncologist-example"/>
         <resource>
             <PractitionerRole>
                 <id value="practitionerrole-uspath-oncologist-example"/>
@@ -385,7 +385,7 @@
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="PractitionerRole/practitionerrole-us-path-oncologist-example"/>
+            <url value="PractitionerRole/practitionerrole-uspath-oncologist-example"/>
         </request>
     </entry>
     <entry>

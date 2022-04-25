@@ -165,6 +165,7 @@
             <reference>
                 <reference value="Bundle/us-pathology-reporting-bundle-example"/></reference>
             <name value="Bundle Pathology reporting bundle"/>
+            <description value="Example of a cancer registry reporting (message) Bundle for a pathology condition. The first entry in this Bundle shall be the US Pathology MessageHeader and the second entry shall be a collection Bundle containing the pathology resulting information."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
             <groupingId value="new-group3"/>
@@ -172,7 +173,8 @@
         <resource>
             <reference>
                 <reference value="Bundle/us-pathology-content-bundle-example"/></reference>
-            <name value="Bundle Pathology content bundle"/>
+            <name value="Bundle Pathology content bundle (example)"/>
+            <description value="Bundle Pathology content bundle (example)"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
             <groupingId value="new-group3"/>
@@ -180,7 +182,8 @@
         <resource>
             <reference>
                 <reference value="Bundle/us-pathology-exchange-bundle-example"/></reference>
-            <name value="Bundle Pathology exchange bundle"/>
+            <name value="Bundle Pathology exchange bundle (example)"/>
+            <description value="Example of an inter-EHR exchange transaction Bundle."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
             <groupingId value="new-group3"/>

@@ -174,7 +174,7 @@
             <reference>
                 <reference value="Bundle/us-pathology-content-bundle-example"/></reference>
             <name value="Bundle Pathology content bundle (example)"/>
-            <description value="Bundle Pathology content bundle (example)"/>
+            <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
             <groupingId value="new-group3"/>
@@ -222,7 +222,7 @@
                 <reference value="Observation/1867.100004300-us"/>
             </reference>
             <name value="Regional Lymph Nodes: None Submitted (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Regional Lymph Nodes: None Submitted"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -232,7 +232,7 @@
                 <display value="Tumor Weight"/>
             </reference>
             <name value="Tumor Weight: Specify Weight (g) (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Tumor Weight: Specify Weight (g)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -242,7 +242,7 @@
                 <display value="Tumor Size"/>
             </reference>
             <name value="Tumor Size: Greatest dimension in Centimeters (cm) (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Tumor Size: Greatest dimension in Centimeters (cm)"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -252,7 +252,7 @@
                 <display value="Tumor invasion (example)"/>
             </reference>
             <name value="Tumor invasion (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Tumor invasion"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -262,7 +262,7 @@
                 <display value="TNM Descriptors"/>
             </reference>
             <name value="TNM Descriptors"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of TNM Descriptors"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -271,7 +271,7 @@
                 <reference value="Observation/52756.100004300-us"/>
             </reference>
             <name value="Specimen Laterality: Bilateral (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Specimen Laterality: Bilateral"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -280,7 +280,7 @@
                 <reference value="Observation/2143.100004300-us"/>
             </reference>
             <name value="Regional Lymph Nodes (pN): pN0: No regional lymph node metastasis (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Regional Lymph Nodes (pN): pN0: No regional lymph node metastasis"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -290,7 +290,7 @@
                 <display value="Primary Tumor"/>
             </reference>
             <name value="Primary Tumor"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Primary Tumor"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -300,7 +300,7 @@
                 <display value="Histologic Grade"/>
             </reference>
             <name value="Histologic Grade: High grade (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Histologic Grade: High grade"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -310,7 +310,7 @@
                 <display value="Adrenal Cortical Carcinoma (example)"/>
             </reference>
             <name value="Adrenal Cortical Carcinoma (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Adrenal Cortical Carcinoma"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -320,7 +320,7 @@
                 <display value="Distant Metastasis"/>
             </reference>
             <name value="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Distant Metastasis"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -330,7 +330,7 @@
                 <display value="Diaphragm"/>
             </reference>
             <name value="Diaphragm"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Diaphragm"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -339,7 +339,7 @@
                 <reference value="Observation/2118.100004300-us"/>
             </reference>
             <name value="Adrenal Gland (example)"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Adrenal Gland"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -349,7 +349,7 @@
                 <display value="Adrenalectomy"/>
             </reference>
             <name value="Adrenalectomy"/>
-            <description value="SDC on FHIR Observation (general)"/>
+            <description value="Example of SDC on FHIR Observation (general) of Adrenalectomy"/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -381,7 +381,7 @@
                 <display value="Surgeon PractitionerRole (example)"/>
             </reference>
             <name value="Surgeon PractitionerRole (example)"/>
-            <description value="US Core PractitionerRole example for a Surgeon"/>
+            <description value="Example of US Core PractitionerRole - Surgeon"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
             <groupingId value="new-group3"/>
@@ -392,7 +392,7 @@
                 <display value="Surgeon Practitioner (example)"/>
             </reference>
             <name value="Surgeon Practitioner (example)"/>
-            <description value="US Core Practitioner surgeon example"/>
+            <description value="Example of US Core Practitioner surgeon"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="new-group3"/>
@@ -403,7 +403,7 @@
                 <display value="Pathologist PractitionerRole (example)"/>
             </reference>
             <name value="Pathologist PractitionerRole (example)"/>
-            <description value="US Core PractitionerRole example for a Pathologist"/>
+            <description value="Example of US Core PractitionerRole - Pathologist"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
             <groupingId value="new-group3"/>
@@ -414,7 +414,7 @@
                 <display value="Pathologist Practitioner (example)"/>
             </reference>
             <name value="Pathologist Practitioner (example)"/>
-            <description value="US Core Practitioner Pathologist example"/>
+            <description value="example of US Core Practitioner Pathologist"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="new-group3"/>
@@ -425,7 +425,7 @@
                 <display value="Oncologist PractitionerRole (example)"/>
             </reference>
             <name value="Oncologist PractitionerRole (example)"/>
-            <description value="US Core PractitionerRole example for an Oncologist"/>
+            <description value="Example of US Core PractitionerRole example - Oncologist"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
             <groupingId value="new-group3"/>
@@ -436,7 +436,7 @@
                 <display value="Oncologist Practitioner (example)"/>
             </reference>
             <name value="Oncologist Practitioner (example)"/>
-            <description value="US Core Practitioner Oncologist example"/>
+            <description value="Example of US Core Practitioner Oncologist"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="new-group3"/>
@@ -465,6 +465,7 @@
             <reference>
                 <reference value="Encounter/uspath-specimen-collection-example"/></reference>
             <name value="US Pathology Encounter Specimen Collection (example)"/>
+            <description value="Example of a pathology specimen collection in an Encounter"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             <groupingId value="new-group3"/>
@@ -472,6 +473,8 @@
         <resource>
             <reference>
                 <reference value="RelatedPerson/pathology-next-of-kin"/></reference>
+                <name value="RelatedPerson - Pathology Next-of-kin (example)"/>
+            <description value="Example of a RelatedPerson Next-of-kin connected to the Patient example above"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
             <groupingId value="new-group3"/>

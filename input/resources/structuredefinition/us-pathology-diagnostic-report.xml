@@ -34,13 +34,13 @@
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
-        <element id="DiagnosticReport.effective[x]">
-            <path value="DiagnosticReport.effective[x]"/>
+        <element id="DiagnosticReport.effectiveDateTime[x]">
+            <path value="DiagnosticReport.effectiveDateTime[x]"/>
             <constraint>
                 <key value="0o95dEq9"/>
                 <severity value="error"/>
                 <human value="effectiveDateTime SHALL include the month and day"/>
-                <expression value="DiagnosticReport.effectiveDateTime.length()&gt;9"/>
+                <expression value="DiagnosticReport.effectiveDateTime.value.as[dateTime]"/>
             </constraint>
         </element>
         <element id="DiagnosticReport.performer">

@@ -15,23 +15,12 @@
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
-    <type value="Bundle"/>
+    <type value="transaction"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Bundle">
             <path value="Bundle"/>
-        </element>
-        <element id="Bundle.type">
-            <path value="Bundle.type"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://hl7.org/fhir/bundle-type"/>
-                    <code value="transaction"/>
-                    <display value="Transaction"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
         </element>
         <element id="Bundle.timestamp">
             <path value="Bundle.timestamp"/>

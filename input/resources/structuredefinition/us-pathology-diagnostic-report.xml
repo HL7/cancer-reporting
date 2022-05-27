@@ -34,8 +34,8 @@
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
-        <element id="DiagnosticReport.effectiveDateTime[x]">
-            <path value="DiagnosticReport.effectiveDateTime[x]"/>
+        <element id="DiagnosticReport.effectiveDateTime">
+            <path value="DiagnosticReport.effectiveDateTime"/>
             <constraint>
                 <key value="0o95dEq9"/>
                 <severity value="error"/>

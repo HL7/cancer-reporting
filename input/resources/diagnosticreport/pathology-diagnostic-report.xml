@@ -47,14 +47,14 @@
         <display value="Alex Joel"/>
     </subject>
     <encounter>
-        <reference value="Encounter/pathology-encounter"/>
+        <reference value="Encounter/uspath-specimen-collection-example"/>
     </encounter>
     <effectiveDateTime value="2021-01-01T21:39:30.000Z"/>
     <performer>
-        <reference value="PractitionerRole/pathologist-example"/>
+        <reference value="PractitionerRole/practitionerrole-uspath-pathologist-example"/>
     </performer>
     <resultsInterpreter>
-        <reference value="PractitionerRole/pathologist-example"/>
+        <reference value="PractitionerRole/practitionerrole-uspath-pathologist-example"/>
     </resultsInterpreter>
     <specimen>
         <reference value="Specimen/adrenal-example"/>

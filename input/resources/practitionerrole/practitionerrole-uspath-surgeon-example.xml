@@ -16,7 +16,7 @@
     </organization>
     <code>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem-v2-0443"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0443"/>
             <code value="CLP"/>
             <display value="Collecting Provider: Surgeon performing the procedure to collect pathology sample."/>
         </coding>

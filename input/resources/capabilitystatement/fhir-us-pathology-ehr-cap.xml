@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement
+    xmlns="http://hl7.org/fhir">
+    <id value="fhir-us-pathology-ehr-cap"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-06-02T19:38:30.687+00:00"/>
+        <source value="#0cXg6gBhReExmBFL"/>
+    </meta>
+    <url value="http://hl7.org/fhir-us-pathology-ehr-cap"/>
+    <version value="0.1.0"/>
+    <name value="US Pathology EHR Capabillity Statement"/>
+    <title value="US Pathology EHR Capabillity Statement"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2022-06-02"/>
+    <kind value="capability"/>
+    <fhirVersion value="4.0.1"/>
+</CapabilityStatement>

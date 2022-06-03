@@ -17,7 +17,7 @@ The [Making EHR Data More Available for Research and Public Health (MedMorph)](h
 
 
 ### FHIR Profiles to Capture NAACCR Volume V
-The mappings below show where there is significant overlap between data elements in HL7 Version 2, NAACCR Volume 5, and FHIR, but V2 segments and FHIR profiles are not perfect translations of each other. For more detail on V2 to FHIR Mapping, refer to the the [HL7 Version 2 to FHIR IG](http://hl7.org/fhir/uv/v2mappings/2020Sep/).
+
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;}
     .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -58,12 +58,12 @@ The mappings below show where there is significant overlap between data elements
         <tr>
             <td class="tg-0lax">Common Order segment (ORC)</td>
             <td class="tg-0lax">2.7.1</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related PractitionerRole</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request.html"> US Pathology Service Request</a></td> 
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related PractitionerRole</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observations Report ID segment (OBR)</td>
             <td class="tg-0lax">2.7.2</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner Role</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request.html"> US Pathology Service Request</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner Role</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Notes and Comments segment (NTE)</td>

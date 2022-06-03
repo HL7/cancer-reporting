@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
+<Bundle
+    xmlns="http://hl7.org/fhir">
     <id value="us-pathology-content-bundle-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-04-17T13:26:48.366+00:00"/>
-        <source value="#CpxYYZWDuI0nEi5R"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-06-02T20:49:12.846+00:00"/>
+        <source value="#39sURJKcKrogELtM"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
     </meta>
     <type value="collection"/>
+    <timestamp value="2022-03-22T18:05:57.689+00:00"/>
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"/>
         <resource>
@@ -19,6 +21,7 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">
                             Alex
+                            
                             
                             <b>Joel </b>
                         </div>
@@ -118,7 +121,7 @@
                     </div>
                 </text>
                 <identifier>
-                    <system value="https://example.org"/>
+                    <system value="https://CAP.org"/>
                     <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"/>
                 </identifier>
                 <status value="final"/>
@@ -156,98 +159,98 @@
                 <result>
                     <reference value="Observation/2118.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/42554.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/52756.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/59852.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/49275.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2129.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/40496.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/51265.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/53526.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/1867.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/20880.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2137.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2143.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
                     </identifier>
                 </result>
                 <result>
                     <reference value="Observation/2149.100004300-us"/>
                     <identifier>
-                        <system value="https://example.org"/>
+                        <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>
                     </identifier>
                 </result>
@@ -320,9 +323,16 @@
                 </organization>
                 <code>
                     <coding>
+                        <system value="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ParticipationType.html"/>
+                        <code value="ATND"/>
+                        <display value="attender"/>
+                    </coding>
+                </code>
+                <code>
+                    <coding>
                         <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
                         <code value="OP"/>
-                        <display value="Ordering Provider: Physician Ordering Pathology testing"/>
+                        <display value="Ordering Provider"/>
                     </coding>
                 </code>
                 <telecom>
@@ -353,7 +363,7 @@
                     <coding>
                         <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
                         <code value="PI"/>
-                        <display value="Primary interpreter: Pathologist principally interpreting results on pathology testing"/>
+                        <display value="Primary Interpreter"/>
                     </coding>
                 </code>
                 <telecom>
@@ -384,7 +394,7 @@
                     <coding>
                         <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
                         <code value="CLP"/>
-                        <display value="Collecting Provider: Surgeon performing the procedure to collect pathology sample."/>
+                        <display value="Collecting Provider"/>
                     </coding>
                 </code>
                 <telecom>
@@ -441,9 +451,9 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="https://terminology.hl7.org/CodeSystem-v2-0443"/>
-                        <code value="principal-result-interpreter"/>
-                        <display value="Pathologist principally interpreting results on pathology testing"/>
+                        <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
+                        <code value="PI"/>
+                        <display value="Primary Interpreter"/>
                     </coding>
                 </code>
                 <telecom>

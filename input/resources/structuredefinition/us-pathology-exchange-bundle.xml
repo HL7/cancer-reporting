@@ -22,6 +22,17 @@
         <element id="Bundle">
             <path value="Bundle"/>
         </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/bundle-type"/>
+                    <code value="transaction"/>
+                    <display value="Transaction"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
         <element id="Bundle.timestamp">
             <path value="Bundle.timestamp"/>
             <mustSupport value="true"/>

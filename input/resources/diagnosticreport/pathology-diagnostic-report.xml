@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="pathology-diagnostic-report"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-03-22T18:05:57.689+00:00"/>
-        <source value="#h7VB0h82nymbEpuS"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-06-03T13:51:08.568+00:00"/>
+        <source value="#zsl6jeRsZEOi3Vbz"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
     </meta>
     <text>
@@ -24,7 +24,7 @@
         </div>
     </text>
     <identifier>
-        <system value="https://example.org"/>
+        <system value="https://cap.org"/>
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"/>
     </identifier>
     <status value="final"/>

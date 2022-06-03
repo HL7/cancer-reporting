@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-reporting-bundle"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-04-17T13:22:47.792+00:00"/>
-        <source value="#KhlG8bQgNwm9Ccge"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-04-20T20:57:36.735+00:00"/>
+        <source value="#pgiKfJ51pYa5VT2w"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
     <name value="USPathologyCancerRegistryReportingBundle"/>

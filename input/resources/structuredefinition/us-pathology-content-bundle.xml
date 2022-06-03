@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-content-bundle"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-04-07T20:48:34.668+00:00"/>
-        <source value="#Ohfhtnoq8MDFjXel"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-04-20T20:57:07.371+00:00"/>
+        <source value="#jFXNRoRMxuhb9xAW"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
     <name value="USPathologyCancerRegistryContentBundle"/>
@@ -21,6 +21,10 @@
     <differential>
         <element id="Bundle">
             <path value="Bundle"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Bundle.timestamp">
             <path value="Bundle.timestamp"/>

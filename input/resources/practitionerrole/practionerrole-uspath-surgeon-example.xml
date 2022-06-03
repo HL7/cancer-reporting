@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole
     xmlns="http://hl7.org/fhir">
-    <id value="practitionerrole-uspath-surgeon-example"/>
+    <id value="practionerrole-uspath-surgeon-example"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-04-20T20:56:01.077+00:00"/>
-        <source value="#JqpM7QjUEzfyOUY3"/>
+        <lastUpdated value="2022-03-22T19:35:20.500+00:00"/>
+        <source value="#rjyv9zyrG28Mbwyv"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
     </meta>
     <practitioner>
@@ -16,7 +16,7 @@
     </organization>
     <code>
         <coding>
-            <system value="https://terminology.hl7.org/CodeSystem-v2-0443"/>
+            <system value="http://hl7.org/fhir/us/cancer-reporting/CodeSystem/us-pathology-provider-types"/>
             <code value="CLP"/>
             <display value="Collecting Provider: Surgeon performing the procedure to collect pathology sample."/>
         </coding>

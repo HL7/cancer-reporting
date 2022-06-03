@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="path-specimen"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-22T18:05:03.854+00:00"/>
-        <source value="#1zYsbM00YdMAMgqO"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-06-03T14:10:05.994+00:00"/>
+        <source value="#L3VmY3WFAZV2pqRb"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
     </meta>
     <basedOn>

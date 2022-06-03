@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="cancer-path-example"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-23T20:50:13.457+00:00"/>
-        <source value="#5MfQxB0Soa3BaN7g"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-06-03T14:14:13.136+00:00"/>
+        <source value="#w9vabmsGPJ4BLunh"/>
     </meta>
     <status value="active"/>
     <intent value="order"/>
@@ -13,8 +13,8 @@
         <coding>
             <system value="http://loinc.org/"/>
             <code value="60567-5"/>
+            <display value="Comprehensive pathology report panel"/>
         </coding>
-        <text value="Comprehensive pathology report panel"/>
     </code>
     <subject>
         <reference value="Patient/JoelAlexPatient"/>

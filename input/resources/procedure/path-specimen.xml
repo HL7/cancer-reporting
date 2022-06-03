@@ -21,7 +21,7 @@
         </coding>
         <coding>
             <system value="http://www.cms.gov/Medicare/Coding/ICD10"/>
-            <code value=" 0GT20ZZ"/>
+            <code value="0GT20ZZ"/>
             <display value="Resection of Left Adrenal Gland, Percutaneous Endoscopic Approach"/>
         </coding>
         <text value="Surgical procedure for left adrenal gland resection for specimen collection"/>

@@ -11,7 +11,7 @@
     <intent value="order"/>
     <code>
         <coding>
-            <system value="http://loinc.org/"/>
+            <system value="http://loinc.org"/>
             <code value="60567-5"/>
             <display value="Comprehensive pathology report panel"/>
         </coding>

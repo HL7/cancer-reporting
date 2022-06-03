@@ -63,13 +63,6 @@
             <path value="Specimen.collection"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Specimen.collection.extension">
-            <path value="Specimen.collection.extension"/>
-            <constraint>
-                <key value="eQlyknSF"/>
-                <severity value="warning"/>
-            </constraint>
-        </element>
         <element id="Specimen.collection.collector">
             <path value="Specimen.collection.collector"/>
             <type>

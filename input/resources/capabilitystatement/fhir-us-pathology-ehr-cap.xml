@@ -9,11 +9,14 @@
     </meta>
     <url value="http://hl7.org/fhir-us-pathology-ehr-cap"/>
     <version value="0.1.0"/>
-    <name value="US Pathology EHR Capabillity Statement"/>
+    <name value="USPathologyEHRCapabillityStatement"/>
     <title value="US Pathology EHR Capabillity Statement"/>
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2022-06-02"/>
-    <kind value="capability"/>
+    <description value="This CapabilityStatement describes the functionality expected from the actor within a Pathology data exchagne scenario"/>
+    <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
+    <format value="xml"/>
+    <format value="json"/>
 </CapabilityStatement>

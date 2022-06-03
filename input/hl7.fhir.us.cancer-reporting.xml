@@ -241,17 +241,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/practionerrole-uspath-surgeon-example"/>
-                <display value="Surgeon PractitionerRole (example)"/>
-            </reference>
-            <name value="Surgeon PractitionerRole (example)"/>
-            <description value="US Core PractitionerRole example for a Surgeon"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Practitioner/surgeon-example"/>
                 <display value="Surgeon Practitioner (example)"/>
             </reference>
@@ -261,17 +250,7 @@
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             <groupingId value="new-group8"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/practionerrole-uspath-pathologist-example"/>
-                <display value="Pathologist PractitionerRole (example)"/>
-            </reference>
-            <name value="Pathologist PractitionerRole (example)"/>
-            <description value="US Core PractitionerRole example for a Pathologist"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-            <groupingId value="new-group8"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="Practitioner/pathologist-example"/>
@@ -281,17 +260,6 @@
             <description value="US Core Practitioner Pathologist example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/practionerrole-uspath-oncologist-example"/>
-                <display value="Oncologist PractitionerRole (example)"/>
-            </reference>
-            <name value="Oncologist PractitionerRole (example)"/>
-            <description value="US Core PractitionerRole example for an Oncologist"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
             <groupingId value="new-group8"/>
         </resource>
         <resource>

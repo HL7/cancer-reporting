@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="observation-regional-lymph-nodes"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-06-03T20:12:29.114+00:00"/>
+        <source value="#gUpTzgJUcliBNGxH"/>
+    </meta>
+    <identifier>
+        <system value="https://CAP.org"/>
+        <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
+    </identifier>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="https://CAP.org"/>
+            <code value="1867.100004300"/>
+            <display value="Regional Lymph Nodes"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/JoelAlexPatient"/>
+    </subject>
+    <component>
+        <code>
+            <coding>
+                <system value="https://CAP.org"/>
+                <code value="1868.100004300"/>
+                <display value="No lymph nodes submitted or found"/>
+            </coding>
+        </code>
+    </component>
+</Observation>

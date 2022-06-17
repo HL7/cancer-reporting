@@ -13,7 +13,7 @@ This Cancer Electronic Pathology Reporting FHIR IG and the future IHE SDC eCC on
 
 ### Relationship to MedMorph
 
-The [Making EHR Data More Available for Research and Public Health (MedMorph)](http://build.fhir.org/ig/HL7/fhir-medmorph/) is seeking to advance public health and patient-centered outcomes by establishing HL7 standards in FHIR and Clinical Quality Language (CQL). The [Central Cancer Registry Reporting Content IG] (http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan/) leverages the MedMorph Reference Architecture (RA) IG to facilitate reporting cancer data to regional, state, and territorial public health central cancer registries. 
+Our Cancer reporting processes focus on bundling SDC/eCC on FHIR bundling and distributing them from LIS to EHR or LIS to Central Cancer Registries directly. The [Central Cancer Registry Reporting Content IG(CCRRC IG)](https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html) leverages the MedMorph Reference Architecture (RA) IG to facilitate reporting cancer data to regional, state, and territorial public health central cancer registries. EHRs reporting pathology data to these registries are expected to follow guidance provided in that IG, including guidelines on PlanDefinition and Subscriptions.
 
 
 ### FHIR Profiles to Capture NAACCR Volume V

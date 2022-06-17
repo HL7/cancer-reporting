@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-reporting-bundle"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2022-04-20T20:57:36.735+00:00"/>
-        <source value="#pgiKfJ51pYa5VT2w"/>
+        <versionId value="18"/>
+        <lastUpdated value="2022-06-14T10:16:32.234+00:00"/>
+        <source value="#fP2WReBXxAwSqvQ7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
     <name value="USPathologyCancerRegistryReportingBundle"/>
     <title value="US Pathology Cancer Registry Reporting Bundle"/>
     <status value="active"/>
-    <description value="Pathology Cancer Registry Reporting Bundle: description: todo"/>
+    <description value="The US Pathology Reporting Bundle wraps the US Pathology Message Header and US Pathology Registry Bundle for the purposes of reporting."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

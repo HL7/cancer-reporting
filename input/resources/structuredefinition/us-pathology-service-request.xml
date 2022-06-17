@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-service-request"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-04-12T10:51:21.795+00:00"/>
-        <source value="#vsQpjO9JkIdcHpl4"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-06-16T20:43:51.003+00:00"/>
+        <source value="#WhUfUjNsxHbt00dJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
     <name value="USPathologyServiceRequest"/>
@@ -18,7 +18,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="ServiceRequest"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest"/>
     <derivation value="constraint"/>
     <differential>
         <element id="ServiceRequest">
@@ -54,6 +54,10 @@
                 <description value="US Core Procedure Codes"/>
                 <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code"/>
             </binding>
+        </element>
+        <element id="ServiceRequest.code.coding">
+            <path value="ServiceRequest.code.coding"/>
+            <min value="1"/>
         </element>
         <element id="ServiceRequest.subject">
             <path value="ServiceRequest.subject"/>

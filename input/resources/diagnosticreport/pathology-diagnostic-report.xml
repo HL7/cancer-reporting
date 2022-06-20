@@ -49,7 +49,7 @@
     <encounter>
         <reference value="Encounter/pathology-encounter"/>
     </encounter>
-    <effectiveDateTime value="2021-01-01T21:39:30.0"/>
+    <effectiveDateTime value="2021-01-01T21:39:30.000Z"/>
     <performer>
         <reference value="PractitionerRole/pathologist-example"/>
     </performer>

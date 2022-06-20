@@ -40,7 +40,9 @@
                 <key value="0o95dEq9"/>
                 <severity value="error"/>
                 <human value="effectiveDateTime SHALL include the month and day"/>
-                <expression value="DiagnosticReport.effectiveDateTime.length()&gt;9"/>
+                <expression value="($this as dateTime).toString().length() &gt;= 8"/>
+                <xpath value="f:effectiveDateTime[matches(@value, '^\d{4}-\d{2}-\d{2}')]"/>
+                <mustSupport value="true"/>
             </constraint>
         </element>
         <element id="DiagnosticReport.performer">

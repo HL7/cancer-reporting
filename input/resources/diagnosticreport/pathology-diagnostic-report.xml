@@ -49,7 +49,9 @@
     <encounter>
         <reference value="Encounter/uspath-specimen-collection-example"/>
     </encounter>
-    <effectiveDateTime value="2021-01-01T21:39:30.000Z"/>
+    <effectivePeriod>
+        <start value="2021-01-01T21:39:30.000Z"/>
+    </effectivePeriod>
     <performer>
         <reference value="practitionerrole-uspath-pathologist-example"/>
     </performer>

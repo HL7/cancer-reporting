@@ -35,7 +35,7 @@ This library of FHIR resources was developed and produced through the efforts of
 * College of American Pathologists (CAP)
 * Lantana Consulting Group
 
-This material contains content from [SNOMED CT®](http://www.ihtsdo.org/snomed-ct/). SNOMED CT is a registered trademark of the International Health Terminology Standard Development Organization (IHTSDO).
+This material contains content from [SNOMED CT®](http://snomed.info/sct/731000124108). SNOMED CT is a registered trademark of the International Health Terminology Standard Development Organization (IHTSDO).
 
 This material contains content from [LOINC®](http://loinc.org). LOINC codes are copyright ©1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. All rights reserved. See [https://loinc.org/kb/license/](https://loinc.org/kb/license/).
 

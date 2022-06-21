@@ -40,8 +40,8 @@
                 <key value="0o95dEq9"/>
                 <severity value="error"/>
                 <human value="effectiveDateTime SHALL include the month and day"/>
-                <expression value="($this as dateTime).toString().length() &gt;= 8"/>
-                <xpath value="f:effectiveDateTime[matches(@value, '^\d{4}-\d{2}-\d{2}')]"/>
+                <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+                <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
                 <mustSupport value="true"/>
             </constraint>
         </element>

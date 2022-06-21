@@ -22,14 +22,6 @@
         <element id="Bundle">
             <path value="Bundle"/>
         </element>
-        <element id="Bundle.type">
-            <path value="Bundle.type"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Bundle.timestamp">
-            <path value="Bundle.timestamp"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Bundle.entry">
             <path value="Bundle.entry"/>
             <slicing>
@@ -40,6 +32,14 @@
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.timestamp">
+            <path value="Bundle.timestamp"/>
             <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry:us_core_patient">

@@ -16,7 +16,7 @@
     </organization>
     <code>
         <coding>
-            <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
+            <system value="https://terminology.hl7.org/CodeSystem-v2-0443"/>
             <code value="OP"/>
             <display value="Ordering Provider: Physician Ordering Pathology testing"/>
         </coding>

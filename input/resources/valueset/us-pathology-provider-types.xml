@@ -34,7 +34,7 @@
             </concept>
         </include>
         <include>
-            <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
+            <system value="https://terminology.hl7.org/CodeSystem/v2-0443"/>
             <concept>
                 <code value="CLP"/>
                 <display value="Collecting Provider"/>

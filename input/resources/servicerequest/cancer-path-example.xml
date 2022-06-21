@@ -16,6 +16,13 @@
             <display value="Comprehensive pathology report panel"/>
         </coding>
     </category>
+    <code>
+        <coding>
+            <system value="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html"/>
+            <code value="50322008"/>
+            <display value="Surgical pathology specimen, clerical procedure including coding of diagnoses"/>
+        </coding>
+    </code>
     <subject>
         <reference value="Patient/JoelAlexPatient"/>
     </subject>

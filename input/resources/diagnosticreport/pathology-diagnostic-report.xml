@@ -53,10 +53,10 @@
         <start value="2021-01-01T21:39:30.000Z"/>
     </effectivePeriod>
     <performer>
-        <reference value="practitionerrole-uspath-pathologist-example"/>
+        <reference value="PractitionerRole/practitionerrole-uspath-pathologist-example"/>
     </performer>
     <resultsInterpreter>
-        <reference value="practitionerrole-uspath-pathologist-example"/>
+        <reference value="PractitionerRole/practitionerrole-uspath-pathologist-example"/>
     </resultsInterpreter>
     <specimen>
         <reference value="Specimen/adrenal-example"/>

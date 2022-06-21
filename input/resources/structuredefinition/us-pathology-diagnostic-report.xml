@@ -31,8 +31,6 @@
         </element>
         <element id="DiagnosticReport.subject">
             <path value="DiagnosticReport.subject"/>
-            <max value="*"/>
-            <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.effective[x]">
             <path value="DiagnosticReport.effective[x]"/>

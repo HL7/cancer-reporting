@@ -21,9 +21,6 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">
                             Alex
-                            
-                            
-                            
                             <b>Joel </b>
                         </div>
                         <table class="hapiPropertyTable">
@@ -145,111 +142,111 @@
                     <display value="Alex Joel"/>
                 </subject>
                 <encounter>
-                    <reference value="Encounter/pathology-encounter"/>
+                    <reference value="Encounter/uspath-specimen-collection-example"/>
                 </encounter>
                 <effectiveDateTime value="2021-01-01T21:39:30.000Z"/>
                 <performer>
-                    <reference value="PractitionerRole/pathologist-example"/>
+                    <reference value="practitionerrole-uspath-pathologist-example"/>
                 </performer>
                 <resultsInterpreter>
-                    <reference value="PractitionerRole/pathologist-example"/>
+                    <reference value="practitionerrole-uspath-pathologist-example"/>
                 </resultsInterpreter>
                 <specimen>
                     <reference value="Specimen/adrenal-example"/>
                 </specimen>
                 <result>
-                    <reference value="Observation/2118.100004300-us"/>
+                    <reference value="Observation/observation-tumor-site"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/42554.100004300-us"/>
+                    <reference value="Observation/observation-procedure-adrenalectomy"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/52756.100004300-us"/>
+                    <reference value="Observation/observation-specimen-laterality"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/59852.100004300-us"/>
+                    <reference value="Observation/observation-histologic-type"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/49275.100004300-us"/>
+                    <reference value="Observation/observation-histologic-grade"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/2129.100004300-us"/>
+                    <reference value="Observation/observation-histologic-grade"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/40496.100004300-us"/>
+                    <reference value="Observation/observation-tumor-weight"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/51265.100004300-us"/>
+                    <reference value="Observation/observation-tumor-extension"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/53526.100004300-us"/>
+                    <reference value="Observation/observation-tumor-invasion"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/1867.100004300-us"/>
+                    <reference value="Observation/observation-regional-lymph-nodes"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/20880.100004300-us"/>
+                    <reference value="Observation/observation-TNM-descriptors"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/2137.100004300-us"/>
+                    <reference value="Observation/observation-primary-tumor"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/2143.100004300-us"/>
+                    <reference value="Observation/observation-regional-lymph-nodes"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"/>
                     </identifier>
                 </result>
                 <result>
-                    <reference value="Observation/2149.100004300-us"/>
+                    <reference value="Observation/observation-distant-metastasis"/>
                     <identifier>
                         <system value="https://CAP.org"/>
                         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"/>

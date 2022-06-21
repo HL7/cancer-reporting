@@ -486,16 +486,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/pathology-lab-info-system"/>
-                <display value="Pathology Laboratory Information System"/>
-            </reference>
-            <name value="Pathology Laboratory Information System"/>
-            <description value="This profile defines the expected capabilities of the ''LIS'' actor when conforming to the Cancer Pathology Data Sharing Guide.     This role is responsible for allowing creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group4"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="CapabilityStatement/central-cancer-registry-reporting-ehr-pathology"/>
                 <display value="Central Cancer Registry Reporting Pathology EHR Capability Statement"/>
             </reference>

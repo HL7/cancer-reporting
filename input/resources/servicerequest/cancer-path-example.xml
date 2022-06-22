@@ -18,7 +18,7 @@
     </category>
     <code>
         <coding>
-            <system value="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html"/>
+            <system value="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT"/>
             <code value="50322008"/>
             <display value="Surgical pathology specimen, clerical procedure including coding of diagnoses"/>
         </coding>

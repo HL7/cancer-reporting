@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.cancer-reporting"/>
     <meta>
-        <versionId value="823"/>
-        <lastUpdated value="2022-06-16T20:41:27.305+00:00"/>
-        <source value="#Kes4kEZHm1vkunlW"/>
+        <versionId value="828"/>
+        <lastUpdated value="2022-06-17T17:30:35.600+00:00"/>
+        <source value="#PWUDh3opoMabaIc1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="0.1.0"/>
@@ -42,10 +42,10 @@
         <packageId value="hl7.fhir.us.medmorph"/>
         <version value="0.2.0"/>
     </dependsOn>
-    <dependsOn id="usnlmvsac">
-        <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />
-        <packageId value="us.nlm.vsac" />
-        <version value="0.7.0" />
+    <dependsOn id="hl7fhiruscentralcancerregistryreporting">
+        <uri value="http://hl7.org/fhir/us/central-cancer-registry-reporting/ImplementationGuide/hl7.fhir.us.central-cancer-registry-reporting#0.1.0"/>
+        <packageId value="hl7.fhir.us.central-cancer-registry-reporting"/>
+        <version value="0.1.0"/>
     </dependsOn>
     <definition>
         <grouping id="new-group5">
@@ -113,7 +113,7 @@
                 <display value="USPathologyServiceRequest"/>
             </reference>
             <name value="US Pathology Service Request"/>
-            <description value="ServiceRequest profile for analysis of a pathological sample."/>
+            <description value="ServiceRequest profile for analysis of a pathological sample. "/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -142,8 +142,8 @@
                 <reference value="StructureDefinition/us-pathology-exchange-bundle"/>
                 <display value="US Pathology Exchange Bundle"/>
             </reference>
-            <name value="US Pathology Exchange Bundle"/>
-            <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;In order to properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
+            <name value="US Pathology ExchangeBundle"/>
+            <description value=" 	&#xA;&#xA;This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;In order to properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group6"/>
         </resource>
@@ -435,7 +435,7 @@
                 <display value="TNM Descriptors Observation (example)"/>
             </reference>
             <name value="TNM Descriptors Observation (example)"/>
-            <description value="This is an example of a TNM descriptors observation."/>
+            <description value="This is an example of a TNM descriptors observation. "/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -491,6 +491,16 @@
         </resource>
         <resource>
             <reference>
+                <reference value="CapabilityStatement/pathology-lab-info-system"/>
+                <display value="Pathology Laboratory Information System"/>
+            </reference>
+            <name value="Pathology Laboratory Information System"/>
+            <description value="This profile defines the expected capabilities of the ''LIS'' actor when conforming to the Cancer Pathology Data Sharing Guide.     This role is responsible for allowing creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group4"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CapabilityStatement/central-cancer-registry-reporting-ehr-pathology"/>
                 <display value="Central Cancer Registry Reporting Pathology EHR Capability Statement"/>
             </reference>
@@ -501,21 +511,15 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/pathology-lab-information-system"/>
-                <display value="Pathology Laboratory Information System"/>
-            </reference>
-            <name value="Pathology Laboratory Information System"/>
-            <description value="This profile defines the expected capabilities of the ''LIS'' actor when conforming to the Cancer Pathology Data Sharing Guide.     This role is responsible for allowing creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="PlanDefinition/plandefinition-pathology-cancer-registry-reporting-example"/>
-                <display value="Central Cancer Registry Reporting Example PlanDefinition"/>
+                <display value="CentralCancerRegistryReportingExample"/>
             </reference>
             <name value="Central Cancer Registry Reporting (example)"/>
             <description value="This is an example of the Central Cancer Registry Reporting PlanDefinition."/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/central-cancer-registry-reporting/StructureDefinition/ccrr-plandefinition"/>
+            <groupingId value="new-group7"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>

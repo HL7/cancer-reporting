@@ -16,7 +16,7 @@
     </organization>
     <code>
         <coding>
-            <system value="https://terminology.hl7.org/CodeSystem/v2-0443"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0443"/>
             <code value="PI"/>
             <display value="Primary interpreter: Pathologist principally interpreting results on pathology testing"/>
         </coding>

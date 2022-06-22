@@ -35,6 +35,7 @@
         </element>
         <element id="Bundle.entry:pathology_messageheader">
             <path value="Bundle.entry"/>
+            <sliceName value="us_pathology_messageheader"/>
             <min value="1"/>
             <max value="1"/>
         </element>

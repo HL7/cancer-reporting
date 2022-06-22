@@ -491,7 +491,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CapabilityStatement/pathology-lab-info-system"/>
+                <reference value="CapabilityStatement/pathology-lab-information-system"/>
                 <display value="Pathology Laboratory Information System"/>
             </reference>
             <name value="Pathology Laboratory Information System"/>

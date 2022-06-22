@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="plandefinition-pathology-cancer-registry-reporting-example"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2022-06-17T17:29:27.820+00:00"/>
+        <source value="#7naC6DlMbgSlIXha"/>
+        <profile value="http://hl7.org/fhir/us/central-cancer-registry-reporting/StructureDefinition/ccrr-plandefinition"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-receiverAddress">
+        <valueReference>
+            <reference value="Endpoint/example-ph-endpoint"/>
+        </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-authorSignature">
+        <valueSignature>
+            <type>
+                <system value="urn:iso-astm:E1762-95:2013"/>
+                <code value="1.2.840.10065.1.12.1.5"/>
+                <display value="Verification Signature"/>
+            </type>
+            <when value="2020-11-04T08:39:24+10:00"/>
+            <who>
+                <reference value="Organization/example-pha-org"/>
+            </who>
+            <targetFormat value="application/fhir+xml"/>
+            <sigFormat value="application/signature+xml"/>
+            <data value="L44u"/>
+        </valueSignature>
+    </extension>
+    <url value="http://hl7.org/fhir/us/central-cancer-registry-reporting/StructureDefinition/plandefinition-central-cancer-registry-reporting-example"/>
+    <version value="1.0"/>
+    <name value="CentralCancerRegistryReportingExample"/>
+    <title value="PlanDefinition Central Cancer Registry Reporting Example"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+            <code value="workflow-definition"/>
+            <display value="Workflow Definition"/>
+        </coding>
+    </type>
+    <experimental value="true"/>
+    <date value="2020-11-04T12:32:29.858-05:00"/>
+    <publisher value="HL7 Public Health Work Group"/>
+    <description value="This is a Cancer Registry Reporting Knowledge Artifact"/>
+    <effectivePeriod>
+        <start value="2021-11-01"/>
+    </effectivePeriod>
+    <relatedArtifact>
+        <label value="Central Cancer Registry Trigger Codes"/>
+        <resource value="http://hl7.org/fhir/us/central-cancer-registry-reporting/ValueSet/cancer-core-reportability-codes"/>
+    </relatedArtifact>
+    <action id="start-workflow">
+        <description value="This action represents the start of the reporting workflow in response to the new lab result"/>
+        <textEquivalent value="Start the reporting workflow in response to an new lab result"/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                <code value="initiate-reporting-workflow"/>
+            </coding>
+        </code>
+        <trigger id="new-labresult">
+            <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-us-ph-namedEventType">
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents"/>
+                        <code value="new-labresult"/>
+                        <display value="New Lab Result added"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <name value="new-labresult"/>
+        </trigger>
+        <relatedAction>
+            <actionId value="check-reportable"/>
+            <offsetDuration>
+                <value value="72"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="h"/>
+            </offsetDuration>
+        </relatedAction>
+    </action>
+    <action id="check-reportable">
+        <description value="This action represents the check for suspected reportability of the cancer data."/>
+        <textEquivalent value="Check Reportability and setup jobs for future reportability checks."/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                <code value="execute-reporting-workflow"/>
+            </coding>
+        </code>
+        <action id="is-encounter-reportable">
+            <description value="This action represents the check for reportability to create the patients eICR."/>
+            <textEquivalent value="Check Trigger Codes based on RCTC Value sets."/>
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                    <code value="check-trigger-codes"/>
+                </coding>
+            </code>
+            <condition>
+                <expression>
+                    <language value="text/fhirpath"/>
+                    <expression value="%DiagnosticReport.code.coding.where(system='http://loinc.org' and code='60568-3')"/></expression>
+            </condition>
+            <input id="DiagnosticReport">
+                <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-fhirquerypattern-extension">
+                    <valueString value="DiagnosticReport?code=http://loinc.org|60568-3&amp;patient=Patient/{{context.patientId}}"/>
+                </extension>
+                <type value="DiagnosticReport"/>
+                <codeFilter>
+                    <path value="code"/>
+                    <valueSet value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                </codeFilter>
+            </input>
+            <relatedAction>
+                <actionId value="report-cancer-data"/>
+            </relatedAction>
+        </action>
+        <action id="should-continue-reporting">
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                    <code value="evaluate-condition"/>
+                </coding>
+            </code>
+            <condition>
+                <expression>
+                    <language value="text/fhirpath"/>
+                    <expression value="%patient.deceased[x] == null"/></expression>
+            </condition>
+            <relatedAction>
+                <actionId value="check-reportable"/>
+                <offsetDuration>
+                    <value value="6"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="mo"/>
+                </offsetDuration>
+            </relatedAction>
+        </action>
+    </action>
+    <action id="report-cancer-path-data">
+        <description value="This action represents the creation, validation and submission of the cancer report."/>
+        <textEquivalent value="Check Reportability and setup jobs for future reportability checks."/>
+        <code>
+            <coding>
+                <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                <code value="execute-reporting-workflow"/>
+            </coding>
+        </code>
+        <action id="create-cancer-path-report">
+            <description value="This action represents the creation of the cancer pathology report."/>
+            <textEquivalent value="Central Cancer Registry Pathology Report"/>
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                    <code value="create-path-report"/>
+                </coding>
+            </code>
+            <input id="patient">
+                <type value="Patient"/>
+                <profile value="http://hl7.org/fhir/us/central-cancer-registry-reporting/StructureDefinition/cancer-patient"/>
+            </input>
+            <input id="DiagnosticReport">
+                <type value="DiagnosticReport"/>
+                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
+            </input>
+            <output id="cancer-path-report">
+                <type value="Bundle"/>
+                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
+            </output>
+            <relatedAction>
+                <actionId value="validate-report"/>
+            </relatedAction>
+        </action>
+        <action id="validate-cancer-report">
+            <description value="This action represents the validation of the cancer report."/>
+            <textEquivalent value="Validate Report"/>
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                    <code value="validate-report"/>
+                </coding>
+            </code>
+            <input id="created-cancer-path-report">
+                <type value="Bundle"/>
+                <profile value="https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html"/>
+            </input>
+            <output id="validated-cancer-path-report">
+                <type value="Bundle"/>
+                <profile value="https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html"/>
+            </output>
+            <relatedAction>
+                <actionId value="submit-report"/>
+            </relatedAction>
+        </action>
+        <action id="route-and-send-cancer-report">
+            <description value="This action represents the routing and sending of the cancer report."/>
+            <textEquivalent value="Route and send cancer report"/>
+            <code>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-plandefinition-actions"/>
+                    <code value="submit-report"/>
+                </coding>
+            </code>
+            <input id="val-cancer-path-report">
+                <type value="Bundle"/>
+                <profile value="https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html"/>
+            </input>
+        </action>
+    </action>
+</PlanDefinition>

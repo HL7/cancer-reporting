@@ -508,6 +508,14 @@
             <description value="This profile defines the expected capabilities of the ''LIS'' actor when conforming to the Cancer Pathology Data Sharing Guide.     This role is responsible for allowing creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs."/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="PlanDefinition/plandefinition-pathology-cancer-registry-reporting-example"/>
+                <display value="Central Cancer Registry Reporting Example PlanDefinition"/>
+            </reference>
+            <name value="Central Cancer Registry Reporting (example)"/>
+            <description value="This is an example of the Central Cancer Registry Reporting PlanDefinition."/>
+            <exampleBoolean value="true"/>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>

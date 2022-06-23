@@ -61,7 +61,7 @@
             <name value="Terminology"/>
         </grouping>
         <grouping id="new-group7">
-            <name value="Bundle, MessageHeader and PlanDefinition Examples"/>
+            <name value="Bundle, MessageHeader and Examples"/>
         </grouping>
         <grouping id="new-group9">
             <name value="DiagnosticReport, Specimen, and ServiceRequest Examples"/>
@@ -508,17 +508,6 @@
             <description value="This profile defines the expected capabilities of the ''EHR'' actor when conforming to the Cancer Pathology Data Sharing IG.     This role is responsible for allowing creation, modification and deletion of ServiceRequests that represent the request for Pathological analysis (and associated reports), and allows searching and retrieval of resources using US Core APIs."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group4"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PlanDefinition/plandefinition-pathology-cancer-registry-reporting-example"/>
-                <display value="CentralCancerRegistryReportingExample"/>
-            </reference>
-            <name value="Central Cancer Registry Reporting (example)"/>
-            <description value="This is an example of the Central Cancer Registry Reporting PlanDefinition."/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/central-cancer-registry-reporting/StructureDefinition/ccrr-plandefinition"/>
-            <groupingId value="new-group7"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

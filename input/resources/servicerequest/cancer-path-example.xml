@@ -6,6 +6,7 @@
         <versionId value="6"/>
         <lastUpdated value="2022-06-14T19:44:10.254+00:00"/>
         <source value="#4ilVzsX4Z70y61Dv"/>
+        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
     </meta>
     <status value="active"/>
     <intent value="order"/>

@@ -33,19 +33,14 @@
     <packageId value="hl7.fhir.us.cancer-reporting"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.1.0"/>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="4.1.0"/>
+        <version value="5.0.1"/>
     </dependsOn>
     <dependsOn id="hl7fhirusmedmorph">
         <uri value="http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph#0.2.0"/>
         <packageId value="hl7.fhir.us.medmorph"/>
         <version value="0.2.0"/>
-    </dependsOn>
-    <dependsOn id="hl7fhiruscentralcancerregistryreporting">
-        <uri value="http://hl7.org/fhir/us/central-cancer-registry-reporting/ImplementationGuide/hl7.fhir.us.central-cancer-registry-reporting#0.1.0"/>
-        <packageId value="hl7.fhir.us.central-cancer-registry-reporting"/>
-        <version value="0.1.0"/>
     </dependsOn>
     <definition>
         <grouping id="new-group5">

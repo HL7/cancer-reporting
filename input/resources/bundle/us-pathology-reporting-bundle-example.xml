@@ -336,7 +336,7 @@
                             </request>
                             <collection>
                                 <collector>
-                                    <reference value="PractitionerRole/practitioner-uspath-surgeon-example"/>
+                                    <reference value="PractitionerRole/uspath-surgeon-example"/>
                                 </collector>
                                 <collectedDateTime value="2022-01-02"/>
                             </collection>
@@ -412,7 +412,7 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitioner-uspath-surgeon-example"/>
+                    <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/uspath-surgeon-example"/>
                     <resource>
                         <PractitionerRole>
                             <id value="uspath-surgeon-example"/>

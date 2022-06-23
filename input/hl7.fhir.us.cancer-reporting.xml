@@ -61,7 +61,7 @@
             <name value="Terminology"/>
         </grouping>
         <grouping id="new-group7">
-            <name value="Bundle, MessageHeader and Examples"/>
+            <name value="Bundle and MessageHeader Examples"/>
         </grouping>
         <grouping id="new-group9">
             <name value="DiagnosticReport, Specimen, and ServiceRequest Examples"/>

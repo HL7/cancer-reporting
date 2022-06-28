@@ -39,6 +39,6 @@
         </coding>
     </reason>
     <focus>
-        <reference value="DiagnosticReport/pathology-diagnostic-report"/>
+        <reference value="Bundle/us-pathology-content-bundle-example"/>
     </focus>
 </MessageHeader>

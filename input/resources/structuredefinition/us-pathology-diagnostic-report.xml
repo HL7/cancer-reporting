@@ -39,7 +39,7 @@
         <element id="DiagnosticReport.effective[x]">
             <path value="DiagnosticReport.effective[x]"/>
             <constraint>
-                <key value="us-core-1"/>
+                <key value="path-reporting-1"/>
                 <severity value="error"/>
                 <human value="effectiveDateTime SHALL include the month and day"/>
                 <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>

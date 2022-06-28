@@ -8,7 +8,7 @@
         <source value="#PWUDh3opoMabaIc1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
-    <version value="0.1.0"/>
+    <version value="1.0.0"/>
     <name value="USCancerPathologyData"/>
     <title value="Cancer Pathology Data Sharing"/>
     <status value="draft"/>
@@ -119,7 +119,7 @@
                 <display value="USPathologyServiceRequest"/>
             </reference>
             <name value="US Pathology Service Request"/>
-            <description value="ServiceRequest profile for analysis of a pathological sample."/>
+            <description value="ServiceRequest profile for the request for the analysis of a pathological sample."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -148,7 +148,7 @@
                 <reference value="StructureDefinition/us-pathology-exchange-bundle"/>
                 <display value="US Pathology Exchange Bundle"/>
             </reference>
-            <name value="US Pathology ExchangeBundle"/>
+            <name value="US Pathology Exchange Bundle"/>
             <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;In order to properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group6"/>

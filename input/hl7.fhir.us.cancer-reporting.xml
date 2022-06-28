@@ -84,12 +84,23 @@
         <resource>
             <reference>
                 <reference value="Bundle/us-pathology-content-bundle-example"/>
-                <display value="Bundle - Pathology content bundle (example)"/>
+                <display value="Bundle - Pathology Content Bundle (example)"/>
             </reference>
             <name value="US Pathology Content bundle (example)"/>
-            <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
+            <description value="Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
+            <groupingId value="new-group7"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/us-pathology-exchange-bundle-example"/>
+                <display value="Bundle - Pathology Exchange Bundle (example)"/>
+            </reference>
+            <name value="US Pathology Exchange bundle (example)"/>
+            <description value="Inter-EHR Exchange Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
             <groupingId value="new-group7"/>
         </resource>
         <resource>
@@ -185,7 +196,7 @@
         <resource>
             <reference>
                 <reference value="MessageHeader/pathology-message-header"/>
-                <display value="MessageHeader (example)"/>
+                <display value="Message Header (example)"/>
             </reference>
             <name value="MessageHeader (example)"/>
             <description value="Example of a MessageHeader from a pathology environment into an EHR"/>

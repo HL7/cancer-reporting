@@ -17,9 +17,8 @@
             <MessageHeader>
                 <id value="pathology-message-header"/>
                 <meta>
-                    <profile
-                        value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"
-                    />
+                    <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+                    <profile value="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-messageheader"/>
                 </meta>
                 <text>
                     <status value="generated"/>

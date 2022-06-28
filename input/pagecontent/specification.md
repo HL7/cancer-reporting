@@ -6,7 +6,7 @@
 * [RESTful API](https://restfulapi.net/)
 * [FHIR Messaging](http://hl7.org/fhir/messaging.html)
 
-This guide defines 6 FHIR profiles:
+This guide defines 8 FHIR profiles:
 * [US Pathology MessageHeader](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
 * [US Pathology Cancer Registry Reporting Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle)(derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://hl7.org/fhir/us/medmorph/2021Jan/StructureDefinition-us-ph-reporting-bundle.html))
 * [US Pathology Cancer Registry Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](	http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-content-bundle))
@@ -16,7 +16,7 @@ This guide defines 6 FHIR profiles:
 * [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
 * [US Pathology Related Practitioner Roles](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
 
-This guide defines 1 value set and 1 code system:
+This guide defines 1 value set rooted in HL7 Terminology (THO):
 * [US Pathology Provider Types ValueSet](http://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
 
 #### Extensions
@@ -27,7 +27,7 @@ This specification conforms to US Core Profiles. To claim conformance to this sp
 * Be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition.
 * Conform to this IG’s Server Capability Statement expectations for that profile’s type.
 
-Details on profiles and extensions present in this specification are available on the [Artifact Index](artifacts.html#profiles) page.
+Details on profiles and extensions present in this specification are available on the Artifact Index page.
 
 ### Must Support and Missing Data
 Systems claiming to conform to a profile SHALL support the elements in a profile as defined below. This guide adopts the following definitions of MustSupport for all direct transactions between the Sending and Receiving Systems.

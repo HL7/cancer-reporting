@@ -5,7 +5,7 @@
         <versionId value="7"/>
         <lastUpdated value="2022-06-14T19:57:02.095+00:00"/>
         <source value="#rQ7uOUfOsjo8v8rx"/>
-        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
+        <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
     </meta>
     <type value="transaction"/>
     <timestamp value="2022-03-22T18:05:57.689+00:00"/>

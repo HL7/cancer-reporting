@@ -104,7 +104,6 @@ In the first scenario, this IG is designed to align with the [MedMorph Reference
 The second scenario, LIS to CCR exchange, is also outlined in this IG and guidelines can be found in the [Artifact Index](http://build.fhir.org/ig/HL7/cancer-reporting/artifacts.html).  
 
 **Figure: Data Flows Supported by this Implementation Guide**
-<table><tr><td><img src="CancerPath.jpg"/></td></tr></table>
 <table><tr><td><img src="CancerPath.png"/></td></tr></table>
 
 ### Ongoing Project Efforts

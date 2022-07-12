@@ -81,7 +81,7 @@
             <max value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
+                <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
             </type>
             <mustSupport value="true"/>
         </element>

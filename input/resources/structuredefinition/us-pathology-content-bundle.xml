@@ -134,5 +134,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Bundle.entry:organization">
+            <path value="Bundle.entry"/>
+            <sliceName value="organization"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:organization.resource">
+            <path value="Bundle.entry.resource"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
     </differential>
 </StructureDefinition>

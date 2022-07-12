@@ -79,6 +79,10 @@
             <sliceName value="diagnosticreport"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="Resource"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry:diagnosticreport.resource">

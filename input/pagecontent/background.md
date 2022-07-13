@@ -104,7 +104,7 @@ In the first scenario, this IG is designed to align with the [MedMorph Reference
 The second scenario, LIS to CCR exchange, is also outlined in this IG and guidelines can be found in the [Artifact Index](http://build.fhir.org/ig/HL7/cancer-reporting/artifacts.html).  
 
 **Figure: Data Flows Supported by this Implementation Guide**
-<img src="CancerPath.png"/>
+<table><tr><td><img src="CancerPath.png"/></td></tr></table>
 
 ### Ongoing Project Efforts
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions will also include mappings for CAP eCC Protocol CKey Identifier to SNOMED translation.  

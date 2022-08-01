@@ -26,7 +26,7 @@ There is a need for an electronic data exchange standard that maintains the disc
         <tr>
             <td class="tg-0lax">Message Header segment (MSH)</td>
             <td class="tg-0lax">2.6.1</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html">US Pathology MessageHeader</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html">US Pathology MessageHeader</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Software Segment (SFT)</td>
@@ -41,42 +41,42 @@ There is a need for an electronic data exchange standard that maintains the disc
         <tr>
             <td class="tg-0lax">Patient Visit segment (PV1)</td>
             <td class="tg-0lax">2.6.2</td>
-            <td class="tg-0lax"><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
+            <td class="tg-0lax"><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Common Order segment (ORC)</td>
             <td class="tg-0lax">2.7.1</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related PractitionerRole</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related PractitionerRole</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observations Report ID segment (OBR)</td>
             <td class="tg-0lax">2.7.2</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a>, <a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner Role</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner Role</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Notes and Comments segment (NTE)</td>
             <td class="tg-0lax">2.6.4</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observation/Result segment (OBX)</td>
             <td class="tg-0lax">2.7.3</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report results</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report results</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Notes and Comments segment (NTE)</td>
             <td class="tg-0lax">2.7.4</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Specimen (SPM)</td>
             <td class="tg-0lax">2.7.5</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-specimen.html">US Pathology Specimen</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html">US Pathology Specimen</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observation Related to Specimen (OBX)</td>
             <td class="tg-0lax">2.7.3</td>
-            <td class="tg-0lax"><a href="http://build.fhir.org/ig/HL7//2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Continuation Pointer (DSC)</td>
@@ -99,12 +99,12 @@ The Cancer Pathology Data Sharing IG reporting process focuses on transmitting S
 1. LIS to EHR and on to a CCR
 2. LIS to CCR 
 
-In the first scenario, this IG is designed to align with the [MedMorph Reference Architecture](http://hl7.org/fhir/us/medmorph/2022Jan/). The MedMorph RA now includes the [Central Cancer Registry Reporting Content IG(CCRRC IG)](https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html), which is a content IG supporting data exchange from ambulatory sources reporting cancer data to regional, state, and territorial public health CCRs. EHRs reporting pathology data to these registries via this pathway are expected to follow guidance provided in that IG, including guidelines on PlanDefinition and Subscriptions. This alignment ensures cancer data from both ambulatory and pathology sources are exchanged via a common architecture. 
+In the first scenario, this IG is designed to align with the [MedMorph Reference Architecture](http://hl7.org/fhir/us/medmorph/2021Jan/index.html). The MedMorph RA now includes the [Central Cancer Registry Reporting Content IG(CCRRC IG)](https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html), which is a content IG supporting data exchange from ambulatory sources reporting cancer data to regional, state, and territorial public health CCRs. EHRs reporting pathology data to these registries via this pathway are expected to follow guidance provided in that IG, including guidelines on PlanDefinition and Subscriptions. This alignment ensures cancer data from both ambulatory and pathology sources are exchanged via a common architecture. 
 
 The second scenario, LIS to CCR exchange, is also outlined in this IG and guidelines can be found in the [Artifact Index](http://build.fhir.org/ig/HL7/cancer-reporting/artifacts.html).  
 
 **Figure: Data Flows Supported by this Implementation Guide**
-<table><tr><td><img src="CancerPath.png"/></td></tr></table>
+<table><tr><td><img src="CancerPath"/></td></tr></table>
 
 ### Ongoing Project Efforts
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions will also include mappings for CAP eCC Protocol CKey Identifier to SNOMED translation.  

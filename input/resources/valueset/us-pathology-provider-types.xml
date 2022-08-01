@@ -11,7 +11,7 @@
     <name value="USPathologyProviderTypes"/>
     <title value="US Pathology Provider Types"/>
     <status value="draft"/>
-    <description value="ValueSet for Practitioner roles within NAACCR reporting. This ValueSet is composed of HL7 ParticipationType codes (found in PV1) and concepts from Pathology Provider Types CodeSystem (found in OBR)."/>
+    <description value="ValueSet for Practitioner roles within NAACCR reporting. This ValueSet is composed of HL7 ParticipationType codes (found in PV1) and concepts from Pathology Provider Types CodeSystem (found in OBR). "/>
     <compose>
         <include>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
@@ -34,7 +34,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0443"/>
+            <system value="https://terminology.hl7.org/CodeSystem-v2-0443.html"/>
             <concept>
                 <code value="CLP"/>
                 <display value="Collecting Provider"/>

@@ -20,6 +20,11 @@
     <differential>
         <element id="Specimen">
             <path value="Specimen"/>
+            <constraint>
+                <key value="raD7fTG6"/>
+                <severity value="warning"/>
+                <human value="collectedDateTime"/>
+            </constraint>
         </element>
         <element id="Specimen.identifier">
             <path value="Specimen.identifier"/>
@@ -46,6 +51,12 @@
         </element>
         <element id="Specimen.parent">
             <path value="Specimen.parent"/>
+            <constraint>
+                <key value="ch3j9pan"/>
+                <severity value="warning"/>
+                <human value="US Pathology Specimen Resource"/>
+                <source value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
+            </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Specimen.collection">

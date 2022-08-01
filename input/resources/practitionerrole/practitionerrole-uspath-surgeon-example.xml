@@ -16,9 +16,9 @@
     </organization>
     <code>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0443"/>
-            <code value="OP"/>
-            <display value="Ordering Provider"/>
+            <system value="https://terminology.hl7.org/CodeSystem-v2-0443"/>
+            <code value="CLP"/>
+            <display value="Collecting Provider: Surgeon performing the procedure to collect pathology sample."/>
         </coding>
     </code>
     <telecom>

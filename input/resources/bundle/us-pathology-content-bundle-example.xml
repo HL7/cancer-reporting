@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-content-bundle-example"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-06-14T19:57:02.095+00:00"/>
-        <source value="#rQ7uOUfOsjo8v8rx"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-07-12T18:34:42.620+00:00"/>
+        <source value="#1PdhGuarPiRMQBdO"/>
         <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
     </meta>
     <type value="collection"/>
@@ -13,8 +13,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"/>
         <resource>
-            <Patient
-                xmlns="http://hl7.org/fhir">
+            <Patient>
                 <id value="JoelAlexPatient"/>
                 <meta>
                     <versionId value="14"/>
@@ -27,6 +26,7 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">
                             Alex
+                            
                             
                             
                             <b>Joel </b>
@@ -62,8 +62,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Encounter/uspath-specimen-collection-example"/>
         <resource>
-            <Encounter
-                xmlns="http://hl7.org/fhir">
+            <Encounter>
                 <id value="uspath-specimen-collection-example"/>
                 <meta>
                     <versionId value="1"/>
@@ -107,8 +106,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/pathology-diagnostic-report"/>
         <resource>
-            <DiagnosticReport
-                xmlns="http://hl7.org/fhir">
+            <DiagnosticReport>
                 <id value="pathology-diagnostic-report"/>
                 <meta>
                     <versionId value="17"/>
@@ -275,8 +273,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Specimen/adrenal-example"/>
         <resource>
-            <Specimen
-                xmlns="http://hl7.org/fhir">
+            <Specimen>
                 <id value="adrenal-example"/>
                 <meta>
                     <versionId value="11"/>
@@ -323,8 +320,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-us-path-oncologist-example"/>
         <resource>
-            <PractitionerRole
-                xmlns="http://hl7.org/fhir">
+            <PractitionerRole>
                 <id value="practitionerrole-uspath-oncologist-example"/>
                 <meta>
                     <versionId value="1"/>
@@ -355,8 +351,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-pathologist-example"/>
         <resource>
-            <PractitionerRole
-                xmlns="http://hl7.org/fhir">
+            <PractitionerRole>
                 <id value="practitionerrole-uspath-pathologist-example"/>
                 <meta>
                     <versionId value="1"/>
@@ -387,8 +382,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitioner-uspath-surgeon-example"/>
         <resource>
-            <PractitionerRole
-                xmlns="http://hl7.org/fhir">
+            <PractitionerRole>
                 <id value="practitionerrole-uspath-surgeon-example"/>
                 <meta>
                     <versionId value="1"/>
@@ -419,8 +413,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Organization/Redwood-Womens-Center-PC"/>
         <resource>
-            <Organization
-                xmlns="http://hl7.org/fhir">
+            <Organization>
                 <id value="Redwood-Womens-Center-PC"/>
                 <meta>
                     <versionId value="1"/>
@@ -443,8 +436,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Organization/principal-pathology-lab"/>
         <resource>
-            <Organization
-                xmlns="http://hl7.org/fhir">
+            <Organization>
                 <id value="principal-pathology-lab"/>
                 <meta>
                     <versionId value="1"/>
@@ -467,8 +459,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/Practitioner/pathologist-example"/>
         <resource>
-            <Practitioner
-                xmlns="http://hl7.org/fhir">
+            <Practitioner>
                 <id value="pathologist-example"/>
                 <meta>
                     <versionId value="2"/>
@@ -490,8 +481,7 @@
     <entry>
         <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin"/>
         <resource>
-            <RelatedPerson
-                xmlns="http://hl7.org/fhir">
+            <RelatedPerson>
                 <id value="pathology-next-of-kin"/>
                 <meta>
                     <versionId value="6"/>

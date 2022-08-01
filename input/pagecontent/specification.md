@@ -8,9 +8,9 @@
 
 This guide defines 8 FHIR profiles:
 * [US Pathology MessageHeader](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Cancer Registry Reporting Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle)(derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://hl7.org/fhir/us/medmorph/2022Jan/StructureDefinition-us-ph-reporting-bundle.html)
-* [US Pathology Cancer Registry Content Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition/us-pathology-content-bundle)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](	http://build.fhir.org/ig/HL7/medmorph/StructureDefinition/us-ph-content-bundle))
-* [US Pathology Exchange Content Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle)
+* [US Pathology Cancer Registry Reporting Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle)(derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://hl7.org/fhir/us/medmorph/2021Jan/StructureDefinition-us-ph-reporting-bundle.html))
+* [US Pathology Cancer Registry Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](	http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-content-bundle))
+* [US Pathology Exchange Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle)
 * [US Pathology Diagnostic Report](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
 * [US Pathology Specimen](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
 * [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
@@ -44,7 +44,7 @@ Systems claiming to conform to a profile SHALL support the elements in a profile
 * Receiving Systems SHALL be able to process resource instances containing data elements asserting missing information without generating an error or causing the application to fail.
 
 ### Conformance to US Core Profile
-Where this IG does not additionally constrain a US Core profile, the actors shall follow the US Core definition of [Must Support and Missing Data](http://build.fhir.org/ig/HL7/core/general-guidance.html).
+Where this IG does not additionally constrain a US Core profile, the actors shall follow the US Core definition of [Must Support and Missing Data](http://hl7.org/fhir/us/core/general-guidance.html).
 
 ### Privacy and Security
 Systems implementing this guide are expected to follow the general [FHIR Security](https://www.hl7.org/fhir/security.html) guidelines, as well as all additionally applicable public and private laws and policies.

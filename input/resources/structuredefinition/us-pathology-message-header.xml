@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="us-pathology-message-header"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-04-20T20:57:28.719+00:00"/>
-        <source value="#PWaflBBinRBVeE4u"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-06-23T19:36:15.268+00:00"/>
+        <source value="#WOGqQOKD5Ix4nnVD"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
     <version value="1.0.0"/>

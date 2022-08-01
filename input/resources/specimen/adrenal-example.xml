@@ -31,7 +31,7 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="129314006"/>
-                <display value="Biopsy - action"/>
+                <display value="Biopsy-action"/>
             </coding>
         </method>
     </collection>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement
     xmlns="http://hl7.org/fhir">
-    <id value="pathology-lab-information-system"/>
+    <id value="pathology-lab-info-system"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-06-16T20:38:40.839+00:00"/>
-        <source value="#8miJe7tKT3dc93yA"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-06-16T19:18:00.607+00:00"/>
+        <source value="#EZTi4bDkGGYpF1xd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/pathology-lab-information-system"/>
     <version value="0.2.0"/>

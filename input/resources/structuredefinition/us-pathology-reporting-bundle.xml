@@ -16,7 +16,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>
-    <baseDefinition value="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-reporting-bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/us/medmorph/2022Jan/StructureDefinition-us-ph-reporting-bundle.html"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Bundle">

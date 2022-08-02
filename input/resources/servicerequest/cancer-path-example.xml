@@ -19,7 +19,7 @@
     </category>
     <code>
         <coding>
-            <system value="http://snomed.info/sct/731000124108"/>
+            <system value="http://snomed.info/sct"/>
             <code value="50322008"/>
             <display value="Surgical pathology specimen, clerical procedure including coding of diagnoses"/>
         </coding>

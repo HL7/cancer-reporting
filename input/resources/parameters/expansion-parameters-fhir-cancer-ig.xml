@@ -13,6 +13,6 @@
     </parameter>
     <parameter>
         <name value="system-version"/>
-        <valueString value="http://snomed.info/sct/731000124108/731000124108"/>
+        <valueString value="http://snomed.info/sct"/>
     </parameter>
 </Parameters>

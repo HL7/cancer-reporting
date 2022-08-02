@@ -12,7 +12,7 @@
     <type value="message"/>
     <entry>
         <fullUrl
-            value="http://hl7.org/fhir/us/cancer-reporting/MessageHeader/pathology-message-header"/>
+            value="http://hl7.org/fhir/us/cancer-reporting/MessageHeader/us-pathology-message-header"/>
         <resource>
             <MessageHeader>
                 <id value="pathology-message-header"/>

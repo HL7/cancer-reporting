@@ -29,7 +29,7 @@
         <collectedDateTime value="2022-01-02"/>
         <method>
             <coding>
-                <system value="http://snomed.info/sct"/>
+                <system value="http://snomed.info/sct/731000124108"/>
                 <code value="129314006"/>
                 <display value="Biopsy - action"/>
             </coding>

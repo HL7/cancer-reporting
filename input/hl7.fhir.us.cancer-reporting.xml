@@ -536,7 +536,7 @@
             </page>
         </page>
         <parameter>
-            <code value="expansion-parameter"/>
+            <code value="path-expansion-params"/>
             <value value="resources/parameters/expansion-parameters-fhir-cancer-ig.xml"/>
         </parameter>
         <parameter>

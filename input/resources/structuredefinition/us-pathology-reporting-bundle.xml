@@ -34,13 +34,13 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:us_pathology_message_header">
+        <element id="Bundle.entry:sliceMessageHeader">
             <path value="Bundle.entry"/>
-            <sliceName value="entry:sliceMessageHeader"/>
+            <sliceName value="sliceMessageHeader"/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Bundle.entry:us_pathology_message_header.resource">
+        <element id="Bundle.entry:sliceMessageHeader.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
@@ -48,13 +48,13 @@
                 <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
             </type>
         </element>
-        <element id="Bundle.entry:us_pathology_content_bundle">
+        <element id="Bundle.entry:contentBundle">
             <path value="Bundle.entry"/>
-            <sliceName value="entry:contentBundle"/>
+            <sliceName value="contentBundle"/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Bundle.entry:us_pathology_content_bundle.resource">
+        <element id="Bundle.entry:contentBundle.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>

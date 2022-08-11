@@ -16,7 +16,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-reporting-bundle"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Bundle">
@@ -36,7 +36,7 @@
         </element>
         <element id="Bundle.entry:us_pathology_message_header">
             <path value="Bundle.entry"/>
-            <sliceName value="us_pathology_message_header"/>
+            <sliceName value="entry:sliceMessageHeader"/>
             <min value="1"/>
             <max value="1"/>
         </element>
@@ -50,7 +50,7 @@
         </element>
         <element id="Bundle.entry:us_pathology_content_bundle">
             <path value="Bundle.entry"/>
-            <sliceName value="us_pathology_content_bundle"/>
+            <sliceName value="entry:contentBundle"/>
             <min value="1"/>
             <max value="1"/>
         </element>

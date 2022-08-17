@@ -6,10 +6,10 @@ This guide defines 8 FHIR profiles:
 * [US Pathology Cancer Registry Reporting Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-reporting-bundle.html)
 * [US Pathology Cancer Registry Content Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-content-bundle.html)derived from FHIR R4 [MedMorph US Public Health Content Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-content-bundle.html)
 * [US Pathology Exchange Content Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-exchange-bundle.html)
-* [US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
-* [US Pathology Specimen](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
-* [US Pathology Service Request](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
-* [US Pathology Related Practitioner Roles](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
+* [US Pathology Diagnostic Report](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
+* [US Pathology Specimen](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
+* [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
+* [US Pathology Related Practitioner Roles](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
 
 This guide defines 1 value set and 1 code system:
 * [US Pathology Provider Types ValueSet](http://hl7.org/fhir/us/cancer-reporting/ValueSet-us-pathology-provider-types.html)

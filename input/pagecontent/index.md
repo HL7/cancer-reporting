@@ -1,10 +1,10 @@
-This implementation guide (IG) provides HL7 FHIR resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or support sending pathology messages to cancer registries. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
+This implementation guide(IG) provides HL7 FHIR resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or support sending pathology messages to cancer registries. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
 
 ### Scope
-This guide defines 6 FHIR profiles:
-* [US Pathology MessageHeader](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Cancer Registry Reporting Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle)(derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-reporting-bundle))
-* [US Pathology Cancer Registry Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](	http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-content-bundle))
+This guide defines 8 FHIR profiles:
+* [US Pathology MessageHeader](us-pathology-message-header.html)
+* [US Pathology Cancer Registry Reporting Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-reporting-bundle)
+* [US Pathology Cancer Registry Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-content-bundle))
 * [US Pathology Exchange Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle)
 * [US Pathology Diagnostic Report](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
 * [US Pathology Specimen](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)

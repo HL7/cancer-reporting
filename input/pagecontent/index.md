@@ -2,7 +2,7 @@ This implementation guide(IG) provides HL7 FHIR resources to define standards fo
 
 ### Scope
 This guide defines 8 FHIR profiles:
-* [US Pathology MessageHeader](us-pathology-message-header.html)
+* [US Pathology MessageHeader](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
 * [US Pathology Cancer Registry Reporting Bundle](us-pathology-reporting-bundle.html) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-reporting-bundle)
 * [US Pathology Cancer Registry Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-content-bundle))
 * [US Pathology Exchange Content Bundle](http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle)

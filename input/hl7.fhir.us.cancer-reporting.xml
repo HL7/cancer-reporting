@@ -545,7 +545,7 @@
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="DRAFT"/>
+            <value value="STU1"/>
         </parameter>
     </definition>
 </ImplementationGuide>

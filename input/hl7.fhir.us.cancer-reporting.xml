@@ -492,7 +492,7 @@
             </reference>
             <name value="expansion-parameters-fhir-cancer-ig"/>
             <description value="Expansion parameters for the Cancer FHIR Path IG, which references US edition of SNOMED CT version in the parameters (http://snomed.info/sct/731000124108/731000124108)."/>
-            <exampleBoolean value="true"/>
+            <exampleBoolean value="false"/>
             <groupingId value="new-group4"/>
         </resource>
         <resource>
@@ -536,8 +536,8 @@
             </page>
         </page>
         <parameter>
-            <code value="expansion-parameter"/>
-            <value value="expansion-parameters-fhir-cancer-ig"/>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-fhir-cancer-ig.xml"/>
         </parameter>
         <parameter>
             <code value="copyrightyear"/>

@@ -2,17 +2,17 @@ This implementation guide(IG) provides HL7 FHIR resources to define standards fo
 
 ### Scope
 This guide defines 8 FHIR profiles:
-* [US Pathology MessageHeader](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Cancer Registry Reporting Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-reporting-bundle.html)
-* [US Pathology Cancer Registry Content Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-content-bundle.html)derived from FHIR R4 [MedMorph US Public Health Content Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-content-bundle.html)
-* [US Pathology Exchange Content Bundle](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-exchange-bundle.html)
-* [US Pathology Diagnostic Report](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/2022Jan/StructureDefinition-us-core-diagnosticreport-note.html)
-* [US Pathology Specimen](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/specimen.html)
-* [US Pathology Service Request](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-servicerequest.html)
-* [US Pathology Related Practitioner Roles](http://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
+* [US Pathology MessageHeader](StructureDefinition-us-pathology-message-header.html)
+* [US Pathology Cancer Registry Reporting Bundle](StructureDefinition-us-pathology-reporting-bundle.html) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-reporting-bundle.html)
+* [US Pathology Cancer Registry Content Bundle](StructureDefinition-us-pathology-content-bundle.html)derived from FHIR R4 [MedMorph US Public Health Content Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-content-bundle.html)
+* [US Pathology Exchange Content Bundle](StructureDefinition-us-pathology-exchange-bundle.html)
+* [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/2022Jan/StructureDefinition-us-core-diagnosticreport-note.html)
+* [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/specimen.html)
+* [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-servicerequest.html)
+* [US Pathology Related Practitioner Roles](StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
 
 This guide defines 1 value set and 1 code system:
-* [US Pathology Provider Types ValueSet](http://hl7.org/fhir/us/cancer-reporting/ValueSet-us-pathology-provider-types.html)
+* [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)
 
 ### Dependencies
 This guide leverages the [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020](https://www.naaccr.org/wp-content/uploads/2020/07/NAACCR-Vol-V_Revised_20200720.pdf) (Revised 2020).

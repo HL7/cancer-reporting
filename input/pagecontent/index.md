@@ -3,13 +3,13 @@ This implementation guide(IG) provides HL7 FHIR resources to define standards fo
 ### Scope
 This guide defines 8 FHIR profiles:
 * [US Pathology MessageHeader](StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Cancer Registry Reporting Bundle](StructureDefinition-us-pathology-reporting-bundle.html) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-reporting-bundle.html)
-* [US Pathology Cancer Registry Content Bundle](StructureDefinition-us-pathology-content-bundle.html)derived from FHIR R4 [MedMorph US Public Health Content Bundle](http://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-content-bundle.html)
+* [US Pathology Cancer Registry Reporting Bundle](StructureDefinition-us-pathology-reporting-bundle.html) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](https://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-reporting-bundle.html)
+* [US Pathology Cancer Registry Content Bundle](StructureDefinition-us-pathology-content-bundle.html)derived from FHIR R4 [MedMorph US Public Health Content Bundle](https://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-content-bundle.html)
 * [US Pathology Exchange Content Bundle](StructureDefinition-us-pathology-exchange-bundle.html)
-* [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/2022Jan/StructureDefinition-us-core-diagnosticreport-note.html)
+* [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html)
 * [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/specimen.html)
-* [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](http://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-servicerequest.html)
-* [US Pathology Related Practitioner Roles](StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
+* [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](https://hl7.org/fhir/us/core/StructureDefinition-us-core-servicerequest.html)
+* [US Pathology Related Practitioner Roles](StructureDefinition-us-pathology-related-practitioner-role.html) derived from [US Core PractitionerRole](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitionerrole.html)
 
 This guide defines 1 value set and 1 code system:
 * [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)
@@ -23,7 +23,7 @@ This guide also leverages profiles from the latest versions of:
 * [US Core Practitioner](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner.html)
 * [US Core Procedure](http://hl7.org/fhir/us/core/StructureDefinition-us-core-procedure.html)
 * [US Core Organization](http://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html)
-* [Making EHR Data More Available for Research and Public Health (MedMorph)](http://build.fhir.org/ig/HL7/fhir-medmorph/index.html), which was balloted in January 2021. Changes to the MedMorph specification are managed by the sponsoring Public Health Work Group and are incorporated as part of the standard balloting and publication process. This IG may require updates as MedMorph is finalized. 
+* [Making EHR Data More Available for Research and Public Health (MedMorph)](https://build.fhir.org/ig/HL7/fhir-medmorph/index.html), which was balloted in January 2021. Changes to the MedMorph specification are managed by the sponsoring Public Health Work Group and are incorporated as part of the standard balloting and publication process. This IG may require updates as MedMorph is finalized. 
 
 ### Audience
 The audience for this implementation guide includes architects and developers of clinical and pathology laboratory health record systems as well as cancer registry systems in the US Realm. Business analysts and policy managers can also benefit from a basic understanding of the use of this cancer pathology data standard to support data flows from pathology laboratories.

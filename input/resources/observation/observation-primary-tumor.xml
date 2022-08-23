@@ -8,13 +8,13 @@
         <source value="#bPPk2SKqYTPouQBI"/>
     </meta>
     <identifier>
-        <system value="https://CAP.org"/>
+        <system value="https://example.org"/>
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
-            <system value="https://CAP.org"/>
+            <system value="https://example.org"/>
             <code value="2137.100004300"/>
             <display value="Primary Tumor (pT)"/>
         </coding>
@@ -24,7 +24,7 @@
     </subject>
     <valueCodeableConcept>
         <coding>
-            <system value="https://CAP.org"/>
+            <system value="https://example.org"/>
             <code value="2142.100004300"/>
             <display value="pTX: Primary tumor cannot be assessed"/>
         </coding>

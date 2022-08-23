@@ -8,13 +8,13 @@
         <source value="#y9IJQy2D8W94TBGx"/>
     </meta>
     <identifier>
-        <system value="https://CAP.org"/>
+        <system value="https://example.org"/>
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
-            <system value="https://CAP.org"/>
+            <system value="https://example.org"/>
             <code value="20880.100004300"/>
             <display value="TNM Descriptors"/>
         </coding>
@@ -25,7 +25,7 @@
     <component>
         <code>
             <coding>
-                <system value="https://CAP.org"/>
+                <system value="https://example.org"/>
                 <code value="20890.100004300"/>
                 <display value="m (multiple primary tumors)"/>
             </coding>

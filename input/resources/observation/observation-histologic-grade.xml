@@ -8,13 +8,13 @@
         <source value="#Lvd7a0xoTrNLjhhg"/>
     </meta>
     <identifier>
-        <system value="https://CAP.org"/>
+        <system value="https://example.org"/>
         <value value="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"/>
     </identifier>
     <status value="final"/>
     <code>
         <coding>
-            <system value="https://CAP.org"/>
+            <system value="https://example.org"/>
             <code value="49275.100004300"/>
             <display value="Histologic Grade (Notes C through E)"/>
         </coding>
@@ -24,7 +24,7 @@
     </subject>
     <valueCodeableConcept>
         <coding>
-            <system value="https://CAP.org"/>
+            <system value="https://example.org"/>
             <code value="48634.100004300"/>
             <display value="High grade (&gt; 20 mitoses / 50 high-power fields)"/>
         </coding>

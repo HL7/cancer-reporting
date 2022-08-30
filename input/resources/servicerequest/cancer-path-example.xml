@@ -12,6 +12,13 @@
     <intent value="order"/>
     <category>
         <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="386053000"/>
+            <display value="Evaluation procedure (procedure)"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
             <system value="http://loinc.org"/>
             <code value="60567-5"/>
             <display value="Comprehensive pathology report panel"/>

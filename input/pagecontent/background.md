@@ -119,21 +119,20 @@ There are also several cancer pathology exchange initiatives underway internatio
 | Role | Name | Affiliation | Contact |
 | -------- | -------- | -------- | -------- |
 | Primary Editor | **David deRoode** | Lantana Consulting Group | david.deroode@lantanagroup.com|
-| Co-Editor | **Rick Geimer** | Lantana Consulting Group | rick.geimer@lantanagroup.com|
+| Primary Editor | **Rick Geimer** | Lantana Consulting Group | rick.geimer@lantanagroup.com|
 | Co-Editor | **Zabrina Gonzaga** | Lantana Consulting Group | zabrina.gonzaga@lantanagroup.com|
 | Co-Editor | **Wendy Wise** | Lantana Consulting Group | wendy.wise@lantanagroup.com|
 | Co-Editor | **Ruby Nash** | Lantana Consulting Group | ruby.nash@lantanagroup.com|
 | Co-Editor | **Diana Wright** | Lantana Consulting Group | diana.wright@lantanagroup.com|
 | Co-Editor | **Max Nakamura** | Lantana Consulting Group | max.nakamura@lantanagroup.com|
-| Subject Matter Expert | **Sandy Jones** | Centers for Disease Control and Prevention (CDC) | sft1@cdc.gov|
-| Subject Matter Expert | **Caitlin Kennedy** | Centers for Disease Control and Prevention (CDC) | mhy5@cdc.gov|
 | Subject Matter Expert | **Wendy Blumenthal** | Centers for Disease Control and Prevention (CDC) | wfb6@cdc.gov|
 | Subject Matter Expert |**David Jones** | Centers for Disease Control and Prevention (CDC) | pvl1@cdc.gov|
+| Subject Matter Expert | **Sandy Jones** | Centers for Disease Control and Prevention (CDC) | sft1@cdc.gov|
+| Subject Matter Expert | **Caitlin Kennedy** | Centers for Disease Control and Prevention (CDC) | mhy5@cdc.gov|
 | Subject Matter Expert | **Temitope Alimi** | Katmai Government Services contract to CDC | nyj4@cdc.gov|
 | Subject Matter Expert | **Wendy Scharber** | Katmai Government Services/Registry Widgets contract to CDC | wendy@registrywidgets.com|
-| Subject Matter Expert | **Alex Goel** | College of American Pathologists | agoel@cap.org|
 | Subject Matter Expert | **Richard (Rich) Moldwin** | College of American Pathologists | rmoldwi@cap.org|
-
+| Subject Matter Expert | **Alex Goel** | College of American Pathologists | agoel@cap.org|
 | Subject Matter Expert | **Walter (Scott) Campbell** | University of Nebraska Medical Center | wcampbel@unmc.edu |
 
 **Current Work Group** includes those who participated in the Cancer FHIR IG project: Hans Buitendijk, David Burgess, Lorraine Constable, Robert Hausam, Ralf Herzog, Patrick Loyd, Ulrike (Riki) Merrick, John David Nolen, James Alexander (Alex) Mays, Andrea Pitkus, Craig Newman, James Tcheng, Laura Heermann, and Calvin Beebe.

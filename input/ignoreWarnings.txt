@@ -1,4 +1,5 @@
 == Suppressed Messages ==
+
 # Bundle with open slices may (but are not required to) contain US Core profiles; as optional US Core slices do not need to be defined in these Bundle profiles, US Core slice (entries) are not expected to match profile slices
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle

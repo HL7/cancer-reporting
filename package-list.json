@@ -33,5 +33,5 @@
   "package-id": "hl7.fhir.us.cancer-reporting",
   "title": "Sharing eCC Data from Pathology Labs to EHR",
   "canonical": "http://hl7.org/fhir/us/cancer-reporting",
-  "category": "Orders and Observaitons"
+  "category": "Orders and Observations"
 }

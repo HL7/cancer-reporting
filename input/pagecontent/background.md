@@ -90,7 +90,7 @@ This IG defines an electronic data exchange standard that maintains the discrete
 
 ### Relationship to IHE SDC on FHIR
 
-The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), uses a form driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists has developed and tested the IHE SDC IG for collection of data from electronic Cancer Protocols (eCPs). The goal of IHE SDC eCP on FHIR is to extract data from these cancer checklists and create FHIR Observations for better interoperability between systems.
+The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCP on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), uses a form driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists has developed and tested the IHE SDC IG for collection of data from electronic Cancer Protocols (eCPs). The goal of IHE SDC eCP on FHIR is to extract data from these cancer checklists and create FHIR Observations for better interoperability between systems.
 
 This Cancer Electronic Pathology Reporting FHIR IG and the IHE SDC eCP on FHIR are aligned and meant to operate together. Pathology data entered into an eCP by a pathologist can be converted into FHIR observations via the IHE SDC on FHIR IG. At that point, it can be transmitted to the Central Cancer Registry (CCR) either directly from the LIS or via an EHR intermediary. Both scenarios are described in this IG.
 
@@ -103,7 +103,7 @@ The Cancer Pathology Data Sharing IG reporting process focuses on transmitting S
 
 In the first scenario, this IG is designed to align with the [MedMorph Reference Architecture](http://build.fhir.org/ig/HL7/fhir-medmorph/). The MedMorph RA now includes the [Central Cancer Registry Reporting Content IG(CCRRC IG)](https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html), which is a content IG supporting data exchange from ambulatory sources to CCRs for public health use. The first exchange method described above leverages these existing MedMorph IGs to exchange data from a LIS to a CCR via an EHR intermediary. EHRs reporting pathology data to these CCR registries via this pathway that aligns with MedMorph via an EHR are expected to follow guidance provided in the CCR IG, including guidelines on PlanDefinition and Subscriptions. This alignment ensures cancer data from both ambulatory and pathology sources are exchanged via a common architecture.
 
-The second scenario, LIS to CCR exchange, is also outlined in this IG and guidelines can be found in the [Artifact Index](http://build.fhir.org/ig/HL7/cancer-reporting/artifacts.html).  
+The second scenario, LIS to CCR exchange, is also outlined in this IG and guidelines can be found in the [Artifact Index](https://build.fhir.org/ig/HL7/cancer-reporting/artifacts.html).  
 
 **Figure: Data Flows Supported by this Implementation Guide**
 <table><tr><td><img src="CancerPath.jpg"/></td></tr></table>

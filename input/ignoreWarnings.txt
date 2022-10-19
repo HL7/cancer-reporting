@@ -1,7 +1,16 @@
 == Suppressed Messages ==
-# Expected unknown example CodeSystem
-Code System URI 'https://example.org' is unknown so the code cannot be validated
-
 # Bundle with open slices may (but are not required to) contain US Core profiles; as optional US Core slices do not need to be defined in these Bundle profiles, US Core slice (entries) are not expected to match profile slices
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle
+
+# Copyright is not applicable
+The markdown contains content that appears to be an embedded HTML tag starting at '<c'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+
+# HTML fragments are not needed for this guide
+The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
+The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+# US Core Specimen profile is not published
+US FHIR Usage rules require that all profiles on Specimen derive from the core US profile. Comparison with US Core Specimen Profile

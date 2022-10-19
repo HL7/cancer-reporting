@@ -1,9 +1,11 @@
 ### Relationship to NAACCR Volume V
-This cancer pathology reporting FHIR IG has been developed by Cancer ePathology Reporting Project in collaboration with the IHE SDC/eCC on FHIR Project, both under the Orders & Observations Working Group, and with other stakeholders. It provides an alternative to the HL7 Version 2.5.1 Message approach used by the NAACCR Standards for Cancer Registries Volume V for cancer pathology synoptic reports. The following table illustrates the mapping of the well-established NAACCR segments to FHIR resources.
+This cancer pathology reporting FHIR IG has been developed by Cancer ePathology Reporting Project in collaboration with the IHE SDC/eCP on FHIR Project, both under the Orders & Observations Working Group, and with other stakeholders. It provides an alternative to the HL7 Version 2.5.1 message or HL7 CDA document approach. The following table illustrates the mapping of the well-established NAACCR segments to FHIR resources.
 
-The [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020 (Revised 2020)](https://www.naaccr.org/wp-content/uploads/2020/05/NAACCR-Vol-V_20200526.pdf) defines the standard message format for transmitting pathology laboratory information to central cancer registries using the [HL7 Version 2.5.1 Message](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=144) format. At present, patient and specimen data flow from the clinic and EHR to the pathology lab in a variety of formats (HL7 V2, CDA, etc.). While discrete data elements are captured in electronic format in most laboratory information systems (LISs), typically, synoptic cancer pathology reports then flow from the LIS to EHRs in non-discrete data formats (e.g., pdf format). 
+At present, patient and specimen data flow from the clinic and EHR to the pathology lab in a variety of formats, such as HL7 V2 (other formats exist too such as CDA). The [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020 (Revised 2020)](https://www.naaccr.org/wp-content/uploads/2020/05/NAACCR-Vol-V_20200526.pdf) defines this standard message format for transmitting pathology laboratory information to central cancer registries using the [HL7 Version 2.5.1 Message](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=144) format. 
 
-There is a need for an electronic data exchange standard that maintains the discrete cancer data when exchanging information among pathology laboratories, hospital systems, and registries for continuity of care, cancer reporting, and research. In addition, starting in December 2022, CMS and ONC require certified HIT vendors to implement FHIR-based APIs (see [ONC’s Cure Act Final Rule](https://www.healthit.gov/curesrule/download)). This IG is intended to assist pathology laboratory reporting in moving from V2 to FHIR alignment in accordance with that initiative.  
+This IG provides an alternative to the HL7 V2 message for promoting better interoperability and scalability. Another issue this IG helps address is the storage and exchange of pathology lab data. That is, while discrete data elements are captured in electronic format in most laboratory information systems (LISs), typically, synoptic cancer pathology reports then flow from the LIS to EHRs in non-discrete data formats (e.g., pdf format). This IG helps address these issues.
+
+This IG defines an electronic data exchange standard that maintains the discrete cancer pathology data when exchanging information among pathology laboratories, hospital systems, and registries for continuity of care, structured storage and exchange, standardized cancer reporting, and research. In addition, there is growing industry facilitation of FHIR standards for these kinds of use cases. For instance, starting in December 2022, CMS and ONC require certified HIT vendors to implement FHIR-based APIs (see [ONC’s Cure Act Final Rule](https://www.healthit.gov/curesrule/download)). This IG is intended to assist pathology laboratory reporting in moving from V2 to FHIR alignment in accordance with that modern interoperability initiative.  
 
 ### FHIR Profiles to Capture NAACCR Volume V
 <style type="text/css">
@@ -88,23 +90,23 @@ There is a need for an electronic data exchange standard that maintains the disc
 
 ### Relationship to IHE SDC on FHIR
 
-The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), (under development) uses a form driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists has implemented IHE SDC for collection of electronic Cancer Checklists (eCCs). The goal of IHE SDC eCC on FHIR is to extract data from these cancer checklists and create FHIR Observations for interoperability between systems.
+The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCC on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), uses a form driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists has developed and tested the IHE SDC IG for collection of data from electronic Cancer Protocols (eCPs). The goal of IHE SDC eCP on FHIR is to extract data from these cancer checklists and create FHIR Observations for better interoperability between systems.
 
-This Cancer Electronic Pathology Reporting FHIR IG and the future IHE SDC eCC on FHIR should complement each other. Pathology data entered into an eCC can be converted into FHIR via the IHE SDC on FHIR IG. From there, it can be transmitted from LIS to EHR or Central Cancer Registry (CCR) using this IG. 
+This Cancer Electronic Pathology Reporting FHIR IG and the IHE SDC eCP on FHIR are aligned and meant to operate together. Pathology data entered into an eCP by a pathologist can be converted into FHIR observations via the IHE SDC on FHIR IG. At that point, it can be transmitted to the Central Cancer Registry (CCR) either directly from the LIS or via an EHR intermediary. Both scenarios are described in this IG.
 
 ### Relationship to MedMorph
 
-The Cancer Pathology Data Sharing IG reporting process focuses on transmitting SDC/eCC on FHIR pathology resource bundles and distributing them via two pathways
+The Cancer Pathology Data Sharing IG reporting process focuses on transmitting SDC/eCP on FHIR pathology resource bundles and distributing them via two pathways
 
-1. LIS to EHR and on to a CCR
-2. LIS to CCR 
+1. LIS to CCR via an EHR
+2. LIS to CCR directly
 
-In the first scenario, this IG is designed to align with the [MedMorph Reference Architecture](http://hl7.org/fhir/us/medmorph/2022Jan/). The MedMorph RA now includes the [Central Cancer Registry Reporting Content IG(CCRRC IG)](https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html), which is a content IG supporting data exchange from ambulatory sources reporting cancer data to regional, state, and territorial public health CCRs. EHRs reporting pathology data to these registries via this pathway are expected to follow guidance provided in that IG, including guidelines on PlanDefinition and Subscriptions. This alignment ensures cancer data from both ambulatory and pathology sources are exchanged via a common architecture. 
+In the first scenario, this IG is designed to align with the [MedMorph Reference Architecture](http://build.fhir.org/ig/HL7/fhir-medmorph/). The MedMorph RA now includes the [Central Cancer Registry Reporting Content IG(CCRRC IG)](https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html), which is a content IG supporting data exchange from ambulatory sources to CCRs for public health use. The first exchange method described above leverages these existing MedMorph IGs to exchange data from a LIS to a CCR via an EHR intermediary. EHRs reporting pathology data to these CCR registries via this pathway that aligns with MedMorph via an EHR are expected to follow guidance provided in the CCR IG, including guidelines on PlanDefinition and Subscriptions. This alignment ensures cancer data from both ambulatory and pathology sources are exchanged via a common architecture.
 
-The second scenario, LIS to CCR exchange, is also outlined in this IG and guidelines can be found in the [Artifact Index](http://hl7.org/fhir/us/cancer-reporting/artifacts.html).  
+The second scenario, LIS to CCR exchange, is also outlined in this IG and guidelines can be found in the [Artifact Index](http://build.fhir.org/ig/HL7/cancer-reporting/artifacts.html).  
 
 **Figure: Data Flows Supported by this Implementation Guide**
-<table><tr><td><img src="CancerPath.png"/></td></tr></table>
+<table><tr><td><img src="CancerPath.jpg"/></td></tr></table>
 
 ### Ongoing Project Efforts
 This project acknowledges that there is an ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions will also include mappings for CAP eCC Protocol CKey Identifier to SNOMED translation.  

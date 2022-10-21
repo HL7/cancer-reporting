@@ -3,7 +3,7 @@ The Cancer Pathology Data Sharing IG reporting process documents best practices 
 1. Laboratory Inforamation Systems (LIS) to CCR via an EHR intermediary
 2. LIS to CCR directly
 
-This publication promotes structured data collection and exchange of cancer pathology data, provides the data model, defined data items and their corresponding code and value sets. This guide helps collect, store, and exchange specific to a cancer pathology synoptic report for public health reporting. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
+This publication promotes structured data collection and exchange of cancer pathology data, provides the data model, defined data items and their corresponding code and value sets. This guide helps collect and exchange data specific to a cancer pathology synoptic report for public health reporting. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
 
 ### Scope
 This guide defines 8 FHIR profiles:
@@ -34,7 +34,7 @@ This guide also leverages profiles from the latest versions of:
 The audience for this implementation guide includes architects and developers of clinical and pathology laboratory health record systems as well as cancer registry systems in the US Realm. Business analysts and policy managers can also benefit from a basic understanding of the use of this cancer pathology data standard to support data flows from pathology laboratories.
 
 ### Acknowledgements
-This library of FHIR resources was developed and produced through the efforts of Health Level Seven (HL7). The editors appreciate the support of all volunteers and staff associated with the creation of this document and the sponsorship of the following Work Groups: Orders & Observations, Vocabulary Work Group, Clinical Quality Information, Clinical Interoperability Council, Public Health, and Structured Documents. This guide would not have been possible without the support of the following organizations:
+This cancer pathology reporting FHIR IG has been developed by Cancer ePathology Reporting Project in collaboration with the IHE SDC/eCP on FHIR Project, both under the Orders & Observations Working Group, and with other stakeholders. This library of FHIR resources was developed and produced through the efforts of Health Level Seven (HL7). The editors appreciate the support of all volunteers and staff associated with the creation of this document and the sponsorship of the following Work Groups: Orders & Observations, Vocabulary Work Group, Clinical Quality Information, Clinical Interoperability Council, Public Health, and Structured Documents. This guide would not have been possible without the support of the following organizations:
 * Centers for Disease Control and Prevention (CDC)
 * North American Association of Central Cancer Registries (NAACCR)
 * College of American Pathologists (CAP)

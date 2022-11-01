@@ -1,9 +1,13 @@
-The Cancer Pathology Data Sharing IG reporting process documents best practices for transmitting structured pathology data as FHIR resource bundles and distributing them to the Central Cancer Registry (CCR) via two pathways:
+The Cancer Pathology Data Sharing IG reporting process documents best practices for transmitting pathology data as FHIR resource bundles and distributing them to the Central Cancer Registry (CCR) via two pathways:
 
 1. Laboratory Inforamation Systems (LIS) to CCR via an EHR intermediary
 2. LIS to CCR directly
 
 This publication promotes structured data collection and exchange of cancer pathology data, provides the data model, defined data items and their corresponding code and value sets. This guide helps collect and exchange data specific to a cancer pathology synoptic report for public health reporting. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
+
+Currently, integration of CAP checklists into the LIS workflow a pre-requisite to have the most successful implementation of the Cancer Pathology Data Sharing IG and IHE/SDC on FHIR IG. Future iterations of this IG may allow for more flexible incorporation of non-eCC content (such as narrative pathology reports or others); however, that capability is currently not explicitly supported. These considerations are important for evaluation by potential users.
+
+The HL7 Orders and Observations (O&O) and Public Health Work Groups sponsor this guide. 
 
 ### Scope
 This guide defines 8 FHIR profiles:

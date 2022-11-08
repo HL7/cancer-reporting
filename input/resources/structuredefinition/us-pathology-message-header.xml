@@ -12,7 +12,7 @@
     <name value="USPathologyMessageHeader"/>
     <title value="US Pathology MessageHeader"/>
     <status value="active"/>
-    <description value="This MessageHeader profile is expected to be used by systems when sending to Public Health registries. It is not expected and not appropriate to be used in any other cases, such as when information exchange between a pathology laboratory and a clinical EHR system. This IG supports both message bundle and transaction bundle to support both use cases."/>
+    <description value="This MessageHeader profile is expected to be used by systems when sending to public health registries. It is not expected and not appropriate to be used in any other cases, such as when information exchange between a pathology laboratory and a clinical EHR system. This IG supports both message bundle and transaction bundle to support both use cases."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

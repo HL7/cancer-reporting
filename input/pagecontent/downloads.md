@@ -10,6 +10,6 @@ The entire implementation guide (including the HTML files, definitions, validati
  
 ### Examples:  All the examples that are used in this Implementation Guide available for download:
 
-* [XML](definitions.xml.zip)
-* [JSON](definitions.json.zip)
-* [TTL](definitions.ttl.zip)
+* [XML](examples.xml.zip)
+* [JSON](examples.json.zip)
+* [TTL](examples.ttl.zip)

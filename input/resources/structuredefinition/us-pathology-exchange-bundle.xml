@@ -11,7 +11,7 @@
     <name value="USPathologyExchangeBundle"/>
     <title value="US Pathology Exchange Bundle"/>
     <status value="active"/>
-    <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;In order to properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
+    <description value="This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.&#xA;&#xA;To properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).&#xA;&#xA;Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

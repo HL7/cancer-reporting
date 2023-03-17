@@ -1,4 +1,4 @@
-The Cancer Pathology Data Sharing implemtnation guide (IG) reporting process documents best practices for transmitting pathology data as FHIR resource bundles and distributing them to the Central Cancer Registry (CCR) via two pathways:
+The Cancer Pathology Data Sharing implementation guide (IG) reporting process documents best practices for transmitting pathology data as FHIR resource bundles and distributing them to the Central Cancer Registry (CCR) via two pathways:
 
 1. Laboratory Inforamation Systems (LIS) to CCR via an electronic health record (EHR) intermediary
 2. LIS to CCR directly

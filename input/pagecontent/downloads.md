@@ -13,3 +13,23 @@ The entire implementation guide (including the HTML files, definitions, validati
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
 * [TTL](examples.ttl.zip)
+
+<div class="new-content" markdown="1">
+
+#### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+#### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+#### Globals Table
+
+{% include globals-table.xhtml %}
+
+#### IP Statements
+
+{% include ip-statements.xhtml %}
+
+</div>

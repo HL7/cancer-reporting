@@ -15,8 +15,14 @@
             <p> SDC example Message Bundle for fake patient Alex including Patient, Encounter</p>
         </div>
     </text>
-    <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/ext-messageProcessingCategory">
-        <valueCode value="consequence"/>
+    <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-report-initiation-type">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-report-initiation-types"/>
+                <code value="manually-initiated"/>
+                <display value="Indicates a report was initiated to a manual action by the provider."/>
+            </coding>
+        </valueCodeableConcept>
     </extension>
     <eventCoding>
         <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-messageheader-message-types"/>

@@ -75,7 +75,7 @@
                 <reference value="Bundle/us-pathology-reporting-bundle-example"/>
                 <display value="US Pathology Cancer Registry Reporting Bundle (example)"/>
             </reference>
-            <name value="US Pathology Cancer Registry Reporting Bundle (example)"/>
+            <name value="US Pathology Cancer Registry Reporting Bundle [example]"/>
             <description value="Example of a cancer registry reporting (message) Bundle for a pathology condition. The first entry in this Bundle shall be the US Pathology MessageHeader and the second entry shall be a collection Bundle containing the pathology resulting information."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
@@ -86,7 +86,7 @@
                 <reference value="Bundle/us-pathology-content-bundle-example"/>
                 <display value="Bundle - Pathology Content Bundle (example)"/>
             </reference>
-            <name value="US Pathology Content bundle (example)"/>
+            <name value="US Pathology Content bundle [example]"/>
             <description value="Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
@@ -97,7 +97,7 @@
                 <reference value="Bundle/us-pathology-exchange-bundle-example"/>
                 <display value="Bundle - Pathology Exchange Bundle (example)"/>
             </reference>
-            <name value="US Pathology Exchange bundle (example)"/>
+            <name value="US Pathology Exchange bundle [example]"/>
             <description value="Inter-EHR Exchange Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>

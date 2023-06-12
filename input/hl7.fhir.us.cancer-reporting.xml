@@ -73,9 +73,9 @@
         <resource>
             <reference>
                 <reference value="Bundle/us-pathology-reporting-bundle-example"/>
-                <display value="US Pathology Cancer Registry Reporting Bundle (example)"/>
+                <display value="US Pathology Cancer Registry Reporting Bundle example"/>
             </reference>
-            <name value="US Pathology Cancer Registry Reporting Bundle [example]"/>
+            <name value="US Pathology Cancer Registry Reporting Bundle example"/>
             <description value="Example of a cancer registry reporting (message) Bundle for a pathology condition. The first entry in this Bundle shall be the US Pathology MessageHeader and the second entry shall be a collection Bundle containing the pathology resulting information."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
@@ -84,9 +84,9 @@
         <resource>
             <reference>
                 <reference value="Bundle/us-pathology-content-bundle-example"/>
-                <display value="Bundle - Pathology Content Bundle (example)"/>
+                <display value="Bundle - Pathology Content Bundle example"/>
             </reference>
-            <name value="US Pathology Content bundle [example]"/>
+            <name value="US Pathology Content bundle example"/>
             <description value="Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
@@ -95,9 +95,9 @@
         <resource>
             <reference>
                 <reference value="Bundle/us-pathology-exchange-bundle-example"/>
-                <display value="Bundle - Pathology Exchange Bundle (example)"/>
+                <display value="Bundle - Pathology Exchange Bundle example"/>
             </reference>
-            <name value="US Pathology Exchange bundle [example]"/>
+            <name value="US Pathology Exchange bundle example"/>
             <description value="Inter-EHR Exchange Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"/>
@@ -196,9 +196,9 @@
         <resource>
             <reference>
                 <reference value="MessageHeader/pathology-message-header"/>
-                <display value="Message Header (example)"/>
+                <display value="Message Header example"/>
             </reference>
-            <name value="MessageHeader (example)"/>
+            <name value="MessageHeader example"/>
             <description value="Example of a MessageHeader from a pathology environment into an EHR"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
@@ -207,7 +207,7 @@
         <resource>
             <reference>
                 <reference value="Patient/JoelAlexPatient"/></reference>
-            <name value="Patient (example)"/>
+            <name value="Patient example"/>
             <description value="US Core Patient example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
@@ -216,9 +216,9 @@
         <resource>
             <reference>
                 <reference value="Procedure/path-specimen"/>
-                <display value="Pathology specimen collection procedure (example)"/>
+                <display value="Pathology specimen collection procedure example"/>
             </reference>
-            <name value="Pathology specimen collection procedure (example)"/>
+            <name value="Pathology specimen collection procedure example"/>
             <description value="This is an example of a surgical procedure to perform a resection of the left adrenal gland to collect a pathology specimen."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
@@ -227,7 +227,7 @@
         <resource>
             <reference>
                 <reference value="DiagnosticReport/pathology-diagnostic-report"/></reference>
-            <name value="US Pathology Adrenal DiagnosticReport (example)"/>
+            <name value="US Pathology Adrenal DiagnosticReport example"/>
             <description value="Example of a DiagnosticReport containing information regarding pathological testing and resulting observations"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"/>
@@ -238,7 +238,7 @@
                 <reference value="Organization/principal-pathology-lab"/>
                 <display value="Principal Pathology Lab Name"/>
             </reference>
-            <name value="Principal Pathology Lab (example)"/>
+            <name value="Principal Pathology Lab example"/>
             <description value="Example of a US Core Organization representing the principal pathology testing Lab organization."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
@@ -249,7 +249,7 @@
                 <reference value="Organization/Redwood-Womens-Center-PC"/>
                 <display value="Redwood Women's Center, P.C."/>
             </reference>
-            <name value="Redwood Women's Center, P.C. (example)"/>
+            <name value="Redwood Women's Center, P.C. example"/>
             <description value="Example of US Core Organization representing the clinical system which ordered the pathology testing and will receive the completed tests/observations."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
@@ -258,9 +258,9 @@
         <resource>
             <reference>
                 <reference value="Practitioner/surgeon-example"/>
-                <display value="Surgeon Practitioner (example)"/>
+                <display value="Surgeon Practitioner example"/>
             </reference>
-            <name value="Surgeon Practitioner (example)"/>
+            <name value="Surgeon Practitioner example"/>
             <description value="US Core Practitioner surgeon example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
@@ -269,9 +269,9 @@
         <resource>
             <reference>
                 <reference value="Practitioner/pathologist-example"/>
-                <display value="Pathologist Practitioner (example)"/>
+                <display value="Pathologist Practitioner example"/>
             </reference>
-            <name value="Pathologist Practitioner (example)"/>
+            <name value="Pathologist Practitioner example"/>
             <description value="US Core Practitioner Pathologist example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
@@ -280,9 +280,9 @@
         <resource>
             <reference>
                 <reference value="Practitioner/oncologist-example"/>
-                <display value="Oncologist Practitioner (example)"/>
+                <display value="Oncologist Practitioner example"/>
             </reference>
-            <name value="Oncologist Practitioner (example)"/>
+            <name value="Oncologist Practitioner example"/>
             <description value="US Core Practitioner Oncologist example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
@@ -291,9 +291,9 @@
         <resource>
             <reference>
                 <reference value="ServiceRequest/cancer-path-example"/>
-                <display value="Service Request - Cancer Pathology (example)"/>
+                <display value="Service Request - Cancer Pathology example"/>
             </reference>
-            <name value="Service Request - Cancer Pathology (example)"/>
+            <name value="Service Request - Cancer Pathology example"/>
             <description value="This is an example of a pathology specimen collection ServiceRequest that references a related Encounter."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"/>
@@ -302,7 +302,7 @@
         <resource>
             <reference>
                 <reference value="Specimen/adrenal-example"/></reference>
-            <name value="Adrenal Specimen (example)"/>
+            <name value="Adrenal Specimen example"/>
             <description value="Example of an Adrenal specimen"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
@@ -311,7 +311,7 @@
         <resource>
             <reference>
                 <reference value="Encounter/uspath-specimen-collection-example"/></reference>
-            <name value="US Pathology Encounter Specimen Collection (example)"/>
+            <name value="US Pathology Encounter Specimen Collection example"/>
             <description value="Example encounter in which a pathology specimen collection takes place. References ServiceRequest."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
@@ -320,7 +320,7 @@
         <resource>
             <reference>
                 <reference value="PractitionerRole/practitionerrole-uspath-pathologist-example"/></reference>
-            <name value="US Pathologist PractitionerRole (example)"/>
+            <name value="US Pathologist PractitionerRole example"/>
             <description value="US Core PractitionerRole example for a pathologist"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
@@ -329,7 +329,7 @@
         <resource>
             <reference>
                 <reference value="PractitionerRole/practitionerrole-uspath-oncologist-example"/></reference>
-            <name value="Oncologist PractitionerRole (example)"/>
+            <name value="Oncologist PractitionerRole example"/>
             <description value="US Core PractitionerRole example for an Oncologist"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
@@ -338,7 +338,7 @@
         <resource>
             <reference>
                 <reference value="PractitionerRole/practitionerrole-uspath-surgeon-example"/></reference>
-            <name value="Surgeon PractitionerRole (example)"/>
+            <name value="Surgeon PractitionerRole example"/>
             <description value="US Core PractitionerRole example for a Surgeon"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"/>
@@ -347,9 +347,9 @@
         <resource>
             <reference>
                 <reference value="RelatedPerson/pathology-next-of-kin"/>
-                <display value="Next-of-Kin RelatedPerson (example)"/>
+                <display value="Next-of-Kin RelatedPerson example"/>
             </reference>
-            <name value="Next-of-Kin RelatedPerson (example)"/>
+            <name value="Next-of-Kin RelatedPerson example"/>
             <description value="This example shows Next of Kin information in a RelatedPerson resource."/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
@@ -358,9 +358,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-tumor-invasion"/>
-                <display value="Tumor Invasion Observation (example)"/>
+                <display value="Tumor Invasion Observation example"/>
             </reference>
-            <name value="Tumor Invasion Observation (example)"/>
+            <name value="Tumor Invasion Observation example"/>
             <description value="This is an example of a tumor invasion observation."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -368,9 +368,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-tumor-extension"/>
-                <display value="Tumor Extension Observation (example)"/>
+                <display value="Tumor Extension Observation example"/>
             </reference>
-            <name value="Tumor Extension Observation (example)"/>
+            <name value="Tumor Extension Observation example"/>
             <description value="This is an example of a tumor extension observation."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -378,9 +378,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-tumor-size"/>
-                <display value="Tumor Size Observation (example)"/>
+                <display value="Tumor Size Observation example"/>
             </reference>
-            <name value="Tumor Size Observation (example)"/>
+            <name value="Tumor Size Observation example"/>
             <description value="This is an example of a tumor size observation."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -388,9 +388,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-specimen-laterality"/>
-                <display value="Specimen Laterality Observation (example)"/>
+                <display value="Specimen Laterality Observation example"/>
             </reference>
-            <name value="Specimen Laterality Observation (example)"/>
+            <name value="Specimen Laterality Observation example"/>
             <description value="This is an example of an observation of tumor specimen laterality."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -398,9 +398,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-tumor-site"/>
-                <display value="Tumor Site Observation (example)"/>
+                <display value="Tumor Site Observation example"/>
             </reference>
-            <name value="Tumor Site Observation (example)"/>
+            <name value="Tumor Site Observation example"/>
             <description value="This is an example of an observation of the location of a tumor."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -408,9 +408,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-distant-metastasis"/>
-                <display value="Distant Metastasis Observation (example)"/>
+                <display value="Distant Metastasis Observation example"/>
             </reference>
-            <name value="Distant Metastasis Observation (example)"/>
+            <name value="Distant Metastasis Observation example"/>
             <description value="This is an example observation of distant metastasis which cannot be determined from the submitted specimen(s)."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -418,9 +418,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-tumor-weight"/>
-                <display value="Tumor Weight Observation (example)"/>
+                <display value="Tumor Weight Observation example"/>
             </reference>
-            <name value="Tumor Weight Observation (example)"/>
+            <name value="Tumor Weight Observation example"/>
             <description value="This is an example of tumor weight observation."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -428,9 +428,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-histologic-type"/>
-                <display value="Histologic Type Observation (example)"/>
+                <display value="Histologic Type Observation example"/>
             </reference>
-            <name value="Histologic Type Observation (example)"/>
+            <name value="Histologic Type Observation example"/>
             <description value="This is an example of an observation of histologic type."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -438,9 +438,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-TNM-descriptors"/>
-                <display value="TNM Descriptors Observation (example)"/>
+                <display value="TNM Descriptors Observation example"/>
             </reference>
-            <name value="TNM Descriptors Observation (example)"/>
+            <name value="TNM Descriptors Observation example"/>
             <description value="This is an example of a TNM descriptors observation."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -448,9 +448,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-histologic-grade"/>
-                <display value="Hisotologic Grade Observation (example)"/>
+                <display value="Hisotologic Grade Observation example"/>
             </reference>
-            <name value="Hisotologic Grade Observation (example)"/>
+            <name value="Hisotologic Grade Observation example"/>
             <description value="This is an example of an observation of histologic grade."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -458,9 +458,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-procedure-adrenalectomy"/>
-                <display value="Adrenalectomy Procedure Observation (example)"/>
+                <display value="Adrenalectomy Procedure Observation example"/>
             </reference>
-            <name value="Adrenalectomy Procedure Observation (example)"/>
+            <name value="Adrenalectomy Procedure Observation example"/>
             <description value="This is an example of an adrenalectomy procedure observation."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -468,9 +468,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-primary-tumor"/>
-                <display value="Primary Tumor Observation (example)"/>
+                <display value="Primary Tumor Observation example"/>
             </reference>
-            <name value="Primary Tumor Observation (example)"/>
+            <name value="Primary Tumor Observation example"/>
             <description value="This is an example of a primary tumor observation."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>
@@ -478,9 +478,9 @@
         <resource>
             <reference>
                 <reference value="Observation/observation-regional-lymph-nodes"/>
-                <display value="Regional Lymph Nodes Observation (example)"/>
+                <display value="Regional Lymph Nodes Observation example"/>
             </reference>
-            <name value="Regional Lymph Nodes Observation (example)"/>
+            <name value="Regional Lymph Nodes Observation example"/>
             <description value="This is an example of an observation of regional lymph nodes."/>
             <exampleBoolean value="true"/>
             <groupingId value="new-group3"/>

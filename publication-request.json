@@ -6,6 +6,5 @@
   "status" : "trial-use",
   "sequence" : "STU 1",
   "desc" : "This is the first Standard for Trial Use (STU) of a Cancer-reporting FHIR IG. It defines the data exchange standard between primary care provider and specialist EHR systems, pathology labs, and the central cancer registry.",
-  "descmd" : "This is the first Standard for Trial Use (STU) of a Cancer-reporting FHIR IG. It defines the data exchange standard between primary care provider and specialist EHR systems, pathology labs, and the central cancer registry.",
-  "first": true
+  "descmd" : "This is the first Standard for Trial Use (STU) of a Cancer-reporting FHIR IG. It defines the data exchange standard between primary care provider and specialist EHR systems, pathology labs, and the central cancer registry."
 }

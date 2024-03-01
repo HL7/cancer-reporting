@@ -22,6 +22,10 @@
     <subject>
         <reference value="Patient/JoelAlexPatient"/>
     </subject>
+    <effectiveDateTime value="2022-07-05"/>
+    <performer>
+        <reference value="Practitioner/oncologist-example"/>
+    </performer>
     <valueCodeableConcept>
         <coding>
             <system value="https://example.org"/>

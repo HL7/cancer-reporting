@@ -7,6 +7,9 @@
         <lastUpdated value="2022-06-03T16:47:28.694+00:00"/>
         <source value="#XWynkctdkgri9rWV"/>
     </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="oo"/>
+    </extension>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"/>
     <name value="USPathologySpecimen"/>
     <title value="US Pathology Specimen"/>
@@ -83,10 +86,6 @@
             <path value="Specimen.container"/>
             <min value="1"/>
             <mustSupport value="true"/>
-        </element>
-        <element id="Specimen.container.id">
-            <path value="Specimen.container.id"/>
-            <min value="1"/>
         </element>
         <element id="Specimen.container.identifier">
             <path value="Specimen.container.identifier"/>

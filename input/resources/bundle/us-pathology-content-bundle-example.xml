@@ -321,7 +321,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-us-path-oncologist-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-oncologist-example"/>
         <resource>
             <PractitionerRole
                 xmlns="http://hl7.org/fhir">
@@ -385,7 +385,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitioner-uspath-surgeon-example"/>
+        <fullUrl value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-surgeon-example"/>
         <resource>
             <PractitionerRole
                 xmlns="http://hl7.org/fhir">

@@ -12,12 +12,14 @@
     <type value="message"/>
     <entry>
         <fullUrl
-            value="http://hl7.org/fhir/us/cancer-reporting/MessageHeader/us-pathology-message-header"/>
+            value="http://hl7.org/fhir/us/cancer-reporting/MessageHeader/pathology-message-header"/>
         <resource>
             <MessageHeader>
                 <id value="pathology-message-header"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
+                    <profile
+                        value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"
+                    />
                 </meta>
                 <text>
                     <status value="generated"/>
@@ -26,12 +28,16 @@
                             Bundle</p>
                     </div>
                 </text>
-                <extension url="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-report-initiation-type">
+                <extension
+                    url="http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-report-initiation-type">
                     <valueCodeableConcept>
                         <coding>
-                            <system value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-report-initiation-types"/>
+                            <system
+                                value="http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-report-initiation-types"/>
                             <code value="manually-initiated"/>
-                            <display value="Indicates a report was initiated to a manual action by the provider."/>
+                            <display
+                                value="Indicates a report was initiated to a manual action by the provider."
+                            />
                         </coding>
                     </valueCodeableConcept>
                 </extension>
@@ -58,7 +64,9 @@
                     </coding>
                 </reason>
                 <focus>
-                    <reference value="Bundle/us-pathology-content-bundle-example"/>
+                    <reference
+                        value="http://hl7.org/fhir/us/cancer-reporting/Bundle/us-pathology-content-bundle-example"
+                    />
                 </focus>
             </MessageHeader>
         </resource>
@@ -431,7 +439,7 @@
                 </entry>
                 <entry>
                     <fullUrl
-                        value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-us-path-oncologist-example"/>
+                        value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-oncologist-example"/>
                     <resource>
                         <PractitionerRole xmlns="http://hl7.org/fhir">
                             <id value="practitionerrole-uspath-oncologist-example"/>
@@ -499,7 +507,7 @@
                 </entry>
                 <entry>
                     <fullUrl
-                        value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitioner-uspath-surgeon-example"/>
+                        value="http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-surgeon-example"/>
                     <resource>
                         <PractitionerRole xmlns="http://hl7.org/fhir">
                             <id value="practitionerrole-uspath-surgeon-example"/>

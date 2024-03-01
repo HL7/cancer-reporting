@@ -7,12 +7,15 @@
         <lastUpdated value="2022-06-17T17:30:35.600+00:00"/>
         <source value="#PWUDh3opoMabaIc1"/>
     </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="oo"/>
+    </extension>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
     <version value="1.0.0"/>
     <name value="USCancerPathologyData"/>
     <title value="Cancer Pathology Data Sharing"/>
     <status value="draft"/>
-    <publisher value="HL7 Orders and Observations Work Group"/>
+    <publisher value="HL7 International / Orders and Observations"/>
     <contact>
         <name value="HL7 International - Orders and Observations"/>
         <telecom>
@@ -546,6 +549,10 @@
         <parameter>
             <code value="releaselabel"/>
             <value value="STU1"/>
+        </parameter>
+        <parameter>
+            <code value="apply-wg"/>
+            <value value="apply-wg extension"/>
         </parameter>
     </definition>
 </ImplementationGuide>

@@ -4,8 +4,17 @@
 The markdown contains content that appears to be an embedded HTML tag starting at '<c'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
 # This IG is based on a version of US Core that does not profile Specimen
-US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
+US FHIR Usage rules require that all profiles on Specimen derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process. <a href="us-core-comparisons/sd-us-core-specimen-us-pathology-specimen.html">Comparison with US Core Specimen Profile
 
 # Bundle entry slices which conform to US Core profiles are not explicitly profiled in Bundle profiles
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle|1.0.0
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle|1.0.0
+
+# MedMorph CodeSystem is published
+Reference to experimental CodeSystem http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-report-initiation-types|1.0.0
+Reference to experimental CodeSystem http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents|1.0.0
+Reference to experimental CodeSystem http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-messageheader-message-types|1.0.0
+
+
+# CKey CodeSystem not available yet
+A definition for CodeSystem 'https://example.org' could not be found, so the code cannot be validated

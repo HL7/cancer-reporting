@@ -7,6 +7,9 @@
         <lastUpdated value="2022-02-01T19:46:58.449+00:00"/>
         <source value="#ns8ihQZ7ppQYMyUT"/>
     </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="oo"/>
+    </extension>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-provider-types"/>
     <name value="USPathologyProviderTypes"/>
     <title value="US Pathology Provider Types"/>

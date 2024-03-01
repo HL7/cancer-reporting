@@ -7,6 +7,9 @@
         <lastUpdated value="2022-04-20T20:57:07.371+00:00"/>
         <source value="#jFXNRoRMxuhb9xAW"/>
     </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="oo"/>
+    </extension>
     <url value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
     <name value="USPathologyCancerRegistryContentBundle"/>
     <title value="US Pathology Cancer Registry Content Bundle"/>

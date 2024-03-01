@@ -28,7 +28,7 @@ This IG defines an electronic data exchange standard that maintains the discrete
         <tr>
             <td class="tg-0lax">Message Header segment (MSH)</td>
             <td class="tg-0lax">2.6.1</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-message-header.html">US Pathology MessageHeader</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-message-header.html">US Pathology MessageHeader</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Software Segment (SFT)</td>
@@ -38,47 +38,47 @@ This IG defines an electronic data exchange standard that maintains the discrete
         <tr>
             <td class="tg-0lax">Patient Identification segment (PID)</td>
             <td class="tg-0lax">2.6.2</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Patient Visit segment (PV1)</td>
             <td class="tg-0lax">2.6.2</td>
-            <td class="tg-0lax"><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Common Order segment (ORC)</td>
             <td class="tg-0lax">2.7.1</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related PractitionerRole</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related PractitionerRole</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observations Report ID segment (OBR)</td>
             <td class="tg-0lax">2.7.2</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a>, <a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner Role</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a>, <a href="StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner Role</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Notes and Comments segment (NTE)</td>
             <td class="tg-0lax">2.6.4</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observation/Result segment (OBX)</td>
             <td class="tg-0lax">2.7.3</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report results</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report results</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Notes and Comments segment (NTE)</td>
             <td class="tg-0lax">2.7.4</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Specimen (SPM)</td>
             <td class="tg-0lax">2.7.5</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-specimen.html">US Pathology Specimen</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-specimen.html">US Pathology Specimen</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Observation Related to Specimen (OBX)</td>
             <td class="tg-0lax">2.7.3</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/cancer-reporting/2021Sep/StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
+            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-diagnostic-report.html">US Pathology Diagnostic Report</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Continuation Pointer (DSC)</td>
@@ -90,7 +90,7 @@ This IG defines an electronic data exchange standard that maintains the discrete
 
 ### Relationship to IHE SDC on FHIR
 
-The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCP on FHIR*](https://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir/branches/master/index.html), uses a form-driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists (CAP) has developed and tested the IHE SDC IG for collection of data from electronic Cancer Protocols (eCPs). The goal of IHE SDC eCP on FHIR is to extract data from these cancer checklists and create FHIR Observations for better interoperability between systems.
+The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCP on FHIR*](http://hl7.org/fhir/uv/ihe-sdc-ecc), uses a form-driven workflow to capture and encode data and then create FHIR Observations from the captured data. The College of American Pathologists (CAP) has developed and tested the IHE SDC IG for collection of data from electronic Cancer Protocols (eCPs). The goal of IHE SDC eCP on FHIR is to extract data from these cancer checklists and create FHIR Observations for better interoperability between systems.
 
 This Cancer Electronic Pathology Reporting FHIR IG and the IHE SDC eCP on FHIR are aligned and meant to operate together. Pathology data entered into an eCP by a pathologist can be converted into FHIR observations via the IHE SDC on FHIR IG. At that point, it can be transmitted to the Central Cancer Registry (CCR) either directly from the LIS or via an EHR intermediary. Both scenarios are described in this IG.
 

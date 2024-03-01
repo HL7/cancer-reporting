@@ -7,6 +7,9 @@
         <lastUpdated value="2022-06-16T20:38:40.839+00:00"/>
         <source value="#8miJe7tKT3dc93yA"/>
     </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="oo"/>
+    </extension>
     <url value="http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/pathology-lab-information-system"/>
     <version value="0.2.0"/>
     <name value="PathologyLabInformationSystem"/>

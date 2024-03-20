@@ -1,10 +1,10 @@
 {
   "package-id" : "hl7.fhir.us.cancer-reporting",
-  "version" : "1.0.0",
-  "path" : "http://hl7.org/fhir/us/cancer-reporting/STU1",
-  "mode": "milestone",
+  "version" : "1.0.1",
+  "path" : "http://hl7.org/fhir/us/cancer-reporting",
+  "mode": "technical-correction",
   "status" : "trial-use",
-  "sequence" : "STU 1",
+  "sequence" : "STU 1.0.1",
   "desc" : "This is the first Standard for Trial Use (STU) of a Cancer-reporting FHIR IG. It defines the data exchange standard between primary care provider and specialist EHR systems, pathology labs, and the central cancer registry.",
   "descmd" : "This is the first Standard for Trial Use (STU) of a Cancer-reporting FHIR IG. It defines the data exchange standard between primary care provider and specialist EHR systems, pathology labs, and the central cancer registry."
 }

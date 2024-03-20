@@ -11,7 +11,7 @@
         <valueCode value="oo"/>
     </extension>
     <url value="http://hl7.org/fhir/us/cancer-reporting/ImplementationGuide/hl7.fhir.us.cancer-reporting"/>
-    <version value="1.0.0"/>
+    <version value="1.0.1"/>
     <name value="USCancerPathologyData"/>
     <title value="Cancer Pathology Data Sharing"/>
     <status value="draft"/>
@@ -548,7 +548,7 @@
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="STU1"/>
+            <value value="STU 1.0.1"/>
         </parameter>
         <parameter>
             <code value="apply-wg"/>

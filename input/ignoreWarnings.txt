@@ -7,8 +7,8 @@ The markdown contains content that appears to be an embedded HTML tag starting a
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # Bundle entry slices which conform to US Core profiles are not explicitly profiled in Bundle profiles
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle|1.0.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle|1.0.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # MedMorph CodeSystem is published
 Reference to experimental CodeSystem http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-report-initiation-types|1.0.0

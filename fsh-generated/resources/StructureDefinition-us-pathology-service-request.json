@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "us-pathology-service-request",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2022-06-16T20:43:51.003+00:00",
+    "source": "#WhUfUjNsxHbt00dJ"
+  },
+  "url": "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request",
+  "version": "1.0.1",
+  "name": "USPathologyServiceRequest",
+  "title": "US Pathology Service Request",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 Orders and Observations Work Group",
+  "description": "This ServiceRequest profile represents the request for analysis of a pathological sample.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "short": "Cancer Pathology ServiceRequest",
+        "definition": "Ordered tests for the patient during the encounter.",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code",
+          "description": "US Core Procedure Codes"
+        }
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.specimen",
+        "path": "ServiceRequest.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

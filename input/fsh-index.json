@@ -1,0 +1,170 @@
+[
+  {
+    "outputFile": "Bundle-us-pathology-exchange-bundle-example.json",
+    "fshName": "us-pathology-exchange-bundle-example",
+    "fshType": "Instance",
+    "fshFile": "instances/us-pathology-exchange-bundle-example.fsh",
+    "startLine": 1,
+    "endLine": 52
+  },
+  {
+    "outputFile": "CapabilityStatement-central-cancer-registry-reporting-ehr-pathology.json",
+    "fshName": "central-cancer-registry-reporting-ehr-pathology",
+    "fshType": "Instance",
+    "fshFile": "instances/central-cancer-registry-reporting-ehr-pathology.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "CapabilityStatement-pathology-lab-information-system.json",
+    "fshName": "pathology-lab-information-system",
+    "fshType": "Instance",
+    "fshFile": "instances/pathology-lab-information-system.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "DiagnosticReport-pathology-diagnostic-report.json",
+    "fshName": "pathology-diagnostic-report",
+    "fshType": "Instance",
+    "fshFile": "instances/pathology-diagnostic-report.fsh",
+    "startLine": 1,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Encounter-uspath-specimen-collection-example.json",
+    "fshName": "uspath-specimen-collection-example",
+    "fshType": "Instance",
+    "fshFile": "instances/uspath-specimen-collection-example.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Organization-Redwood-Womens-Center-PC.json",
+    "fshName": "Redwood-Womens-Center-PC",
+    "fshType": "Instance",
+    "fshFile": "instances/Redwood-Womens-Center-PC.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Organization-principal-pathology-lab.json",
+    "fshName": "principal-pathology-lab",
+    "fshType": "Instance",
+    "fshFile": "instances/principal-pathology-lab.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Parameters-expansion-parameters-fhir-cancer-ig.json",
+    "fshName": "expansion-parameters-fhir-cancer-ig",
+    "fshType": "Instance",
+    "fshFile": "instances/expansion-parameters-fhir-cancer-ig.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "Patient-JoelAlexPatient.json",
+    "fshName": "JoelAlexPatient",
+    "fshType": "Instance",
+    "fshFile": "instances/JoelAlexPatient.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "PractitionerRole-practitionerrole-uspath-oncologist-example.json",
+    "fshName": "practitionerrole-uspath-oncologist-example",
+    "fshType": "Instance",
+    "fshFile": "instances/practitionerrole-uspath-oncologist-example.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "PractitionerRole-practitionerrole-uspath-pathologist-example.json",
+    "fshName": "practitionerrole-uspath-pathologist-example",
+    "fshType": "Instance",
+    "fshFile": "instances/practitionerrole-uspath-pathologist-example.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "PractitionerRole-practitionerrole-uspath-surgeon-example.json",
+    "fshName": "practitionerrole-uspath-surgeon-example",
+    "fshType": "Instance",
+    "fshFile": "instances/practitionerrole-uspath-surgeon-example.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Procedure-path-specimen.json",
+    "fshName": "path-specimen",
+    "fshType": "Instance",
+    "fshFile": "instances/path-specimen.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "RelatedPerson-pathology-next-of-kin.json",
+    "fshName": "pathology-next-of-kin",
+    "fshType": "Instance",
+    "fshFile": "instances/pathology-next-of-kin.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ServiceRequest-cancer-path-example.json",
+    "fshName": "cancer-path-example",
+    "fshType": "Instance",
+    "fshFile": "instances/cancer-path-example.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Specimen-adrenal-example.json",
+    "fshName": "adrenal-example",
+    "fshType": "Instance",
+    "fshFile": "instances/adrenal-example.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-diagnostic-report.json",
+    "fshName": "USPathologyDiagnosticReport",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyDiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-exchange-bundle.json",
+    "fshName": "USPathologyExchangeBundle",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyExchangeBundle.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-related-practitioner-role.json",
+    "fshName": "USPathologyRelatedPractitionerRoles",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyRelatedPractitionerRoles.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-service-request.json",
+    "fshName": "USPathologyServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-specimen.json",
+    "fshName": "USPathologySpecimen",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologySpecimen.fsh",
+    "startLine": 1,
+    "endLine": 25
+  }
+]

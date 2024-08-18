@@ -1,0 +1,42 @@
+[
+  {
+    "outputFile": "StructureDefinition-us-pathology-diagnostic-report.json",
+    "fshName": "USPathologyDiagnosticReport",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyDiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-exchange-bundle.json",
+    "fshName": "USPathologyExchangeBundle",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyExchangeBundle.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-related-practitioner-role.json",
+    "fshName": "USPathologyRelatedPractitionerRoles",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyRelatedPractitionerRoles.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-service-request.json",
+    "fshName": "USPathologyServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologyServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "StructureDefinition-us-pathology-specimen.json",
+    "fshName": "USPathologySpecimen",
+    "fshType": "Profile",
+    "fshFile": "profiles/USPathologySpecimen.fsh",
+    "startLine": 1,
+    "endLine": 25
+  }
+]

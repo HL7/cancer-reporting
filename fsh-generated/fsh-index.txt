@@ -1,0 +1,6 @@
+Output File                                                      Name                                 Type     FSH File                                          Lines
+StructureDefinition-us-pathology-diagnostic-report.json          USPathologyDiagnosticReport          Profile  profiles/USPathologyDiagnosticReport.fsh          1 - 17
+StructureDefinition-us-pathology-exchange-bundle.json            USPathologyExchangeBundle            Profile  profiles/USPathologyExchangeBundle.fsh            1 - 41
+StructureDefinition-us-pathology-related-practitioner-role.json  USPathologyRelatedPractitionerRoles  Profile  profiles/USPathologyRelatedPractitionerRoles.fsh  1 - 18
+StructureDefinition-us-pathology-service-request.json            USPathologyServiceRequest            Profile  profiles/USPathologyServiceRequest.fsh            1 - 35
+StructureDefinition-us-pathology-specimen.json                   USPathologySpecimen                  Profile  profiles/USPathologySpecimen.fsh                  1 - 25

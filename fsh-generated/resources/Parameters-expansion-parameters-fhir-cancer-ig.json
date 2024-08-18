@@ -1,0 +1,19 @@
+{
+  "resourceType": "Parameters",
+  "id": "expansion-parameters-fhir-cancer-ig",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-06-03T19:44:19.148+00:00",
+    "source": "#Vq8xuP8lfhIsSUZ9"
+  },
+  "parameter": [
+    {
+      "name": "profile-url",
+      "valueString": "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+    },
+    {
+      "name": "system-version",
+      "valueString": "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+    }
+  ]
+}

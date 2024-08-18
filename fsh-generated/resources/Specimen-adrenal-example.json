@@ -1,0 +1,57 @@
+{
+  "resourceType": "Specimen",
+  "id": "adrenal-example",
+  "meta": {
+    "versionId": "11",
+    "lastUpdated": "2022-06-03T13:40:51.690+00:00",
+    "source": "#DCyuaH2ijNQrifW6",
+    "profile": [
+      "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://some-lis.org/fhir/specimen-identifier-provisioner",
+      "value": "123456789"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "http://some-lis.org/fhir/specimen-identifier-provisioner",
+    "value": "123456789X"
+  },
+  "type": {
+    "coding": [
+      {
+        "code": "BX",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487"
+      }
+    ]
+  },
+  "request": [
+    {
+      "reference": "ServiceRequest/cancer-path-example"
+    }
+  ],
+  "collection": {
+    "collectedDateTime": "2022-01-02",
+    "method": {
+      "coding": [
+        {
+          "code": "129314006",
+          "system": "http://snomed.info/sct",
+          "display": "Biopsy - action"
+        }
+      ]
+    }
+  },
+  "container": [
+    {
+      "identifier": [
+        {
+          "system": "http://some-lis.org/fhir/specimen-containerID-provisioner",
+          "value": "987654321"
+        }
+      ]
+    }
+  ]
+}

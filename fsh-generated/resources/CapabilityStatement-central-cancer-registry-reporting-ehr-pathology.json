@@ -1,0 +1,82 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "central-cancer-registry-reporting-ehr-pathology",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2022-06-13T20:35:59.082+00:00",
+    "source": "#OKQnL0yKrYdSaTJK"
+  },
+  "url": "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/central-cancer-registry-reporting-ehr-pathology",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
+  "version": "1.0.0",
+  "name": "CentralCancerRegistryReportingPathologyEHRCapabilityStatement",
+  "title": "Central Cancer Registry Reporting Pathology EHR Capability Statement",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-13",
+  "publisher": "HL7 International - Public Health Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher"
+        }
+      ]
+    }
+  ],
+  "description": "This profile defines the expected capabilities of the ''EHR'' actor when conforming to the Cancer Pathology Data Sharing IG.     This role is responsible for allowing creation, modification and deletion of ServiceRequests that represent the request for Pathological analysis (and associated reports), and allows searching and retrieval of resources using US Core APIs.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json",
+    "xml"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "The focus of the EHR is to allow creation, modification and deletion of ServiceRequests and allows searching and retrieval of resources using US Core APIs.",
+      "security": {
+        "description": "Implementations must meet the general security requirements documented in the security section of the implementation guide."
+      },
+      "resource": [
+        {
+          "type": "ServiceRequest",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific ServiceRequest instance."
+            },
+            {
+              "code": "create",
+              "documentation": "Allows creation of a ServiceRequest resource instance."
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of a ServiceRequest resource instance."
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of a ServiceRequest resource instance."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

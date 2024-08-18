@@ -1,0 +1,25 @@
+{
+  "resourceType": "Organization",
+  "id": "Redwood-Womens-Center-PC",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-06-22T14:53:29.810+00:00",
+    "source": "#TgAHtHyAQ0MVnpQh",
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "active": true,
+  "name": "Redwood Women's Center, P.C.",
+  "address": [
+    {
+      "line": [
+        "3307 Renner Drive"
+      ],
+      "city": "Fortuna",
+      "state": "CA",
+      "postalCode": "95540",
+      "country": "USA"
+    }
+  ]
+}

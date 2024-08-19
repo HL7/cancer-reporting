@@ -11,9 +11,6 @@ The Health Level Seven (HL7) Orders and Observations (O&O) and Public Health Wor
 
 ### Scope
 This guide defines 8 FHIR profiles:
-* [US Pathology MessageHeader](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Cancer Registry Reporting Bundle](https://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html)(derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](https://hl7.org/fhir/us/medmorph/StructureDefinition-us-ph-reporting-bundle.html))
-* [US Pathology Cancer Registry Content Bundle](https://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-content-bundle.html)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](https://hl7.org/fhir/us/medmorph/StructureDefinition-us-ph-content-bundle.html))
 * [US Pathology Exchange Content Bundle](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-exchange-bundle.html)
 * [US Pathology Diagnostic Report](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
 * [US Pathology Specimen](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)

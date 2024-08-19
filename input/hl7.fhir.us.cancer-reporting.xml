@@ -75,28 +75,6 @@
         </grouping>
         <resource>
             <reference>
-                <reference value="Bundle/us-pathology-reporting-bundle-example"/>
-                <display value="US Pathology Cancer Registry Reporting Bundle example"/>
-            </reference>
-            <name value="US Pathology Cancer Registry Reporting Bundle example"/>
-            <description value="Example of a cancer registry reporting (message) Bundle for a pathology condition. The first entry in this Bundle shall be the US Pathology MessageHeader and the second entry shall be a collection Bundle containing the pathology resulting information."/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-reporting-bundle"/>
-            <groupingId value="new-group7"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/us-pathology-content-bundle-example"/>
-                <display value="Bundle - Pathology Content Bundle example"/>
-            </reference>
-            <name value="US Pathology Content bundle example"/>
-            <description value="Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-content-bundle"/>
-            <groupingId value="new-group7"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Bundle/us-pathology-exchange-bundle-example"/>
                 <display value="Bundle - Pathology Exchange Bundle example"/>
             </reference>
@@ -138,16 +116,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/us-pathology-message-header"/>
-                <display value="MessageHeader"/>
-            </reference>
-            <name value="US Pathology MessageHeader"/>
-            <description value="MessageHeader profile representing MSH segment (V2.5.1) information as defined in NAACCR  volume 5, version 5"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/us-pathology-exchange-bundle"/>
                 <display value="US Pathology Exchange Bundle"/>
             </reference>
@@ -168,26 +136,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/us-pathology-reporting-bundle"/>
-                <display value="USPathologyReportingBundle"/>
-            </reference>
-            <name value="US Pathology Cancer Registry Reporting Bundle"/>
-            <description value="This is an example of a US Pathology Reporting Bundle, which will wrap the US Pathology Message Header and US Pathology Registry Bundle for the purposes of reporting."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/us-pathology-content-bundle"/>
-                <display value="US Pathology Content Bundle"/>
-            </reference>
-            <name value="US Pathology Cancer Registry Content Bundle"/>
-            <description value="Message Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/us-pathology-provider-types"/>
                 <display value="Pathology Provider Types"/>
             </reference>
@@ -195,17 +143,6 @@
             <description value="Pathology-related Provider types"/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MessageHeader/pathology-message-header"/>
-                <display value="Message Header example"/>
-            </reference>
-            <name value="MessageHeader example"/>
-            <description value="Example of a MessageHeader from a pathology environment into an EHR"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-message-header"/>
-            <groupingId value="new-group7"/>
         </resource>
         <resource>
             <reference>
@@ -538,10 +475,6 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        <parameter>
-            <code value="path-expansion-params"/>
-            <value value="resources/parameters/expansion-parameters-fhir-cancer-ig.xml"/>
-        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>

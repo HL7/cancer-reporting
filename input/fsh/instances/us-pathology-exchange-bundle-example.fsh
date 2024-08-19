@@ -42,10 +42,6 @@ Usage: #example
 * entry[=].resource = principal-pathology-lab
 * entry[=].request.method = #POST
 * entry[=].request.url = "Organization/principal-pathology-lab"
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Practitioner/pathologist-example"
-* entry[=].resource = pathologist-example
-* entry[=].request.method = #POST
-* entry[=].request.url = "Practitioner/pathologist-example"
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/pathology-next-of-kin"
 * entry[=].resource = pathology-next-of-kin
 * entry[=].request.method = #POST

@@ -13,5 +13,5 @@ Usage: #example
 * encounter.reference = "Encounter/uspath-specimen-collection-example"
 * occurrenceDateTime = "2021-11-01T17:00:14-05:00"
 * requester = Reference(http://example.org/practitioner)
-* request.display = "Example Practitioner"
+* requester.display = "Example Practitioner"
 * specimen.reference = "Specimen/adrenal-example"

@@ -12,3 +12,4 @@ template/
 package-list.json
 package-lock.json
 /node_modules
+/fsh-generated

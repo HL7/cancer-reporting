@@ -18,7 +18,7 @@
 <artifact deprecated="true" id="Observation/49275.100004300-us" key="Observation-49275.100004300-us" name="Histologic Grade: High grade (example)"/>
 <artifact id="Observation/observation-histologic-type" key="Observation-observation-histologic-type" name="Histologic Type Observation example"/>
 <artifact deprecated="true" id="Observation/59852.100004300-us" key="Observation-59852.100004300-us" name="Histologic Type: Adrenal cortical carcinoma (example)"/>
-<artifact id="MessageHeader/pathology-message-header" key="MessageHeader-pathology-message-header" name="MessageHeader example"/>
+<artifact deprecated="true" id="MessageHeader/pathology-message-header" key="MessageHeader-pathology-message-header" name="MessageHeader example"/>
 <artifact id="RelatedPerson/pathology-next-of-kin" key="RelatedPerson-pathology-next-of-kin" name="Next-of-Kin RelatedPerson example"/>
 <artifact id="Practitioner/oncologist-example" key="Practitioner-oncologist-example" name="Oncologist Practitioner example"/>
 <artifact id="PractitionerRole/practitionerrole-uspath-oncologist-example" key="PractitionerRole-oncologist-example" name="Oncologist PractitionerRole example"/>
@@ -55,15 +55,15 @@
 <artifact id="PractitionerRole/practitionerrole-uspath-pathologist-example" key="PractitionerRole-practitionerrole-uspath-pathologist-example" name="US Pathologist PractitionerRole example"/>
 <artifact id="DiagnosticReport/pathology-diagnostic-report" key="DiagnosticReport-pathology-diagnostic-report" name="US Pathology Adrenal DiagnosticReport example"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-bundle" key="StructureDefinition-us-pathology-bundle" name="US Pathology Bundle"/>
-<artifact id="StructureDefinition/us-pathology-content-bundle" key="StructureDefinition-us-pathology-content-bundle" name="US Pathology Cancer Registry Content Bundle"/>
-<artifact id="StructureDefinition/us-pathology-reporting-bundle" key="StructureDefinition-us-pathology-reporting-bundle" name="US Pathology Cancer Registry Reporting Bundle"/>
-<artifact id="Bundle/us-pathology-reporting-bundle-example" key="Bundle-us-pathology-reporting-bundle-example" name="US Pathology Cancer Registry Reporting Bundle example"/>
-<artifact id="Bundle/us-pathology-content-bundle-example" key="Bundle-us-pathology-content-bundle-example" name="US Pathology Content bundle example"/>
+<artifact deprecated="true" id="StructureDefinition/us-pathology-content-bundle" key="StructureDefinition-us-pathology-content-bundle" name="US Pathology Cancer Registry Content Bundle"/>
+<artifact deprecated="true" id="StructureDefinition/us-" key="StructureDefinition-us-pathology-reporting-bundle" name="US Pathology Cancer Registry Reporting Bundle"/>
+<artifact deprecated="true" id="Bundle/us-pathology-reporting-bundle-example" key="Bundle-us-pathology-reporting-bundle-example" name="US Pathology Cancer Registry Reporting Bundle example"/>
+<artifact deprecated="true" id="Bundle/us-pathology-content-bundle-example" key="Bundle-us-pathology-content-bundle-example" name="US Pathology Content bundle example"/>
 <artifact id="StructureDefinition/us-pathology-diagnostic-report" key="StructureDefinition-us-pathology-diagnostic-report" name="US Pathology Diagnostic Report"/>
 <artifact id="Encounter/uspath-specimen-collection-example" key="Encounter-uspath-specimen-collection-example" name="US Pathology Encounter Specimen Collection example"/>
 <artifact id="Bundle/us-pathology-exchange-bundle-example" key="Bundle-us-pathology-exchange-bundle-example" name="US Pathology Exchange bundle example"/>
 <artifact id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-exchange-bundle" name="US Pathology ExchangeBundle"/>
-<artifact id="StructureDefinition/us-pathology-message-header" key="StructureDefinition-us-pathology-message-header" name="US Pathology MessageHeader"/>
+<artifact deprecated="true" id="StructureDefinition/us-pathology-message-header" key="StructureDefinition-us-pathology-message-header" name="US Pathology MessageHeader"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-next-of-kin" key="StructureDefinition-us-pathology-next-of-kin" name="US Pathology Next of Kin"/>
 <artifact id="ValueSet/us-pathology-provider-types" key="ValueSet-us-pathology-provider-types" name="US Pathology Provider Types"/>
 <artifact deprecated="true" id="CodeSystem/us-pathology-provider-types" key="CodeSystem-us-pathology-provider-types" name="US Pathology Provider Types CodeSystem"/>

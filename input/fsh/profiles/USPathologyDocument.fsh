@@ -1,7 +1,7 @@
 Profile: USPathologyDocumentBundle
 Parent: Bundle
 Id: us-pathology-document-bundle
-Title: "US Pathology Exchange Bundle"
+Title: "US Pathology Document Bundle"
 Description: """This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.
 
 To properly process this collection bundle, post to the root endpoint of the server (rather than the Bundle endpoint).
@@ -12,7 +12,7 @@ Note - US Core profiles are expected for Encounter, Organization, Patient, Pract
 * ^meta.source = "#LrYrwJtvpPlbbx7E"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #oo
-* type = #collection (exactly)
+* type = #Document (exactly)
 * type MS
 * timestamp MS
 * entry MS

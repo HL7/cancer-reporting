@@ -10,7 +10,8 @@
     ]
   },
   "practitioner": {
-    "reference": "Practitioner/oncologist-example"
+    "reference": "http://example.org/practitioner",
+    "display": "Example Oncologist"
   },
   "organization": {
     "reference": "Organization/Redwood-Womens-Center-PC"

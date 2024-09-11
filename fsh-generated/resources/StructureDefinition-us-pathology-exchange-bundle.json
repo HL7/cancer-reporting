@@ -17,7 +17,7 @@
   "name": "USPathologyExchangeBundle",
   "title": "US Pathology Exchange Bundle",
   "status": "draft",
-  "description": "This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.\n\nTo properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).\n\nNote - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS.",
+  "description": "This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.\n\nTo properly process this collection bundle, post to the root endpoint of the server (rather than the Bundle endpoint).\n\nNote - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,7 +29,7 @@
       {
         "id": "Bundle.type",
         "path": "Bundle.type",
-        "fixedCode": "transaction",
+        "fixedCode": "collection",
         "mustSupport": true
       },
       {

@@ -52,6 +52,7 @@
 <artifact deprecated="true" id="Observation/2129.100004300-us" key="Observation-2129.100004300-us" name="Tumor Size: Greatest dimension in Centimeters (cm) (example)"/>
 <artifact deprecated="true" id="Observation/observation-tumor-weight" key="Observation-observation-tumor-weight" name="Tumor Weight Observation example"/>
 <artifact deprecated="true" id="Observation/40496.100004300-us" key="Observation-40496.100004300-us" name="Tumor Weight: Specify Weight (g) (example)"/>
+<artifact id="StructureDefinition/us-composition-lab" key="StructureDefinition-us-composition-lab" name="US Composition Laboratory Report"/>
 <artifact id="PractitionerRole/practitionerrole-uspath-pathologist-example" key="PractitionerRole-practitionerrole-uspath-pathologist-example" name="US Pathologist PractitionerRole example"/>
 <artifact id="DiagnosticReport/pathology-diagnostic-report" key="DiagnosticReport-pathology-diagnostic-report" name="US Pathology Adrenal DiagnosticReport example"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-bundle" key="StructureDefinition-us-pathology-bundle" name="US Pathology Bundle"/>
@@ -61,6 +62,7 @@
 <artifact deprecated="true" id="Bundle/us-pathology-content-bundle-example" key="Bundle-us-pathology-content-bundle-example" name="US Pathology Content bundle example"/>
 <artifact id="StructureDefinition/us-pathology-diagnostic-report" key="StructureDefinition-us-pathology-diagnostic-report" name="US Pathology Diagnostic Report"/>
 <artifact id="Encounter/uspath-specimen-collection-example" key="Encounter-uspath-specimen-collection-example" name="US Pathology Encounter Specimen Collection example"/>
+<artifact id="StructureDefinition/us-pathology-document-bundle" key="StructureDefinition-us-pathology-document-bundle" name="US Pathology Exchange Bundle"/>
 <artifact id="Bundle/us-pathology-exchange-bundle-example" key="Bundle-us-pathology-exchange-bundle-example" name="US Pathology Exchange bundle example"/>
 <artifact id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-exchange-bundle" name="US Pathology ExchangeBundle"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-message-header" key="StructureDefinition-us-pathology-message-header" name="US Pathology MessageHeader"/>

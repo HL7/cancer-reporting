@@ -105,6 +105,11 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "min": 1
       }
     ]
   }

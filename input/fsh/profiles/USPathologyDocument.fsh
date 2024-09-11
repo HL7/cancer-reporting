@@ -1,6 +1,6 @@
-Profile: USPathologyExchangeBundle
+Profile: USPathologyDocumentBundle
 Parent: Bundle
-Id: us-pathology-exchange-bundle
+Id: us-pathology-document-bundle
 Title: "US Pathology Exchange Bundle"
 Description: """This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.
 
@@ -21,12 +21,14 @@ Note - US Core profiles are expected for Encounter, Organization, Patient, Pract
 * entry ^slicing.ordered = false
 * entry ^slicing.rules = #open
 * entry contains
+    us-composition-lab 1..1 MS and
     us_core_patient 1..1 MS and
     us_core_encounter 0..1 MS and
     diagnosticreport 1..1 MS and
     specimen 1..* MS and
     service-request 0..* MS and
-    pathology-related-practitioner 0..* MS
+    pathology-related-practitioner 0..* MS and
+    observation 0..* MS
 * entry[us_core_patient].resource 1.. MS
 * entry[us_core_patient].resource only $us-core-patient
 * entry[us_core_encounter].resource 1.. MS
@@ -39,3 +41,5 @@ Note - US Core profiles are expected for Encounter, Organization, Patient, Pract
 * entry[service-request].resource only USPathologyServiceRequest
 * entry[pathology-related-practitioner].resource only USPathologyRelatedPractitionerRoles
 * entry[pathology-related-practitioner].resource MS
+* entry[observation].resource only Observation
+* entry[observation].resource MS

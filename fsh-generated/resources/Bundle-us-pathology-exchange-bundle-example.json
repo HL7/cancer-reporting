@@ -9,7 +9,7 @@
       "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle"
     ]
   },
-  "type": "transaction",
+  "type": "collection",
   "timestamp": "2022-03-22T18:05:57.689+00:00",
   "entry": [
     {
@@ -173,98 +173,98 @@
         ],
         "result": [
           {
-            "reference": "Observation/observation-tumor-site",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2118.100004300"
             }
           },
           {
-            "reference": "Observation/observation-procedure-adrenalectomy",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#42554.100004300"
             }
           },
           {
-            "reference": "Observation/observation-specimen-laterality",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#52756.100004300"
             }
           },
           {
-            "reference": "Observation/observation-histologic-type",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#59852.100004300"
             }
           },
           {
-            "reference": "Observation/observation-histologic-grade",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"
             }
           },
           {
-            "reference": "Observation/observation-histologic-grade",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2129.100004300"
             }
           },
           {
-            "reference": "Observation/observation-tumor-weight",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#40496.100004300"
             }
           },
           {
-            "reference": "Observation/observation-tumor-extension",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.51265.100004300"
             }
           },
           {
-            "reference": "Observation/observation-tumor-invasion",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.53526.100004300"
             }
           },
           {
-            "reference": "Observation/observation-regional-lymph-nodes",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.1867.100004300"
             }
           },
           {
-            "reference": "Observation/observation-TNM-descriptors",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1.20880.100004300"
             }
           },
           {
-            "reference": "Observation/observation-primary-tumor",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2137.100004300"
             }
           },
           {
-            "reference": "Observation/observation-regional-lymph-nodes",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2143.100004300"
             }
           },
           {
-            "reference": "Observation/observation-distant-metastasis",
+            "reference": "https://example.org/Observation",
             "identifier": {
               "system": "https://example.org",
               "value": "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"
@@ -361,7 +361,8 @@
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/oncologist-example"
+          "reference": "http://example.org/practitioner",
+          "display": "Example Oncologist"
         },
         "organization": {
           "reference": "Organization/Redwood-Womens-Center-PC"
@@ -403,7 +404,8 @@
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/pathologist-example"
+          "reference": "http://example.org/practitioner",
+          "display": "Example Pathologist"
         },
         "organization": {
           "reference": "Organization/principal-pathology-lab"
@@ -445,7 +447,8 @@
           ]
         },
         "practitioner": {
-          "reference": "Practitioner/surgeon-example"
+          "reference": "http://example.org/practitioner",
+          "display": "Example Practitioner"
         },
         "organization": {
           "reference": "Organization/Redwood-Womens-Center-PC"
@@ -535,39 +538,6 @@
       "request": {
         "method": "POST",
         "url": "Organization/principal-pathology-lab"
-      }
-    },
-    {
-      "fullUrl": "http://hl7.org/fhir/us/cancer-reporting/Practitioner/pathologist-example",
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "pathologist-example",
-        "meta": {
-          "versionId": "2",
-          "lastUpdated": "2022-03-23T20:50:13.458+00:00",
-          "source": "#eupV4uZv69zJMEv8",
-          "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "10987654321"
-          }
-        ],
-        "name": [
-          {
-            "family": "Alot",
-            "given": [
-              "Stains"
-            ]
-          }
-        ]
-      },
-      "request": {
-        "method": "POST",
-        "url": "Practitioner/pathologist-example"
       }
     },
     {

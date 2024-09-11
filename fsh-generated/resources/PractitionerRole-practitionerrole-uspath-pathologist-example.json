@@ -10,7 +10,8 @@
     ]
   },
   "practitioner": {
-    "reference": "Practitioner/pathologist-example"
+    "reference": "http://example.org/practitioner",
+    "display": "Example Pathologist"
   },
   "organization": {
     "reference": "Organization/principal-pathology-lab"

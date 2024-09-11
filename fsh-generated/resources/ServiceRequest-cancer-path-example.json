@@ -40,7 +40,8 @@
   },
   "occurrenceDateTime": "2021-11-01T17:00:14-05:00",
   "requester": {
-    "reference": "Practitioner/surgeon-example"
+    "reference": "http://example.org/practitioner",
+    "display": "Example Practitioner"
   },
   "specimen": [
     {

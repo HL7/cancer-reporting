@@ -1,0 +1,23 @@
+Recommendation: eliminate MedMoprh and IHE SDC on FHIR from F-CPDS
+Add Observation for handling unstructured Pathology Observations
+Change Bundle to Collection only
+DiagnosticReport in the Collection Bundle should be 1..* - is current 1..1
+Potential structure: 
+Path Report Bundle
+  DiagRep -- OBR + ORC
+    presentedForm - eCP
+  DiagRep
+    OBSx - OBX 
+  DiagRep
+    OBSx
+
+Need to include Procedure, ServiceRequest
+
+
+A consideration is to separate SDC and make IHE SDC/eCP on FHIR only for Pathology Observations 
+Or add Observations to F-CPDS
+
+Refer to https://build.fhir.org/ig/HL7/uv-lab-rep-ig/ spec as potential option to reference - is currently based on the EU
+- Have bundle structure 
+
+Write up issues we've had with Observation Grouper in representing multi specimen. Include an example from NAACCR Vol V 

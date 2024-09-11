@@ -14,4 +14,4 @@ Description: "It is expected that labs will populate dateTimes with the most spe
 * resultsInterpreter MS
 * specimen only Reference(USPathologySpecimen)
 * specimen MS
-* result MS
+* result 1..* MS

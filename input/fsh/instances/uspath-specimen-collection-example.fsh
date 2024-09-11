@@ -12,4 +12,4 @@ Usage: #example
 * type = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report"
 * subject = Reference(JoelAlexPatient)
 * participant[0].individual = Reference(Practitioner/oncologist-example)
-* participant[+].individual = Reference(pathologist-example)
+* participant[+].individual = Reference(Practitioner/pathologist-example)

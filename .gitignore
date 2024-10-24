@@ -1,0 +1,15 @@
+input-cache/
+.vscode
+output/
+input/tests/results/*.txt
+temp/
+template/
+*.jar
+.DS_Store
+.DS_Store
+/fsh-generated
+/fsh-generated/resources
+package-list.json
+package-lock.json
+/node_modules
+/fsh-generated

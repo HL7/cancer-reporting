@@ -1,0 +1,82 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "pathology-lab-information-system",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-06-16T20:38:40.839+00:00",
+    "source": "#8miJe7tKT3dc93yA"
+  },
+  "url": "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/pathology-lab-information-system",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
+  "version": "0.2.0",
+  "name": "PathologyLabInformationSystem",
+  "title": "Pathology Laboratory Information System",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-13",
+  "publisher": "HL7 International - Public Health Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/pher"
+        }
+      ]
+    }
+  ],
+  "description": "This profile defines the expected capabilities of the ''LIS'' actor when conforming to the Cancer Pathology Data Sharing Guide.     This role is responsible for allowing creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json",
+    "xml"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "The focus of the EHR is to allow creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs.",
+      "security": {
+        "description": "Implementations must meet the general security requirements documented in the security section of the implementation guide."
+      },
+      "resource": [
+        {
+          "type": "DiagnosticReport",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific DiagnosticReport instance."
+            },
+            {
+              "code": "create",
+              "documentation": "Allows creation of a DiagnosticReport resource instance."
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of a DiagnosticReport resource instance."
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of a DiagnosticReport resource instance."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

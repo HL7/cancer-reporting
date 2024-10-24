@@ -1,0 +1,51 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "cancer-path-example",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2022-06-14T19:44:10.254+00:00",
+    "source": "#4ilVzsX4Z70y61Dv",
+    "profile": [
+      "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"
+    ]
+  },
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "386053000",
+          "system": "http://snomed.info/sct",
+          "display": "Evaluation procedure (procedure)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "50322008",
+        "system": "http://snomed.info/sct",
+        "display": "Surgical pathology specimen, clerical procedure including coding of diagnoses"
+      }
+    ],
+    "text": "This is an example of use of a SNOMED terminology to categorize what is being requested"
+  },
+  "subject": {
+    "reference": "Patient/JoelAlexPatient"
+  },
+  "encounter": {
+    "reference": "Encounter/uspath-specimen-collection-example"
+  },
+  "occurrenceDateTime": "2021-11-01T17:00:14-05:00",
+  "requester": {
+    "reference": "http://example.org/practitioner",
+    "display": "Example Practitioner"
+  },
+  "specimen": [
+    {
+      "reference": "Specimen/adrenal-example"
+    }
+  ]
+}

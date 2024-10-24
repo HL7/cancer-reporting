@@ -1,0 +1,25 @@
+{
+  "resourceType": "Organization",
+  "id": "principal-pathology-lab",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-06-22T14:53:29.809+00:00",
+    "source": "#HJa8mk0g943nkTI0",
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "active": true,
+  "name": "Some Pathology Lab Name",
+  "address": [
+    {
+      "line": [
+        "Any"
+      ],
+      "city": "City",
+      "state": "CA",
+      "postalCode": "95540",
+      "country": "USA"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "pathology-next-of-kin",
+  "meta": {
+    "versionId": "6",
+    "lastUpdated": "2022-06-03T13:58:10.961+00:00",
+    "source": "#hZYecGmLljeME3nB",
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"
+    ]
+  },
+  "active": true,
+  "patient": {
+    "reference": "Patient/JoelAlexPatient"
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "display": "Next-of-Kin"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "family": "Me",
+      "given": [
+        "Minni"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-989-654-7896"
+    }
+  ]
+}

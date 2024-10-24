@@ -1,0 +1,116 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "us-pathology-diagnostic-report",
+  "meta": {
+    "versionId": "28",
+    "lastUpdated": "2022-06-15T15:22:33.648+00:00",
+    "source": "#SdfgOQUlReKyxsMP"
+  },
+  "url": "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report",
+  "version": "1.0.1",
+  "name": "USPathologyDiagnosticReport",
+  "title": "US Pathology Diagnostic Report",
+  "status": "draft",
+  "description": "It is expected that labs will populate dateTimes with the most specific time information known when sending to EHRs (YYYY-MM-DD).",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.basedOn",
+        "path": "DiagnosticReport.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "constraint": [
+          {
+            "key": "path-reporting-1",
+            "human": "effectiveDateTime SHALL include the month and day",
+            "source": "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report",
+            "severity": "error",
+            "expression": "$this is DateTime implies $this.toString().length() >= 10",
+            "xpath": "f:matches(effectiveDateTime,/\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d([+-][0-2]\\d:[0-5]\\d|Z)/)"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "path": "DiagnosticReport.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+            ],
+            "_targetProfile": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              null,
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                    "valueBoolean": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter",
+        "path": "DiagnosticReport.resultsInterpreter",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.specimen",
+        "path": "DiagnosticReport.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "min": 1
+      }
+    ]
+  }
+}

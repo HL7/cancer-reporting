@@ -1,0 +1,10 @@
+canonical: http://hl7.org/fhir/us/cancer-reporting
+fhirVersion: 4.0.1
+FSHOnly: false
+applyExtensionMetadataToRoot: false
+id: hl7.fhir.us.cancer-reporting
+name: UsCancer-reporting
+status: active
+version: 1.0.0
+dependencies: 
+  hl7.fhir.us.core: 7.0.0

@@ -1,0 +1,187 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "us-pathology-exchange-bundle",
+  "meta": {
+    "versionId": "3",
+    "lastUpdated": "2022-06-03T15:58:07.696+00:00",
+    "source": "#LrYrwJtvpPlbbx7E"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
+  "url": "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle",
+  "version": "1.0.1",
+  "name": "USPathologyExchangeBundle",
+  "title": "US Pathology Exchange Bundle",
+  "status": "draft",
+  "description": "This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.\n\nTo properly process this collection bundle, post to the root endpoint of the server (rather than the Bundle endpoint).\n\nNote - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "collection",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resource"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 3,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:us_core_patient",
+        "path": "Bundle.entry",
+        "sliceName": "us_core_patient",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:us_core_patient.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:us_core_encounter",
+        "path": "Bundle.entry",
+        "sliceName": "us_core_encounter",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:us_core_encounter.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Encounter",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:diagnosticreport",
+        "path": "Bundle.entry",
+        "sliceName": "diagnosticreport",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:diagnosticreport.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "DiagnosticReport",
+            "profile": [
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-diagnostic-report"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:specimen",
+        "path": "Bundle.entry",
+        "sliceName": "specimen",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:specimen.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Specimen",
+            "profile": [
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:service-request",
+        "path": "Bundle.entry",
+        "sliceName": "service-request",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:service-request.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "ServiceRequest",
+            "profile": [
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-service-request"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:pathology-related-practitioner",
+        "path": "Bundle.entry",
+        "sliceName": "pathology-related-practitioner",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:pathology-related-practitioner.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "PractitionerRole",
+            "profile": [
+              "http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-related-practitioner-role"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

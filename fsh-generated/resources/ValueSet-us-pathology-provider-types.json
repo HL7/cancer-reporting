@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "USPathologyProviderTypes",
+  "id": "us-pathology-provider-types",
+  "title": "US Pathology Provider Types",
+  "description": "This ValueSet is composed of HL7 ParticipationType codes (found in PV1) and concepts from Pathology Provider Types CodeSystem (found in OBR).",
+  "version": "1.0.1",
+  "url": "http://hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-provider-types",
+  "meta": {
+    "versionId": "8",
+    "lastUpdated": "2022-02-01T19:46:58.449+00:00",
+    "source": "#ns8ihQZ7ppQYMyUT"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "concept": [
+          {
+            "code": "ADM",
+            "display": "admitter"
+          },
+          {
+            "code": "ATND",
+            "display": "attender"
+          },
+          {
+            "code": "CON",
+            "display": "consultant"
+          },
+          {
+            "code": "REF",
+            "display": "referrer"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+        "concept": [
+          {
+            "code": "CLP",
+            "display": "Collecting Provider"
+          },
+          {
+            "code": "OP",
+            "display": "Ordering Provider"
+          },
+          {
+            "code": "PI",
+            "display": "Primary Interpreter"
+          },
+          {
+            "code": "RO",
+            "display": "Responsible Observer"
+          }
+        ]
+      }
+    ]
+  }
+}

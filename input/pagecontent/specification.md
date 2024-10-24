@@ -7,9 +7,6 @@
 * [FHIR Messaging](http://hl7.org/fhir/messaging.html)
 
 This guide defines 8 FHIR profiles:
-* [US Pathology MessageHeader](StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Cancer Registry Reporting Bundle](StructureDefinition-us-pathology-reporting-bundle.html) derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](https://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-reporting-bundle.html)
-* [US Pathology Cancer Registry Content Bundle](StructureDefinition-us-pathology-content-bundle.html)derived from FHIR R4 [MedMorph US Public Health Content Bundle](https://build.fhir.org/ig/HL7/fhir-medmorph/StructureDefinition-us-ph-content-bundle.html)
 * [US Pathology Exchange Content Bundle](StructureDefinition-us-pathology-exchange-bundle.html)
 * [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html)
 * [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/specimen.html)

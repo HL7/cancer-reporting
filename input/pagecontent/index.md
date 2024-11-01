@@ -10,7 +10,7 @@ Currently, the most successful implementation of the Cancer Pathology Data Shari
 The Health Level Seven (HL7) Orders and Observations (O&O) and Public Health Work Groups sponsor this guide. 
 
 ### Scope
-This guide defines 8 FHIR profiles:
+This guide defines 5 FHIR profiles:
 * [US Pathology MessageHeader](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
 * [US Pathology Cancer Registry Reporting Bundle](https://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html)(derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](https://hl7.org/fhir/us/medmorph/StructureDefinition-us-ph-reporting-bundle.html))
 * [US Pathology Cancer Registry Content Bundle](https://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-content-bundle.html)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](https://hl7.org/fhir/us/medmorph/StructureDefinition-us-ph-content-bundle.html))

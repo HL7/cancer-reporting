@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cancer-reporting/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/cancer-reporting" defaultVersion="1.0.1" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/cancer-reporting" url="http://hl7.org/fhir/us/cancer-reporting">
 <version code="current" url="http://build.fhir.org/ig/HL7/cancer-reporting"/>
-<version code="1.0.1" url="http://hl7.org/fhir/us/cancer-reporting/STU101"/>
+<version code="1.0.1" url="http://hl7.org/fhir/us/cancer-reporting/STU1.0.1"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/cancer-reporting/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/cancer-reporting/2021Sep"/>
 <artifactPageExtension value="-definitions"/>
@@ -61,13 +61,13 @@
 <artifact id="Bundle/us-pathology-content-bundle-example" key="Bundle-us-pathology-content-bundle-example" name="US Pathology Content bundle example"/>
 <artifact id="StructureDefinition/us-pathology-diagnostic-report" key="StructureDefinition-us-pathology-diagnostic-report" name="US Pathology Diagnostic Report"/>
 <artifact id="Encounter/uspath-specimen-collection-example" key="Encounter-uspath-specimen-collection-example" name="US Pathology Encounter Specimen Collection example"/>
+<artifact id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-exchange-bundle" name="US Pathology Exchange Bundle"/>
 <artifact id="Bundle/us-pathology-exchange-bundle-example" key="Bundle-us-pathology-exchange-bundle-example" name="US Pathology Exchange bundle example"/>
-<artifact id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-exchange-bundle" name="US Pathology ExchangeBundle"/>
 <artifact id="StructureDefinition/us-pathology-message-header" key="StructureDefinition-us-pathology-message-header" name="US Pathology MessageHeader"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-next-of-kin" key="StructureDefinition-us-pathology-next-of-kin" name="US Pathology Next of Kin"/>
 <artifact id="ValueSet/us-pathology-provider-types" key="ValueSet-us-pathology-provider-types" name="US Pathology Provider Types"/>
 <artifact deprecated="true" id="CodeSystem/us-pathology-provider-types" key="CodeSystem-us-pathology-provider-types" name="US Pathology Provider Types CodeSystem"/>
-<artifact id="StructureDefinition/us-pathology-related-practitioner-role" key="StructureDefinition-us-pathology-related-practitioner-role" name="US Pathology Related PractitionerRoles"/>
+<artifact id="StructureDefinition/us-pathology-related-practitioner-role" key="StructureDefinition-us-pathology-related-practitioner-role" name="US Pathology Related Practitioner Roles"/>
 <artifact id="StructureDefinition/us-pathology-service-request" key="StructureDefinition-us-pathology-service-request" name="US Pathology Service Request"/>
 <artifact id="StructureDefinition/us-pathology-specimen" key="StructureDefinition-us-pathology-specimen" name="US Pathology Specimen"/>
 <artifact id="Parameters/expansion-parameters-fhir-cancer-ig" key="Parameters-expansion-parameters-fhir-cancer-ig" name="expansion-parameters-fhir-cancer-ig"/>
@@ -76,7 +76,7 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
 <page key="downloads" name="Downloads"/>
-<page key="index" name="Home Page"/>
+<page key="index" name="Home"/>
 <page key="specification" name="Specification"/>
 <page key="toc" name="Table of Contents"/>
 </specification>

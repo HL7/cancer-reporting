@@ -1,0 +1,29 @@
+packageId: hl7.fhir.us.cancer-reporting
+canonical: http://hl7.org/fhir/us/cancer-reporting
+fhirVersion: 4.0.1
+applyExtensionMetadataToRoot: false
+id: hl7.fhir.us.cancer-reporting
+name: USCancerPathologyData
+title: Cancer Pathology Data Sharing
+copyrightYear: 2020+
+releaseLabel: STU 1.0.1
+description: This implementation guide (IG) provides Health Level Seven (HL7 FHIR) resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or to a central cancer registry. When sending to a central registry, the FHIR Messaging paradigm shall be required; however when sending between LIS and EHR systems, implementors may choose to use alterantive transport and processing modalities, such as FHIR transaciton bundles. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology message bundle and is compliant with FHIR Release 4.
+publisher:
+  name: HL7 International / Orders and Observations
+  url: http://www.hl7.org/Special/committees/orders
+  email: ord@lists.HL7.org
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: oo
+jurisdiction: urn:iso:std:iso:3166#US
+status: draft
+version: 1.0.1
+dependencies:
+  hl7.fhir.us.core:
+    version: 5.0.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1
+    id: hl7fhiruscore
+  hl7.fhir.us.medmorph:
+    version: 1.0.0
+    uri: http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph
+    id: hl7fhirusmedmorph

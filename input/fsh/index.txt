@@ -1,10 +1,6 @@
 Name                                                         Type       File
-Inline-Instance-for-us-pathology-reporting-bundle-example-1  Instance   instances\Inline-Instance-for-us-pathology-reporting-bundle-example-1.fsh
-Inline-Instance-for-us-pathology-reporting-bundle-example-2  Instance   instances\Inline-Instance-for-us-pathology-reporting-bundle-example-2.fsh
 JoelAlexPatient                                              Instance   instances\JoelAlexPatient.fsh
 Redwood-Womens-Center-PC                                     Instance   instances\Redwood-Womens-Center-PC.fsh
-USPathologyCancerRegistryContentBundle                       Profile    profiles\USPathologyCancerRegistryContentBundle.fsh
-USPathologyCancerRegistryReportingBundle                     Profile    profiles\USPathologyCancerRegistryReportingBundle.fsh
 USPathologyDiagnosticReport                                  Profile    profiles\USPathologyDiagnosticReport.fsh
 USPathologyExchangeBundle                                    Profile    profiles\USPathologyExchangeBundle.fsh
 USPathologyMessageHeader                                     Profile    profiles\USPathologyMessageHeader.fsh
@@ -42,7 +38,5 @@ practitionerrole-uspath-pathologist-example                  Instance   instance
 practitionerrole-uspath-surgeon-example                      Instance   instances\practitionerrole-uspath-surgeon-example.fsh
 principal-pathology-lab                                      Instance   instances\principal-pathology-lab.fsh
 surgeon-example                                              Instance   instances\surgeon-example.fsh
-us-pathology-content-bundle-example                          Instance   instances\us-pathology-content-bundle-example.fsh
 us-pathology-exchange-bundle-example                         Instance   instances\us-pathology-exchange-bundle-example.fsh
-us-pathology-reporting-bundle-example                        Instance   instances\us-pathology-reporting-bundle-example.fsh
 uspath-specimen-collection-example                           Instance   instances\uspath-specimen-collection-example.fsh

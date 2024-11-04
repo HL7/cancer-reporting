@@ -3,7 +3,6 @@ JoelAlexPatient                                              Instance   instance
 Redwood-Womens-Center-PC                                     Instance   instances\Redwood-Womens-Center-PC.fsh
 USPathologyDiagnosticReport                                  Profile    profiles\USPathologyDiagnosticReport.fsh
 USPathologyExchangeBundle                                    Profile    profiles\USPathologyExchangeBundle.fsh
-USPathologyMessageHeader                                     Profile    profiles\USPathologyMessageHeader.fsh
 USPathologyProviderTypes                                     ValueSet   valuesets\USPathologyProviderTypes.fsh
 USPathologyRelatedPractitionerRoles                          Profile    profiles\USPathologyRelatedPractitionerRoles.fsh
 USPathologyServiceRequest                                    Profile    profiles\USPathologyServiceRequest.fsh

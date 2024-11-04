@@ -26,11 +26,6 @@ This IG defines an electronic data exchange standard that maintains the discrete
     </thead>
     <tbody>
         <tr>
-            <td class="tg-0lax">Message Header segment (MSH)</td>
-            <td class="tg-0lax">2.6.1</td>
-            <td class="tg-0lax"><a href="StructureDefinition-us-pathology-message-header.html">US Pathology MessageHeader</a></td>
-        </tr>
-        <tr>
             <td class="tg-0lax">Software Segment (SFT)</td>
             <td class="tg-0lax">2.15.12</td>
             <td class="tg-0lax">N/A</td>

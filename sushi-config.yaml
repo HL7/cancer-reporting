@@ -23,7 +23,3 @@ dependencies:
     version: 5.0.1
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1
     id: hl7fhiruscore
-  hl7.fhir.us.medmorph:
-    version: 1.0.0
-    uri: http://hl7.org/fhir/us/medmorph/ImplementationGuide/hl7.fhir.us.medmorph
-    id: hl7fhirusmedmorph

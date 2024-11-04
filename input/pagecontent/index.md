@@ -10,10 +10,7 @@ Currently, the most successful implementation of the Cancer Pathology Data Shari
 The Health Level Seven (HL7) Orders and Observations (O&O) and Public Health Work Groups sponsor this guide. 
 
 ### Scope
-This guide defines 8 FHIR profiles:
-* [US Pathology MessageHeader](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-message-header.html)
-* [US Pathology Cancer Registry Reporting Bundle](https://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-reporting-bundle.html)(derived from FHIR R4 [MedMorph US Public Health Reporting Bundle](https://hl7.org/fhir/us/medmorph/StructureDefinition-us-ph-reporting-bundle.html))
-* [US Pathology Cancer Registry Content Bundle](https://hl7.org/fhir/us/cancer-reporting/StructureDefinition-us-pathology-content-bundle.html)(derived from FHIR R4 [MedMorph US Public Health Content Bundle](https://hl7.org/fhir/us/medmorph/StructureDefinition-us-ph-content-bundle.html))
+This guide defines 5 FHIR profiles:
 * [US Pathology Exchange Content Bundle](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-exchange-bundle.html)
 * [US Pathology Diagnostic Report](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
 * [US Pathology Specimen](https://build.fhir.org/ig/HL7/cancer-reporting/StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
@@ -32,7 +29,6 @@ This guide also leverages profiles from the latest versions of:
 * [US Core Practitioner](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner.html)
 * [US Core Procedure](http://hl7.org/fhir/us/core/StructureDefinition-us-core-procedure.html)
 * [US Core Organization](http://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html)
-* [Making EHR Data More Available for Research and Public Health (MedMorph)](https://build.fhir.org/ig/HL7/fhir-medmorph/) which was balloted in January 2021. Changes to the MedMorph specification are managed by the sponsoring Public Health Work Group and are incorporated as part of the standard balloting and publication process. This IG may require updates as MedMorph is finalized. 
 
 ### Audience
 The audience for this IG includes architects and developers of clinical and pathology laboratory health record systems as well as cancer registry systems in the US Realm. Business analysts and policy managers can also benefit from a basic understanding of the use of this cancer pathology data standard to support data flows from pathology laboratories.

@@ -12,7 +12,7 @@ Note - US Core profiles are expected for Encounter, Organization, Patient, Pract
 * ^meta.source = "#LrYrwJtvpPlbbx7E"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #oo
-* type = #transaction (exactly)
+* type = #collection (exactly)
 * type MS
 * timestamp MS
 * entry MS
@@ -21,21 +21,13 @@ Note - US Core profiles are expected for Encounter, Organization, Patient, Pract
 * entry ^slicing.ordered = false
 * entry ^slicing.rules = #open
 * entry contains
+    composition 1..1 MS and
     us_core_patient 1..1 MS and
     us_core_encounter 0..1 MS and
     diagnosticreport 1..1 MS and
     specimen 1..* MS and
     service-request 0..* MS and
-    pathology-related-practitioner 0..* MS
-* entry[us_core_patient].resource 1.. MS
-* entry[us_core_patient].resource only USCorePatientProfile
-* entry[us_core_encounter].resource 1.. MS
-* entry[us_core_encounter].resource only USCoreEncounterProfile
-* entry[diagnosticreport].resource 1..
-* entry[diagnosticreport].resource only USPathologyDiagnosticReport
-* entry[specimen].resource 1..
-* entry[specimen].resource only USPathologySpecimen
-* entry[service-request].resource 1.. MS
-* entry[service-request].resource only USPathologyServiceRequest
-* entry[pathology-related-practitioner].resource only USPathologyRelatedPractitionerRoles
-* entry[pathology-related-practitioner].resource MS
+    pathology-related-practitioner 0..* MS and
+    us_core_procedure 0..* MS
+* entry[composition].resource 1.. MS
+* entry[composition].resource only USPathologyComposition

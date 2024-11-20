@@ -1,15 +1,11 @@
 Profile: USPathologySpecimen
-Parent: Specimen
+Parent: USCoreSpecimenProfile
 Id: us-pathology-specimen
 Title: "US Pathology Specimen"
-* ^meta.versionId = "18"
-* ^meta.lastUpdated = "2022-06-03T16:47:28.694+00:00"
-* ^meta.source = "#XWynkctdkgri9rWV"
 * ^status = #active
-* identifier 1.. MS
-* accessionIdentifier 1.. MS
+* identifier 1.. 
+* accessionIdentifier 1..
 * status MS
-* type 1.. MS
 * receivedTime MS
 * parent MS
 * collection MS

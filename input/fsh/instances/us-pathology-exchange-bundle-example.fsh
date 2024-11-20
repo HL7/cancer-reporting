@@ -6,7 +6,7 @@ Usage: #example
 * meta.versionId = "7"
 * meta.lastUpdated = "2022-06-14T19:57:02.095+00:00"
 * meta.source = "#rQ7uOUfOsjo8v8rx"
-* type = #transaction
+* type = #collection
 * timestamp = "2022-03-22T18:05:57.689+00:00"
 * entry[0].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"
 * entry[=].resource = JoelAlexPatient

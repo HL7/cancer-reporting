@@ -42,31 +42,26 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
     context-service-request 1..1 and
     context-practitioner 1..1
 
-/* * section[context-patient].title = "Patient Context"
-* section[context-patient].code = http://loinc.org#34133-9 "Patient"
- * section[context-patient].entry 1..1
-* section[context-patient].entry only Reference(USCorePatientProfile)
-*/
+// * section[context-patient].title = "Patient Context"
+// * section[context-patient].code = http://loinc.org#34133-9 "Patient"
+// * section[context-patient].entry 1..1
+// * section[context-patient].entry only Reference(USCorePatientProfile)
 
-/* * section[context-encounter].title = "Encounter Context"
-* section[context-encounter].code = http://loinc.org#46240-8 "Encounter"
-* section[context-encounter].entry 1..1
-* section[context-encounter].entry only Reference(USCoreEncounterProfile)
-*/
+// * section[context-encounter].title = "Encounter Context"
+// * section[context-encounter].code = http://loinc.org#46240-8 "Encounter"
+// * section[context-encounter].entry 1..1
+// * section[context-encounter].entry only Reference(USCoreEncounterProfile)
 
-// is specimen referenced from diagnostic report? remove?
-* section[context-specimen].title = "Specimen Context"
-* section[context-specimen].code = http://loinc.org#11945-5 "Specimen"
-* section[context-specimen].entry 1..1
-* section[context-specimen].entry only Reference(USPathologySpecimen)
+// * section[context-specimen].title = "Specimen Context"
+// * section[context-specimen].code = http://loinc.org#11945-5 "Specimen"
+// * section[context-specimen].entry 1..1
+// * section[context-specimen].entry only Reference(USPathologySpecimen)
 
-// should service request be in lab report section instead of here? 
 * section[context-service-request].title = "Service Request Context"
 * section[context-service-request].code = http://loinc.org#39758-4 "Service Request"
 * section[context-service-request].entry 1..1
 * section[context-service-request].entry only Reference(USPathologyServiceRequest)
 
-// is practioner in composition.author or practitioner in composition.encounter.practitioner
 * section[context-practitioner].title = "Practitioner Context"
 * section[context-practitioner].code = http://loinc.org#30525-0 "Practitioner"
 * section[context-practitioner].entry 1..1

@@ -20,6 +20,6 @@ status: draft
 version: 1.0.1
 dependencies:
   hl7.fhir.us.core:
-    version: 5.0.1
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1
+    version: 7.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#7.0.0
     id: hl7fhiruscore

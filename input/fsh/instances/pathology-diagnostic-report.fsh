@@ -3,9 +3,6 @@ InstanceOf: USPathologyDiagnosticReport
 Title: "US Pathology Adrenal DiagnosticReport example"
 Description: "Example of a DiagnosticReport containing information regarding pathological testing and resulting observations"
 Usage: #example
-* meta.versionId = "17"
-* meta.lastUpdated = "2022-06-14T20:17:38.793+00:00"
-* meta.source = "#ZSUAapkH140ktNGJ"
 * identifier.system = "https://example.org"
 * identifier.value = "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1"
 * status = #final

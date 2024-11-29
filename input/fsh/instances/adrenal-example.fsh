@@ -3,9 +3,6 @@ InstanceOf: USPathologySpecimen
 Title: "Adrenal Specimen example"
 Description: "Example of an Adrenal specimen"
 Usage: #example
-* meta.versionId = "11"
-* meta.lastUpdated = "2022-06-03T13:40:51.690+00:00"
-* meta.source = "#DCyuaH2ijNQrifW6"
 * identifier.system = "http://some-lis.org/fhir/specimen-identifier-provisioner"
 * identifier.value = "123456789"
 * accessionIdentifier.system = "http://some-lis.org/fhir/specimen-identifier-provisioner"

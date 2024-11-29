@@ -89,17 +89,6 @@ The IHE Structured Data Capture (SDC) standard, [*IHE SDC eCP on FHIR*](http://h
 
 This Cancer Electronic Pathology Reporting FHIR IG and the IHE SDC eCP on FHIR are aligned and meant to operate together. Pathology data entered into an eCP by a pathologist can be converted into FHIR observations via the IHE SDC on FHIR IG. At that point, it can be transmitted to the Central Cancer Registry (CCR) either directly from the LIS or via an EHR intermediary. Both scenarios are described in this IG.
 
-### Relationship to MedMorph
-
-The Cancer Pathology Data Sharing IG reporting process focuses on transmitting SDC/eCP on FHIR pathology resource bundles and distributing them via two pathways
-
-1. LIS to CCR via an EHR
-2. LIS to CCR directly
-
-In the first scenario, this IG is designed to align with the [MedMorph Reference Architecture (RA)](http://hl7.org/fhir/us/medmorph/STU1/index.html). The MedMorph RA now includes the [Central Cancer Registry Reporting Content IG (CCRRC IG)](https://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting-ig/index.html), which is a content IG supporting data exchange from ambulatory sources to CCRs for public health use. The LIS to CCR via an EHR exchange method leverages these existing MedMorph IGs to exchange data. EHRs reporting pathology data to these CCR registries via this pathway are expected to follow guidance provided in the CCRRC IG, including guidelines on PlanDefinition and Subscriptions. This alignment ensures cancer data from both ambulatory and pathology sources are exchanged via a common architecture.
-
-The second scenario, LIS to CCR exchange, is also outlined in this IG with guidelines in the [Artifact Index](https://build.fhir.org/ig/HL7/cancer-reporting/artifacts.html).  
-
 **Figure: Data Flows Supported by this Implementation Guide**
 <table><tr><td><img src="CancerPath.jpg"/></td></tr></table>
 
@@ -119,6 +108,7 @@ Several cancer pathology exchange initiatives are underway internationally, incl
 | Primary Editor | **Rick Geimer** | Lantana Consulting Group | rick.geimer@lantanagroup.com|
 | Co-Editor | **Zabrina Gonzaga** | Lantana Consulting Group | zabrina.gonzaga@lantanagroup.com|
 | Co-Editor | **Wendy Wise** | Lantana Consulting Group | wendy.wise@lantanagroup.com|
+| Co-Editor | **Patrick Joyce** | Lantana Consulting Group | patrick.joyce@lantanagroup.com|
 | Co-Editor | **Ruby Nash** | Lantana Consulting Group | ruby.nash@lantanagroup.com|
 | Co-Editor | **Diana Wright** | Lantana Consulting Group | diana.wright@lantanagroup.com|
 | Co-Editor | **Max Nakamura** | Lantana Consulting Group | max.nakamura@lantanagroup.com|

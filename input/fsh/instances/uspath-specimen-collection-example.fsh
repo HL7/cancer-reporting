@@ -3,9 +3,6 @@ InstanceOf: USCoreEncounterProfile
 Title: "US Pathology Encounter Specimen Collection example"
 Description: "Example encounter in which a pathology specimen collection takes place. References ServiceRequest."
 Usage: #example
-* meta.versionId = "1"
-* meta.lastUpdated = "2022-04-17T13:46:33.150+00:00"
-* meta.source = "#crGIzXgvY3vm6ixN"
 * identifier.system = "http://example.com/fhir/encounters"
 * identifier.value = "123"
 * status = #finished

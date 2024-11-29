@@ -3,9 +3,6 @@ InstanceOf: USPathologyExchangeBundle
 Title: "US Pathology Exchange bundle example"
 Description: "Inter-EHR Exchange Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."
 Usage: #example
-* meta.versionId = "7"
-* meta.lastUpdated = "2022-06-14T19:57:02.095+00:00"
-* meta.source = "#rQ7uOUfOsjo8v8rx"
 * type = #collection
 * timestamp = "2022-03-22T18:05:57.689+00:00"
 * entry[0].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Patient/JoelAlexPatient"

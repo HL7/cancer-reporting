@@ -3,9 +3,6 @@ InstanceOf: CapabilityStatement
 Title: "Pathology Laboratory Information System"
 Description: "This profile defines the expected capabilities of the ''LIS'' actor when conforming to the Cancer Pathology Data Sharing Guide. This role is responsible for allowing creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs."
 Usage: #definition
-* meta.versionId = "1"
-* meta.lastUpdated = "2022-06-16T20:38:40.839+00:00"
-* meta.source = "#8miJe7tKT3dc93yA"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * extension.valueCode = #oo
 * url = "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/pathology-lab-information-system"

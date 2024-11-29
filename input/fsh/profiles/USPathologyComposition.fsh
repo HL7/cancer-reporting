@@ -35,12 +35,12 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
   * ^slicing.rules = #open
 
 // Define context section with slices for each resource
-* section contains
-    context-patient 1..1 and
-    context-encounter 1..1 and
-    context-specimen 1..1 and
-    context-service-request 1..1 and
-    context-practitioner 1..1
+ // * section contains
+   // context-patient 1..1 and
+   // context-encounter 1..1 and
+  //  context-specimen 1..1 and
+  //  context-service-request 1..1 and
+   // context-practitioner 1..1
 
 // * section[context-patient].title = "Patient Context"
 // * section[context-patient].code = http://loinc.org#34133-9 "Patient"
@@ -57,15 +57,15 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 // * section[context-specimen].entry 1..1
 // * section[context-specimen].entry only Reference(USPathologySpecimen)
 
-* section[context-service-request].title = "Service Request Context"
-* section[context-service-request].code = http://loinc.org#39758-4 "Service Request"
-* section[context-service-request].entry 1..1
-* section[context-service-request].entry only Reference(USPathologyServiceRequest)
+// * section[context-service-request].title = "Service Request Context"
+//* section[context-service-request].code = http://loinc.org#39758-4 "Service Request"
+//* section[context-service-request].entry 1..1
+//* section[context-service-request].entry only Reference(USPathologyServiceRequest)
 
-* section[context-practitioner].title = "Practitioner Context"
-* section[context-practitioner].code = http://loinc.org#30525-0 "Practitioner"
-* section[context-practitioner].entry 1..1
-* section[context-practitioner].entry only Reference(USPathologyRelatedPractitionerRoles)
+//* section[context-practitioner].title = "Practitioner Context"
+//* section[context-practitioner].code = http://loinc.org#30525-0 "Practitioner"
+//* section[context-practitioner].entry 1..1
+//* section[context-practitioner].entry only Reference(USPathologyRelatedPractitionerRoles)
 
 // Define lab-report section
 * section contains lab-report 1..*

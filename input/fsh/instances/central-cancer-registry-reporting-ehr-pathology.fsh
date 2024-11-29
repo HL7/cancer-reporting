@@ -3,9 +3,6 @@ InstanceOf: CapabilityStatement
 Title: "Central Cancer Registry Reporting Pathology EHR Capability Statement"
 Description: "This profile defines the expected capabilities of the ''EHR'' actor when conforming to the Cancer Pathology Data Sharing IG.     This role is responsible for allowing creation, modification and deletion of ServiceRequests that represent the request for Pathological analysis (and associated reports), and allows searching and retrieval of resources using US Core APIs."
 Usage: #definition
-* meta.versionId = "2"
-* meta.lastUpdated = "2022-06-13T20:35:59.082+00:00"
-* meta.source = "#OKQnL0yKrYdSaTJK"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * extension.valueCode = #oo
 * url = "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/central-cancer-registry-reporting-ehr-pathology"

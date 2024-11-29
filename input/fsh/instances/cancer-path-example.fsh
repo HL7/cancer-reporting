@@ -3,9 +3,6 @@ InstanceOf: USPathologyServiceRequest
 Title: "Service Request - Cancer Pathology example"
 Description: "This is an example of a pathology specimen collection ServiceRequest that references a related Encounter."
 Usage: #example
-* meta.versionId = "6"
-* meta.lastUpdated = "2022-06-14T19:44:10.254+00:00"
-* meta.source = "#4ilVzsX4Z70y61Dv"
 * status = #active
 * intent = #order
 * category = $sct#386053000 "Evaluation procedure (procedure)"

@@ -26,6 +26,7 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * encounter ^short = "The healthcare event which this Laboratory Report is about (when test ordered)."
 * encounter only Reference(USCoreEncounterProfile)
 * author ^short = "Who and/or what authored the Laboratory Report"
+* author only Reference(USPathologyRelatedPractitionerRoles)
 * title ^short = "Laboratory Report"
 * attester ^short = "Attests the report accuracy"
 

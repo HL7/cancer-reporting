@@ -22,12 +22,7 @@ Note - US Core profiles are expected for Encounter, Organization, Patient, Pract
 * entry ^slicing.rules = #open
 * entry contains
     composition 1..1 MS and
-    us_core_patient 1..1 MS and
-    us_core_encounter 0..1 MS and
-    diagnosticreport 1..1 MS and
-    specimen 1..* MS and
     service-request 0..* MS and
-    pathology-related-practitioner 0..* MS and
-    us_core_procedure 0..* MS
+    pathology-related-practitioner 0..* MS
 * entry[composition].resource 1.. MS
 * entry[composition].resource only USPathologyComposition

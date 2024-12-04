@@ -1,7 +1,7 @@
 Profile: USPathologyRelatedPractitionerRoles
 Parent: USCorePractitionerRoleProfile
 Id: us-pathology-related-practitioner-role
-Title: "US Pathology Related Practitioner Roles"
+Title: "US Pathology Related Practitioner Role"
 Description: """This profile is built upon US Core PractitionerRole and defines pathology-related role codes for the following pathology-related practitioner roles included in NAACCR:
 Attending Doctor: PV1-7
 Referring Doctor: PV1-8

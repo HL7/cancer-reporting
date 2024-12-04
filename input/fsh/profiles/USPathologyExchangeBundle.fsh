@@ -7,9 +7,6 @@ Description: """This collection bundle profile defines the structure for reporti
 To properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).
 
 Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."""
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2022-06-03T15:58:07.696+00:00"
-* ^meta.source = "#LrYrwJtvpPlbbx7E"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #oo
 * type = #collection (exactly)

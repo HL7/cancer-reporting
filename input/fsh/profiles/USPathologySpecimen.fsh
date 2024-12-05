@@ -2,6 +2,7 @@ Profile: USPathologySpecimen
 Parent: USCoreSpecimenProfile
 Id: us-pathology-specimen
 Title: "US Pathology Specimen"
+Description: """This Specimen profile defines a pathology specimen that is the focus of an eCP report."""
 * ^status = #active
 * identifier 1.. 
 * accessionIdentifier 1..

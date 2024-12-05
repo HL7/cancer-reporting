@@ -1,12 +1,10 @@
 Profile: USPathologyExchangeBundle
 Parent: Bundle
 Id: us-pathology-exchange-bundle
-Title: "US Pathology Exchange Bundle"
-Description: """This collection bundle profile defines the structure for reporting to central cancer registry reporting from a pathology environment and/or from an EHR enviroment.
+Title: "US Pathology Bundle"
+Description: """This collection bundle profile defines the structure for reporting to central cancer registry from a pathology environment and/or from an EHR enviroment. This profile is intended to be used for exzchange of eCP data between LIS and EHR systems.
 
-To properly process this transaction bundle, post to the root endpoint of the server (rather than the Bundle endpoint).
-
-Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS."""
+Note - US Core profiles are expected for Encounter, Organization, Patient, Practitioner, and Procedure, when such information is known to the source LIS. Observations are expected to conform to IHE SDC/eCP Observation profile"""
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension.valueCode = #oo
 * type = #collection (exactly)

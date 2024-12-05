@@ -54,15 +54,16 @@
 <artifact deprecated="true" id="Observation/40496.100004300-us" key="Observation-40496.100004300-us" name="Tumor Weight: Specify Weight (g) (example)"/>
 <artifact id="PractitionerRole/practitionerrole-uspath-pathologist-example" key="PractitionerRole-practitionerrole-uspath-pathologist-example" name="US Pathologist PractitionerRole example"/>
 <artifact id="DiagnosticReport/pathology-diagnostic-report" key="DiagnosticReport-pathology-diagnostic-report" name="US Pathology Adrenal DiagnosticReport example"/>
-<artifact deprecated="true" id="StructureDefinition/us-pathology-bundle" key="StructureDefinition-us-pathology-bundle" name="US Pathology Bundle"/>
+<artifact deprecated="true" id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-bundle" name="US Pathology Bundle"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-content-bundle" key="StructureDefinition-us-pathology-content-bundle" name="US Pathology Cancer Registry Content Bundle"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-reporting-bundle" key="StructureDefinition-us-pathology-reporting-bundle" name="US Pathology Cancer Registry Reporting Bundle"/>
 <artifact deprecated="true" id="Bundle/us-pathology-reporting-bundle-example" key="Bundle-us-pathology-reporting-bundle-example" name="US Pathology Cancer Registry Reporting Bundle example"/>
+<artifact id="StructureDefinition/us-pathology-composition" key="StructureDefinition-us-pathology-composition" name="US Pathology Composition Laboratory Report"/>
 <artifact deprecated="true" id="Bundle/us-pathology-content-bundle-example" key="Bundle-us-pathology-content-bundle-example" name="US Pathology Content bundle example"/>
 <artifact id="StructureDefinition/us-pathology-diagnostic-report" key="StructureDefinition-us-pathology-diagnostic-report" name="US Pathology Diagnostic Report"/>
 <artifact id="Encounter/uspath-specimen-collection-example" key="Encounter-uspath-specimen-collection-example" name="US Pathology Encounter Specimen Collection example"/>
-<artifact id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-exchange-bundle" name="US Pathology Exchange Bundle"/>
 <artifact id="Bundle/us-pathology-exchange-bundle-example" key="Bundle-us-pathology-exchange-bundle-example" name="US Pathology Exchange bundle example"/>
+<artifact deprecated="true" id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-exchange-bundle" name="US Pathology ExchangeBundle"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-message-header" key="StructureDefinition-us-pathology-message-header" name="US Pathology MessageHeader"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-next-of-kin" key="StructureDefinition-us-pathology-next-of-kin" name="US Pathology Next of Kin"/>
 <artifact id="ValueSet/us-pathology-provider-types" key="ValueSet-us-pathology-provider-types" name="US Pathology Provider Types"/>

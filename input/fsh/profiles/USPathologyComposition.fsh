@@ -39,6 +39,7 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * section contains
     context-specimen 1..1 and
     context-service-request 1..1 and 
+    lab-report 1..1 and
     specimen 0..1 and 
     tumor 0..1 and
     additional-findings 0..1 and
@@ -57,12 +58,42 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * section[context-service-request].entry only Reference(USPathologyServiceRequest)
 
 // Define lab-report section
-/* * section contains lab-report 1..*
 * section[lab-report]
   * title = "Lab Report Section"
   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
   * entry 1..*
-  * entry only Reference(USPathologyDiagnosticReport or Observation) */
+  * entry only Reference(USPathologySpecimen or USPathologyServiceRequest or USPathologyDianosticReport)
+  * section[specimen]
+    * title = "Specimen"
+    //* code = xxxxx "Specimen Section Code"
+    * entry 1..*
+    * entry only Reference(USPathologySpecimen or ObservationSDCeCC)
+    * section contains
+        specimen 0..1 and 
+        tumor 0..1 and
+        additional-findings 0..1 and
+        special-studies 0..1 and
+        comments 0..1
+    * section[tumor]
+      * title = "Tumor"
+      //* code = xxxxx "Tumor Section Code"
+      * entry 1..*
+      * entry only Reference(ObservationSDCeCC)
+    * section[additional-findings]
+      * title = "Additional Findings"
+      //* code = xxxxx "Additional Findings Section Code"
+      * entry 1..*
+      * entry only Reference(ObservationSDCeCC)
+    * section[special-studies]
+      * title = "Special Studies"
+      //* code = xxxxx "Special Studies Section Code"
+      * entry 1..*
+      * entry only Reference(ObservationSDCeCC)
+    * section[comments]
+      * title = "Comments"
+      //* code = xxxxx "Comments Section Code"
+      * entry 1..*
+      * entry only Reference(ObservationSDCeCC)
 
 // Define procedure section 
 /* * section contains procedures 1..*

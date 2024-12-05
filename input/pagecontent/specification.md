@@ -11,7 +11,7 @@ This guide defines 5 FHIR profiles:
 * [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html)
 * [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/specimen.html)
 * [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](https://hl7.org/fhir/us/core/StructureDefinition-us-core-servicerequest.html)
-* [US Pathology Related Practitioner Roles](StructureDefinition-us-pathology-related-practitioner-role.html) derived from [US Core PractitionerRole](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitionerrole.html)
+* [US Pathology Related Practitioner Role](StructureDefinition-us-pathology-related-practitioner-role.html) derived from [US Core PractitionerRole](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitionerrole.html)
 
 This guide defines 1 value set:
 * [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)

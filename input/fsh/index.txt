@@ -4,7 +4,7 @@ Redwood-Womens-Center-PC                                     Instance   instance
 USPathologyDiagnosticReport                                  Profile    profiles\USPathologyDiagnosticReport.fsh
 USPathologyExchangeBundle                                    Profile    profiles\USPathologyExchangeBundle.fsh
 USPathologyProviderTypes                                     ValueSet   valuesets\USPathologyProviderTypes.fsh
-USPathologyRelatedPractitionerRoles                          Profile    profiles\USPathologyRelatedPractitionerRoles.fsh
+USPathologyRelatedPractitionerRole                          Profile    profiles\USPathologyRelatedPractitionerRole.fsh
 USPathologyServiceRequest                                    Profile    profiles\USPathologyServiceRequest.fsh
 USPathologySpecimen                                          Profile    profiles\USPathologySpecimen.fsh
 USPathologyComposition                                       Profile    profiles\USPathologyComposition.fsh

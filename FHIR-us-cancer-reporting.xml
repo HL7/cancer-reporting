@@ -67,7 +67,7 @@
 <artifact deprecated="true" id="StructureDefinition/us-pathology-next-of-kin" key="StructureDefinition-us-pathology-next-of-kin" name="US Pathology Next of Kin"/>
 <artifact id="ValueSet/us-pathology-provider-types" key="ValueSet-us-pathology-provider-types" name="US Pathology Provider Types"/>
 <artifact deprecated="true" id="CodeSystem/us-pathology-provider-types" key="CodeSystem-us-pathology-provider-types" name="US Pathology Provider Types CodeSystem"/>
-<artifact id="StructureDefinition/us-pathology-related-practitioner-role" key="StructureDefinition-us-pathology-related-practitioner-role" name="US Pathology Related Practitioner Roles"/>
+<artifact id="StructureDefinition/us-pathology-related-practitioner-role" key="StructureDefinition-us-pathology-related-practitioner-role" name="US Pathology Related Practitioner Role"/>
 <artifact id="StructureDefinition/us-pathology-service-request" key="StructureDefinition-us-pathology-service-request" name="US Pathology Service Request"/>
 <artifact id="StructureDefinition/us-pathology-specimen" key="StructureDefinition-us-pathology-specimen" name="US Pathology Specimen"/>
 <artifact id="Parameters/expansion-parameters-fhir-cancer-ig" key="Parameters-expansion-parameters-fhir-cancer-ig" name="expansion-parameters-fhir-cancer-ig"/>
@@ -75,6 +75,7 @@
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
+<page key="change_notes" name="Change Notes"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
 <page key="specification" name="Specification"/>

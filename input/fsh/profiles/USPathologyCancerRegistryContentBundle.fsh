@@ -35,5 +35,5 @@ Note - US Core profiles are expected for Encounter, Organization, Patient, Pract
 * entry[specimen].resource only USPathologySpecimen
 * entry[service-request].resource 1.. MS
 * entry[service-request].resource only USPathologyServiceRequest
-* entry[pathology-related-practitioner].resource only USPathologyRelatedPractitionerRoles
+* entry[pathology-related-practitioner].resource only USPathologyRelatedPractitionerRole
 * entry[pathology-related-practitioner].resource MS

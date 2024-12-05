@@ -9,7 +9,7 @@ Title: "US Pathology Specimen"
 * receivedTime MS
 * parent MS
 * collection MS
-* collection.collector only Reference(USPathologyRelatedPractitionerRoles)
+* collection.collector only Reference(USPathologyRelatedPractitionerRole)
 * collection.collector MS
 * collection.collected[x] 1..1 MS
 * collection.collected[x] only dateTime

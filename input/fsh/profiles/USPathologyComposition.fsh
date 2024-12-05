@@ -26,7 +26,7 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * encounter ^short = "The healthcare event which this Laboratory Report is about (when test ordered)."
 * encounter only Reference(USCoreEncounterProfile)
 * author ^short = "Who and/or what authored the Laboratory Report"
-* author only Reference(USPathologyRelatedPractitionerRoles)
+* author only Reference(USPathologyRelatedPractitionerRole)
 * title ^short = "Laboratory Report"
 * attester ^short = "Attests the report accuracy"
 
@@ -36,50 +36,69 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
   * ^slicing.rules = #open
 
 // Define context section with slices for each resource
- // * section contains
-   // context-patient 1..1 and
-   // context-encounter 1..1 and
-  //  context-specimen 1..1 and
-  //  context-service-request 1..1 and
-   // context-practitioner 1..1
+* section contains
+    context-specimen 1..1 and
+    context-service-request 1..1 and 
+    specimen 0..1 and 
+    tumor 0..1 and
+    additional-findings 0..1 and
+    special-studies 0..1 and
+    comments 0..1
 
-// * section[context-patient].title = "Patient Context"
-// * section[context-patient].code = http://loinc.org#34133-9 "Patient"
-// * section[context-patient].entry 1..1
-// * section[context-patient].entry only Reference(USCorePatientProfile)
+* section[context-specimen].title = "Specimen Context"
+// This doesn't appear to be a valid LOINC code??
+* section[context-specimen].code = http:loinc.org#11945-5 "Specimen"
+* section[context-specimen].entry 1..1
+* section[context-specimen].entry only Reference(USPathologySpecimen)
 
-// * section[context-encounter].title = "Encounter Context"
-// * section[context-encounter].code = http://loinc.org#46240-8 "Encounter"
-// * section[context-encounter].entry 1..1
-// * section[context-encounter].entry only Reference(USCoreEncounterProfile)
-
-// * section[context-specimen].title = "Specimen Context"
-// * section[context-specimen].code = http://loinc.org#11945-5 "Specimen"
-// * section[context-specimen].entry 1..1
-// * section[context-specimen].entry only Reference(USPathologySpecimen)
-
-// * section[context-service-request].title = "Service Request Context"
-//* section[context-service-request].code = http://loinc.org#39758-4 "Service Request"
-//* section[context-service-request].entry 1..1
-//* section[context-service-request].entry only Reference(USPathologyServiceRequest)
-
-//* section[context-practitioner].title = "Practitioner Context"
-//* section[context-practitioner].code = http://loinc.org#30525-0 "Practitioner"
-//* section[context-practitioner].entry 1..1
-//* section[context-practitioner].entry only Reference(USPathologyRelatedPractitionerRoles)
+* section[context-service-request].title = "Service Request Context"
+* section[context-service-request].code = http:loinc.org#39758-4 "Service Request"
+* section[context-service-request].entry 1..1
+* section[context-service-request].entry only Reference(USPathologyServiceRequest)
 
 // Define lab-report section
-* section contains lab-report 1..*
+/* * section contains lab-report 1..*
 * section[lab-report]
   * title = "Lab Report Section"
   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
   * entry 1..*
-  * entry only Reference(USPathologyDiagnosticReport or Observation)
+  * entry only Reference(USPathologyDiagnosticReport or Observation) */
 
-  // Define procedure section 
-* section contains procedures 1..*
+// Define procedure section 
+/* * section contains procedures 1..*
 * section[procedures]
   * title = "Procedure Section"
   * code = http://loinc.org#47519-4 "History of Procedures Document"
   * entry 1..*
-  * entry only Reference(USCoreProcedureProfile)
+  * entry only Reference(USCoreProcedureProfile) */
+
+
+* section[specimen]
+  * title = "Specimen"
+  //* code = xxxxx "Specimen Section Code"
+  * entry 1..*
+  * entry only Reference(USPathologySpecimen or ObservationSDCeCC)
+
+* section[tumor]
+  * title = "Tumor"
+  //* code = xxxxx "Tumor Section Code"
+  * entry 1..*
+  * entry only Reference(ObservationSDCeCC)
+
+* section[additional-findings]
+  * title = "Additional Findings"
+  //* code = xxxxx "Additional Findings Section Code"
+  * entry 1..*
+  * entry only Reference(ObservationSDCeCC)
+
+* section[special-studies]
+  * title = "Special Studies"
+  //* code = xxxxx "Special Studies Section Code"
+  * entry 1..*
+  * entry only Reference(ObservationSDCeCC)
+
+* section[comments]
+  * title = "Comments"
+  //* code = xxxxx "Comments Section Code"
+  * entry 1..*
+  * entry only Reference(ObservationSDCeCC)

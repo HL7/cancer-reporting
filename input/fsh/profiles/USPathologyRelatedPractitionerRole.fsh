@@ -1,4 +1,4 @@
-Profile: USPathologyRelatedPractitionerRoles
+Profile: USPathologyRelatedPractitionerRole
 Parent: USCorePractitionerRoleProfile
 Id: us-pathology-related-practitioner-role
 Title: "US Pathology Related Practitioner Role"

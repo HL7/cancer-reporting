@@ -1,5 +1,5 @@
 Instance: practitionerrole-uspath-surgeon-example
-InstanceOf: USPathologyRelatedPractitionerRoles
+InstanceOf: USPathologyRelatedPractitionerRole
 Title: "Surgeon PractitionerRole example"
 Description: "US Core PractitionerRole example for a Surgeon"
 Usage: #example

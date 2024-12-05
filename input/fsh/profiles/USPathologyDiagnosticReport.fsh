@@ -11,7 +11,7 @@ Description: "It is expected that labs will populate dateTimes with the most spe
 * basedOn only Reference(USPathologyServiceRequest)
 * effective[x] MS
 * effective[x] obeys path-reporting-1
-* performer only Reference(USCorePractitionerProfile or USCoreOrganizationProfile or USPathologyRelatedPractitionerRoles or USCoreCareTeam)
+* performer only Reference(USCorePractitionerProfile or USCoreOrganizationProfile or USPathologyRelatedPractitionerRole or USCoreCareTeam)
 * performer MS
 * resultsInterpreter MS
 * specimen only Reference(USPathologySpecimen)

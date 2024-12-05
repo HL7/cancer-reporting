@@ -9,7 +9,6 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #oo
-* ^url = "http://hl7.org/fhir/us/lab-report/StructureDefinition/Composition-IHE-SDC"
 * ^version = "1.0.0-ballot"
 * ^status = #active
 * ^publisher = "HL7 International / Orders and Observations"
@@ -34,6 +33,7 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
   * ^slicing.discriminator[0].type = #value
   * ^slicing.discriminator[0].path = "code"
   * ^slicing.rules = #open
+  * ^slicing.ordered = true
 
 // Define context section with slices for each resource
 * section contains
@@ -41,6 +41,11 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
     context-service-request 1..1 and 
     specimen 0..1 and 
     tumor 0..1 and
+	margins 0..1 and
+	regional-lymph-nodes 0..1 and
+	distant-metastasis 0..1 and
+	pathological-stage-classifications 0..1 and
+	fico-stage 0..1 and
     additional-findings 0..1 and
     special-studies 0..1 and
     comments 0..1
@@ -62,6 +67,7 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
   * title = "Lab Report Section"
   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
   * entry 1..*
+// Should be updated to IHE SDC DiagnosticReport?
   * entry only Reference(USPathologyDiagnosticReport or Observation) */
 
 // Define procedure section 
@@ -82,6 +88,36 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * section[tumor]
   * title = "Tumor"
   //* code = xxxxx "Tumor Section Code"
+  * entry 1..*
+  * entry only Reference(USCoreObservationClinicalResultProfile)
+  
+* section[margins]
+  * title = "Margins"
+  //* code = xxxxx "Margins Section Code"
+  * entry 1..*
+  * entry only Reference(USCoreObservationClinicalResultProfile)
+  
+* section[regional-lymph-nodes]
+  * title = "Regional Lymph Nodes"
+  //* code = xxxxx "Regional Lymph Nodes Section Code"
+  * entry 1..*
+  * entry only Reference(USCoreObservationClinicalResultProfile)
+
+* section[distant-metastasis]
+  * title = "Distant Metastasis"
+  //* code = xxxxx "Distant Metastasis Section Code"
+  * entry 1..*
+  * entry only Reference(USCoreObservationClinicalResultProfile)
+
+* section[pathological-stage-classifications]
+  * title = "Pathological Stage Classifications"
+  //* code = xxxxx "pTMN Section Code"
+  * entry 1..*
+  * entry only Reference(USCoreObservationClinicalResultProfile)
+
+* section[fico-stage]
+  * title = "Fico Stage Classifications"
+  //* code = xxxxx "Fico Stage Section Code"
   * entry 1..*
   * entry only Reference(USCoreObservationClinicalResultProfile)
 

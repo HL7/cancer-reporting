@@ -1,4 +1,4 @@
-Instance: oncologist-example
+Instance: practitioner-oncologist
 InstanceOf: USCorePractitionerProfile
 Title: "Oncologist Practitioner example"
 Description: "US Core Practitioner Oncologist example"

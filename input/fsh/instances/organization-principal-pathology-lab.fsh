@@ -1,4 +1,4 @@
-Instance: principal-pathology-lab
+Instance: organization-principal-pathology-lab
 InstanceOf: USCoreOrganizationProfile
 Title: "Principal Pathology Lab example"
 Description: "Example of a US Core Organization representing the principal pathology testing Lab organization."

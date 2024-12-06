@@ -1,4 +1,4 @@
-Instance: central-cancer-registry-reporting-ehr-pathology
+Instance: capabilitystatement-central-cancer-registry-reporting-ehr-path
 InstanceOf: CapabilityStatement
 Title: "Central Cancer Registry Reporting Pathology EHR Capability Statement"
 Description: "This profile defines the expected capabilities of the ''EHR'' actor when conforming to the Cancer Pathology Data Sharing IG.     This role is responsible for allowing creation, modification and deletion of ServiceRequests that represent the request for Pathological analysis (and associated reports), and allows searching and retrieval of resources using US Core APIs."

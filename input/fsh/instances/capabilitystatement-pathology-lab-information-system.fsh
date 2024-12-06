@@ -1,4 +1,4 @@
-Instance: pathology-lab-information-system
+Instance: capabilitystatement-pathology-lab-information-system
 InstanceOf: CapabilityStatement
 Title: "Pathology Laboratory Information System"
 Description: "This profile defines the expected capabilities of the ''LIS'' actor when conforming to the Cancer Pathology Data Sharing Guide. This role is responsible for allowing creation, modification and deletion of DiagnosticReports and allows searching and retrieval of resources using US Core APIs."

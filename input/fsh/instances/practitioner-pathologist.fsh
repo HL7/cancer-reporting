@@ -1,4 +1,4 @@
-Instance: pathologist-example
+Instance: practitioner-pathologist
 InstanceOf: USCorePractitionerProfile
 Title: "Pathologist Practitioner example"
 Description: "US Core Practitioner Pathologist example"

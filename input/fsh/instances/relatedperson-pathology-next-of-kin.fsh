@@ -1,10 +1,10 @@
-Instance: pathology-next-of-kin
+Instance: relatedperson-pathology-next-of-kin
 InstanceOf: USCoreRelatedPersonProfile
 Title: "Next-of-Kin RelatedPerson example"
 Description: "This example shows Next of Kin information in a RelatedPerson resource."
 Usage: #example
 * active = true
-* patient = Reference(JoelAlexPatient)
+* patient = Reference(patient-JoelAlex)
 * relationship = $v2-0131#N "Next-of-Kin"
 * name.family = "Me"
 * name.given = "Minni"

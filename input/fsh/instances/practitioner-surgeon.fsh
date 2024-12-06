@@ -1,4 +1,4 @@
-Instance: surgeon-example
+Instance: practitioner-surgeon
 InstanceOf: USCorePractitionerProfile
 Title: "Surgeon Practitioner example"
 Description: "US Core Practitioner surgeon example"

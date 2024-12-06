@@ -1,4 +1,4 @@
-Instance: Redwood-Womens-Center-PC
+Instance: organization-Redwood-Womens-Center-PC
 InstanceOf: USCoreOrganizationProfile
 Title: "Redwood Women's Center, P.C. example"
 Description: "Example of US Core Organization representing the clinical system which ordered the pathology testing and will receive the completed tests/observations."

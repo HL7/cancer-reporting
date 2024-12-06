@@ -1,4 +1,4 @@
-Instance: adrenal-example
+Instance: specimen-adrenal
 InstanceOf: USPathologySpecimen
 Title: "Adrenal Specimen example"
 Description: "Example of an Adrenal specimen"
@@ -8,7 +8,7 @@ Usage: #example
 * accessionIdentifier.system = "http://some-lis.org/fhir/specimen-identifier-provisioner"
 * accessionIdentifier.value = "123456789X"
 * type = $v2-0487#BX
-* request.reference = "ServiceRequest/cancer-path-example"
+* request.reference = "ServiceRequest/servicerequest-cancer-path"
 * collection.collectedDateTime = "2022-01-02"
 * collection.method = $sct#129314006 "Biopsy - action"
 * container.identifier.system = "http://some-lis.org/fhir/specimen-containerID-provisioner"

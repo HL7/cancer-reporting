@@ -15,5 +15,6 @@ Description: "This Observation Profile describes how to represent a Section from
 * hasMember ^short = "Sub-questions of the Section"
 * hasMember ^definition = "hasMember should be used to capture all sub-questions of the Section"
 * hasMember only Reference(ObservationSDCeCC)
+// Maybe if there is only a text value (i.e. Case Summary Section - this should be allowed)
 * value[x] 0..0
 * value[x] ^short = "In a grouper Observation this value is blank"

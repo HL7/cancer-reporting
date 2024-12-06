@@ -1,5 +1,5 @@
 Instance: observation-histologic-type
-InstanceOf: Observation
+InstanceOf: ObservationSDCeCC
 Title: "Histologic Type Observation example"
 Description: "This is an example of an observation of histologic type."
 Usage: #example

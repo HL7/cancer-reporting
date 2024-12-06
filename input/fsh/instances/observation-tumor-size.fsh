@@ -1,5 +1,5 @@
 Instance: observation-tumor-size
-InstanceOf: Observation
+InstanceOf: ObservationSDCeCC
 Title: "Tumor Size Observation example"
 Description: "This is an example of a tumor size observation."
 Usage: #example

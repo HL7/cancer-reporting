@@ -1,5 +1,5 @@
 Instance: observation-histologic-grade
-InstanceOf: Observation
+InstanceOf: ObservationSDCeCC
 Title: "Hisotologic Grade Observation example"
 Description: "This is an example of an observation of histologic grade."
 Usage: #example

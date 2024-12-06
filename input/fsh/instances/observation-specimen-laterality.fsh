@@ -1,5 +1,5 @@
 Instance: observation-specimen-laterality
-InstanceOf: Observation
+InstanceOf: ObservationSDCeCC
 Title: "Specimen Laterality Observation example"
 Description: "This is an example of an observation of tumor specimen laterality."
 Usage: #example

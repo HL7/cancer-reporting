@@ -1,5 +1,5 @@
 Instance: observation-procedure-adrenalectomy
-InstanceOf: Observation
+InstanceOf: ObservationSDCeCC
 Title: "Adrenalectomy Procedure Observation example"
 Description: "This is an example of an adrenalectomy procedure observation."
 Usage: #example

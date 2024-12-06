@@ -1,5 +1,5 @@
 Instance: observation-distant-metastasis
-InstanceOf: Observation
+InstanceOf: ObservationSDCeCC
 Title: "Distant Metastasis Observation example"
 Description: "This is an example observation of distant metastasis which cannot be determined from the submitted specimen(s)."
 Usage: #example

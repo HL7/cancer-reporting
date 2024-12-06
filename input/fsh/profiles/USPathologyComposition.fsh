@@ -40,27 +40,7 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 * section contains
     context-specimen 1..1 and
     context-service-request 1..1 and 
-    specimen 0..1 and 
-    tumor 0..1 and
-	margins 0..1 and
-	regional-lymph-nodes 0..1 and
-	distant-metastasis 0..1 and
-	pathological-stage-classifications 0..1 and
-	fico-stage 0..1 and
-    additional-findings 0..1 and
-    special-studies 0..1 and
-    comments 0..1
-
-* section[context-specimen].title = "Specimen Context"
-// This doesn't appear to be a valid LOINC code??
-* section[context-specimen].code = http:loinc.org#11945-5 "Specimen"
-* section[context-specimen].entry 1..1
-* section[context-specimen].entry only Reference(USPathologySpecimen)
-
-* section[context-service-request].title = "Service Request Context"
-* section[context-service-request].code = http:loinc.org#39758-4 "Service Request"
-* section[context-service-request].entry 1..1
-* section[context-service-request].entry only Reference(USPathologyServiceRequest)
+    lab-report 1..1
 
 // Define lab-report section
 * section contains lab-report 1..*
@@ -68,22 +48,5 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
   * title = "Lab Report Section"
   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
   * entry 1..*
-// Should be updated to IHE SDC DiagnosticReport?
-  * entry only Reference(USPathologyDiagnosticReport or Observation)
-
-// Define procedure section 
-/* * section contains procedures 1..*
-* section[procedures]
-  * title = "Procedure Section"
-  * code = http://loinc.org#47519-4 "History of Procedures Document"
-  * entry 1..*
-  * entry only Reference(USCoreProcedureProfile) */
-
-
-
-
-* section[comments]
-  * title = "Comments"
-  //* code = xxxxx "Comments Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
+// Should be updated to IHE SDC DiagnosticReport (or base the USPathologyDiagnosticReport on the IHE one?? Maybe not because we are US Realm so better to use US core
+  * entry only Reference(USPathologyDiagnosticReport)

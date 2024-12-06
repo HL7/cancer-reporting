@@ -3,11 +3,8 @@ Parent: USCoreServiceRequestProfile
 Id: us-pathology-service-request
 Title: "US Pathology Service Request"
 Description: "This ServiceRequest profile represents the request for analysis of a pathological sample."
-* ^meta.versionId = "9"
-* ^meta.lastUpdated = "2022-06-16T20:43:51.003+00:00"
-* ^meta.source = "#WhUfUjNsxHbt00dJ"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension.valueCode = #oo
+* ^extension[$WG].valueCode = #oo
+* ^status = #active
 * ^experimental = false
 * ^publisher = "HL7 Orders and Observations Work Group"
 * . MS

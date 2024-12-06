@@ -1,0 +1,1 @@
+It is expected that labs will populate dateTimes with the most specific time information known when sending to EHRs (YYYY-MM-DD).

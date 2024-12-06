@@ -1,0 +1,1 @@
+This is a temporary copy of the same-named profile in the IHE SCD/eCP IG for use until an IG Publisher issue with the extension pack is fixed.

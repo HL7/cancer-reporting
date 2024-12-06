@@ -2,14 +2,12 @@ Profile: USPathologyComposition
 Parent: Composition
 Id: us-pathology-composition
 Title: "US Pathology Composition Laboratory Report"
-Description: "Clinical document used to represent a Laboratory Report for the Clinical Pathology Data Sharing Implementation Guide."
+Description: "This Composition profile represents a Laboratory Report for the Clinical Pathology Data Sharing Implementation Guide."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 2
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
-* ^extension[=].valueCode = #oo
-* ^version = "1.0.0-ballot"
+* ^extension[$WG].valueCode = #oo
 * ^status = #active
 * ^publisher = "HL7 International / Orders and Observations"
 * ^contact.name = "HL7 International / Orders and Observations"
@@ -26,7 +24,10 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * encounter only Reference(USCoreEncounterProfile)
 * author ^short = "Who and/or what authored the Laboratory Report"
 * author only Reference(USPathologyRelatedPractitionerRole)
+
+// SG: Could we use the title to hold the "CASE SUMMARY?"
 * title ^short = "Laboratory Report"
+// SG: Would the attester be the USPathologyRelatedPractitionerRole?
 * attester ^short = "Attests the report accuracy"
 
 * section 1..* // Defines the sections in the composition
@@ -62,13 +63,13 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
 * section[context-service-request].entry only Reference(USPathologyServiceRequest)
 
 // Define lab-report section
-/* * section contains lab-report 1..*
+* section contains lab-report 1..*
 * section[lab-report]
   * title = "Lab Report Section"
   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
   * entry 1..*
 // Should be updated to IHE SDC DiagnosticReport?
-  * entry only Reference(USPathologyDiagnosticReport or Observation) */
+  * entry only Reference(USPathologyDiagnosticReport or Observation)
 
 // Define procedure section 
 /* * section contains procedures 1..*
@@ -79,59 +80,7 @@ Description: "Clinical document used to represent a Laboratory Report for the Cl
   * entry only Reference(USCoreProcedureProfile) */
 
 
-* section[specimen]
-  * title = "Specimen"
-  //* code = xxxxx "Specimen Section Code"
-  * entry 1..*
-  * entry only Reference(USPathologySpecimen or USCoreObservationClinicalResultProfile)
 
-* section[tumor]
-  * title = "Tumor"
-  //* code = xxxxx "Tumor Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
-  
-* section[margins]
-  * title = "Margins"
-  //* code = xxxxx "Margins Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
-  
-* section[regional-lymph-nodes]
-  * title = "Regional Lymph Nodes"
-  //* code = xxxxx "Regional Lymph Nodes Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
-
-* section[distant-metastasis]
-  * title = "Distant Metastasis"
-  //* code = xxxxx "Distant Metastasis Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
-
-* section[pathological-stage-classifications]
-  * title = "Pathological Stage Classifications"
-  //* code = xxxxx "pTMN Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
-
-* section[fico-stage]
-  * title = "Fico Stage Classifications"
-  //* code = xxxxx "Fico Stage Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
-
-* section[additional-findings]
-  * title = "Additional Findings"
-  //* code = xxxxx "Additional Findings Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
-
-* section[special-studies]
-  * title = "Special Studies"
-  //* code = xxxxx "Special Studies Section Code"
-  * entry 1..*
-  * entry only Reference(USCoreObservationClinicalResultProfile)
 
 * section[comments]
   * title = "Comments"

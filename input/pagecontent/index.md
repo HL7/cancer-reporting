@@ -24,12 +24,12 @@ This guide defines 1 value set and 1 code system:
 ### Dependencies
 This guide leverages the [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020](https://www.naaccr.org/wp-content/uploads/2020/07/NAACCR-Vol-V_Revised_20200720.pdf) (Revised 2020).
 
-This guide also leverages profiles from the latest versions of:
-* [US Core IG](http://hl7.org/fhir/us/core/index.html)
-* [US Core Patient](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) 
-* [US Core Practitioner](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner.html)
-* [US Core Procedure](http://hl7.org/fhir/us/core/StructureDefinition-us-core-procedure.html)
-* [US Core Organization](http://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html)
+This guide also leverages profiles from the 6.1.0 version of:
+* [US Core IG](http://hl7.org/fhir/us/core/STU6.1/index.html)
+  * [US Core Patient](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html) 
+  * [US Core Practitioner](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-practitioner.html)
+  * [US Core Procedure](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html)
+  * [US Core Organization](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization.html)
 
 ### Audience
 The audience for this IG includes architects and developers of clinical and pathology laboratory health record systems as well as cancer registry systems in the US Realm. Business analysts and policy managers can also benefit from a basic understanding of the use of this cancer pathology data standard to support data flows from pathology laboratories.

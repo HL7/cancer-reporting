@@ -36,17 +36,12 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
   * ^slicing.rules = #open
   * ^slicing.ordered = true
 
-// Define context section with slices for each resource
-* section contains
-    context-specimen 1..1 and
-    context-service-request 1..1 and 
-    lab-report 1..1
-
 // Define lab-report section
 * section contains lab-report 1..*
 * section[lab-report]
   * title = "Lab Report Section"
   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
   * entry 1..*
-// Should be updated to IHE SDC DiagnosticReport (or base the USPathologyDiagnosticReport on the IHE one?? Maybe not because we are US Realm so better to use US core
+// Should we update to IHE SDC DiagnosticReport (or base the USPathologyDiagnosticReport on the IHE one?? Maybe not because we are US Realm so better to use US core
   * entry only Reference(USPathologyDiagnosticReport)
+  * entry ^short = "The Sections in the report."

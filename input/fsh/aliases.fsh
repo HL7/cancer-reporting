@@ -6,4 +6,5 @@ Alias: $sct = http://snomed.info/sct
 Alias: $example = https://example.org
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
-Alias:   $WG = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+Alias: $WG = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+Alias: $WG = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg

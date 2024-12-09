@@ -1,5 +1,5 @@
 Instance: observation-case-summary-adrenal-gland
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyGrouperObservation
 Title: "Case Summary Adrenal Gland example"
 Description: "This is an example observation of the Case Summary for an Adrenal Gland Report."
 Usage: #example
@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $example#ADRENAL-GLAND "Adrenal Gland"
 * subject = Reference(patient-JoelAlex)
-* effectiveDateTime = "2022-07-05"
+* effectiveDateTime = "2024-07-05"
 * performer = Reference(practitioner-oncologist)
-* valueString = "Adrenal Gland"
+//* valueString = "Adrenal Gland"

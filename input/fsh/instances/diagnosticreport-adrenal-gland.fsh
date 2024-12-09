@@ -16,6 +16,7 @@ Usage: #example
 * resultsInterpreter.reference = "PractitionerRole/practitionerrole-uspath-pathologist"
 * specimen.reference = "Specimen/specimen-adrenal"
 * result[0].reference = "Observation/observation-grouper-case-summary"
+* result[=].reference = "Observation/observation-grouper-clinical"
 * result[=].reference = "Observation/observation-grouper-specimen"
 * result[=].reference = "Observation/observation-grouper-tumor"
 // * result[=].identifier.system = "https://example.org"

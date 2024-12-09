@@ -8,3 +8,4 @@ Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $WG = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 Alias: $WG = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+Alias: $section = http://hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-section-codes

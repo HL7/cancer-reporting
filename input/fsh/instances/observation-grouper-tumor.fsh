@@ -17,4 +17,4 @@ Usage: #example
 * hasMember[+] = Reference(Observation/observation-primary-tumor)
 * hasMember[+] = Reference(Observation/observation-tumor-invasion)
 * hasMember[+] = Reference(Observation/observation-tumor-extension)
-* hasMember[+] = Reference(Observation/observation-tumor-weight)s
+* hasMember[+] = Reference(Observation/observation-tumor-weight)

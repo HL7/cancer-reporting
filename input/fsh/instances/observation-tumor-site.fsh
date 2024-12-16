@@ -10,4 +10,4 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 * effectiveDateTime = "2022-07-05"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept = $example#2119.100004300 "Adrenal gland"
+* valueCodeableConcept = http://snomed.info/sct#110506008 "Upper outer quadrant of breast"

@@ -18,7 +18,22 @@ Usage: #example
 * entry[=].resource = observation-grouper-specimen
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-tumor"
 * entry[=].resource = observation-grouper-tumor
-
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-margins"
+* entry[=].resource = observation-grouper-margins
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-regional-lymph-nodes"
+* entry[=].resource = observation-grouper-regional-lymph-nodes
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-distant-metastasis"
+* entry[=].resource = observation-grouper-distant-metastasis
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-figo-stage"
+* entry[=].resource = observation-grouper-figo-stage
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-ptnm-classification"
+* entry[=].resource = observation-grouper-ptnm-classification
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-additional-findings"
+* entry[=].resource = observation-grouper-additional-findings
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-special-studies"
+* entry[=].resource = observation-grouper-special-studies
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-comments"
+* entry[=].resource = observation-grouper-comments
 // * entry[=].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-procedure-adrenalectomy"
 // * entry[=].resource = observation-procedure-adrenalectomy
 // * entry[=].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-specimen-laterality"

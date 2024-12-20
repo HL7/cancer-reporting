@@ -1,7 +1,7 @@
-Instance: composition-adrenal-gland
+Instance: composition-invasive-carcinoma-of-the-breast
 InstanceOf: USPathologyComposition
-Title: "Composition - Adrenal Gland Pathology Report"
-Description: "Composition - Adrenal Gland Pathology Report"
+Title: "Composition - Surgical Pathology Cancer Case Summary"
+Description: "Composition - Surgical Pathology Cancer Case Summary"
 Usage: #example
 * status = #final
 * type = $loinc#11526-1 "Pathology Study"

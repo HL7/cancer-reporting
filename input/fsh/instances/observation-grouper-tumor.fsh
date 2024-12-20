@@ -3,8 +3,8 @@ InstanceOf: USPathologyGrouperObservation
 Title: "Tumor Section"
 Description: "Grouper Observation that represents the Tumor Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
-* identifier.system = "https://example.org"
-* identifier.value = "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
 * code = USPathologyCodeSystem#TUMOR "Tumor Section"
 * subject.reference = "Patient/patient-JoelAlex"
@@ -14,7 +14,6 @@ Usage: #example
 * hasMember[+] = Reference(Observation/observation-histologic-type)
 * hasMember[+] = Reference(Observation/observation-histologic-grade)
 * hasMember[+] = Reference(Observation/observation-tumor-size)
-* hasMember[+] = Reference(Observation/observation-primary-tumor)
-* hasMember[+] = Reference(Observation/observation-tumor-invasion)
-* hasMember[+] = Reference(Observation/observation-tumor-extension)
-* hasMember[+] = Reference(Observation/observation-tumor-weight)
+* hasMember[+] = Reference(Observation/observation-tumor-focality)
+* hasMember[+] = Reference(Observation/observation-ductal-carcinoma)
+* hasMember[+] = Reference(Observation/observation-tumor-extent)

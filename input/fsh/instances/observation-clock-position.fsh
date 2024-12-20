@@ -1,15 +1,15 @@
-Instance: observation-tumor-site
+Instance: observation-clock-position
 InstanceOf: ObservationSDCeCC
-Title: "General Tumor Site Observation"
-Description: "An observation describing the general tumor site."
+Title: "Observation for Clock Position General"
+Description: "An observation describing clock position in general."
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"
-* identifier.value = "urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b"
+* identifier.value = "urn:uuid:ab9326c2-e1fe-4ba0-873c-41c923c7f772"
 * status = #final
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #51180-100004300
-* code.coding[0].display = "Tumor Site (Note B)"
+* code.coding[0].display = "Clock position"
 * code.coding[1].system = "http://snomed.info/sct"
 * code.coding[1].code = #399687005
 * code.coding[1].display = "Anatomic location of primary malignant neoplasm (observable entity)"
@@ -19,5 +19,8 @@ Usage: #example
 * performer[0].reference = "Practitioner/857462813"
 * performer[0].type = "Practitioner"
 * performer[0].display = "R. Bambrick"
-* hasMember[+] = Reference(Observation/observation-clock-position)
-* derivedFrom[+] = Reference(Observation/observation-grouper-tumor)
+* valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
+* valueCodeableConcept.coding[0].code = #42418-100004300
+* valueCodeableConcept.coding[0].display = "Clock position"
+* derivedFrom[+] = Reference(Observation/observation-tumor-site)
+* hasMember[+] = Reference(Observation/observation-clock-position-8)

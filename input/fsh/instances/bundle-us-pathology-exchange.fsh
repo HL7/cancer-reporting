@@ -7,7 +7,7 @@ Usage: #example
 * timestamp = "2024-03-22T18:05:57.689+00:00"
 // TODO: There are a ton of things - like next of kin, plus all the locations, organizations, etc, that need a place in this IG
 * entry[0].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Composition/composition-adrenal-gland"
-* entry[=].resource = composition-adrenal-gland
+* entry[=].resource = composition-invasive-carcinoma-of-the-breast
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/diagnosticreport-adrenal-gland"
 * entry[=].resource = diagnosticreport-adrenal-gland
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-case-summary"

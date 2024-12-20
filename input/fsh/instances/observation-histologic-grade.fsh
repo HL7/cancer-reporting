@@ -1,13 +1,26 @@
 Instance: observation-histologic-grade
 InstanceOf: ObservationSDCeCC
-Title: "Hisotologic Grade Observation example"
-Description: "This is an example of an observation of histologic grade."
+Title: "Histologic Grade Observation Example"
+Description: "This is the main observation for histologic grade."
 Usage: #example
-* identifier.system = "https://example.org"
-* identifier.value = "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#49275.100004300"
+
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
-* code = $example#49275.100004300 "Histologic Grade (Notes C through E)"
-* subject = Reference(patient-JoelAlex)
-* effectiveDateTime = "2022-07-05"
-* performer = Reference(practitioner-oncologist)
-* valueCodeableConcept = $example#48634.100004300 "High grade (> 20 mitoses / 50 high-power fields)"
+* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].code = #380281-100004300
+* code.coding[0].display = "Histologic Grade (Nottingham Histologic Score)"
+* subject.reference = "Patient/1234567893"
+* subject.display = "Meredith Shepard"
+* effectivePeriod.start = "2024-12-06T14:52:02+00:00"
+* performer[0].reference = "Practitioner/857462813"
+* performer[0].type = "Practitioner"
+* performer[0].display = "R. Bambrick"
+* valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
+* valueCodeableConcept.coding[0].code = #380283-100004300
+* valueCodeableConcept.coding[0].display = "Nottingham Score"
+* hasMember[+] = Reference(Observation/observation-glandular-differentiation)
+* hasMember[+] = Reference(Observation/observation-nuclear-pleomorphism)
+* hasMember[+] = Reference(Observation/observation-mitotic-rate)
+* hasMember[+] = Reference(Observation/observation-overall-grade)
+* derivedFrom[+] = Reference(Observation/observation-grouper-tumor)

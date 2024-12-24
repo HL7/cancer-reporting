@@ -1,12 +1,7 @@
-### Actors
-* **Message Sender:** An application sending a pathology report message to a Message Destination. This actor may be the creator of the message but could also be an intermediary. This can be thought of as the server in a client/server interaction.
-* **Message Destination:** An application that receives the pathology report message. This can be thought of as the client in a client/server interaction.
-
 ### FHIR Paradigms Supported by This IG
 * [RESTful API](https://restfulapi.net/)
-* [FHIR Messaging](http://hl7.org/fhir/messaging.html)
 
-This guide defines 5 FHIR profiles:
+This guide defines 8 FHIR profiles:
 * [US Pathology Exchange Content Bundle](StructureDefinition-us-pathology-exchange-bundle.html)
 * [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html)
 * [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/specimen.html)

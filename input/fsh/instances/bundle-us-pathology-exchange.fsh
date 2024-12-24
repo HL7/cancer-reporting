@@ -6,10 +6,10 @@ Usage: #example
 * type = #collection
 * timestamp = "2024-03-22T18:05:57.689+00:00"
 // TODO: There are a ton of things - like next of kin, plus all the locations, organizations, etc, that need a place in this IG
-* entry[0].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Composition/composition-adrenal-gland"
+* entry[0].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Composition/composition-invasive-carcinoma-of-the-breast"
 * entry[=].resource = composition-invasive-carcinoma-of-the-breast
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/diagnosticreport-adrenal-gland"
-* entry[=].resource = diagnosticreport-adrenal-gland
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/diagnosticreport-breast-invasive-carcinoma"
+* entry[=].resource = diagnosticreport-breast-invasive-carcinoma
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-case-summary"
 * entry[=].resource = observation-grouper-case-summary
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-clinical"
@@ -24,8 +24,6 @@ Usage: #example
 * entry[=].resource = observation-grouper-regional-lymph-nodes
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-distant-metastasis"
 * entry[=].resource = observation-grouper-distant-metastasis
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-figo-stage"
-* entry[=].resource = observation-grouper-figo-stage
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-ptnm-classification"
 * entry[=].resource = observation-grouper-ptnm-classification
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-additional-findings"
@@ -61,8 +59,8 @@ Usage: #example
 
 
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Specimen/specimen-adrenal"
-* entry[=].resource = specimen-adrenal
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Specimen/specimen-breast"
+* entry[=].resource = specimen-breast
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Patient/patient-JoelAlex"
 * entry[=].resource = patient-JoelAlex
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Encounter/encounter-uspath-specimen-collection"

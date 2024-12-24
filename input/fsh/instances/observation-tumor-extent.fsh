@@ -10,10 +10,8 @@ Usage: #example
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #16403-100004300
 * code.coding[0].display = "Tumor Extent (Note H)"
-* subject.reference = "Patient/1234567893"
-* subject.display = "Meredith Shepard"
+* subject = Reference(patient-JoelAlex)
+
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer[0].reference = "Practitioner/857462813"
-* performer[0].type = "Practitioner"
-* performer[0].display = "R. Bambrick"
+* performer = Reference(Practitioner/practitioner-oncologist)
 * derivedFrom[+] = Reference(Observation/observation-grouper-tumor)

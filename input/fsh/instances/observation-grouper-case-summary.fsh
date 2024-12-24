@@ -3,8 +3,8 @@ InstanceOf: USPathologyGrouperObservation
 Title: "Case Summary Section"
 Description: "Grouper Observation that represents the Case Summary Section"
 Usage: #example
-* identifier.system = "https://example.org"
-* identifier.value = "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
 * code = USPathologyCodeSystem#CASE-SUMMARY "Case Summary Section"
 * subject = Reference(patient-JoelAlex)

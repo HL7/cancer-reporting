@@ -5,10 +5,10 @@ Description: "Grouper Observation that represents the Special Studies Section an
 Usage: #example
 
 * identifier.system = "https://example.org"
-* identifier.value = "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"
+* identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6dbver1#2149.100004300"
 * status = #final
 * code = USPathologyCodeSystem#SPECIAL-STUDIES "Special Studies Section"
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
-//* hasMember.reference = "Observation/observation-regional-lymph-nodes-numbmer-examined"
+* hasMember.reference = "Observation/observation-special-studies-breast-biomarker"

@@ -1,13 +1,16 @@
-Instance: observation-case-summary-adrenal-gland
+Instance: observation-case-summary-breast
 InstanceOf: USPathologyGrouperObservation
-Title: "Case Summary Adrenal Gland example"
-Description: "This is an example observation of the Case Summary for an Adrenal Gland Report."
+Title: "Case Summary Breast Cancer Example"
+Description: "This is an example observation of the Case Summary for a Breast Cancer Report."
 Usage: #example
+
 * identifier.system = "https://example.org"
-* identifier.value = "Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"
+* identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"
 * status = #final
-* code = $example#ADRENAL-GLAND "Adrenal Gland"
-* subject = Reference(patient-JoelAlex)
+* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].code = #BREAST-CANCER
+* code.coding[0].display = "Breast Cancer"
+* subject.reference = "Patient/patient-JoelAlex"
+* subject.display = "Alex Joel"
 * effectiveDateTime = "2024-07-05"
-* performer = Reference(practitioner-oncologist)
-//* valueString = "Adrenal Gland"
+* performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"

@@ -1,7 +1,7 @@
 Instance: procedure-path-specimen
 InstanceOf: USCoreProcedureProfile
 Title: "Pathology specimen collection procedure example"
-Description: "This is an example of a surgical procedure to perform a resection of the left adrenal gland to collect a pathology specimen."
+Description: "This is an example of a surgical procedure to perform a biopsy or excision of breast tissue to collect a pathology specimen."
 Usage: #example
 * basedOn = Reference(ServiceRequest/servicerequest-cancer-path) "Service Request - Cancer Pathology Specimen Collection"
 * status = #completed

@@ -9,6 +9,6 @@ Usage: #example
 * code = $sct#50322008 "Surgical pathology specimen, clerical procedure including coding of diagnoses"
 * subject.reference = "Patient/patient-JoelAlex"
 * encounter.reference = "Encounter/encounter-uspath-specimen-collection"
-* occurrenceDateTime = "2021-11-01T17:00:14-05:00"
+* occurrenceDateTime = "2024-11-01T17:00:14-05:00"
 * requester.reference = "Practitioner/practitioner-surgeon"
-* specimen.reference = "Specimen/specimen-adrenal"
+* specimen.reference = "Specimen/specimen-breast"

@@ -4,8 +4,8 @@ Title: "Special Studies Section"
 Description: "Grouper Observation that represents the Special Studies Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 
-* identifier.system = "https://example.org"
-* identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6dbver1#2149.100004300"
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:87335ed1-f468-4061-a401-8b8e3b54cf4c"
 * status = #final
 * code = USPathologyCodeSystem#SPECIAL-STUDIES "Special Studies Section"
 * subject.reference = "Patient/patient-JoelAlex"

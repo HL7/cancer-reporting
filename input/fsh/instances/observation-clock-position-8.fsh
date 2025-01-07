@@ -16,7 +16,7 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer = Reference(Practitioner/practitioner-oncologist)
+* performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #6643-100004300
 * valueCodeableConcept.coding[0].display = "8 o'clock"

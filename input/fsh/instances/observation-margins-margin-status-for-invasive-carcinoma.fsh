@@ -14,11 +14,11 @@ Usage: #example
 
 * subject = Reference(Patient/patient-JoelAlex)
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer = Reference(Practitioner/practitioner-oncologist)
+* performer = Reference(practitioner-oncologist)
 
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #16448-100004300
 * valueCodeableConcept.coding[0].display = "All margins negative for invasive carcinoma"
-* hasMember[+] = Reference(Observation/observation-margins-distance-to-closest-margin)
-* hasMember[+] = Reference(Observation/observation-margins-closest-margin-to-invasive-carcinoma)
-* derivedFrom[+] = Reference(Observation/observation-grouper-margins)
+* hasMember[+] = Reference(observation-margins-distance-to-closest-margin)
+* hasMember[+] = Reference(observation-margins-closest-margin-to-invasive-carcinoma)
+* derivedFrom[+] = Reference(observation-grouper-margins)

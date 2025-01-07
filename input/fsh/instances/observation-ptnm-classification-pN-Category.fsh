@@ -18,4 +18,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #38649.100004300
 * valueCodeableConcept.coding[0].display = "pN0: No regional lymph node metastasis identified or ITCs only#"
 
-* derivedFrom[+] = Reference(Observation/observation-grouper-ptnm-classification)
+* derivedFrom[+] = Reference(observation-grouper-ptnm-classification)

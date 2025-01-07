@@ -13,6 +13,6 @@ Usage: #example
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
-* hasMember.reference = "Observation/observation-special-studies-estrogen-receptor"
-* hasMember.reference = "Observation/observation-special-studies-estrogen-receptor-status"
-* derivedFrom[+] = Reference(Observation/observation-grouper-special-studies)
+* hasMember[+].reference = "Observation/observation-special-studies-estrogen-receptor"
+* hasMember[+].reference = "Observation/observation-special-studies-estrogen-receptor-status"
+* derivedFrom[+] = Reference(observation-grouper-special-studies)

@@ -13,11 +13,11 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer = Reference(Practitioner/practitioner-oncologist)
+* performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #16215-100004300
 * valueCodeableConcept.coding[0].display = "Right"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #73056007
 * valueCodeableConcept.coding[1].display = "Right breast structure (body structure)"
-* derivedFrom[+] = Reference(Observation/observation-grouper-specimen)
+* derivedFrom[+] = Reference(observation-grouper-specimen)

@@ -13,7 +13,7 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer = Reference(Practitioner/practitioner-oncologist)
+* performer = Reference(practitioner-oncologist)
 * valueQuantity.value = 13.0
-* derivedFrom[+] = Reference(Observation/observation-tumor-size)
-* derivedFrom[+] = Reference(Observation/observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-tumor-size)
+* derivedFrom[+] = Reference(observation-grouper-tumor)

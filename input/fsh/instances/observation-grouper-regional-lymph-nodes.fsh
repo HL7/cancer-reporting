@@ -11,4 +11,4 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 * effectiveDateTime = "2022-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
-* hasMember[+] = Reference(Observation/observation-regional-lymph-node-status)
+* hasMember[+] = Reference(observation-regional-lymph-node-status)

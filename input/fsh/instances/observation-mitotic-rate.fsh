@@ -13,9 +13,9 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer = Reference(Practitioner/practitioner-oncologist)
+* performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #16383-100004300
 * valueCodeableConcept.coding[0].display = "Score 1"
-* derivedFrom[+] = Reference(Observation/observation-histologic-grade)
-* derivedFrom[+] = Reference(Observation/observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-histologic-grade)
+* derivedFrom[+] = Reference(observation-grouper-tumor)

@@ -18,4 +18,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #38649.100004300
 * valueCodeableConcept.coding[0].display = "Fibrocystic changes; biopsy site identified"
 
-* derivedFrom[+] = Reference(Observation/observation-grouper-additional-findings)
+* derivedFrom[+] = Reference(observation-grouper-additional-findings)

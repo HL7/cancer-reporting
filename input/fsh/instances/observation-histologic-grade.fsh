@@ -13,12 +13,12 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer = Reference(Practitioner/practitioner-oncologist)
+* performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #380283-100004300
 * valueCodeableConcept.coding[0].display = "Nottingham Score"
-* hasMember[+] = Reference(Observation/observation-glandular-differentiation)
-* hasMember[+] = Reference(Observation/observation-nuclear-pleomorphism)
-* hasMember[+] = Reference(Observation/observation-mitotic-rate)
-* hasMember[+] = Reference(Observation/observation-overall-grade)
-* derivedFrom[+] = Reference(Observation/observation-grouper-tumor)
+* hasMember[+] = Reference(observation-glandular-differentiation)
+* hasMember[+] = Reference(observation-nuclear-pleomorphism)
+* hasMember[+] = Reference(observation-mitotic-rate)
+* hasMember[+] = Reference(observation-overall-grade)
+* derivedFrom[+] = Reference(observation-grouper-tumor)

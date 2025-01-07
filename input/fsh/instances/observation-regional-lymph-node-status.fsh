@@ -18,6 +18,6 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #374353.100004300
 * valueCodeableConcept.coding[0].display = "Regional lymph nodes present"
 
-* hasMember[+] = Reference(Observation/observation-regional-lymph-nodes-number-examined)
-* hasMember[+] = Reference(Observation/observation-regional-lymph-nodes-number-sentinel)
-* derivedFrom[+] = Reference(Observation/observation-grouper-regional-lymph-nodes)
+* hasMember[+] = Reference(observation-regional-lymph-nodes-number-examined)
+* hasMember[+] = Reference(observation-regional-lymph-nodes-number-sentinel)
+* derivedFrom[+] = Reference(observation-grouper-regional-lymph-nodes)

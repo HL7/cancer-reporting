@@ -22,5 +22,5 @@ Usage: #example
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #200001000004104
 * valueCodeableConcept.coding[1].display = "Greatest length dimension of excised primary malignant neoplasm (observable entity)"
-* hasMember[+] = Reference(Observation/observation-additional-dimension)
-* derivedFrom[+] = Reference(Observation/observation-grouper-tumor)
+* hasMember[+] = Reference(observation-additional-dimension)
+* derivedFrom[+] = Reference(observation-grouper-tumor)

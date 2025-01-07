@@ -10,6 +10,6 @@ Usage: #example
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
-* hasMember[+] = Reference(Observation/observation-patient-age-group)
-* hasMember[+] = Reference(Observation/observation-clinical-history)
-* hasMember[+] = Reference(Observation/observation-functional-status)
+* hasMember[+] = Reference(observation-patient-age-group)
+* hasMember[+] = Reference(observation-clinical-history)
+* hasMember[+] = Reference(observation-functional-status)

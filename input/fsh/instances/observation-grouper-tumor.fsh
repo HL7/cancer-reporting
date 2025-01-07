@@ -10,10 +10,10 @@ Usage: #example
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2022-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
-* hasMember[+] = Reference(Observation/observation-tumor-site)
-* hasMember[+] = Reference(Observation/observation-histologic-type)
-* hasMember[+] = Reference(Observation/observation-histologic-grade)
-* hasMember[+] = Reference(Observation/observation-tumor-size)
-* hasMember[+] = Reference(Observation/observation-tumor-focality)
-* hasMember[+] = Reference(Observation/observation-ductal-carcinoma)
-* hasMember[+] = Reference(Observation/observation-tumor-extent)
+* hasMember[+] = Reference(observation-tumor-site)
+* hasMember[+] = Reference(observation-histologic-type)
+* hasMember[+] = Reference(observation-histologic-grade)
+* hasMember[+] = Reference(observation-tumor-size)
+* hasMember[+] = Reference(observation-tumor-focality)
+* hasMember[+] = Reference(observation-ductal-carcinoma)
+* hasMember[+] = Reference(observation-tumor-extent)

@@ -12,5 +12,5 @@ Usage: #example
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 
-* hasMember[+] = Reference(Observation/observation-ptnm-classification-pT-Category)
-* hasMember[+] = Reference(Observation/observation-ptnm-classification-pN-Category)
+* hasMember[+] = Reference(observation-ptnm-classification-pT-Category)
+* hasMember[+] = Reference(observation-ptnm-classification-pN-Category)

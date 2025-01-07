@@ -17,4 +17,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #40505.100004300
 * valueCodeableConcept.coding[0].display = "Negative (Score 0)"
 * hasMember.reference = "Observation/observation-special-studies-estrogen-receptor"
-* derivedFrom[+] = Reference(Observation/observation-special-studies-her2)
+* derivedFrom[+] = Reference(observation-special-studies-her2)

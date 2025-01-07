@@ -17,4 +17,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #36944.100004300
 * valueCodeableConcept.coding[0].display = "HER2 (by immunohistochemistry)"
 * hasMember.reference = "Observation/observation-special-studies-her2"
-* derivedFrom[+] = Reference(Observation/observation-special-studies-breast-biomarker)
+* derivedFrom[+] = Reference(observation-special-studies-breast-biomarker)

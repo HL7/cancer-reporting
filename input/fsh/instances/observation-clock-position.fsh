@@ -16,9 +16,9 @@ Usage: #example
 * subject = Reference(patient-JoelAlex)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer = Reference(Practitioner/practitioner-oncologist)
+* performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #42418-100004300
 * valueCodeableConcept.coding[0].display = "Clock position"
-* derivedFrom[+] = Reference(Observation/observation-tumor-site)
-* hasMember[+] = Reference(Observation/observation-clock-position-8)
+* derivedFrom[+] = Reference(observation-tumor-site)
+* hasMember[+] = Reference(observation-clock-position-8)

@@ -16,4 +16,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #351601.100004300
 * valueCodeableConcept.coding[0].display = "Exact number (specify)"
-* derivedFrom[+] = Reference(Observation/observation-grouper-regional-lymph-nodes)
+* derivedFrom[+] = Reference(observation-grouper-regional-lymph-nodes)

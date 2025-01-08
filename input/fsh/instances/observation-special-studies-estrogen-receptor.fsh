@@ -9,7 +9,7 @@ Usage: #example
 * status = #final
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #43789.100004300
-* code.coding[0].display = "Breast Biomarker Testing Performed on Previous Biopsy"
+* code.coding[0].display = "Estrogen Receptor (ER)"
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

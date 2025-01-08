@@ -1,6 +1,6 @@
 Instance: observation-additional-findings-specify
 InstanceOf: ObservationSDCeCC
-Title: "Additiona Findings Observation example"
+Title: "Additional Findings Observation example"
 Description: "This is an example of an observation of Additional Findings"
 Usage: #example
 

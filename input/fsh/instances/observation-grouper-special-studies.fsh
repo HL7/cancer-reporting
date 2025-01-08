@@ -11,4 +11,6 @@ Usage: #example
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
-* hasMember = Reference(observation-special-studies-breast-biomarker)
+* hasMember[+] = Reference(observation-special-studies-breast-biomarker)
+* hasMember[+] = Reference(observation-special-studies-estrogen-receptor)
+* hasMember[+] = Reference(observation-special-studies-her2)

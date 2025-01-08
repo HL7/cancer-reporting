@@ -1,7 +1,7 @@
 Instance: observation-special-studies-her2
 InstanceOf: ObservationSDCeCC
-Title: "Breast Biomarker Testing Performed on Previous Biopsy"
-Description: "Estrogen Receptor (ER) Observation Example"
+Title: "HER2 Observation Example"
+Description: "HER2 Observation Example"
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"
@@ -16,5 +16,5 @@ Usage: #example
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #36944.100004300
 * valueCodeableConcept.coding[0].display = "HER2 (by immunohistochemistry)"
-* hasMember.reference = "Observation/observation-special-studies-her2"
+* hasMember[+] = Reference(observation-special-studies-her2)
 * derivedFrom[+] = Reference(observation-special-studies-breast-biomarker)

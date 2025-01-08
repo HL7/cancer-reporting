@@ -1,6 +1,6 @@
 Instance: observation-special-studies-estrogen-receptor
 InstanceOf: ObservationSDCeCC
-Title: "Breast Biomarker Testing Performed on Previous Biopsy"
+Title: "Special Studies Estrogen Receptor"
 Description: "Estrogen Receptor (ER) Observation Example"
 Usage: #example
 
@@ -16,4 +16,5 @@ Usage: #example
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #41776.100004300
 * valueCodeableConcept.coding[0].display = "Estrogen Receptor (ER)"
-* derivedFrom[+] = Reference(observation-special-studies-estrogen-receptor)
+* derivedFrom[+] = Reference(observation-special-studies-breast-biomarker)
+* hasMember[+] = Reference(observation-special-studies-estrogen-receptor-status)

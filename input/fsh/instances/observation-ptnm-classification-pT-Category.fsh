@@ -1,6 +1,6 @@
 Instance: observation-ptnm-classification-pT-Category
 InstanceOf: ObservationSDCeCC
-Title: "Regional Lymph Nodes Observation example"
+Title: "Regional Lymph Nodes PT Category Observation example"
 Description: "This is an example of an observation of regional lymph nodes."
 Usage: #example
 

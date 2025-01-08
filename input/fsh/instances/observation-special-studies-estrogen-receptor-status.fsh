@@ -16,4 +16,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #53472.100004300
 * valueCodeableConcept.coding[0].display = "Cannot be determined (indeterminate)"
-* derivedFrom[+] = Reference(observation-special-studies-breast-biomarker)
+* derivedFrom[+] = Reference(observation-special-studies-estrogen-receptor)

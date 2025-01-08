@@ -17,5 +17,5 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #38649.100004300
 * valueCodeableConcept.coding[0].display = "Fibrocystic changes; biopsy site identified"
 
-* hasMember.reference = "Observation/observation-additional-findings-specify"
-* hasMember.reference = "Observation/observation-additional-findings-breast-biomarker-testing"
+* hasMember[+] = Reference(observation-additional-findings-specify)
+* hasMember[+] = Reference(observation-additional-findings-breast-biomarker-testing)

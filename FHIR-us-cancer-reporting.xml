@@ -35,7 +35,7 @@
 <artifact id="CapabilityStatement/capabilitystatement-pathology-lab-information-system" key="CapabilityStatement-pathology-lab-information-system" name="Pathology Laboratory Information System"/>
 <artifact id="Procedure/procedure-path-specimen" key="Procedure-path-specimen" name="Pathology specimen collection procedure example"/>
 <artifact id="Observation/observation-patient-age-group" key="Observation-observation-patient-age-group" name="Patient Age Group Observation example"/>
-<artifact id="Patient/patient-JoelAlex" key="Patient-JoelAlexPatient" name="Patient example"/>
+<artifact id="Patient/patient-OakleyAnnie" key="Patient-OakleyAnniePatient" name="Patient example"/>
 <artifact deprecated="true" id="Observation/2137.100004300-us" key="Observation-2137.100004300-us" name="Primary Tumor (pT): pTX: primary tumor cannot be assessed (example)"/>
 <artifact id="Observation/observation-primary-tumor" key="Observation-observation-primary-tumor" name="Primary Tumor Observation example"/>
 <artifact id="Organization/organization-principal-pathology-lab" key="Organization-principal-pathology-lab" name="Principal Pathology Lab example"/>

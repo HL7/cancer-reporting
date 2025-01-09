@@ -10,7 +10,7 @@ Usage: #example
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #BREAST-CANCER
 * code.coding[0].display = "Breast Cancer"
-* subject.reference = "Patient/patient-JoelAlex"
-* subject.display = "Alex Joel"
+* subject.reference = "Patient/patient-OakleyAnnie"
+* subject.display = "Annie Oakley"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"

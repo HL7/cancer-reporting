@@ -13,7 +13,7 @@ Usage: #example
 * code.coding[1].system = "http://snomed.info/sct"
 * code.coding[1].code = #2620001000004108
 * code.coding[1].display = "Specimen collection procedure (observable entity)"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)

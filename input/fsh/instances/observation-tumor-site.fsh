@@ -13,7 +13,7 @@ Usage: #example
 * code.coding[1].system = "http://snomed.info/sct"
 * code.coding[1].code = #399687005
 * code.coding[1].display = "Anatomic location of primary malignant neoplasm (observable entity)"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)

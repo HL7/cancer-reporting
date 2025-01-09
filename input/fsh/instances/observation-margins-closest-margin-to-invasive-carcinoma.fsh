@@ -12,7 +12,7 @@ Usage: #example
 * code.coding[0].code = #351503-100004300
 * code.coding[0].display = "Closest Margin(s) to Invasive Carcinoma"
 
-* subject = Reference(Patient/patient-JoelAlex)
+* subject = Reference(Patient/patient-OakleyAnnie)
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 

@@ -7,7 +7,7 @@ Usage: #example
 * intent = #order
 * category = $sct#386053000 "Evaluation procedure (procedure)"
 * code = $sct#50322008 "Surgical pathology specimen, clerical procedure including coding of diagnoses"
-* subject.reference = "Patient/patient-JoelAlex"
+* subject.reference = "Patient/patient-OakleyAnnie"
 * encounter.reference = "Encounter/encounter-uspath-specimen-collection"
 * occurrenceDateTime = "2024-11-01T17:00:14-05:00"
 * requester.reference = "Practitioner/practitioner-surgeon"

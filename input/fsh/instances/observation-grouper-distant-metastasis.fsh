@@ -7,8 +7,8 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
-* code = TemporaryCAPeCC#16775.100004300 "Distant Metastasis"
-* subject.reference = "Patient/patient-JoelAlex"
+* code = $CAPeCCCodeSystem#16775.100004300 "Distant Metastasis"
+* subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember.reference = "Observation/observation-distant-metastasis"

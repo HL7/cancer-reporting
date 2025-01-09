@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6dbver1.51265.100004300"
 * status = #final
 * code = $example#51265.100004300 "Tumor Extension"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2022-07-05"
 * performer = Reference(practitioner-oncologist)
 * component[0].code = $example#39537.100004300 "Tumor invades into or through the adrenal capsule"

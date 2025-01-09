@@ -10,7 +10,7 @@ Usage: #example
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #327740.100004300
 * code.coding[0].display = "pT Category"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2022-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 

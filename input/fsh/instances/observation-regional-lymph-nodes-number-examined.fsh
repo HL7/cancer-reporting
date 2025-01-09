@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:a903ae85-913a-4c9b-94cb-c6a1e00340e3"
 * status = #final
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2022-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * code.coding[0].system = "https://cap.org/eCC"

@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "Breast.Invasive.Res.189_4.009.001.REL_sdcFDF/ver4.009.001"
 * status = #final
 * code = $example#4.009.001 "Histologic Type (Note C)"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2025-07-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#2117.100004300 "Invasive carcinoma of no special type (ductal)"

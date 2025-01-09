@@ -9,7 +9,7 @@ Usage: #example
 * status = #final
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #43789.100004300
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2022-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 

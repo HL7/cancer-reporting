@@ -1,5 +1,5 @@
-CodeSystem: TemporaryCAPeCC
-Id: temporary-cap-ecc
+CodeSystem: CAPeCCCodeSystem
+Id: cap-ecc-codesystem
 Title: "Temporary CAP eCC CodeSystem"
 Description: "A temporary CodeSystem for CAP eCC codes until the official CodeSystem is available at http://terminology.hl7.org/CodeSystem/CAPeCC."
 * #42554.100004300 "Procedure"

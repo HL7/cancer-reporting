@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
 * code = $example#2149.100004300 "Distant Metastasis (pM) (Note I)"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2022-07-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#20895.100004300 "?Not applicable - pM cannot be determined from the submitted specimen(s)"

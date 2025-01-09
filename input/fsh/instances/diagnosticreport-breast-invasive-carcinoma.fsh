@@ -8,8 +8,8 @@ Usage: #example
 * status = #final
 * category = $loinc#LP7839-6 "Pathology"
 * code = $loinc#60568-3 "Pathology Synoptic report"
-* subject.reference = "Patient/patient-JoelAlex"
-* subject.display = "Alex Joel"
+* subject.reference = "Patient/patient-OakleyAnnie"
+* subject.display = "Annie Oakley"
 * encounter.reference = "Encounter/encounter-uspath-specimen-collection"
 * effectiveDateTime = "2021-01-01T21:39:30.000Z"
 * performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"

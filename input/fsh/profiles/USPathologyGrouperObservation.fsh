@@ -10,7 +10,7 @@ Description: "This Observation Profile describes how to represent a Section from
 * identifier ^definition = "The identifier should match the SDC answer instanceGUID. If an answer instanceGUID is not available a Question instanceGUID shall be used"
 * code ^short = "SDC section ID"
 * code ^definition = "The code should match the section ID from the SDC form."
-* code from TemporaryCAPeCCValueSet (extensible)
+* code from CAPeCCValueSet (extensible)
 * subject only Reference(USCorePatientProfile)
 * hasMember ^short = "Sub-questions of the Section"
 * hasMember ^definition = "hasMember should be used to capture all sub-questions of the Section"

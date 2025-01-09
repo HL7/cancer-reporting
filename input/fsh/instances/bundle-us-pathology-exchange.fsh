@@ -131,8 +131,8 @@ Usage: #example
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Specimen/specimen-breast"
 * entry[=].resource = specimen-breast
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Patient/patient-JoelAlex"
-* entry[=].resource = patient-JoelAlex
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Patient/patient-OakleyAnnie"
+* entry[=].resource = patient-OakleyAnnie
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Encounter/encounter-uspath-specimen-collection"
 * entry[=].resource = encounter-uspath-specimen-collection
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-practitioner-oncologist"

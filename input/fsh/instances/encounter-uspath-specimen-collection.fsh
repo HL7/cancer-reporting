@@ -8,6 +8,6 @@ Usage: #example
 * status = #finished
 * class = $v3-ActCode#IMP "inpatient encounter"
 * type = $sct#726007 "Pathology consultation, comprehensive, records and specimen with report"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 * participant[0].individual = Reference(practitioner-oncologist)
 * participant[+].individual = Reference(practitioner-pathologist)

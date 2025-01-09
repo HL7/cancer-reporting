@@ -10,7 +10,7 @@ Usage: #example
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #38125-100004300
 * code.coding[0].display = "Nuclear Pleomorphism"
-* subject = Reference(patient-JoelAlex)
+* subject = Reference(patient-OakleyAnnie)
 
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)

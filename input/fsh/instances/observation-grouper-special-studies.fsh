@@ -7,7 +7,8 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:87335ed1-f468-4061-a401-8b8e3b54cf4c"
 * status = #final
-* code = USPathologyCodeSystem#SPECIAL-STUDIES "Special Studies Section"
+* code = TemporaryCAPeCC#17834.100004300 "SPECIAL STUDIES"
+
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

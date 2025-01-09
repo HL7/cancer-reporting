@@ -7,7 +7,8 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
-* code = USPathologyCodeSystem#REGIONAL-LYMPH-NODES "Regional Lymph Nodes Section"
+* code = TemporaryCAPeCC#39858.100004300 "Regional Lymph Nodes"
+
 * subject = Reference(patient-JoelAlex)
 * effectiveDateTime = "2022-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

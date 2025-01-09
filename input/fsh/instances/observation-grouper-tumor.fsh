@@ -6,7 +6,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
-* code = USPathologyCodeSystem#TUMOR "Tumor Section"
+* code = TemporaryCAPeCC#007.100004300 "Tumor Section"
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2022-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

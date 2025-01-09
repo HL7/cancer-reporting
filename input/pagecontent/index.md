@@ -19,10 +19,10 @@ This guide defines 7 FHIR profiles:
 * [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
 * [US Pathology Related Practitioner Role](StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
 
-This guide defines 2 value sets and 1 code system:
+This guide defines 2 value sets and 2 code systems:
 * [US Pathology Provider Types ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
 
-* [US Pathology Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-section-codes.html)
+* [US Pathology Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-TemporaryCAPeCCValueSet.html)
 
 ### Dependencies
 This guide leverages the [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020](https://www.naaccr.org/wp-content/uploads/2020/07/NAACCR-Vol-V_Revised_20200720.pdf) (Revised 2020).

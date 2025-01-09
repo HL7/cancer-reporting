@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "https://example.org"
 * identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6dbver1#2149.100004300"
 * status = #final
-* code = USPathologyCodeSystem#COMMENTS "Comments Section"
+* code = TemporaryCAPeCC#16784.100004300 "Comment(s)"
 * subject.reference = "Patient/patient-JoelAlex"
 * effectiveDateTime = "2024-07-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

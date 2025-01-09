@@ -9,4 +9,5 @@ Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $WG = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 Alias: $WG = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 Alias: $section = http://hl7.org/fhir/us/cancer-reporting/ValueSet/us-pathology-section-codes
-Alias: eCC = https://cap.org/eCC
+Alias: $eCC = https://cap.org/eCC
+Alias: $TEMPCAPeCCValueSet = http://terminology.hl7.org/CodeSystem/CAPeCC

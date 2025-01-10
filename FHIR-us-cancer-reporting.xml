@@ -17,6 +17,8 @@
 <artifact id="Observation/observation-additional-findings-breast-biomarker-testing" key="Observation-observation-additional-findings-breast-biomarker-testing" name="Breast Biomarker Testing Performed on Previous Biopsy Observation example"/>
 <artifact id="Specimen/specimen-breast" key="Specimen-specimen-breast" name="Breast Specimen Example"/>
 <artifact id="Observation/observation-procedure-breast-excision" key="Observation-observation-procedure-breast-excision" name="Breast Tissue Excision Observation Example"/>
+<artifact id="CodeSystem/cap-ecc-codesystem" key="CodeSystem-cap-ecc-codesystem" name="CAP eCC CodeSystem"/>
+<artifact id="ValueSet/cap-ecc-value-set" key="ValueSet-cap-ecc-value-set" name="CAP eCC ValueSet"/>
 <artifact id="Observation/observation-case-summary-breast" key="Observation-observation-case-summary-breast" name="Case Summary Breast Cancer Example"/>
 <artifact id="Observation/observation-grouper-case-summary" key="Observation-observation-grouper-case-summary" name="Case Summary Section"/>
 <artifact id="CapabilityStatement/capabilitystatement-central-cancer-registry-reporting-ehr-path" key="CapabilityStatement-central-cancer-registry-reporting-ehr-pathology" name="Central Cancer Registry Reporting Pathology EHR Capability Statement"/>
@@ -61,7 +63,7 @@
 <artifact id="CapabilityStatement/capabilitystatement-pathology-lab-information-system" key="CapabilityStatement-pathology-lab-information-system" name="Pathology Laboratory Information System"/>
 <artifact id="Procedure/procedure-path-specimen" key="Procedure-path-specimen" name="Pathology specimen collection procedure example"/>
 <artifact id="Observation/observation-patient-age-group" key="Observation-observation-patient-age-group" name="Patient Age Group Observation example"/>
-<artifact id="Patient/patient-OakleyAnnie" key="Patient-OakleyAnniePatient" name="Patient example"/>
+<artifact id="Patient/patient-OakleyAnnie" key="Patient-JoelAlexPatient" name="Patient example"/>
 <artifact deprecated="true" id="Observation/2137.100004300-us" key="Observation-2137.100004300-us" name="Primary Tumor (pT): pTX: primary tumor cannot be assessed (example)"/>
 <artifact id="Observation/observation-primary-tumor" key="Observation-observation-primary-tumor" name="Primary Tumor Observation example"/>
 <artifact id="Organization/organization-principal-pathology-lab" key="Organization-principal-pathology-lab" name="Principal Pathology Lab example"/>
@@ -84,8 +86,6 @@
 <artifact id="PractitionerRole/practitionerrole-uspath-surgeon" key="PractitionerRole-practitionerrole-uspath-surgeon-example" name="Surgeon PractitionerRole example"/>
 <artifact id="Observation/observation-TNM-descriptors" key="Observation-observation-TNM-descriptors" name="TNM Descriptors Observation example"/>
 <artifact deprecated="true" id="Observation/20880.100004300-us" key="Observation-20880.100004300-us" name="TNM Descriptors: m (multiple primary tumors) (example)"/>
-<artifact id="CodeSystem/temporary-cap-ecc" key="CodeSystem-temporary-cap-ecc" name="Temporary CAP eCC CodeSystem"/>
-<artifact id="ValueSet/temporary-cap-ecc-value-set" key="ValueSet-temporary-cap-ecc-value-set" name="Temporary CAP eCC ValueSet"/>
 <artifact id="Observation/observation-regional-lymph-nodes-number-examined" key="Observation-observation-regional-lymph-nodes-number-examined" name="Total Number of Lymph Nodes Examined (sentinel and non-sentinel) example"/>
 <artifact id="Observation/observation-tumor-extension" key="Observation-observation-tumor-extension" name="Tumor Extension Observation example"/>
 <artifact deprecated="true" id="Observation/53526.100004300-us" key="Observation-53526.100004300-us" name="Tumor Extension-2: Tumor invasion-2 (example)"/>

@@ -6,5 +6,5 @@ This element does not match any known slice defined in the profile http://hl7.or
 # 02 CKey CodeSystem not available yet
 A definition for CodeSystem 'https://example.org' could not be found, so the code cannot be validated
 
-# 03 CKey CodeSystem not available yet
+# 03 CKey CodeSystem not available yet but will be
 A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated

@@ -5,7 +5,7 @@ Description: "This profile defines the expected capabilities of the ''EHR'' acto
 Usage: #definition
 * extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * extension.valueCode = #oo
-* url = "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/capabilitystatement-central-cancer-registry-reporting-ehr-path"
+* url = "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/central-cancer-registry-reporting-ehr-pathology"
 * version = "1.0.0"
 * name = "CentralCancerRegistryReportingPathologyEHRCapabilityStatement"
 * title = "Central Cancer Registry Reporting Pathology EHR Capability Statement"

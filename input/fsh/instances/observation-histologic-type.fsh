@@ -3,8 +3,8 @@ InstanceOf: ObservationSDCeCC
 Title: "Histologic Type Observation example"
 Description: "This is an example of an observation of histologic type."
 Usage: #example
-* identifier.system = "www.cap.org/eCC"
-* identifier.value = "Breast.Invasive.Res.189_4.009.001.REL_sdcFDF/ver4.009.001"
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
 * code = $example#4.009.001 "Histologic Type (Note C)"
 * subject = Reference(patient-OakleyAnnie)

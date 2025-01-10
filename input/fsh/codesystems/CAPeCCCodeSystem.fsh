@@ -3,6 +3,8 @@ Id: cap-ecc-codesystem
 Title: "CAP eCC CodeSystem"
 Description: "A CodeSystem for CAP eCC codes"
 // CAP eCC codes available at http://terminology.hl7.org/CodeSystem/CAPeCC."
+* ^experimental = false
+* ^caseSensitive = false
 * #42554.100004300 "Procedure"
 * #50809.100004300 "Percutaneous needle biopsy"
 * #46633.100004300 "Endoscopic directed biopsy (specify radiographic technique)"

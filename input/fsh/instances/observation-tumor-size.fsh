@@ -10,12 +10,10 @@ Usage: #example
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #30148-100004300
 * code.coding[0].display = "Tumor Size (Note E)"
-* subject.reference = "Patient/1234567893"
-* subject.display = "Meredith Shepard"
+* subject.reference = "Patient/patient-OakleyAnnie"
+* subject.display = "Annie Oakley"
 * effectivePeriod.start = "2024-12-06T14:52:02+00:00"
-* performer[0].reference = "Practitioner/857462813"
-* performer[0].type = "Practitioner"
-* performer[0].display = "R. Bambrick"
+* performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #31357-100004300
 * valueCodeableConcept.coding[0].display = "Greatest dimension of largest invasive focus greater than 1 mm (specify exact measurement in Millimeters (mm))"

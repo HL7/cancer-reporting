@@ -8,7 +8,7 @@ Usage: #example
 * name.family = "Oakley"
 * name.given = "Annie"
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
-* identifier[0].system = "urn:oid:6.7.8.9"
+* identifier[0].system = "urn:oid:2.16.840.1.113883.4.3.6"
 * identifier[=].value = "patient-OakleyAnnie"
 * identifier[+].use = #usual
 * identifier[=].type.text = "SHID"
@@ -20,10 +20,8 @@ Usage: #example
 * identifier[=].value = "66574567"
 * identifier[+].use = #usual
 * identifier[=].type.text = "MRN"
-* identifier[=].system = "urn:oid:6.7.8.9"
+* identifier[=].system = "urn:oid:2.16.840.1.113883.4.3.2"
 * identifier[=].value = "abc123"
-* name.family = "Oakley"
-* name.given = "Annie"
 * telecom[0].system = #phone
 * telecom[=].value = "1-(303)555-1212"
 * telecom[=].use = #home

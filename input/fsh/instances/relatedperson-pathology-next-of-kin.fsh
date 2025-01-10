@@ -6,7 +6,7 @@ Usage: #example
 * active = true
 * patient = Reference(patient-OakleyAnnie)
 * relationship = $v2-0131#N "Next-of-Kin"
-* name.family = "Hickock"
+* name.family = "Hickok"
 * name.given = "Bill"
 * telecom.system = #phone
 * telecom.value = "1-989-654-7896"

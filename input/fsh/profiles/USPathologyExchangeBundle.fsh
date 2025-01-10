@@ -2,10 +2,10 @@ Profile: USPathologyExchangeBundle
 Parent: Bundle
 Id: us-pathology-exchange-bundle
 Title: "US Pathology Bundle"
-Description: "This collection Bundle profile defines the structure for reporting to central cancer registry from a pathology environment and/or from an EHR enviroment. This profile is intended to be used for exchange of eCP data between LIS and EHR systems."
+Description: "This transaction Bundle profile defines the structure for reporting to central cancer registry from a pathology environment and/or from an EHR enviroment. This profile is intended to be used for exchange of eCP data between LIS and EHR systems."
 * ^extension[$WG].valueCode = #oo
 * ^status = #active
-* type = #collection (exactly)
+* type = #transaction (exactly)
 * type MS
 * timestamp MS
 * entry MS

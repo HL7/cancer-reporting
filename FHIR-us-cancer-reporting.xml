@@ -7,28 +7,54 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Observation/observation-additional-dimension" key="Observation-observation-additional-dimension" name="Additional Dimension Observation"/>
+<artifact id="Observation/observation-additional-findings-specify" key="Observation-observation-additional-findings-specify" name="Additional Findings Observation example"/>
+<artifact id="Observation/observation-grouper-additional-findings" key="Observation-observation-grouper-additional-findings" name="Additional Findings Section"/>
 <artifact deprecated="true" id="Observation/2118.100004300-us" key="Observation-2118.100004300-us" name="Adrenal Gland (example)"/>
-<artifact id="Specimen/specimen-adrenal" key="Specimen-adrenal-example" name="Adrenal Specimen example"/>
+<artifact deprecated="true" id="Specimen/adrenal-example" key="Specimen-adrenal-example" name="Adrenal Specimen example"/>
 <artifact id="Observation/observation-procedure-adrenalectomy" key="Observation-observation-procedure-adrenalectomy" name="Adrenalectomy Procedure Observation example"/>
-<artifact id="Observation/observation-case-summary-adrenal-gland" key="Observation-observation-case-summary-adrenal-gland" name="Case Summary Adrenal Gland example"/>
+<artifact id="Observation/observation-special-studies-breast-biomarker" key="Observation-observation-special-studies-breast-biomarker" name="Breast Biomarker Testing Performed on Previous Biopsy"/>
+<artifact id="Observation/observation-additional-findings-breast-biomarker-testing" key="Observation-observation-additional-findings-breast-biomarker-testing" name="Breast Biomarker Testing Performed on Previous Biopsy Observation example"/>
+<artifact id="Specimen/specimen-breast" key="Specimen-specimen-breast" name="Breast Specimen Example"/>
+<artifact id="Observation/observation-procedure-breast-excision" key="Observation-observation-procedure-breast-excision" name="Breast Tissue Excision Observation Example"/>
+<artifact id="Observation/observation-case-summary-breast" key="Observation-observation-case-summary-breast" name="Case Summary Breast Cancer Example"/>
 <artifact id="Observation/observation-grouper-case-summary" key="Observation-observation-grouper-case-summary" name="Case Summary Section"/>
 <artifact id="CapabilityStatement/capabilitystatement-central-cancer-registry-reporting-ehr-path" key="CapabilityStatement-central-cancer-registry-reporting-ehr-pathology" name="Central Cancer Registry Reporting Pathology EHR Capability Statement"/>
 <artifact id="Observation/observation-clinical-history" key="Observation-observation-clinical-history" name="Clinical History Observation example"/>
 <artifact id="Observation/observation-grouper-clinical" key="Observation-observation-grouper-clinical" name="Clinical Section"/>
-<artifact id="Composition/composition-adrenal-gland" key="Composition-composition-adrenal-gland" name="Composition - Adrenal Gland Pathology Report"/>
+<artifact id="Observation/observation-margins-closest-margin-to-invasive-carcinoma" key="Observation-observation-margins-closest-margin-to-invasive-carcinoma" name="Closest Margin(s) to Invasive Carcinoma example"/>
+<artifact id="Observation/observation-grouper-comments" key="Observation-observation-grouper-comments" name="Comments Section"/>
+<artifact id="Composition/composition-invasive-carcinoma-of-the-breast" key="Composition-composition-invasive-carcinoma-of-the-breast" name="Composition - Surgical Pathology Cancer Case Summary"/>
 <artifact deprecated="true" id="Observation/2149.100004300-us" key="Observation-2149.100004300-us" name="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
 <artifact id="Observation/observation-distant-metastasis" key="Observation-observation-distant-metastasis" name="Distant Metastasis Observation example"/>
+<artifact id="Observation/observation-grouper-distant-metastasis" key="Observation-observation-grouper-distant-metastasis" name="Distant Metastasis Section"/>
+<artifact id="Observation/observation-ductal-carcinoma" key="Observation-observation-ductal-carcinoma" name="Ductal Carcinoma In Situ Observation Example"/>
 <artifact deprecated="true" id="Encounter/pathology-encounter" key="Encounter-pathology-encounter" name="Encounter (example)"/>
+<artifact id="Observation/observation-special-studies-estrogen-receptor-status" key="Observation-observation-special-studies-estrogen-receptor-status" name="Estrogen Receptor (ER) Status"/>
+<artifact id="Observation/observation-grouper-figo-stage" key="Observation-observation-grouper-figo-stage" name="FIGO Stage Section"/>
 <artifact id="Observation/observation-functional-status" key="Observation-observation-functional-status" name="Functional Status (Notes A,B) (select all that apply) example"/>
-<artifact id="Observation/observation-histologic-grade" key="Observation-observation-histologic-grade" name="Hisotologic Grade Observation example"/>
+<artifact id="Observation/observation-tumor-site" key="Observation-observation-tumor-site" name="General Tumor Site Observation"/>
+<artifact id="Observation/observation-glandular-differentiation" key="Observation-observation-glandular-differentiation" name="Glandular/Tubular Differentiation Observation Example"/>
+<artifact id="Observation/observation-special-studies-negative" key="Observation-observation-special-studies-negative" name="HER2 (by immunohistochemistry)"/>
+<artifact id="Observation/observation-special-studies-her2" key="Observation-observation-special-studies-her2" name="HER2 Observation Example"/>
+<artifact id="Observation/observation-histologic-grade" key="Observation-observation-histologic-grade" name="Histologic Grade Observation Example"/>
 <artifact deprecated="true" id="Observation/49275.100004300-us" key="Observation-49275.100004300-us" name="Histologic Grade: High grade (example)"/>
 <artifact id="Observation/observation-histologic-type" key="Observation-observation-histologic-type" name="Histologic Type Observation example"/>
 <artifact deprecated="true" id="Observation/59852.100004300-us" key="Observation-59852.100004300-us" name="Histologic Type: Adrenal cortical carcinoma (example)"/>
 <artifact id="StructureDefinition/ihe-sdc-ecc-Observation" key="StructureDefinition-ihe-sdc-ecc-Observation" name="IHE SDC/eCP on FHIR Observation"/>
+<artifact id="Observation/observation-margins-distance-to-closest-margin" key="Observation-observation-margins-distance-to-closest-margin" name="Margin Distance from Invasive Carcinoma to Closest Margin example"/>
+<artifact id="Observation/observation-margins-margin-status-for-invasive-carcinoma" key="Observation-observation-margins-margin-status-for-invasive-carcinoma" name="Margin Status for Invasive Carcinoma Observation example"/>
+<artifact id="Observation/observation-grouper-margins" key="Observation-observation-grouper-margins" name="Margins Section"/>
 <artifact deprecated="true" id="MessageHeader/pathology-message-header" key="MessageHeader-pathology-message-header" name="MessageHeader example"/>
+<artifact id="Observation/observation-mitotic-rate" key="Observation-observation-mitotic-rate" name="Mitotic Rate Observation Example"/>
 <artifact id="RelatedPerson/relatedperson-pathology-next-of-kin" key="RelatedPerson-pathology-next-of-kin" name="Next-of-Kin RelatedPerson example"/>
+<artifact id="Observation/observation-nuclear-pleomorphism" key="Observation-observation-nuclear-pleomorphism" name="Nuclear Pleomorphism Observation Example"/>
+<artifact id="Observation/observation-regional-lymph-nodes-number-sentinel" key="Observation-observation-regional-lymph-nodes-number-sentinel" name="Number of Sentinel Nodes Examined"/>
+<artifact id="Observation/observation-clock-position" key="Observation-observation-clock-position" name="Observation for Clock Position General"/>
 <artifact id="Practitioner/practitioner-oncologist" key="Practitioner-oncologist-example" name="Oncologist Practitioner example"/>
 <artifact id="PractitionerRole/practitionerrole-uspath-practitioner-oncologist" key="PractitionerRole-oncologist-example" name="Oncologist PractitionerRole example"/>
+<artifact id="Observation/observation-overall-grade" key="Observation-observation-overall-grade" name="Overall Grade Observation Example"/>
+<artifact id="Observation/observation-ptnm-classification-pN-Category" key="Observation-observation-ptnm-classification-pN-Category" name="PTNM Classification Observation example"/>
 <artifact id="Practitioner/practitioner-pathologist" key="Practitioner-pathologist-example" name="Pathologist Practitioner example"/>
 <artifact deprecated="true" id="PractitionerRole/pathologist-example" key="PractitionerRole-pathologist-example" name="Pathologist PractitionerRole (example)"/>
 <artifact deprecated="true" id="Bundle/cancer-us-pathology-message-bundle" key="Bundle-cancer-us-pathology-message-bundle" name="Pathology Bundle (example)"/>
@@ -43,28 +69,38 @@
 <artifact id="Organization/organization-Redwood-Womens-Center-PC" key="Organization-Redwood-Womens-Center-PC" name="Redwood Women's Center, P.C. example"/>
 <artifact deprecated="true" id="Observation/2143.100004300-us" key="Observation-2143.100004300-us" name="Regional Lymph Nodes (pN): pN0: No regional lymph node metastasis (example)"/>
 <artifact id="Observation/observation-regional-lymph-nodes" key="Observation-observation-regional-lymph-nodes" name="Regional Lymph Nodes Observation example"/>
+<artifact id="Observation/observation-ptnm-classification-pT-Category" key="Observation-observation-ptnm-classification-pT-Category" name="Regional Lymph Nodes PT Category Observation example"/>
+<artifact id="Observation/observation-grouper-regional-lymph-nodes" key="Observation-observation-grouper-regional-lymph-nodes" name="Regional Lymph Nodes Section"/>
+<artifact id="Observation/observation-regional-lymph-node-status" key="Observation-observation-regional-lymph-node-status" name="Regional Lymph Nodes Status Observation example"/>
 <artifact deprecated="true" id="Observation/1867.100004300-us" key="Observation-1867.100004300-us" name="Regional Lymph Nodes: None Submitted (example)"/>
 <artifact id="ServiceRequest/servicerequest-cancer-path" key="ServiceRequest-cancer-path-example" name="Service Request - Cancer Pathology example"/>
-<artifact id="Observation/observation-specimen-laterality" key="Observation-observation-specimen-laterality" name="Specimen Laterality Observation example"/>
+<artifact id="Observation/observation-special-studies-estrogen-receptor" key="Observation-observation-special-studies-estrogen-receptor" name="Special Studies Estrogen Receptor"/>
+<artifact id="Observation/observation-grouper-special-studies" key="Observation-observation-grouper-special-studies" name="Special Studies Section"/>
+<artifact id="Observation/observation-clock-position-8" key="Observation-observation-clock-position-8" name="Specific Clock Position Observation (8 o'clock)"/>
+<artifact id="Observation/observation-specimen-laterality" key="Observation-observation-specimen-laterality" name="Specimen Laterality Observation Example"/>
 <artifact deprecated="true" id="Observation/52756.100004300-us" key="Observation-52756.100004300-us" name="Specimen Laterality: Bilateral (example)"/>
 <artifact id="Observation/observation-grouper-specimen" key="Observation-observation-grouper-specimen" name="Specimen Section"/>
 <artifact id="Practitioner/practitioner-surgeon" key="Practitioner-surgeon-example" name="Surgeon Practitioner example"/>
 <artifact id="PractitionerRole/practitionerrole-uspath-surgeon" key="PractitionerRole-practitionerrole-uspath-surgeon-example" name="Surgeon PractitionerRole example"/>
 <artifact id="Observation/observation-TNM-descriptors" key="Observation-observation-TNM-descriptors" name="TNM Descriptors Observation example"/>
 <artifact deprecated="true" id="Observation/20880.100004300-us" key="Observation-20880.100004300-us" name="TNM Descriptors: m (multiple primary tumors) (example)"/>
+<artifact id="CodeSystem/temporary-cap-ecc" key="CodeSystem-temporary-cap-ecc" name="Temporary CAP eCC CodeSystem"/>
+<artifact id="ValueSet/temporary-cap-ecc-value-set" key="ValueSet-temporary-cap-ecc-value-set" name="Temporary CAP eCC ValueSet"/>
+<artifact id="Observation/observation-regional-lymph-nodes-number-examined" key="Observation-observation-regional-lymph-nodes-number-examined" name="Total Number of Lymph Nodes Examined (sentinel and non-sentinel) example"/>
 <artifact id="Observation/observation-tumor-extension" key="Observation-observation-tumor-extension" name="Tumor Extension Observation example"/>
 <artifact deprecated="true" id="Observation/53526.100004300-us" key="Observation-53526.100004300-us" name="Tumor Extension-2: Tumor invasion-2 (example)"/>
 <artifact deprecated="true" id="Observation/51265.100004300-us" key="Observation-51265.100004300-us" name="Tumor Extension: Tumor invasion (example)"/>
+<artifact id="Observation/observation-tumor-extent" key="Observation-observation-tumor-extent" name="Tumor Extent Observation Example"/>
+<artifact id="Observation/observation-tumor-focality" key="Observation-observation-tumor-focality" name="Tumor Focality Observation Example"/>
 <artifact id="Observation/observation-tumor-invasion" key="Observation-observation-tumor-invasion" name="Tumor Invasion Observation example"/>
 <artifact id="Observation/observation-grouper-tumor" key="Observation-observation-grouper-tumor" name="Tumor Section"/>
-<artifact id="Observation/observation-tumor-site" key="Observation-observation-tumor-site" name="Tumor Site Observation example"/>
-<artifact id="Observation/observation-tumor-size" key="Observation-observation-tumor-size" name="Tumor Size Observation example"/>
+<artifact id="Observation/observation-tumor-size" key="Observation-observation-tumor-size" name="Tumor Size Observation"/>
 <artifact deprecated="true" id="Observation/2129.100004300-us" key="Observation-2129.100004300-us" name="Tumor Size: Greatest dimension in Centimeters (cm) (example)"/>
 <artifact id="Observation/observation-tumor-weight" key="Observation-observation-tumor-weight" name="Tumor Weight Observation example"/>
 <artifact deprecated="true" id="Observation/40496.100004300-us" key="Observation-40496.100004300-us" name="Tumor Weight: Specify Weight (g) (example)"/>
 <artifact id="PractitionerRole/practitionerrole-uspath-pathologist" key="PractitionerRole-practitionerrole-uspath-pathologist-example" name="US Pathologist PractitionerRole example"/>
 <artifact deprecated="true" id="DiagnosticReport/pathology-diagnostic-report" key="DiagnosticReport-pathology-diagnostic-report" name="US Pathology Adrenal DiagnosticReport example"/>
-<artifact id="DiagnosticReport/diagnosticreport-adrenal-gland" key="DiagnosticReport-diagnosticreport-adrenal-gland" name="US Pathology Adrenal Gland DiagnosticReport example"/>
+<artifact id="DiagnosticReport/diagnosticreport-breast-invasive-carcinoma" key="DiagnosticReport-diagnosticreport-breast-invasive-carcinoma" name="US Pathology Breast Invasive Carcinoma DiagnosticReport example"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-exchange-bundle" key="StructureDefinition-us-pathology-bundle" name="US Pathology Bundle"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-content-bundle" key="StructureDefinition-us-pathology-content-bundle" name="US Pathology Cancer Registry Content Bundle"/>
 <artifact deprecated="true" id="StructureDefinition/us-pathology-reporting-bundle" key="StructureDefinition-us-pathology-reporting-bundle" name="US Pathology Cancer Registry Reporting Bundle"/>
@@ -86,6 +122,7 @@
 <artifact id="StructureDefinition/us-pathology-service-request" key="StructureDefinition-us-pathology-service-request" name="US Pathology Service Request"/>
 <artifact id="StructureDefinition/us-pathology-specimen" key="StructureDefinition-us-pathology-specimen" name="US Pathology Specimen"/>
 <artifact id="Parameters/expansion-parameters-fhir-cancer-ig" key="Parameters-expansion-parameters-fhir-cancer-ig" name="expansion-parameters-fhir-cancer-ig"/>
+<artifact id="Observation/observation-grouper-ptnm-classification" key="Observation-observation-grouper-ptnm-classification" name="pTNM Classification Section"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

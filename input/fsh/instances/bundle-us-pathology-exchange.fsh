@@ -185,10 +185,6 @@ Usage: #example
 * entry[=].resource = observation-special-studies-her2
 * entry[=].request.method = #POST
 * entry[=].request.url = "Observation/observation-special-studies-her2"
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-special-studies-negative"
-* entry[=].resource = observation-special-studies-negative
-* entry[=].request.method = #POST
-* entry[=].request.url = "Observation/observation-special-studies-negative"
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Specimen/specimen-breast"
 * entry[=].resource = specimen-breast
 * entry[=].request.method = #POST

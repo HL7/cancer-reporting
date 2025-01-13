@@ -9,5 +9,5 @@ Usage: #example
 * status = #final
 * code = $CAPeCCCodeSystem#16784.100004300 "Comment(s)"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

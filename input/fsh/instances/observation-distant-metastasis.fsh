@@ -9,6 +9,6 @@ Usage: #example
 * status = #final
 * code = $example#2149.100004300 "Distant Metastasis (pM) (Note I)"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2022-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#20895.100004300 "?Not applicable - pM cannot be determined from the submitted specimen(s)"

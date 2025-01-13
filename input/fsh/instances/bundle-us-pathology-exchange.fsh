@@ -4,7 +4,7 @@ Title: "US Pathology Exchange bundle example"
 Description: "Inter-EHR Exchange Bundle profile representing HL7 Version 2.5.1 (V2.5.1) Messaging standard segment information as defined in NAACCR volume 5, version 5."
 Usage: #example
 * type = #transaction
-* timestamp = "2024-03-22T18:05:57.689+00:00"
+* timestamp = "2024-12-05T18:05:57.689+00:00"
 * entry[0].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Composition/composition-invasive-carcinoma-of-the-breast"
 * entry[=].resource = composition-invasive-carcinoma-of-the-breast
 * entry[=].request.method = #POST

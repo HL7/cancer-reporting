@@ -8,7 +8,7 @@ Usage: #example
 * status = #final
 * code = $example#51265.100004300 "Tumor Extension"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2022-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * component[0].code = $example#39537.100004300 "Tumor invades into or through the adrenal capsule"
 * component[+].code = $example#56271.100004300 "Tumor invades into other adjacent organ(s)"

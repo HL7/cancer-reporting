@@ -15,7 +15,7 @@ Usage: #example
 * code.coding[1].display = "Anatomic location of primary malignant neoplasm (observable entity)"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-06T14:52:02+00:00"
+* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * hasMember[+] = Reference(observation-clock-position)
 * derivedFrom[+] = Reference(observation-grouper-tumor)

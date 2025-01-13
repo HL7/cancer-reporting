@@ -12,7 +12,7 @@ Usage: #example
 * type.coding[0].code = #119297000
 * type.coding[0].display = "Blood specimen"
 * request.reference = "ServiceRequest/servicerequest-cancer-path"
-* collection.collectedDateTime = "2024-12-06T14:52:02+00:00"
+* collection.collectedDateTime = "2024-12-05T14:52:02+00:00"
 * collection.method.coding[0].system = "http://snomed.info/sct"
 * collection.method.coding[0].code = #65801008
 * collection.method.coding[0].display = "Excision (procedure)"

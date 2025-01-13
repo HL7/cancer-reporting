@@ -15,7 +15,7 @@ Usage: #example
 * code.coding[1].display = "Specimen collection procedure (observable entity)"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-06T14:52:02+00:00"
+* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #40307-100004300

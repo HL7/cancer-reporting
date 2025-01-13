@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $example#40496.100004300 "Tumor Weight (Note B)"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2022-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#44761.100004300 "Specify weight (g)"

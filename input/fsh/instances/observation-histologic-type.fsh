@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $example#4.009.001 "Histologic Type (Note C)"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2025-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#2117.100004300 "Invasive carcinoma of no special type (ductal)"

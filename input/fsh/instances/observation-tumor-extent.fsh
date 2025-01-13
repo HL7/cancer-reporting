@@ -12,6 +12,6 @@ Usage: #example
 * code.coding[0].display = "Tumor Extent (Note H)"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-06T14:52:02+00:00"
+* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * derivedFrom[+] = Reference(observation-grouper-tumor)

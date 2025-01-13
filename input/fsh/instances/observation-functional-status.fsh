@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $example#49275.100004300 "Functional Status"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#56812.100004300 "Cushing syndrome"

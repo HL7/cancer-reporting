@@ -11,7 +11,7 @@ Usage: #example
 * code.coding[0].code = #43789.100004300
 * code.coding[0].display = "Breast Biomarker Testing Performed on Previous Biopsy"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-special-studies-estrogen-receptor)
 * hasMember[+] = Reference(observation-special-studies-her2)

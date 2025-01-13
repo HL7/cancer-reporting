@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:25b43d87-bad0-4779-91c8-352ad2f778ce"
 * status = #final
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2022-12-05"
+* effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #351607.100004300

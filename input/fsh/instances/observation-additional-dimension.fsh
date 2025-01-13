@@ -12,7 +12,7 @@ Usage: #example
 * code.coding[0].display = "Additional Dimension in Millimeters (mm)"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-06T14:52:02+00:00"
+* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueQuantity.value = 13.0
 * derivedFrom[+] = Reference(observation-tumor-size)

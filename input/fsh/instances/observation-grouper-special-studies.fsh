@@ -10,7 +10,7 @@ Usage: #example
 * code = $CAPeCCCodeSystem#17834.100004300 "SPECIAL STUDIES"
 
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-special-studies-breast-biomarker)
 * hasMember[+] = Reference(observation-special-studies-estrogen-receptor)

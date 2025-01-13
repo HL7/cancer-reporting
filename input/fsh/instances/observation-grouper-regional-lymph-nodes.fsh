@@ -10,6 +10,6 @@ Usage: #example
 * code = $CAPeCCCodeSystem#39858.100004300 "Regional Lymph Nodes"
 
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2022-12-05"
+* effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-regional-lymph-node-status)

@@ -8,7 +8,7 @@ Usage: #example
 * status = #final
 * code = $CAPeCCCodeSystem#007.100004300 "Tumor Section"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2022-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-tumor-site)
 * hasMember[+] = Reference(observation-histologic-type)

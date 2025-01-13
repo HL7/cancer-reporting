@@ -12,7 +12,7 @@ Usage: #example
 * code.coding[0].display = "Tumor Size (Note E)"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"
-* effectivePeriod.start = "2024-12-06T14:52:02+00:00"
+* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
 * performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #31357-100004300

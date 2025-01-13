@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $example#49275.100004300 "Clinical History (specify)"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * valueString = "Patient has a history"

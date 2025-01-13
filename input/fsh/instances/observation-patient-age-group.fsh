@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $example#2137.100004300 "Patient Age Group"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#2142.100004300 "Adult (older than 18 years)"

@@ -12,5 +12,5 @@ Usage: #example
 * code.coding[0].display = "Breast Cancer"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"
-* effectiveDateTime = "2024-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"

@@ -8,6 +8,6 @@ Usage: #example
 * status = #final
 * code = $example#2137.100004300 "Primary Tumor (pT)"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2022-07-05"
+* effectiveDateTime = "2024-12-05"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept = $example#2142.100004300 "pTX: Primary tumor cannot be assessed"

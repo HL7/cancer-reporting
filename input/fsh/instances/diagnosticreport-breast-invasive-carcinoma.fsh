@@ -11,7 +11,7 @@ Usage: #example
 * subject.reference = "Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"
 * encounter.reference = "Encounter/encounter-uspath-specimen-collection"
-* effectiveDateTime = "2021-01-01T21:39:30.000Z"
+* effectiveDateTime = "2024-12-05T21:39:30.000Z"
 * performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"
 * resultsInterpreter.reference = "PractitionerRole/practitionerrole-uspath-pathologist"
 * specimen.reference = "Specimen/specimen-breast"

@@ -18,4 +18,3 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #16383-100004300
 * valueCodeableConcept.coding[0].display = "Score 1"
 * derivedFrom[+] = Reference(observation-histologic-grade)
-* derivedFrom[+] = Reference(observation-grouper-tumor)

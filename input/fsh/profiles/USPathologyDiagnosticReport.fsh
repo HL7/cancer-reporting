@@ -5,6 +5,7 @@ Title: "US Pathology Diagnostic Report"
 Description: "This DiagnosticReport Profile captures data for a report parsed from an eCP Form."
 * ^extension[$WG].valueCode = #oo
 * ^status = #active
+* identifier ^definition = "Pathology Report Number"
 * basedOn only Reference(USPathologyServiceRequest)
 * effective[x] MS
 * effective[x] obeys path-reporting-1

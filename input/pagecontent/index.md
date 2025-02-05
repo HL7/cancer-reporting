@@ -1,7 +1,8 @@
-The Cancer Pathology Data Sharing implementation guide (IG) reporting process documents best practices for transmitting pathology data as FHIR resource bundles and distributing them to the Central Cancer Registry (CCR) via two pathways:
+The Cancer Pathology Data Sharing implementation guide (IG) reporting process documents best practices for transmitting pathology data as a FHIR Document via three pathways:
 
-1. Laboratory Information Systems (LIS) to CCR via an electronic health record (EHR) intermediary
-2. LIS to CCR directly
+1. Laboratory Information Systems (LIS) to Central Cancer Registry (CCR) via an electronic health record (EHR) intermediary
+2. EHR to EHR
+3. LIS to CCR 
 
 This publication promotes structured data collection and exchange of cancer pathology data, provides the data model, defined data items and their corresponding code and value sets. This guide specifies the collection and exchange of data specific to a cancer pathology synoptic report for public health reporting. This guide is compliant with FHIR Release 4.
 
@@ -10,9 +11,8 @@ Currently, the most successful implementation of the Cancer Pathology Data Shari
 The Health Level Seven (HL7) Orders and Observations (O&O) and Public Health Work Groups sponsor this guide. 
 
 ### Scope
-This guide defines 7 FHIR profiles:
-* [US Pathology Exchange Content Bundle](StructureDefinition-us-pathology-exchange-bundle.html)
-* [US Pathology Grouper Observation](StructureDefinition-us-pathology-grouper-observation.html)
+This guide defines 6 FHIR profiles:
+* [US Pathology Document Bundle](StructureDefinition-us-pathology-exchange-bundle.html)
 * [US Pathology Composition](StructureDefinition-us-pathology-composition.html)
 * [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
 * [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)

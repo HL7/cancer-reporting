@@ -14,11 +14,11 @@ Usage: #example
 * title = "Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
 
 * section[cap-form-section][0].title = "Case Summary Section"
-* section[cap-form-section][=].code = #1234.100004300 "Case Summary Section"
+* section[cap-form-section][=].code = CAPeCCCodeSystem#1234.100004300 "Case Summary Section"
 * section[cap-form-section][=].entry.reference = "Observation/observation-grouper-case-summary"
 
 * section[cap-form-section][+].title = "Clinical"
-* section[cap-form-section][=].code = #49275.100004300 "Clinical History (specify)"
+* section[cap-form-section][=].code = CAPeCCCodeSystem#49275.100004300 "Clinical History (specify)"
 * section[cap-form-section][=].entry.reference = "Observation/observation-grouper-clinical-history"
 
 * section[cap-form-section][+].title = "Specimen"

@@ -40,6 +40,7 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * valueCodeableConcept only CodeableConcept
 * valueCodeableConcept from CAPeCCAnswerCodes (extensible)
 * valueCodeableConcept ^comment = "The allowed set of codes will be determined by Observation.code."
+* valueString 0..1
 
 // * component MS
 // * component ^short = "additional entry"

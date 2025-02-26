@@ -1,5 +1,5 @@
 Instance: observation-grouper-specimen
-InstanceOf: USPathologyGrouperObservation
+InstanceOf: ObservationSDCeCC
 Title: "Specimen Section"
 Description: "Grouper Observation that represents the Specimen Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

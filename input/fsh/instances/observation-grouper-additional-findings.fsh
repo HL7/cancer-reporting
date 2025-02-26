@@ -1,5 +1,5 @@
 Instance: observation-grouper-additional-findings
-InstanceOf: USPathologyGrouperObservation
+InstanceOf: ObservationSDCeCC
 Title: "Additional Findings Section"
 Description: "Grouper Observation that represents the Additional Findings Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

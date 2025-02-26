@@ -1,5 +1,5 @@
 Instance: observation-grouper-case-summary
-InstanceOf: USPathologyGrouperObservation
+InstanceOf: ObservationSDCeCC
 Title: "Case Summary Section"
 Description: "Grouper Observation that represents the Case Summary Section"
 Usage: #example

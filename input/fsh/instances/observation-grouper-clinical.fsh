@@ -1,5 +1,5 @@
 Instance: observation-grouper-clinical
-InstanceOf: USPathologyGrouperObservation
+InstanceOf: ObservationSDCeCC
 Title: "Clinical Section"
 Description: "Grouper Observation that represents the Clinical Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: observation-grouper-special-studies
-InstanceOf: USPathologyGrouperObservation
+InstanceOf: ObservationSDCeCC
 Title: "Special Studies Section"
 Description: "Grouper Observation that represents the Special Studies Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

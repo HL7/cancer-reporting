@@ -1,5 +1,5 @@
 Instance: observation-grouper-margins
-InstanceOf: USPathologyGrouperObservation
+InstanceOf: ObservationSDCeCC
 Title: "Margins Section"
 Description: "Grouper Observation that represents the margins Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

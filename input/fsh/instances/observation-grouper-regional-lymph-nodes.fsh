@@ -1,5 +1,5 @@
 Instance: observation-grouper-regional-lymph-nodes
-InstanceOf: USPathologyGrouperObservation
+InstanceOf: ObservationSDCeCC
 Title: "Regional Lymph Nodes Section"
 Description: "Grouper Observation that represents the Regional Lymph Nodes Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

@@ -17,7 +17,7 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * hasMember ^short = "Child observation reference"
 * hasMember ^definition = "hasMember should be used to capture any child questions in related Observations"
 * hasMember only Reference(ObservationSDCeCC)
-//* derivedFrom MS
+///* derivedFrom MS
 //* derivedFrom ^short = "parent observation reference"
 //* derivedFrom ^definition = "derivedFrom should be used to capture a parent Observation or the parent DocumentReference"
 //* derivedFrom only Reference(ObservationSDCeCC)

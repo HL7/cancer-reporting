@@ -31,7 +31,7 @@ dependencies:
     version: current
     uri: http://hl7.org/fhir/uv/ihe-sdc-ecc/ImplementationGuide/hl7.fhir.uv.ihe-sdc-ecc
     id: hl7fhiruvihesdcecc
-  hl7.fhir.uv.extensions.r4:
+hl7.fhir.uv.extensions.r4:
     version: current
     uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions.r4
     id: hl7fhiruvextensionsr4

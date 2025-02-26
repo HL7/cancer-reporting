@@ -33,7 +33,7 @@ Usage: #example
 * section[cap-form-section][=].code = CAPeCCCodeSystem#5549.100004300 "MARGINS (Note I)"
 * section[cap-form-section][=].entry.reference = "Observation/observation-grouper-margins"
 
-* section[cap-form-section][+].title = "Regional Lymph Nodes (Note J)"
+* section[cap-form-section][+].title = "REGIONAL LYMPH NODES (Note J)"
 * section[cap-form-section][=].code = CAPeCCCodeSystem#5843.100004300 "REGIONAL LYMPH NODES (Note J)"
 * section[cap-form-section][=].entry.reference = "Observation/observation-grouper-regional-lymph-nodes"
 
@@ -41,14 +41,14 @@ Usage: #example
 * section[cap-form-section][=].code = CAPeCCCodeSystem#352333.100004300 "Distant Metasasis"
 * section[cap-form-section][=].entry.reference = "Observation/observation-regional-lymph-nodes"
 
-* section[cap-form-section][+].title = "Pathologic Stage Classification (pTNM, AJCC 8th Edition) (Note K)"
+* section[cap-form-section][+].title = "PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note K)"
 * section[cap-form-section][=].code = CAPeCCCodeSystem#6389.100004300 "PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note K)"
 * section[cap-form-section][=].entry.reference = "Observation/observation-ptnm-classification-pT-Category"
 
-* section[cap-form-section][+].title = "Additional Findings (Note L)"
+* section[cap-form-section][+].title = "ADDITIONAL FINDINGS (Note L)"
 * section[cap-form-section][=].code = CAPeCCCodeSystem#6014.100004300 "ADDITIONAL FINDINGS (Note L)"
 * section[cap-form-section][=].entry.reference = "Observation/observation-grouper-additional-findings"
 
-* section[cap-form-section][+].title = "Comments"
+* section[cap-form-section][+].title = "COMMENTS"
 * section[cap-form-section][=].code = CAPeCCCodeSystem#381059.100004300 "COMMENTS"
 * section[cap-form-section][=].entry.reference = "Observation/observation-grouper-comments"

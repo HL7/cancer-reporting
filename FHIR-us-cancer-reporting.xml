@@ -17,11 +17,7 @@
 <artifact id="Observation/observation-additional-findings-breast-biomarker-testing" key="Observation-observation-additional-findings-breast-biomarker-testing" name="Breast Biomarker Testing Performed on Previous Biopsy Observation example"/>
 <artifact id="Specimen/specimen-breast" key="Specimen-specimen-breast" name="Breast Specimen Example"/>
 <artifact id="Observation/observation-procedure-breast-excision" key="Observation-observation-procedure-breast-excision" name="Breast Tissue Excision Observation Example"/>
-<artifact id="ValueSet/cap-ecc-answer-codes" key="ValueSet-cap-ecc-answer-codes" name="CAP eCC Answer Codes"/>
 <artifact id="CodeSystem/cap-ecc-codesystem" key="CodeSystem-cap-ecc-codesystem" name="CAP eCC CodeSystem"/>
-<artifact id="ValueSet/cap-ecc-form-codes" key="ValueSet-cap-ecc-form-codes" name="CAP eCC Form Codes"/>
-<artifact id="ValueSet/cap-ecc-question-codes" key="ValueSet-cap-ecc-question-codes" name="CAP eCC Question Codes"/>
-<artifact id="ValueSet/cap-ecc-section-codes" key="ValueSet-cap-ecc-section-codes" name="CAP eCC Section Codes"/>
 <artifact id="ValueSet/cap-ecc-value-set" key="ValueSet-cap-ecc-value-set" name="CAP eCC ValueSet"/>
 <artifact id="Observation/observation-case-summary-breast" key="Observation-observation-case-summary-breast" name="Case Summary Breast Cancer Example"/>
 <artifact id="Observation/observation-grouper-case-summary" key="Observation-observation-grouper-case-summary" name="Case Summary Section"/>
@@ -30,7 +26,7 @@
 <artifact id="Observation/observation-grouper-clinical" key="Observation-observation-grouper-clinical" name="Clinical Section"/>
 <artifact id="Observation/observation-margins-closest-margin-to-invasive-carcinoma" key="Observation-observation-margins-closest-margin-to-invasive-carcinoma" name="Closest Margin(s) to Invasive Carcinoma example"/>
 <artifact id="Observation/observation-grouper-comments" key="Observation-observation-grouper-comments" name="Comments Section"/>
-<artifact id="Composition/composition-invasive-carcinoma-of-the-breast" key="Composition-composition-invasive-carcinoma-of-the-breast" name="Composition - Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"/>
+<artifact id="Composition/composition-invasive-carcinoma-of-the-breast" key="Composition-composition-invasive-carcinoma-of-the-breast" name="Composition - Surgical Pathology Cancer Case Summary"/>
 <artifact deprecated="true" id="Observation/2149.100004300-us" key="Observation-2149.100004300-us" name="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"/>
 <artifact id="Observation/observation-distant-metastasis" key="Observation-observation-distant-metastasis" name="Distant Metastasis Observation example"/>
 <artifact id="Observation/observation-grouper-distant-metastasis" key="Observation-observation-grouper-distant-metastasis" name="Distant Metastasis Section"/>

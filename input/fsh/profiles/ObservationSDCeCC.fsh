@@ -8,9 +8,9 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * identifier 1..* MS 
 * identifier ^short = "The SDC instanceGUID"
 * identifier ^definition = "The identifier should match the SDC answer instanceGUID. If an answer instanceGUID is not available a Question instanceGUID shall be used"
-* code ^short = "SDC section or question ID"
-* code ^definition = "The code should match the question or section ID from the SDC form. In a given Observation group, there might be repeating codes for multiselect questions, though these Observations will have different values"
-* code from CAPeCCValueSet (extensible)
+* code ^short = "SDC question ID"
+* code ^definition = "The code should match the question ID from the SDC form. In a given Observation group, there might be repeating codes for multiselect questions, though these Observations will have different values"
+* code from CAPeCCQuestionCodes (extensible)
 * subject MS
 * subject only Reference(USCorePatientProfile)
 * hasMember MS 

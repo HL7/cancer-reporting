@@ -1,5 +1,5 @@
 Instance: observation-grouper-comments
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyGrouperObservation
 Title: "Comments Section"
 Description: "Grouper Observation that represents the Comments Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

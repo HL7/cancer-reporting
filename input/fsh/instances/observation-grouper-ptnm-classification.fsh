@@ -1,5 +1,5 @@
 Instance: observation-grouper-ptnm-classification
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyGrouperObservation
 Title: "pTNM Classification Section"
 Description: "Grouper Observation that represents the pTNM Classification Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

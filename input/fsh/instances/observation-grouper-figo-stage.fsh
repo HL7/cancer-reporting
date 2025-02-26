@@ -1,5 +1,5 @@
 Instance: observation-grouper-figo-stage
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyGrouperObservation
 Title: "FIGO Stage Section"
 Description: "Grouper Observation that represents the FIGO Stage Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example

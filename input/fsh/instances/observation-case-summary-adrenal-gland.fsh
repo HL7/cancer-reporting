@@ -1,5 +1,5 @@
 Instance: observation-case-summary-breast
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyGrouperObservation
 Title: "Case Summary Breast Cancer Example"
 Description: "This is an example observation of the Case Summary for a Breast Cancer Report."
 Usage: #example

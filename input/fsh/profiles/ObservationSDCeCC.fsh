@@ -17,10 +17,10 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * hasMember ^short = "Child observation reference"
 * hasMember ^definition = "hasMember should be used to capture any child questions in related Observations"
 * hasMember only Reference(ObservationSDCeCC)
-* derivedFrom MS
-* derivedFrom ^short = "parent observation reference"
-* derivedFrom ^definition = "derivedFrom should be used to capture a parent Observation or the parent DocumentReference"
-* derivedFrom only Reference(ObservationSDCeCC)
+//* derivedFrom MS
+//* derivedFrom ^short = "parent observation reference"
+//* derivedFrom ^definition = "derivedFrom should be used to capture a parent Observation or the parent DocumentReference"
+//* derivedFrom only Reference(ObservationSDCeCC)
 // * value[x] MS 
 // * value[x] ^short = "the value for selected answer"
 // * value[x] ^definition = "The value should match the from the SDC form. Unique Observations should be created for each multi-select answer"
@@ -42,9 +42,9 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * valueCodeableConcept ^comment = "The allowed set of codes will be determined by Observation.code."
 * valueString 0..1
 
-* component MS
-* component ^short = "additional entry"
-* component ^definition = "Any additional list item response fields which were filled in should be captured in the component as their appropriate value type"
+// * component MS
+// * component ^short = "additional entry"
+// * component ^definition = "Any additional list item response fields which were filled in should be captured in the component as their appropriate value type"
 
 // * category ^slicing.discriminator.type = #pattern
 // * category ^slicing.discriminator.path = "coding"

@@ -27,11 +27,7 @@ dependencies:
     version: 1.0.0
     uri: http://hl7.org/fhir/us/ph-library/ImplementationGuide/hl7.fhir.us.ph-library#1.0.0
     id: hl7fhirusphlibrary
-  hl7.fhir.uv.ihe-sdc-ecc:
-    version: current
-    uri: http://hl7.org/fhir/uv/ihe-sdc-ecc/ImplementationGuide/hl7.fhir.uv.ihe-sdc-ecc
-    id: hl7fhiruvihesdcecc
-hl7.fhir.uv.extensions.r4:
-    version: current
-    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions.r4
-    id: hl7fhiruvextensionsr4
+  # hl7.fhir.uv.ihe-sdc-ecc:
+  #   version: current
+  #   uri: http://hl7.org/fhir/uv/ihe-sdc-ecc/ImplementationGuide/hl7.fhir.uv.ihe-sdc-ecc
+  #   id: hl7fhiruvihesdcecc

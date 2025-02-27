@@ -10,7 +10,18 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * identifier ^definition = "The identifier should match the SDC answer instanceGUID. If an answer instanceGUID is not available a Question instanceGUID shall be used"
 * code ^short = "SDC question ID"
 * code ^definition = "The code should match the question ID from the SDC form. In a given Observation group, there might be repeating codes for multiselect questions, though these Observations will have different values"
-* code from CAPeCCQuestionCodes (extensible)
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open // or #closed if you don't want other concepts
+* code.coding contains
+    section 0..1 and
+    question 0..1
+* code.coding[section] ^short = "Section"
+* code.coding[section] from CAPeCCSectionCodes (extensible)
+* code.coding[question] ^short = "Question"
+* code.coding[question] from CAPeCCQuestionCodes (extensible)
+
+//* code from CAPeCCQuestionCodes (extensible)
 * subject MS
 * subject only Reference(USCorePatientProfile)
 * hasMember MS 

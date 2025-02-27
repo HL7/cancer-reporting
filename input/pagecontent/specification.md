@@ -8,7 +8,7 @@ This guide defines 8 FHIR profiles:
 * [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](https://hl7.org/fhir/us/core/StructureDefinition-us-core-servicerequest.html)
 * [US Pathology Related Practitioner Role](StructureDefinition-us-pathology-related-practitioner-role.html) derived from [US Core PractitionerRole](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitionerrole.html)
 
-This guide defines 1 value set:
+This guide defines 5 value sets:
 * [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)
 
 #### Extensions

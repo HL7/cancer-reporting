@@ -41,9 +41,9 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
   * title ^short = "Title should be the display of the section code"
   * code ^short = "CAP Form Section Identifier"
   * code from CAPeCCSectionCodes (extensible)
-  * entry 1..*
+  * entry 1..1
   * entry only Reference(ObservationSDCeCC)
-  * entry ^short = "The Sections in the report."
+  * entry ^short = "An Observation representing this section in the report and containing (hasMember) Observations representing the question/answers in the section."
 
 * section contains lab-report 1..*
 * section[lab-report]
@@ -51,4 +51,4 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
   * entry 1..*
   * entry only Reference(ObservationSDCeCC)
-  * entry ^short = "The Sections in the report."
+  * entry ^short = "Observations representing the sections in the report and containing (hasMember) Observations representing the question/answers in the section."

@@ -18,4 +18,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #16736.100004300
 * valueCodeableConcept.coding[0].display = "pT1b: Tumor greater than 5 mm but less than or equal to 10 mm in greatest dimension"
 
-* derivedFrom[+] = Reference(observation-grouper-ptnm-classification)
+* derivedFrom[+] = Reference(observation-section-ptnm-classification)

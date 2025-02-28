@@ -1,11 +1,12 @@
-Instance: observation-grouper-specimen
-InstanceOf: USPathologyGrouperObservation
+Instance: observation-section-specimen
+InstanceOf: ObservationSDCeCC
 Title: "Specimen Section"
-Description: "Grouper Observation that represents the Specimen Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
+Description: "Section Observation that represents the Specimen Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24"
 * status = #final
+* category = us-pathology-codesystem#SECTION
 * code = $CAPeCCCodeSystem#16182.100004300 "SPECIMEN"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2024-12-05"

@@ -7,6 +7,8 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
+* category = us-pathology-codesystem#QUESTION
+
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #58807-100004300
 * code.coding[0].display = "Procedure (Note A)"
@@ -23,4 +25,4 @@ Usage: #example
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #69031006
 * valueCodeableConcept.coding[1].display = "Excision of breast tissue (procedure)"
-* derivedFrom[+] = Reference(observation-grouper-specimen)
+* derivedFrom[+] = Reference(observation-section-specimen)

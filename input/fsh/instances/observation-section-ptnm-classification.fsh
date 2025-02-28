@@ -1,7 +1,7 @@
-Instance: observation-grouper-ptnm-classification
-InstanceOf: USPathologyGrouperObservation
+Instance: observation-section-ptnm-classification
+InstanceOf: ObservationSDCeCC
 Title: "pTNM Classification Section"
-Description: "Grouper Observation that represents the pTNM Classification Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
+Description: "Section Observation that represents the pTNM Classification Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"

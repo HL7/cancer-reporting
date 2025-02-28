@@ -21,4 +21,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].display = "All margins negative for invasive carcinoma"
 * hasMember[+] = Reference(observation-margins-distance-to-closest-margin)
 * hasMember[+] = Reference(observation-margins-closest-margin-to-invasive-carcinoma)
-* derivedFrom[+] = Reference(observation-grouper-margins)
+* derivedFrom[+] = Reference(observation-section-margins)

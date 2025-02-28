@@ -4,7 +4,7 @@ Title: "Composition - Examination of Biopsy Specimens from Patients with Ductal 
 Description: "Composition - Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
 Usage: #example
 * status = #final
-* type = CAPeCCCodeSystem#Breast.DCIS.Res.211_3.003.021.REL_sdcFDF "Pathology Study"
+* type = CAPeCCCodeSystem#Breast.Invasive.Bx.362_1.004.001.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Biopsy"
 * subject.reference = "http://hl7.org/fhir/us/cancer-reporting/Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"
 * date = "2021-01-01T21:39:30.000Z"
@@ -14,4 +14,8 @@ Usage: #example
 * title = "Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
 * section[cap-form-section].title = "SPECIMEN"
 * section[cap-form-section].code = CAPeCCCodeSystem#5226.100004300 "SPECIMEN"
-* section[cap-form-section].entry.reference = "Observation/observation-specimen-laterality"
+* section[cap-form-section].entry.reference = "Observation/observation-section-specimen"
+
+* section[lab-report].title = "Lab Report Section"
+* section[lab-report].code = $loinc#26436-6 "Laboratory Studies (set)"
+* section[lab-report].entry.reference = "Observation/observation-section-specimen"

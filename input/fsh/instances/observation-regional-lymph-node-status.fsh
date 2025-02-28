@@ -20,4 +20,4 @@ Usage: #example
 
 * hasMember[+] = Reference(observation-regional-lymph-nodes-number-examined)
 * hasMember[+] = Reference(observation-regional-lymph-nodes-number-sentinel)
-* derivedFrom[+] = Reference(observation-grouper-regional-lymph-nodes)
+* derivedFrom[+] = Reference(observation-section-regional-lymph-nodes)

@@ -18,4 +18,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #16448-100004300
 * valueCodeableConcept.coding[0].display = "Single focus of invasive carcinoma"
 * hasMember[+] = Reference(observation-ductal-carcinoma)
-* derivedFrom[+] = Reference(observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-section-tumor)

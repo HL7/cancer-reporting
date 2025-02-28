@@ -28,10 +28,12 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * hasMember ^short = "Child observation reference"
 * hasMember ^definition = "hasMember should be used to capture any child questions in related Observations"
 * hasMember only Reference(ObservationSDCeCC)
-///* derivedFrom MS
-//* derivedFrom ^short = "parent observation reference"
-//* derivedFrom ^definition = "derivedFrom should be used to capture a parent Observation or the parent DocumentReference"
-//* derivedFrom only Reference(ObservationSDCeCC)
+
+* derivedFrom MS
+* derivedFrom ^short = "Parent observation reference"
+* derivedFrom ^definition = "derivedFrom should be used to capture a parent Observation"
+* derivedFrom only Reference(ObservationSDCeCC)
+
 // * value[x] MS 
 // * value[x] ^short = "the value for selected answer"
 // * value[x] ^definition = "The value should match the from the SDC form. Unique Observations should be created for each multi-select answer"

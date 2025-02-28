@@ -21,4 +21,4 @@ Usage: #example
 * valueCodeableConcept.coding[1].code = #200001000004104
 * valueCodeableConcept.coding[1].display = "Greatest length dimension of excised primary malignant neoplasm (observable entity)"
 * hasMember[+] = Reference(observation-additional-dimension)
-* derivedFrom[+] = Reference(observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-section-tumor)

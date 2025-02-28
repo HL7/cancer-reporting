@@ -1,7 +1,7 @@
-Instance: observation-grouper-clinical
-InstanceOf: USPathologyGrouperObservation
+Instance: observation-section-clinical
+InstanceOf: ObservationSDCeCC
 Title: "Clinical Section"
-Description: "Grouper Observation that represents the Clinical Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
+Description: "Section Observation that represents the Clinical Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"

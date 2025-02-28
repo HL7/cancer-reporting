@@ -19,4 +19,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #16448-100004300
 * valueCodeableConcept.coding[0].display = "Lateral"
-* derivedFrom[+] = Reference(observation-grouper-margins)
+* derivedFrom[+] = Reference(observation-section-margins)

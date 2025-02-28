@@ -20,4 +20,4 @@ Usage: #example
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #73056007
 * valueCodeableConcept.coding[1].display = "Right breast structure (body structure)"
-* derivedFrom[+] = Reference(observation-grouper-specimen)
+* derivedFrom[+] = Reference(observation-section-specimen)

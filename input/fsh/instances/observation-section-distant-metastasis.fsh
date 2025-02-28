@@ -1,7 +1,7 @@
-Instance: observation-grouper-distant-metastasis
-InstanceOf: USPathologyGrouperObservation
+Instance: observation-section-distant-metastasis
+InstanceOf: ObservationSDCeCC
 Title: "Distant Metastasis Section"
-Description: "Grouper Observation that represents the Distant Metastasis Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
+Description: "Section Observation that represents the Distant Metastasis Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"

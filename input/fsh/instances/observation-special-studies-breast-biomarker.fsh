@@ -15,4 +15,4 @@ Usage: #example
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-special-studies-estrogen-receptor)
 * hasMember[+] = Reference(observation-special-studies-her2)
-* derivedFrom[+] = Reference(observation-grouper-special-studies)
+* derivedFrom[+] = Reference(observation-section-special-studies)

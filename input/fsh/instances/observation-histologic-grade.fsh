@@ -21,4 +21,4 @@ Usage: #example
 * hasMember[+] = Reference(observation-nuclear-pleomorphism)
 * hasMember[+] = Reference(observation-mitotic-rate)
 * hasMember[+] = Reference(observation-overall-grade)
-* derivedFrom[+] = Reference(observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-section-tumor)

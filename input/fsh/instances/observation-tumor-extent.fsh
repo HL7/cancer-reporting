@@ -14,4 +14,4 @@ Usage: #example
 
 * effectivePeriod.start = "2024-12-05T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
-* derivedFrom[+] = Reference(observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-section-tumor)

@@ -16,4 +16,4 @@ Usage: #example
 * performer = Reference(practitioner-oncologist)
 * valueQuantity.value = 13.0
 * derivedFrom[+] = Reference(observation-tumor-size)
-* derivedFrom[+] = Reference(observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-section-tumor)

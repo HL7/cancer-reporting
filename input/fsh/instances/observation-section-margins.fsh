@@ -1,7 +1,7 @@
-Instance: observation-grouper-margins
-InstanceOf: USPathologyGrouperObservation
+Instance: observation-section-margins
+InstanceOf: ObservationSDCeCC
 Title: "Margins Section"
-Description: "Grouper Observation that represents the margins Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
+Description: "Section Observation that represents the margins Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"

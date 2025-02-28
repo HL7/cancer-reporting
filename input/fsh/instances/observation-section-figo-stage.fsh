@@ -1,7 +1,7 @@
-Instance: observation-grouper-figo-stage
-InstanceOf: USPathologyGrouperObservation
+Instance: observation-section-figo-stage
+InstanceOf: ObservationSDCeCC
 Title: "FIGO Stage Section"
-Description: "Grouper Observation that represents the FIGO Stage Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
+Description: "Section Observation that represents the FIGO Stage Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"

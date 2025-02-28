@@ -20,4 +20,4 @@ Usage: #example
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #47492008
 * valueCodeableConcept.coding[1].display = "Not seen (qualifier value)"
-* derivedFrom[+] = Reference(observation-grouper-tumor)
+* derivedFrom[+] = Reference(observation-section-tumor)

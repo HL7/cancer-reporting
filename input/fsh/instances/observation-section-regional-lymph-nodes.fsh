@@ -1,7 +1,7 @@
-Instance: observation-grouper-regional-lymph-nodes
-InstanceOf: USPathologyGrouperObservation
+Instance: observation-section-regional-lymph-nodes
+InstanceOf: ObservationSDCeCC
 Title: "Regional Lymph Nodes Section"
-Description: "Grouper Observation that represents the Regional Lymph Nodes Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
+Description: "Section Observation that represents the Regional Lymph Nodes Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"

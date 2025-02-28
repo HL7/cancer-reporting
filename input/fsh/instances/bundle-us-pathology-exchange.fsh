@@ -16,38 +16,38 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/diagnosticreport-breast-invasive-carcinoma"
 * entry[=].resource = diagnosticreport-breast-invasive-carcinoma
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-case-summary"
-* entry[=].resource = observation-grouper-case-summary
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-case-summary"
+* entry[=].resource = observation-section-case-summary
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-clinical"
-* entry[=].resource = observation-grouper-clinical
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-clinical"
+* entry[=].resource = observation-section-clinical
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-specimen"
-* entry[=].resource = observation-grouper-specimen
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-specimen"
+* entry[=].resource = observation-section-specimen
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-tumor"
-* entry[=].resource = observation-grouper-tumor
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-tumor"
+* entry[=].resource = observation-section-tumor
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-margins"
-* entry[=].resource = observation-grouper-margins
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-margins"
+* entry[=].resource = observation-section-margins
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-regional-lymph-nodes"
-* entry[=].resource = observation-grouper-regional-lymph-nodes
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-regional-lymph-nodes"
+* entry[=].resource = observation-section-regional-lymph-nodes
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-distant-metastasis"
-* entry[=].resource = observation-grouper-distant-metastasis
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-distant-metastasis"
+* entry[=].resource = observation-section-distant-metastasis
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-ptnm-classification"
-* entry[=].resource = observation-grouper-ptnm-classification
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-ptnm-classification"
+* entry[=].resource = observation-section-ptnm-classification
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-additional-findings"
-* entry[=].resource = observation-grouper-additional-findings
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-additional-findings"
+* entry[=].resource = observation-section-additional-findings
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-special-studies"
-* entry[=].resource = observation-grouper-special-studies
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-special-studies"
+* entry[=].resource = observation-section-special-studies
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-grouper-comments"
-* entry[=].resource = observation-grouper-comments
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-comments"
+* entry[=].resource = observation-section-comments
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-patient-age-group"
 * entry[=].resource = observation-patient-age-group

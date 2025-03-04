@@ -29,15 +29,16 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 // SG: Would the attester be the USPathologyRelatedPractitionerRole?
 * attester ^short = "Attests the report accuracy"
 
-* section 1..* // Defines the sections in the composition
-  * ^slicing.discriminator[0].type = #value
-  * ^slicing.discriminator[0].path = "code"
-  * ^slicing.rules = #open
-  * ^slicing.ordered = true
+// * section 1..* // Defines the sections in the composition
+//   * ^slicing.discriminator[0].type = #value
+//   * ^slicing.discriminator[0].path = "code"
+//   * ^slicing.rules = #open
+//   * ^slicing.ordered = true
 
 // Define lab-report section
-* section contains cap-form-section 1..*
-* section[cap-form-section]
+// * section contains cap-form-section 1..*
+// * section[cap-form-section]
+* section 1..* MS
   * title ^short = "Title should be the display of the section code"
   * code ^short = "CAP Form Section Identifier"
   * code from CAPeCCSectionCodes (extensible)
@@ -45,10 +46,10 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
   * entry only Reference(ObservationSDCeCC)
   * entry ^short = "An Observation representing this section in the report and containing (hasMember) Observations representing the question/answers in the section."
 
-* section contains lab-report 1..1
-* section[lab-report]
-  * title = "Lab Report Section"
-  * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
-  * entry 1..*
-  * entry only Reference(ObservationSDCeCC)
-  * entry ^short = "Observations representing the sections in the report and containing (hasMember) Observations representing the question/answers in the section."
+// * section contains lab-report 1..1
+// * section[lab-report]
+//   * title = "Lab Report Section"
+//   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
+//   * entry 1..*
+//   * entry only Reference(ObservationSDCeCC)
+//   * entry ^short = "Observations representing the sections in the report and containing (hasMember) Observations representing the question/answers in the section."

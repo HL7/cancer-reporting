@@ -12,11 +12,11 @@ Usage: #example
 * author.reference = "PractitionerRole/practitionerrole-uspath-practitioner-oncologist"
 * author.display = "Wise Owl"
 * title = "Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
-* section[cap-form-section][+].title = "SPECIMEN"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#16182.100004300 "SPECIMEN"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-specimen"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "SPECIMEN"
+* section[=].code = CAPeCCCodeSystem#16182.100004300 "SPECIMEN"
+* section[=].entry.reference = "Observation/observation-section-specimen"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Procedure</b></p>
   <p style=\"margin-left: 20px;\">
@@ -34,11 +34,11 @@ Usage: #example
   </p>
 </div>"
 
-* section[cap-form-section][+].title = "TUMOR"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#16249.100004300 "TUMOR"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-tumor"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "TUMOR"
+* section[=].code = CAPeCCCodeSystem#16249.100004300 "TUMOR"
+* section[=].entry.reference = "Observation/observation-section-tumor"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>+Tumor Site (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -178,19 +178,19 @@ Usage: #example
   </p>
 </div>"
 
-//* section[cap-form-section][+].title = "Tumor Extent (Note H)"
-//* section[cap-form-section][=].code = CAPeCCCodeSystem#16403.100004300 "Tumor Extent (Note H)"
-//* section[cap-form-section][=].entry.reference = "Observation/observation-section-tumor-extent"
+//* section[+].title = "Tumor Extent (Note H)"
+//* section[=].code = CAPeCCCodeSystem#16403.100004300 "Tumor Extent (Note H)"
+//* section[=].entry.reference = "Observation/observation-section-tumor-extent"
 
-//* section[cap-form-section][+].title = "LYMPH NODES"
-//* section[cap-form-section][=].code = CAPeCCCodeSystem#868263.100004300 "LYMPH NODES"
-//* section[cap-form-section][=].entry.reference = "Observation/observation-section-lymph-nodes"
+//* section[+].title = "LYMPH NODES"
+//* section[=].code = CAPeCCCodeSystem#868263.100004300 "LYMPH NODES"
+//* section[=].entry.reference = "Observation/observation-section-lymph-nodes"
 
-* section[cap-form-section][+].title = "MARGINS (Note L)"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#16567.100004300 "MARGINS (Note L)"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-margins"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "MARGINS (Note L)"
+* section[=].code = CAPeCCCodeSystem#16567.100004300 "MARGINS (Note L)"
+* section[=].entry.reference = "Observation/observation-section-margins"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Margin Status for Invasive Carcinoma (required only if residual invasive carcinoma is present in specimen)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -235,11 +235,11 @@ Usage: #example
   </p>
 </div>"
 
-* section[cap-form-section][+].title = "REGIONAL LYMPH NODES (Note M)"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#16697.100004300 "REGIONAL LYMPH NODES (Note M)"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-regional-lymph-nodes"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "REGIONAL LYMPH NODES (Note M)"
+* section[=].code = CAPeCCCodeSystem#16697.100004300 "REGIONAL LYMPH NODES (Note M)"
+* section[=].entry.reference = "Observation/observation-section-regional-lymph-nodes"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Regional Lymph Node Status</b></p>
   <p style=\"margin-left: 20px;\">
@@ -317,11 +317,11 @@ Usage: #example
   </p>
 </div>"
 
-* section[cap-form-section][+].title = "DISTANT METASTASIS"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#352333.100004300 "DISTANT METASTASIS"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-distant-metastasis"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "DISTANT METASTASIS"
+* section[=].code = CAPeCCCodeSystem#352333.100004300 "DISTANT METASTASIS"
+* section[=].entry.reference = "Observation/observation-section-distant-metastasis"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Distant Site(s) Involved, if applicable (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -336,11 +336,11 @@ Usage: #example
   </p>
 </div>"
 
-* section[cap-form-section][+].title = "pTNM CLASSIFICATION (AJCC 8th Edition) (Note M)"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#16717.100004300 "pTNM CLASSIFICATION (AJCC 8th Edition) (Note N)"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-ptnm-classification"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M)"
+* section[=].code = CAPeCCCodeSystem#16717.100004300 "PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M)"
+* section[=].entry.reference = "Observation/observation-section-ptnm-classification"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Modified Classification (required only if applicable) (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -400,20 +400,20 @@ Usage: #example
   </p>
 </div>"
 
-* section[cap-form-section][+].title = "ADDITIONAL FINDINGS (Note N)"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#16782.100004300 "ADDITIONAL FINDINGS (Note N)"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-additional-findings"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "ADDITIONAL FINDINGS (Note N)"
+* section[=].code = CAPeCCCodeSystem#16782.100004300 "ADDITIONAL FINDINGS (Note N)"
+* section[=].entry.reference = "Observation/observation-section-additional-findings"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>+Additional Findings (specify):</b> Fibrocystic changes; biopsy site identified</p>
 </div>"
 
-* section[cap-form-section][+].title = "SPECIAL STUDIES"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#17834.100004300 "SPECIAL STUDIES"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-special-studies"
-* section[cap-form-section][=].text.status = #generated
-* section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[+].title = "SPECIAL STUDIES"
+* section[=].code = CAPeCCCodeSystem#17834.100004300 "SPECIAL STUDIES"
+* section[=].entry.reference = "Observation/observation-section-special-studies"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>+Breast Biomarker Studies Performed on Previous Biopsy (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -450,10 +450,10 @@ Usage: #example
 </div>"
 
 
-* section[cap-form-section][+].title = "COMMENTS"
-* section[cap-form-section][=].code = CAPeCCCodeSystem#381061.100004300 "COMMENTS"
-* section[cap-form-section][=].entry.reference = "Observation/observation-section-comments"
+* section[+].title = "COMMENTS"
+* section[=].code = CAPeCCCodeSystem#381061.100004300 "COMMENTS"
+* section[=].entry.reference = "Observation/observation-section-comments"
 
-* section[lab-report][+].title = "Lab Report Section"
-* section[lab-report][=].code = $loinc#26436-6 "Laboratory Studies (set)"
-* section[lab-report][=].entry.reference = "Observation/observation-section-specimen"
+// * section[lab-report][+].title = "Lab Report Section"
+// * section[lab-report][=].code = $loinc#26436-6 "Laboratory Studies (set)"
+// * section[lab-report][=].entry.reference = "Observation/observation-section-specimen"

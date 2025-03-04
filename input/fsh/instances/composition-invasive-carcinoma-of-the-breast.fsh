@@ -17,7 +17,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-specimen"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>6.24.3 SPECIMEN</h3>
   
   <p><b>Procedure</b></p>
   <p style=\"margin-left: 20px;\">
@@ -40,7 +39,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-tumor"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>TUMOR</h3>
   
   <p><b>+Tumor Site (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -193,7 +191,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-margins"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>MARGINS (Note L)</h3>
   
   <p><b>Margin Status for Invasive Carcinoma (required only if residual invasive carcinoma is present in specimen)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -243,7 +240,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-regional-lymph-nodes"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>REGIONAL LYMPH NODES (Note M)</h3>
   
   <p><b>Regional Lymph Node Status</b></p>
   <p style=\"margin-left: 20px;\">
@@ -326,7 +322,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-distant-metastasis"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>DISTANT METASTASIS</h3>
   
   <p><b>Distant Site(s) Involved, if applicable (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -346,7 +341,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-ptnm-classification"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>pTNM CLASSIFICATION (AJCC 8th Edition) (Note N)</h3>
   
   <p><b>Modified Classification (required only if applicable) (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -411,7 +405,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-additional-findings"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>ADDITIONAL FINDINGS (Note O)</h3>
   
   <p><b>+Additional Findings (specify):</b> Fibrocystic changes; biopsy site identified</p>
 </div>"
@@ -421,7 +414,6 @@ Usage: #example
 * section[cap-form-section][=].entry.reference = "Observation/observation-section-special-studies"
 * section[cap-form-section][=].text.status = #generated
 * section[cap-form-section][=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  <h3>SPECIAL STUDIES</h3>
   
   <p><b>+Breast Biomarker Studies Performed on Previous Biopsy (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">

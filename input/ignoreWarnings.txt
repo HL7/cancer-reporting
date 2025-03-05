@@ -8,3 +8,48 @@ A definition for CodeSystem 'https://example.org' could not be found, so the cod
 
 # 03 CKey CodeSystem not available yet but will be
 A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated
+
+# 01 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 02 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 03 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 04 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 05 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 06 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 07 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 08 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 09 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 10 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 11 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 12 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 13 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 14 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 15 There are multiple different potential matches for the url  
+The resource url 'http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  

@@ -15,6 +15,8 @@ publisher:
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: oo
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
 jurisdiction: urn:iso:std:iso:3166#US
 status: draft
 version: 1.0.1

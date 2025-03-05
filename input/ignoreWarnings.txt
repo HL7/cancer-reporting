@@ -53,3 +53,6 @@ The resource url 'http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code' m
 
 # 15 There are multiple different potential matches for the url  
 The resource url 'http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code' might be ambiguous. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '6.1.0', found versions: 5.0.1, 6.1.0  
+
+# 16 There are multiple different potential matches for the url  
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-observation|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)

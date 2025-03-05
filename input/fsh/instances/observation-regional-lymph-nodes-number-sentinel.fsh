@@ -1,5 +1,5 @@
 Instance: observation-regional-lymph-nodes-number-sentinel
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Number of Sentinel Nodes Examined"
 Description: "This is an example of the number of sentinel nodes exaamined."
 Usage: #example

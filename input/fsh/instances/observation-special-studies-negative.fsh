@@ -1,5 +1,5 @@
 Instance: observation-special-studies-negative
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "HER2 (by immunohistochemistry)"
 Description: "Example of HER2 (by immunohistochemistry) Observation"
 Usage: #example

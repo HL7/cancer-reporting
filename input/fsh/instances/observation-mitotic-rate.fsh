@@ -1,5 +1,5 @@
 Instance: observation-mitotic-rate
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Mitotic Rate Observation Example"
 Description: "This is an observation for mitotic rate (score 1)."
 Usage: #example

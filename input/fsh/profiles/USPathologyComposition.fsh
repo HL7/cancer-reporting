@@ -43,7 +43,7 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
   * code ^short = "CAP Form Section Identifier"
   * code from CAPeCCSectionCodes (extensible)
   * entry 1..1
-  * entry only Reference(ObservationSDCeCC)
+  * entry only Reference(USPathologyObservation)
   * entry ^short = "An Observation representing this section in the report and containing (hasMember) Observations representing the question/answers in the section."
 
 // * section contains lab-report 1..1
@@ -51,5 +51,5 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 //   * title = "Lab Report Section"
 //   * code = http://loinc.org#26436-6 "Laboratory Studies (set)"
 //   * entry 1..*
-//   * entry only Reference(ObservationSDCeCC)
+//   * entry only Reference(USPathologyObservation)
 //   * entry ^short = "Observations representing the sections in the report and containing (hasMember) Observations representing the question/answers in the section."

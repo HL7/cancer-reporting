@@ -1,5 +1,5 @@
 Instance: observation-TNM-descriptors
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "TNM Descriptors Observation example"
 Description: "This is an example of a TNM descriptors observation."
 Usage: #example

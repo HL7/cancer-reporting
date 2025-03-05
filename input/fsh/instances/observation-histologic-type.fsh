@@ -1,11 +1,12 @@
 Instance: observation-histologic-type
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Histologic Type Observation example"
 Description: "This is an example of an observation of histologic type."
 Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 * code = $example#4.009.001 "Histologic Type (Note C)"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2024-12-05"

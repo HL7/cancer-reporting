@@ -1,5 +1,5 @@
 Instance: observation-nuclear-pleomorphism
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Nuclear Pleomorphism Observation Example"
 Description: "This is an observation for nuclear pleomorphism (score 2)."
 Usage: #example

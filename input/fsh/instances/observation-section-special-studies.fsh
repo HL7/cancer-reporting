@@ -1,5 +1,5 @@
 Instance: observation-section-special-studies
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Special Studies Section"
 Description: "Section Observation that represents the Special Studies Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:87335ed1-f468-4061-a401-8b8e3b54cf4c"
 * status = #final
 * code = $CAPeCCCodeSystem#17834.100004300 "SPECIAL STUDIES"
-
+* category = $CAPeCCCodeSystem#SECTION "SECTION"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

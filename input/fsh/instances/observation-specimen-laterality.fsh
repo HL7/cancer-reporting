@@ -1,5 +1,5 @@
 Instance: observation-specimen-laterality
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Specimen Laterality Observation Example"
 Description: "This is an example of an observation of tumor specimen laterality."
 Usage: #example
@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b"
 * status = #final
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #16214-100004300
 * code.coding[0].display = "Specimen Laterality"

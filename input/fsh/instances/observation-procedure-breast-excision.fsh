@@ -1,5 +1,5 @@
 Instance: observation-procedure-breast-excision
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Breast Tissue Excision Observation Example"
 Description: "This is an observation describing a procedure to excise breast tissue."
 Usage: #example
@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
-* category = us-pathology-codesystem#QUESTION
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #58807-100004300

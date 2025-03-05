@@ -12,8 +12,9 @@ Usage: #example
 * author.reference = "PractitionerRole/practitionerrole-uspath-practitioner-oncologist"
 * author.display = "Wise Owl"
 * title = "Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
-* section[+].title = "SPECIMEN"
-* section[=].code = CAPeCCCodeSystem#16182.100004300 "SPECIMEN"
+
+* section[+].title = "Lab Report Section"
+* section[=].code = $loinc#26436-6 "Laboratory Studies (set)"
 * section[=].entry.reference = "Observation/observation-section-specimen"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -32,13 +33,6 @@ Usage: #example
     <span style=\"display: inline-block; width: 20px;\">✓</span> Left<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> Not specified
   </p>
-</div>"
-
-* section[+].title = "TUMOR"
-* section[=].code = CAPeCCCodeSystem#16249.100004300 "TUMOR"
-* section[=].entry.reference = "Observation/observation-section-tumor"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>+Tumor Site (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -176,21 +170,6 @@ Usage: #example
     <span style=\"display: inline-block; width: 20px;\">__</span> Tumor Extent (required only if skin, nipple, or skeletal muscle are present and involved) (select all that apply)<br/>
     <span style=\"display: inline-block; width: 20px;\">✓</span> Not applicable (skin, nipple, and skeletal muscle are absent OR are uninvolved)
   </p>
-</div>"
-
-//* section[+].title = "Tumor Extent (Note H)"
-//* section[=].code = CAPeCCCodeSystem#16403.100004300 "Tumor Extent (Note H)"
-//* section[=].entry.reference = "Observation/observation-section-tumor-extent"
-
-//* section[+].title = "LYMPH NODES"
-//* section[=].code = CAPeCCCodeSystem#868263.100004300 "LYMPH NODES"
-//* section[=].entry.reference = "Observation/observation-section-lymph-nodes"
-
-* section[+].title = "MARGINS (Note L)"
-* section[=].code = CAPeCCCodeSystem#16567.100004300 "MARGINS (Note L)"
-* section[=].entry.reference = "Observation/observation-section-margins"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Margin Status for Invasive Carcinoma (required only if residual invasive carcinoma is present in specimen)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -233,13 +212,6 @@ Usage: #example
     <span style=\"display: inline-block; width: 20px;\">__</span> Other (specify): ______________<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> Cannot be determined (explain): ______________
   </p>
-</div>"
-
-* section[+].title = "REGIONAL LYMPH NODES (Note M)"
-* section[=].code = CAPeCCCodeSystem#16697.100004300 "REGIONAL LYMPH NODES (Note M)"
-* section[=].entry.reference = "Observation/observation-section-regional-lymph-nodes"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Regional Lymph Node Status</b></p>
   <p style=\"margin-left: 20px;\">
@@ -275,9 +247,9 @@ Usage: #example
   </p>
   
   <p><b>Size of Largest Nodal Metastatic Deposit</b></p>
-  <p style = \"margin-left: 20px;\"><span>Specify in Millimeters (mm):</span></p>
+  <p style=\"margin-left: 20px;\"><span>Specify in Millimeters (mm):</span></p>
   <p style=\"margin-left: 40px;\">
-    <span style = \"display: inline-block; width: 20px;\">__</span> Exact size: ______________ mm<br/>
+    <span style=\"display: inline-block; width: 20px;\">__</span> Exact size: ______________ mm<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> Less than: ______________ mm<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> Greater than: ______________ mm<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> Other (specify): ______________<br/>
@@ -315,13 +287,6 @@ Usage: #example
     <span style=\"display: inline-block; width: 20px;\">__</span> Other (specify): ______________<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> Cannot be determined (explain): ______________
   </p>
-</div>"
-
-* section[+].title = "DISTANT METASTASIS"
-* section[=].code = CAPeCCCodeSystem#352333.100004300 "DISTANT METASTASIS"
-* section[=].entry.reference = "Observation/observation-section-distant-metastasis"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Distant Site(s) Involved, if applicable (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -334,13 +299,6 @@ Usage: #example
     <span style=\"display: inline-block; width: 20px;\">__</span> Other (specify): ______________<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> Cannot be determined
   </p>
-</div>"
-
-* section[+].title = "PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M)"
-* section[=].code = CAPeCCCodeSystem#16717.100004300 "PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M)"
-* section[=].entry.reference = "Observation/observation-section-ptnm-classification"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
   
   <p><b>Modified Classification (required only if applicable) (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
@@ -398,23 +356,7 @@ Usage: #example
     <span style=\"display: inline-block; width: 20px;\">__</span> (f) Nodal metastasis confirmed by fine needle aspiration or core needle biopsy<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> (m) Multiple primary synchronous tumors in a single organ
   </p>
-</div>"
 
-* section[+].title = "ADDITIONAL FINDINGS (Note N)"
-* section[=].code = CAPeCCCodeSystem#16782.100004300 "ADDITIONAL FINDINGS (Note N)"
-* section[=].entry.reference = "Observation/observation-section-additional-findings"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  
-  <p><b>+Additional Findings (specify):</b> Fibrocystic changes; biopsy site identified</p>
-</div>"
-
-* section[+].title = "SPECIAL STUDIES"
-* section[=].code = CAPeCCCodeSystem#17834.100004300 "SPECIAL STUDIES"
-* section[=].entry.reference = "Observation/observation-section-special-studies"
-* section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  
   <p><b>+Breast Biomarker Studies Performed on Previous Biopsy (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">
     <span style=\"display: inline-block; width: 20px;\">✓</span> Estrogen Receptor (ER)
@@ -446,14 +388,4 @@ Usage: #example
   
   <p style=\"margin-left: 20px;\">
     <span style=\"display: inline-block; width: 20px;\">__</span> HER2 (by in situ hybridization)
-  </p>
-</div>"
-
-
-* section[+].title = "COMMENTS"
-* section[=].code = CAPeCCCodeSystem#381061.100004300 "COMMENTS"
-* section[=].entry.reference = "Observation/observation-section-comments"
-
-// * section[lab-report][+].title = "Lab Report Section"
-// * section[lab-report][=].code = $loinc#26436-6 "Laboratory Studies (set)"
-// * section[lab-report][=].entry.reference = "Observation/observation-section-specimen"
+  </p> </div> "

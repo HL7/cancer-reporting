@@ -1,5 +1,5 @@
 Instance: observation-tumor-invasion
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Tumor Invasion Observation example"
 Description: "This is an example of a tumor invasion observation."
 Usage: #example

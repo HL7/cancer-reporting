@@ -1,5 +1,5 @@
 Instance: observation-tumor-weight
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Tumor Weight Observation example"
 Description: "This is an example of tumor weight observation."
 Usage: #example

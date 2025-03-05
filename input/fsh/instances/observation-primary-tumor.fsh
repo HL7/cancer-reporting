@@ -1,5 +1,5 @@
 Instance: observation-primary-tumor
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Primary Tumor Observation example"
 Description: "This is an example of a primary tumor observation."
 Usage: #example

@@ -1,11 +1,12 @@
 Instance: observation-section-clinical
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Clinical Section"
 Description: "Section Observation that represents the Clinical Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
+* category = $CAPeCCCodeSystem#SECTION "SECTION"
 * code = $CAPeCCCodeSystem#12345.100004300 "Clinical"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2024-12-05"

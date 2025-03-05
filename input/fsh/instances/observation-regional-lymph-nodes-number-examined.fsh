@@ -1,5 +1,5 @@
 Instance: observation-regional-lymph-nodes-number-examined
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Total Number of Lymph Nodes Examined (sentinel and non-sentinel) example"
 Description: "This is an example of a number of lymph nodes examined, regional lymph nodes observation."
 Usage: #example

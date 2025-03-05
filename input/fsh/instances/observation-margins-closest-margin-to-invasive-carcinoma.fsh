@@ -1,5 +1,5 @@
 Instance: observation-margins-closest-margin-to-invasive-carcinoma
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Closest Margin(s) to Invasive Carcinoma example"
 Description: "This is an example of a closest margin observation for invasive carcinoma."
 Usage: #example

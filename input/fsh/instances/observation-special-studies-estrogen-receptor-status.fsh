@@ -1,5 +1,5 @@
 Instance: observation-special-studies-estrogen-receptor-status
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Estrogen Receptor (ER) Status"
 Description: "Estrogen Receptor (ER) Status Observation Example"
 Usage: #example

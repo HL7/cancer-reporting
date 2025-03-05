@@ -45,7 +45,7 @@ Description: "This document Bundle profile defines the structure for reporting t
 * entry[diagnosticReport].resource 1..
 * entry[diagnosticReport].resource only USPathologyDiagnosticReport
 * entry[observation].resource 1..
-* entry[observation].resource only ObservationSDCeCC
+* entry[observation].resource only USPathologyObservation
 * entry[relatedPerson].resource 1..
 * entry[relatedPerson].resource only USCoreRelatedPersonProfile
 * entry[encounter].resource 1..

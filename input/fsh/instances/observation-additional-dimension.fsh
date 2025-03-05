@@ -1,5 +1,5 @@
 Instance: observation-additional-dimension
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Additional Dimension Observation"
 Description: "This is an observation describing an additional tumor dimension."
 Usage: #example

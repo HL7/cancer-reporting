@@ -15,4 +15,4 @@ Description: "This DiagnosticReport Profile captures data for a report parsed fr
 * specimen only Reference(USPathologySpecimen)
 * specimen MS
 * result MS
-* result only Reference(ObservationSDCeCC)
+* result only Reference(USPathologyObservation)

@@ -1,5 +1,5 @@
 Instance: observation-glandular-differentiation
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Glandular/Tubular Differentiation Observation Example"
 Description: "This is an observation for glandular/tubular differentiation (score 2)."
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: observation-tumor-extension
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Tumor Extension Observation example"
 Description: "This is an example of a tumor extension observation."
 Usage: #example

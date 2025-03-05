@@ -1,5 +1,5 @@
 Instance: observation-clock-position
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Observation for Clock Position General"
 Description: "An observation describing clock position in general."
 Usage: #example

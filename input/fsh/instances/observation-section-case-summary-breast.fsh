@@ -1,5 +1,5 @@
 Instance: observation-section-case-summary-breast
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Case Summary Breast Cancer Example"
 Description: "This is an example observation of the Case Summary for a Breast Cancer Report."
 Usage: #example
@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://example.org"
 * identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6db/ver1#2149.100004300"
 * status = #final
+* category = $CAPeCCCodeSystem#SECTION "SECTION"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #BREAST-CANCER
 * code.coding[0].display = "Breast Cancer"

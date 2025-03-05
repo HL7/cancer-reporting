@@ -1,5 +1,5 @@
 Instance: observation-additional-findings-breast-biomarker-testing
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Breast Biomarker Testing Performed on Previous Biopsy Observation example"
 Description: "This is an example of an observation of Breast Biomarker Testing Performed on Previous Biopsy"
 Usage: #example
@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:3a313831-c8c5-44e7-8df2-af1b47b9879f"
 * status = #final
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #43789.100004300
 * subject = Reference(patient-OakleyAnnie)

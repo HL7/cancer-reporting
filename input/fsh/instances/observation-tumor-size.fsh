@@ -1,5 +1,5 @@
 Instance: observation-tumor-size
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Tumor Size Observation"
 Description: "This is an observation describing the tumor size."
 Usage: #example
@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:66153175-f304-443e-99cb-4058f350248b"
 * status = #final
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #30148-100004300
 * code.coding[0].display = "Tumor Size (Note E)"

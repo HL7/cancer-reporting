@@ -1,5 +1,5 @@
 Instance: observation-regional-lymph-node-status
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Regional Lymph Nodes Status Observation example"
 Description: "This is an example of an observation of regional lymph nodes."
 Usage: #example

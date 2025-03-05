@@ -1,5 +1,5 @@
 Instance: observation-overall-grade
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Overall Grade Observation Example"
 Description: "This is an observation for the overall grade (Grade 1)."
 Usage: #example

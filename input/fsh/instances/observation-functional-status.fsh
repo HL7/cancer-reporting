@@ -1,5 +1,5 @@
 Instance: observation-functional-status
-InstanceOf: ObservationSDCeCC
+InstanceOf: USPathologyObservation
 Title: "Functional Status (Notes A,B) (select all that apply) example"
 Description: "This is an example of an observation of Functional Status."
 Usage: #example

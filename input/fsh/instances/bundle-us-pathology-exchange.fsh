@@ -172,5 +172,11 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Practitioner/practitioner-pathologist"
 * entry[=].resource = practitioner-pathologist
 
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Practitioner/practitioner-oncologist"
+* entry[=].resource = practitioner-oncologist
+
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Practitioner/practitioner-surgeon"
+* entry[=].resource = practitioner-surgeon
+
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/RelatedPerson/relatedperson-pathology-next-of-kin"
 * entry[=].resource = relatedperson-pathology-next-of-kin

@@ -5,7 +5,7 @@ Description: "This profile defines the expected capabilities of the ''LIS'' acto
 Usage: #definition
 * extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * extension.valueCode = #oo
-* url = "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/pathology-lab-information-system"
+* url = "http://hl7.org/fhir/us/cancer-reporting/CapabilityStatement/capabilitystatement-pathology-lab-information-system"
 * version = "0.2.0"
 * name = "PathologyLabInformationSystem"
 * title = "Pathology Laboratory Information System"

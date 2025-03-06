@@ -14,6 +14,12 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/orders"
 * text ^short = "Narrative text"
+* extension contains DiagnosticReportReference named diagnosticReport-reference 0..1
+* extension[diagnosticReport-reference].valueReference only Reference(USPathologyDiagnosticReport)
+* extension[diagnosticReport-reference].valueReference 1..1
+* extension[diagnosticReport-reference].valueReference.reference 1..
+  * ^comment = """Added to the FHIR R4 guide to strictly conform with the R4 rules for document bundle resources inclusion.
+  Using this extension implies to accept a circular reference Composition to/from  DiagnosticReport"""
 * identifier ^short = "Report identifier"
 * status ^short = "Status of the Report"
 * type ^short = "CAP Form Identifier"

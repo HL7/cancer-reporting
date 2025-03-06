@@ -43,6 +43,9 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-additional-findings"
 * entry[=].resource = observation-section-additional-findings
 
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-additional-findings-specify"
+* entry[=].resource = observation-additional-findings-specify
+
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-special-studies"
 * entry[=].resource = observation-section-special-studies
 
@@ -93,6 +96,9 @@ Usage: #example
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-tumor-size"
 * entry[=].resource = observation-tumor-size
+
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-additional-dimension"
+* entry[=].resource = observation-additional-dimension
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-tumor-focality"
 * entry[=].resource = observation-tumor-focality
@@ -153,6 +159,9 @@ Usage: #example
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Encounter/encounter-uspath-specimen-collection"
 * entry[=].resource = encounter-uspath-specimen-collection
+
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/ServiceRequest/servicerequest-cancer-path"
+* entry[=].resource = servicerequest-cancer-path
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/PractitionerRole/practitionerrole-uspath-practitioner-oncologist"
 * entry[=].resource = practitionerrole-uspath-practitioner-oncologist

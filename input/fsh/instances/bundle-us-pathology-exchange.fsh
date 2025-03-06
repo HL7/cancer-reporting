@@ -106,8 +106,8 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-ductal-carcinoma"
 * entry[=].resource = observation-ductal-carcinoma
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-tumor-extent"
-* entry[=].resource = observation-tumor-extent
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-tumor-extent"
+* entry[=].resource = observation-section-tumor-extent
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-margins-margin-status-for-invasive-carcinoma"
 * entry[=].resource = observation-margins-margin-status-for-invasive-carcinoma

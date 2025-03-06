@@ -1,4 +1,4 @@
-Instance: observation-tumor-extent
+Instance: observation-section-tumor-extent
 InstanceOf: USPathologyObservation
 Title: "Tumor Extent Observation Example"
 Description: "This is an observation describing tumor extent."

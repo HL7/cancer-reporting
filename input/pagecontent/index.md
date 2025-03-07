@@ -11,9 +11,10 @@ Currently, the most successful implementation of the Cancer Pathology Data Shari
 The Health Level Seven (HL7) Orders and Observations (O&O) and Public Health Work Groups sponsor this guide. 
 
 ### Scope
-This guide defines 6 FHIR profiles:
+This guide defines 7 FHIR profiles:
 * [US Pathology Document Bundle](StructureDefinition-us-pathology-exchange-bundle.html)
 * [US Pathology Composition](StructureDefinition-us-pathology-composition.html)
+* [US Pathology Observation](StructureDefinition-us-pathology-observation.html) (derived from IHE SDC/eCP on FHIR Observation)
 * [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) (derived from US Core DiagnosticReport (Notes))
 * [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) (derived from FHIR R4 Specimen)
 * [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) (derived from US Core ServiceRequest)
@@ -26,6 +27,7 @@ This guide defines 5 value sets and 2 code systems:
 * [CAP eCC Question Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-question-answer-codes.html)
 * [CAP eCC Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-section-codes.html)
 
+This guide defines 2 code systems:
 * [CAP eCC CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-cap-ecc-codesystem.html)
 * [US Pathology CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-us-pathology-codesystem.html)
 

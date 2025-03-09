@@ -13,4 +13,3 @@ Usage: #example
 * effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-additional-findings-specify)
-* hasMember[+] = Reference(observation-additional-findings-breast-biomarker-testing)

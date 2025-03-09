@@ -1,7 +1,7 @@
 Instance: observation-additional-dimension
 InstanceOf: USPathologyObservation
 Title: "Additional Dimension Observation"
-Description: "This is an observation describing an additional tumor dimension."
+Description: "This is a child observation of a Tumor Size parent observation describing an additional tumor dimension."
 Usage: #example
 
 * identifier.system = "https://cap.org/eCC"
@@ -16,4 +16,3 @@ Usage: #example
 * performer = Reference(practitioner-oncologist)
 * valueQuantity.value = 13.0
 * derivedFrom[+] = Reference(observation-tumor-size)
-* derivedFrom[+] = Reference(observation-section-tumor)

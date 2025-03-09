@@ -1,5 +1,5 @@
 Profile: USPathologyDiagnosticReport
-Parent: USCoreDiagnosticReportProfileNoteExchange
+Parent: USCoreDiagnosticReportProfileNoteExchange|6.1.0
 Id: us-pathology-diagnostic-report
 Title: "US Pathology Diagnostic Report"
 Description: "This DiagnosticReport Profile captures data for a report parsed from an eCP Form."

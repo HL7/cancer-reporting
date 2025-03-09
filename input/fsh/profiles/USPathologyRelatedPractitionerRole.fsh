@@ -1,5 +1,5 @@
 Profile: USPathologyRelatedPractitionerRole
-Parent: USCorePractitionerRoleProfile
+Parent: USCorePractitionerRoleProfile|6.1.0
 Id: us-pathology-related-practitioner-role
 Title: "US Pathology Related Practitioner Role"
 Description: "This profile is built upon US Core PractitionerRole and defines pathology-related role codes for the following pathology-related practitioner roles included in NAACCR:

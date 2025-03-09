@@ -4,21 +4,22 @@ Title: "Composition - Examination of Biopsy Specimens from Patients with Ductal 
 Description: "Composition - Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
 Usage: #example
 * status = #final
-* type = $CAPeCCCodeSystem#Breast.Invasive.Bx.362_1.004.001.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Biopsy"
+* type = $CAPeCCCodeSystem#Breast.Invasive.Res.189_4.009.021.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Biopsy"
 * subject.reference = "http://hl7.org/fhir/us/cancer-reporting/Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"
 * date = "2025-01-01T21:39:30.000Z"
 * encounter.reference = "http://hl7.org/fhir/us/cancer-reporting/Encounter/encounter-uspath-specimen-collection"
 * author.reference = "PractitionerRole/practitionerrole-uspath-practitioner-oncologist"
 * author.display = "Wise Owl"
-* title = "Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
+* title = "INVASIVE CARCINOMA OF THE BREAST: Resection"
 
-* section[+].title = "Lab Report Section"
+* section[+].title = "INVASIVE CARCINOMA OF THE BREAST: Resection"
 * section[=].code = $loinc#26436-6 "Laboratory Studies (set)"
 * section[=].entry.reference = "Observation/observation-section-specimen"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-  
+  <p><b>Specimen</b></p>
+
   <p><b>Procedure</b></p>
   <p style=\"margin-left: 20px;\">
     <span style=\"display: inline-block; width: 20px;\">✓</span> Needle biopsy<br/>
@@ -349,13 +350,23 @@ Usage: #example
     <span style=\"display: inline-block; width: 20px;\">__</span> pN3c: Metastases in ipsilateral supraclavicular lymph nodes
   </p>
   
-  <p><b>M Suffix (required only if applicable)</b></p>
+  <p><b>N Suffix (required only if applicable)</b></p>
   <p style=\"margin-left: 20px;\">
     <span style=\"display: inline-block; width: 20px;\">__</span> Not applicable<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> (sn) Sentinel node(s) evaluated. If 6 or more nodes (sentinel or nonsentinel) are removed, this modifier should not be used<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> (f) Nodal metastasis confirmed by fine needle aspiration or core needle biopsy<br/>
     <span style=\"display: inline-block; width: 20px;\">__</span> (m) Multiple primary synchronous tumors in a single organ
   </p>
+
+  <p><b>ADDITIONAL FINDINGS (Note O)</b></p>
+<p style=\"margin-left: 20px;\">
+    <span style=\"display: inline-block; width: 20px;\">+</span>Additional Findings (specify): ________________
+</p>
+
+<p><b>SPECIAL STUDIES</b></p>
+<p style=\"margin-left: 20px;\">
+    The CAP Breast Biomarker Template should be used for reporting biomarkers requested for this resection specimen. Pending biomarker studies should be listed in the Comments section of this report.
+</p>
 
   <p><b>+Breast Biomarker Studies Performed on Previous Biopsy (select all that apply)</b></p>
   <p style=\"margin-left: 20px;\">

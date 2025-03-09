@@ -136,9 +136,6 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-ptnm-classification-pN-Category"
 * entry[=].resource = observation-ptnm-classification-pN-Category
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-additional-findings-breast-biomarker-testing"
-* entry[=].resource = observation-additional-findings-breast-biomarker-testing
-
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-special-studies-breast-biomarker"
 * entry[=].resource = observation-special-studies-breast-biomarker
 

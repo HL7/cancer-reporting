@@ -1,5 +1,5 @@
 Profile: USPathologyServiceRequest
-Parent: USCoreServiceRequestProfile
+Parent: USCoreServiceRequestProfile|6.1.0
 Id: us-pathology-service-request
 Title: "US Pathology Service Request"
 Description: "This ServiceRequest profile represents the request for analysis of a pathological sample."

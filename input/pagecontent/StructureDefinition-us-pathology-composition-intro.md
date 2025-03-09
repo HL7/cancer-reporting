@@ -4,26 +4,21 @@
 
 ## Introduction
 
-This US Pathology Composition profile defines how to structure pathology reports based on CAP electronic Cancer Checklists (eCCs) within FHIR. It organizes sections, entries, observations, and references to create a structured hierarchical document. The US Pathology Composition is itself a part of the document-type US Pathology Bundle which was chosen to reinforce the order of observations.
+This US Pathology Composition profile defines how to structure pathology reports based on CAP electronic Cancer Checklists (eCCs) within FHIR. 
 
 ## Structure and Binding Requirements
 
 ### Key Elements
 
-- **type**: Bound to the CAP eCC Form Codes ValueSet
+- **type**: 
+  - Bound to the CAP eCC Form Codes ValueSet 
   - Allows unique identification of the specific CAP Protocol
 
-- **section**: Contains lab-report sections
-  - Must contain at least one of text, entries, or sub-sections
-  - Can only have an emptyReason if it is empty
-  - The title should be the display of the section code
+- **section.code**: 
+- Bound to the CAP eCC Section Codes ValueSet 
 
-- **section.entry**: References to US Pathology Observations
-  - Each entry references an Observation representing a section in the report
-  - These section Observations contain (hasMember) the question/answer Observations in that section
-  - This hierarchical structure preserves the original CAP protocol organization
+- **section.entry**: 
+  - Each entry references a section in the report
 
-- **extension:diagnosticReportReference**: Links to associated DiagnosticReport
-  - Similar to the EU Lab IG's Composition pattern
+- **extension:diagnosticReportReference**: 
   - DiagnosticReport is bound to both the Observations AND the Composition through this extension
-  - Provides a unified view of the pathology report

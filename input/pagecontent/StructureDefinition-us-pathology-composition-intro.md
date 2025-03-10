@@ -1,14 +1,11 @@
-
-
-# US Pathology Composition Profile
-
 ## Introduction
 
 This US Pathology Composition profile defines how to structure pathology reports based on CAP electronic Cancer Checklists (eCCs) within FHIR. 
 
-## Structure and Binding Requirements
+## Key Elements and Binding Requirements
 
-### Key Elements
+- **extension:diagnosticReportReference**: 
+  - DiagnosticReport is bound to both the Observations AND the Composition through this extension
 
 - **type**: 
   - Bound to the CAP eCC Form Codes ValueSet 
@@ -20,5 +17,3 @@ This US Pathology Composition profile defines how to structure pathology reports
 - **section.entry**: 
   - Each entry references a section in the report
 
-- **extension:diagnosticReportReference**: 
-  - DiagnosticReport is bound to both the Observations AND the Composition through this extension

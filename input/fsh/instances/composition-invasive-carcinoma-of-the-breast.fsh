@@ -1,7 +1,7 @@
 Instance: composition-invasive-carcinoma-of-the-breast
 InstanceOf: USPathologyComposition
-Title: "Composition - Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
-Description: "Composition - Examination of Biopsy Specimens from Patients with Ductal Carcinoma In Situ (DCIS) of the Breast"
+Title: "Composition - Examination of Resection Specimens from Patients with Invasive Carcinoma of the Breast"
+Description: "Composition - Examination of Resection Specimens from Patients with Invasive Carcinoma of the Breast"
 Usage: #example
 * status = #final
 * type = $CAPeCCCodeSystem#Breast.Invasive.Res.189_4.009.021.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Biopsy"

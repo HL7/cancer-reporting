@@ -10,18 +10,7 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * identifier ^definition = "The identifier should match the SDC answer instanceGUID. If an answer instanceGUID is not available a Question instanceGUID shall be used"
 * code ^short = "SDC question ID"
 * code ^definition = "The code should match the question ID from the SDC form. In a given Observation group, there might be repeating codes for multiselect questions, though these Observations will have different values"
-// * code.coding ^slicing.discriminator.type = #value
-// * code.coding ^slicing.discriminator.path = "$this"
-// * code.coding ^slicing.rules = #open // or #closed if you don't want other concepts
-// * code.coding contains
-//     section 0..1 and
-//     question 0..1
-// * code.coding[section] ^short = "Section"
-// * code.coding[section] from CAPeCCSectionCodes (extensible)
-// * code.coding[question] ^short = "Question"
-// * code.coding[question] from CAPeCCQuestionCodes (extensible)
 
-//* code from CAPeCCQuestionCodes (extensible)
 * subject MS
 * subject only Reference(USCorePatientProfile)
 * hasMember MS 
@@ -33,11 +22,6 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * derivedFrom ^short = "Parent observation reference"
 * derivedFrom ^definition = "derivedFrom should be used to capture a parent Observation"
 * derivedFrom only Reference(ObservationSDCeCC)
-
-// * value[x] MS 
-// * value[x] ^short = "the value for selected answer"
-// * value[x] ^definition = "The value should match the from the SDC form. Unique Observations should be created for each multi-select answer"
-
 
 * value[x] MS
 * value[x] ^slicing.discriminator.type = #type
@@ -55,25 +39,7 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * valueCodeableConcept ^comment = "The allowed set of codes will be determined by Observation.code."
 * valueString 0..1
 
-// * component MS
-// * component ^short = "additional entry"
-// * component ^definition = "Any additional list item response fields which were filled in should be captured in the component as their appropriate value type"
+* component MS
+* component ^short = "additional entry"
+* component ^definition = "Any additional list item response fields which were filled in should be captured in the component as their appropriate value type"
 
-// * category ^slicing.discriminator.type = #pattern
-// * category ^slicing.discriminator.path = "coding"
-// * category ^slicing.rules = #open
-// * category ^slicing.description = "Slice based on category coding"
-
-// * category contains 
-//     section 0..1 and
-//     question 0..1
-
-// * category[section].coding ^binding.strength = #preferred
-// * category[section].coding.system = "http://terminology.hl7.org/CodeSystem/CAPeCC"
-// * category[section].coding.code = #SECTION
-// * category[section].coding from CAPeCCValueSet (required)
-
-// * category[question].coding ^binding.strength = #preferred
-// * category[question].coding.system = "http://terminology.hl7.org/CodeSystem/CAPeCC"
-// * category[question].coding.code = #QUESTION
-// * category[question].coding from CAPeCCValueSet (required)

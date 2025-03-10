@@ -2,7 +2,7 @@ Profile: USPathologyObservation
 Parent: ObservationSDCeCC
 Id: us-pathology-observation
 Title: "US Pathology Observation"
-Description: "This Observation profile is basedon the IHE SCD eCC Observation profile. It adds category to specify whether this is a Section (has no value and only hasMembers) or Question (can have a value or hasMembers or both)"
+Description: "This Observation profile is based on the IHE SCD eCC Observation profile. It adds category to differentiate Section and Question Observations. Section(s) contain one or more hasMember relationships to Questions, will not have a value element, and have no derivedFrom relationships. Questions have a derivedFrom relationship with Section AND contain EITHER a value element OR one or more hasMember relationships."
 * ^extension[$WG].valueCode = #oo
 * ^status = #active
 * category 0..1 MS

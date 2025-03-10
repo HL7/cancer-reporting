@@ -16,3 +16,6 @@ Description: "This DiagnosticReport Profile captures data for a report parsed fr
 * specimen MS
 * result MS
 * result only Reference(USPathologyObservation)
+* presentedForm 1..* MS
+* presentedForm ^short = "SDC form, HTML render, and/or PDF"
+* presentedForm ^definition = "Should include some kind of human readable presentation of the form in HTML or PDF. May also include the XML of the SDC form, however DocumentReference is a better carrier of the SDC XML"

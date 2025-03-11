@@ -1,5 +1,5 @@
 Instance: patient-OakleyAnnie
-InstanceOf: USCorePatientProfile
+InstanceOf: USCorePatientProfile|6.1.0
 Title: "Patient example"
 Description: "US Core Patient example"
 Usage: #example
@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "patient-OakleyAnnie"
 * name.family = "Oakley"
 * name.given = "Annie"
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
 * identifier[0].system = "urn:oid:2.16.840.1.113883.4.3.6"
 * identifier[=].value = "patient-OakleyAnnie"
 * identifier[+].use = #usual

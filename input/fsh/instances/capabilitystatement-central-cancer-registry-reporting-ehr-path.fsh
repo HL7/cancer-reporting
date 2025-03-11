@@ -9,7 +9,7 @@ Usage: #definition
 * version = "1.0.0"
 * name = "CentralCancerRegistryReportingPathologyEHRCapabilityStatement"
 * title = "Central Cancer Registry Reporting Pathology EHR Capability Statement"
-* status = #draft
+* status =  #active
 * experimental = false
 * date = "2022-06-13"
 * publisher = "HL7 International - Public Health Work Group"

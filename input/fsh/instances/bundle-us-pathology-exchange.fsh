@@ -28,6 +28,9 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-tumor"
 * entry[=].resource = observation-section-tumor
 
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-lymph-nodes"
+* entry[=].resource = observation-section-lymph-nodes
+
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-margins"
 * entry[=].resource = observation-section-margins
 

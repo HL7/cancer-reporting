@@ -6,6 +6,12 @@
   <li><a href="specification.html">Specification</a></li>
 
   <li><a href="downloads.html">Downloads</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artifact Index</a></li>
+      <li><a href="cancerreport.html">Cancer Pathology Observation Example</a></li>
+    </ul>
+  </li>
   <li><a href="change_notes.html">Change Notes</a></li>
 </ul>

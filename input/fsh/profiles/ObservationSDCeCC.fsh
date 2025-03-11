@@ -12,7 +12,7 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * code ^definition = "The code should match the question ID from the SDC form. In a given Observation group, there might be repeating codes for multiselect questions, though these Observations will have different values"
 
 * subject MS
-* subject only Reference(USCorePatientProfile)
+* subject only Reference(USCorePatientProfile|6.1.0)
 * hasMember MS 
 * hasMember ^short = "Child observation reference"
 * hasMember ^definition = "hasMember should be used to capture any child questions in related Observations"

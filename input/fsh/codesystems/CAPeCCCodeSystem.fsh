@@ -2,7 +2,7 @@ CodeSystem: CAPeCCCodeSystem
 Id: cap-ecc-codesystem
 Title: "CAP eCC CodeSystem"
 Description: "A CodeSystem for CAP eCC codes"
-// CAP eCC codes available at http://terminology.hl7.org/CodeSystem/CAPeCC."
+// CAP eCC codes available at http://terminology.hl7.org/CodeSystem-CAPeCC.html
 * ^experimental = false
 * ^caseSensitive = false
 * #SECTION "SECTION"

@@ -2,6 +2,7 @@ Profile: USPathologyComposition
 Parent: Composition
 Id: us-pathology-composition
 Title: "US Pathology Composition Laboratory Report"
+Description: "This Composition profile represents a Laboratory Report for the Clinical Pathology Data Sharing Implementation Guide."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 2
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
@@ -16,7 +17,7 @@ Title: "US Pathology Composition Laboratory Report"
 * extension contains DiagnosticReportReference named diagnosticReport-reference 0..1
 * extension[diagnosticReport-reference].valueReference only Reference(USPathologyDiagnosticReport)
 * extension[diagnosticReport-reference].valueReference 1..1
-* extension[diagnosticReport-reference].valueReference.reference 1..
+* extension[diagnosticReport-reference].valueReference.reference 1..1
   * ^comment = """Added to the FHIR R4 guide to strictly conform with the R4 rules for document bundle resources inclusion.
   Using this extension implies to accept a circular reference Composition to/from  DiagnosticReport"""
 * identifier ^short = "Report identifier"
@@ -24,9 +25,9 @@ Title: "US Pathology Composition Laboratory Report"
 * type ^short = "CAP Form Identifier"
 * type from CAPeCCFormCodes (extensible)
 * subject 1..1
-* subject only Reference(USCorePatientProfile)
+* subject only Reference(USCorePatientProfile|6.1.0)
 * encounter ^short = "The healthcare event which this Report is about (when test ordered)."
-* encounter only Reference(USCoreEncounterProfile)
+* encounter only Reference(USCoreEncounterProfile|6.1.0)
 * author ^short = "Who and/or what authored the Report"
 * author only Reference(USPathologyRelatedPractitionerRole)
 

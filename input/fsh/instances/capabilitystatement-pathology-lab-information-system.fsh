@@ -9,7 +9,7 @@ Usage: #definition
 * version = "0.2.0"
 * name = "PathologyLabInformationSystem"
 * title = "Pathology Laboratory Information System"
-* status = #draft
+* status =  #active
 * experimental = false
 * date = "2022-06-13"
 * publisher = "HL7 International - Public Health Work Group"

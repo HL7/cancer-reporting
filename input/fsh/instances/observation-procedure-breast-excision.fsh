@@ -23,6 +23,6 @@ Usage: #example
 * valueCodeableConcept.coding[0].code = #40307-100004300
 * valueCodeableConcept.coding[0].display = "Excision (less than total mastectomy)"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
-* valueCodeableConcept.coding[1].code = #69031006
-* valueCodeableConcept.coding[1].display = "Excision of breast tissue (procedure)"
+* valueCodeableConcept.coding[1].code =  #1231734007 // 69031006
+* valueCodeableConcept.coding[1].display = "Excision of breast (procedure)"
 * derivedFrom[+] = Reference(observation-section-specimen)

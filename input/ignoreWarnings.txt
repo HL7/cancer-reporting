@@ -1,11 +1,16 @@
 == Suppressed Messages ==
 
 # 01 Bundle entry slices which conform to US Core profiles are not explicitly profiled in Bundle profiles, not matching is expected behaviour
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-
-# 02 CKey CodeSystem not available yet
-A definition for CodeSystem 'https://example.org' could not be found, so the code cannot be validated
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-observation|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # 03 CKey CodeSystem not available yet but will be
 A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated
 
+# 04 This relies on 6.1.0 
+WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent version is 8.0.0-ballot. This reference is getting old and the more recent version should be considered
+
+# 05  This is a new warning and will be addressed by the workgroup during reconciliation
+WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+
+# 05  This is a new warning and will be addressed by the workgroup during reconciliation
+ StructureDefinition/ihe-sdc-ecc-Observation: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated

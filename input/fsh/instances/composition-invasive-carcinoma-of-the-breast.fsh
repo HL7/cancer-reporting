@@ -3,6 +3,7 @@ InstanceOf: USPathologyComposition
 Title: "Composition - Examination of Resection Specimens from Patients with Invasive Carcinoma of the Breast"
 Description: "Composition - Examination of Resection Specimens from Patients with Invasive Carcinoma of the Breast"
 Usage: #example
+* extension[diagnosticReport-reference].valueReference = Reference(diagnosticreport-breast-invasive-carcinoma)
 * status = #final
 * type = $CAPeCCCodeSystem#Breast.Invasive.Res.189_4.009.021.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Biopsy"
 * subject.reference = "http://hl7.org/fhir/us/cancer-reporting/Patient/patient-OakleyAnnie"
@@ -12,7 +13,6 @@ Usage: #example
 * author.reference = "PractitionerRole/practitionerrole-uspath-practitioner-oncologist"
 * author.display = "Wise Owl"
 * title = "INVASIVE CARCINOMA OF THE BREAST: Resection"
-
 * section[+].title = "INVASIVE CARCINOMA OF THE BREAST: Resection"
 * section[=].code = $loinc#26436-6 "Laboratory Studies (set)"
 * section[=].entry.reference = "Observation/observation-section-specimen"

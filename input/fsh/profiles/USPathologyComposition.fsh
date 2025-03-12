@@ -17,7 +17,7 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 * extension contains DiagnosticReportReference named diagnosticReport-reference 0..1
 * extension[diagnosticReport-reference].valueReference only Reference(USPathologyDiagnosticReport)
 * extension[diagnosticReport-reference].valueReference 1..1
-* extension[diagnosticReport-reference].valueReference.reference 1..1
+* extension[diagnosticReport-reference].valueReference.reference 1..
   * ^comment = """Added to the FHIR R4 guide to strictly conform with the R4 rules for document bundle resources inclusion.
   Using this extension implies to accept a circular reference Composition to/from  DiagnosticReport"""
 * identifier ^short = "Report identifier"
@@ -39,6 +39,6 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
   * title ^short = "Title should be the display of the section code"
   * code ^short = "CAP Form Section Identifier"
   * code from CAPeCCSectionCodes (extensible)
-  * entry 1..1
+  * entry 1..*
   * entry only Reference(USPathologyObservation)
   * entry ^short = "An Observation representing this section in the report and containing (hasMember) Observations representing the question/answers in the section."

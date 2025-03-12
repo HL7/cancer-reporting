@@ -33,12 +33,12 @@ This IG defines an electronic data exchange standard that maintains the discrete
         <tr>
             <td class="tg-0lax">Patient Identification segment (PID)</td>
             <td class="tg-0lax">2.6.2</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
+            <td class="tg-0lax"><a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Patient Visit segment (PV1)</td>
             <td class="tg-0lax">2.6.2</td>
-            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>, <a href="StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
+            <td class="tg-0lax"><a href="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter.html">US Core Encounter Profile</a>, <a href="StructureDefinition-us-pathology-related-practitioner-role.html">US Pathology-Related Practitioner</a>, <a href="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td>
         </tr>
         <tr>
             <td class="tg-0lax">Common Order segment (ORC)</td>

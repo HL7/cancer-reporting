@@ -5,7 +5,6 @@ Title: "US Pathology Diagnostic Report"
 Description: "This DiagnosticReport Profile captures data for a report parsed from an eCP Form."
 * ^extension[$WG].valueCode = #oo
 * ^status = #active
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note|6.1.0"
 * identifier ^definition = "Pathology Report Number"
 * basedOn only Reference(USPathologyServiceRequest)
 * effective[x] MS

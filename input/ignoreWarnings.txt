@@ -11,7 +11,8 @@ A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the cod
 
 # 04 - This relies on 6.1.0 
 WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent version is 8.0.0-ballot. This reference is getting old and the more recent version should be considered
-
+WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent version is 8.0.0-ballot. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.uv.ihe-sdc-ecc#current released on 2024-12-06, but the most recent version is 1.0.0. This reference is getting old and the more recent version should be considered
 # 05 - This is a new warning and will be addressed by the workgroup during reconciliation
 WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 

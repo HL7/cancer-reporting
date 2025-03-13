@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:f0d0b23b-f6a0-44d4-bfaf-ade1b485c0b0"
 * status = #final
+* category[+] = $ObservationCategoryCodes#survey "Survey"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #38124-100004300
 * code.coding[0].display = "Glandular (Acinar) / Tubular Differentiation"

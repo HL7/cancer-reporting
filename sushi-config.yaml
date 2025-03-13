@@ -5,8 +5,8 @@ applyExtensionMetadataToRoot: false
 id: hl7.fhir.us.cancer-reporting
 name: USCancerPathologyData
 title: Cancer Pathology Data Sharing
-copyrightYear: 2020+
-releaseLabel: STU 1.0.1
+copyrightYear: 2025+
+releaseLabel: STU 2.0.0 - Ballot
 description: This implementation guide (IG) provides Health Level Seven (HL7 FHIR) resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or to a central cancer registry. When sending between LIS and EHR systems, implementors may choose to use transport and processing modalities, such as FHIR bundles. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology bundle and is compliant with FHIR Release 4.
 publisher:
   name: HL7 International / Orders and Observations
@@ -18,13 +18,18 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: trial-use
 jurisdiction: urn:iso:std:iso:3166#US
-status: draft
-version: 1.0.1
+status: active
+version: 2.0.0-ballot
+parameters:
+#  path-expansion-params: "../../input/terminology-settings.xml"
+  path-expansion-params: '../../input/exp-params.json'  #Support for US SNOMED CT - path is relative to [base]/fsh-generated/resources
 dependencies:
   hl7.fhir.us.core:
     version: 6.1.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0
-    id: hl7fhiruscore
+    id: uscore
+  hl7.terminology.r4:
+        version: 6.2.0
   #hl7.fhir.us.ph-library:
   #  version: 1.0.0
   #  uri: http://hl7.org/fhir/us/ph-library/ImplementationGuide/hl7.fhir.us.ph-library#1.0.0

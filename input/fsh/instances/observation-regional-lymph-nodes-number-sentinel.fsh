@@ -10,6 +10,7 @@ Usage: #example
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
+* category[+] = $ObservationCategoryCodes#survey "Survey"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #351607.100004300
 * code.coding[0].display = "Number of Sentinel Nodes Examined"

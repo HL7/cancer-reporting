@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:bf778f95-b1a8-4674-a73e-1f2dc0bfbdc4"
 * status = #final
+* category[+] = $ObservationCategoryCodes#survey "Survey"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #16259-100004300
 * code.coding[0].display = "Specify Clock Position"

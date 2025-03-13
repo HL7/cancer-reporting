@@ -6,6 +6,7 @@ Usage: #example
 * identifier.system = "https://example.org"
 * identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6dbver1.51265.100004300"
 * status = #final
+* category[+] = $ObservationCategoryCodes#survey "Survey"
 * code = $example#51265.100004300 "Tumor Extension"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2024-12-05"

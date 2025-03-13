@@ -1,3 +1,5 @@
+/*
+The system exists externally and should not be reproduced here in this way.
 CodeSystem: CAPeCCCodeSystem
 Id: cap-ecc-codesystem
 Title: "CAP eCC CodeSystem"
@@ -21105,3 +21107,4 @@ Description: "A CodeSystem for CAP eCC codes"
 * #18155.100004300 "ADDITIONAL FINDINGS (Note J)"
 * #350762.100004300 "SPECIAL STUDIES (Note K)"
 * #381181.100004300 "COMMENTS"
+*/

@@ -1,4 +1,4 @@
-Profile: ObservationSDCeCC
+/*Profile: ObservationSDCeCC
 Parent: Observation
 Id: ihe-sdc-ecc-Observation
 Title: "IHE SDC/eCP on FHIR Observation"
@@ -43,3 +43,4 @@ Description: "This Observation Profile describes how to capture Question/Answer 
 * component ^short = "additional entry"
 * component ^definition = "Any additional list item response fields which were filled in should be captured in the component as their appropriate value type"
 
+*/

@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:c12982a8-541c-469a-b016-9468d58eb858"
 * status = #final
+* category[+] = $ObservationCategoryCodes#survey "Survey"
 * code = $example#51265.100004300 "Margin"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #351503-100004300

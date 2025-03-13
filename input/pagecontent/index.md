@@ -21,25 +21,24 @@ This guide defines 7 FHIR profiles:
 * [US Pathology Related Practitioner Role](StructureDefinition-us-pathology-related-practitioner-role.html) (derived from US Core PractitionerRole)
 
 This guide defines 5 value sets and 2 code systems:
-* [US Pathology Provider Types ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
-* [CAP eCC Answer Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-answer-codes.html)
-* [CAP eCC Form Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-form-codes.html)
-* [CAP eCC Question Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-question-answer-codes.html)
-* [CAP eCC Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-section-codes.html)
+* [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)
+* [CAP eCC Answer Codes ValueSet](ValueSet-cap-ecc-answer-codes.html)
+* [CAP eCC Form Codes ValueSet](ValueSet-cap-ecc-form-codes.html)
+* [CAP eCC Question Codes ValueSet](ValueSet-cap-ecc-question-codes.html)
+* [CAP eCC Section Codes ValueSet](ValueSet-cap-ecc-section-codes.html)
 
-This guide defines 2 code systems:
-* [CAP eCC CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-cap-ecc-codesystem.html)
-* [US Pathology CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-us-pathology-codesystem.html)
+This guide defines 1 code systems:
+* [US Pathology CodeSystem](CodeSystem-us-pathology-codesystem.html)
 
 ### Dependencies
 This guide leverages the [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020](https://www.naaccr.org/wp-content/uploads/2020/07/NAACCR-Vol-V_Revised_20200720.pdf) (Revised 2020).
 
 This guide also leverages profiles from the 6.1.0 version of:
-* [US Core IG](http://hl7.org/fhir/us/core/STU6.1/index.html)
-* [US Core Patient](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-patient.html) 
-* [US Core Practitioner](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-practitioner.html)
-* [US Core Procedure](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html)
-* [US Core Organization](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization.html)
+* [US Core IG]({{site.data.fhir.ver.uscore}}/index.html)
+* [US Core Patient]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-patient.html) 
+* [US Core Practitioner]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-practitioner.html)
+* [US Core Procedure]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-procedure.html)
+* [US Core Organization]({{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-organization.html)
 
 ### Audience
 The audience for this IG includes architects and developers of clinical and pathology laboratory health record systems as well as cancer registry systems in the US Realm. Business analysts and policy managers can also benefit from a basic understanding of the use of this cancer pathology data standard to support data flows from pathology laboratories.

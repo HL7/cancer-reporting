@@ -7,6 +7,7 @@ Usage: #example
 * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
 * category = $loinc#LP7839-6 "Pathology"
+* basedOn.reference = "ServiceRequest/servicerequest-cancer-path"
 * code = $loinc#60568-3 "Pathology Synoptic report"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"

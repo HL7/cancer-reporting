@@ -3,7 +3,7 @@ Id: us-pathology-provider-types
 Title: "US Pathology Provider Types"
 Description: "This ValueSet is composed of HL7 ParticipationType codes (found in PV1) and concepts from Pathology Provider Types CodeSystem (found in OBR)."
 * ^extension[$WG].valueCode = #oo
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * $v3-ParticipationType#ADM "admitter"
 * $v3-ParticipationType#ATND "attender"

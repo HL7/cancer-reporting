@@ -16,12 +16,6 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/DiagnosticReport/diagnosticreport-breast-invasive-carcinoma"
 * entry[=].resource = diagnosticreport-breast-invasive-carcinoma
 
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-case-summary"
-* entry[=].resource = observation-section-case-summary
-
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-clinical"
-* entry[=].resource = observation-section-clinical
-
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-specimen"
 * entry[=].resource = observation-section-specimen
 
@@ -54,15 +48,6 @@ Usage: #example
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-section-comments"
 * entry[=].resource = observation-section-comments
-
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-patient-age-group"
-* entry[=].resource = observation-patient-age-group
-
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-clinical-history"
-* entry[=].resource = observation-clinical-history
-
-* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-functional-status"
-* entry[=].resource = observation-functional-status
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-procedure-breast-excision"
 * entry[=].resource = observation-procedure-breast-excision

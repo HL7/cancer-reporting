@@ -1,18 +1,18 @@
 == Suppressed Messages ==
 
-# 01 Bundle entry slices which conform to US Core profiles are not explicitly profiled in Bundle profiles, not matching is expected behaviour
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-observation|1.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+# 01 - Bundle entry slices which conform to US Core profiles are not explicitly profiled in Bundle profiles, not matching is expected behaviour
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-observation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# 02 CKey CodeSystem not available yet but will be
+# 02 - CKey CodeSystem not available yet but will be
 A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated
 
-# 03  Code System example
+# 03  - Code System example
  A definition for CodeSystem 'https://example.org' could not be found, so the code cannot be validated
 
-# 04 This relies on 6.1.0 
+# 04 - This relies on 6.1.0 
 WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent version is 8.0.0-ballot. This reference is getting old and the more recent version should be considered
 
-# 05  This is a new warning and will be addressed by the workgroup during reconciliation
+# 05 - This is a new warning and will be addressed by the workgroup during reconciliation
 WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 
 # 06  This is a new warning and will be addressed by the workgroup during reconciliation
@@ -20,3 +20,43 @@ WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: 
 
 # 07  This is a new warning and will be addressed by the workgroup during reconciliation
  A definition for CodeSystem 'https://example.org' could not be found, so the code cannot be validated
+
+# 08 - Proprietary Code system (from CAP) values are not found. CodeSystem URL (http://cap.org/eCC) identified in THO: https://terminology.hl7.org/CodeSystem-CAPeCC.html
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://cap.org/eCC
+A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated
+The value set include has too many codes to validate (3,634), so each individual code has not been checked
+The value set include has too many codes to validate (16,084), so each individual code has not been checked
+Unknown System 'https://cap.org/eCC' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated)
+INFORMATION: CodeSystem/cap-ecc-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+INFORMATION: CodeSystem/us-pathology-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+
+Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/cancer-reporting/ValueSet/cap-ecc-form-codes|2.0.0-ballot' because the code system https://cap.org/eCC was not found
+A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/cancer-reporting/ValueSet/cap-ecc-form-codes|2.0.0-ballot' because the code system https://cap.org/eCC was not found
+
+Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/cancer-reporting/ValueSet/cap-ecc-section-codes|2.0.0-ballot' because the code system https://cap.org/eCC was not found
+A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/cancer-reporting/ValueSet/cap-ecc-section-codes|2.0.0-ballot' because the code system https://cap.org/eCC was not found
+
+Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/cancer-reporting/ValueSet/cap-ecc-answer-codes|2.0.0-ballot' because the code system https://cap.org/eCC was not found
+Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/cancer-reporting/ValueSet/cap-ecc-answer-codes|2.0.0-ballot' because the code system https://cap.org/eCC, http://snomed.info/sct was not found
+A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://hl7.org/fhir/us/cancer-reporting/ValueSet/cap-ecc-answer-codes|2.0.0-ballot' because the code system https://cap.org/eCC was not found
+
+# 09 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
+INFORMATION: StructureDefinition/us-pathology-composition: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+
+
+# 10 - Deprecated pattern slicing from an inherited US Core profiles
+INFORMATION: StructureDefinition/us-pathology-diagnostic-report: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-pathology-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-pathology-service-request: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/us-pathology-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+# 11 - Valueset bindings without version identified are inherited from other specifications and not defined in this IG. Default version is acceptable
+WARNING: StructureDefinition/us-pathology-composition: StructureDefinition.snapshot.element[48].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2.0.0, 2018-08-12, 3.0.0
+WARNING: StructureDefinition/us-pathology-service-request: StructureDefinition.snapshot.element[36].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2.0.0, 2014-03-26, 3.0.0
+WARNING: StructureDefinition/us-pathology-specimen: StructureDefinition.snapshot.element[27].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0916'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.0.0', found versions: 2.0.0, 2.9
+WARNING: StructureDefinition/us-pathology-specimen: StructureDefinition.snapshot.element[45].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0371'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.0.0', found versions: 2.0.0, 2.9
+WARNING: StructureDefinition/us-pathology-specimen: StructureDefinition.snapshot.element[46].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0493'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.0.0', found versions: 2.0.0, 2.9
+
+# 12 - 
+The value set expansion is too large, and only a subset has been displayed

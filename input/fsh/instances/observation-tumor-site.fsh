@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b"
 * status = #final
-* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
+* category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #51180-100004300
 * code.coding[0].display = "Tumor Site (Note B)"

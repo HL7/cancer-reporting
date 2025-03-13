@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
-* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
+* category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #380281-100004300
 * code.coding[0].display = "Histologic Grade (Nottingham Histologic Score)"

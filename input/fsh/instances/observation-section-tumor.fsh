@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
 * code = $CAPeCCCodeSystem#16249.100004300 "TUMOR"
-* category = $CAPeCCCodeSystem#SECTION "SECTION"
+* category = USPathologyCodeSystem#SECTION "Section"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

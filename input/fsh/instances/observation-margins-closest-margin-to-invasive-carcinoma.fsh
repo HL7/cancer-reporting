@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:c12982a8-541c-469a-b016-9468d58eb858"
 * status = #final
 * code = $example#51265.100004300 "Margin"
-* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
+* category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #351503-100004300
 * code.coding[0].display = "Closest Margin(s) to Invasive Carcinoma"

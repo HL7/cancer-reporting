@@ -7,7 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:ee170d9a-d5b5-481a-ac58-52dea11955b4"
 * status = #final
-* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
+* category = USPathologyCodeSystem#QUESTION "Question"
 * code = $example#51265.100004300 "Margin"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #351503-100004300

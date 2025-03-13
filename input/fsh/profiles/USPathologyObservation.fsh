@@ -18,9 +18,9 @@ Description: "This Observation profile is inspired by the IHE SDC . It adds cate
 * category ^slicing.rules = #open
 * category ^slicing.description = "Slice based on category coding" */
 
-* category contains capformcategory 1..1 MS 
+* category contains cap-form-category 1..1 MS 
 
-* category[capformcategory].coding from CAPeCCCategoryCodes (required)
+* category[cap-form-category] from USPathologyFormCategoryCodes (required)
 
 * hasMember MS 
 * hasMember ^short = "Child observation reference"
@@ -47,5 +47,5 @@ Description: "This Observation profile is inspired by the IHE SDC . It adds cate
 * valueCodeableConcept from CAPeCCAnswerCodes (extensible)
 
 * component MS
-* component ^short = "additional entry"
+* component ^short = "Additional entry"
 * component ^definition = "Any additional list item response fields which were filled in should be captured in the component as their appropriate value type"

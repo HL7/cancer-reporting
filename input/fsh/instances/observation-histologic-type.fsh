@@ -6,7 +6,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
-* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
+* category = USPathologyCodeSystem#QUESTION "Question"
 * code = $example#4.009.001 "Histologic Type (Note C)"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2024-12-05"

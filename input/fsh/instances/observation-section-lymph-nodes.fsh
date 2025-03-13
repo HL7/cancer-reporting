@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
 * code = $CAPeCCCodeSystem#868263.100004300 "Lymph Nodes"
-* category = $CAPeCCCodeSystem#SECTION "SECTION"
+* category = USPathologyCodeSystem#SECTION "Section"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"

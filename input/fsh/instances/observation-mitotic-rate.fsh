@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:814dd523-9284-4edb-8831-fc1c440e4979"
 * status = #final
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #38390-100004300
 * code.coding[0].display = "Mitotic Rate"

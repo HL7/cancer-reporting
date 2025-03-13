@@ -1,5 +1,5 @@
 Profile: USPathologySpecimen
-Parent: USCoreSpecimenProfile|6.1.0
+Parent: USCoreSpecimenProfile
 Id: us-pathology-specimen
 Title: "US Pathology Specimen"
 Description: "This Specimen profile defines a pathology specimen that is the focus of an eCP report."

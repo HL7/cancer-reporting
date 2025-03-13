@@ -1,9 +1,9 @@
 Instance: encounter-uspath-specimen-collection
-InstanceOf: USCoreEncounterProfile|6.1.0
+InstanceOf: USCoreEncounterProfile
 Title: "US Pathology Encounter Specimen Collection example"
 Description: "Example encounter in which a pathology specimen collection takes place. References ServiceRequest."
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|6.1.0"
+* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
 * identifier.system = "http://example.com/fhir/encounters"
 * identifier.value = "123"
 * status = #finished

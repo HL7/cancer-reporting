@@ -6,6 +6,7 @@ Usage: #example
 * identifier.system = "https://example.org"
 * identifier.value = "Breast.Ca.Res.129_3.002.011.RC1_sdcFDF3d1c4fe4-09c3-4a7e-877f-9ddb160da6dbver1.20880.100004300"
 * status = #final
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 * code = $example#20880.100004300 "TNM Descriptors"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2024-12-05"

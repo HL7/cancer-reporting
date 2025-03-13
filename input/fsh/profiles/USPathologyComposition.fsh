@@ -25,9 +25,9 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 * type ^short = "CAP Form Identifier"
 * type from CAPeCCFormCodes (extensible)
 * subject 1..1
-* subject only Reference(USCorePatientProfile|6.1.0)
+* subject only Reference(USCorePatientProfile)
 * encounter ^short = "The healthcare event which this Report is about (when test ordered)."
-* encounter only Reference(USCoreEncounterProfile|6.1.0)
+* encounter only Reference(USCoreEncounterProfile)
 * author ^short = "Who and/or what authored the Report"
 * author only Reference(USPathologyRelatedPractitionerRole)
 

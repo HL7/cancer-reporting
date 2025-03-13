@@ -29,17 +29,17 @@ Description: "This document Bundle profile defines the structure for reporting t
 * entry[composition].resource 1.. MS
 * entry[composition].resource only USPathologyComposition
 * entry[patient].resource 1.. MS
-* entry[patient].resource only USCorePatientProfile|6.1.0
+* entry[patient].resource only USCorePatientProfile
 * entry[practitioner].resource 1.. MS
-* entry[practitioner].resource only USCorePractitionerProfile|6.1.0
+* entry[practitioner].resource only USCorePractitionerProfile
 * entry[practitionerRole].resource 1.. MS
 * entry[practitionerRole].resource only USPathologyRelatedPractitionerRole
 * entry[organization].resource 1.. MS
-* entry[organization].resource only USCoreOrganizationProfile|6.1.0
+* entry[organization].resource only USCoreOrganizationProfile
 * entry[service-request].resource 0.. MS
 * entry[service-request].resource only USPathologyServiceRequest
 * entry[procedure].resource 0.. MS
-* entry[procedure].resource only USCoreProcedureProfile|6.1.0
+* entry[procedure].resource only USCoreProcedureProfile
 * entry[specimen].resource 1..
 * entry[specimen].resource only USPathologySpecimen
 * entry[diagnosticReport].resource 1..
@@ -47,6 +47,6 @@ Description: "This document Bundle profile defines the structure for reporting t
 * entry[observation].resource 1..
 * entry[observation].resource only USPathologyObservation
 * entry[relatedPerson].resource 1..
-* entry[relatedPerson].resource only USCoreRelatedPersonProfile|6.1.0
+* entry[relatedPerson].resource only USCoreRelatedPersonProfile
 * entry[encounter].resource 1..
-* entry[encounter].resource only USCoreEncounterProfile|6.1.0
+* entry[encounter].resource only USCoreEncounterProfile

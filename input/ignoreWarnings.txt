@@ -2,6 +2,7 @@
 
 # 01 - Bundle entry slices which conform to US Core profiles are not explicitly profiled in Bundle profiles, not matching is expected behaviour
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-observation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/cancer-reporting/StructureDefinition/us-pathology-exchange-bundle|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # 02 - CKey CodeSystem not available yet but will be
 A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated

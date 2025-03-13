@@ -19,7 +19,7 @@ Description: "This ServiceRequest profile represents the request for analysis of
 * basedOn MS
 * basedOn ^isModifier = false
 * code 1..1 MS
-* code from USCoreProcedureCodes|6.1.0 (extensible)
+* code from USCoreProcedureCodes (extensible)
 * code ^isModifier = false
 * code ^binding.description = "US Core Procedure Codes"
 * code.coding 1..

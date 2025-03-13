@@ -7,6 +7,7 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:1ca2fb51-1752-4489-a4b0-5c0dccc043e5"
 * status = #final
+* category = $CAPeCCCodeSystem#QUESTION "QUESTION"
 * code.coding[0].system = "https://cap.org/eCC"
 * code.coding[0].code = #52399.100004300
 * code.coding[0].display = "HER2 (by immunohistochemistry)"

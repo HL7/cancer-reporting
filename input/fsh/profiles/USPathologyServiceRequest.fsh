@@ -31,4 +31,5 @@ Description: "This ServiceRequest profile represents the request for analysis of
 * authoredOn ^isModifier = false
 * requester MS
 * requester ^isModifier = false
+* locationCode from $v3-ServiceDeliveryLocationRoleType
 * specimen only Reference(USPathologySpecimen)

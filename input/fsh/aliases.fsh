@@ -12,3 +12,5 @@ Alias: $eCC = https://cap.org/eCC
 Alias: $CAPeCCCodeSystem = https://cap.org/eCC
 Alias: $v3-UnitsOfMeasureCaseSensitive = http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive|3.0.0
 Alias: $ObservationCategoryCodes = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $v3-ServiceDeliveryLocationRoleType = http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0
+Alias: $v3-ActCodes = http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0

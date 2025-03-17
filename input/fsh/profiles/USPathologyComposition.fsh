@@ -34,7 +34,7 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 * title ^short = "CAP Form Title"
 
 * attester ^short = "Attests the report accuracy"
-
+* event.code from $v3-ActCodes
 * section 1..* MS
   * title ^short = "Title should be the display of the section code"
   * code ^short = "CAP Form Section Identifier"

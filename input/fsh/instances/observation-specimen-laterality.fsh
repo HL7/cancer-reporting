@@ -9,14 +9,14 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #16214-100004300
+* code.coding[0].code = #16214.100004300
 * code.coding[0].display = "Specimen Laterality"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
+* effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #16215-100004300
+* valueCodeableConcept.coding[0].code = #16215.100004300
 * valueCodeableConcept.coding[0].display = "Right"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #73056007

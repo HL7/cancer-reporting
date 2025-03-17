@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "urn:uuid:25b43d87-bad0-4779-91c8-352ad2f778ce"
 * status = #final
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
@@ -17,4 +17,4 @@ Usage: #example
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #3351606.100004300
 * valueCodeableConcept.coding[0].display = "Exact number (specify)"
-* derivedFrom[+] = Reference(observation-regional-lymph-node-status)
+* derivedFrom[0] = Reference(observation-regional-lymph-node-status)

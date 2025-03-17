@@ -12,7 +12,7 @@ Usage: #example
 * code.coding[0].code = #52399.100004300
 * code.coding[0].display = "HER2 (by immunohistochemistry)"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #40505.100004300

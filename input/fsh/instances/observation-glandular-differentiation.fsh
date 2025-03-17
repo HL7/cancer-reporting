@@ -9,13 +9,13 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #38124-100004300
+* code.coding[0].code = #38124.100004300
 * code.coding[0].display = "Glandular (Acinar) / Tubular Differentiation"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
+* effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #16348-100004300
+* valueCodeableConcept.coding[0].code = #16348.100004300
 * valueCodeableConcept.coding[0].display = "Score 2 (10 to 75% of tumor area forming glandular / tubular structures)"
 * derivedFrom[+] = Reference(observation-histologic-grade)

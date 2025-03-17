@@ -7,9 +7,11 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
-* category = USPathologyCodeSystem#QUESTION "Question"
-* code = $example#2149.100004300 "Distant Metastasis (pM) (Note I)"
+* category = USPathologyCodeSystem#SECTION "Section"
+* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].code = #352333.100004300
+* code.coding[0].display = "DISTANT METASTASIS"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept = $example#20895.100004300 "?Not applicable - pM cannot be determined from the submitted specimen(s)"
+* hasMember.reference = "Observation/observation-distant-metastasis-distant-sites"

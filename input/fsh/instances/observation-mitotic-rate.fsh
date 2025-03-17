@@ -9,13 +9,13 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #38390-100004300
+* code.coding[0].code = #38390.100004300
 * code.coding[0].display = "Mitotic Rate"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
+* effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #16383-100004300
+* valueCodeableConcept.coding[0].code = #16383.100004300
 * valueCodeableConcept.coding[0].display = "Score 1"
 * derivedFrom[+] = Reference(observation-histologic-grade)

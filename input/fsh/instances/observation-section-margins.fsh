@@ -7,9 +7,9 @@ Usage: #example
 * identifier.system = "https://cap.org/eCC"
 * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
-* code = $CAPeCCCodeSystem#1234567.100004300 "Margin Section"
+* code = $CAPeCCCodeSystem#16567.100004300 "MARGINS (Note L)"
 * category = USPathologyCodeSystem#SECTION "Section"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember.reference = "Observation/observation-margins-margin-status-for-invasive-carcinoma"

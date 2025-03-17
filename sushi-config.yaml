@@ -30,10 +30,6 @@ dependencies:
     id: uscore
   hl7.terminology.r4:
         version: 6.2.0
-  #hl7.fhir.us.ph-library:
-  #  version: 1.0.0
-  #  uri: http://hl7.org/fhir/us/ph-library/ImplementationGuide/hl7.fhir.us.ph-library#1.0.0
-  #  id: hl7fhirusphlibrary
  # hl7.fhir.uv.ihe-sdc-ecc:
  #    version: current
  #    uri: http://hl7.org/fhir/uv/ihe-sdc-ecc/ImplementationGuide/hl7.fhir.uv.ihe-sdc-ecc

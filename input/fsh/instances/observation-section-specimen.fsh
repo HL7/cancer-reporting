@@ -8,9 +8,8 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#SECTION "Section"
 * code = $CAPeCCCodeSystem#16182.100004300 "SPECIMEN"
-//* code.coding[section] = $CAPeCCCodeSystem#16182.100004300 "SPECIMEN"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-procedure-breast-excision)
 * hasMember[+] = Reference(observation-specimen-laterality)

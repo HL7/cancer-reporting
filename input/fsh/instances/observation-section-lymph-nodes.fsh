@@ -10,5 +10,5 @@ Usage: #example
 * code = $CAPeCCCodeSystem#868263.100004300 "Lymph Nodes"
 * category = USPathologyCodeSystem#SECTION "Section"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"

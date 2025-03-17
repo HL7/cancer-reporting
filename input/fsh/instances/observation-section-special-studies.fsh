@@ -10,8 +10,6 @@ Usage: #example
 * code = $CAPeCCCodeSystem#17834.100004300 "SPECIAL STUDIES"
 * category = USPathologyCodeSystem#SECTION "Section"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember[+] = Reference(observation-special-studies-breast-biomarker)
-* hasMember[+] = Reference(observation-special-studies-estrogen-receptor)
-* hasMember[+] = Reference(observation-special-studies-her2)

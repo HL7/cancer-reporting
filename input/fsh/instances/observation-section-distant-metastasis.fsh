@@ -8,8 +8,8 @@ Usage: #example
 * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
 * category = USPathologyCodeSystem#SECTION "Section"
-* code = $CAPeCCCodeSystem#16775.100004300 "Distant Metastasis"
+* code = $CAPeCCCodeSystem#352333.100004300 "Distant Metastasis"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 * hasMember.reference = "Observation/observation-distant-metastasis"

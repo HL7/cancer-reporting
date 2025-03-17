@@ -7,5 +7,5 @@ Description: "US Patholodgy Code System"
 * ^experimental = false
 * ^caseSensitive = false
 * ^content = #complete
-* #SECTION "Section"
-* #QUESTION "Question"
+* #SECTION "Section" "Section"
+* #QUESTION "Question" "Question"

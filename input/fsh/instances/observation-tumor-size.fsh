@@ -9,14 +9,14 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #30148-100004300
+* code.coding[0].code = #30148.100004300
 * code.coding[0].display = "Tumor Size (Note E)"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"
-* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
+* effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer.reference = "PractitionerRole/practitionerrole-uspath-pathologist"
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #31357-100004300
+* valueCodeableConcept.coding[0].code = #31357.100004300
 * valueCodeableConcept.coding[0].display = "Greatest dimension of largest invasive focus greater than 1 mm (specify exact measurement in Millimeters (mm))"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #200001000004104

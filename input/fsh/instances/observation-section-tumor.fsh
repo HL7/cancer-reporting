@@ -11,7 +11,7 @@ Usage: #example
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2024-12-05"
 * performer.reference = "Practitioner/practitioner-oncologist"
-* hasMember[+] = Reference(observation-tumor-site)
+* hasMember[0] = Reference(observation-tumor-site)
 * hasMember[+] = Reference(observation-histologic-type)
 * hasMember[+] = Reference(observation-histologic-grade)
 * hasMember[+] = Reference(observation-tumor-size)

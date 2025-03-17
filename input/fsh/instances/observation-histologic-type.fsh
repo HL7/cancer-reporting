@@ -7,8 +7,12 @@ Usage: #example
 * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code = $example#4.009.001 "Histologic Type (Note C)"
+* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].code = #41794.100004300
+* code.coding[0].display = "Histologic Type (Note C)"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept = $example#2117.100004300 "Invasive carcinoma of no special type (ductal)"
+* valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
+* valueCodeableConcept.coding[0].code = #16280.100004300
+* valueCodeableConcept.coding[0].display = "Invasive carcinoma of no special type (ductal)"

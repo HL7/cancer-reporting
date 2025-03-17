@@ -9,10 +9,10 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #351589-100004300
+* code.coding[0].code = #351589.100004300
 * code.coding[0].display = "Regional Lymph Node Status"
 * subject = Reference(patient-OakleyAnnie)
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"

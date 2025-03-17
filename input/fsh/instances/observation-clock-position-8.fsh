@@ -9,17 +9,17 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #16259-100004300
+* code.coding[0].code = #16259.100004300
 * code.coding[0].display = "Specify Clock Position"
 * code.coding[1].system = "http://snomed.info/sct"
 * code.coding[1].code = #3980001000004105
 * code.coding[1].display = "Radial location of primary malignant neoplasm in excised breast specimen (observable entity)"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
+* effectivePeriod.start = "2025-03-13T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #6643-100004300
+* valueCodeableConcept.coding[0].code = #6643.100004300
 * valueCodeableConcept.coding[0].display = "8 o'clock"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #260341007

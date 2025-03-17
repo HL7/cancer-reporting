@@ -10,7 +10,7 @@ Usage: #example
 * code = $CAPeCCCodeSystem#16717.100004300 "PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M)"
 * category = USPathologyCodeSystem#SECTION "Section"
 * subject.reference = "Patient/patient-OakleyAnnie"
-* effectiveDateTime = "2024-12-05"
+* effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 
 * hasMember[+] = Reference(observation-ptnm-classification-pT-Category)

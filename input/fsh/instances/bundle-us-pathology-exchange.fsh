@@ -118,6 +118,9 @@ Usage: #example
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-distant-metastasis"
 * entry[=].resource = observation-distant-metastasis
 
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-distant-metastasis-distant-sites"
+* entry[=].resource = observation-distant-metastasis-distant-sites
+
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-ptnm-classification-pT-Category"
 * entry[=].resource = observation-ptnm-classification-pT-Category
 
@@ -135,6 +138,9 @@ Usage: #example
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-special-studies-her2"
 * entry[=].resource = observation-special-studies-her2
+
+* entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Observation/observation-special-studies-negative"
+* entry[=].resource = observation-special-studies-negative
 
 * entry[+].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Specimen/specimen-breast"
 * entry[=].resource = specimen-breast

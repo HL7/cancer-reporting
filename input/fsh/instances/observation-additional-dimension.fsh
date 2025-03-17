@@ -9,11 +9,11 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #31359-100004300
+* code.coding[0].code = #31359.100004300
 * code.coding[0].display = "Additional Dimension in Millimeters (mm)"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
+* effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueQuantity.value = 13.0
 * derivedFrom[+] = Reference(observation-tumor-size)

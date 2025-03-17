@@ -9,14 +9,14 @@ Usage: #example
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #44040-100004300
+* code.coding[0].code = #44040.100004300
 * code.coding[0].display = "Ductal Carcinoma In Situ (DCIS) (Note G)"
 * subject = Reference(patient-OakleyAnnie)
 
-* effectivePeriod.start = "2024-12-05T14:52:02+00:00"
+* effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #16306-100004300
+* valueCodeableConcept.coding[0].code = #16306.100004300
 * valueCodeableConcept.coding[0].display = "Not identified"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #47492008

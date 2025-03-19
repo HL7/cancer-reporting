@@ -262,7 +262,6 @@
                 <p><strong>Identifier.System:</strong> https://cap.org/eCC</p>
                  <p><strong>Identifier.Value:</strong> urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</p>
                 <p><strong>Status:</strong> final</p>
-                <p><strong>Status:</strong> final</p>
                 <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
                 <p><strong>Code:</strong> <span class="code-display">16182.100004300</span> (SPECIMEN)</p>
                 <p><strong>Subject:</strong> Annie Oakley</p>
@@ -350,7 +349,7 @@
                 </div>
                 <div class="relationship indent-1">
                     <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
+                    <span class="resource-reference">urn:uuid:c12982a8-541c-469a-b016-9468d58eb858</span>
                 </div>
                 <div class="relationship indent-1">
                     <span class="relationship-type">hasMember</span>

@@ -1,12 +1,12 @@
 == Suppressed Messages ==
 
-# 01 - CKey CodeSystem not available yet but will be
+# 01 - College of American Pathologists (CAP) decimal CompositeKey (CKey) CodeSystem not available yet but will be
 A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated
 
-# 02 - This relies on 6.1.0 
+# 02 - Required use of 6.1.0 to meet regulatory requirements
 WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 7.0.0. This reference is getting old and the more recent version should be considered
 
-# 03 - This is a new warning and will be addressed by the workgroup during reconciliation
+# 03 - This is a new warning since the development of the IG
 WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 
 # 04 - Proprietary Code system (from CAP) values are not found. CodeSystem URL (http://cap.org/eCC) identified in THO: https://terminology.hl7.org/CodeSystem-CAPeCC.html
@@ -15,10 +15,9 @@ INFORMATION: CodeSystem/us-pathology-codesystem: CodeSystem: Most code systems d
 WARNING: CodeSystem/cap-ecc-codesystem: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
 
 # 05 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
-INFORMATION: StructureDefinition/us-pathology-composition: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/us-pathology-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
 # 06 - Deprecated pattern slicing from an inherited US Core profiles
 INFORMATION: StructureDefinition/us-pathology-diagnostic-report: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/us-pathology-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/us-pathology-observation: StructureDefinition.differential.element[0].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/us-pathology-service-request: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

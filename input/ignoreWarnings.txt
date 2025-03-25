@@ -17,7 +17,7 @@ WARNING: CodeSystem/cap-ecc-codesystem: CodeSystem.concept[0]: HL7 Defined CodeS
 # 05 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
 INFORMATION: StructureDefinition/us-pathology-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
-# 06 - Deprecated pattern slicing from an inherited US Core profiles
+# 06 - Deprecated pattern slicing from inherited US Core profiles
 INFORMATION: StructureDefinition/us-pathology-diagnostic-report: StructureDefinition.snapshot.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/us-pathology-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/us-pathology-service-request: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)

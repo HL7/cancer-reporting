@@ -4,12 +4,16 @@ Title: "Specific Clock Position Observation (8 o'clock)"
 Description: "An observation describing the specific clock position as 8 o'clock."
 Usage: #example
 
-* identifier.system = "https://cap.org/eCC"
-* identifier.value = "urn:uuid:bf778f95-b1a8-4674-a73e-1f2dc0bfbdc4"
+// * identifier.system = "https://cap.org/eCC"
+* identifier.system = "http://example.org/codes"
+// * identifier.value = "urn:uuid:bf778f95-b1a8-4674-a73e-1f2dc0bfbdc4"
+* identifier.value = "urn:uuid:25b2057d-ae7c-455c-9a97-87e8d3f030fd"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #16259.100004300
+// * code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].system = "http://example.org/codes"
+// * code.coding[0].code = #16259.100004300
+* code.coding[0].code = #17959
 * code.coding[0].display = "Specify Clock Position"
 * code.coding[1].system = "http://snomed.info/sct"
 * code.coding[1].code = #3980001000004105
@@ -18,8 +22,10 @@ Usage: #example
 
 * effectivePeriod.start = "2025-03-13T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #6643.100004300
+// * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
+* valueCodeableConcept.coding[0].system = "http://example.org/codes"
+// * valueCodeableConcept.coding[0].code = #6643.100004300
+* valueCodeableConcept.coding[0].code = #33456
 * valueCodeableConcept.coding[0].display = "8 o'clock"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[1].code = #260341007

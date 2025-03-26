@@ -5,6 +5,8 @@ Description: "A CodeSystem for CAP eCC codes"
 // CAP eCC codes available at http://terminology.hl7.org/CodeSystem-CAPeCC.html
 * ^experimental = false
 * ^caseSensitive = false
+* ^content = #not-present
+/*
 * #31357.100004300 "Greatest dimension of largest invasive focus greater than 1 mm (specify exact measurement in Millimeters (mm))"
 * #30148.100004300 "Tumor Size (Note E)"
 * #51180.100004300 "Tumor Site (Note B)"
@@ -68,3 +70,4 @@ Description: "A CodeSystem for CAP eCC codes"
 * #16403.100004300 "Tumor Extent (Note H)"
 * #868258.100004300 "Primary Tumor Bed"
 * #868272.100004300 "RCB Calculations"
+*/

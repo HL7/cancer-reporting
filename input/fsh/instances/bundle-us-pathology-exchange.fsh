@@ -8,7 +8,8 @@ Usage: #example
 * timestamp = "2024-12-05T18:05:57.689+00:00"
 
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "urn:uuid:1168632f-0826-474b-bf08-89347f34afa2"
+
+* identifier.value = "urn:uuid:1e518c9a-b9a2-4ee6-a350-8965b7924311"
 
 * entry[0].fullUrl = "http://hl7.org/fhir/us/cancer-reporting/Composition/composition-invasive-carcinoma-of-the-breast"
 * entry[=].resource = composition-invasive-carcinoma-of-the-breast

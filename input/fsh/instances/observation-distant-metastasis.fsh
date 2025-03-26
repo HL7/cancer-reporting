@@ -4,12 +4,16 @@ Title: "Distant Metastasis Observation example"
 Description: "This is an example observation of distant metastasis which cannot be determined from the submitted specimen(s)."
 Usage: #example
 
-* identifier.system = "https://cap.org/eCC"
-* identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
+// * identifier.system = "https://cap.org/eCC"
+* identifier.system = "http://example.org/codes"
+// * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
+* identifier.value = "urn:uuid:edb54dd2-ddaf-4792-81ab-e252259facf6"
 * status = #final
 * category = USPathologyCodeSystem#SECTION "Section"
-* code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #352333.100004300
+// * code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].system = "http://example.org/codes"
+// * code.coding[0].code = #352333.100004300
+* code.coding[0].code = #72505
 * code.coding[0].display = "DISTANT METASTASIS"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2025-03-18"

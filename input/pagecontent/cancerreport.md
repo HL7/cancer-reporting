@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -202,6 +203,13 @@
             color: var(--primary);
         }
 
+        .commented-out {
+            color: #888;
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -245,7 +253,8 @@
             </div>
             <div class="resource-body">
                 <p><strong>Title:</strong> INVASIVE CARCINOMA OF THE BREAST: Resection</p>
-                <p><strong>Type:</strong> <span class="code-display">Breast.Invasive.Res.189_4.009.021.REL_sdcFDF</span></p>
+                <!-- Original Type: Breast.Invasive.Res.189_4.009.021.REL_sdcFDF -->
+                <p><strong>Type:</strong> <span class="code-display">EXAMPLE_B7H29KM4</span></p>
                 <p><strong>Subject:</strong> Annie Oakley</p>
                 <p><strong>Date:</strong> 2025-01-01</p>
                 <p><strong>Author:</strong> Wise Owl</p>
@@ -259,11 +268,14 @@
                 <span class="code-display">urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</span>
             </div>
             <div class="resource-body">
-                <p><strong>Identifier.System:</strong> https://cap.org/eCC</p>
-                 <p><strong>Identifier.Value:</strong> urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</p>
+                <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
+                <p><strong>Identifier.System:</strong> http://example.org/codes</p>
+                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</p> -->
+                <p><strong>Identifier.Value:</strong> urn:uuid:f3a8457e-1d31-42f3-9d98-5a9de6547993</p>
                 <p><strong>Status:</strong> final</p>
                 <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">16182.100004300</span> (SPECIMEN)</p>
+                <!-- <p><strong>Code:</strong> <span class="code-display">16182.100004300</span> (SPECIMEN)</p> -->
+                <p><strong>Code:</strong> <span class="code-display">25481</span> (SPECIMEN)</p>
                 <p><strong>Subject:</strong> Annie Oakley</p>
                 <p><strong>Effective Date:</strong> 2024-12-05</p>
                 
@@ -286,12 +298,16 @@
                 <span class="code-display">urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995</span>
             </div>
             <div class="resource-body">
-                <p><strong>Identifier.System:</strong> https://cap.org/eCC</p>
-                 <p><strong>Identifier.Value:</strong> urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995</p>
+                <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
+                <p><strong>Identifier.System:</strong> http://example.org/codes</p>
+                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995</p> -->
+                <p><strong>Identifier.Value:</strong> urn:uuid:d9c8b5a1-e67f-4b95-bc78-2ec69a4fe3b2</p>
                 <p><strong>Status:</strong> final</p>
                 <p><strong>Category:</strong> <span class="code-display">QUESTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">58807-100004300</span> (Procedure (Note A))</p>
-                <p><strong>Value:</strong> <span class="code-display">40307-100004300</span> <span class="value-display">Excision (less than total mastectomy)</span></p>
+                <!-- <p><strong>Code:</strong> <span class="code-display">58807-100004300</span> (Procedure (Note A))</p> -->
+                <p><strong>Code:</strong> <span class="code-display">39574</span> (Procedure (Note A))</p>
+                <!-- <p><strong>Value:</strong> <span class="code-display">40307-100004300</span> <span class="value-display">Excision (less than total mastectomy)</span></p> -->
+                <p><strong>Value:</strong> <span class="code-display">62183</span> <span class="value-display">Excision (less than total mastectomy)</span></p>
                 
                 <h3>Parent Observation (derivedFrom):</h3>
                 <div class="relationship indent-1">
@@ -308,12 +324,16 @@
                 <span class="code-display">urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b</span>
             </div>
             <div class="resource-body">
-                <p><strong>Identifier.System:</strong> https://cap.org/eCC</p>
-                 <p><strong>Identifier.Value:</strong> urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b</p>
+                <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
+                <p><strong>Identifier.System:</strong> http://example.org/codes</p>
+                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b</p> -->
+                <p><strong>Identifier.Value:</strong> urn:uuid:b19f3c6d-7d42-48a0-91e5-7e8fd6087f2c</p>
                 <p><strong>Status:</strong> final</p>
                 <p><strong>Category:</strong> <span class="code-display">QUESTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">16214-100004300</span> (Specimen Laterality)</p>
-                <p><strong>Value:</strong> <span class="code-display">16215-100004300</span> <span class="value-display">Right</span></p>
+                <!-- <p><strong>Code:</strong> <span class="code-display">16214-100004300</span> (Specimen Laterality)</p> -->
+                <p><strong>Code:</strong> <span class="code-display">74825</span> (Specimen Laterality)</p>
+                <!-- <p><strong>Value:</strong> <span class="code-display">16215-100004300</span> <span class="value-display">Right</span></p> -->
+                <p><strong>Value:</strong> <span class="code-display">31592</span> <span class="value-display">Right</span></p>
                 
                 <h3>Parent Observation (derivedFrom):</h3>
                 <div class="relationship indent-1">
@@ -324,286 +344,299 @@
         </div>
 
         <!-- TUMOR Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: TUMOR
-                <span class="code-display">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
-            </div>
-            <div class="resource-body">
-        <p><strong>Identifier.System:</strong> https://cap.org/eCC</p>
-                 <p><strong>Identifier.Value:</strong> urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</p>
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">16249.100004300</span> (TUMOR)</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:c12982a8-541c-469a-b016-9468d58eb858</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:66153175-f304-443e-99cb-4058f350248b</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:309f8a1c-8311-4751-8718-4b2573a09633</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:c2f916f9-7438-4ba6-9cba-9e9064edbe3c</span>
-                </div>
-            </div>
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: TUMOR
+        <span class="code-display">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
+    </div>
+    <div class="resource-body">
+        <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
+        <p><strong>Identifier.System:</strong> http://example.org/codes</p>
+        <!-- <p><strong>Identifier.Value:</strong> urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</p> -->
+        <p><strong>Identifier.Value:</strong> urn:uuid:a7d92e3f-5c14-47e8-b63a-15af83c21658</p>
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">16249.100004300</span> (TUMOR)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">78624</span> (TUMOR)</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b</span>
         </div>
-
-        <!-- Tumor Site Question -->
-        <div class="resource-container">
-            <div class="resource-header question-header">
-                Question Observation: Tumor Site (Note B)
-                <span class="code-display">urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">QUESTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">51180-100004300</span> (Tumor Site (Note B))</p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:ab9326c2-e1fe-4ba0-873c-41c923c7f772</span>
-                </div>
-                
-                <h3>Parent Observation (derivedFrom):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">derivedFrom</span>
-                    <span class="resource-reference">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
-                </div>
-            </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
         </div>
-
-        <!-- Clock Position Question -->
-        <div class="resource-container">
-            <div class="resource-header question-header">
-                Question Observation: Clock position
-                <span class="code-display">observation-clock-position</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Code:</strong> <span class="code-display">51180-100004300</span> (Clock position)</p>
-                <p><strong>Value:</strong> <span class="code-display">42418-100004300</span> <span class="value-display">Clock position</span></p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-clock-position-8</span>
-                </div>
-                
-                <h3>Parent Observation (derivedFrom):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">derivedFrom</span>
-                    <span class="resource-reference">Observation/observation-tumor-site</span>
-                </div>
-            </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">urn:uuid:c12982a8-541c-469a-b016-9468d58eb858</span>
         </div>
-
-        <!-- Specific Clock Position Question -->
-        <div class="resource-container">
-            <div class="resource-header question-header">
-                Question Observation: Specify Clock Position
-                <span class="code-display">observation-clock-position-8</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Code:</strong> <span class="code-display">16259-100004300</span> (Specify Clock Position)</p>
-                <p><strong>Value:</strong> <span class="code-display">6643-100004300</span> <span class="value-display">8 o'clock</span></p>
-            </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">urn:uuid:66153175-f304-443e-99cb-4058f350248b</span>
         </div>
-
-        <!-- LYMPH NODES Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: LYMPH NODES
-                <span class="code-display">observation-section-lymph-nodes</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">868263.100004300</span> (Lymph Nodes)</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-            </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">urn:uuid:309f8a1c-8311-4751-8718-4b2573a09633</span>
         </div>
-
-        <!-- MARGINS Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: MARGINS
-                <span class="code-display">observation-section-margins</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">1234567.100004300</span> (Margin Section)</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-margins-margin-status-for-invasive-carcinoma</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- REGIONAL LYMPH NODES Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: REGIONAL LYMPH NODES
-                <span class="code-display">observation-section-regional-lymph-nodes</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">39858.100004300</span> (Regional Lymph Nodes)</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-regional-lymph-node-status</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- DISTANT METASTASIS Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: DISTANT METASTASIS
-                <span class="code-display">observation-section-distant-metastasis</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">16775.100004300</span> (Distant Metastasis)</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-distant-metastasis</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- pTNM CLASSIFICATION Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: pTNM CLASSIFICATION
-                <span class="code-display">observation-section-ptnm-classification</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">16717.100004300</span> (PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M))</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-ptnm-classification-pT-Category</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-ptnm-classification-pN-Category</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- ADDITIONAL FINDINGS Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: ADDITIONAL FINDINGS
-                <span class="code-display">observation-section-additional-findings</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">16782.100004300</span> (ADDITIONAL FINDINGS (Note O))</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-additional-findings-specify</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- SPECIAL STUDIES Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: SPECIAL STUDIES
-                <span class="code-display">observation-section-special-studies</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">17834.100004300</span> (SPECIAL STUDIES)</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-                
-                <h3>Child Observations (hasMember):</h3>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-special-studies-breast-biomarker</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-special-studies-estrogen-receptor</span>
-                </div>
-                <div class="relationship indent-1">
-                    <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">Observation/observation-special-studies-her2</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- COMMENTS Section -->
-        <div class="resource-container">
-            <div class="resource-header section-header">
-                Section Observation: COMMENTS
-                <span class="code-display">observation-section-comments</span>
-            </div>
-            <div class="resource-body">
-                <p><strong>Status:</strong> final</p>
-                <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
-                <p><strong>Code:</strong> <span class="code-display">16784.100004300</span> (Comment(s))</p>
-                <p><strong>Subject:</strong> Annie Oakley</p>
-                <p><strong>Effective Date:</strong> 2024-12-05</p>
-                <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
-            </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">urn:uuid:c2f916f9-7438-4ba6-9cba-9e9064edbe3c</span>
         </div>
     </div>
-</body>
-</html>
+</div>
+
+<!-- Tumor Site Question -->
+<div class="resource-container">
+    <div class="resource-header question-header">
+        Question Observation: Tumor Site (Note B)
+        <span class="code-display">urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">QUESTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">51180-100004300</span> (Tumor Site (Note B))</p> -->
+        <p><strong>Code:</strong> <span class="code-display">45792</span> (Tumor Site (Note B))</p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">urn:uuid:ab9326c2-e1fe-4ba0-873c-41c923c7f772</span>
+        </div>
+        
+        <h3>Parent Observation (derivedFrom):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">derivedFrom</span>
+            <span class="resource-reference">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
+        </div>
+    </div>
+</div>
+
+<!-- Clock Position Question -->
+<div class="resource-container">
+    <div class="resource-header question-header">
+        Question Observation: Clock position
+        <span class="code-display">observation-clock-position</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">51180-100004300</span> (Clock position)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">45792</span> (Clock position)</p>
+        <!-- <p><strong>Value:</strong> <span class="code-display">42418-100004300</span> <span class="value-display">Clock position</span></p> -->
+        <p><strong>Value:</strong> <span class="code-display">63147</span> <span class="value-display">Clock position</span></p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-clock-position-8</span>
+        </div>
+        
+        <h3>Parent Observation (derivedFrom):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">derivedFrom</span>
+            <span class="resource-reference">Observation/observation-tumor-site</span>
+        </div>
+    </div>
+</div>
+
+<!-- Specific Clock Position Question -->
+<div class="resource-container">
+    <div class="resource-header question-header">
+        Question Observation: Specify Clock Position
+        <span class="code-display">observation-clock-position-8</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">16259-100004300</span> (Specify Clock Position)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">57396</span> (Specify Clock Position)</p>
+        <!-- <p><strong>Value:</strong> <span class="code-display">6643-100004300</span> <span class="value-display">8 o'clock</span></p> -->
+        <p><strong>Value:</strong> <span class="code-display">27845</span> <span class="value-display">8 o'clock</span></p>
+    </div>
+</div>
+
+<!-- LYMPH NODES Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: LYMPH NODES
+        <span class="code-display">observation-section-lymph-nodes</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">868263.100004300</span> (Lymph Nodes)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">91358</span> (Lymph Nodes)</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+    </div>
+</div>
+
+<!-- MARGINS Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: MARGINS
+        <span class="code-display">observation-section-margins</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">1234567.100004300</span> (Margin Section)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">38726</span> (Margin Section)</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-margins-margin-status-for-invasive-carcinoma</span>
+        </div>
+    </div>
+</div>
+
+<!-- REGIONAL LYMPH NODES Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: REGIONAL LYMPH NODES
+        <span class="code-display">observation-section-regional-lymph-nodes</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">39858.100004300</span> (Regional Lymph Nodes)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">82413</span> (Regional Lymph Nodes)</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-regional-lymph-node-status</span>
+        </div>
+    </div>
+</div>
+
+<!-- DISTANT METASTASIS Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: DISTANT METASTASIS
+        <span class="code-display">observation-section-distant-metastasis</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">16775.100004300</span> (Distant Metastasis)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">46582</span> (Distant Metastasis)</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-distant-metastasis</span>
+        </div>
+    </div>
+</div>
+
+<!-- pTNM CLASSIFICATION Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: pTNM CLASSIFICATION
+        <span class="code-display">observation-section-ptnm-classification</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">16717.100004300</span> (PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M))</p> -->
+        <p><strong>Code:</strong> <span class="code-display">53917</span> (PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition) (Note M))</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-ptnm-classification-pT-Category</span>
+        </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-ptnm-classification-pN-Category</span>
+        </div>
+    </div>
+</div>
+
+<!-- ADDITIONAL FINDINGS Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: ADDITIONAL FINDINGS
+        <span class="code-display">observation-section-additional-findings</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">16782.100004300</span> (ADDITIONAL FINDINGS (Note O))</p> -->
+        <p><strong>Code:</strong> <span class="code-display">67584</span> (ADDITIONAL FINDINGS (Note O))</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-additional-findings-specify</span>
+        </div>
+    </div>
+</div>
+
+<!-- SPECIAL STUDIES Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: SPECIAL STUDIES
+        <span class="code-display">observation-section-special-studies</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">17834.100004300</span> (SPECIAL STUDIES)</p> -->
+        <p><strong>Code:</strong> <span class="code-display">24687</span> (SPECIAL STUDIES)</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+        
+        <h3>Child Observations (hasMember):</h3>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-special-studies-breast-biomarker</span>
+        </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-special-studies-estrogen-receptor</span>
+        </div>
+        <div class="relationship indent-1">
+            <span class="relationship-type">hasMember</span>
+            <span class="resource-reference">Observation/observation-special-studies-her2</span>
+        </div>
+    </div>
+</div>
+
+<!-- COMMENTS Section -->
+<div class="resource-container">
+    <div class="resource-header section-header">
+        Section Observation: COMMENTS
+        <span class="code-display">observation-section-comments</span>
+    </div>
+    <div class="resource-body">
+        <p><strong>Status:</strong> final</p>
+        <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
+        <!-- <p><strong>Code:</strong> <span class="code-display">16784.100004300</span> (Comment(s))</p> -->
+        <p><strong>Code:</strong> <span class="code-display">52146</span> (Comment(s))</p>
+        <p><strong>Subject:</strong> Annie Oakley</p>
+        <p><strong>Effective Date:</strong> 2024-12-05</p>
+        <p><strong>Performer:</strong> <span class="resource-reference">Practitioner/practitioner-oncologist</span></p>
+    </div>
+</div>

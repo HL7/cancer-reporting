@@ -4,18 +4,24 @@ Title: "Tumor Focality Observation Example"
 Description: "This is an observation describing tumor focality."
 Usage: #example
 
-* identifier.system = "https://cap.org/eCC"
-* identifier.value = "urn:uuid:309f8a1c-8311-4751-8718-4b2573a09633"
+// * identifier.system = "https://cap.org/eCC"
+* identifier.system = "http://example.org/codes"
+// * identifier.value = "urn:uuid:309f8a1c-8311-4751-8718-4b2573a09633"
+* identifier.value = "urn:uuid:5de15a9d-000c-4091-a2c8-bc89a58fea13"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].code = #38392.100004300
+// * code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].system = "http://example.org/codes"
+// * code.coding[0].code = #38392.100004300
+* code.coding[0].code = #77688
 * code.coding[0].display = "Tumor Focality (Note F)"
 * subject = Reference(patient-OakleyAnnie)
 
 * effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
-* valueCodeableConcept.coding[0].code = #16448.100004300
+// * valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
+* valueCodeableConcept.coding[0].system = "http://example.org/codes"
+// * valueCodeableConcept.coding[0].code = #16448.100004300
+* valueCodeableConcept.coding[0].code = #39033
 * valueCodeableConcept.coding[0].display = "Single focus of invasive carcinoma"
 * derivedFrom[+] = Reference(observation-section-tumor)

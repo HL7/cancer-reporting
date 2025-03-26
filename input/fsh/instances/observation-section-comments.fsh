@@ -9,7 +9,8 @@ Usage: #example
 * identifier.value = "uuid:c3189cd4-33a0-447f-9bbf-2b225e2aa305"
 * status = #final
 * category = USPathologyCodeSystem#SECTION "Section"
-* code = $CAPeCCCodeSystem#381061.100004300 "COMMENTS"
+// * code = $CAPeCCCodeSystem#381061.100004300 "COMMENTS"
+* code = $CAPeCCCodeSystem#5325723.70739523 "COMMENTS"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"

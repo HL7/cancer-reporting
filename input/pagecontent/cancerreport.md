@@ -254,7 +254,7 @@
             <div class="resource-body">
                 <p><strong>Title:</strong> INVASIVE CARCINOMA OF THE BREAST: Resection</p>
                 <!-- Original Type: Breast.Invasive.Res.189_4.009.021.REL_sdcFDF -->
-                <p><strong>Type:</strong> <span class="code-display">EXAMPLE_B7H29KM4</span></p>
+                <p><strong>Type:</strong> <span class="code-display">Breast.Invasive.Res.123_4.567.321.REL_sdcFDF</span></p>
                 <p><strong>Subject:</strong> Annie Oakley</p>
                 <p><strong>Date:</strong> 2025-01-01</p>
                 <p><strong>Author:</strong> Wise Owl</p>
@@ -265,12 +265,12 @@
         <div class="resource-container">
             <div class="resource-header section-header">
                 Section Observation: SPECIMEN
-                <span class="code-display">urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</span>
+                <span class="code-display">urn:uuid:f3a8457e-1d31-42f3-9d98-5a9de6547993</span>
             </div>
             <div class="resource-body">
                 <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
                 <p><strong>Identifier.System:</strong> http://example.org/codes</p>
-                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</p> -->
+                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:f3a8457e-1d31-42f3-9d98-5a9de6547993</p> -->
                 <p><strong>Identifier.Value:</strong> urn:uuid:f3a8457e-1d31-42f3-9d98-5a9de6547993</p>
                 <p><strong>Status:</strong> final</p>
                 <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
@@ -282,11 +282,11 @@
                 <h3>Child Observations (hasMember):</h3>
                 <div class="relationship indent-1">
                     <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995</span>
+                    <span class="resource-reference">urn:uuid:d9c8b5a1-e67f-4b95-bc78-2ec69a4fe3b2</span>
                 </div>
                 <div class="relationship indent-1">
                     <span class="relationship-type">hasMember</span>
-                    <span class="resource-reference">urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b</span>
+                    <span class="resource-reference">urn:uuid:b19f3c6d-7d42-48a0-91e5-7e8fd6087f2c</span>
                 </div>
             </div>
         </div>
@@ -295,12 +295,12 @@
         <div class="resource-container">
             <div class="resource-header question-header">
                 Question Observation: Procedure (Note A)
-                <span class="code-display">urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995</span>
+                <span class="code-display">urn:uuid:d9c8b5a1-e67f-4b95-bc78-2ec69a4fe3b2</span>
             </div>
             <div class="resource-body">
                 <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
                 <p><strong>Identifier.System:</strong> http://example.org/codes</p>
-                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995</p> -->
+                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:d9c8b5a1-e67f-4b95-bc78-2ec69a4fe3b2</p> -->
                 <p><strong>Identifier.Value:</strong> urn:uuid:d9c8b5a1-e67f-4b95-bc78-2ec69a4fe3b2</p>
                 <p><strong>Status:</strong> final</p>
                 <p><strong>Category:</strong> <span class="code-display">QUESTION</span></p>
@@ -312,7 +312,7 @@
                 <h3>Parent Observation (derivedFrom):</h3>
                 <div class="relationship indent-1">
                     <span class="relationship-type">derivedFrom</span>
-                    <span class="resource-reference">urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</span>
+                    <span class="resource-reference">urn:uuid:f3a8457e-1d31-42f3-9d98-5a9de6547993</span>
                 </div>
             </div>
         </div>
@@ -321,12 +321,12 @@
         <div class="resource-container">
             <div class="resource-header question-header">
                 Question Observation: Specimen Laterality
-                <span class="code-display">urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b</span>
+                <span class="code-display">urn:uuid:b19f3c6d-7d42-48a0-91e5-7e8fd6087f2c</span>
             </div>
             <div class="resource-body">
                 <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
                 <p><strong>Identifier.System:</strong> http://example.org/codes</p>
-                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b</p> -->
+                <!-- <p><strong>Identifier.Value:</strong> urn:uuid:b19f3c6d-7d42-48a0-91e5-7e8fd6087f2c</p> -->
                 <p><strong>Identifier.Value:</strong> urn:uuid:b19f3c6d-7d42-48a0-91e5-7e8fd6087f2c</p>
                 <p><strong>Status:</strong> final</p>
                 <p><strong>Category:</strong> <span class="code-display">QUESTION</span></p>
@@ -338,7 +338,7 @@
                 <h3>Parent Observation (derivedFrom):</h3>
                 <div class="relationship indent-1">
                     <span class="relationship-type">derivedFrom</span>
-                    <span class="resource-reference">urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24</span>
+                    <span class="resource-reference">urn:uuid:f3a8457e-1d31-42f3-9d98-5a9de6547993</span>
                 </div>
             </div>
         </div>
@@ -347,12 +347,12 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: TUMOR
-        <span class="code-display">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
+        <span class="code-display">urn:uuid:a7d92e3f-5c14-47e8-b63a-15af83c21658</span>
     </div>
     <div class="resource-body">
         <!-- <p><strong>Identifier.System:</strong> https://cap.org/eCC</p> -->
         <p><strong>Identifier.System:</strong> http://example.org/codes</p>
-        <!-- <p><strong>Identifier.Value:</strong> urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</p> -->
+        <!-- <p><strong>Identifier.Value:</strong> urn:uuid:a7d92e3f-5c14-47e8-b63a-15af83c21658</p> -->
         <p><strong>Identifier.Value:</strong> urn:uuid:a7d92e3f-5c14-47e8-b63a-15af83c21658</p>
         <p><strong>Status:</strong> final</p>
         <p><strong>Category:</strong> <span class="code-display">SECTION</span></p>
@@ -368,7 +368,7 @@
         </div>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
+            <span class="resource-reference">urn:uuid:a7d92e3f-5c14-47e8-b63a-15af83c21658</span>
         </div>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
@@ -410,7 +410,7 @@
         <h3>Parent Observation (derivedFrom):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">derivedFrom</span>
-            <span class="resource-reference">urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85</span>
+            <span class="resource-reference">urn:uuid:a7d92e3f-5c14-47e8-b63a-15af83c21658</span>
         </div>
     </div>
 </div>
@@ -419,7 +419,7 @@
 <div class="resource-container">
     <div class="resource-header question-header">
         Question Observation: Clock position
-        <span class="code-display">observation-clock-position</span>
+        <span class="code-display">urn:uuid:083cdc06-19e1-421d-a574-17172d36a337</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -431,13 +431,13 @@
         <h3>Child Observations (hasMember):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-clock-position-8</span>
+            <span class="resource-reference">urn:uuid:25b2057d-ae7c-455c-9a97-87e8d3f030fd</span>
         </div>
         
         <h3>Parent Observation (derivedFrom):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">derivedFrom</span>
-            <span class="resource-reference">Observation/observation-tumor-site</span>
+            <span class="resource-reference">urn:uuid:fad82ac0-4757-4e11-9640-f920e0932660</span>
         </div>
     </div>
 </div>
@@ -446,7 +446,7 @@
 <div class="resource-container">
     <div class="resource-header question-header">
         Question Observation: Specify Clock Position
-        <span class="code-display">observation-clock-position-8</span>
+        <span class="code-display">urn:uuid:25b2057d-ae7c-455c-9a97-87e8d3f030fd</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -461,7 +461,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: LYMPH NODES
-        <span class="code-display">observation-section-lymph-nodes</span>
+        <span class="code-display">urn:uuid:be78ac4a-97c4-4366-a4e5-b930e666c751</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -478,7 +478,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: MARGINS
-        <span class="code-display">observation-section-margins</span>
+        <span class="code-display">urn:uuid:3dede8a1-3370-482c-913a-1f34dbca2503</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -492,7 +492,7 @@
         <h3>Child Observations (hasMember):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-margins-margin-status-for-invasive-carcinoma</span>
+            <span class="resource-reference">urn:uuid:d584fcfe-965b-44cb-9178-700c31e145ec</span>
         </div>
     </div>
 </div>
@@ -501,7 +501,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: REGIONAL LYMPH NODES
-        <span class="code-display">observation-section-regional-lymph-nodes</span>
+        <span class="code-display">urn:uuid:287dfb3d-fac3-4891-8016-f0a80e84a549</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -515,7 +515,7 @@
         <h3>Child Observations (hasMember):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-regional-lymph-node-status</span>
+            <span class="resource-reference">urn:uuid:6114d972-331f-4a8e-9486-0f9be64c8d1a</span>
         </div>
     </div>
 </div>
@@ -524,7 +524,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: DISTANT METASTASIS
-        <span class="code-display">observation-section-distant-metastasis</span>
+        <span class="code-display">urn:uuid:17a54a7a-69a0-4167-9062-4af3ba40047e</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -538,7 +538,7 @@
         <h3>Child Observations (hasMember):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-distant-metastasis</span>
+            <span class="resource-reference">urn:uuid:edb54dd2-ddaf-4792-81ab-e252259facf6</span>
         </div>
     </div>
 </div>
@@ -547,7 +547,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: pTNM CLASSIFICATION
-        <span class="code-display">observation-section-ptnm-classification</span>
+        <span class="code-display">urn:uuid:f383439d-8aa5-445f-ad89-d12b6cc5dbe6</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -561,11 +561,11 @@
         <h3>Child Observations (hasMember):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-ptnm-classification-pT-Category</span>
+            <span class="resource-reference">urn:uuid:48f4c844-e564-415b-bdff-60346b4bcce9</span>
         </div>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-ptnm-classification-pN-Category</span>
+            <span class="resource-reference">urn:uuid:775f5e7e-675a-4d59-9c7e-b756d032aa99</span>
         </div>
     </div>
 </div>
@@ -574,7 +574,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: ADDITIONAL FINDINGS
-        <span class="code-display">observation-section-additional-findings</span>
+        <span class="code-display">urn:uuid:dec4c3d4-7aad-4b0e-8195-e5ffd696e171</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -588,7 +588,7 @@
         <h3>Child Observations (hasMember):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-additional-findings-specify</span>
+            <span class="resource-reference">urn:uuid:6863cdff-4d03-4788-b59b-f3450ac4500a</span>
         </div>
     </div>
 </div>
@@ -597,7 +597,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: SPECIAL STUDIES
-        <span class="code-display">observation-section-special-studies</span>
+        <span class="code-display">urn:uuid:7958fce8-37cb-4918-b104-7be95ae3501c</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>
@@ -611,15 +611,15 @@
         <h3>Child Observations (hasMember):</h3>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-special-studies-breast-biomarker</span>
+            <span class="resource-reference">urn:uuid:4e854775-e318-4ac8-a2aa-35d1bc01e523</span>
         </div>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-special-studies-estrogen-receptor</span>
+            <span class="resource-reference">urn:uuid:1dd04911-c7b8-4bd2-8959-14ad533e439b</span>
         </div>
         <div class="relationship indent-1">
             <span class="relationship-type">hasMember</span>
-            <span class="resource-reference">Observation/observation-special-studies-her2</span>
+            <span class="resource-reference">urn:uuid:08758a8a-b74c-46bb-8c56-5a62083e3705</span>
         </div>
     </div>
 </div>
@@ -628,7 +628,7 @@
 <div class="resource-container">
     <div class="resource-header section-header">
         Section Observation: COMMENTS
-        <span class="code-display">observation-section-comments</span>
+        <span class="code-display">uuid:c3189cd4-33a0-447f-9bbf-2b225e2aa305</span>
     </div>
     <div class="resource-body">
         <p><strong>Status:</strong> final</p>

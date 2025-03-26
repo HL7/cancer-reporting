@@ -10,7 +10,8 @@ Usage: #example
 * identifier.value = "urn:uuid:dec4c3d4-7aad-4b0e-8195-e5ffd696e171"
 * status = #final
 * category = USPathologyCodeSystem#SECTION "Section"
-* code = $CAPeCCCodeSystem#16782.100004300 "ADDITIONAL FINDINGS (Note N)"
+// * code = $CAPeCCCodeSystem#16782.100004300 "ADDITIONAL FINDINGS (Note N)"
+* code = $CAPeCCCodeSystem#11628532.2689322 "ADDITIONAL FINDINGS (Note N)"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"

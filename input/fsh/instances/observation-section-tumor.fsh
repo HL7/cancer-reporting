@@ -8,7 +8,8 @@ Usage: #example
 // * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * identifier.value = "urn:uuid:402430ee-364d-483d-b54e-3630398d0f23"
 * status = #final
-* code = $CAPeCCCodeSystem#16249.100004300 "TUMOR"
+// * code = $CAPeCCCodeSystem#16249.100004300 "TUMOR"
+* code = $CAPeCCCodeSystem#2302082.2889666 "TUMOR"
 * category = USPathologyCodeSystem#SECTION "Section"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2024-12-05"

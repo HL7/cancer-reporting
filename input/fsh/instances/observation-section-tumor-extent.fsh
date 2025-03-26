@@ -10,7 +10,8 @@ Usage: #example
 * identifier.value = "urn:uuid:c6bb8192-6f60-454d-957e-184b4279f77a"
 * status = #final
 * category = USPathologyCodeSystem#SECTION "Section"
-* code = $CAPeCCCodeSystem#16403.100004300 "Tumor Extent (Note H)"
+// * code = $CAPeCCCodeSystem#16403.100004300 "Tumor Extent (Note H)"
+* code = $CAPeCCCodeSystem#8246742.9959974 "Tumor Extent (Note H)"
 * subject = Reference(patient-OakleyAnnie)
 * effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)

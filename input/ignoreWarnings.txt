@@ -12,6 +12,7 @@ WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: 
 # 04 - Proprietary Code system (from CAP) values are not found. CodeSystem URL (http://cap.org/eCC) identified in THO: https://terminology.hl7.org/CodeSystem-CAPeCC.html
 INFORMATION: CodeSystem/cap-ecc-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/us-pathology-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+WARNING: CodeSystem/cap-ecc-codesystem: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
 
 # 05 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
 INFORMATION: StructureDefinition/us-pathology-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
@@ -21,5 +22,3 @@ INFORMATION: StructureDefinition/us-pathology-diagnostic-report: StructureDefini
 INFORMATION: StructureDefinition/us-pathology-observation: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/us-pathology-service-request: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 
-# 07 - This CodeSystem is a placeholder for codes we are now in the process of obtaining approval to include. 
-A definition for CodeSystem 'http://example.org/codes' could not be found, so the code cannot be validated

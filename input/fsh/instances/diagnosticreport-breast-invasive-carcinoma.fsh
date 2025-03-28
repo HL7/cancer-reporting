@@ -3,10 +3,9 @@ InstanceOf: USPathologyDiagnosticReport
 Title: "US Pathology Breast Invasive Carcinoma DiagnosticReport example"
 Description: "Example of a DiagnosticReport containing information regarding pathological testing and resulting observations"
 Usage: #example
-// * identifier.system = "https://cap.org/eCC"
-* identifier.system = "http://example.org/codes"
-// * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
-* identifier.value = "urn:uuid:2afeffca-be16-43a8-9695-677bf0cc24db"
+
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
 * category = $loinc#LP7839-6 "Pathology"
 * basedOn.reference = "ServiceRequest/servicerequest-cancer-path"

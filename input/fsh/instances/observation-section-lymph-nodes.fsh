@@ -4,13 +4,10 @@ Title: "Lymph Nodes Section"
 Description: "Section Observation that represents the Lymph Nodes Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
 
-// * identifier.system = "https://cap.org/eCC"
-* identifier.system = "http://example.org/codes"
-// * identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
-* identifier.value = "urn:uuid:be78ac4a-97c4-4366-a4e5-b930e666c751"
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:a0d2cb8e-ab6f-4efe-ad2b-03c20d625a9f"
 * status = #final
-// * code = $CAPeCCCodeSystem#868263.100004300 "Lymph Nodes"
-* code = $CAPeCCCodeSystem#37561184.53389634 "Lymph Nodes"
+* code = $CAPeCCCodeSystem#868263.100004300 "Lymph Nodes"
 * category = USPathologyCodeSystem#SECTION "Section"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2025-03-18"

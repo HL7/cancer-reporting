@@ -4,15 +4,12 @@ Title: "HER2 Observation Example"
 Description: "HER2 Observation Example"
 Usage: #example
 
-// * identifier.system = "https://cap.org/eCC"
-* identifier.system = "http://example.org/codes"
-// * identifier.value = "urn:uuid:deacb965-18d3-4451-a27f-0e26e7a9e5a2"
-* identifier.value = "urn:uuid:08758a8a-b74c-46bb-8c56-5a62083e3705"
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:deacb965-18d3-4451-a27f-0e26e7a9e5a2"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-// * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].system = "http://example.org/codes"
-// * code.coding[0].code = #36944.100004300
+* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].code = #36944.100004300
 * code.coding[0].code = #79483
 * code.coding[0].display = "HER2 (by immunohistochemistry)"
 * subject.reference = "Patient/patient-OakleyAnnie"

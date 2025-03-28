@@ -4,16 +4,12 @@ Title: "General Tumor Site Observation"
 Description: "An observation describing the general tumor site."
 Usage: #example
 
-// * identifier.system = "https://cap.org/eCC"
-* identifier.system = "http://example.org/codes"
-// * identifier.value = "urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b"
-* identifier.value = "urn:uuid:fad82ac0-4757-4e11-9640-f920e0932660"
+* identifier.system = "https://cap.org/eCC"
+* identifier.value = "urn:uuid:79ab15c8-4b0e-48e5-a477-7f72e62c002b"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-// * code.coding[0].system = "https://cap.org/eCC"
-* code.coding[0].system = "http://example.org/codes"
-// * code.coding[0].code = #51180.100004300
-* code.coding[0].code = #32338
+* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].code = #51180.100004300
 * code.coding[0].display = "Tumor Site (Note B)"
 * code.coding[1].system = "http://snomed.info/sct"
 * code.coding[1].code = #399687005

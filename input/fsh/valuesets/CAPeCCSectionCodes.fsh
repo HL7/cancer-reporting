@@ -6,7 +6,7 @@ Description: "This ValueSet is composed of Section codes."
 * ^extension.valueCode = #oo
 * ^status = #active
 * ^experimental = false
-/*
+
 * CAPeCCCodeSystem#16182.100004300 "SPECIMEN"
 * CAPeCCCodeSystem#16249.100004300 "TUMOR"
 * CAPeCCCodeSystem#16403.100004300 "Tumor Extent (Note H)"
@@ -20,4 +20,3 @@ Description: "This ValueSet is composed of Section codes."
 * CAPeCCCodeSystem#16782.100004300 "ADDITIONAL FINDINGS (Note O)"
 * CAPeCCCodeSystem#17834.100004300 "SPECIAL STUDIES"
 * CAPeCCCodeSystem#381061.100004300 "COMMENTS"
-*/

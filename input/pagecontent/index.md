@@ -56,3 +56,5 @@ This material contains content from [SNOMED CT®](http://www.ihtsdo.org/snomed-c
 This material contains content from [LOINC®](http://loinc.org). LOINC codes are copyright ©1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. All rights reserved. See [https://loinc.org/kb/license/](https://loinc.org/kb/license/).
 
 This material contains content from the CAP. The [Electronic Cancer Checklists](https://www.cap.org/laboratory-improvement/proficiency-testing/cap-ecc) are copyrighted by the CAP. All rights reserved.
+
+This implementation guide is jointly copyrighted by Health Level Seven International (HL7) and the College of American Pathologists (CAP).

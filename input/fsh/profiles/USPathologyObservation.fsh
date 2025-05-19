@@ -2,7 +2,7 @@ Profile: USPathologyObservation
 Parent: USCoreSimpleObservationProfile
 Id: us-pathology-observation
 Title: "US Pathology Observation"
-Description: "This Observation profile is inspired by the IHE SDC eCC Observation Profile. It adds category to differentiate Section and Question Observations. Section(s) contain one or more hasMember relationships to Questions, will not have a value element, and have no derivedFrom relationships. Questions have a derivedFrom relationship with Section AND contain EITHER a value element OR one or more hasMember relationships."
+Description: "This Observation profile is inspired by the [IHE SDC/eCP on FHIR Observation Profile](http://hl7.org/fhir/uv/ihe-sdc-ecc/StructureDefinition-ihe-sdc-ecc-Observation.html). It adds category to differentiate Section and Question Observations. Section(s) contain one or more hasMember relationships to Questions, will not have a value element, and have no derivedFrom relationships. Questions have a derivedFrom relationship with Section AND contain EITHER a value element OR one or more hasMember relationships."
 * ^extension[$WG].valueCode = #oo
 * ^status = #active
 * identifier 1..* MS 

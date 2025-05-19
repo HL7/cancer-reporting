@@ -1,6 +1,6 @@
 ## Introduction
 
-This US Pathology Observation profile is based on the IHE SDC/eCP on FHIR Observation Profile which maps the CAP protocol's structured elements into FHIR Observations. The profile defines how to capture pathology data from structured cancer protocols in a standardized FHIR format.
+This US Pathology Observation profile is inspired by the [IHE SDC/eCP on FHIR Observation Profile](http://hl7.org/fhir/uv/ihe-sdc-ecc/StructureDefinition-ihe-sdc-ecc-Observation.html) which maps the CAP protocol's structured elements into FHIR Observations. The profile defines how to capture pathology data from structured cancer protocols in a standardized FHIR format.
 
 ## Background
 

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -229,13 +228,13 @@
 <body>
     <div class="header">
         <h1>Cancer Pathology Report Structure</h1>
-        <p>This document illustrates the hierarchical structure of FHIR resources in a cancer pathology report, showing the relationships between Composition and Observation resources.</p>
+        <p>This document illustrates an example hierarchical structure of FHIR resources in a cancer pathology report, showing the relationships between Composition and Observation resources.</p>
     </div>
 
     <div class="structure-section">
         <h2>Observation Profile Structure</h2>
         <div class="info-box">
-            <p>The US Pathology Observation profile is based on the IHE SDC/eCP on FHIR Observation Profile, which maps CAP protocol's structured elements into FHIR Observations. The profile defines two main categories:</p>
+            <p>The US Pathology Observation profile is inspired by the [IHE SDC/eCP on FHIR Observation Profile] (http://hl7.org/fhir/uv/ihe-sdc-ecc/StructureDefinition-ihe-sdc-ecc-Observation.html), which maps CAP protocol's structured elements into FHIR Observations. The profile defines two main categories:</p>
             <ul>
                 <li><strong>Sections:</strong> Represent major divisions within the protocol (e.g., "SPECIMEN," "TUMOR") that organize related content. Sections do not have values but contain references to Questions through hasMember relationships.</li>
                 <li><strong>Questions:</strong> Individual data elements which store captured responses. Questions reference their parent Section through derivedFrom relationships and contain value elements.</li>

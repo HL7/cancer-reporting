@@ -5,7 +5,8 @@ Description: "A CodeSystem for CAP eCC codes"
 // CAP eCC codes available at http://terminology.hl7.org/CodeSystem-CAPeCC.html
 * ^experimental = false
 * ^caseSensitive = false
-
+* #SECTION "Section" "Major divisions within the protocol (e.g., 'SPECIMEN,' 'TUMOR') that organize related content. Sections do not have values but contain references to Questions through hasMember relationships."
+* #QUESTION "Question" "Individual data elements which store captured responses. Questions reference their parent Section through derivedFrom relationships and contain value elements."
 * #31357.100004300 "Greatest dimension of largest invasive focus greater than 1 mm (specify exact measurement in Millimeters (mm))"
 * #30148.100004300 "Tumor Size (Note E)"
 * #51180.100004300 "Tumor Site (Note B)"

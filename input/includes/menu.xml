@@ -10,7 +10,7 @@
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts <b class="caret"></b></a>
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artifact Index</a></li>
-      <li><a href="cancerreport.html">Cancer Pathology Observation Example</a></li>
+      <li><a href="cancer_pathology_observation_example.html">Cancer Pathology Observation Example</a></li>
     </ul>
   </li>
   <li><a href="change_notes.html">Change Notes</a></li>

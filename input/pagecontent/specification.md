@@ -5,10 +5,10 @@ This guide defines 7 FHIR profiles:
 * [US Pathology Exchange Bundle](StructureDefinition-us-pathology-bundle.html)
 * [US Pathology Composition](StructureDefinition-us-pathology-composition.html) 
 * [US Pathology Observation](StructureDefinition-us-pathology-observation.html) derived from [IHE SDC/eCP on FHIR Observation](http://hl7.org/fhir/uv/ihe-sdc-ecc/StructureDefinition/ihe-sdc-ecc-Observation)
-* [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport-note.html)
-* [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/specimen.html)
-* [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](https://hl7.org/fhir/us/core/StructureDefinition-us-core-servicerequest.html)
-* [US Pathology Related Practitioner Role](StructureDefinition-us-pathology-related-practitioner-role.html) derived from [US Core PractitionerRole](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitionerrole.html)
+* [US Pathology Diagnostic Report](StructureDefinition-us-pathology-diagnostic-report.html) derived from [US Core DiagnosticReport (Notes)](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-diagnosticreport-note.html)
+* [US Pathology Specimen](StructureDefinition-us-pathology-specimen.html) derived from [FHIR R4 Specimen](https://hl7.org/FHIR/R4/specimen.html)
+* [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) derived from [US Core ServiceRequest](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-servicerequest.html)
+* [US Pathology Related Practitioner Role](StructureDefinition-us-pathology-related-practitioner-role.html) derived from [US Core PractitionerRole](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-practitionerrole.html)
 
 This guide defines 5 value sets:
 * [US Pathology Provider Types ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)

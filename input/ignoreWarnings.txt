@@ -13,7 +13,9 @@ WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: 
 INFORMATION: CodeSystem/cap-ecc-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/us-pathology-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 WARNING: CodeSystem/cap-ecc-codesystem: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
-WARNING: URL value 'https://cap.org/eCC' does not resolve
+URL value 'https://cap.org/eCC' does not resolve
+No definition could be found for URL value 'https://cap.org/eCC'
+HL7 Defined CodeSystems should ensure that every concept has a definition
 
 # 05 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.
 INFORMATION: StructureDefinition/us-pathology-bundle: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
@@ -26,3 +28,7 @@ INFORMATION: StructureDefinition/us-pathology-service-request: StructureDefiniti
 # 07 - Caused by a joint copyright agreement party added to publisher section of sushi-config.yaml. Lloyd recommended exploration of suppression. 
 
 The nominated WG 'oo' means that the publisher should be 'HL7 International / Orders and Observations' but 'HL7 International / Orders and Observations and College of American Pathologists' was found
+
+# 08 - US Core 6.1.0 is the version that is cited in regulation for 2026
+WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.terminology.r4#6.2.0 released on 2025-01-22, but the most recent appropriate version is 6.5.0. This reference is getting old and the more recent version should be considered

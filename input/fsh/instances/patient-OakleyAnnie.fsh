@@ -12,7 +12,7 @@ Usage: #example
 * identifier[=].value = "patient-OakleyAnnie"
 * identifier[+].use = #usual
 * identifier[=].type.text = "SHID"
-* identifier[=].system = "http://hospital.smarthealthit.org"
+* identifier[=].system = "https://www.example.org/hospital/smarthealthit"
 * identifier[=].value = "12446"
 * identifier[+].use = #usual
 * identifier[=].type.text = "FHIR"

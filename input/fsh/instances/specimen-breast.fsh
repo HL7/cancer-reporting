@@ -4,9 +4,9 @@ Title: "Breast Specimen Example"
 Description: "Example of a specimen from a breast tissue biopsy"
 Usage: #example
 
-* identifier.system = "http://some-lis.org/fhir/specimen-identifier-provisioner"
+* identifier.system = "https://www.example.org/some-lis/fhir/specimen-identifier-provisioner"
 * identifier.value = "987654321"
-* accessionIdentifier.system = "http://some-lis.org/fhir/specimen-identifier-provisioner"
+* accessionIdentifier.system = "https://www.example.org/some-lis/fhir/specimen-identifier-provisioner"
 * accessionIdentifier.value = "987654321X"
 * type.coding[0].system = "http://snomed.info/sct"
 * type.coding[0].code = #119297000
@@ -16,7 +16,7 @@ Usage: #example
 * collection.method.coding[0].system = "http://snomed.info/sct"
 * collection.method.coding[0].code = #65801008
 * collection.method.coding[0].display = "Excision (procedure)"
-* container.identifier.system = "http://some-lis.org/fhir/specimen-containerID-provisioner"
+* container.identifier.system = "https://www.example.org/some-lis/fhir/specimen-containerID-provisioner"
 * container.identifier.value = "123456789"
 * container.type.coding[0].system = "http://snomed.info/sct"
 * container.type.coding[0].code = #434711009

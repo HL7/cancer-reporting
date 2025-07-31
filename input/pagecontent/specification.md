@@ -25,6 +25,19 @@ This guide defines 2 code systems:
 This IG defines one extension:
 * [Extensions Lab](https://build.fhir.org/ig/HL7/cancer-reporting/Extension-extensions-lab.html)
 
+### Document and Report Structure Design
+
+This implementation guide adopts a dual-perspective approach where cancer pathology reports serve both as:
+
+- **Structured clinical data** accessible through DiagnosticReport searches for EHR integration
+- **Legally signable documents** organized through Composition resources for regulatory compliance and CAP eCC documentation
+
+#### DiagnosticReport-Reference Extension Usage
+
+The `diagnosticReport-reference` extension in the US Pathology Composition Laboratory Report enables bidirectional navigation between the document structure (optimized for CAP eCC organization) and the clinical report structure (optimized for clinical searches). 
+
+This approach follows the design pattern established by the [HL7 Europe Laboratory Report](https://build.fhir.org/ig/hl7-eu/laboratory/design-choice.html) and addresses the clinical workflow expectation that pathology reports are primarily accessed through DiagnosticReport queries while maintaining the document structure required for CAP eCC compliance.
+
 ### Claiming Conformance to This Specification
 This specification conforms to US Core Profiles. To claim conformance to this specification, servers SHALL:
 * Be able to populate all profile data elements that have a minimum cardinality >= 1 and/or flagged as Must Support as defined by that profile’s StructureDefinition.

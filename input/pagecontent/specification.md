@@ -32,6 +32,10 @@ This implementation guide adopts a dual-perspective approach where cancer pathol
 - **Structured clinical data** accessible through DiagnosticReport searches for EHR integration
 - **Legally signable documents** organized through Composition resources for regulatory compliance and CAP eCC documentation
 
+#### Resource Relationships (Bundle Overview) {#bundle-relationships}
+
+<table><tr><td><img src="us-pathology-bundle-relationship.svg"/></td></tr></table>
+
 #### DiagnosticReport-Reference Extension Usage
 
 The `diagnosticReport-reference` extension in the US Pathology Composition Laboratory Report enables bidirectional navigation between the document structure (optimized for CAP eCC organization) and the clinical report structure (optimized for clinical searches). 

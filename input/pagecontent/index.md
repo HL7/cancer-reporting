@@ -63,9 +63,8 @@ This implementation guide is jointly copyrighted by Health Level Seven Internati
 
 | Issue Key | Title | Status | Next Steps |
 |-----------|-------|---------|------------|
-| [FHIR-50676](https://jira.hl7.org/browse/FHIR-50676) | Basic Report Elements Required by CLIA | Considered for Future Use | Prioritize comprehensive CLIA compliance approach with working group consensus on mandatory vs. must-support elements and practical implementation scenarios. |
 | [FHIR-50677](https://jira.hl7.org/browse/FHIR-50677) | Representation of Specimen Derivation Hierarchies | Considered for Future Use | Focus on full parent-child specimen chains in next revision phase, building on current flattened approach with required specimen.parent links. |
-| [FHIR-50680](https://jira.hl7.org/browse/FHIR-50680) | Add Procedure Profile | Considered for Future Use | Await resolution of HL7 V2 OBR representation approach and establish procedure code mapping strategies before standardized profile development. |
+| [FHIR-50680](https://jira.hl7.org/browse/FHIR-50680) | Add Procedure Profile | Considered for Future Use | Consider R6 linkage between Procedure and Specimen |
 | [FHIR-50682](https://jira.hl7.org/browse/FHIR-50682) | When to use Specimen vs. Observation for documenting specimen details | Considered for Future Use | Conduct comprehensive analysis and testing of specimen detail documentation across derived specimens and multi-laboratory workflows. |
 
 These issues will be prioritized for future versions once foundational questions are resolved and adequate consensus-building time is available.

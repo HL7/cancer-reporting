@@ -9,9 +9,14 @@ copyrightYear: 2025+
 releaseLabel: STU 2 Ballot
 description: This implementation guide (IG) provides Health Level Seven (HL7 FHIR) resources to define standards for cancer pathology information exchange from a hospital or facility-based laboratory information system (LIS) to a hospital or facility-based electronic health record (EHR) system or to a central cancer registry. When sending between LIS and EHR systems, implementors may choose to use transport and processing modalities, such as FHIR bundles. This publication provides the data model, defined data items and their corresponding code and value sets specific to a cancer pathology synoptic report. This guide contains a library of FHIR profiles to create a cancer pathology bundle and is compliant with FHIR Release 4.
 publisher:
-  name: HL7 International / Orders and Observations and College of American Pathologists
-  url: http://www.hl7.org/Special/committees/orders
-  email: ord@lists.HL7.org
+  - name: HL7 International / Orders and Observations
+    url: http://www.hl7.org/Special/committees/orders
+    email: ord@lists.HL7.org
+contact:
+  - name: College of American Pathologists
+    telecom:
+      - system: url
+        value: https://www.cap.org/
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: oo
@@ -25,6 +30,7 @@ parameters:
   path-expansion-params: '../../input/exp-params.json'  #Support for US SNOMED CT - path is relative to [base]/fsh-generated/resources
 #  jira-code: uv-smart-health-cards-and-links
 dependencies:
+  hl7.fhir.uv.extensions.r4: 5.2.0
   hl7.fhir.us.core:
     version: 6.1.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0

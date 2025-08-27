@@ -104,11 +104,11 @@ Several cancer pathology exchange initiatives are underway internationally, incl
 
 | Role | Name | Affiliation | Contact |
 | -------- | -------- | -------- | -------- |
+| Primary Editor  | **Patrick Joyce** | Lantana Consulting Group | patrick.joyce@lantanagroup.com|
 | Primary Editor | **David deRoode** | Lantana Consulting Group | david.deroode@lantanagroup.com|
 | Primary Editor | **Rick Geimer** | Lantana Consulting Group | rick.geimer@lantanagroup.com|
 | Co-Editor | **Zabrina Gonzaga** | Lantana Consulting Group | zabrina.gonzaga@lantanagroup.com|
 | Co-Editor | **Wendy Wise** | Lantana Consulting Group | wendy.wise@lantanagroup.com|
-| Co-Editor | **Patrick Joyce** | Lantana Consulting Group | patrick.joyce@lantanagroup.com|
 | Co-Editor | **Ruby Nash** | Lantana Consulting Group | ruby.nash@lantanagroup.com|
 | Co-Editor | **Diana Wright** | Lantana Consulting Group | diana.wright@lantanagroup.com|
 | Co-Editor | **Max Nakamura** | Lantana Consulting Group | max.nakamura@lantanagroup.com|

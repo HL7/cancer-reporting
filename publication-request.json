@@ -1,9 +1,9 @@
 {
     "package-id": "hl7.fhir.us.cancer-reporting",
-    "version": "2.0.0-ballot",
-    "path": "http://hl7.org/fhir/us/cancer-reporting/2025May",
-    "mode": "working",
-    "status": "ballot",
+    "version": "2.0.0",
+    "path": "http://hl7.org/fhir/us/cancer-reporting/STU2",
+    "mode": "milestone",
+    "status": "trial-use",
     "sequence": "STU 2",
-    "desc": "Sharing eCC Data from Pathology Labs to EHR (FHIR IG), 2 Ballot - US Realm STU"
+    "desc": "STU 2 Release (v2.0.0)"
 }

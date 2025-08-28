@@ -12,13 +12,13 @@ This guide defines 7 FHIR profiles:
 
 This guide defines 5 value sets:
 * [US Pathology Provider Types ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
-* [CAP eCC Answer Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-answer-codes.html)
-* [CAP eCC Form Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-form-codes.html)
-* [CAP eCC Question Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-question-answer-codes.html)
-* [CAP eCC Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-section-codes.html)
+* [CAP eCP Answer Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-answer-codes.html)
+* [CAP eCP Form Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-form-codes.html)
+* [CAP eCP Question Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-question-answer-codes.html)
+* [CAP eCP Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-section-codes.html)
 
 This guide defines 2 code systems:
-* [CAP eCC CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-cap-ecc-codesystem.html)
+* [CAP eCP CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-cap-ecc-codesystem.html)
 * [US Pathology CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-us-pathology-codesystem.html)
 
 #### Extensions
@@ -30,7 +30,7 @@ This IG defines one extension:
 This implementation guide adopts a dual-perspective approach where cancer pathology reports serve both as:
 
 - **Structured clinical data** accessible through DiagnosticReport searches for EHR integration
-- **Legally signable documents** organized through Composition resources for regulatory compliance and CAP eCC documentation
+- **Legally signable documents** organized through Composition resources for regulatory compliance and CAP eCP documentation
 
 #### Resource Relationships (Bundle Overview) {#bundle-relationships}
 
@@ -38,9 +38,9 @@ This implementation guide adopts a dual-perspective approach where cancer pathol
 
 #### DiagnosticReport-Reference Extension Usage
 
-The `diagnosticReport-reference` extension in the US Pathology Composition Laboratory Report enables bidirectional navigation between the document structure (optimized for CAP eCC organization) and the clinical report structure (optimized for clinical searches). 
+The `diagnosticReport-reference` extension in the US Pathology Composition Laboratory Report enables bidirectional navigation between the document structure (optimized for CAP eCP organization) and the clinical report structure (optimized for clinical searches). 
 
-This approach follows the design pattern established by the [HL7 Europe Laboratory Report](https://build.fhir.org/ig/hl7-eu/laboratory/design-choice.html) and addresses the clinical workflow expectation that pathology reports are primarily accessed through DiagnosticReport queries while maintaining the document structure required for CAP eCC compliance.
+This approach follows the design pattern established by the [HL7 Europe Laboratory Report](https://build.fhir.org/ig/hl7-eu/laboratory/design-choice.html) and addresses the clinical workflow expectation that pathology reports are primarily accessed through DiagnosticReport queries while maintaining the document structure required for CAP eCP compliance.
 
 ### Claiming Conformance to This Specification
 This specification conforms to US Core Profiles. To claim conformance to this specification, servers SHALL:

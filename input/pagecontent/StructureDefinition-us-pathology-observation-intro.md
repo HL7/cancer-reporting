@@ -8,7 +8,7 @@ The IHE Structured Data Capture (SDC) standard, *IHE SDC eCP on FHIR*, uses a fo
 
 ## CAP Protocol Structure
 
-- The CAP electronic Cancer Checklist (eCC) templates utilize a structured format with several key components:
+- The CAP electronic Cancer Protocols (eCPs) templates utilize a structured format with several key components:
 
 - **Sections**: Represent major divisions within the protocol (e.g., "SPECIMEN," "TUMOR") that organize related content.
 - **Child Items**: Encapsulates questions, list fields, and sub-sections within a section.
@@ -20,9 +20,9 @@ The IHE Structured Data Capture (SDC) standard, *IHE SDC eCP on FHIR*, uses a fo
 ### Category Slicing
 The Observation resource is sliced based on the category element to distinguish between sections and questions:
 
-- **category:section**: When this slice is used (indicating the Observation represents a section), the `code` element must use a value from the "CAP eCC Section Codes" ValueSet (binding: required).
+- **category:section**: When this slice is used (indicating the Observation represents a section), the `code` element must use a value from the "CAP eCP Section Codes" ValueSet (binding: required).
 
-- **category:question**: When this slice is used (indicating the Observation represents a question), the `code` element must use a value from the "CAP eCC Question Codes" ValueSet (binding: required).
+- **category:question**: When this slice is used (indicating the Observation represents a question), the `code` element must use a value from the "CAP eCP Question Codes" ValueSet (binding: required).
 
 This slicing approach enforces the appropriate terminology bindings based on whether the Observation represents a structural section or a specific question.
 
@@ -34,8 +34,8 @@ This slicing approach enforces the appropriate terminology bindings based on whe
 - **category**: Specifies whether this is a Section (has no value) or a Question (has a value)
   - Must use the appropriate slice (section or question) from ObservationCategoryCodes
 - **code**: Represents the CAP protocol section or question ID
-  - For category:section, must come from the CAP eCC Section Codes ValueSet
-  - For category:question, must come from the CAP eCC Question Codes ValueSet
+  - For category:section, must come from the CAP eCP Section Codes ValueSet
+  - For category:question, must come from the CAP eCP Question Codes ValueSet
 - **value[x]**: Stores responses for the question
 - **derivedFrom**: References parent Observations, allowing hierarchical relationships between related responses
 - **hasMember**: References child Observations, supporting nested data

@@ -22,13 +22,13 @@ This guide defines 7 FHIR profiles:
 
 This guide defines 5 value sets and 2 code systems:
 * [US Pathology Provider Types ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
-* [CAP eCC Answer Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-answer-codes.html)
-* [CAP eCC Form Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-form-codes.html)
-* [CAP eCC Question Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-question-answer-codes.html)
-* [CAP eCC Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-section-codes.html)
+* [CAP eCP Answer Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-answer-codes.html)
+* [CAP eCP Form Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-form-codes.html)
+* [CAP eCP Question Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-question-answer-codes.html)
+* [CAP eCP Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-section-codes.html)
 
 This guide defines 2 code systems:
-* [CAP eCC CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-cap-ecc-codesystem.html)
+* [CAP eCP CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-cap-ecc-codesystem.html)
 * [US Pathology CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-us-pathology-codesystem.html)
 
 ### Dependencies
@@ -61,10 +61,101 @@ This implementation guide is jointly copyrighted by Health Level Seven Internati
 
 ### Open Issues Summary
 
-| Issue Key | Title | Status | Next Steps |
-|-----------|-------|---------|------------|
-| [FHIR-50677](https://jira.hl7.org/browse/FHIR-50677) | Representation of Specimen Derivation Hierarchies | Considered for Future Use | Focus on full parent-child specimen chains in next revision phase, building on current flattened approach with required specimen.parent links. |
-| [FHIR-50680](https://jira.hl7.org/browse/FHIR-50680) | Add Procedure Profile | Considered for Future Use | An optional Procedure resource based on USCoreProcedureProfile should be included, when available, and can be linked via ServiceRequest.basedOn |
-| [FHIR-50682](https://jira.hl7.org/browse/FHIR-50682) | When to use Specimen vs. Observation for documenting specimen details | Considered for Future Use | Conduct comprehensive analysis and testing of specimen detail documentation across derived specimens and multi-laboratory workflows. |
+<style>
+.open-issues-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 20px 0;
+ font-size: 14px;
+}
+
+.open-issues-table th {
+ background-color: #f8f9fa;
+ border: 1px solid #dee2e6;
+ padding: 12px 8px;
+ text-align: left;
+ font-weight: bold;
+}
+
+.open-issues-table td {
+ border: 1px solid #dee2e6;
+ padding: 12px 8px;
+ vertical-align: top;
+}
+
+.open-issues-table tr:nth-child(even) {
+ background-color: #f8f9fa;
+}
+
+.open-issues-table tr:nth-child(odd) {
+ background-color: #ffffff;
+}
+
+.open-issues-table tr:hover {
+ background-color: #e9ecef;
+}
+
+.issue-link {
+ font-weight: bold;
+ color: #0066cc;
+ text-decoration: none;
+}
+
+.issue-link:hover {
+ text-decoration: underline;
+}
+
+.status-badge {
+ background-color: #6c757d;
+ color: white;
+ padding: 4px 8px;
+ border-radius: 4px;
+ font-size: 12px;
+ white-space: nowrap;
+}
+</style>
+
+<table class="open-issues-table">
+ <thead>
+   <tr>
+     <th>Issue Key</th>
+     <th>Title</th>
+     <th>Status</th>
+     <th>For this version of the IG</th>
+     <th>Next Steps</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td><a href="https://jira.hl7.org/browse/FHIR-50677" class="issue-link">FHIR-50677</a></td>
+     <td>Representation of Specimen Derivation Hierarchies</td>
+     <td><span class="status-badge">Considered for Future Use</span></td>
+     <td>Implementers should<br/>
+         • Capture essential specimen information (site/anatomic source, specimen (tissue/fluid) type, collection procedure, local identifier) in a flattened approach where only the immediate specimen that feeds each observation/diagnostic report is included.<br/>
+         • Ensure that if child specimens are exchanged, they <strong>must</strong> carry specimen.parent links back to the clinical specimen.<br/>
+         • Ensure every Observation in the pathology bundle must reference the specimen on which it was performed, when the data is available.<br/>
+         • Retain relationships between the original and derived specimen that were examined and the resulting observations that are critical for diagnosis of conditions and treatment the patient at least in a narrative section of the report.</td>
+     <td>Focus on full parent-child specimen chains in next revision phase, building on current flattened approach with required specimen.parent links.</td>
+   </tr>
+   <tr>
+     <td><a href="https://jira.hl7.org/browse/FHIR-50680" class="issue-link">FHIR-50680</a></td>
+     <td>Add Procedure Profile</td>
+     <td><span class="status-badge">Considered for Future Use</span></td>
+     <td>An optional Procedure resource based on USCoreProcedureProfile should be included, when available, and can be linked to via ServiceRequest.basedOn</td>
+     <td>Consider R6 linkage between Procedure and Specimen</td>
+   </tr>
+   <tr>
+     <td><a href="https://jira.hl7.org/browse/FHIR-50682" class="issue-link">FHIR-50682</a></td>
+     <td>When to use Specimen vs. Observation for documenting specimen details</td>
+     <td><span class="status-badge">Considered for Future Use</span></td>
+     <td>Implementers should<br/>
+         • Capture essential specimen information (site/anatomic source, specimen (tissue/fluid) type, collection procedure, local identifier) in a flattened approach where only the immediate specimen that feeds each observation/diagnostic report is included.<br/>
+         • Ensure that if child specimens are exchanged, they <strong>must</strong> carry specimen.parent links back to the clinical specimen.<br/>
+         • Ensure every Observation in the pathology bundle must reference the specimen on which it was performed, when the data is available.<br/>
+         • Retain relationships between the original and derived specimen that were examined and the resulting observations that are critical for diagnosis of conditions and treatment the patient at least in a narrative section of the report.</td>
+     <td>Conduct comprehensive analysis and testing of specimen detail documentation across derived specimens and multi-laboratory workflows.</td>
+   </tr>
+ </tbody>
+</table>
 
 These issues will be prioritized for future versions once foundational questions are resolved and adequate consensus-building time is available.

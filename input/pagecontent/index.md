@@ -132,7 +132,7 @@ This implementation guide is jointly copyrighted by Health Level Seven Internati
      <td><span class="status-badge">Considered for Future Use</span></td>
      <td>Implementers should<br/>
          • Capture essential specimen information (site/anatomic source, specimen (tissue/fluid) type, collection procedure, local identifier) in a flattened approach where only the immediate specimen that feeds each observation/diagnostic report is included.<br/>
-         • Ensure that if child specimens are exchanged, they <strong>must</strong> carry specimen.parent links back to the clinical specimen.<br/>
+         • Ensure that if child specimens are exchanged, they must carry specimen.parent links back to the clinical specimen.<br/>
          • Ensure every Observation in the pathology bundle must reference the specimen on which it was performed, when the data is available.<br/>
          • Retain relationships between the original and derived specimen that were examined and the resulting observations that are critical for diagnosis of conditions and treatment the patient at least in a narrative section of the report.</td>
      <td>Focus on full parent-child specimen chains in next revision phase, building on current flattened approach with required specimen.parent links.</td>
@@ -150,7 +150,7 @@ This implementation guide is jointly copyrighted by Health Level Seven Internati
      <td><span class="status-badge">Considered for Future Use</span></td>
      <td>Implementers should<br/>
          • Capture essential specimen information (site/anatomic source, specimen (tissue/fluid) type, collection procedure, local identifier) in a flattened approach where only the immediate specimen that feeds each observation/diagnostic report is included.<br/>
-         • Ensure that if child specimens are exchanged, they <strong>must</strong> carry specimen.parent links back to the clinical specimen.<br/>
+         • Ensure that if child specimens are exchanged, they must carry specimen.parent links back to the clinical specimen.<br/>
          • Ensure every Observation in the pathology bundle must reference the specimen on which it was performed, when the data is available.<br/>
          • Retain relationships between the original and derived specimen that were examined and the resulting observations that are critical for diagnosis of conditions and treatment the patient at least in a narrative section of the report.</td>
      <td>Conduct comprehensive analysis and testing of specimen detail documentation across derived specimens and multi-laboratory workflows.</td>

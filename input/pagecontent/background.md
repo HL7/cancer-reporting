@@ -93,7 +93,7 @@ This Cancer Electronic Pathology Reporting FHIR IG and the IHE SDC eCP on FHIR a
 <table><tr><td><img src="CancerPath.jpg"/></td></tr></table>
 
 ### Ongoing Project Efforts
-This project acknowledges the ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions will also include mappings for CAP eCC Protocol CKey Identifier to SNOMED translation.  
+This project acknowledges the ongoing discussion about how LOINC vs. SNOMED terminologies serve cancer pathology, but it does not propose to resolve that discussion. Future development of this standard may explore new use cases, such as microbiology laboratory reporting. Future revisions will also include mappings for CAP eCP Protocol CKey Identifier to SNOMED translation.  
 
 Several cancer pathology exchange initiatives are underway internationally, including:
 * [Integrating Healthcare Enterprise (IHE) Pathology and Laboratory Medicine (PaLM) Technical Framework Supplement: Anatomic Pathology Structured Report (ASPR)](https://www.ihe.net/uploadedFiles/Documents/PaLM/IHE_PaLM_Suppl_APSR.pdf)

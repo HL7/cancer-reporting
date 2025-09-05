@@ -4,11 +4,11 @@ Title: "HER2 Observation Example"
 Description: "HER2 Observation Example"
 Usage: #example
 
-* identifier.system = "https://cap.org/eCC"
+* identifier.system = "https://cap.org/eCP"
 * identifier.value = "urn:uuid:deacb965-18d3-4451-a27f-0e26e7a9e5a2"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].system = "https://cap.org/eCP"
 * code.coding[0].code = #36944.100004300
 * code.coding[0].code = #79483
 * code.coding[0].display = "HER2 (by immunohistochemistry)"

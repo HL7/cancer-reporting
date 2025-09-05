@@ -22,6 +22,8 @@ extension:
     valueCode: oo
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: trial-use
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 2
 jurisdiction: urn:iso:std:iso:3166#US
 status: active
 version: 2.0.0

@@ -1,20 +1,17 @@
 == Suppressed Messages ==
 
 # 01 - College of American Pathologists (CAP) decimal CompositeKey (CKey) CodeSystem not available yet but will be
-A definition for CodeSystem 'https://cap.org/eCC' could not be found, so the code cannot be validated
-
-# 02 - Required use of 6.1.0 to meet regulatory requirements
-WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 7.0.0. This reference is getting old and the more recent version should be considered
+A definition for CodeSystem 'https://cap.org/eCP' could not be found, so the code cannot be validated
 
 # 03 - This is a new warning since the development of the IG
 WARNING: ImplementationGuide/hl7.fhir.us.cancer-reporting: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 
-# 04 - Proprietary Code system (from CAP) values are not found. CodeSystem URL (http://cap.org/eCC) identified in THO: https://terminology.hl7.org/CodeSystem-CAPeCC.html
-INFORMATION: CodeSystem/cap-ecc-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+# 04 - Proprietary Code system (from CAP) values are not found. CodeSystem URL (http://cap.org/eCP) identified in THO: https://terminology.hl7.org/CodeSystem-CAPeCP.html
+INFORMATION: CodeSystem/cap-ecp-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/us-pathology-codesystem: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
-WARNING: CodeSystem/cap-ecc-codesystem: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
-URL value 'https://cap.org/eCC' does not resolve
-No definition could be found for URL value 'https://cap.org/eCC'
+WARNING: CodeSystem/cap-ecp-codesystem: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+URL value 'https://cap.org/eCP' does not resolve
+No definition could be found for URL value 'https://cap.org/eCP'
 HL7 Defined CodeSystems should ensure that every concept has a definition
 
 # 05 - Information Message regarding a deprecated extension (maxValueSet), that was inherited through the FHIR R4 standard itself.

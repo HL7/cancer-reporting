@@ -3,10 +3,10 @@ InstanceOf: USPathologyObservation
 Title: "Tumor Section"
 Description: "Section Observation that represents the Tumor Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
-* identifier.system = "https://cap.org/eCC"
+* identifier.system = "https://cap.org/eCP"
 * identifier.value = "urn:uuid:cb7657fb-8127-41ef-9912-8f6fc52a5f85"
 * status = #final
-* code = $CAPeCCCodeSystem#16249.100004300 "TUMOR"
+* code = $CAPeCPCodeSystem#16249.100004300 "TUMOR"
 * category = USPathologyCodeSystem#SECTION "Section"
 * subject.reference = "Patient/patient-OakleyAnnie"
 * effectiveDateTime = "2024-12-05"

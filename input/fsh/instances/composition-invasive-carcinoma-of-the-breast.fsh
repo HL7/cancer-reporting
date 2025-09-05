@@ -5,7 +5,7 @@ Description: "Composition - Examination of Resection Specimens from Patients wit
 Usage: #example
 * extension[diagnosticReport-reference].valueReference = Reference(diagnosticreport-breast-invasive-carcinoma)
 * status = #final
-* type = $CAPeCCCodeSystem#Breast.Invasive.Res.189_4.009.021.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Biopsy"
+* type = $CAPeCPCodeSystem#Breast.Invasive.Res.189_4.009.021.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Biopsy"
 * subject.reference = "http://hl7.org/fhir/us/cancer-reporting/Patient/patient-OakleyAnnie"
 * subject.display = "Annie Oakley"
 * date = "2025-01-01T21:39:30.000Z"

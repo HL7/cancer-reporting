@@ -39,7 +39,7 @@ Description: "This Observation profile is inspired by both [US Core Simple Obser
 * valueQuantity ^binding.description = "This is the entire UCUM code set."
 * valueCodeableConcept 0..1
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from CAPeCCAnswerCodes (extensible)
+* valueCodeableConcept from CAPeCPAnswerCodes (extensible)
 
 * component MS
 * component ^short = "Additional entry"

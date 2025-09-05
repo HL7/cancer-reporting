@@ -4,18 +4,18 @@ Title: "Ductal Carcinoma In Situ Observation Example"
 Description: "This is an observation describing the presence of ductal carcinoma in situ (DCIS)."
 Usage: #example
 
-* identifier.system = "https://cap.org/eCC"
+* identifier.system = "https://cap.org/eCP"
 * identifier.value = "urn:uuid:c2f916f9-7438-4ba6-9cba-9e9064edbe3c"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "https://cap.org/eCC"
+* code.coding[0].system = "https://cap.org/eCP"
 * code.coding[0].code = #44040.100004300
 * code.coding[0].display = "Ductal Carcinoma In Situ (DCIS) (Note G)"
 * subject = Reference(patient-OakleyAnnie)
 
 * effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept.coding[0].system = "https://cap.org/eCC"
+* valueCodeableConcept.coding[0].system = "https://cap.org/eCP"
 * valueCodeableConcept.coding[0].code = #16306.100004300
 * valueCodeableConcept.coding[0].display = "Not identified"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"

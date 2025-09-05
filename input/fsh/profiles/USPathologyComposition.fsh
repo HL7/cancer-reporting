@@ -23,7 +23,7 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 * identifier ^short = "Report identifier"
 * status ^short = "Status of the Report"
 * type ^short = "CAP Form Identifier"
-* type from CAPeCCFormCodes (extensible)
+* type from CAPeCPFormCodes (extensible)
 * subject 1..1
 * subject only Reference(USCorePatientProfile)
 * encounter ^short = "The healthcare event which this Report is about (when test ordered)."
@@ -38,7 +38,7 @@ Description: "This Composition profile represents a Laboratory Report for the Cl
 * section 1..* MS
   * title ^short = "Title should be the display of the section code"
   * code ^short = "CAP Form Section Identifier"
-  * code from CAPeCCSectionCodes (extensible)
+  * code from CAPeCPSectionCodes (extensible)
   * entry 1..*
   * entry only Reference(USPathologyObservation)
   * entry ^short = "An Observation representing this section in the report and containing (hasMember) Observations representing the question/answers in the section."

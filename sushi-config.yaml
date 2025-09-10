@@ -35,5 +35,3 @@ dependencies:
     version: 6.1.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0
     id: uscore
-  hl7.terminology.r4:
-        version: 6.2.0

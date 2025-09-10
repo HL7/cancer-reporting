@@ -19,7 +19,7 @@ Usage: #example
 * collection.bodySite.coding[0].system = "http://snomed.info/sct"
 * collection.bodySite.coding[0].code = #76752008
 * collection.bodySite.coding[0].display = "Breast structure (body structure)"
-* collection.bodySite.text = "Left breast, 3 o'clock, 4 cm from nipple"
+* collection.bodySite.text = "Right breast, 3 o'clock, 4 cm from nipple"
 * container.identifier.system = "https://www.example.org/some-lis/fhir/specimen-containerID-provisioner"
 * container.identifier.value = "123456789"
 * container.type.coding[0].system = "http://snomed.info/sct"

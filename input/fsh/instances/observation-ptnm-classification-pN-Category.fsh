@@ -4,18 +4,18 @@ Title: "PTNM Classification Observation example"
 Description: "This is an example of an observation of PTNM Classification"
 Usage: #example
 
-* identifier.system = "https://cap.org/eCP"
+* identifier.system = "http://cap.org/eCP"
 * identifier.value = "urn:uuid:7164b3a9-3061-4f7f-9bbb-2a4e6980d665"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "https://cap.org/eCP"
+* code.coding[0].system = "http://cap.org/eCP"
 * code.coding[0].code = #763178.100004300
 * code.coding[0].display = "pN Category"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2025-03-18"
 * performer.reference = "Practitioner/practitioner-oncologist"
 
-* valueCodeableConcept.coding[0].system = "https://cap.org/eCP"
+* valueCodeableConcept.coding[0].system = "http://cap.org/eCP"
 * valueCodeableConcept.coding[0].code = #38649.100004300
 * valueCodeableConcept.coding[0].display = "pN0: No regional lymph node metastasis identified or ITCs only#"
 

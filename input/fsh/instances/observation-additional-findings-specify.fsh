@@ -4,11 +4,11 @@ Title: "Additional Findings Observation example"
 Description: "This is an example of an observation of Additional Findings"
 Usage: #example
 
-* identifier.system = "https://cap.org/eCP"
+* identifier.system = "http://cap.org/eCP"
 * identifier.value = "urn:uuid:9cfaa1f6-f0af-4e66-8fe0-130b2143b135"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "https://cap.org/eCP"
+* code.coding[0].system = "http://cap.org/eCP"
 * code.coding[0].code = #16783.100004300
 * code.coding[0].display = "Additional Findings (specify)"
 * subject = Reference(patient-OakleyAnnie)

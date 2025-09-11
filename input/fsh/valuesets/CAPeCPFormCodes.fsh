@@ -7,4 +7,4 @@ Description: "This ValueSet is composed of Form codes."
 * ^status = #active
 * ^experimental = false
 
-* CAPeCPCodeSystem#Breast.Invasive.Res.189_4.009.021.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Resection"
+* http://cap.org/eCC#Breast.Invasive.Res.189_4.009.021.REL_sdcFDF "INVASIVE CARCINOMA OF THE BREAST: Resection"

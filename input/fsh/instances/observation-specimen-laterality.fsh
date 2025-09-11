@@ -4,18 +4,18 @@ Title: "Specimen Laterality Observation Example"
 Description: "This is an example of an observation of tumor specimen laterality."
 Usage: #example
 
-* identifier.system = "https://cap.org/eCP"
+* identifier.system = "http://cap.org/eCP"
 * identifier.value = "urn:uuid:4bcd147c-ff3d-4eb3-bcd3-9d679bd1ad1b"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "https://cap.org/eCP"
+* code.coding[0].system = "http://cap.org/eCP"
 * code.coding[0].code = #16214.100004300
 * code.coding[0].display = "Specimen Laterality"
 * subject = Reference(patient-OakleyAnnie)
 
 * effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept.coding[0].system = "https://cap.org/eCP"
+* valueCodeableConcept.coding[0].system = "http://cap.org/eCP"
 * valueCodeableConcept.coding[0].code = #16215.100004300
 * valueCodeableConcept.coding[0].display = "Right"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"

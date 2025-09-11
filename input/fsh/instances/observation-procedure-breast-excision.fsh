@@ -4,12 +4,12 @@ Title: "Breast Tissue Excision Observation Example"
 Description: "This is an observation describing a procedure to excise breast tissue."
 Usage: #example
 
-* identifier.system = "https://cap.org/eCP"
+* identifier.system = "http://cap.org/eCP"
 * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
 
-* code.coding[0].system = "https://cap.org/eCP"
+* code.coding[0].system = "http://cap.org/eCP"
 * code.coding[0].code = #58807.100004300
 * code.coding[0].display = "Procedure (Note A)"
 * code.coding[1].system = "http://snomed.info/sct"
@@ -19,7 +19,7 @@ Usage: #example
 
 * effectivePeriod.start = "2025-03-18T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept.coding[0].system = "https://cap.org/eCP"
+* valueCodeableConcept.coding[0].system = "http://cap.org/eCP"
 * valueCodeableConcept.coding[0].code = #40307.100004300
 * valueCodeableConcept.coding[0].display = "Excision (less than total mastectomy)"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"

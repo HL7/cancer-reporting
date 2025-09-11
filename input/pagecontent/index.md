@@ -20,16 +20,15 @@ This guide defines 7 FHIR profiles:
 * [US Pathology Service Request](StructureDefinition-us-pathology-service-request.html) (derived from [US Core ServiceRequest](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-servicerequest.html))
 * [US Pathology Related Practitioner Role](StructureDefinition-us-pathology-related-practitioner-role.html) (derived from [US Core PractitionerRole](https://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-practitionerrole.html))
 
-This guide defines 5 value sets and 2 code systems:
-* [US Pathology Provider Types ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-us-pathology-provider-types.html)
-* [CAP eCP Answer Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-answer-codes.html)
-* [CAP eCP Form Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-form-codes.html)
-* [CAP eCP Question Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-question-answer-codes.html)
-* [CAP eCP Section Codes ValueSet](https://build.fhir.org/ig/HL7/cancer-reporting/ValueSet-cap-ecc-section-codes.html)
+This guide defines 5 value sets and 1 code system:
+* [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)
+* [CAP eCP Answer Codes ValueSet](ValueSet-cap-ecc-answer-codes.html)
+* [CAP eCP Form Codes ValueSet](ValueSet-cap-ecc-form-codes.html)
+* [CAP eCP Question Codes ValueSet](ValueSet-cap-question-answer-codes.html)
+* [CAP eCP Section Codes ValueSet](ValueSet-cap-ecc-section-codes.html)
 
-This guide defines 2 code systems:
-* [CAP eCP CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-cap-ecc-codesystem.html)
-* [US Pathology CodeSystem](https://build.fhir.org/ig/HL7/cancer-reporting/CodeSystem-us-pathology-codesystem.html)
+This guide defines 1 code system:
+* [US Pathology CodeSystem](CodeSystem-us-pathology-codesystem.html)
 
 ### Dependencies
 This guide leverages the [NAACCR Standards for Cancer Registries Volume V, Laboratory Electronic Reporting Pathology Version 5.0, May 2020](https://www.naaccr.org/wp-content/uploads/2020/07/NAACCR-Vol-V_Revised_20200720.pdf) (Revised 2020).

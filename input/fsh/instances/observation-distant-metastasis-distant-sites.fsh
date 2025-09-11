@@ -10,11 +10,11 @@ Usage: #example
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "http://cap.org/eCP"
 * code.coding[0].code = #352334.100004300
-* code.coding[0].display = "?Distant Site(s) Involved, if applicable"
+* code.coding[0].display = "Distant Site(s) Involved, if applicable"
 * subject = Reference(patient-OakleyAnnie)
 * effectiveDateTime = "2025-03-18"
 * performer = Reference(practitioner-oncologist)
 * valueCodeableConcept.coding[0].system = "http://cap.org/eCP"
 * valueCodeableConcept.coding[0].code = #352343.100004300
-* valueCodeableConcept.coding[0].display = "?Not applicable"
+* valueCodeableConcept.coding[0].display = "Not applicable"
 * derivedFrom[+] = Reference(observation-distant-metastasis)

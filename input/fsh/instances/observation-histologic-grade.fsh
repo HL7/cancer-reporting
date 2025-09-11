@@ -10,7 +10,7 @@ Usage: #example
 * category = USPathologyCodeSystem#QUESTION "Question"
 * code.coding[0].system = "http://cap.org/eCP"
 * code.coding[0].code = #380281.100004300
-* code.coding[0].display = "?Histologic Grade (Nottingham Histologic Score) (required only if applicable) (Note D)"
+* code.coding[0].display = "Histologic Grade (Nottingham Histologic Score) (required only if applicable) (Note D)"
 * subject = Reference(patient-OakleyAnnie)
 
 * effectivePeriod.start = "2025-03-18T14:52:02+00:00"

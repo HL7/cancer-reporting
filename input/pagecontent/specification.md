@@ -12,17 +12,17 @@ This guide defines 7 FHIR profiles:
 
 This guide defines 5 value sets:
 * [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)
-* [CAP eCP Answer Codes ValueSet](ValueSet-cap-ecc-answer-codes.html)
-* [CAP eCP Form Codes ValueSet](ValueSet-cap-ecc-form-codes.html)
+* [CAP eCP Answer Codes ValueSet](ValueSet-cap-ecp-answer-codes.html)
+* [CAP eCP Form Codes ValueSet](ValueSet-cap-ecp-form-codes.html)
 * [CAP eCP Question Codes ValueSet](ValueSet-cap-question-answer-codes.html)
-* [CAP eCP Section Codes ValueSet](ValueSet-cap-ecc-section-codes.html)
+* [CAP eCP Section Codes ValueSet](ValueSet-cap-ecp-section-codes.html)
 
 This guide defines 1 code system:
 * [US Pathology CodeSystem](CodeSystem-us-pathology-codesystem.html)
 
 #### Extensions
 This IG defines one extension:
-* [Extensions Lab](Extension-extensions-lab.html)
+* [Extensions Lab](StructureDefinition-composition-diagnosticReportReference.html)
 
 ### Document and Report Structure Design
 

@@ -14,7 +14,7 @@ This guide defines 5 value sets:
 * [US Pathology Provider Types ValueSet](ValueSet-us-pathology-provider-types.html)
 * [CAP eCP Answer Codes ValueSet](ValueSet-cap-ecp-answer-codes.html)
 * [CAP eCP Form Codes ValueSet](ValueSet-cap-ecp-form-codes.html)
-* [CAP eCP Question Codes ValueSet](ValueSet-cap-question-answer-codes.html)
+* [CAP eCP Question Codes ValueSet](ValueSet-cap-ecp-question-codes.html)
 * [CAP eCP Section Codes ValueSet](ValueSet-cap-ecp-section-codes.html)
 
 This guide defines 1 code system:

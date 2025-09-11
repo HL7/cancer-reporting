@@ -58,12 +58,7 @@
     <div class="change-section">
         <h3>Changes and Updates from STU 1.0.1 to 2.0.0</h3>
        <ul>
-			<h4>Jira Updates Applied</h4>
-			<li>
-				<a href="https://jira.hl7.org/browse/FHIR-52236">Need to update the CAP designation of eCC to eCP throughout the IG</a>
-				<p>Update applied, where allowed. Note, examples use CAP codes defined within HL7 Terminology, which is planned to be updated from eCC to eCP. Until that time, example code system urls in this guide must use http://cap.org/eCC</p>
-			</li>
-			
+			<h4>Jira Updates Applied</h4>	
 			<li>
 				<a href="https://jira.hl7.org/browse/FHIR-52236">Need to update the CAP designation of eCC to eCP throughout the IG</a>
 				<p>Update applied, where allowed. Note, examples use CAP codes defined within HL7 Terminology, which is planned to be updated from eCC to eCP. Until that time, example code system urls in this guide must use http://cap.org/eCC</p>

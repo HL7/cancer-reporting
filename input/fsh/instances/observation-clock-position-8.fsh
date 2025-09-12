@@ -4,11 +4,11 @@ Title: "Specific Clock Position Observation (8 o'clock)"
 Description: "An observation describing the specific clock position as 8 o'clock."
 Usage: #example
 
-* identifier.system = "http://cap.org/eCP"
+* identifier.system = "http://cap.org/eCC"
 * identifier.value = "urn:uuid:bf778f95-b1a8-4674-a73e-1f2dc0bfbdc4"
 * status = #final
 * category = USPathologyCodeSystem#QUESTION "Question"
-* code.coding[0].system = "http://cap.org/eCP"
+* code.coding[0].system = "http://cap.org/eCC"
 * code.coding[0].code = #16259.100004300
 * code.coding[0].display = "Specify Clock Position"
 * code.coding[1].system = "http://snomed.info/sct"
@@ -18,7 +18,7 @@ Usage: #example
 
 * effectivePeriod.start = "2025-03-13T14:52:02+00:00"
 * performer = Reference(practitioner-oncologist)
-* valueCodeableConcept.coding[0].system = "http://cap.org/eCP"
+* valueCodeableConcept.coding[0].system = "http://cap.org/eCC"
 * valueCodeableConcept.coding[0].code = #6643.100004300
 * valueCodeableConcept.coding[0].display = "8 o'clock"
 * valueCodeableConcept.coding[1].system = "http://snomed.info/sct"

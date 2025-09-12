@@ -73,7 +73,7 @@
 			</li>
 			<li>
 				<a href="https://jira.hl7.org/browse/FHIR-50715">Data Flows Supported by this Implementation Guide does not contain all options</a>
-				<p>Data Flows Supported by this has been updated to include LIS role and clarify where EHR-to-EHR exhcnages occur within the supported data flows</p>
+				<p>Data Flows Supported by this has been updated to include LIS role and clarify where EHR-to-EHR exchanges occur within the supported data flows</p>
 			</li>
 			<li>
 				<a href="https://jira.hl7.org/browse/FHIR-50699">Fix jira spec file</a>

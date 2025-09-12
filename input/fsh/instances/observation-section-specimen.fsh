@@ -3,7 +3,7 @@ InstanceOf: USPathologyObservation
 Title: "Specimen Section"
 Description: "Section Observation that represents the Specimen Section and contains Observation.hasMember Observations that represent the sub-questions of the section."
 Usage: #example
-* identifier.system = "http://cap.org/eCP"
+* identifier.system = "http://cap.org/eCC"
 * identifier.value = "urn:uuid:6ac70450-cc74-4a8e-8699-9ffab1e0ac24"
 * status = #final
 * category = USPathologyCodeSystem#SECTION "Section"

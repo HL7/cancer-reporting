@@ -4,7 +4,7 @@ Title: "US Pathology Breast Invasive Carcinoma DiagnosticReport example"
 Description: "Example of a DiagnosticReport containing information regarding pathological testing and resulting observations"
 Usage: #example
 
-* identifier.system = "http://cap.org/eCP"
+* identifier.system = "http://cap.org/eCC"
 * identifier.value = "urn:uuid:7c9139fe-ddd5-49d9-b649-f37344e8b995"
 * status = #final
 * category = $loinc#LP7839-6 "Pathology"

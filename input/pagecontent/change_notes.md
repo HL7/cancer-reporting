@@ -131,13 +131,13 @@
 				<a href="https://jira.hl7.org/browse/FHIR-49284">Remove Grouper Observation</a>
 				<p>The Grouper Observation profile/structure has been removed.</p>
 			</li>
-		</ul>
-		<ul>
-			<h4>General Updates</h4>
 			<li>
 				<a href="https://jira.hl7.org/browse/FHIR-50680">Add Procedure Profile</a>
 				<p>While this ticket was Deferred, and further guidance is planned, a Procedure Profile has been added.</p>
 			</li>
+		</ul>
+		<ul>
+			<h4>General Updates</h4>
 			<li>
 				<strong>Conversion to FSH (FHIR Shorthand) Format</strong>
 				<p>All resources have been transitioned from XML to FSH format, simplifying the structure and enhancing maintainability.</p>

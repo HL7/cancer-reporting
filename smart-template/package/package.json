@@ -8,6 +8,6 @@
   "canonical": "http://github.com/HL7/ig-template-smart",
   "base": "hl7.fhir.template",
   "dependencies": {
-    "hl7.fhir.template": "current"
+    "hl7.fhir.template": "0.10.1"
   }
 }

@@ -42,4 +42,14 @@ height:1.6em;
 width:1.6em
 }
 
+/* RFC 2119 Conformance Keywords */
+.rfc2119 {
+    font-weight: bold;
+    font-style: italic;
+}
 
+/* Alternative styling - choose one */
+span.SHALL, span.SHOULD, span.MAY, span.SHALL-NOT, span.SHOULD-NOT {
+    font-weight: bold;
+    font-style: italic;
+}
